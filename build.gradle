@@ -1,0 +1,12 @@
+sourceSets {
+   main {
+      java { srcDirs = ["$projectDir/src/main/java"] }
+      resources { srcDirs = ["$projectDir/src/main/resources"] }
+	  tasks.withType(Jar) {compileJava.options.encoding = 'UTF-8'}
+	  tasks.withType(Jar) {compileApiJava.options.encoding = 'UTF-8'}
+   }
+}
+dependencies {
+}
+
+version = "1.0"
