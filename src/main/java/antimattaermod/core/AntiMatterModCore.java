@@ -4,6 +4,7 @@ import antimattaermod.core.Block.CoreBlocks;
 import antimattaermod.core.Item.CoreItems;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.ModMetadata;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -24,6 +25,9 @@ public class AntiMatterModCore {
 	@Mod.Metadata
 	public static ModMetadata modMetadata;
 	
+	@SidedProxy(clientSide = "antimattaermod.core.ClientAntiMatterModCoreProxy", serverSide = "antimattaermod.core.AntiMatterModCoreProxy")
+	public static AntiMatterModCoreProxy proxy;
+	
 	@Mod.EventHandler
 	public void preinit(FMLPreInitializationEvent event) {
 		loadMeta(modMetadata);
@@ -34,6 +38,7 @@ public class AntiMatterModCore {
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
+		proxy.registerRenderers();
 		// TODO: GUIハンドラなどの設定
 	}
 	
