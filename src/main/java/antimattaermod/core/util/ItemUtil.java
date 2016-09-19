@@ -1,6 +1,4 @@
-/*
- * 
- */
+
 package antimattaermod.core.util;
 
 import antimattaermod.core.item.MetaItem;
@@ -45,6 +43,18 @@ public class ItemUtil {
 		if(isFull3D) item.setFull3D();
 		if(containerItem != null) item.setContainerItem(containerItem);
 		
+		return item;
+	}
+
+	public static Item CreateItem(@NotNull String name, @Nullable String textureName, @Nullable CreativeTabs creativeTabs){
+		Item item = new Item();
+		item.setUnlocalizedName(name);
+		if(textureName == null || textureName.isEmpty()){
+			textureName = name;
+		}
+		textureName = "antimattermod:" + textureName;
+		item.setTextureName(textureName);
+		if(creativeTabs != null) item.setCreativeTab(creativeTabs);
 		return item;
 	}
 	
