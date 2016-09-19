@@ -1,7 +1,5 @@
-
 package antimattaermod.core.Util;
 
-import antimattaermod.core.Item.MetaItem;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import org.jetbrains.annotations.NotNull;
@@ -30,7 +28,7 @@ public class ItemUtil {
 	public static Item CreateItem(@NotNull String name , @Nullable String textureName ,@Nullable CreativeTabs addTab ,int stackSize , boolean hasSubtype ,
 								  int maxMeta , boolean isFull3D,@Nullable Item containerItem) {
 		
-		Item item = hasSubtype ? new MetaItem(maxMeta) : new Item();
+		Item item = hasSubtype ? new antimattaermod.core.Item.MetaItem(maxMeta) : new Item();
 		item.setUnlocalizedName(name);
 		if(textureName == null || textureName.isEmpty()){
 			textureName = name;
