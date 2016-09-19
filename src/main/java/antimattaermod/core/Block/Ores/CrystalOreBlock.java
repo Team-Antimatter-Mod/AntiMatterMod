@@ -6,6 +6,7 @@ package antimattaermod.core.Block.Ores;
 import java.util.List;
 import java.util.Random;
 
+import antimattaermod.core.Render.OreBlockRender;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -13,6 +14,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -124,7 +126,24 @@ public class CrystalOreBlock extends Block{
 	@Override
 	@SideOnly(Side.CLIENT)
 	public IIcon getIcon(int par, int meta) {
+		return Blocks.stone.getIcon(par, meta);
+		//return textures[meta];
+	}
+	
+	@Override
+	@SideOnly(Side.CLIENT)
+	public IIcon getIcon(IBlockAccess blockAccess, int x, int y, int z, int side){
+		return getIcon(side, blockAccess.getBlockMetadata(x, y, z));
+	}
+	
+	@SideOnly(Side.CLIENT)
+	public IIcon getOverlayIcon(int par, int meta) {
 		return textures[meta];
+	}
+	
+	@Override
+	public int getRenderType() {
+		return OreBlockRender.RenderID;
 	}
 	
 }
