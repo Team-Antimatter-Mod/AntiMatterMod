@@ -1,10 +1,11 @@
 package antimattaermod.core.Energy;
 
 /**
- * Created by C6H2Cl2 on 2016/09/19.
+ * @author C6H2Cl2
  */
+
 public enum APVoltage {
-    LV(128),MV(512),HV(2048),GV(10240),TV(40960),UV(Integer.MAX_VALUE);
+    ULV(8),LV(32),MV(128),HV(512),EV(2048),IV(8192),LuV(32768),ZPMV(131072),UV(524288),MaxV(Integer.MAX_VALUE);
     private int maxEnergy;
 
     APVoltage(int maxEnergy){
