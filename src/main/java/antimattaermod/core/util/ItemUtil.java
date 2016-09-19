@@ -6,6 +6,8 @@ package antimattaermod.core.util;
 import antimattaermod.core.item.MetaItem;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /** <h1>ItemUtil</h1>
  * 中間アイテム簡易登録クラス<br>
@@ -27,11 +29,15 @@ public class ItemUtil {
 	 * @param containerItem クラフト時に帰ってくるアイテム {@link Item#setContainerItem(Item)}
 	 * @return アイテムオブジェクト
 	 */
-	public static Item CreateItem(String name , String textureName , CreativeTabs addTab , int stackSize , boolean hasSubtype , 
-			int maxMeta , boolean isFull3D, Item containerItem) {
+	public static Item CreateItem(@NotNull String name , @Nullable String textureName ,@Nullable CreativeTabs addTab ,int stackSize , boolean hasSubtype ,
+								  int maxMeta , boolean isFull3D,@Nullable Item containerItem) {
 		
 		Item item = hasSubtype ? new MetaItem(maxMeta) : new Item();
 		item.setUnlocalizedName(name);
+		if(textureName == null || textureName.isEmpty()){
+			textureName = name;
+		}
+		textureName = "antimattermod:" + textureName;
 		item.setTextureName(textureName);
 		if(addTab != null) item.setCreativeTab(addTab);
 		item.setMaxStackSize(stackSize);
