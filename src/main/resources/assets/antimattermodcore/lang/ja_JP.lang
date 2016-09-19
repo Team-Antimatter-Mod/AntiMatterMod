@@ -18,6 +18,8 @@ tile.crystalOreBlock_1_0.name=クリスタライト鉱石
 tile.crystalOreBlock_1_1.name=アプスマイト鉱石
 
 itemGroup.ammaterials=反物質modコアの素材
+itemGroup.tabOreBlock=反物質modコアの鉱石ブロック
+itemGroup.ammachines=反物質modコアの機械
 
 tile.material_11.information_1=1200年前に半分に割れて落ちた
 tile.material_11.information_2=ティアマト彗星の中にあった金属。
