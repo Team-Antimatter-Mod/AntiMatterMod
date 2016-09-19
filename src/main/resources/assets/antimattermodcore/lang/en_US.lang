@@ -1,0 +1,24 @@
+#---------------------------------------------------US-Lang
+
+item.material_0.name=Imidium
+item.material_1.name=Mitranidlite
+item.material_2.name=Raitium
+item.material_3.name=Dranthium
+item.material_4.name=Palladilite
+item.material_5.name=Takumium
+item.material_6.name=Metolite
+item.material_7.name=Alamonite
+item.material_8.name=Sutorubimonite
+item.material_9.name=Asuratomium
+item.material_10.name=Crystalite
+item.material_11.name=Tiamite
+item.material_12.name=Abzumite
+
+tile.crystalOreBlock_1_0.name=Crystalite Ore
+tile.crystalOreBlock_1_1.name=Abzumite Ore
+
+itemGroup.amaterials=AntiMatterModCore Materials
+
+tile.material_11.information_1=There was metal in the Tiamat comet 
+tile.material_11.information_2=fell cracked in half in 1200 years ago.
+tile.material_11.information.name=Your name.

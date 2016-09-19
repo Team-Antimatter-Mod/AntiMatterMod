@@ -1,5 +1,7 @@
 package antimattaermod.core;
 
+import antimattaermod.core.Block.CoreBlocks;
+import antimattaermod.core.item.CoreItems;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.ModMetadata;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -26,6 +28,8 @@ public class AntiMatterModCore {
 	@Mod.EventHandler
 	public void preinit(FMLPreInitializationEvent event) {
 		loadMeta(modMetadata);
+		CoreItems.addItem();
+		CoreBlocks.addBlock();
 		// TODO: アイテム追加など
 	}
 	
