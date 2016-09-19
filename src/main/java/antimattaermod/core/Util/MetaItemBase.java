@@ -1,7 +1,7 @@
 /*
  * 
  */
-package antimattaermod.core.util;
+package antimattaermod.core.Util;
 
 import java.util.List;
 

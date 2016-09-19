@@ -1,7 +1,7 @@
 
-package antimattaermod.core.util;
+package antimattaermod.core.Util;
 
-import antimattaermod.core.item.MetaItem;
+import antimattaermod.core.Item.MetaItem;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import org.jetbrains.annotations.NotNull;

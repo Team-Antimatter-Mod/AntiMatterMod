@@ -1,4 +1,4 @@
-package antimattaermod.core.util;
+package antimattaermod.core.Util;
 
 import antimattaermod.core.Block.SimpleBlock;
 import net.minecraft.block.Block;

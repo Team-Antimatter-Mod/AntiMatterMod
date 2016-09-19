@@ -1,14 +1,14 @@
 /*
  * 
  */
-package antimattaermod.core.item;
+package antimattaermod.core.Item;
 
 import java.util.List;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
 
-import antimattaermod.core.util.ItemUtil;
-import antimattaermod.core.util.MetaItemBase;
+import antimattaermod.core.Util.ItemUtil;
+import antimattaermod.core.Util.MetaItemBase;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

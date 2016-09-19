@@ -1,13 +1,12 @@
 package antimattaermod.core;
 
 import antimattaermod.core.Block.CoreBlocks;
-import antimattaermod.core.item.CoreItems;
+import antimattaermod.core.Item.CoreItems;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.ModMetadata;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.versioning.ArtifactVersion;
 
 /** <h1>AntiMatterModCore</h1>
  * AntiMatterModCora MainClass<br>

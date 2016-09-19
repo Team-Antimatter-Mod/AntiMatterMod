@@ -1,4 +1,4 @@
-package antimattaermod.core.item;
+package antimattaermod.core.Item;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
