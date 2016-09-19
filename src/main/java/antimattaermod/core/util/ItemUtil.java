@@ -58,5 +58,23 @@ public class ItemUtil {
 		return item;
 	}
 	
+	/**
+	 * <h1>CreateItem</h1>
+	 * {@link MetaItemBase}クラスを継承したクラスを使用してアイテムを生成します。<br>
+	 * 主にツールチップの説明表示などに使います。
+	 * @param item アイテム
+	 * @param name アイテム名 {@link Item#setUnlocalizedName(String)}
+	 * @param textureName テクスチャ―名 {@link Item#setTextureName(String)}
+	 * @param addTab 追加タブ {@link Item#setCreativeTab(CreativeTabs)}
+	 * @return アイテムオブジェクト
+	 */
+	public static Item CreateItem(MetaItemBase item, String name, String textureName, CreativeTabs addTab) {
+		item.setUnlocalizedName(name);
+		item.setTextureName(textureName);
+		if(addTab != null) item.setCreativeTab(addTab);
+		item.setMaxStackSize(64);
+		item.setMaxDamage(0);
+		return item;
+	}
 	
 }
