@@ -15,18 +15,9 @@ import cpw.mods.fml.common.versioning.ArtifactVersion;
  */
 @Mod(modid = AntiMatterModCore.MOD_ID,useMetadata = true,dependencies = "required-after:Forge@[10.13.4.1558,)")
 public class AntiMatterModCore {
-	
-	/**
-	 * ModID
-	 */
+
 	public static final String MOD_ID = "AntiMatterModCore";
-	/**
-	 * ModName
-	 */
 	public static final String MOD_NAME = "AntiMatterMod Core";
-	/**
-	 * ModVersion
-	 */
 	public static final String MOD_VERSION = "1.0.0";
 
 	@Mod.Metadata
