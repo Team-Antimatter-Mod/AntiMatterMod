@@ -12,6 +12,13 @@ import net.minecraft.world.World;
 public class BlockFurnaceGenerator extends BlockContainer {
     protected BlockFurnaceGenerator() {
         super(Material.rock);
+        //他modとの競合回避でAPつけた
+        setBlockName("furnaceGeneratorAP");
+        setBlockTextureName("antimattermod:furnaceGenerator");
+        setHardness(50f);
+        setResistance(50f);
+        setHarvestLevel("pickaxe",3);
+
     }
 
     @Override
