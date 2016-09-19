@@ -17,7 +17,7 @@ item.material_12.name=Abzumite
 tile.crystalOreBlock_1_0.name=Crystalite Ore
 tile.crystalOreBlock_1_1.name=Abzumite Ore
 
-itemGroup.amaterials=AntiMatterModCore Materials
+itemGroup.ammaterials=AntiMatterModCore Materials
 
 tile.material_11.information_1=There was metal in the Tiamat comet 
 tile.material_11.information_2=fell cracked in half in 1200 years ago.

@@ -1,5 +1,6 @@
 package antimattaermod.core.Energy.Generator.Block;
 
+import antimattaermod.core.AntiMatterModCore;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -18,7 +19,7 @@ public class BlockFurnaceGenerator extends BlockContainer {
         setHardness(50f);
         setResistance(50f);
         setHarvestLevel("pickaxe",3);
-
+        setCreativeTab(AntiMatterModCore.tabMachines);
     }
 
     @Override

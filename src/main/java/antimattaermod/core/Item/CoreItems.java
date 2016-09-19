@@ -5,6 +5,7 @@ package antimattaermod.core.Item;
 
 import java.util.List;
 
+import antimattaermod.core.AntiMatterModCore;
 import com.mojang.realmsclient.gui.ChatFormatting;
 
 import antimattaermod.core.Util.ItemUtil;
@@ -28,16 +29,7 @@ import net.minecraft.util.StatCollector;
 public class CoreItems {
 	private CoreItems() {}
 	
-	/**
-	 * 素材タブ
-	 */
-	public final static CreativeTabs tabMaterials = new CreativeTabs("amaterials") {
-		@Override
-		@SideOnly(Side.CLIENT)
-		public Item getTabIconItem() {
-			return Items.diamond;
-		}
-	};
+
 	
 	//==================================================================================================================
 	/**
@@ -52,7 +44,7 @@ public class CoreItems {
 				list.add(ChatFormatting.RED+StatCollector.translateToLocal("tile.material_11.information.name"));
 			}
 		}
-	},"material", "antimattermodcore:material", tabMaterials);
+	},"material", "antimattermodcore:material", AntiMatterModCore.tabMaterials);
 	
 	//==================================================================================================================
 	
