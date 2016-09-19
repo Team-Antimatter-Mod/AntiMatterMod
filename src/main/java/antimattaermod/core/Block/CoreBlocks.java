@@ -3,6 +3,7 @@
  */
 package antimattaermod.core.Block;
 
+import antimattaermod.core.Block.Ores.CrystalOreBlock;
 import antimattaermod.core.Item.CoreItems;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -32,7 +33,7 @@ public class CoreBlocks {
 		
 	//==================================================================================================================
 	
-	public static Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_1", "antimattermodcore:crystaloreblock_1", CoreBlocks.oreBlocks, 2, 
+	public static Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_1", "antimattermodcore:crystaloreblock_1", CoreBlocks.oreBlocks, 2,
 			new float[]{5.0F,5.0F}, new byte[]{3,3}, CoreItems.materials, new int[]{10,12}); 
 	
 	
