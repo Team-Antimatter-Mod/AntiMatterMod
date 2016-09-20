@@ -122,6 +122,8 @@ public class OreBlockRender implements ISimpleBlockRenderingHandler{
 		renderer.setRenderBounds(0, 0, 0, 1, 1, 1);
 		renderer.renderStandardBlock(block, x, y, z);
 		
+		renderer.setOverrideBlockTexture(null);
+		
 		return true;
 	}
 	
