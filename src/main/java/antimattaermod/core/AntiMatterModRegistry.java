@@ -2,9 +2,12 @@ package antimattaermod.core;
 
 import antimattaermod.core.Block.MetaItemBlock;
 import antimattaermod.core.Block.Ores.CrystalOreBlock;
+import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
+import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.Util.MetaItemBase;
 import com.mojang.realmsclient.gui.ChatFormatting;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -70,15 +73,23 @@ public class AntiMatterModRegistry {
     //鉱石
     public static Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_1", "antimattermodcore:crystaloreblock_1", AntiMatterModRegistry.tabOreBlock, 2,
             new float[]{5.0F,5.0F}, new byte[]{3,3}, materials, new int[]{10,12});
+
+    //発電機
+    public static final Block furnaceGenerator = new BlockFurnaceGenerator();
     //==================================================================================================================
 
 
 
     //preinitで行う登録処理
-    public static void registerPreInit(FMLPreInitializationEvent event){
+    static void registerPreInit(FMLPreInitializationEvent event){
         //Itemの登録
         GameRegistry.registerItem(materials, "material");
         //Blockの登録
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_1");
+        GameRegistry.registerBlock(furnaceGenerator,"furnaceGeneratorAP");
+    }
+    //initで行う登録処理
+    static void registerInit(FMLInitializationEvent event){
+        GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
     }
 }

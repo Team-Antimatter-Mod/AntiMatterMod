@@ -14,7 +14,7 @@ import net.minecraft.world.World;
  * @author C6H2Cl2
  */
 public class BlockFurnaceGenerator extends BlockContainer {
-    protected BlockFurnaceGenerator() {
+    public BlockFurnaceGenerator() {
         super(Material.rock);
         //他modとの競合回避でAPつけた
         setBlockName("furnaceGeneratorAP");

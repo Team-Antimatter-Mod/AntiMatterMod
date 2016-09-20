@@ -34,7 +34,7 @@ public class AntiMatterModCore {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		proxy.registerRenderers();
-		// TODO: GUIハンドラなどの設定
+		AntiMatterModRegistry.registerInit(event);
 	}
 	
 	@Mod.EventHandler
