@@ -10,5 +10,5 @@ public interface IAPMachine {
     boolean canReceiveEnergy();
     APVoltage getSendVoltage();
     APVoltage getReceiveVoltage();
-
+    int getStoredEnergy();
 }
