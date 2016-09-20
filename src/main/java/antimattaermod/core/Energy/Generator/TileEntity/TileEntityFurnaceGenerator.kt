@@ -10,8 +10,8 @@ import net.minecraft.tileentity.TileEntity
 class TileEntityFurnaceGenerator : TileEntity(),IAPGenerator{
     //定数
     private val voltage : APVoltage = APVoltage.HV
-    private val energyStorage : Int = 1000000
-    private val maxFuel : Int = 4096
+    private val energyStorage : Int = voltage.maxEnergy * 20 * 600
+    private val maxFuel : Int = 2048
     //変数
     private var storedEnergy : Int = 0
     private var fuel : Int = 0
@@ -20,8 +20,8 @@ class TileEntityFurnaceGenerator : TileEntity(),IAPGenerator{
     }
 
     public fun addFuel(amount: Int) :Int{
-        var value = amount / 1600
-        fuel += amount
+        val value = amount / 1600
+        fuel += value
         if (fuel > maxFuel){
             val over = fuel - maxFuel
             fuel = maxFuel
@@ -29,6 +29,10 @@ class TileEntityFurnaceGenerator : TileEntity(),IAPGenerator{
         }else{
             return 0
         }
+    }
+
+    public fun isFuelMax() : Boolean{
+        return fuel == maxFuel
     }
 
     override fun getReceiveVoltage(): APVoltage {

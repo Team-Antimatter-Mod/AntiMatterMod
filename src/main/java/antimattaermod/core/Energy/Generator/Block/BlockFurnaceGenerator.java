@@ -7,7 +7,9 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.world.World;
 
 /**
@@ -30,15 +32,25 @@ public class BlockFurnaceGenerator extends BlockContainer {
         if(player.getHeldItem() == null){
             return false;
         }
-        int fuelVal = GameRegistry.getFuelValue(player.getHeldItem());
+        ItemStack heldItem = player.getHeldItem();
+        int fuelVal = GameRegistry.getFuelValue(heldItem);
+        if(fuelVal == 0){
+            fuelVal = TileEntityFurnace.getItemBurnTime(heldItem);
+        }
         if(fuelVal < 1600){
             return false;
         }
-        fuelVal = ((TileEntityFurnaceGenerator)world.getTileEntity(x,y,z)).addFuel(fuelVal);
-        if(fuelVal >= 1600){
-            player.getHeldItem().stackSize = fuelVal / 1600;
-        }else {
-            player.getHeldItem().stackSize = 0;
+        TileEntityFurnaceGenerator tileEntity = (TileEntityFurnaceGenerator)world.getTileEntity(x,y,z);
+        if(tileEntity.isFuelMax()){
+            return false;
+        }
+        int stackSize = heldItem.stackSize;
+        for (int i=0;i<stackSize;++i){
+            int remainder = tileEntity.addFuel(fuelVal);
+            heldItem.stackSize --;
+            if(remainder > 0){
+                break;
+            }
         }
         return true;
     }
