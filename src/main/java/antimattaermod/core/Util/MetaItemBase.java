@@ -57,7 +57,8 @@ import net.minecraft.util.IIcon;
 	public IIcon getIconFromDamage(int meta) {
 		return this.icons[meta];
 	}
-	
+
+	@SuppressWarnings("unchecked")
 	/**<h1>getSubItems</h1>
 	 * オーバーライド
 	 * @see net.minecraft.item.Item#getSubItems(net.minecraft.item.Item, net.minecraft.creativetab.CreativeTabs, java.util.List)

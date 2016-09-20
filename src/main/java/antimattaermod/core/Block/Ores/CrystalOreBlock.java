@@ -106,7 +106,8 @@ public class CrystalOreBlock extends Block{
 		if(i < 0) i = 0;
 		return this.quantityDropped(random) * (i + 1);
 	}
-	
+
+	@SuppressWarnings("unchecked")
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void getSubBlocks(Item item, CreativeTabs tab, List list) {

@@ -4,9 +4,11 @@ import antimattaermod.core.Block.MetaItemBlock;
 import antimattaermod.core.Block.Ores.CrystalOreBlock;
 import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
+import antimattaermod.core.Item.JacketedCable;
 import antimattaermod.core.Item.StatesChecker;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.Util.MetaItemBase;
+import antimattaermod.core.Item.StatesChecker;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -22,7 +24,6 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
-import scala.xml.PrettyPrinter;
 
 import java.util.List;
 
@@ -59,7 +60,9 @@ public class AntiMatterModRegistry {
 	
     //Item  ============================================================================================================
     //素材
+    public static Item jacketed_cables = new JacketedCable();
     public static Item materials = ItemUtil.CreateItem(new MetaItemBase(13) {
+        @SuppressWarnings("unchecked")
         @Override
         public void addInformation(ItemStack item, EntityPlayer player, List list, boolean p_77624_4_) {
             if(item.getItemDamage() == 11) {
@@ -87,6 +90,7 @@ public class AntiMatterModRegistry {
     //preinitで行う登録処理
     static void registerPreInit(FMLPreInitializationEvent event){
         //Itemの登録
+        GameRegistry.registerItem(jacketed_cables,"jacketed_cable");
         GameRegistry.registerItem(materials, "material");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         //Blockの登録
