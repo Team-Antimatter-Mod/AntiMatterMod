@@ -89,6 +89,12 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
     public APVoltage getReceiveVoltage() {
         return APVoltage.ZeroVoltage;
     }
+
+    @Override
+    public int getStoredEnergy() {
+        return 0;
+    }
+
     //BlockからIAPGeneratorのメソッドは呼ばないこと！
     @Override
     public float getMaxFuelValue() {
