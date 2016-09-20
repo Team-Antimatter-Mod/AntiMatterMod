@@ -7,8 +7,8 @@ package antimattaermod.core.Energy;
 public interface IAPMachine {
     int getMaxStoreEnergy();
     boolean canSendEnergy();
-    boolean canReciveEnergy();
+    boolean canReceiveEnergy();
     APVoltage getSendVoltage();
-    APVoltage getReciveVoltage();
+    APVoltage getReceiveVoltage();
 
 }
