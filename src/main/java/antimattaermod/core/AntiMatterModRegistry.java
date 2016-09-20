@@ -4,6 +4,7 @@ import antimattaermod.core.Block.MetaItemBlock;
 import antimattaermod.core.Block.Ores.CrystalOreBlock;
 import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
+import antimattaermod.core.Item.StatesChecker;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.Util.MetaItemBase;
 import com.mojang.realmsclient.gui.ChatFormatting;
@@ -21,6 +22,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
+import scala.xml.PrettyPrinter;
 
 import java.util.List;
 
@@ -67,6 +69,8 @@ public class AntiMatterModRegistry {
             }
         }
     },"material", "antimattermodcore:material", AntiMatterModRegistry.tabMaterials);
+    //ツール類
+    public static final Item statesChecker = new StatesChecker();
     //==================================================================================================================
 
     //Block  ===========================================================================================================
@@ -84,6 +88,7 @@ public class AntiMatterModRegistry {
     static void registerPreInit(FMLPreInitializationEvent event){
         //Itemの登録
         GameRegistry.registerItem(materials, "material");
+        GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         //Blockの登録
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_1");
         GameRegistry.registerBlock(furnaceGenerator,"furnaceGeneratorAP");
