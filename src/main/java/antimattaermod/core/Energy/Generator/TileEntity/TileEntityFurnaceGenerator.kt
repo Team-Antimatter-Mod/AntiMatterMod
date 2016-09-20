@@ -20,8 +20,8 @@ class TileEntityFurnaceGenerator : TileEntity(),IAPGenerator{
     }
 
     public fun addFuel(amount: Int) :Int{
-        var value = amount / 1600
-        fuel += amount
+        val value = amount / 1600
+        fuel += value
         if (fuel > maxFuel){
             val over = fuel - maxFuel
             fuel = maxFuel
@@ -29,6 +29,10 @@ class TileEntityFurnaceGenerator : TileEntity(),IAPGenerator{
         }else{
             return 0
         }
+    }
+
+    public fun isFuelMax() : Boolean{
+        return fuel == maxFuel
     }
 
     override fun getReceiveVoltage(): APVoltage {
