@@ -1,6 +1,5 @@
 package antimattaermod.core.Energy.Generator.Block;
 
-import antimattaermod.core.AntiMatterModCore;
 import antimattaermod.core.AntiMatterModRegistry;
 import antimattaermod.core.Energy.APVoltage;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
@@ -52,7 +51,7 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
         }
         int stackSize = heldItem.stackSize;
         for (int i=0;i<stackSize;++i){
-            int remainder = tileEntity.addFuel(fuelVal);
+            float remainder = tileEntity.addFuel(fuelVal);
             heldItem.stackSize --;
             if(remainder > 0){
                 break;
@@ -89,5 +88,25 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
     @Override
     public APVoltage getReceiveVoltage() {
         return APVoltage.ZeroVoltage;
+    }
+    //BlockからIAPGeneratorのメソッドは呼ばないこと！
+    @Override
+    public float getMaxFuelValue() {
+        return 0;
+    }
+
+    @Override
+    public float getFuelValue() {
+        return 0;
+    }
+
+    @Override
+    public int getCurrentGenerate() {
+        return 0;
+    }
+
+    @Override
+    public boolean isFuelMax() {
+        return false;
     }
 }
