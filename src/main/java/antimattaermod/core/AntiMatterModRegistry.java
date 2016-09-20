@@ -4,6 +4,7 @@ import antimattaermod.core.Block.MetaItemBlock;
 import antimattaermod.core.Block.Ores.CrystalOreBlock;
 import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
+import antimattaermod.core.Item.JacketedCable;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.Util.MetaItemBase;
 import com.mojang.realmsclient.gui.ChatFormatting;
@@ -57,7 +58,9 @@ public class AntiMatterModRegistry {
 	
     //Item  ============================================================================================================
     //素材
+    public static Item jacketed_cables = new JacketedCable();
     public static Item materials = ItemUtil.CreateItem(new MetaItemBase(13) {
+        @SuppressWarnings("unchecked")
         @Override
         public void addInformation(ItemStack item, EntityPlayer player, List list, boolean p_77624_4_) {
             if(item.getItemDamage() == 11) {
@@ -83,6 +86,7 @@ public class AntiMatterModRegistry {
     //preinitで行う登録処理
     static void registerPreInit(FMLPreInitializationEvent event){
         //Itemの登録
+        GameRegistry.registerItem(jacketed_cables,"jacketed_cable");
         GameRegistry.registerItem(materials, "material");
         //Blockの登録
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_1");
