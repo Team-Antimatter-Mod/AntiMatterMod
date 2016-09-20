@@ -2,7 +2,9 @@ package antimattaermod.core.Energy.Generator.Block;
 
 import antimattaermod.core.AntiMatterModCore;
 import antimattaermod.core.AntiMatterModRegistry;
+import antimattaermod.core.Energy.APVoltage;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
+import antimattaermod.core.Energy.IAPGenerator;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -15,7 +17,11 @@ import net.minecraft.world.World;
 /**
  * @author C6H2Cl2
  */
-public class BlockFurnaceGenerator extends BlockContainer {
+public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerator{
+    //定数
+    private APVoltage voltage = APVoltage.HV;
+    private int energyStorage = voltage.getMaxEnergy() * 20 * 600;
+
     public BlockFurnaceGenerator() {
         super(Material.rock);
         //他modとの競合回避でAPつけた
@@ -58,5 +64,30 @@ public class BlockFurnaceGenerator extends BlockContainer {
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
         return new TileEntityFurnaceGenerator();
+    }
+
+    @Override
+    public int getMaxStoreEnergy() {
+        return energyStorage;
+    }
+
+    @Override
+    public boolean canSendEnergy() {
+        return true;
+    }
+
+    @Override
+    public boolean canReceiveEnergy() {
+        return false;
+    }
+
+    @Override
+    public APVoltage getSendVoltage() {
+        return voltage;
+    }
+
+    @Override
+    public APVoltage getReceiveVoltage() {
+        return APVoltage.ZeroVoltage;
     }
 }
