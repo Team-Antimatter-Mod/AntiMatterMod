@@ -1,14 +1,14 @@
 package antimattaermod.core;
 
-import antimattaermod.core.Block.MetaItemBlock;
+import antimattaermod.core.Block.Cable;
+import antimattaermod.core.Item.ItemBlock.CableItemBlock;
+import antimattaermod.core.Item.ItemBlock.MetaItemBlock;
 import antimattaermod.core.Block.Ores.CrystalOreBlock;
 import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
-import antimattaermod.core.Item.JacketedCable;
 import antimattaermod.core.Item.StatesChecker;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.Util.MetaItemBase;
-import antimattaermod.core.Item.StatesChecker;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -26,6 +26,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 
 import java.util.List;
+
+import static antimattaermod.core.AntiMatterModCore.proxy;
 
 /**
  * @author C6H2Cl2
@@ -56,11 +58,11 @@ public class AntiMatterModRegistry {
         }
     };
 
+
     //==================================================================================================================
 	
     //Item  ============================================================================================================
     //素材
-    public static Item jacketed_cables = new JacketedCable();
     public static Item materials = ItemUtil.CreateItem(new MetaItemBase(13) {
         @SuppressWarnings("unchecked")
         @Override
@@ -83,19 +85,21 @@ public class AntiMatterModRegistry {
 
     //発電機
     public static final Block furnaceGenerator = new BlockFurnaceGenerator();
+    public static final Block cable = new Cable(Material.rock);
     //==================================================================================================================
-
 
 
     //preinitで行う登録処理
     static void registerPreInit(FMLPreInitializationEvent event){
         //Itemの登録
-        GameRegistry.registerItem(jacketed_cables,"jacketed_cable");
         GameRegistry.registerItem(materials, "material");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         //Blockの登録
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_1");
         GameRegistry.registerBlock(furnaceGenerator,"furnaceGeneratorAP");
+        GameRegistry.registerBlock(cable, CableItemBlock.class,"Cable");
+        //Renderの登録
+        proxy.registerRenderThings();
     }
     //initで行う登録処理
     static void registerInit(FMLInitializationEvent event){

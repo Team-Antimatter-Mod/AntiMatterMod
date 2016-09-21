@@ -1,5 +1,6 @@
 package antimattaermod.core;
 
+import antimattaermod.core.common.AntiMatterModCoreProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.ModMetadata;
 import cpw.mods.fml.common.SidedProxy;
@@ -22,7 +23,7 @@ public class AntiMatterModCore {
 
 	@Mod.Metadata
 	public static ModMetadata modMetadata;
-	@SidedProxy(clientSide = "antimattaermod.core.ClientAntiMatterModCoreProxy", serverSide = "antimattaermod.core.AntiMatterModCoreProxy")
+	@SidedProxy(clientSide = "antimattaermod.core.client.ClientAntiMatterModCoreProxy", serverSide = "antimattaermod.core.common.AntiMatterModCoreProxy")
 	public static AntiMatterModCoreProxy proxy;
 	
 	@Mod.EventHandler
