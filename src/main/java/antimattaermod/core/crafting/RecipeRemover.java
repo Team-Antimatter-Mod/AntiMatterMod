@@ -1,6 +1,5 @@
 package antimattaermod.core.crafting;
 
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
@@ -9,9 +8,6 @@ import net.minecraft.item.crafting.IRecipe;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * Created by 西村　航 on 2016/09/22.
- */
 public class RecipeRemover {
 
     /**
