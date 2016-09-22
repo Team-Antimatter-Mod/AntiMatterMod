@@ -2,11 +2,13 @@ package antimattaermod.core.Energy.Transfer;
 
 import antimattaermod.core.AntiMatterModCore;
 import antimattaermod.core.AntiMatterModRegistry;
+import antimattaermod.core.Energy.IAPMachine;
 import antimattaermod.core.Util.BlockPos;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
 
 public class BlockCable extends BlockContainer {
 
@@ -25,7 +27,12 @@ public class BlockCable extends BlockContainer {
     public void onBlockAdded(World world, int x, int y, int z) {
         TileEntityCable tile = (TileEntityCable) world.getTileEntity(x,y,z);
         BlockPos pos = new BlockPos(x,y,z);
-
+        tile.setConnection(ForgeDirection.UP,pos.getUp().getTileEntityFromPos(world) instanceof IAPMachine);
+        tile.setConnection(ForgeDirection.DOWN,pos.getDown().getTileEntityFromPos(world) instanceof IAPMachine);
+        tile.setConnection(ForgeDirection.NORTH,pos.getNorth().getTileEntityFromPos(world) instanceof IAPMachine);
+        tile.setConnection(ForgeDirection.SOUTH,pos.getSouth().getTileEntityFromPos(world) instanceof IAPMachine);
+        tile.setConnection(ForgeDirection.EAST,pos.getEast().getTileEntityFromPos(world) instanceof IAPMachine);
+        tile.setConnection(ForgeDirection.WEST,pos.getWest().getTileEntityFromPos(world) instanceof IAPMachine);
     }
 
     //たぶん自作のRender使うときはこれ

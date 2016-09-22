@@ -1,5 +1,9 @@
 package antimattaermod.core.Util;
 
+import net.minecraft.block.Block;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+
 /**
  * @author C6H2Cl2
  */
@@ -44,5 +48,13 @@ public class BlockPos {
 
     public int getZ() {
         return z;
+    }
+
+    public Block getBlockFromPos(World world){
+        return world.getBlock(x,y,z);
+    }
+
+    public TileEntity getTileEntityFromPos(World world){
+        return world.getTileEntity(x,y,z);
     }
 }
