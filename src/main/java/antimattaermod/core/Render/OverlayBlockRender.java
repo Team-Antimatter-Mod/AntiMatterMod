@@ -31,7 +31,7 @@ public class OverlayBlockRender implements ISimpleBlockRenderingHandler{
 	public void renderInventoryBlock(Block block, int metadata, int modelId, RenderBlocks renderer) {
 
 		if(!(block instanceof OverlayBlockBase)) return;
-		CrystalOreBlock cblock = (CrystalOreBlock) block;
+		OverlayBlockBase cblock = (OverlayBlockBase) block;
 		Tessellator tessellator = Tessellator.instance;
 
 		//不明
@@ -126,7 +126,7 @@ public class OverlayBlockRender implements ISimpleBlockRenderingHandler{
 		renderer.setRenderBounds(0, 0, 0, 1, 1, 1);//レンダ―の開始位置と終了位置
 		renderer.renderStandardBlock(block, x, y, z);//スタンダードな直方体を上の指定に合わせて描写
 
-		renderer.setOverrideBlockTexture(((CrystalOreBlock)block).getOverlayIcon(0,world.getBlockMetadata(x, y, z)));//描写テクスチャを変更
+		renderer.setOverrideBlockTexture(((OverlayBlockBase)block).getOverlayIcon(0,world.getBlockMetadata(x, y, z)));//描写テクスチャを変更
 
 
 		renderer.setRenderBounds(0, 0, 0, 1, 1, 1);

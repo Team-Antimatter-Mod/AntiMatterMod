@@ -1,5 +1,6 @@
 package antimattaermod.core.Util;
 
+import antimattaermod.core.AntiMatterModCore;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import org.jetbrains.annotations.NotNull;
@@ -33,8 +34,7 @@ public class ItemUtil {
 		if(textureName == null || textureName.isEmpty()){
 			textureName = name;
 		}
-		textureName = "antimattermod:" + textureName;
-		item.setTextureName(textureName);
+		item.setTextureName(AntiMatterModCore.MOD_ID+":"+textureName);
 		if(addTab != null) item.setCreativeTab(addTab);
 		item.setMaxStackSize(stackSize);
 		item.setMaxDamage(0);
@@ -43,6 +43,10 @@ public class ItemUtil {
 		
 		return item;
 	}
+	
+	public static Item CreateItem(String name,String textureName,int maxMeta,CreativeTabs tabs){
+		return CreateItem(name, textureName, tabs, 64, true, maxMeta, false, null);
+	}
 
 	public static Item CreateItem(@NotNull String name, @Nullable String textureName, @Nullable CreativeTabs creativeTabs){
 		Item item = new Item();
@@ -50,8 +54,7 @@ public class ItemUtil {
 		if(textureName == null || textureName.isEmpty()){
 			textureName = name;
 		}
-		textureName = "antimattermod:" + textureName;
-		item.setTextureName(textureName);
+		item.setTextureName(AntiMatterModCore.MOD_ID+":"+textureName);
 		if(creativeTabs != null) item.setCreativeTab(creativeTabs);
 		return item;
 	}
@@ -68,7 +71,7 @@ public class ItemUtil {
 	 */
 	public static Item CreateItem(MetaItemBase item, String name, String textureName, CreativeTabs addTab) {
 		item.setUnlocalizedName(name);
-		item.setTextureName(textureName);
+		item.setTextureName(AntiMatterModCore.MOD_ID+":"+textureName);
 		if(addTab != null) item.setCreativeTab(addTab);
 		item.setMaxStackSize(64);
 		item.setMaxDamage(0);

@@ -1,19 +1,21 @@
 #---------------------------------------------------US-Lang
 
 item.jacketed_cable.name=JacketedCable[Slimy]
-item.material_0.name=Imidium
-item.material_1.name=Mitranidlite
-item.material_2.name=Raitium
-item.material_3.name=Dranthium
-item.material_4.name=Palladilite
-item.material_5.name=Takumium
-item.material_6.name=Metolite
-item.material_7.name=Alamonite
-item.material_8.name=Sutorubimonite
-item.material_9.name=Asuratomium
-item.material_10.name=Crystalite
-item.material_11.name=Tiamite
-item.material_12.name=Abzumite
+
+item.crystal_01_0.name=Imidium
+item.crystal_01_1.name=Mitranidlite
+item.crystal_01_2.name=Raitium
+item.crystal_01_3.name=Dranthium
+item.crystal_01_4.name=Palladilite
+item.crystal_01_5.name=Takumium
+item.crystal_01_6.name=Metolite
+item.crystal_01_7.name=Alamonite
+item.crystal_01_8.name=Sutorubimonite
+item.crystal_01_9.name=Asuratomium
+item.crystal_01_10.name=Crystalite
+item.crystal_01_11.name=Tiamite
+item.crystal_01_12.name=Abzumite
+
 item.ingot_01_0.name=Imidium Ingot
 item.ingot_01_1.name=Mitranidlite Ingot
 item.ingot_01_2.name=Raitium Ingot
@@ -26,6 +28,6 @@ itemGroup.ammaterials=AntiMatterModCore Materials
 itemGroup.tabOreBlock=AntiMatterModCore OreBlock
 itemGroup.ammachines=AntiMatterModCore Machines
 
-tile.material_11.information_1=There was metal in the Tiamat comet 
-tile.material_11.information_2=fell cracked in half in 1200 years ago.
-tile.material_11.information.name=Your name.
+tile.crystal_01_11.information_1=There was metal in the Tiamat comet 
+tile.crystal_01_11.information_2=fell cracked in half in 1200 years ago.
+tile.crystal_01_11.information.name=Your name.

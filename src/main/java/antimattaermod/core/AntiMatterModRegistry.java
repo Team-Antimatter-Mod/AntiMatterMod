@@ -73,13 +73,14 @@ public class AntiMatterModRegistry {
         @Override
         public void addInformation(ItemStack item, EntityPlayer player, List list, boolean p_77624_4_) {
             if(item.getItemDamage() == 11) {
-                list.add(StatCollector.translateToLocal("tile.material_11.information_1"));
-                list.add(StatCollector.translateToLocal("tile.material_11.information_2"));
-                list.add(ChatFormatting.RED+StatCollector.translateToLocal("tile.material_11.information.name"));
+                list.add(StatCollector.translateToLocal("tile.crystal_01_11.information_1"));
+                list.add(StatCollector.translateToLocal("tile.crystal_01_11.information_2"));
+                list.add(ChatFormatting.RED+StatCollector.translateToLocal("tile.crystal_01_11.information.name"));
             }
         }
-    },"material", "antimattermodcore:material", AntiMatterModRegistry.tabMaterials);
-    public static IngotBase ingot_01 = new IngotBase("ingot_01","ingot_01",32);
+    },"crystal_01", "crystal/crystal_01", AntiMatterModRegistry.tabMaterials);
+    public static IngotBase ingot_01 = new IngotBase("ingot_01","ingot_01",32);//public static Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot_01",32); 特に別クラスにする意味がなければで可能
+    
     //ツール類
     public static final Item statesChecker = new StatesChecker();
     //==================================================================================================================
