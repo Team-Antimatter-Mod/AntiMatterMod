@@ -19,7 +19,8 @@ public class Cable extends BlockContainer {
         setHardness(2.0f);
         setResistance(0.0F);
         setCreativeTab(AntiMatterModRegistry.tabMachines);
-        setBlockTextureName(AntiMatterModCore.MOD_ID+":"+"textures/blocks/cable");
+        setBlockTextureName(AntiMatterModCore.MOD_ID+":"+"/blocks/cable");
+        setBlockBounds(0.4f,0f,0f,0.6f,0.1875f,1f);
     }
 
     public int getRenderType(){
