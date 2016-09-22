@@ -9,6 +9,7 @@ import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerato
 import antimattaermod.core.Item.StatesChecker;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.Util.MetaItemBase;
+import antimattaermod.core.crafting.RecipeRemover;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -100,6 +101,10 @@ public class AntiMatterModRegistry {
         GameRegistry.registerBlock(cable, CableItemBlock.class,"Cable");
         //Renderの登録
         proxy.registerRenderThings();
+        //Recipe削除
+        RecipeRemover.removeRecipe();
+        //Recipe登録
+        GameRegistry.addRecipe(new ItemStack(Items.stick),"WW","WW",'W',Blocks.planks);
     }
     //initで行う登録処理
     static void registerInit(FMLInitializationEvent event){
