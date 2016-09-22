@@ -23,10 +23,12 @@ public class Cable extends BlockContainer {
         setBlockBounds(0.4f,0f,0f,0.6f,0.1875f,1f);
     }
 
+    //たぶん自作のRender使うときはこれ
     public int getRenderType(){
         return -1;
     }
 
+    //透明化
     public boolean isOpaqueCube(){
         return false;
     }
@@ -35,6 +37,7 @@ public class Cable extends BlockContainer {
         return false;
     }
 
+    //Entityの作成
     @Override
     public TileEntity createNewTileEntity(World var1,int var2){
         return new TileEntityCable();
