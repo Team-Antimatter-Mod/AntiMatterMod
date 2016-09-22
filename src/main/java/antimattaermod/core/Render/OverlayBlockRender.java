@@ -3,6 +3,7 @@
  */
 package antimattaermod.core.Render;
 
+import antimattaermod.core.Block.OverlayBlockBase;
 import org.lwjgl.opengl.GL11;
 
 import antimattaermod.core.AntiMatterModCore;
@@ -31,8 +32,8 @@ public class OverlayBlockRender implements ISimpleBlockRenderingHandler{
 	@Override
 	public void renderInventoryBlock(Block block, int metadata, int modelId, RenderBlocks renderer) {
 
-		if(!(block instanceof CrystalOreBlock)) return;
-		CrystalOreBlock cblock = (CrystalOreBlock) block;
+		if(!(block instanceof OverlayBlockBase)) return;
+		OverlayBlockBase cblock = (OverlayBlockBase) block;
 		Tessellator tessellator = Tessellator.instance;
 
 		//不明
@@ -123,11 +124,12 @@ public class OverlayBlockRender implements ISimpleBlockRenderingHandler{
 	public boolean renderWorldBlock(IBlockAccess world, int x, int y, int z, Block block, int modelId,
 			RenderBlocks renderer) {
 
+		if (!(block instanceof OverlayBlockBase)) return false;
 
 		renderer.setRenderBounds(0, 0, 0, 1, 1, 1);//レンダ―の開始位置と終了位置
 		renderer.renderStandardBlock(block, x, y, z);//スタンダードな直方体を上の指定に合わせて描写
 
-		renderer.setOverrideBlockTexture(((CrystalOreBlock)block).getOverlayIcon(0,world.getBlockMetadata(x, y, z)));//描写テクスチャを変更
+		renderer.setOverrideBlockTexture(((OverlayBlockBase)block).getOverlayIcon(0,world.getBlockMetadata(x, y, z)));//描写テクスチャを変更
 
 
 		renderer.setRenderBounds(0, 0, 0, 1, 1, 1);
