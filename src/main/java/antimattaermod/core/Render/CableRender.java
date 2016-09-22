@@ -11,14 +11,13 @@ public class CableRender extends TileEntitySpecialRenderer {
 
     private static final ResourceLocation texture = new ResourceLocation(AntiMatterModCore.MOD_ID+":"+"textures/models/Cable.png");
 
-    private CableModel model;
-
     public CableRender(){
-        this.model = new CableModel();
     }
 
     @Override
     public void renderTileEntityAt(TileEntity tileEntity,double x,double y,double z,float f){
+        CableModel model = new CableModel();
+
         GL11.glPushMatrix();
         GL11.glTranslatef((float)x + 0.5f,(float) y+1.5f,(float) z + 0.5f);
         GL11.glRotatef(180,0f,0f,1f);
@@ -26,7 +25,7 @@ public class CableRender extends TileEntitySpecialRenderer {
         this.bindTexture(texture);
 
         GL11.glPushMatrix();
-        this.model.renderModel(0.0625f);
+        model.renderModel(0.0625f);
         GL11.glPopMatrix();
 
         GL11.glPopMatrix();
