@@ -4,9 +4,6 @@ import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-/**
- * Created by 西村　航 on 2016/09/21.
- */
 public class CableModel extends ModelBase{
 
     ModelRenderer Shape1;
@@ -17,7 +14,7 @@ public class CableModel extends ModelBase{
         textureHeight = 32;
 
         Shape1 = new ModelRenderer(this, 0, 0);
-        Shape1.addBox(0F, 0F, 0F, 3, 3, 16);
+        Shape1.addBox(0F, -6.5F, 0F, 3, 3, 16);
         Shape1.setRotationPoint(-1.5F, 21F, -8F);
         Shape1.setTextureSize(64, 32);
         Shape1.mirror = true;

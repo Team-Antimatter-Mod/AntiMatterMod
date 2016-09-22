@@ -16,7 +16,7 @@ public class Cable extends BlockContainer {
         setResistance(0.0F);
         setCreativeTab(AntiMatterModRegistry.tabMachines);
         setBlockTextureName(AntiMatterModCore.MOD_ID+":"+"/blocks/cable");
-        setBlockBounds(0.4f,0f,0f,0.6f,0.1875f,1f);
+        //setBlockBounds(0.4f,0f,0f,0.6f,0.1875f,1f);
     }
 
     @Override
