@@ -13,6 +13,7 @@ import antimattaermod.core.Util.MetaItemBase;
 import antimattaermod.core.crafting.RecipeRemover;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -103,12 +104,15 @@ public class AntiMatterModRegistry {
         //Renderの登録
         proxy.registerRenderThings();
         //Recipe削除
-        RecipeRemover.removeRecipe();
-        //Recipe登録
-        GameRegistry.addRecipe(new ItemStack(Items.stick),"WW","WW",'W',Blocks.planks);
     }
     //initで行う登録処理
     static void registerInit(FMLInitializationEvent event){
+        //レシピの登録
+        //TileEntityの登録
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
+    }
+    //postinitで行う処理
+    static void registerPostInit(FMLPostInitializationEvent event){
+        //他mod関連の操作
     }
 }

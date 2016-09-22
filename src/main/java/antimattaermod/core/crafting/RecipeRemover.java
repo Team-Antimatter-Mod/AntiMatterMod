@@ -14,18 +14,6 @@ import java.util.List;
  */
 public class RecipeRemover {
 
-    public static void removeRecipe(){
-        List<IRecipe> recipes = CraftingManager.getInstance().getRecipeList();
-
-        Iterator<IRecipe> remover = recipes.iterator();
-        while (remover.hasNext()){
-            ItemStack itemStack = remover.next().getRecipeOutput();
-            if(itemStack != null && itemStack.getItem() == Items.stick){
-                remover.remove();
-            }
-        }
-    }
-
     /**
      * 指定したアイテムのレシピを消去します。<br>
      * 複数レシピがあった場合すべて消去します。<br>
