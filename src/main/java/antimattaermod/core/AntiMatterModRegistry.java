@@ -1,6 +1,6 @@
 package antimattaermod.core;
 
-import antimattaermod.core.Energy.Transfer.Cable;
+import antimattaermod.core.Energy.Transfer.BlockCable;
 import antimattaermod.core.Item.ItemBlock.CableItemBlock;
 import antimattaermod.core.Item.ItemBlock.MetaItemBlock;
 import antimattaermod.core.Block.Ores.CrystalOreBlock;
@@ -10,7 +10,6 @@ import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerato
 import antimattaermod.core.Item.StatesChecker;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.Util.MetaItemBase;
-import antimattaermod.core.crafting.RecipeRemover;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -88,7 +87,7 @@ public class AntiMatterModRegistry {
 
     //発電機
     public static final Block furnaceGenerator = new BlockFurnaceGenerator();
-    public static final Block cable = new Cable(Material.rock);
+    public static final Block cable = new BlockCable(Material.rock);
     //==================================================================================================================
 
 

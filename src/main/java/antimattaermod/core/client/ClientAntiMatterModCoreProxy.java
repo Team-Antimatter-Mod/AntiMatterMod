@@ -24,12 +24,12 @@ import net.minecraftforge.client.MinecraftForgeClient;
 public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 	
 	@Override
-	public int getNewRenderType() {
+	public int getOverlayRenderType() {
 		return RenderingRegistry.getNextAvailableRenderId();
 	}
 	
 	@Override
-	public void registerRenderers() {
+	public void registerRenderer() {
 		RenderingRegistry.registerBlockHandler(new OverlayBlockRender());
 	}
 
