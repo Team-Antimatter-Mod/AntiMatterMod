@@ -1,9 +1,6 @@
-package antimattaermod.core.Entity;
+package antimattaermod.core.Energy.Transfer;
 
 import net.minecraft.tileentity.TileEntity;
 
-/**
- * Created by 西村　航 on 2016/09/21.
- */
 public class TileEntityCable extends TileEntity {
 }

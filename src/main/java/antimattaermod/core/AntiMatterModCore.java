@@ -40,7 +40,7 @@ public class AntiMatterModCore {
 	
 	@Mod.EventHandler
 	public void posinit(FMLPostInitializationEvent event) {
-		// TODO: 知らん
+		AntiMatterModRegistry.registerPostInit(event);
 	}
 
 	private void loadMeta(ModMetadata metadata){

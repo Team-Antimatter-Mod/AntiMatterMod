@@ -24,7 +24,7 @@ class StatesChecker : Item(){
 
     override fun onItemUse(itemStack: ItemStack?, player: EntityPlayer?, world: World?, x: Int, y: Int, z: Int, p_77648_7_: Int, p_77648_8_: Float, p_77648_9_: Float, p_77648_10_: Float): Boolean {
         val targetBlock : Block = world!!.getBlock(x,y,z)
-        val targetTile : TileEntity = world.getTileEntity(x,y,z)
+        val targetTile : TileEntity? = world.getTileEntity(x,y,z)
         if(!(targetBlock is IAPGenerator && targetTile != null && targetTile is IAPGenerator)){
             return false
         }

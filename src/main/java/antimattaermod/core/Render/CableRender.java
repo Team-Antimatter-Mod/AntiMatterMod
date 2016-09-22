@@ -1,16 +1,12 @@
 package antimattaermod.core.Render;
 
 import antimattaermod.core.AntiMatterModCore;
-import antimattaermod.core.Block.Cable;
 import antimattaermod.core.Model.CableModel;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
-/**
- * Created by 西村　航 on 2016/09/21.
- */
 public class CableRender extends TileEntitySpecialRenderer {
 
     private static final ResourceLocation texture = new ResourceLocation(AntiMatterModCore.MOD_ID+":"+"textures/models/Cable.png");
