@@ -7,7 +7,7 @@ import antimattaermod.core.AntiMatterModRegistry;
 import antimattaermod.core.Entity.TileEntityCable;
 import antimattaermod.core.Render.CableRender;
 import antimattaermod.core.Render.ItemRenderCable;
-import antimattaermod.core.Render.OreBlockRender;
+import antimattaermod.core.Render.OverlayBlockRender;
 import antimattaermod.core.common.AntiMatterModCoreProxy;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -30,7 +30,7 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 	
 	@Override
 	public void registerRenderers() {
-		RenderingRegistry.registerBlockHandler(new OreBlockRender());
+		RenderingRegistry.registerBlockHandler(new OverlayBlockRender());
 	}
 
 	public void registerRenderThings(){

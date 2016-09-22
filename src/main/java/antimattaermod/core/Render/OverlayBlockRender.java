@@ -14,50 +14,58 @@ import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 
-/** <h1>OreBlockRender</h1>
+/** <h1>OverlayBlockRender</h1>
  * <br>
  * @author Raiti
  * @version 1.0.0
  * 
  */
-public class OreBlockRender implements ISimpleBlockRenderingHandler{
+public class OverlayBlockRender implements ISimpleBlockRenderingHandler{
 	
-	public static final int RenderID = AntiMatterModCore.proxy.getNewRenderType();
+	public static final int RenderID = AntiMatterModCore.proxy.getNewRenderType();//自身のレンダ―ID
 	
-	
+
+	/*
+	 * インベントリでのレンダ―処理
+	 */
 	@Override
 	public void renderInventoryBlock(Block block, int metadata, int modelId, RenderBlocks renderer) {
-		
+
 		if(!(block instanceof CrystalOreBlock)) return;
 		CrystalOreBlock cblock = (CrystalOreBlock) block;
 		Tessellator tessellator = Tessellator.instance;
-		
+
+		//不明
 		block.setBlockBoundsForItemRender();
 		renderer.setRenderBoundsFromBlock(block);
-		
+
+		//描写開始位置を指定。
 		GL11.glRotatef(90.0F, 0.0F, 1.0F, 0.0F);
 		GL11.glTranslatef(-0.5F, -0.5F, -0.5F);
-		
+
+		//レンダリング処理
+		//石のテクスチャ―
+
 		tessellator.startDrawingQuads();
-		tessellator.setNormal(0.0F, -1.0F, 0.0F);
-		renderer.renderFaceYNeg(block, 0, 0, 0, cblock.getIcon(0, metadata));
-		tessellator.draw();
-		
+		tessellator.setNormal(0.0F, -1.0F, 0.0F);//不明
+		renderer.renderFaceYNeg(block, 0, 0, 0, cblock.getIcon(0, metadata));//数値は描写座標。実際に変えてみたらわかる1
+		tessellator.draw();//描写
+
 		tessellator.startDrawingQuads();
 		tessellator.setNormal(0.0F, 1.0F, 0.0F);
 		renderer.renderFaceYPos(block, 0, 0, 0, cblock.getIcon(1, metadata));
 		tessellator.draw();
-		
+
 		tessellator.startDrawingQuads();
 		tessellator.setNormal(0.0F, 0.0F, -1.0F);
 		renderer.renderFaceZNeg(block, 0, 0, 0, cblock.getIcon(2, metadata));
 		tessellator.draw();
-		
+
 		tessellator.startDrawingQuads();
 		tessellator.setNormal(0.0F, 0.0F, 1.0F);
 		renderer.renderFaceZPos(block, 0, 0, 0, cblock.getIcon(3, metadata));
 		tessellator.draw();
-		
+
 		tessellator.startDrawingQuads();
 		tessellator.setNormal(-1.0F, 0.0F, 0.0F);
 		renderer.renderFaceXNeg(block, 0, 0, 0, cblock.getIcon(4, metadata));
@@ -67,8 +75,9 @@ public class OreBlockRender implements ISimpleBlockRenderingHandler{
 		tessellator.setNormal(1.0F, 0.0F, 0.0F);
 		renderer.renderFaceXPos(block, 0, 0, 0, cblock.getIcon(5, metadata));
 		tessellator.draw();
-		
-		
+
+
+
 		tessellator.startDrawingQuads();
 		tessellator.setNormal(0.0F, -1.0F, 0.0F);
 		renderer.renderFaceYNeg(block, 0, 0, 0, cblock.getOverlayIcon(0, metadata));
@@ -107,22 +116,24 @@ public class OreBlockRender implements ISimpleBlockRenderingHandler{
 		
 	}
 	
-	
+	/*
+	 * ワールドでのレンダリング
+	 */
 	@Override
 	public boolean renderWorldBlock(IBlockAccess world, int x, int y, int z, Block block, int modelId,
 			RenderBlocks renderer) {
-		
-		renderer.setOverrideBlockTexture(block.getIcon(0,world.getBlockMetadata(x, y, z)));
-		
+
+
+		renderer.setRenderBounds(0, 0, 0, 1, 1, 1);//レンダ―の開始位置と終了位置
+		renderer.renderStandardBlock(block, x, y, z);//スタンダードな直方体を上の指定に合わせて描写
+
+		renderer.setOverrideBlockTexture(((CrystalOreBlock)block).getOverlayIcon(0,world.getBlockMetadata(x, y, z)));//描写テクスチャを変更
+
+
 		renderer.setRenderBounds(0, 0, 0, 1, 1, 1);
 		renderer.renderStandardBlock(block, x, y, z);
 		
-		renderer.setOverrideBlockTexture(((CrystalOreBlock)block).getOverlayIcon(0,world.getBlockMetadata(x, y, z)));
-		
-		renderer.setRenderBounds(0, 0, 0, 1, 1, 1);
-		renderer.renderStandardBlock(block, x, y, z);
-		
-		renderer.setOverrideBlockTexture(null);
+		renderer.setOverrideBlockTexture(null);//変更したら使い終わったらもとに戻そうね
 		
 		return true;
 	}
@@ -130,12 +141,12 @@ public class OreBlockRender implements ISimpleBlockRenderingHandler{
 	
 	@Override
 	public boolean shouldRender3DInInventory(int modelId) {
-		return true;
+		return true;//ここがfalseだとインベントリのブロックは立体じゃなくなる(つまりアイコンが使える)
 	}
 
 	
 	@Override
 	public int getRenderId() {
-		return RenderID;
+		return RenderID;//自身のレンダ―IDを返す
 	}
 }

@@ -4,6 +4,7 @@ import antimattaermod.core.Block.Cable;
 import antimattaermod.core.Item.ItemBlock.CableItemBlock;
 import antimattaermod.core.Item.ItemBlock.MetaItemBlock;
 import antimattaermod.core.Block.Ores.CrystalOreBlock;
+import antimattaermod.core.Block.Ores.OreBlock;
 import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Item.StatesChecker;
@@ -81,8 +82,8 @@ public class AntiMatterModRegistry {
 
     //Block  ===========================================================================================================
     //鉱石
-    public static Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_1", "antimattermodcore:crystaloreblock_1", AntiMatterModRegistry.tabOreBlock, 2,
-            new float[]{5.0F,5.0F}, new byte[]{3,3}, materials, new int[]{10,12});
+    public static Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_1", "stone", "antimattermodcore:crystaloreblock_1", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3}, materials, new int[]{10,12});
+    public  static Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_1", Blocks.stone.getItemIconName(), "antimattermodcore:oreblock_1", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3});
 
     //発電機
     public static final Block furnaceGenerator = new BlockFurnaceGenerator();
