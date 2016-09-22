@@ -19,6 +19,12 @@ public class Cable extends BlockContainer {
         setBlockBounds(0.4f,0f,0f,0.6f,0.1875f,1f);
     }
 
+    @Override
+    public void onBlockAdded(World world, int x, int y, int z) {
+        TileEntityCable tile = (TileEntityCable) world.getTileEntity(x,y,z);
+
+    }
+
     //たぶん自作のRender使うときはこれ
     public int getRenderType(){
         return -1;

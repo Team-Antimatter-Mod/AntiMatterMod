@@ -4,7 +4,6 @@
 package antimattaermod.core.client;
 
 import antimattaermod.core.AntiMatterModRegistry;
-import antimattaermod.core.Energy.Transfer.TileEntityCable;
 import antimattaermod.core.Render.CableRender;
 import antimattaermod.core.Render.ItemRenderCable;
 import antimattaermod.core.Render.OverlayBlockRender;
