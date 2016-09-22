@@ -14,11 +14,14 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
+import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
@@ -35,7 +38,8 @@ public class CrystalOreBlock extends OreBlock{
 	private int[] doropmeta;
 	
 	private Item doropitems;
-	
+
+
 	public CrystalOreBlock(Material material, String name, String textureName, String overlayTextureName, CreativeTabs tabs, int maxMeta, float[] herdness, byte[] harvestLevels, Item doropitems, int[] doropmeta) {
 		super(material,name,textureName,overlayTextureName,tabs,maxMeta,herdness,harvestLevels);
 		this.doropmeta = doropmeta;
@@ -65,5 +69,14 @@ public class CrystalOreBlock extends OreBlock{
 		return this.quantityDropped(random) * (i + 1);
 	}
 
+	@Override
+	public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z, EntityPlayer player) {
+		Item item = getItem(world, x, y, z);
 
+		if (item == null)
+		{
+			return null;
+		}
+		return new ItemStack(item, 1, world.getBlockMetadata(x,y,z));
+	}
 }
