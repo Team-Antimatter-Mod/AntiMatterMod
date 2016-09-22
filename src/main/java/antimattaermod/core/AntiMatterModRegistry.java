@@ -1,6 +1,6 @@
 package antimattaermod.core;
 
-import antimattaermod.core.Block.Cable;
+import antimattaermod.core.Energy.Transfer.Cable;
 import antimattaermod.core.Item.ItemBlock.CableItemBlock;
 import antimattaermod.core.Item.ItemBlock.MetaItemBlock;
 import antimattaermod.core.Block.Ores.CrystalOreBlock;
