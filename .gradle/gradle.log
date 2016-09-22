@@ -1,0 +1,149 @@
+****************************
+ Powered By MCP:             
+ http://modcoderpack.com/    
+ Searge, ProfMobius, Fesh0r, 
+ R4wk, ZeuX, IngisKahn, bspkrs
+ MCP Data version : unknown
+****************************
+All projects evaluated.
+Selected primary task 'DefaultTaskParameter{taskName='build',projectPath='null'}'
+Tasks to be executed: [task ':compileApiKotlin', task ':compileApiJava', task ':processApiResources', task ':apiClasses', task ':compileKotlin', task ':sourceMainJava', task ':compileJava', task ':processResources', task ':classes', task ':jar', task ':compileTestKotlin', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test', task ':extractMcpData', task ':getVersionJson', task ':extractUserDev', task ':genSrgs', task ':reobf', task ':assemble', task ':check', task ':build']
+:compileApiKotlin (Thread[main,5,main]) started.
+:compileApiKotlin
+Skipping task ':compileApiKotlin' as it has no source files.
+:compileApiKotlin UP-TO-DATE
+:compileApiKotlin (Thread[main,5,main]) completed. Took 0.142 secs.
+:compileApiJava (Thread[main,5,main]) started.
+:compileApiJava
+Skipping task ':compileApiJava' as it has no source files.
+:compileApiJava UP-TO-DATE
+:compileApiJava (Thread[main,5,main]) completed. Took 0.0 secs.
+:processApiResources (Thread[main,5,main]) started.
+:processApiResources
+Skipping task ':processApiResources' as it has no source files.
+:processApiResources UP-TO-DATE
+:processApiResources (Thread[main,5,main]) completed. Took 0.001 secs.
+:apiClasses (Thread[main,5,main]) started.
+:apiClasses
+Skipping task ':apiClasses' as it has no actions.
+:apiClasses UP-TO-DATE
+:apiClasses (Thread[main,5,main]) completed. Took 0.001 secs.
+:compileKotlin (Thread[main,5,main]) started.
+:compileKotlin
+Failed to get resource: GET. [HTTP HTTP/1.1 403 Forbidden: https://libraries.minecraft.net//forgeSrc/1.7.10-10.13.4.1558-1.7.10/forgeSrc-1.7.10-10.13.4.1558-1.7.10.pom]
+Failed to get resource: GET. [HTTP HTTP/1.1 403 Forbidden: https://libraries.minecraft.net/org/scala-lang/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.pom]
+Failed to get resource: GET. [HTTP HTTP/1.1 403 Forbidden: https://libraries.minecraft.net/org/scala-lang/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.pom]
+Failed to get resource: GET. [HTTP HTTP/1.1 403 Forbidden: https://libraries.minecraft.net/org/scala-lang/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.pom]
+file or directory 'C:\Users\sora_suke\Desktop\sorao\java\work\AntiMatterMod\libs', not found
+Executing task ':compileKotlin' (up-to-date check took 14.146 secs) due to:
+  No history is available.
+All input files are considered out-of-date for incremental task ':compileKotlin'.
+file or directory 'C:\Users\sora_suke\Desktop\sorao\java\work\AntiMatterMod\libs', not found
+file or directory 'C:\Users\sora_suke\Desktop\sorao\java\work\AntiMatterMod\libs', not found
+w: Classpath entry points to a non-existent location: C:\Users\sora_suke\Desktop\sorao\java\work\AntiMatterMod\build\classes\api
+w: Classpath entry points to a non-existent location: C:\Users\sora_suke\Desktop\sorao\java\work\AntiMatterMod\build\resources\api
+w: C:\Users\sora_suke\Desktop\sorao\java\work\AntiMatterMod\src\main\java\antimattaermod\core\Item\StatesChecker.kt: (28, 45): Condition 'targetTile != null' is always 'true'
+[KOTLIN] Compilation succeeded
+:compileKotlin (Thread[main,5,main]) completed. Took 19.222 secs.
+:sourceMainJava (Thread[main,5,main]) started.
+:sourceMainJava
+Executing task ':sourceMainJava' (up-to-date check took 0.007 secs) due to:
+  No history is available.
+:sourceMainJava (Thread[main,5,main]) completed. Took 0.491 secs.
+:compileJava (Thread[main,5,main]) started.
+:compileJava
+Marking task ':compileJava' out of date, because kotlin classes are changed
+Executing task ':compileJava' (up-to-date check took 0.006 secs) due to:
+  Task.upToDateWhen is false.
+file or directory 'C:\Users\sora_suke\Desktop\sorao\java\work\AntiMatterMod\libs', not found
+All input files are considered out-of-date for incremental task ':compileJava'.
+file or directory 'C:\Users\sora_suke\Desktop\sorao\java\work\AntiMatterMod\libs', not found
+Compiling with JDK Java compiler API.
+警告: [options] ブートストラップ・クラスパスが-source 1.7と一緒に設定されていません
+警告1個
+file or directory 'C:\Users\sora_suke\Desktop\sorao\java\work\AntiMatterMod\libs', not found
+:compileJava (Thread[main,5,main]) completed. Took 6.289 secs.
+:processResources (Thread[main,5,main]) started.
+:processResources
+Executing task ':processResources' (up-to-date check took 0.174 secs) due to:
+  No history is available.
+:processResources (Thread[main,5,main]) completed. Took 2.961 secs.
+:classes (Thread[main,5,main]) started.
+:classes
+Skipping task ':classes' as it has no actions.
+:classes (Thread[main,5,main]) completed. Took 0.0 secs.
+:jar (Thread[main,5,main]) started.
+:jar
+Executing task ':jar' (up-to-date check took 0.207 secs) due to:
+  No history is available.
+:jar (Thread[main,5,main]) completed. Took 0.352 secs.
+:compileTestKotlin (Thread[main,5,main]) started.
+:compileTestKotlin
+Skipping task ':compileTestKotlin' as it has no source files.
+:compileTestKotlin UP-TO-DATE
+:compileTestKotlin (Thread[main,5,main]) completed. Took 0.001 secs.
+:compileTestJava (Thread[main,5,main]) started.
+:compileTestJava
+Skipping task ':compileTestJava' as it has no source files.
+:compileTestJava UP-TO-DATE
+:compileTestJava (Thread[main,5,main]) completed. Took 0.0 secs.
+:processTestResources (Thread[main,5,main]) started.
+:processTestResources
+Skipping task ':processTestResources' as it has no source files.
+:processTestResources UP-TO-DATE
+:processTestResources (Thread[main,5,main]) completed. Took 0.001 secs.
+:testClasses (Thread[main,5,main]) started.
+:testClasses
+Skipping task ':testClasses' as it has no actions.
+:testClasses UP-TO-DATE
+:testClasses (Thread[main,5,main]) completed. Took 0.001 secs.
+:test (Thread[main,5,main]) started.
+:test
+file or directory 'C:\Users\sora_suke\Desktop\sorao\java\work\AntiMatterMod\build\classes\test', not found
+Skipping task ':test' as it has no source files.
+:test UP-TO-DATE
+:test (Thread[main,5,main]) completed. Took 0.0 secs.
+:extractMcpData (Thread[main,5,main]) started.
+:extractMcpData
+Skipping task ':extractMcpData' as it is up-to-date (took 0.004 secs).
+:extractMcpData UP-TO-DATE
+:extractMcpData (Thread[main,5,main]) completed. Took 0.044 secs.
+:getVersionJson (Thread[main,5,main]) started.
+:getVersionJson
+Executing task ':getVersionJson' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:getVersionJson (Thread[main,5,main]) completed. Took 1.384 secs.
+:extractUserDev (Thread[main,5,main]) started.
+:extractUserDev
+Failed to get resource: GET. [HTTP HTTP/1.1 403 Forbidden: https://libraries.minecraft.net/net/minecraftforge/forge/1.7.10-10.13.4.1558-1.7.10/forge-1.7.10-10.13.4.1558-1.7.10.pom]
+Skipping task ':extractUserDev' as it is up-to-date (took 4.223 secs).
+:extractUserDev UP-TO-DATE
+:extractUserDev (Thread[main,5,main]) completed. Took 4.225 secs.
+:genSrgs (Thread[main,5,main]) started.
+:genSrgs
+Skipping task ':genSrgs' as task onlyIf is false.
+:genSrgs SKIPPED
+:genSrgs (Thread[main,5,main]) completed. Took 3.594 secs.
+:reobf (Thread[main,5,main]) started.
+:reobf
+Executing task ':reobf' (up-to-date check took 1.024 secs) due to:
+  No history is available.
+file or directory 'C:\Users\sora_suke\Desktop\sorao\java\work\AntiMatterMod\libs', not found
+:reobf (Thread[main,5,main]) completed. Took 2.971 secs.
+:assemble (Thread[main,5,main]) started.
+:assemble
+Skipping task ':assemble' as it has no actions.
+:assemble (Thread[main,5,main]) completed. Took 0.0 secs.
+:check (Thread[main,5,main]) started.
+:check
+Skipping task ':check' as it has no actions.
+:check UP-TO-DATE
+:check (Thread[main,5,main]) completed. Took 0.001 secs.
+:build (Thread[main,5,main]) started.
+:build
+Skipping task ':build' as it has no actions.
+:build (Thread[main,5,main]) completed. Took 0.0 secs.
+
+BUILD SUCCESSFUL
+
+Total time: 1 mins 52.87 secs

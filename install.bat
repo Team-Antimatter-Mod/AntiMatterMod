@@ -1,5 +1,5 @@
 call gradlew clean
-call gradlew idea
+call gradlew eclipse
 call gradlew setupDevWorkspace
-call gradlew setupDecompWorkspace idea
+call gradlew setupDecompWorkspace eclipse
 pause
