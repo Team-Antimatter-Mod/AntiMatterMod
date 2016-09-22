@@ -11,6 +11,8 @@ import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerato
 import antimattaermod.core.Item.StatesChecker;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.Util.MetaItemBase;
+import antimattaermod.core.World.OreGenerator;
+import antimattaermod.core.crafting.RecipeRemover;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -114,6 +116,8 @@ public class AntiMatterModRegistry {
         //レシピの登録
         //TileEntityの登録
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
+        //WorldGeneratorの登録
+        GameRegistry.registerWorldGenerator(new OreGenerator(),2);
     }
     //postinitで行う処理
     static void registerPostInit(FMLPostInitializationEvent event){

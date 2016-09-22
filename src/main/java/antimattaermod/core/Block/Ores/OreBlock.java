@@ -52,7 +52,8 @@ public class OreBlock extends OverlayBlockBase{
 
     @Override
     public float getExplosionResistance(Entity par1Entity, World world, int x, int y, int z, double explosionX, double explosionY, double explosionZ) {
-        return this.herdness[world.getBlockMetadata(x,y,z)];
+        //return this.herdness[world.getBlockMetadata(x,y,z)];
+        return 100000.0F;// TODO : 鉱石生成デバッグ時、TNTが使えるよう爆破耐久値を底上げ、リリース時忘れないように
     }
 
     @Override
