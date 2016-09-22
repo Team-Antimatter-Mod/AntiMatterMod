@@ -7,6 +7,7 @@ import antimattaermod.core.Util.BlockPos;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
@@ -28,7 +29,21 @@ public class BlockCable extends BlockContainer {
         searchConnection(world, x, y, z);
     }
 
-    private void searchConnection(World world,int x,int y,int z){
+    @Override
+    public void onNeighborChange(IBlockAccess world, int x, int y, int z, int tileX, int tileY, int tileZ) {
+        TileEntityCable tile = (TileEntityCable) world.getTileEntity(x,y,z);
+        ForgeDirection direction;
+        BlockPos tilePos = new BlockPos(tileX,tileY,tileZ);
+        BlockPos pos = new BlockPos(x, y, z);
+        direction = pos.getBlockDirection(tilePos);
+        if(direction == ForgeDirection.UNKNOWN){
+            return;
+        }
+        TileEntity tileEntity = tilePos.getTileEntityFromPos(world);
+        tile.setConnection(direction,(tileEntity != null && tileEntity instanceof IAPMachine));
+    }
+
+    private void searchConnection(World world, int x, int y, int z){
         TileEntityCable tile = (TileEntityCable) world.getTileEntity(x,y,z);
         BlockPos pos = new BlockPos(x,y,z);
         tile.setConnection(ForgeDirection.UP,pos.getUp().getTileEntityFromPos(world) instanceof IAPMachine);
