@@ -5,7 +5,7 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
 /**
- * Created by 西村　航 on 2016/09/21.
+ * Created by  on 2016/09/21.
  */
 public class CableModel extends ModelBase{
 

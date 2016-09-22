@@ -14,6 +14,10 @@ item.material_9.name=Asuratomium
 item.material_10.name=Crystalite
 item.material_11.name=Tiamite
 item.material_12.name=Abzumite
+item.ingot_01_0.name=Imidium Ingot
+item.ingot_01_1.name=Mitranidlite Ingot
+item.ingot_01_2.name=Raitium Ingot
+item.ingot_01_3.name=Drathium Ingot
 
 tile.crystalOreBlock_1_0.name=Crystalite Ore
 tile.crystalOreBlock_1_1.name=Abzumite Ore

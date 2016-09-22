@@ -6,9 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
-/**
- * Created by 西村　航 on 2016/09/20.
- */
+
 public class JacketedCable extends ItemBlock{
 
     public JacketedCable(Block block){

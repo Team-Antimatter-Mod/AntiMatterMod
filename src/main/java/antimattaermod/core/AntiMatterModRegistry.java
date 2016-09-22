@@ -1,6 +1,7 @@
 package antimattaermod.core;
 
 import antimattaermod.core.Energy.Transfer.Cable;
+import antimattaermod.core.Item.IngotBase;
 import antimattaermod.core.Item.ItemBlock.CableItemBlock;
 import antimattaermod.core.Item.ItemBlock.MetaItemBlock;
 import antimattaermod.core.Block.Ores.CrystalOreBlock;
@@ -77,6 +78,7 @@ public class AntiMatterModRegistry {
             }
         }
     },"material", "antimattermodcore:material", AntiMatterModRegistry.tabMaterials);
+    public static IngotBase ingot_01 = new IngotBase("ingot_01","ingot_01",32);
     //ツール類
     public static final Item statesChecker = new StatesChecker();
     //==================================================================================================================
@@ -96,6 +98,7 @@ public class AntiMatterModRegistry {
     static void registerPreInit(FMLPreInitializationEvent event){
         //Itemの登録
         GameRegistry.registerItem(materials, "material");
+        GameRegistry.registerItem(ingot_01,"ingot_01");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         //Blockの登録
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_1");
@@ -105,6 +108,7 @@ public class AntiMatterModRegistry {
         //Renderの登録
         proxy.registerRenderThings();
         //Recipe削除
+        RecipeRemover.removeRecipe(Items.stick);
     }
     //initで行う登録処理
     static void registerInit(FMLInitializationEvent event){

@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * Created by 西村　航 on 2016/09/22.
+ * Created by on 2016/09/22.
  */
 public class RecipeRemover {
 
