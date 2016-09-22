@@ -25,6 +25,10 @@ public class BlockCable extends BlockContainer {
 
     @Override
     public void onBlockAdded(World world, int x, int y, int z) {
+        searchConnection(world, x, y, z);
+    }
+
+    private void searchConnection(World world,int x,int y,int z){
         TileEntityCable tile = (TileEntityCable) world.getTileEntity(x,y,z);
         BlockPos pos = new BlockPos(x,y,z);
         tile.setConnection(ForgeDirection.UP,pos.getUp().getTileEntityFromPos(world) instanceof IAPMachine);
