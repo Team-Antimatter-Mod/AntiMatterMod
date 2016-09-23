@@ -12,7 +12,7 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.3'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
         classpath 'org.jetbrains:annotations:13.0'
     }
 }
@@ -37,7 +37,7 @@ minecraft {
 }
 
 dependencies {
-    compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.3'
+    compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
     compile 'org.jetbrains:annotations:13.0'
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
