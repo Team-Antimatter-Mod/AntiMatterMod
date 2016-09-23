@@ -1,5 +1,6 @@
 package antimattaermod.core.Block.Ores;
 
+import antimattaermod.core.AntiMatterModCore;
 import antimattaermod.core.Block.OverlayBlockBase;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -33,7 +34,7 @@ public class OreBlock extends OverlayBlockBase{
         super(material);
         this.setBlockName(name);
         this.setBlockTextureName(textureName);
-        this.setOverlayTextureName(overlayTextureName);
+        this.setOverlayTextureName(AntiMatterModCore.MOD_ID+":"+overlayTextureName);
         if(tabs != null)this.setCreativeTab(tabs);
         this.setResistance(1.0F);
         this.setStepSound(Block.soundTypeStone);

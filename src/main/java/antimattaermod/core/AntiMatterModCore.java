@@ -1,5 +1,6 @@
 package antimattaermod.core;
 
+import antimattaermod.core.command.ExclusiveDeleteBlock;
 import antimattaermod.core.common.AntiMatterModCoreProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.ModMetadata;
@@ -7,6 +8,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
 /** <h1>AntiMatterModCore</h1>
  * AntiMatterModCora MainClass<br>
@@ -42,7 +44,13 @@ public class AntiMatterModCore {
 	public void posinit(FMLPostInitializationEvent event) {
 		AntiMatterModRegistry.registerPostInit(event);
 	}
-
+	
+	@Mod.EventHandler
+	public void serverSterting(FMLServerStartingEvent event){
+		event.registerServerCommand(new ExclusiveDeleteBlock());
+	}
+	
+	
 	private void loadMeta(ModMetadata metadata){
 		metadata.modId = MOD_ID;
 		metadata.name = MOD_NAME;

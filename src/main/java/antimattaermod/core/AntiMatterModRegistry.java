@@ -87,8 +87,8 @@ public class AntiMatterModRegistry {
 
     //Block  ===========================================================================================================
     //鉱石
-    public static Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_1", "stone", "antimattermodcore:crystaloreblock_1", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3}, materials, new int[]{10,12});
-    public  static Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_1", "stone", "antimattermodcore:oreblock_1", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3});
+    public static Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_01", "stone", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3}, materials, new int[]{10,12});
+    public  static Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "stone", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 3, new float[]{5.0F,5.0F,5.0F}, new byte[]{3,3,3});
 
     //発電機
     public static final Block furnaceGenerator = new BlockFurnaceGenerator();
@@ -103,8 +103,8 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(ingot_01,"ingot_01");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         //Blockの登録
-        GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_1");
-        GameRegistry.registerBlock(oreBlock_1, MetaItemBlock.class, "oreBlock_1");
+        GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_01");
+        GameRegistry.registerBlock(oreBlock_1, MetaItemBlock.class, "oreBlock_01");
         GameRegistry.registerBlock(furnaceGenerator,"furnaceGeneratorAP");
         GameRegistry.registerBlock(cable, CableItemBlock.class,"Cable");
         //Renderの登録
@@ -119,6 +119,8 @@ public class AntiMatterModRegistry {
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
         //WorldGeneratorの登録
         GameRegistry.registerWorldGenerator(new OreGenerator(),2);
+        
+        
     }
     //postinitで行う処理
     static void registerPostInit(FMLPostInitializationEvent event){
