@@ -9,6 +9,7 @@ import antimattaermod.core.Block.Ores.OreBlock;
 import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Item.StatesChecker;
+import antimattaermod.core.Item.Wire;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.Util.MetaItemBase;
 import antimattaermod.core.World.OreGenerator;
@@ -80,6 +81,7 @@ public class AntiMatterModRegistry {
         }
     },"crystal_01", "crystal/crystal_01", AntiMatterModRegistry.tabMaterials);
     public static IngotBase ingot_01 = new IngotBase("ingot_01","ingot_01",32);//public static Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot_01",32); 特に別クラスにする意味がなければで可能
+    public static Wire wire = new Wire("wire","wire",3);
     
     //ツール類
     public static final Item statesChecker = new StatesChecker();
@@ -101,6 +103,7 @@ public class AntiMatterModRegistry {
         //Itemの登録
         GameRegistry.registerItem(materials, "material");
         GameRegistry.registerItem(ingot_01,"ingot_01");
+        GameRegistry.registerItem(wire,"wire");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         //Blockの登録
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_01");
@@ -115,6 +118,7 @@ public class AntiMatterModRegistry {
     //initで行う登録処理
     static void registerInit(FMLInitializationEvent event){
         //レシピの登録
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0),"S","S",'S',new ItemStack(AntiMatterModRegistry.ingot_01,1,3));
         //TileEntityの登録
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
         //WorldGeneratorの登録

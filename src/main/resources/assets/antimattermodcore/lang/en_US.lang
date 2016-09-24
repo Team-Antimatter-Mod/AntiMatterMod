@@ -21,6 +21,8 @@ item.ingot_01_1.name=Mitranidlite Ingot
 item.ingot_01_2.name=Raitium Ingot
 item.ingot_01_3.name=Drathium Ingot
 
+item.wire_0.name=Wire[Drathium]
+
 tile.crystalOreBlock_1_0.name=Crystalite Ore
 tile.crystalOreBlock_1_1.name=Abzumite Ore
 
