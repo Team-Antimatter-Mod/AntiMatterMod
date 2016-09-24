@@ -9,9 +9,6 @@ import net.minecraft.item.crafting.IRecipe;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * Created by 西村　航 on 2016/09/22.
- */
 public class RecipeRemover {
 
     /**
@@ -20,6 +17,7 @@ public class RecipeRemover {
      * メタデータを持ったアイテムのレシピを利用する場合{@link RecipeRemover#removeRecipe(Item, int)}を利用してください。
      * @param item 消去するアイテム
      */
+    @SuppressWarnings("unchecked")
     public static void removeRecipe(Item item){
         List<IRecipe> recipes = CraftingManager.getInstance().getRecipeList();//全レシピを取得
         Iterator<IRecipe> remover = recipes.iterator();//レシピリストのイテレーター取得
@@ -39,6 +37,7 @@ public class RecipeRemover {
      * @param item 消去するレシピのアイテム
      * @param meta 消去するレシピのアイテムのメタデータ
      */
+    @SuppressWarnings("unchecked")
     public  static  void removeRecipe(Item item,int meta){
         List<IRecipe> recipes = CraftingManager.getInstance().getRecipeList();//全レシピを取得
         Iterator<IRecipe> remover = recipes.iterator();//レシピリストのイテレーター取得

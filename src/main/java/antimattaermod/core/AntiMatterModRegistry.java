@@ -1,6 +1,7 @@
 package antimattaermod.core;
 
-import antimattaermod.core.Energy.Transfer.Cable;
+import antimattaermod.core.Energy.Transfer.BlockCable;
+import antimattaermod.core.Item.IngotBase;
 import antimattaermod.core.Item.ItemBlock.CableItemBlock;
 import antimattaermod.core.Item.ItemBlock.MetaItemBlock;
 import antimattaermod.core.Block.Ores.CrystalOreBlock;
@@ -10,6 +11,7 @@ import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerato
 import antimattaermod.core.Item.StatesChecker;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.Util.MetaItemBase;
+import antimattaermod.core.World.OreGenerator;
 import antimattaermod.core.crafting.RecipeRemover;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -71,12 +73,14 @@ public class AntiMatterModRegistry {
         @Override
         public void addInformation(ItemStack item, EntityPlayer player, List list, boolean p_77624_4_) {
             if(item.getItemDamage() == 11) {
-                list.add(StatCollector.translateToLocal("tile.material_11.information_1"));
-                list.add(StatCollector.translateToLocal("tile.material_11.information_2"));
-                list.add(ChatFormatting.RED+StatCollector.translateToLocal("tile.material_11.information.name"));
+                list.add(StatCollector.translateToLocal("tile.crystal_01_11.information_1"));
+                list.add(StatCollector.translateToLocal("tile.crystal_01_11.information_2"));
+                list.add(ChatFormatting.RED+StatCollector.translateToLocal("tile.crystal_01_11.information.name"));
             }
         }
-    },"material", "antimattermodcore:material", AntiMatterModRegistry.tabMaterials);
+    },"crystal_01", "crystal/crystal_01", AntiMatterModRegistry.tabMaterials);
+    public static IngotBase ingot_01 = new IngotBase("ingot_01","ingot_01",32);//public static Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot_01",32); 特に別クラスにする意味がなければで可能
+    
     //ツール類
     public static final Item statesChecker = new StatesChecker();
     //==================================================================================================================
@@ -88,7 +92,7 @@ public class AntiMatterModRegistry {
 
     //発電機
     public static final Block furnaceGenerator = new BlockFurnaceGenerator();
-    public static final Block cable = new Cable(Material.rock);
+    public static final Block cable = new BlockCable(Material.rock);
     //==================================================================================================================
 
 
@@ -96,6 +100,7 @@ public class AntiMatterModRegistry {
     static void registerPreInit(FMLPreInitializationEvent event){
         //Itemの登録
         GameRegistry.registerItem(materials, "material");
+        GameRegistry.registerItem(ingot_01,"ingot_01");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         //Blockの登録
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_1");
@@ -105,12 +110,15 @@ public class AntiMatterModRegistry {
         //Renderの登録
         proxy.registerRenderThings();
         //Recipe削除
+        RecipeRemover.removeRecipe(Items.stick);
     }
     //initで行う登録処理
     static void registerInit(FMLInitializationEvent event){
         //レシピの登録
         //TileEntityの登録
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
+        //WorldGeneratorの登録
+        GameRegistry.registerWorldGenerator(new OreGenerator(),2);
     }
     //postinitで行う処理
     static void registerPostInit(FMLPostInitializationEvent event){

@@ -7,12 +7,10 @@ import antimattaermod.core.Block.OverlayBlockBase;
 import org.lwjgl.opengl.GL11;
 
 import antimattaermod.core.AntiMatterModCore;
-import antimattaermod.core.Block.Ores.CrystalOreBlock;
 import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 
 /** <h1>OverlayBlockRender</h1>
@@ -23,7 +21,7 @@ import net.minecraft.world.IBlockAccess;
  */
 public class OverlayBlockRender implements ISimpleBlockRenderingHandler{
 	
-	public static final int RenderID = AntiMatterModCore.proxy.getNewRenderType();//自身のレンダ―ID
+	public static final int RenderID = 114514; //自身のレンダ―ID
 	
 
 	/*
@@ -124,7 +122,6 @@ public class OverlayBlockRender implements ISimpleBlockRenderingHandler{
 	public boolean renderWorldBlock(IBlockAccess world, int x, int y, int z, Block block, int modelId,
 			RenderBlocks renderer) {
 
-		if (!(block instanceof OverlayBlockBase)) return false;
 
 		renderer.setRenderBounds(0, 0, 0, 1, 1, 1);//レンダ―の開始位置と終了位置
 		renderer.renderStandardBlock(block, x, y, z);//スタンダードな直方体を上の指定に合わせて描写
@@ -134,7 +131,7 @@ public class OverlayBlockRender implements ISimpleBlockRenderingHandler{
 
 		renderer.setRenderBounds(0, 0, 0, 1, 1, 1);
 		renderer.renderStandardBlock(block, x, y, z);
-		
+
 		renderer.setOverrideBlockTexture(null);//変更したら使い終わったらもとに戻そうね
 		
 		return true;
