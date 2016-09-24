@@ -1,6 +1,9 @@
 package antimattaermod.core.Energy.Transfer
 
 import net.minecraft.nbt.NBTTagCompound
+import net.minecraft.network.NetworkManager
+import net.minecraft.network.Packet
+import net.minecraft.network.play.server.S35PacketUpdateTileEntity
 import net.minecraft.tileentity.TileEntity
 import net.minecraftforge.common.util.ForgeDirection
 import java.util.*
@@ -42,6 +45,10 @@ class TileEntityCable :TileEntity(){
         isConnected[ForgeDirection.SOUTH] = tagCompound.getBoolean("South")
     }
 
+    override fun updateEntity() {
+        super.updateEntity()
+    }
+
     public fun setConnection(direction : ForgeDirection, isConnect : Boolean) {
         isConnected[direction] = isConnect
     }
@@ -52,5 +59,16 @@ class TileEntityCable :TileEntity(){
         }else{
             return isConnected[direction] as Boolean
         }
+    }
+
+    //データの同期
+    override fun onDataPacket(net: NetworkManager?, pkt: S35PacketUpdateTileEntity?) {
+        readFromNBT(pkt!!.func_148857_g())
+    }
+
+    override fun getDescriptionPacket(): Packet {
+        val tagCompound = NBTTagCompound()
+        writeToNBT(tagCompound)
+        return S35PacketUpdateTileEntity(xCoord,yCoord,zCoord,1,tagCompound)
     }
 }
