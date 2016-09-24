@@ -2,9 +2,13 @@ package antimattaermod.core.Util;
 
 import antimattaermod.core.AntiMatterModCore;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 /** <h1>ItemUtil</h1>
  * 中間アイテム簡易登録クラス<br>
@@ -44,32 +48,23 @@ public class ItemUtil {
 		return item;
 	}
 	
-	public static Item CreateItem(String name,String textureName,int maxMeta,CreativeTabs tabs){
+	public static Item CreateItem(@NotNull String name,@NotNull String textureName,int maxMeta,@Nullable CreativeTabs tabs){
 		return CreateItem(name, textureName, tabs, 64, true, maxMeta, false, null);
-	}
-
-	public static Item CreateItem(@NotNull String name, @Nullable String textureName, @Nullable CreativeTabs creativeTabs){
-		Item item = new Item();
-		item.setUnlocalizedName(name);
-		if(textureName == null || textureName.isEmpty()){
-			textureName = name;
-		}
-		item.setTextureName(AntiMatterModCore.MOD_ID+":"+textureName);
-		if(creativeTabs != null) item.setCreativeTab(creativeTabs);
-		return item;
 	}
 	
 	/**
 	 * <h1>CreateItem</h1>
 	 * {@link MetaItemBase}クラスを継承したクラスを使用してアイテムを生成します。<br>
 	 * 主にツールチップの説明表示などに使います。
-	 * @param item アイテム
 	 * @param name アイテム名 {@link Item#setUnlocalizedName(String)}
 	 * @param textureName テクスチャ―名 {@link Item#setTextureName(String)}
+	 * @param maxMeta 最大メタ値
 	 * @param addTab 追加タブ {@link Item#setCreativeTab(CreativeTabs)}
+	 * @param addfunc 情報追加関数 {@link AddInformationfunction#addInformation(ItemStack, EntityPlayer, List, boolean)}
 	 * @return アイテムオブジェクト
 	 */
-	public static Item CreateItem(MetaItemBase item, String name, String textureName, CreativeTabs addTab) {
+	public static Item CreateItem(String name, String textureName, int maxMeta, CreativeTabs addTab, AddInformationfunction addfunc) {
+		MetaItemBase item = new MetaItemBase(maxMeta, addfunc);
 		item.setUnlocalizedName(name);
 		item.setTextureName(AntiMatterModCore.MOD_ID+":"+textureName);
 		if(addTab != null) item.setCreativeTab(addTab);

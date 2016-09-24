@@ -11,6 +11,7 @@ import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Item.StatesChecker;
 import antimattaermod.core.Item.Wire;
+import antimattaermod.core.Util.AddInformationfunction;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.Util.MetaItemBase;
 import antimattaermod.core.World.OreGenerator;
@@ -54,7 +55,7 @@ public class AntiMatterModRegistry {
         @Override
         @SideOnly(Side.CLIENT)
         public Item getTabIconItem() {
-            return Items.diamond;
+            return ingot_01;
         }
     };
     //機械・発電機
@@ -70,19 +71,9 @@ public class AntiMatterModRegistry {
 	
     //Item  ============================================================================================================
     //素材
-    public static Item materials = ItemUtil.CreateItem(new MetaItemBase(13) {
-        @SuppressWarnings("unchecked")
-        @Override
-        public void addInformation(ItemStack item, EntityPlayer player, List list, boolean p_77624_4_) {
-            if(item.getItemDamage() == 11) {
-                list.add(StatCollector.translateToLocal("tile.crystal_01_11.information_1"));
-                list.add(StatCollector.translateToLocal("tile.crystal_01_11.information_2"));
-                list.add(ChatFormatting.RED+StatCollector.translateToLocal("tile.crystal_01_11.information.name"));
-            }
-        }
-    },"crystal_01", "crystal/crystal_01", AntiMatterModRegistry.tabMaterials);
-    public static IngotBase ingot_01 = new IngotBase("ingot_01","ingot_01",32);//public static Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot_01",32); 特に別クラスにする意味がなければで可能
-    public static Wire wire = new Wire("wire","wire",3);
+    public static Item crystal_01 = ItemUtil.CreateItem("crystal_01","crystal/crystal_01",7,AntiMatterModRegistry.tabMaterials);
+    public static Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot/ingot_01",17,AntiMatterModRegistry.tabMaterials, AddInformationfunction::IngotInformation);
+    public static Item wire = ItemUtil.CreateItem("wire","wire/wire",1,AntiMatterModRegistry.tabMaterials);
     
     //ツール類
     public static final Item statesChecker = new StatesChecker();
@@ -90,19 +81,19 @@ public class AntiMatterModRegistry {
 
     //Block  ===========================================================================================================
     //鉱石
-    public static Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_01", "stone", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3}, materials, new int[]{10,12});
+    public static Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_01", "stone", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3}, crystal_01, new int[]{12,10});
     public  static Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "stone", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 3, new float[]{5.0F,5.0F,5.0F}, new byte[]{3,3,3});
 
     //発電機
     public static final Block furnaceGenerator = new BlockFurnaceGenerator();
     public static final Block cable = new BlockCable(Material.rock);
     //==================================================================================================================
-
-
+    
+    
     //preinitで行う登録処理
     static void registerPreInit(FMLPreInitializationEvent event){
         //Itemの登録
-        GameRegistry.registerItem(materials, "material");
+        GameRegistry.registerItem(crystal_01, "material");
         GameRegistry.registerItem(ingot_01,"ingot_01");
         GameRegistry.registerItem(wire,"wire");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");

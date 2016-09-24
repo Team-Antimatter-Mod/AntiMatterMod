@@ -1,33 +1,52 @@
 #---------------------------------------------------JP-Lang
 
-item.jacketed_cable.name=JacketedCable[Slimy]
+#--------------------------------------------クリスタル
+item.crystal_01_0.name=アプスマイト
+item.crystal_01_1.name=クリスタライト
+item.crystal_01_2.name=メトライト
+item.crystal_01_3.name=アラモナイト
+item.crystal_01_4.name=アクアルチル
+item.crystal_01_5.name=リュウマイト
+item.crystal_01_6.name=アルステマイト
 
-item.crystal_01_0.name=イミジウム
-item.crystal_01_1.name=ミトラナイドライト
-item.crystal_01_2.name=ライチウム
-item.crystal_01_3.name=ドランチウム
-item.crystal_01_4.name=パラジライト
-item.crystal_01_5.name=タクミウム
-item.crystal_01_6.name=メトライト
-item.crystal_01_7.name=アラモナイト
-item.crystal_01_8.name=ストルビモナイト
-item.crystal_01_9.name=アスラトミウム
-item.crystal_01_10.name=クリスタライト
-item.crystal_01_11.name=ティアマイト
-item.crystal_01_12.name=アプスマイト
+#--------------------------------------------インゴット
+item.ingot_01_0.name=ティアマイト
+item.ingot_01_1.name=ライチウム インゴット
+item.ingot_01_2.name=ドランチウム インゴット
+item.ingot_01_3.name=パラジライト インゴット
+item.ingot_01_4.name=タクミウム インゴット
+item.ingot_01_5.name=ソラライト インゴット
+item.ingot_01_6.name=エミリリウム インゴット
+item.ingot_01_7.name=イミジウム インゴット
+item.ingot_01_8.name=ミトラナイドライト インゴット
+item.ingot_01_9.name=ストルビモライト インゴット
+item.ingot_01_10.name=アスラトミウム インゴット
+item.ingot_01_11.name=ミドナライト インゴット
+item.ingot_01_12.name=ミラニウム インゴット
+item.ingot_01_13.name=テューラリウム インゴット
+item.ingot_01_14.name=ディグライト インゴット
+item.ingot_01_15.name=アストノイド インゴット
+item.ingot_01_16.name=パジライト インゴット
 
-item.ingot_01_0.name=イミジウム インゴット
-item.ingot_01_1.name=ミトラナイドライト インゴット
-item.ingot_01_2.name=ライチウム インゴット
-item.ingot_01_3.name=ドランチウム インゴット
+#--------------------------------------------ワイヤー
+item.wire_0.name=ワイヤー[ドランチウム]
 
-tile.crystalOreBlock_1_0.name=クリスタライト鉱石
-tile.crystalOreBlock_1_1.name=アプスマイト鉱石
+#--------------------------------------------クリスタル鉱石ブロック
+tile.crystalOreBlock_01_0.name=アプスマイト鉱石
+tile.crystalOreBlock_01_1.name=クリスタライト鉱石
 
+#--------------------------------------------鉱石ブロック
+tile.oreBlock_01_0.name=ティアマイト鉱石
+tile.oreBlock_01_1.name=ライチウム鉱石
+tile.oreBlock_01_2.name=ドランチウム鉱石
+
+#--------------------------------------------タブ
 itemGroup.ammaterials=反物質modコアの素材
 itemGroup.tabOreBlock=反物質modコアの鉱石ブロック
 itemGroup.ammachines=反物質modコアの機械
 
+
+#--------------------------------------------情報
 tile.crystal_01_11.information_1=1200年前に半分に割れて落ちた
 tile.crystal_01_11.information_2=ティアマト彗星の中にあった金属。
 tile.crystal_01_11.information.name=君の名は。
