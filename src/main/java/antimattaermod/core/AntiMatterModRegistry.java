@@ -1,6 +1,7 @@
 package antimattaermod.core;
 
 import antimattaermod.core.Energy.Transfer.BlockCable;
+import antimattaermod.core.Energy.Transfer.TileEntityCable;
 import antimattaermod.core.Item.IngotBase;
 import antimattaermod.core.Item.ItemBlock.CableItemBlock;
 import antimattaermod.core.Item.ItemBlock.MetaItemBlock;
@@ -121,6 +122,7 @@ public class AntiMatterModRegistry {
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0),"S","S",'S',new ItemStack(AntiMatterModRegistry.ingot_01,1,3));
         //TileEntityの登録
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
+        GameRegistry.registerTileEntity(TileEntityCable.class,"tileCableAP");
         //WorldGeneratorの登録
         GameRegistry.registerWorldGenerator(new OreGenerator(),2);
         
