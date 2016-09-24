@@ -19,7 +19,7 @@ public class OreGenerator implements IWorldGenerator {
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
 
         if (world.provider instanceof WorldProviderSurface){
-            oreGenerateOverworld(random,chunkX << 4,chunkZ,world,chunkGenerator,chunkProvider);
+            oreGenerateOverworld(random,chunkX,chunkZ,world,chunkGenerator,chunkProvider);
         }else if (world.provider instanceof WorldProviderHell){
             oreGenerateHell(random,chunkX,chunkZ,world,chunkGenerator,chunkProvider);
         }else if (world.provider instanceof WorldProviderEnd){
@@ -31,22 +31,42 @@ public class OreGenerator implements IWorldGenerator {
     }
 
     private  void oreGenerateOverworld(Random random, int x, int z, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
-
-        for(int i = 0; i < 16; i++) {
-            int genX = x + random.nextInt(16);
-            int genY = 16 + random.nextInt(15);
-            int genZ = z + random.nextInt(16);
-            System.out.println(new WorldGenMinable(AntiMatterModRegistry.crystalOreBlock_1, 0, 5, Blocks.stone).generate(world, random, genX, genY, genZ)+":"+genX+","+genY+","+genZ);
+        
+        for(OreGeneratorEntry entry:OreGeneratorEntry.ORE_GENERATOR_ENTRIES){
+            for (int i = 0; i < entry.getLoop(); i++){
+                if (entry.isGeneratOverworld() == false) continue;
+                int genX = (x << 4) + random.nextInt(16);
+                int genY = (entry.getMinYOverworld() + random.nextInt(entry.getMaxYOverworld()-entry.getMinYOverworld()));
+                int genZ = (z << 4) + random.nextInt(16);
+                entry.getGenMinable().generate(world,random,genX,genY,genZ);
+            }
+            
         }
 
     }
 
     private  void oreGenerateHell(Random random, int x, int z, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
-
+        for(OreGeneratorEntry entry:OreGeneratorEntry.ORE_GENERATOR_ENTRIES){
+            if (entry.isGeneratHell() == false) continue;
+            for (int i = 0; i < entry.getLoop(); i++){
+                int genX = (x << 4) + random.nextInt(16);
+                int genY = (entry.getMinYHell() + random.nextInt(entry.getMaxYHell()-entry.getMinYHell()));
+                int genZ = (z << 4) + random.nextInt(16);
+                entry.getGenMinable().generate(world,random,genX,genY,genZ);
+                
+            }
+        }
     }
 
     private  void oreGenerateEnd(Random random, int x, int z, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
-
+        for(OreGeneratorEntry entry:OreGeneratorEntry.ORE_GENERATOR_ENTRIES){
+            for (int i = 0; i < entry.getLoop(); i++){
+                int genX = (x << 4) + random.nextInt(16);
+                int genY = (entry.getMinYEnd() + random.nextInt(entry.getMaxYEnd()-entry.getMinYEnd()));
+                int genZ = (z << 4) + random.nextInt(16);
+                entry.getGenMinable().generate(world,random,genX,genY,genZ);
+            }
+        }
     }
 
 
