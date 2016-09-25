@@ -73,7 +73,8 @@ public class AntiMatterModRegistry {
     //素材
     public static Item crystal_01 = ItemUtil.CreateItem("crystal_01","crystal/crystal_01",7,AntiMatterModRegistry.tabMaterials);
     public static Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot/ingot_01",17,AntiMatterModRegistry.tabMaterials, AddInformationfunction::IngotInformation);
-    public static Item wire = ItemUtil.CreateItem("wire","wire/wire",1,AntiMatterModRegistry.tabMaterials);
+    public static Item wire = ItemUtil.CreateItem("wire","wire/wire",3,AntiMatterModRegistry.tabMaterials);
+    public static Item magnete = ItemUtil.CreateItem("magnete","magnete/magnete",1,AntiMatterModRegistry.tabMaterials);
     
     //ツール類
     public static final Item statesChecker = new StatesChecker();
@@ -96,6 +97,7 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(crystal_01, "material");
         GameRegistry.registerItem(ingot_01,"ingot_01");
         GameRegistry.registerItem(wire,"wire");
+        GameRegistry.registerItem(magnete,"magnete");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         //Blockの登録
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_01");
