@@ -29,7 +29,7 @@ item.ingot_01_15.name=アストノイド インゴット
 item.ingot_01_16.name=パジライト インゴット
 
 #--------------------------------------------ワイヤー
-item.wire_0.name=ワイヤー[ドランチウム]
+item.wire_01_0.name=ワイヤー[ドランチウム]
 
 #--------------------------------------------クリスタル鉱石ブロック
 tile.crystalOreBlock_01_0.name=アプスマイト鉱石
@@ -39,14 +39,27 @@ tile.crystalOreBlock_01_1.name=クリスタライト鉱石
 tile.oreBlock_01_0.name=ティアマイト鉱石
 tile.oreBlock_01_1.name=ライチウム鉱石
 tile.oreBlock_01_2.name=ドランチウム鉱石
+tile.oreBlock_01_3.name=パラジライト鉱石
+tile.oreBlock_01_4.name=ソラライト鉱石
+tile.oreBlock_01_5.name=エミリリウム鉱石
+tile.oreBlock_01_6.name=イミジウム鉱石
+tile.oreBlock_01_7.name=ミトラナイドライト鉱石
+tile.oreBlock_01_8.name=ストルビモナイト鉱石
+tile.oreBlock_01_9.name=アスラトミウム鉱石
+tile.oreBlock_01_10.name=ミドナライト鉱石
+tile.oreBlock_01_11.name=ミラニウム鉱石
+tile.oreBlock_01_12.name=テューラリウム鉱石
+tile.oreBlock_01_13.name=ディグライト鉱石
+tile.oreBlock_01_14.name=アストノイド鉱石
+tile.oreBlock_01_15.name=パジライト鉱石
 
 #--------------------------------------------タブ
 itemGroup.ammaterials=反物質modコアの素材
 itemGroup.tabOreBlock=反物質modコアの鉱石ブロック
 itemGroup.ammachines=反物質modコアの機械
 
-
 #--------------------------------------------情報
-tile.crystal_01_11.information_1=1200年前に半分に割れて落ちた
-tile.crystal_01_11.information_2=ティアマト彗星の中にあった金属。
-tile.crystal_01_11.information.name=君の名は。
+tile.ingot_01_0.information_1=1200年前に半分に割れて落ちた
+tile.ingot_01_0.information_2=ティアマト彗星の中にあった金属。
+tile.ingot_01_0.information.name=君の名は。
+tile.ingot_01_1>6.information=開発者名の素材：

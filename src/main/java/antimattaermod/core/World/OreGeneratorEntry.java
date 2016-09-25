@@ -1,9 +1,9 @@
 package antimattaermod.core.World;
 
 import antimattaermod.core.AntiMatterModRegistry;
-import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.gen.feature.WorldGenMinable;
+import net.minecraft.world.gen.feature.WorldGenerator;
 
 import java.util.ArrayList;
 
@@ -21,8 +21,21 @@ public class OreGeneratorEntry {
 	public static final ArrayList<OreGeneratorEntry> ORE_GENERATOR_ENTRIES = new ArrayList<>();
 	
 	static {
-		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 0, 20, Blocks.stone),16,true,true,true,0,10,100,1,10,200,1,10,200));
-		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 1, 20, Blocks.stone),16,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 1, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 2, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 3, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 4, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 5, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 6, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 7, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 8, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 9, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 10, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 11, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 12, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 13, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 14, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenMinable(AntiMatterModRegistry.oreBlock_1, 15, 10, Blocks.stone),5,true,true,true,0,10,100,1,10,200,1,10,200));
 	}
 	
 	
@@ -46,9 +59,9 @@ public class OreGeneratorEntry {
 	
 	private int maxYEnd;
 	
-	private WorldGenMinable genMinable;
+	private WorldGenerator genMinable;
 	
-	public OreGeneratorEntry(WorldGenMinable genMinable, int loop, boolean isGeneratOverworld, boolean isGeneratHell, boolean isGeneratEnd, int ... limiter){
+	public OreGeneratorEntry(WorldGenerator genMinable, int loop, boolean isGeneratOverworld, boolean isGeneratHell, boolean isGeneratEnd, int ... limiter){
 		this.loop = loop;
 		this.isGeneratOverworld = isGeneratOverworld;
 		this.isGeneratHell = isGeneratHell;
@@ -116,7 +129,7 @@ public class OreGeneratorEntry {
 		return isGeneratOverworld;
 	}
 	
-	public WorldGenMinable getGenMinable() {
+	public WorldGenerator getGenMinable() {
 		return genMinable;
 	}
 }
