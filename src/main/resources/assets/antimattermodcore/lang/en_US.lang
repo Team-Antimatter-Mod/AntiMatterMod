@@ -29,7 +29,7 @@ item.ingot_01_15.name=Astnides Ingot
 item.ingot_01_16.name=Pazilite Ingot
 
 #--------------------------------------------wire
-item.wire_0.name=Wire[Drantium]
+item.wire_01_0.name=Wire[Drantium]
 
 #--------------------------------------------CrystalOreBlock
 tile.crystalOreBlock_01_0.name=Crystalite Ore
@@ -39,14 +39,27 @@ tile.crystalOreBlock_01_1.name=Abzumite Ore
 tile.oreBlock_01_0.name=Tiamite Ore
 tile.oreBlock_01_1.name=Raitium Ore
 tile.oreBlock_01_2.name=Drantium Ore
+item.oreBlock_01_3.name=Palazirite Ore
+item.oreBlock_01_4.name=Soralite Ore
+item.oreBlock_01_5.name=Emirinium Ore
+item.oreBlock_01_6.name=Imidium Ore
+item.oreBlock_01_7.name=Mitranidelite Ore
+item.oreBlock_01_8.name=Stallvimolite Ore
+item.oreBlock_01_9.name=Asuratomium Ore
+item.oreBlock_01_10.name=Midonalite Ore
+item.oreBlock_01_11.name=Miranium Ore
+item.oreBlock_01_12.name=Teyurarium Ore
+item.oreBlock_01_13.name=Diglite Ore
+item.oreBlock_01_14.name=Astnides Ore
+item.oreBlock_01_15.name=Pazilite Ore
 
 #--------------------------------------------Tab
 itemGroup.ammaterials=AntiMatterModCore Materials
 itemGroup.tabOreBlock=AntiMatterModCore OreBlock
 itemGroup.ammachines=AntiMatterModCore Machines
 
-
 #--------------------------------------------Info
-tile.crystal_01_11.information_1=There was metal in the Tiamat comet 
-tile.crystal_01_11.information_2=fell cracked in half in 1200 years ago.
-tile.crystal_01_11.information.name=Your name.
+tile.ingot_01_0.information_1=There was metal in the Tiamat comet
+tile.ingot_01_0.information_2=fell cracked in half in 1200 years ago.
+tile.ingot_01_0.information.name=Your name.
+tile.ingot_01_1>6.information.=DeveloperNameMaterial:
