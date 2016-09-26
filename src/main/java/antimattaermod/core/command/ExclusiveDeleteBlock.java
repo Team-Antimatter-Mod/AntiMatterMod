@@ -43,7 +43,7 @@ public class ExclusiveDeleteBlock extends CommandBase{
 					for(int iz = z; iz <= posZ; iz++){
 						//System.out.println(x+","+y+","+z);
 						if(!(world.getBlock(ix,iy,iz) == getobject && (world.getBlockMetadata(ix,iy,iz) == meta || meta == -1)))
-							world.setBlock(ix,iy,iz, Blocks.air);
+							world.setBlock(ix,iy,iz, Blocks.air,0,2);
 						
 					}
 					
