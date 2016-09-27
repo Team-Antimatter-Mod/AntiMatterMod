@@ -9,9 +9,11 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import java.util.List;
 
@@ -113,23 +115,41 @@ public class OreBlock extends OverlayBlockBase{
     public String getOverlayTextureName() {
         return overlayTextureName;
     }
-
+    
     @Override
-    public IIcon getOverlayIcon(int par, int meta) {
-        return Overlaytextures[meta];
+    public IIcon getBaseIcon(IBlockAccess world, int x, int y, int z) {
+        if (this.baseTextures != null){
+            int meta = world.getBlockMetadata(x,y,z);
+            if(this.handle != 0){
+                String binary = Integer.toBinaryString(this.handle);
+                if (binary.length() > meta && binary.charAt(meta) == '1'){
+                    return this.baseTextures[0];
+                }
+            }
+        }
+        return Blocks.stone.getIcon(0,0);
+    }
+    
+    @Override
+    public IIcon getBaseIcon(int meta) {
+        if(this.baseTextureNames != null){
+            if(this.handle != 0){
+                String binary = Integer.toBinaryString(this.handle);
+                if(binary.length() > meta && binary.charAt(meta) == '1'){
+                    return this.baseTextures[0];
+                }
+            }
+        }
+        return Blocks.stone.getIcon(0,0);
     }
     
     @Override
     public IIcon getIcon(int par, int meta) {
-        if(this.baseTextures != null){
-            if(this.handle != 0){
-                String binary = Integer.toBinaryString(this.handle);
-                if(binary.length() > meta && binary.charAt(meta) == '1'){
-                    return baseTextures[0];
-                }
-            }
-        }
-        
-        return null;
+        return Overlaytextures[meta];
+    }
+    
+    @Override
+    public IIcon getIcon(IBlockAccess p_149673_1_, int p_149673_2_, int p_149673_3_, int p_149673_4_, int p_149673_5_) {
+        return super.getIcon(p_149673_1_, p_149673_2_, p_149673_3_, p_149673_4_, p_149673_5_);
     }
 }
