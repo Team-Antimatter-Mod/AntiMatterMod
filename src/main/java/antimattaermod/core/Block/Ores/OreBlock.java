@@ -15,6 +15,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
+
 import java.util.List;
 
 /**
@@ -127,7 +129,41 @@ public class OreBlock extends OverlayBlockBase{
                 }
             }
         }
-        return Blocks.stone.getIcon(0,0);
+        IIcon icon = getTouchingBlockIcon(world,x,y,z,isTouchingBlock(world,x,y,z));
+        return icon != null ? icon : Blocks.stone.getIcon(0,0);
+    }
+    
+    public static ForgeDirection isTouchingBlock(IBlockAccess world, int x, int y, int z){
+        if(world.getBlock(x,y+1,z) != Blocks.air){
+            return ForgeDirection.UP;
+        }
+        if(world.getBlock(x,y,z-1) != Blocks.air){
+            return ForgeDirection.NORTH;
+        }
+        if(world.getBlock(x,y,z+1) != Blocks.air){
+            return ForgeDirection.SOUTH;
+        }
+        if(world.getBlock(x-1,y,z) != Blocks.air){
+            return ForgeDirection.WEST;
+        }
+        if(world.getBlock(x+1,y,z) != Blocks.air){
+            return ForgeDirection.EAST;
+        }
+        if(world.getBlock(x,y-1,z) != Blocks.air){
+            return ForgeDirection.DOWN;
+        }
+        
+        return ForgeDirection.DOWN;
+    }
+    
+    public static IIcon getTouchingBlockIcon(IBlockAccess world, int x, int y, int z, ForgeDirection dir){
+        Block block = world.getBlock(x+dir.offsetX,y+dir.offsetY,z+dir.offsetZ);
+        if(block == Blocks.stone || block == Blocks.netherrack || block == Blocks.end_stone){
+            return block.getIcon(0,0);
+        }else if(block instanceof OreBlock){
+            return null;//((OreBlock)block).getBaseIcon(world, x+dir.offsetX, y+dir.offsetY, z+dir.offsetZ);
+        }
+        return null;
     }
     
     @Override
