@@ -1,33 +1,65 @@
 #---------------------------------------------------US-Lang
 
-item.jacketed_cable.name=JacketedCable[Slimy]
+#--------------------------------------------Crystal
+item.crystal_01_0.name=Abzumite
+item.crystal_01_1.name=Crystalite
+item.crystal_01_2.name=Metolite
+item.crystal_01_3.name=Alamonite
+item.crystal_01_4.name=Aqualutile
+item.crystal_01_5.name=Lieumite
+item.crystal_01_6.name=Arstetolite
 
-item.crystal_01_0.name=Imidium
-item.crystal_01_1.name=Mitranidlite
-item.crystal_01_2.name=Raitium
-item.crystal_01_3.name=Dranthium
-item.crystal_01_4.name=Palladilite
-item.crystal_01_5.name=Takumium
-item.crystal_01_6.name=Metolite
-item.crystal_01_7.name=Alamonite
-item.crystal_01_8.name=Sutorubimonite
-item.crystal_01_9.name=Asuratomium
-item.crystal_01_10.name=Crystalite
-item.crystal_01_11.name=Tiamite
-item.crystal_01_12.name=Abzumite
+#--------------------------------------------Ingot
+item.ingot_01_0.name=Tiamite
+item.ingot_01_1.name=Raitium Ingot
+item.ingot_01_2.name=Drantium Ingot
+item.ingot_01_3.name=Palazirite Ingot
+item.ingot_01_4.name=Takumium Ingot
+item.ingot_01_5.name=Soralite Ingot
+item.ingot_01_6.name=Emirinium Ingot
+item.ingot_01_7.name=Imidium Ingot
+item.ingot_01_8.name=Mitranidelite Ingot
+item.ingot_01_9.name=Stallvimolite Ingot
+item.ingot_01_10.name=Asuratomium Ingot
+item.ingot_01_11.name=Midonalite Ingot
+item.ingot_01_12.name=Miranium Ingot
+item.ingot_01_13.name=Teyurarium Ingot
+item.ingot_01_14.name=Diglite Ingot
+item.ingot_01_15.name=Astnides Ingot
+item.ingot_01_16.name=Pazilite Ingot
 
-item.ingot_01_0.name=Imidium Ingot
-item.ingot_01_1.name=Mitranidlite Ingot
-item.ingot_01_2.name=Raitium Ingot
-item.ingot_01_3.name=Drathium Ingot
+#--------------------------------------------wire
+item.wire_01_0.name=Wire[Drantium]
 
-tile.crystalOreBlock_1_0.name=Crystalite Ore
-tile.crystalOreBlock_1_1.name=Abzumite Ore
+#--------------------------------------------CrystalOreBlock
+tile.crystalOreBlock_01_0.name=Crystalite Ore
+tile.crystalOreBlock_01_1.name=Abzumite Ore
 
+#--------------------------------------------OreBlock
+tile.oreBlock_01_0.name=Tiamite Ore
+tile.oreBlock_01_1.name=Raitium Ore
+tile.oreBlock_01_2.name=Drantium Ore
+item.oreBlock_01_3.name=Palazirite Ore
+item.oreBlock_01_4.name=Soralite Ore
+item.oreBlock_01_5.name=Emirinium Ore
+item.oreBlock_01_6.name=Imidium Ore
+item.oreBlock_01_7.name=Mitranidelite Ore
+item.oreBlock_01_8.name=Stallvimolite Ore
+item.oreBlock_01_9.name=Asuratomium Ore
+item.oreBlock_01_10.name=Midonalite Ore
+item.oreBlock_01_11.name=Miranium Ore
+item.oreBlock_01_12.name=Teyurarium Ore
+item.oreBlock_01_13.name=Diglite Ore
+item.oreBlock_01_14.name=Astnides Ore
+item.oreBlock_01_15.name=Pazilite Ore
+
+#--------------------------------------------Tab
 itemGroup.ammaterials=AntiMatterModCore Materials
 itemGroup.tabOreBlock=AntiMatterModCore OreBlock
 itemGroup.ammachines=AntiMatterModCore Machines
 
-tile.crystal_01_11.information_1=There was metal in the Tiamat comet 
-tile.crystal_01_11.information_2=fell cracked in half in 1200 years ago.
-tile.crystal_01_11.information.name=Your name.
+#--------------------------------------------Info
+tile.ingot_01_0.information_1=There was metal in the Tiamat comet
+tile.ingot_01_0.information_2=fell cracked in half in 1200 years ago.
+tile.ingot_01_0.information.name=Your name.
+tile.ingot_01_1>6.information.=DeveloperNameMaterial:

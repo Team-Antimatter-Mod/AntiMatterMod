@@ -24,8 +24,8 @@ tasks.withType(Jar) {
     compileJava.options.encoding = 'UTF-8'
     compileJava.options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
 }
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
 
 version = "1.0.0"
 group= "TeamAntimatterMod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html

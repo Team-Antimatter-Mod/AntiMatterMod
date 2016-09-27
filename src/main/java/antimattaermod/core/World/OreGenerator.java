@@ -60,6 +60,7 @@ public class OreGenerator implements IWorldGenerator {
 
     private  void oreGenerateEnd(Random random, int x, int z, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
         for(OreGeneratorEntry entry:OreGeneratorEntry.ORE_GENERATOR_ENTRIES){
+            if (entry.isGeneratEnd() == false) continue;
             for (int i = 0; i < entry.getLoop(); i++){
                 int genX = (x << 4) + random.nextInt(16);
                 int genY = (entry.getMinYEnd() + random.nextInt(entry.getMaxYEnd()-entry.getMinYEnd()));

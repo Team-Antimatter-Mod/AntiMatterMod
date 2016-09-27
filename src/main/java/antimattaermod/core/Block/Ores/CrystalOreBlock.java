@@ -38,16 +38,25 @@ public class CrystalOreBlock extends OreBlock{
 	private int[] doropmeta;
 	
 	private Item doropitems;
-
-
-	public CrystalOreBlock(Material material, String name, String textureName, String overlayTextureName, CreativeTabs tabs, int maxMeta, float[] herdness, byte[] harvestLevels, Item doropitems, int[] doropmeta) {
-		super(material,name,textureName,overlayTextureName,tabs,maxMeta,herdness,harvestLevels);
+	
+	
+	public CrystalOreBlock(Material material, String name, String baseTextureName, int handle, String overlayTextureName, CreativeTabs tabs, int maxMeta, float[] herdness, byte[] harvestLevels, Item doropitems, int [] doropmeta) {
+		super(material,name,baseTextureName,handle,overlayTextureName,tabs,maxMeta,herdness,harvestLevels);
 		this.doropmeta = doropmeta;
 		this.doropitems = doropitems;
 	}
-
 	
-	@Override
+	public CrystalOreBlock(Material material, String name, String overlayTextureName, CreativeTabs tabs, int maxMeta, float[] herdness, byte[] harvestLevels,Item doropitems,int[] doropmeta){
+		this(material,name,null,0,overlayTextureName,tabs,maxMeta,herdness,harvestLevels,doropitems,doropmeta);
+	}
+	
+	public CrystalOreBlock(Material material, String name, String textureName, String baseTextureNames[], String overlayTextureName, CreativeTabs tabs, int maxMeta, float[] herdness, byte[] harvestLevels, Item doropitems, int[] doropmeta) {
+		super(material, name, baseTextureNames, overlayTextureName, tabs, maxMeta, herdness, harvestLevels);
+		this.doropmeta = doropmeta;
+		this.doropitems = doropitems;
+	}
+	
+		@Override
 	public int getExpDrop(IBlockAccess world, int metadata, int fortune) {
 		return MathHelper.getRandomIntegerInRange(random, 7, 10+(fortune*3));
 	}
