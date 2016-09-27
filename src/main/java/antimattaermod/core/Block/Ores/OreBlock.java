@@ -9,10 +9,14 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
+
 import java.util.List;
 
 /**
@@ -113,23 +117,75 @@ public class OreBlock extends OverlayBlockBase{
     public String getOverlayTextureName() {
         return overlayTextureName;
     }
-
+    
     @Override
-    public IIcon getOverlayIcon(int par, int meta) {
-        return Overlaytextures[meta];
+    public IIcon getBaseIcon(IBlockAccess world, int x, int y, int z) {
+        if (this.baseTextures != null){
+            int meta = world.getBlockMetadata(x,y,z);
+            if(this.handle != 0){
+                String binary = Integer.toBinaryString(this.handle);
+                if (binary.length() > meta && binary.charAt(meta) == '1'){
+                    return this.baseTextures[0];
+                }
+            }
+        }
+        IIcon icon = getTouchingBlockIcon(world,x,y,z,isTouchingBlock(world,x,y,z));
+        return icon != null ? icon : Blocks.stone.getIcon(0,0);
+    }
+    
+    public static ForgeDirection isTouchingBlock(IBlockAccess world, int x, int y, int z){
+        if(world.getBlock(x,y+1,z) != Blocks.air){
+            return ForgeDirection.UP;
+        }
+        if(world.getBlock(x,y,z-1) != Blocks.air){
+            return ForgeDirection.NORTH;
+        }
+        if(world.getBlock(x,y,z+1) != Blocks.air){
+            return ForgeDirection.SOUTH;
+        }
+        if(world.getBlock(x-1,y,z) != Blocks.air){
+            return ForgeDirection.WEST;
+        }
+        if(world.getBlock(x+1,y,z) != Blocks.air){
+            return ForgeDirection.EAST;
+        }
+        if(world.getBlock(x,y-1,z) != Blocks.air){
+            return ForgeDirection.DOWN;
+        }
+        
+        return ForgeDirection.DOWN;
+    }
+    
+    public static IIcon getTouchingBlockIcon(IBlockAccess world, int x, int y, int z, ForgeDirection dir){
+        Block block = world.getBlock(x+dir.offsetX,y+dir.offsetY,z+dir.offsetZ);
+        if(block == Blocks.stone || block == Blocks.netherrack || block == Blocks.end_stone){
+            return block.getIcon(0,0);
+        }else if(block instanceof OreBlock){
+            return null;//((OreBlock)block).getBaseIcon(world, x+dir.offsetX, y+dir.offsetY, z+dir.offsetZ);
+        }
+        return null;
+    }
+    
+    @Override
+    public IIcon getBaseIcon(int meta) {
+        if(this.baseTextureNames != null){
+            if(this.handle != 0){
+                String binary = Integer.toBinaryString(this.handle);
+                if(binary.length() > meta && binary.charAt(meta) == '1'){
+                    return this.baseTextures[0];
+                }
+            }
+        }
+        return Blocks.stone.getIcon(0,0);
     }
     
     @Override
     public IIcon getIcon(int par, int meta) {
-        if(this.baseTextures != null){
-            if(this.handle != 0){
-                String binary = Integer.toBinaryString(this.handle);
-                if(binary.length() > meta && binary.charAt(meta) == '1'){
-                    return baseTextures[0];
-                }
-            }
-        }
-        
-        return null;
+        return Overlaytextures[meta];
+    }
+    
+    @Override
+    public IIcon getIcon(IBlockAccess p_149673_1_, int p_149673_2_, int p_149673_3_, int p_149673_4_, int p_149673_5_) {
+        return super.getIcon(p_149673_1_, p_149673_2_, p_149673_3_, p_149673_4_, p_149673_5_);
     }
 }
