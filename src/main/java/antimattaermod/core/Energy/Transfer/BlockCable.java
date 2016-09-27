@@ -31,19 +31,10 @@ public class BlockCable extends BlockContainer {
 
     @Override
     public void onNeighborChange(IBlockAccess world, int x, int y, int z, int tileX, int tileY, int tileZ) {
-        TileEntityCable tile = (TileEntityCable) world.getTileEntity(x,y,z);
-        ForgeDirection direction;
-        BlockPos tilePos = new BlockPos(tileX,tileY,tileZ);
-        BlockPos pos = new BlockPos(x, y, z);
-        direction = pos.getBlockDirection(tilePos);
-        if(direction == ForgeDirection.UNKNOWN){
-            return;
-        }
-        TileEntity tileEntity = tilePos.getTileEntityFromPos(world);
-        tile.setConnection(direction,(tileEntity != null && tileEntity instanceof IAPMachine));
+        searchConnection(world,x,y,z);
     }
 
-    private void searchConnection(World world, int x, int y, int z){
+    private void searchConnection(IBlockAccess world, int x, int y, int z){
         TileEntityCable tile = (TileEntityCable) world.getTileEntity(x,y,z);
         BlockPos pos = new BlockPos(x,y,z);
         tile.setConnection(ForgeDirection.UP,pos.getUp().getTileEntityFromPos(world) instanceof IAPMachine);
