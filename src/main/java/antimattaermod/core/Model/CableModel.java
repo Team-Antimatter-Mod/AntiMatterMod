@@ -14,6 +14,7 @@ public class CableModel extends ModelBase{
         textureWidth = 64;
         textureHeight = 32;
         Shape = new ModelRenderer(this, 0, 0);
+        
         Shape.setRotationPoint(-1.5F, 21F, -8F);
         Shape.setTextureSize(64, 32);
         Shape.mirror = true;
@@ -21,39 +22,45 @@ public class CableModel extends ModelBase{
     }
 
     public void connectNorth(){
-        Shape.addBox(0,-6.5f,0,3,3,11);
+        Shape.addBox(0,-6.5f,-1.5f,3,3,8);
     }
 
     public void connectSouth(){
-        Shape.addBox(0,-6.5f,5.5f,3,3,11);
+        Shape.addBox(0,-6.5f,9.5f,3,3,8);
     }
 
     public void connectEast(){
-        Shape.addBox(-5.5f,-6.5f,6.5f,11,3,3);
+        Shape.addBox(-6.5f,-6.5f,6.5f,8,3,3);
     }
 
     public void connectWest(){
-        Shape.addBox(0f,-6.5f,6.5f,11,3,3);
+        Shape.addBox(3f,-6.5f,6.5f,8,3,3);
     }
 
     public void connectUp(){
-        Shape.addBox(0f,-13,6.5f,3,11,3);
+        Shape.addBox(0f,-14.5f,6.5f,3,8,3);
     }
 
     public void connectDown(){
-        Shape.addBox(0f,-6.5f,6.5f,3,11,3);
+        Shape.addBox(0f,-3.5f,6.5f,3,8,3);
     }
 
     public void connectNorthToSouth(){
-        Shape.addBox(0,-6.5f,0,3,3,16);
+//        Shape.addBox(0,-6.5f,0,3,3,16);
+        connectNorth();
+        connectSouth();
     }
 
     public void connectEastToWest(){
-        Shape.addBox(-8,-6.5f,6.5f,16,3,3);
+//        Shape.addBox(-7.5f,-6.5f,6.5f,16,3,3);
+        connectEast();
+        connectWest();
     }
 
     public void connectUpToDown(){
-        Shape.addBox(0,-13f,6.5f,3,16,3);
+//        Shape.addBox(0,-13f,6.5f,3,16,3);
+        connectUp();
+        connectDown();
     }
 
     public void nonConnect(){

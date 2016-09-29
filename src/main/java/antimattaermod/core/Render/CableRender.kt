@@ -49,8 +49,9 @@ class CableRender : TileEntitySpecialRenderer() {
             isConnected = true
         }
         if(!isConnected){
-            model.nonConnect()
+//            model.nonConnect()
         }
+        model.nonConnect()
         GL11.glPushMatrix()
         GL11.glTranslatef(x.toFloat() + 0.5f, y.toFloat() + 1.5f, z.toFloat() + 0.5f)
         GL11.glRotatef(180f, 0f, 0f, 1f)
