@@ -48,7 +48,14 @@ public abstract class OverlayBlockBase extends Block{
     public int getRenderType() {
         return OverlayBlockRender.RenderID;
     }
-
-
-
+    
+    @Override
+    public boolean renderAsNormalBlock() {
+        return false;
+    }
+    
+    @Override
+    public boolean isOpaqueCube() {
+        return super.isOpaqueCube();
+    }
 }

@@ -17,6 +17,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -120,6 +121,10 @@ public class OreBlock extends OverlayBlockBase{
     
     @Override
     public IIcon getBaseIcon(IBlockAccess world, int x, int y, int z) {
+        return getBaseIcon(world, x, y, z, null, 0, new ArrayList<>());
+    }
+    
+    public IIcon getBaseIcon(IBlockAccess world, int x, int y, int z, ForgeDirection chain, int count, ArrayList<Point> poitList) {
         if (this.baseTextures != null){
             int meta = world.getBlockMetadata(x,y,z);
             if(this.handle != 0){
@@ -129,39 +134,62 @@ public class OreBlock extends OverlayBlockBase{
                 }
             }
         }
-        IIcon icon = getTouchingBlockIcon(world,x,y,z,isTouchingBlock(world,x,y,z));
+        IIcon icon = getTouchingBlockIcon(world,x,y,z,isTouchingBlock(world,x,y,z,ReversalForgeDirection(chain),poitList),count,poitList);
         return icon != null ? icon : Blocks.stone.getIcon(0,0);
     }
     
-    public static ForgeDirection isTouchingBlock(IBlockAccess world, int x, int y, int z){
+    public static ForgeDirection isTouchingBlock(IBlockAccess world, int x, int y, int z, ForgeDirection chain,ArrayList<Point> pointList){
+        ForgeDirection oreBlocktouvhing = null;
         if(world.getBlock(x,y+1,z) != Blocks.air){
-            return ForgeDirection.UP;
+            if(!(world.getBlock(x,y+1,z) instanceof OreBlock)) {
+                return ForgeDirection.UP;
+            }
+            if (chain != ForgeDirection.UP && !Point.isOnPoint(pointList,x,y+1,z))oreBlocktouvhing = ForgeDirection.UP;
         }
         if(world.getBlock(x,y,z-1) != Blocks.air){
-            return ForgeDirection.NORTH;
+            if(!(world.getBlock(x,y,z-1) instanceof OreBlock)) {
+                return ForgeDirection.NORTH;
+            }
+            if (chain != ForgeDirection.NORTH && !Point.isOnPoint(pointList,x,y,z-1))oreBlocktouvhing = ForgeDirection.NORTH;
         }
         if(world.getBlock(x,y,z+1) != Blocks.air){
-            return ForgeDirection.SOUTH;
+            if(!(world.getBlock(x,y,z+1) instanceof OreBlock)) {
+                return ForgeDirection.SOUTH;
+            }
+            if (chain != ForgeDirection.SOUTH && !Point.isOnPoint(pointList,x,y,z+1))oreBlocktouvhing = ForgeDirection.SOUTH;
         }
         if(world.getBlock(x-1,y,z) != Blocks.air){
-            return ForgeDirection.WEST;
+            if(!(world.getBlock(x-1,y,z) instanceof OreBlock)) {
+                return ForgeDirection.WEST;
+            }
+            if (chain != ForgeDirection.WEST && !Point.isOnPoint(pointList,x-1,y,z))oreBlocktouvhing = ForgeDirection.WEST;
         }
         if(world.getBlock(x+1,y,z) != Blocks.air){
-            return ForgeDirection.EAST;
+            if(!(world.getBlock(x+1,y,z) instanceof OreBlock)) {
+                return ForgeDirection.EAST;
+            }
+            if (chain != ForgeDirection.EAST && !Point.isOnPoint(pointList,x+1,y,z))oreBlocktouvhing = ForgeDirection.EAST;
         }
         if(world.getBlock(x,y-1,z) != Blocks.air){
-            return ForgeDirection.DOWN;
+            if(!(world.getBlock(x,y-1,z) instanceof OreBlock)) {
+                return ForgeDirection.DOWN;
+            }
+            if (chain != ForgeDirection.DOWN && !Point.isOnPoint(pointList,x,y-1,z))oreBlocktouvhing = ForgeDirection.DOWN;
         }
         
-        return ForgeDirection.DOWN;
+        return oreBlocktouvhing;
     }
     
-    public static IIcon getTouchingBlockIcon(IBlockAccess world, int x, int y, int z, ForgeDirection dir){
+    
+    public static IIcon getTouchingBlockIcon(IBlockAccess world, int x, int y, int z, ForgeDirection dir, int count, ArrayList<Point> pointList){
+        if(dir == null) return null;
         Block block = world.getBlock(x+dir.offsetX,y+dir.offsetY,z+dir.offsetZ);
         if(block == Blocks.stone || block == Blocks.netherrack || block == Blocks.end_stone){
             return block.getIcon(0,0);
         }else if(block instanceof OreBlock){
-            return null;//((OreBlock)block).getBaseIcon(world, x+dir.offsetX, y+dir.offsetY, z+dir.offsetZ);
+            count++;
+            pointList.add(new Point(x,y,z));
+            return ((OreBlock)block).getBaseIcon(world, x+dir.offsetX, y+dir.offsetY, z+dir.offsetZ,dir, count, pointList);
         }
         return null;
     }
@@ -179,13 +207,50 @@ public class OreBlock extends OverlayBlockBase{
         return Blocks.stone.getIcon(0,0);
     }
     
+    public static ForgeDirection ReversalForgeDirection(ForgeDirection dir){
+        if (dir == null) return null;
+        switch (dir){
+            case UP:
+                return ForgeDirection.DOWN;
+            case DOWN:
+                return ForgeDirection.UP;
+            case EAST:
+                return ForgeDirection.WEST;
+            case WEST:
+                return ForgeDirection.EAST;
+            case NORTH:
+                return ForgeDirection.SOUTH;
+            case SOUTH:
+                return ForgeDirection.NORTH;
+            default:
+                return null;
+        }
+    }
+    
     @Override
     public IIcon getIcon(int par, int meta) {
         return Overlaytextures[meta];
     }
     
-    @Override
-    public IIcon getIcon(IBlockAccess p_149673_1_, int p_149673_2_, int p_149673_3_, int p_149673_4_, int p_149673_5_) {
-        return super.getIcon(p_149673_1_, p_149673_2_, p_149673_3_, p_149673_4_, p_149673_5_);
+}
+
+class Point{
+    
+    public int x,y,z;
+    
+    public Point(int x, int y, int z){
+        this.x = x;
+        this.y = y;
+        this.z = z;
     }
+    
+    public static boolean isOnPoint(ArrayList<Point> pointList,int x,int y,int z){
+        for(Point point:pointList){
+            if(point.x == x && point.y == y && point.z == z){
+                return true;
+            }
+        }
+        return false;
+    }
+    
 }
