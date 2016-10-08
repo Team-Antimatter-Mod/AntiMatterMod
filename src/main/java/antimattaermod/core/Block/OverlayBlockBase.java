@@ -5,6 +5,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
 
 /**
  * Created by Raiti on 2016/09/22.
@@ -23,12 +24,19 @@ public abstract class OverlayBlockBase extends Block{
     }
 
     /**
-     * オーバーレイのアイコンを返します
-     * @param par 方向
-     * @param meta メタデータ
-     * @return オーバーレイアイコン
+     * ベースのアイコンを返します
+     * @param world ワールド
+     *
+     * @return ベースレイアイコン
      */
-    public abstract IIcon getOverlayIcon(int par, int meta);
+    public abstract IIcon getBaseIcon(IBlockAccess world, int x, int y, int z);
+    
+    /**
+     * ベースアイコンを返します
+     * @param meta メタデータ
+     * @return ベースアイコン
+     */
+    public abstract IIcon getBaseIcon(int meta);
 
 
     /**
@@ -40,7 +48,14 @@ public abstract class OverlayBlockBase extends Block{
     public int getRenderType() {
         return OverlayBlockRender.RenderID;
     }
-
-
-
+    
+    @Override
+    public boolean renderAsNormalBlock() {
+        return false;
+    }
+    
+    @Override
+    public boolean isOpaqueCube() {
+        return super.isOpaqueCube();
+    }
 }

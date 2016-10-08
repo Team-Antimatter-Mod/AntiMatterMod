@@ -20,20 +20,24 @@ import net.minecraft.util.IIcon;
  * @version 1.0.0
  * 
  */
- public abstract class MetaItemBase extends Item{
+ public class MetaItemBase extends Item{
 	
 	/**
 	 * アイテムのテクスチャ―
 	 */
 	private IIcon[] icons;
 	
+	private AddInformationfunction addfunc;
+	
 	/**
 	 * <B>コンストラクター</B><br>
-	 * @param maxMeta 
+	 * @param maxMeta メタデータ最大値
+	 * @param addfunc 情報記載関数
 	 */
-	public MetaItemBase(int maxMeta) {
+	public MetaItemBase(int maxMeta, AddInformationfunction addfunc) {
 		icons = new IIcon[maxMeta];
 		this.setHasSubtypes(true);
+		this.addfunc = addfunc;
 	}
 	
 	/**<h1>registerIcons</h1>
@@ -95,6 +99,8 @@ import net.minecraft.util.IIcon;
 	 * @see net.minecraft.item.Item#addInformation(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, java.util.List, boolean)
 	 */
 	@Override
-	public abstract void addInformation(ItemStack item, EntityPlayer player, List list, boolean p_77624_4_);
+	public void addInformation(ItemStack item, EntityPlayer player, List list, boolean p_77624_4_){
+		addfunc.addInformation(item,player,list,p_77624_4_);
+	}
 	
 }
