@@ -21,19 +21,24 @@ import net.minecraftforge.client.MinecraftForgeClient;
  * @version 1.0.0
  * 
  */
+@SuppressWarnings("unused")
 public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 	
+	/**
+	 * 空いてるレンダ―IDを取得
+	 * @return 空いてるレンダ―ID
+	 */
 	@Override
-	public int getOverlayRenderType() {
+	public int getNewRenderType() {
 		return RenderingRegistry.getNextAvailableRenderId();
 	}
 	
-	@Override
-	public void registerRenderer() {
-		RenderingRegistry.registerBlockHandler(new OverlayBlockRender());
-	}
 
 	public void registerRenderThings(){
+		
+		//オーバーレイブロックレンダ―
+		RenderingRegistry.registerBlockHandler(new OverlayBlockRender());
+		//ケーブルレンダ―
 		TileEntitySpecialRenderer renderer = new CableRender();
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCable.class,renderer);
 		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(AntiMatterModRegistry.cable),new ItemRenderCable(renderer,new TileEntityCable()));
