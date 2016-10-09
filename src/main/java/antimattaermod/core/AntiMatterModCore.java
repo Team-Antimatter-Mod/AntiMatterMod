@@ -9,6 +9,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 /** <h1>AntiMatterModCore</h1>
  * AntiMatterModCora MainClass<br>
@@ -32,6 +33,7 @@ public class AntiMatterModCore {
 	public void preinit(FMLPreInitializationEvent event) {
 		loadMeta(modMetadata);
         AntiMatterModRegistry.registerPreInit(event);
+		
 	}
 	
 	@Mod.EventHandler
