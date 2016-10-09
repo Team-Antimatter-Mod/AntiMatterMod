@@ -67,6 +67,6 @@ class CableRender : TileEntitySpecialRenderer() {
 
     companion object {
 
-        private val texture = ResourceLocation(AntiMatterModCore.MOD_ID + ":" + "textures/models/Cable.png")
+        private val texture = ResourceLocation(AntiMatterModCore.MOD_ID + ":" + "textures/models/cable.png")
     }
 }

@@ -1,5 +1,6 @@
 package antimattaermod.core;
 
+import antimattaermod.core.command.Createsphere;
 import antimattaermod.core.command.ExclusiveDeleteBlock;
 import antimattaermod.core.common.AntiMatterModCoreProxy;
 import cpw.mods.fml.common.Mod;
@@ -50,6 +51,7 @@ public class AntiMatterModCore {
 	@Mod.EventHandler
 	public void serverSterting(FMLServerStartingEvent event){
 		event.registerServerCommand(new ExclusiveDeleteBlock());
+		event.registerServerCommand(new Createsphere());
 	}
 	
 	
