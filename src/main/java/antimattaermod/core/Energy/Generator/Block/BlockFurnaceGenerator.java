@@ -1,17 +1,26 @@
 package antimattaermod.core.Energy.Generator.Block;
 
+import antimattaermod.core.AntiMatterModCore;
 import antimattaermod.core.AntiMatterModRegistry;
 import antimattaermod.core.Energy.APVoltage;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Energy.IAPGenerator;
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityFurnace;
+import net.minecraft.util.IIcon;
+import net.minecraft.util.MathHelper;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
 
 /**
  * @author C6H2Cl2
@@ -20,12 +29,17 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
     //定数
     private APVoltage voltage = APVoltage.HV;
     private int energyStorage = voltage.getMaxEnergy() * 20 * 600;
-
+    
+    //ブロックテクスチャ―
+    @SideOnly(Side.CLIENT)
+    private IIcon FrontIcon;
+    @SideOnly(Side.CLIENT)
+    private IIcon AnotherIcon;
+    
     public BlockFurnaceGenerator() {
         super(Material.rock);
         //他modとの競合回避でAPつけた
         setBlockName("furnaceGeneratorAP");
-        setBlockTextureName("antimattermod:furnaceGenerator");
         setHardness(50f);
         setResistance(50f);
         setHarvestLevel("pickaxe",3);
@@ -59,7 +73,33 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
         }
         return true;
     }
-
+    
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerBlockIcons(IIconRegister register) {
+        this.FrontIcon = register.registerIcon(AntiMatterModCore.MOD_ID+":machine/tier1_furnacegenerator_off");
+        this.AnotherIcon = register.registerIcon(AntiMatterModCore.MOD_ID+":machine/tier1_casing");
+    }
+    
+    @Override
+    @SideOnly(Side.CLIENT)
+    public IIcon getIcon(int side, int meta) {
+        return side == ForgeDirection.SOUTH.ordinal() ? this.FrontIcon : this.AnotherIcon;
+    }
+    
+    @Override
+    public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side) {
+        return side == world.getBlockMetadata(x,y,z) ? this.FrontIcon : this.AnotherIcon;
+    }
+    
+    @Override
+    public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase p_149689_5_, ItemStack p_149689_6_) {
+        
+        int playerDir = MathHelper.floor_double((double)(p_149689_5_.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
+        ForgeDirection[] blockDir = {ForgeDirection.NORTH, ForgeDirection.EAST, ForgeDirection.SOUTH, ForgeDirection.WEST};
+        world.setBlockMetadataWithNotify(x, y, z, blockDir[playerDir].ordinal(), 2);
+    }
+    
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
         return new TileEntityFurnaceGenerator();
