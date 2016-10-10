@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * Created by Raiti on 2016/09/22.
  */
-public class OreBlock extends OverlayBlockBase{
+public class OreBlock extends OverlayBlockBase implements AMMOreBlock{
 
     private String overlayTextureName;
 
@@ -232,6 +232,10 @@ public class OreBlock extends OverlayBlockBase{
         return Overlaytextures[meta];
     }
     
+    @Override
+    public int getMaxMetadate() {
+        return Overlaytextures.length;
+    }
 }
 
 class Point{

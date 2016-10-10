@@ -39,6 +39,7 @@ minecraft {
 dependencies {
     compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
     compile 'org.jetbrains:annotations:13.0'
+
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"

@@ -11,17 +11,13 @@ import antimattaermod.core.Render.OverlayBlockRender;
  */
 public class AntiMatterModCoreProxy {
 	
-	public int getOverlayRenderType() {
-		return OverlayBlockRender.RenderID;
+	public int getNewRenderType(){
+		return -1;
 	}
-
-	public int getCableRenderType(){return BlockCable.RENDER_ID;}
-
+	
 	public void registerRenderer(){}
 
-	public void registerRenderThings(){
-
-	}
+	public void registerRenderThings(){}
 
 	public void registerTileEntitySpecialRender(){
 
