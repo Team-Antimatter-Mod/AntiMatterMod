@@ -2,6 +2,7 @@ package antimattaermod.core;
 
 import antimattaermod.core.Energy.Machine.GUI.AlloySmelterContainer;
 import antimattaermod.core.Energy.Machine.GUI.AlloySmelterGuiContainer;
+import antimattaermod.core.Energy.Machine.TileAlloySmelter;
 import cpw.mods.fml.common.network.IGuiHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
@@ -14,7 +15,7 @@ public class AMMGuiHandler implements IGuiHandler {
     @Override
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         switch (ID){
-            case GuiID_AlloySmelter: return new AlloySmelterContainer(x, y, z);
+            case GuiID_AlloySmelter: return new AlloySmelterContainer(x, y, z,(TileAlloySmelter)(world.getTileEntity(x,y,z)));
             default:return null;
         }
     }
@@ -22,7 +23,7 @@ public class AMMGuiHandler implements IGuiHandler {
     @Override
     public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         switch (ID){
-            case GuiID_AlloySmelter: return new AlloySmelterGuiContainer(x, y, z);
+            case GuiID_AlloySmelter: return new AlloySmelterGuiContainer(x, y, z,(TileAlloySmelter)(world.getTileEntity(x,y,z)));
             default:return null;
         }
     }
