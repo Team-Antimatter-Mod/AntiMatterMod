@@ -61,6 +61,16 @@ class RecipeRegistry {
             val itemStack = recipeStacks[c] ?: throw IllegalArgumentException()
             recipe[i] = itemStack
         })
-        alloySmelterRecipes[name] = AlloySmelterRecipe(recipe.toTypedArray(),tier)
+        alloySmelterRecipes[name] = AlloySmelterRecipe(recipe.toTypedArray(),tier,!isShapeless)
+    }
+
+    //ラッパ達
+    //不定形
+    public fun addAlloySmelterRecipeShapeless(name: String,tier: Int,vararg recipeShape: Array<out Any>){
+        addAlloySmelterRecipe(name,tier,true,recipeShape)
+    }
+    //定形
+    public fun addAlloySmelterRecipeShaped(name: String,tier: Int,vararg recipeShape: Array<out Any>){
+        addAlloySmelterRecipe(name,tier,false,recipeShape)
     }
 }
