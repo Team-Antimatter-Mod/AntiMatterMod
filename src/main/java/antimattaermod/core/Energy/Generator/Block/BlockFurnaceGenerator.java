@@ -32,7 +32,9 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
     
     //ブロックテクスチャ―
     @SideOnly(Side.CLIENT)
-    private IIcon FrontIcon;
+    private IIcon Front_OFF;
+    @SideOnly(Side.CLIENT)
+    private IIcon Front_ON;
     @SideOnly(Side.CLIENT)
     private IIcon AnotherIcon;
     
@@ -71,25 +73,29 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
                 break;
             }
         }
+        
         return true;
     }
     
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister register) {
-        this.FrontIcon = register.registerIcon(AntiMatterModCore.MOD_ID+":machine/tier1_furnacegenerator_off");
+        this.Front_OFF = register.registerIcon(AntiMatterModCore.MOD_ID+":machine/tier1_furnacegenerator_off");
+        this.Front_ON = register.registerIcon(AntiMatterModCore.MOD_ID+":machine/tier1_furnacegenerator_on");
         this.AnotherIcon = register.registerIcon(AntiMatterModCore.MOD_ID+":machine/tier1_casing");
     }
     
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
-        return side == ForgeDirection.SOUTH.ordinal() ? this.FrontIcon : this.AnotherIcon;
+        return side == ForgeDirection.SOUTH.ordinal() ? this.Front_OFF : this.AnotherIcon;
     }
     
     @Override
+    @SideOnly(Side.CLIENT)
     public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side) {
-        return side == world.getBlockMetadata(x,y,z) ? this.FrontIcon : this.AnotherIcon;
+        TileEntityFurnaceGenerator fg = (TileEntityFurnaceGenerator) world.getTileEntity(x,y,z);
+        return side == world.getBlockMetadata(x,y,z) ? fg.getFuelValue() > 0 ? this.Front_ON : this.Front_OFF : this.AnotherIcon;
     }
     
     @Override

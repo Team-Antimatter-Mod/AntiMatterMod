@@ -2,6 +2,7 @@ package antimattaermod.core.common;
 
 import antimattaermod.core.Energy.Transfer.BlockCable;
 import antimattaermod.core.Render.OverlayBlockRender;
+import net.minecraft.world.World;
 
 /** <h1>AntiMatterModCoreProxy</h1>
  * <br>
@@ -21,5 +22,9 @@ public class AntiMatterModCoreProxy {
 
 	public void registerTileEntitySpecialRender(){
 
+	}
+	
+	public World getClientWorld(){
+		return null;
 	}
 }
