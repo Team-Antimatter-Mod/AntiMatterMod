@@ -1,8 +1,6 @@
 package antimattaermod.core.crafting
 
 import net.minecraft.item.ItemStack
-import org.jetbrains.kotlin.cli.jvm.repl.messages.unescapeLineBreaks
-import java.util.*
 
 /**
  * @author C6H2Cl2
@@ -27,6 +25,7 @@ class AlloySmelterRecipe {
     public fun getRequiredTier() : Int = requiredTier
     public fun isShapedRecipe() : Boolean = isShaped
 
+    //レシピ比較用に、equalsをオーバーライドしておいた
     override fun equals(other: Any?): Boolean {
         if (other !is AlloySmelterRecipe){
             return false
