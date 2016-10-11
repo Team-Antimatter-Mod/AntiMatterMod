@@ -56,7 +56,7 @@ public class CrystalOreBlock extends OreBlock{
 		this.doropitems = doropitems;
 	}
 	
-		@Override
+	@Override
 	public int getExpDrop(IBlockAccess world, int metadata, int fortune) {
 		return MathHelper.getRandomIntegerInRange(random, 7, 10+(fortune*3));
 	}

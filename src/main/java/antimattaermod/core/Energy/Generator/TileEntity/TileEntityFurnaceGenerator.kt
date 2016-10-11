@@ -1,7 +1,10 @@
 package antimattaermod.core.Energy.Generator.TileEntity
 
+import antimattaermod.core.AntiMatterModCore
 import antimattaermod.core.Energy.APVoltage
 import antimattaermod.core.Energy.IAPGenerator
+import cpw.mods.fml.relauncher.Side
+import cpw.mods.fml.relauncher.SideOnly
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.network.NetworkManager
 import net.minecraft.network.Packet
@@ -22,6 +25,8 @@ class TileEntityFurnaceGenerator : TileEntity(),IAPGenerator{
     private var storedEnergy : Int = 0
     private var fuel : Float = 0f
     private var currentGenerate : Int = 0
+
+
     init {
 
     }
@@ -51,8 +56,11 @@ class TileEntityFurnaceGenerator : TileEntity(),IAPGenerator{
             currentGenerate = (voltage.maxEnergy * fuel).toInt()
             storedEnergy += currentGenerate
             fuel = 0f
+            val meta : Int = this.worldObj.getBlockMetadata(this.xCoord,this.yCoord,this.zCoord);
+            worldObj.setBlockMetadataWithNotify(this.xCoord,this.yCoord,this.zCoord,if(meta > 5) meta - 6 else meta,2)
         }else{
             currentGenerate = 0
+
         }
     }
 

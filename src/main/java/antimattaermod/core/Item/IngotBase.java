@@ -20,13 +20,13 @@ public class IngotBase extends Item{
 
     private IIcon[] iicon;
 
-    public IngotBase(String name,String texture,int Maxmeta){
+    public IngotBase(String name,String texture,int maxmeta){
         setCreativeTab(AntiMatterModRegistry.tabMaterials);
         setUnlocalizedName(name);
         setTextureName(AntiMatterModCore.MOD_ID+":"+"ingot/"+texture);
         setMaxDamage(0);
         setHasSubtypes(true);
-        this.iicon =  new IIcon[Maxmeta];
+        this.iicon =  new IIcon[maxmeta];
     }
 
     @Override

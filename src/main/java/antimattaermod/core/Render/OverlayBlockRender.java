@@ -3,6 +3,7 @@
  */
 package antimattaermod.core.Render;
 
+import antimattaermod.core.AntiMatterModCore;
 import antimattaermod.core.Block.OverlayBlockBase;
 import net.minecraft.init.Blocks;
 import org.lwjgl.opengl.GL11;
@@ -21,7 +22,7 @@ import net.minecraft.world.IBlockAccess;
  */
 public class OverlayBlockRender implements ISimpleBlockRenderingHandler{
 	
-	public static final int RenderID = 114514; //自身のレンダ―ID
+	public static final int RenderID = AntiMatterModCore.proxy.getNewRenderType(); //自身のレンダ―ID(空いてるIDを取得)
 	
 
 	/*

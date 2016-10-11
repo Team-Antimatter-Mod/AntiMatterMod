@@ -12,8 +12,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
 public class BlockCable extends BlockContainer {
-
-    public static final int RENDER_ID = 334;
+    
     public BlockCable(Material material){
         super(material);
         setBlockName("Cable");
@@ -47,7 +46,7 @@ public class BlockCable extends BlockContainer {
 
     //たぶん自作のRender使うときはこれ
     public int getRenderType(){
-        return RENDER_ID;
+        return -1;
     }
 
     //透明化
