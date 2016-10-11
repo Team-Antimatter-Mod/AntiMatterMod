@@ -29,7 +29,10 @@ public class AntiMatterModCore {
 	public static ModMetadata modMetadata;
 	@SidedProxy(clientSide = "antimattaermod.core.client.ClientAntiMatterModCoreProxy", serverSide = "antimattaermod.core.common.AntiMatterModCoreProxy")
 	public static AntiMatterModCoreProxy proxy;
-	
+
+	@Mod.Instance(MOD_ID)
+	public static AntiMatterModCore INSTANCE;
+
 	@Mod.EventHandler
 	public void preinit(FMLPreInitializationEvent event) {
 		loadMeta(modMetadata);

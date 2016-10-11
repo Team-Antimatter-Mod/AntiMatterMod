@@ -1,9 +1,10 @@
 package antimattaermod.core;
 
 import antimattaermod.core.Block.Ores.BedrockOreBlock;
+import antimattaermod.core.Energy.Machine.BlockAlloySmelter;
+import antimattaermod.core.Energy.Machine.TileAlloySmelter;
 import antimattaermod.core.Energy.Transfer.BlockCable;
 import antimattaermod.core.Energy.Transfer.TileEntityCable;
-import antimattaermod.core.Item.IngotBase;
 import antimattaermod.core.Item.ItemBlock.CableItemBlock;
 import antimattaermod.core.Item.ItemBlock.MetaItemBlock;
 import antimattaermod.core.Block.Ores.CrystalOreBlock;
@@ -11,31 +12,24 @@ import antimattaermod.core.Block.Ores.OreBlock;
 import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Item.StatesChecker;
-import antimattaermod.core.Item.Wire;
 import antimattaermod.core.Util.AddInformationfunction;
 import antimattaermod.core.Util.ItemUtil;
-import antimattaermod.core.Util.MetaItemBase;
 import antimattaermod.core.World.OreGenerator;
 import antimattaermod.core.crafting.RecipeRemover;
-import com.mojang.realmsclient.gui.ChatFormatting;
-import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.StatCollector;
-
-import java.util.List;
 
 import static antimattaermod.core.AntiMatterModCore.proxy;
 
@@ -94,6 +88,9 @@ public class AntiMatterModRegistry {
     //発電機
     public static final Block furnaceGenerator = new BlockFurnaceGenerator();
     public static final Block cable = new BlockCable(Material.rock);
+
+    //機械
+    public static final Block[] alloySmelter = {new BlockAlloySmelter(1),new BlockAlloySmelter(2),new BlockAlloySmelter(3)};
     //==================================================================================================================
 
 
@@ -111,21 +108,25 @@ public class AntiMatterModRegistry {
         GameRegistry.registerBlock(bedrockOreBlock_1, MetaItemBlock.class, "bedrockOreBlock_01");
         GameRegistry.registerBlock(furnaceGenerator,"furnaceGeneratorAP");
         GameRegistry.registerBlock(cable, CableItemBlock.class,"Cable");
+        for(Block block : alloySmelter){
+            GameRegistry.registerBlock(block,block.getUnlocalizedName());
+        }
         //Renderの登録
         proxy.registerRenderThings();
-        //Recipe削除
-        RecipeRemover.removeRecipe(Items.stick);
     }
     //initで行う登録処理
     static void registerInit(FMLInitializationEvent event){
+        //Recipe削除
+        RecipeRemover.removeRecipe(Items.stick);
         //レシピの登録
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0),"S","S",'S',new ItemStack(AntiMatterModRegistry.ingot_01,1,3));
         //TileEntityの登録
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
         GameRegistry.registerTileEntity(TileEntityCable.class,"tileCableAP");
+        GameRegistry.registerTileEntity(TileAlloySmelter.class,"tileAlloySmelter");
         //WorldGeneratorの登録
         GameRegistry.registerWorldGenerator(new OreGenerator(),2);
-        
+        NetworkRegistry.INSTANCE.registerGuiHandler(AntiMatterModCore.INSTANCE,new AMMGuiHandler());
         
     }
     //postinitで行う処理
