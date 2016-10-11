@@ -65,6 +65,8 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
         if(tileEntity.isFuelMax()){
             return false;
         }
+        int meta = world.getBlockMetadata(x,y,z);
+        world.setBlockMetadataWithNotify(x,y,z,meta < 6 ? meta+6 : meta,2);
         int stackSize = heldItem.stackSize;
         for (int i=0;i<stackSize;++i){
             float remainder = tileEntity.addFuel(fuelVal);
@@ -95,7 +97,7 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side) {
         TileEntityFurnaceGenerator fg = (TileEntityFurnaceGenerator) world.getTileEntity(x,y,z);
-        return side == world.getBlockMetadata(x,y,z) ? fg.getFuelValue() > 0 ? this.Front_ON : this.Front_OFF : this.AnotherIcon;
+        return side == world.getBlockMetadata(x,y,z) ? this.Front_OFF : side == world.getBlockMetadata(x,y,z)-6 ? this.Front_ON : this.AnotherIcon;
     }
     
     @Override
@@ -104,6 +106,11 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
         int playerDir = MathHelper.floor_double((double)(p_149689_5_.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
         ForgeDirection[] blockDir = {ForgeDirection.NORTH, ForgeDirection.EAST, ForgeDirection.SOUTH, ForgeDirection.WEST};
         world.setBlockMetadataWithNotify(x, y, z, blockDir[playerDir].ordinal(), 2);
+    }
+    
+    @Override
+    public int getLightValue(IBlockAccess world, int x, int y, int z) {
+        return world.getBlockMetadata(x,y,z) < 6 ? 0 : 15;
     }
     
     @Override
