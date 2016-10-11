@@ -10,8 +10,10 @@ import net.minecraft.world.World;
  * @author C6H2Cl2
  */
 public class BlockAlloySmelter extends BlockContainer {
-    protected BlockAlloySmelter() {
+    private final int tier;
+    public BlockAlloySmelter(int tier) {
         super(Material.rock);
+        this.tier = tier;
     }
 
     @Override
@@ -21,6 +23,6 @@ public class BlockAlloySmelter extends BlockContainer {
 
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
-        return new TileAlloySmelter();
+        return new TileAlloySmelter(tier);
     }
 }
