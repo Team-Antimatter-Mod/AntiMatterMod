@@ -1,4 +1,4 @@
-package antimattaermod.core.World;
+package antimattaermod.core.World.Ore;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;

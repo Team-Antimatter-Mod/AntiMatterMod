@@ -1,11 +1,8 @@
-package antimattaermod.core.World;
+package antimattaermod.core.World.Ore;
 
-import antimattaermod.core.AntiMatterModRegistry;
 import cpw.mods.fml.common.IWorldGenerator;
-import net.minecraft.init.Blocks;
 import net.minecraft.world.*;
 import net.minecraft.world.chunk.IChunkProvider;
-import net.minecraft.world.gen.feature.WorldGenMinable;
 
 import java.util.Random;
 
@@ -19,7 +16,8 @@ public class OreGenerator implements IWorldGenerator {
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
 
         if (world.provider instanceof WorldProviderSurface){
-            oreGenerateOverworld(random,chunkX,chunkZ,world,chunkGenerator,chunkProvider);
+			
+            oreGenerateOverworld(random,chunkX,chunkZ,world, chunkGenerator,chunkProvider);
         }else if (world.provider instanceof WorldProviderHell){
             oreGenerateHell(random,chunkX,chunkZ,world,chunkGenerator,chunkProvider);
         }else if (world.provider instanceof WorldProviderEnd){
@@ -33,6 +31,16 @@ public class OreGenerator implements IWorldGenerator {
     private  void oreGenerateOverworld(Random random, int x, int z, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
         
         for(OreGeneratorEntry entry:OreGeneratorEntry.ORE_GENERATOR_ENTRIES){
+			
+			if(entry.hasGenerateFunction()){
+				OreGeneratorEntry.GenerateFunction function = entry.getGenerateFunction(0);
+				
+				if(function != null){
+					function.oreGenerate(random,x,z,world,chunkProvider,chunkGenerator);
+					return;
+				}
+			}
+			
             for (int i = 0; i < entry.getLoop(); i++){
                 if (entry.isGeneratOverworld() == false) continue;
                 int genX = (x << 4) + random.nextInt(16);

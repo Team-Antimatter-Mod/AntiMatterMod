@@ -1,11 +1,12 @@
-package antimattaermod.core.World;
+package antimattaermod.core.World.Ore;
 
 import antimattaermod.core.AntiMatterModRegistry;
-import net.minecraft.init.Blocks;
-import net.minecraft.world.gen.feature.WorldGenMinable;
+import net.minecraft.world.World;
+import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by Raiti on 2016/09/23.
@@ -36,6 +37,7 @@ public class OreGeneratorEntry {
 		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 13, 10),5,true,true,true,0,10,100,1,10,200,2,10,200));
 		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 14, 10),5,true,true,true,0,10,100,1,10,200,2,10,200));
 		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 15, 10),5,true,true,true,0,10,100,1,10,200,2,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new BedrockGenerator(),1,true,false,false,0,4,5));
 	}
 	
 	
@@ -87,6 +89,33 @@ public class OreGeneratorEntry {
 		
 	}
 	
+	private GenerateFunction[] generateFunctions;
+	
+	public OreGeneratorEntry addGeneratFunction(GenerateFunction function, int ... target){
+		if (this.generateFunctions == null) this.generateFunctions = new GenerateFunction[3];
+		if(target[0] == -1){
+			this.generateFunctions[0] = function;
+			this.generateFunctions[1] = function;
+			this.generateFunctions[2] = function;
+		}
+		for (int i : target){
+			if(this.generateFunctions.length < i) continue;
+			this.generateFunctions[i] = function;
+		}
+		
+		
+		return this;
+	}
+	
+	public boolean hasGenerateFunction(){
+		return generateFunctions == null ? false : true;
+	}
+	
+	public GenerateFunction getGenerateFunction(int index){
+		if(generateFunctions.length < index) return null;
+		return this.generateFunctions[index];
+	}
+	
 	
 	public int getMaxYEnd() {
 		return maxYEnd;
@@ -131,5 +160,10 @@ public class OreGeneratorEntry {
 	
 	public WorldGenerator getGenMinable() {
 		return genMinable;
+	}
+	
+	@FunctionalInterface
+	public interface GenerateFunction{
+		void oreGenerate(Random random, int x, int z, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider);
 	}
 }
