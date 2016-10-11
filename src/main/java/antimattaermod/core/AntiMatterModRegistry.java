@@ -76,6 +76,7 @@ public class AntiMatterModRegistry {
 	public static Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot/ingot_01",17,AntiMatterModRegistry.tabMaterials, AddInformationfunction::IngotInformation);
     public static Item crystal_01 = ItemUtil.CreateItem("crystal_01","crystal/crystal_01",7,AntiMatterModRegistry.tabMaterials);
     public static Item wire = ItemUtil.CreateItem("wire_01","wire/wire_01",1,AntiMatterModRegistry.tabMaterials);
+
     
     //ツール類
     public static final Item statesChecker = new StatesChecker();
@@ -94,8 +95,8 @@ public class AntiMatterModRegistry {
     public static final Block furnaceGenerator = new BlockFurnaceGenerator();
     public static final Block cable = new BlockCable(Material.rock);
     //==================================================================================================================
-    
-    
+
+
     //preinitで行う登録処理
     static void registerPreInit(FMLPreInitializationEvent event){
         //Itemの登録

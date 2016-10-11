@@ -1,5 +1,6 @@
 package antimattaermod.core.Item
 
+import antimattaermod.core.AntiMatterModCore
 import antimattaermod.core.AntiMatterModRegistry
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator
 import antimattaermod.core.Energy.IAPGenerator
@@ -17,7 +18,7 @@ import net.minecraft.world.World
 class StatesChecker : Item(){
     init {
         unlocalizedName = "StatesChecker"
-        setTextureName("antimattaermod:statesChecker")
+        setTextureName(AntiMatterModCore.MOD_ID+":tool/stateschecker")
         creativeTab = AntiMatterModRegistry.tabMachines
         setMaxStackSize(1)
     }

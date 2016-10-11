@@ -9,10 +9,12 @@ import antimattaermod.core.Render.CableRender;
 import antimattaermod.core.Render.ItemRenderCable;
 import antimattaermod.core.Render.OverlayBlockRender;
 import antimattaermod.core.common.AntiMatterModCoreProxy;
+import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.item.Item;
+import net.minecraft.world.World;
 import net.minecraftforge.client.MinecraftForgeClient;
 
 /** <h1>ClientAntiMatterModCoreProxy</h1>
@@ -33,7 +35,7 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 		return RenderingRegistry.getNextAvailableRenderId();
 	}
 	
-
+	@Override
 	public void registerRenderThings(){
 		
 		//オーバーレイブロックレンダ―
@@ -43,9 +45,14 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCable.class,renderer);
 		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(AntiMatterModRegistry.cable),new ItemRenderCable(renderer,new TileEntityCable()));
 	}
-
+	
+	@Override
 	public void registerTileEntitySpecialRender(){
 
 	}
 	
+	@Override
+	public World getClientWorld() {
+		return FMLClientHandler.instance().getClient().theWorld;
+	}
 }
