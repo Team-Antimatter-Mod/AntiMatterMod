@@ -31,6 +31,9 @@ item.ingot_01_16.name=Pazilite Ingot
 #--------------------------------------------wire
 item.wire_01_0.name=Wire[Drantium]
 
+#--------------------------------------------cable
+tile.Cable.name=Drantium cable
+
 #--------------------------------------------CrystalOreBlock
 tile.crystalOreBlock_01_0.name=Crystalite Ore
 tile.crystalOreBlock_01_1.name=Abzumite Ore
@@ -52,6 +55,12 @@ item.oreBlock_01_12.name=Teyurarium Ore
 item.oreBlock_01_13.name=Diglite Ore
 item.oreBlock_01_14.name=Astnides Ore
 item.oreBlock_01_15.name=Pazilite Ore
+
+#--------------------------------------------machine
+tile.furnaceGeneratorAP.name=basic furnaceGenerator
+
+#--------------------------------------------other
+item.StatesChecker.name=StatesChecker
 
 #--------------------------------------------Tab
 itemGroup.ammaterials=AntiMatterModCore Materials
