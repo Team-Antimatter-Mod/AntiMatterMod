@@ -3,7 +3,6 @@ package antimattaermod.core;
 import antimattaermod.core.Block.Ores.BedrockOreBlock;
 import antimattaermod.core.Energy.Transfer.BlockCable;
 import antimattaermod.core.Energy.Transfer.TileEntityCable;
-import antimattaermod.core.Item.IngotBase;
 import antimattaermod.core.Item.ItemBlock.CableItemBlock;
 import antimattaermod.core.Item.ItemBlock.MetaItemBlock;
 import antimattaermod.core.Block.Ores.CrystalOreBlock;
@@ -11,14 +10,10 @@ import antimattaermod.core.Block.Ores.OreBlock;
 import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Item.StatesChecker;
-import antimattaermod.core.Item.Wire;
 import antimattaermod.core.Util.AddInformationfunction;
 import antimattaermod.core.Util.ItemUtil;
-import antimattaermod.core.Util.MetaItemBase;
-import antimattaermod.core.World.OreGenerator;
+import antimattaermod.core.World.Ore.OreGenerator;
 import antimattaermod.core.crafting.RecipeRemover;
-import com.mojang.realmsclient.gui.ChatFormatting;
-import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -28,14 +23,10 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.StatCollector;
-
-import java.util.List;
 
 import static antimattaermod.core.AntiMatterModCore.proxy;
 
@@ -85,7 +76,7 @@ public class AntiMatterModRegistry {
     //Block  ===========================================================================================================
     //鉱石
     public static Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3}, crystal_01, new int[]{0,1});
-    public static Block getBedrockCrystalOreBlock_1 = new BedrockOreBlock("bedrockCrystalOreBlock_01",crystalOreBlock_1);
+    public static Block bedrockCrystalOreBlock_1 = new BedrockOreBlock("bedrockCrystalOreBlock_01",crystalOreBlock_1);
     
     public static Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 16, new float[]{5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F}, new byte[]{3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3});
     public static Block bedrockOreBlock_1 = new BedrockOreBlock("bedrockOreBlock_01",oreBlock_1);
@@ -106,7 +97,7 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         //Blockの登録
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_01");
-        GameRegistry.registerBlock(getBedrockCrystalOreBlock_1, MetaItemBlock.class, "bedrockCrystalOreBlock_01");
+        GameRegistry.registerBlock(bedrockCrystalOreBlock_1, MetaItemBlock.class, "bedrockCrystalOreBlock_01");
         GameRegistry.registerBlock(oreBlock_1, MetaItemBlock.class, "oreBlock_01");
         GameRegistry.registerBlock(bedrockOreBlock_1, MetaItemBlock.class, "bedrockOreBlock_01");
         GameRegistry.registerBlock(furnaceGenerator,"furnaceGeneratorAP");

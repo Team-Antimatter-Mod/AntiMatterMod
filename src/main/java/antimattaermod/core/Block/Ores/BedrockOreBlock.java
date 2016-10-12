@@ -20,7 +20,7 @@ import java.util.Random;
 /**
  * Created by Raiti on 2016/10/09.
  */
-public class BedrockOreBlock extends Block {
+public class BedrockOreBlock extends Block implements AMMOreBlock{
 	
 	
 	private Block dropBlock = null;
@@ -29,7 +29,7 @@ public class BedrockOreBlock extends Block {
 		super(Material.rock);
 		if(!(block instanceof AMMOreBlock))throw new IllegalArgumentException("渡されたBlockインスタンスはAMMOreBlockをimportしていません");
 		this.setBlockName(name);
-		this.setBlockTextureName(AntiMatterModCore.MOD_ID+":ore/bedrockOre");
+		this.setBlockTextureName(AntiMatterModCore.MOD_ID+":ore/bedrockore");
 		this.setCreativeTab(AntiMatterModRegistry.tabOreBlock);
 		this.setResistance(1.0F);
 		this.setHardness(3.0F);
@@ -108,5 +108,10 @@ public class BedrockOreBlock extends Block {
 	@Override
 	public int getExpDrop(IBlockAccess world, int metadata, int fortune) {
 		return this.dropBlock.getExpDrop(world, metadata, fortune);
+	}
+	
+	@Override
+	public int getMaxMetadate() {
+		return ((AMMOreBlock)this.dropBlock).getMaxMetadate();
 	}
 }
