@@ -14,6 +14,7 @@ import antimattaermod.core.Util.AddInformationfunction;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.World.Ore.OreGenerator;
 import antimattaermod.core.World.Structure.AMMStructureEventHandler;
+import antimattaermod.core.World.Structure.Test.StructureTestStart;
 import antimattaermod.core.crafting.RecipeRemover;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -28,6 +29,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.gen.structure.MapGenStructureIO;
 import net.minecraftforge.common.MinecraftForge;
 
 import static antimattaermod.core.AntiMatterModCore.proxy;
@@ -128,7 +130,13 @@ public class AntiMatterModRegistry {
         GameRegistry.registerWorldGenerator(new OreGenerator(),2);
         
         //チャンク生成イベントのフック
-        //MinecraftForge.EVENT_BUS.register(new AMMStructureEventHandler());
+        MinecraftForge.EVENT_BUS.register(new AMMStructureEventHandler());
+    
+        MapGenStructureIO.registerStructure(StructureTestStart.class, "Test");
+        MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest1.class, "Test1");
+        MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest2.class, "Test2");
+        MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest3.class, "Test3");
+        MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest4.class, "Test4");
         
     }
     //postinitで行う処理
