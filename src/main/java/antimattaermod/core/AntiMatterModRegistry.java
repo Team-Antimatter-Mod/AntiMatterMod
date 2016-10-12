@@ -1,6 +1,7 @@
 package antimattaermod.core;
 
 import antimattaermod.core.Block.Ores.BedrockOreBlock;
+import antimattaermod.core.Block.SimpleBlock;
 import antimattaermod.core.Energy.Transfer.BlockCable;
 import antimattaermod.core.Energy.Transfer.TileEntityCable;
 import antimattaermod.core.Item.ItemBlock.CableItemBlock;
@@ -71,6 +72,9 @@ public class AntiMatterModRegistry {
 	public static Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot/ingot_01",17,AntiMatterModRegistry.tabMaterials, AddInformationfunction::IngotInformation);
     public static Item crystal_01 = ItemUtil.CreateItem("crystal_01","crystal/crystal_01",7,AntiMatterModRegistry.tabMaterials);
     public static Item wire = ItemUtil.CreateItem("wire_01","wire/wire_01",1,AntiMatterModRegistry.tabMaterials);
+    public static Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",3,AntiMatterModRegistry.tabMaterials);
+    public static Item rod_01 = ItemUtil.CreateItem("rod_01","rod/rod_01",1,AntiMatterModRegistry.tabMaterials);
+    public static Item gear_01 = ItemUtil.CreateItem("gear_01","gear/gear_01",1,AntiMatterModRegistry.tabMaterials);
 
     
     //ツール類
@@ -84,7 +88,6 @@ public class AntiMatterModRegistry {
     
     public static Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 16, new float[]{5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F}, new byte[]{3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3});
     public static Block bedrockOreBlock_1 = new BedrockOreBlock("bedrockOreBlock_01",oreBlock_1);
-
     
     //発電機
     public static final Block furnaceGenerator = new BlockFurnaceGenerator();
@@ -98,6 +101,9 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(crystal_01, "material");
         GameRegistry.registerItem(ingot_01,"ingot_01");
         GameRegistry.registerItem(wire,"wire");
+        GameRegistry.registerItem(plate_01,"plate_01");
+        GameRegistry.registerItem(rod_01,"rod_01");
+        GameRegistry.registerItem(gear_01,"gear_01");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         
         //Blockの登録 ==================================================================================================
@@ -120,8 +126,9 @@ public class AntiMatterModRegistry {
     //initで行う登録処理
     static void registerInit(FMLInitializationEvent event){
         //レシピの登録 =================================================================================================
-        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0),"S","S",'S',new ItemStack(AntiMatterModRegistry.ingot_01,1,3));
-        
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0)," S ","S S"," S ",'S',new ItemStack(AntiMatterModRegistry.plate_01,1,1));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.gear_01,1,0),"ABA","B B","ABA",'A',new ItemStack(AntiMatterModRegistry.rod_01,1,0),'B',new ItemStack(AntiMatterModRegistry.plate_01,1,2));
+
         //TileEntityの登録 =============================================================================================
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
         GameRegistry.registerTileEntity(TileEntityCable.class,"tileCableAP");
