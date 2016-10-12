@@ -16,6 +16,7 @@ public interface AddInformationfunction {
 	
 	void addInformation(ItemStack item, EntityPlayer player, List list, boolean p_77624_4_);
 	
+	@SuppressWarnings("unchecked")
 	static void IngotInformation(ItemStack item, EntityPlayer player, List list, boolean isdebug){
 		switch (item.getItemDamage()){
 			case 0:
