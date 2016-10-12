@@ -13,6 +13,7 @@ import antimattaermod.core.Item.StatesChecker;
 import antimattaermod.core.Util.AddInformationfunction;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.World.Ore.OreGenerator;
+import antimattaermod.core.World.Structure.AMMStructureEventHandler;
 import antimattaermod.core.crafting.RecipeRemover;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -27,6 +28,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
 
 import static antimattaermod.core.AntiMatterModCore.proxy;
 
@@ -90,33 +92,43 @@ public class AntiMatterModRegistry {
 
     //preinitで行う登録処理
     static void registerPreInit(FMLPreInitializationEvent event){
-        //Itemの登録
+        //Itemの登録 ===================================================================================================
         GameRegistry.registerItem(crystal_01, "material");
         GameRegistry.registerItem(ingot_01,"ingot_01");
         GameRegistry.registerItem(wire,"wire");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
-        //Blockの登録
+        
+        //Blockの登録 ==================================================================================================
+            //鉱石
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_01");
-        GameRegistry.registerBlock(bedrockCrystalOreBlock_1, MetaItemBlock.class, "bedrockCrystalOreBlock_01");
         GameRegistry.registerBlock(oreBlock_1, MetaItemBlock.class, "oreBlock_01");
+            //岩盤鉱石
+        GameRegistry.registerBlock(bedrockCrystalOreBlock_1, MetaItemBlock.class, "bedrockCrystalOreBlock_01");
         GameRegistry.registerBlock(bedrockOreBlock_1, MetaItemBlock.class, "bedrockOreBlock_01");
+            //機械
         GameRegistry.registerBlock(furnaceGenerator,"furnaceGeneratorAP");
         GameRegistry.registerBlock(cable, CableItemBlock.class,"Cable");
-        //Renderの登録
+        
+        //Renderの登録 =================================================================================================
         proxy.registerRenderThings();
-        //Recipe削除
+        
+        //Recipe削除 ===================================================================================================
         RecipeRemover.removeRecipe(Items.stick);
     }
     //initで行う登録処理
     static void registerInit(FMLInitializationEvent event){
-        //レシピの登録
+        //レシピの登録 =================================================================================================
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0),"S","S",'S',new ItemStack(AntiMatterModRegistry.ingot_01,1,3));
-        //TileEntityの登録
+        
+        //TileEntityの登録 =============================================================================================
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
         GameRegistry.registerTileEntity(TileEntityCable.class,"tileCableAP");
-        //WorldGeneratorの登録
+        
+        //WorldGeneratorの登録 =========================================================================================
         GameRegistry.registerWorldGenerator(new OreGenerator(),2);
         
+        //チャンク生成イベントのフック
+        MinecraftForge.EVENT_BUS.register(new AMMStructureEventHandler());
         
     }
     //postinitで行う処理

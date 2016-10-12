@@ -14,10 +14,9 @@ import java.util.List;
 @FunctionalInterface
 public interface AddInformationfunction {
 	
-	public void addInformation(ItemStack item, EntityPlayer player, List list, boolean p_77624_4_);
+	void addInformation(ItemStack item, EntityPlayer player, List list, boolean p_77624_4_);
 	
-	@SuppressWarnings("unchecked")
-	public static void IngotInformation(ItemStack item, EntityPlayer player, List list, boolean isdebug){
+	static void IngotInformation(ItemStack item, EntityPlayer player, List list, boolean isdebug){
 		switch (item.getItemDamage()){
 			case 0:
 				list.add(StatCollector.translateToLocal("tile.ingot_01_0.information_1"));
@@ -25,13 +24,13 @@ public interface AddInformationfunction {
 				list.add(ChatFormatting.RED+StatCollector.translateToLocal("tile.ingot_01_0.information.name"));
 				break;
 			case 1:
-				list.add(StatCollector.translateToLocal("tile.ingot_01_1>6.information")+AntiMatterModCore.modMetadata.authorList.get(0));
-				break;
-			case 2:
 				list.add(StatCollector.translateToLocal("tile.ingot_01_1>6.information")+AntiMatterModCore.modMetadata.authorList.get(1));
 				break;
-			case 3:
+			case 2:
 				list.add(StatCollector.translateToLocal("tile.ingot_01_1>6.information")+AntiMatterModCore.modMetadata.authorList.get(2));
+				break;
+			case 3:
+				list.add(StatCollector.translateToLocal("tile.ingot_01_1>6.information")+AntiMatterModCore.modMetadata.authorList.get(0));
 				break;
 			case 4:
 				list.add(StatCollector.translateToLocal("tile.ingot_01_1>6.information")+AntiMatterModCore.modMetadata.authorList.get(3));
