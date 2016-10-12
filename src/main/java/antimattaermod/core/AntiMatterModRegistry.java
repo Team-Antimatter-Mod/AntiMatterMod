@@ -128,7 +128,7 @@ public class AntiMatterModRegistry {
         GameRegistry.registerWorldGenerator(new OreGenerator(),2);
         
         //チャンク生成イベントのフック
-        MinecraftForge.EVENT_BUS.register(new AMMStructureEventHandler());
+        //MinecraftForge.EVENT_BUS.register(new AMMStructureEventHandler());
         
     }
     //postinitで行う処理
