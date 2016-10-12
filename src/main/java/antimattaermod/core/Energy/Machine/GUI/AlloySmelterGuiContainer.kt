@@ -23,11 +23,11 @@ class AlloySmelterGuiContainer(private val x:Int, private val y:Int, private val
     }
 
     override fun drawGuiContainerBackgroundLayer(p_146976_1_: Float, p_146976_2_: Int, p_146976_3_: Int) {
-        val texture = Texture_2Slot
-        when(tileAlloySmelter.getSlotSize()){
+        val texture = when(tileAlloySmelter.getSlotSize()){
             2 -> Texture_2Slot
-            4 -> Texture_4Slot
-            9 -> Texture_9Slot
+            4 ->  Texture_4Slot
+            9 ->  Texture_9Slot
+            else -> Texture_2Slot
         }
         this.mc.renderEngine.bindTexture(texture)
         drawTexturedModalRect(guiLeft,guiTop,0,0,xSize,ySize)
