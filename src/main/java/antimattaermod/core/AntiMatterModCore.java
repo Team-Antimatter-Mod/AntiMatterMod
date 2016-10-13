@@ -52,6 +52,7 @@ public class AntiMatterModCore {
 	public void serverSterting(FMLServerStartingEvent event){
 		event.registerServerCommand(new ExclusiveDeleteBlock());
 		event.registerServerCommand(new Createsphere());
+		
 	}
 	
 	

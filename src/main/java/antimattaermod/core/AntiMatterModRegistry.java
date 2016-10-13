@@ -1,6 +1,7 @@
 package antimattaermod.core;
 
 import antimattaermod.core.Block.Ores.BedrockOreBlock;
+import antimattaermod.core.Block.SimpleBlock;
 import antimattaermod.core.Energy.Transfer.BlockCable;
 import antimattaermod.core.Energy.Transfer.TileEntityCable;
 import antimattaermod.core.Item.ItemBlock.CableItemBlock;
@@ -11,8 +12,11 @@ import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Item.StatesChecker;
 import antimattaermod.core.Util.AddInformationfunction;
+import antimattaermod.core.Util.BlockUtil;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.World.Ore.OreGenerator;
+import antimattaermod.core.World.Structure.AMMStructureEventHandler;
+import antimattaermod.core.World.Structure.Test.StructureTestStart;
 import antimattaermod.core.crafting.RecipeRemover;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -27,6 +31,8 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.gen.structure.MapGenStructureIO;
+import net.minecraftforge.common.MinecraftForge;
 
 import static antimattaermod.core.AntiMatterModCore.proxy;
 
@@ -64,9 +70,12 @@ public class AntiMatterModRegistry {
 	
     //Item  ============================================================================================================
     //素材
-	public static Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot/ingot_01",17,AntiMatterModRegistry.tabMaterials, AddInformationfunction::IngotInformation);
-    public static Item crystal_01 = ItemUtil.CreateItem("crystal_01","crystal/crystal_01",7,AntiMatterModRegistry.tabMaterials);
-    public static Item wire = ItemUtil.CreateItem("wire_01","wire/wire_01",1,AntiMatterModRegistry.tabMaterials);
+	public static final Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot/ingot_01",17,AntiMatterModRegistry.tabMaterials, AddInformationfunction::IngotInformation);
+    public static final Item crystal_01 = ItemUtil.CreateItem("crystal_01","crystal/crystal_01",7,AntiMatterModRegistry.tabMaterials);
+    public static final Item wire = ItemUtil.CreateItem("wire_01","wire/wire_01",1,AntiMatterModRegistry.tabMaterials);
+    public static final Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",3,AntiMatterModRegistry.tabMaterials);
+    public static final Item rod_01 = ItemUtil.CreateItem("rod_01","rod/rod_01",1,AntiMatterModRegistry.tabMaterials);
+    public static final Item gear_01 = ItemUtil.CreateItem("gear_01","gear/gear_01",1,AntiMatterModRegistry.tabMaterials);
 
     
     //ツール類
@@ -75,48 +84,73 @@ public class AntiMatterModRegistry {
 
     //Block  ===========================================================================================================
     //鉱石
-    public static Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3}, crystal_01, new int[]{0,1});
-    public static Block bedrockCrystalOreBlock_1 = new BedrockOreBlock("bedrockCrystalOreBlock_01",crystalOreBlock_1);
+    public static final Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3}, crystal_01, new int[]{0,1});
+    public static final Block bedrockCrystalOreBlock_1 = new BedrockOreBlock("bedrockCrystalOreBlock_01",crystalOreBlock_1);
     
-    public static Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 16, new float[]{5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F}, new byte[]{3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3});
-    public static Block bedrockOreBlock_1 = new BedrockOreBlock("bedrockOreBlock_01",oreBlock_1);
-
+    public static final Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 16, new float[]{5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F}, new byte[]{3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3});
+    public static final Block bedrockOreBlock_1 = new BedrockOreBlock("bedrockOreBlock_01",oreBlock_1);
     
     //発電機
     public static final Block furnaceGenerator = new BlockFurnaceGenerator();
     public static final Block cable = new BlockCable(Material.rock);
+    
+    //ブロックの登録方法
+//    public static final Block testblock = BlockUtil.CreateBlock("名前","テクスチャ―名",Material.rock,11,5f,5f);
+//                                                               (名前,テクスチャ―名,ブロックマテリアル,最大メタ値,硬さ,耐爆値);
     //==================================================================================================================
 
 
     //preinitで行う登録処理
     static void registerPreInit(FMLPreInitializationEvent event){
-        //Itemの登録
+        //Itemの登録 ===================================================================================================
         GameRegistry.registerItem(crystal_01, "material");
         GameRegistry.registerItem(ingot_01,"ingot_01");
         GameRegistry.registerItem(wire,"wire");
+        GameRegistry.registerItem(plate_01,"plate_01");
+        GameRegistry.registerItem(rod_01,"rod_01");
+        GameRegistry.registerItem(gear_01,"gear_01");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
-        //Blockの登録
+        
+        //Blockの登録 ==================================================================================================
+            //鉱石
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_01");
-        GameRegistry.registerBlock(bedrockCrystalOreBlock_1, MetaItemBlock.class, "bedrockCrystalOreBlock_01");
         GameRegistry.registerBlock(oreBlock_1, MetaItemBlock.class, "oreBlock_01");
+            //岩盤鉱石
+        GameRegistry.registerBlock(bedrockCrystalOreBlock_1, MetaItemBlock.class, "bedrockCrystalOreBlock_01");
         GameRegistry.registerBlock(bedrockOreBlock_1, MetaItemBlock.class, "bedrockOreBlock_01");
+            //機械
         GameRegistry.registerBlock(furnaceGenerator,"furnaceGeneratorAP");
         GameRegistry.registerBlock(cable, CableItemBlock.class,"Cable");
-        //Renderの登録
+        
+        
+        
+        //Renderの登録 =================================================================================================
         proxy.registerRenderThings();
-        //Recipe削除
+        
+        //Recipe削除 ===================================================================================================
         RecipeRemover.removeRecipe(Items.stick);
     }
     //initで行う登録処理
     static void registerInit(FMLInitializationEvent event){
-        //レシピの登録
-        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0),"S","S",'S',new ItemStack(AntiMatterModRegistry.ingot_01,1,3));
-        //TileEntityの登録
+        //レシピの登録 =================================================================================================
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0)," S ","S S"," S ",'S',new ItemStack(AntiMatterModRegistry.plate_01,1,1));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.gear_01,1,0),"ABA","B B","ABA",'A',new ItemStack(AntiMatterModRegistry.rod_01,1,0),'B',new ItemStack(AntiMatterModRegistry.plate_01,1,2));
+
+        //TileEntityの登録 =============================================================================================
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
         GameRegistry.registerTileEntity(TileEntityCable.class,"tileCableAP");
-        //WorldGeneratorの登録
+        
+        //WorldGeneratorの登録 =========================================================================================
         GameRegistry.registerWorldGenerator(new OreGenerator(),2);
         
+        //チャンク生成イベントのフック
+        MinecraftForge.EVENT_BUS.register(new AMMStructureEventHandler());
+    
+        MapGenStructureIO.registerStructure(StructureTestStart.class, "Test");
+        MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest1.class, "Test1");
+        MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest2.class, "Test2");
+        MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest3.class, "Test3");
+        MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest4.class, "Test4");
         
     }
     //postinitで行う処理

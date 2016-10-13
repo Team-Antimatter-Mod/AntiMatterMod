@@ -29,20 +29,17 @@ public class OreGenerator implements IWorldGenerator {
     }
 
     private  void oreGenerateOverworld(Random random, int x, int z, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
-        
         for(OreGeneratorEntry entry:OreGeneratorEntry.ORE_GENERATOR_ENTRIES){
-			
+            if (entry.isGeneratOverworld() == false) continue;
+            
 			if(entry.hasGenerateFunction()){
-				OreGeneratorEntry.GenerateFunction function = entry.getGenerateFunction(0);
-				
+				OreGeneratorEntry.GenerateFunction function = entry.getGenerateFunction(OreGeneratorEntry.PROPERTY_OVERWORLD);
 				if(function != null){
 					function.oreGenerate(random,x,z,world,chunkProvider,chunkGenerator);
 					return;
 				}
 			}
-			
             for (int i = 0; i < entry.getLoop(); i++){
-                if (entry.isGeneratOverworld() == false) continue;
                 int genX = (x << 4) + random.nextInt(16);
                 int genY = (entry.getMinYOverworld() + random.nextInt(entry.getMaxYOverworld()-entry.getMinYOverworld()));
                 int genZ = (z << 4) + random.nextInt(16);
@@ -56,6 +53,14 @@ public class OreGenerator implements IWorldGenerator {
     private  void oreGenerateHell(Random random, int x, int z, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
         for(OreGeneratorEntry entry:OreGeneratorEntry.ORE_GENERATOR_ENTRIES){
             if (entry.isGeneratHell() == false) continue;
+            
+            if(entry.hasGenerateFunction()){
+                OreGeneratorEntry.GenerateFunction function = entry.getGenerateFunction(OreGeneratorEntry.PROPERTY_HELL);
+                if(function != null) {
+                    function.oreGenerate(random, x, z, world, chunkProvider, chunkGenerator);
+                    return;
+                }
+            }
             for (int i = 0; i < entry.getLoop(); i++){
                 int genX = (x << 4) + random.nextInt(16);
                 int genY = (entry.getMinYHell() + random.nextInt(entry.getMaxYHell()-entry.getMinYHell()));
@@ -69,6 +74,14 @@ public class OreGenerator implements IWorldGenerator {
     private  void oreGenerateEnd(Random random, int x, int z, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
         for(OreGeneratorEntry entry:OreGeneratorEntry.ORE_GENERATOR_ENTRIES){
             if (entry.isGeneratEnd() == false) continue;
+            
+            if(entry.hasGenerateFunction()){
+                OreGeneratorEntry.GenerateFunction function = entry.getGenerateFunction(OreGeneratorEntry.PROPERTY_END);
+                if (function != null){
+                    function.oreGenerate(random,x,z,world,chunkProvider,chunkGenerator);
+                    return;
+                }
+            }
             for (int i = 0; i < entry.getLoop(); i++){
                 int genX = (x << 4) + random.nextInt(16);
                 int genY = (entry.getMinYEnd() + random.nextInt(entry.getMaxYEnd()-entry.getMinYEnd()));

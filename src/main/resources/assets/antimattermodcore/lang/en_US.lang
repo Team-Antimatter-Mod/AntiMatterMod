@@ -31,6 +31,17 @@ item.ingot_01_16.name=Pazilite Ingot
 #--------------------------------------------wire
 item.wire_01_0.name=Wire[Drantium]
 
+#--------------------------------------------plate
+item.plate_01_0.name=Raitium Plate
+item.plate_01_1.name=Drantium Plate
+item.plate_01_2.name=Palazirite Plate
+
+#--------------------------------------------ロッド
+item.rod_01_0.name=Palazirite Rod
+
+#--------------------------------------------歯車
+item.gear_01_0.name=Gear[Palazirite]
+
 #--------------------------------------------cable
 tile.Cable.name=Drantium cable
 
@@ -42,19 +53,19 @@ tile.crystalOreBlock_01_1.name=Abzumite Ore
 tile.oreBlock_01_0.name=Tiamite Ore
 tile.oreBlock_01_1.name=Raitium Ore
 tile.oreBlock_01_2.name=Drantium Ore
-item.oreBlock_01_3.name=Palazirite Ore
-item.oreBlock_01_4.name=Soralite Ore
-item.oreBlock_01_5.name=Emirinium Ore
-item.oreBlock_01_6.name=Imidium Ore
-item.oreBlock_01_7.name=Mitranidelite Ore
-item.oreBlock_01_8.name=Stallvimolite Ore
-item.oreBlock_01_9.name=Asuratomium Ore
-item.oreBlock_01_10.name=Midonalite Ore
-item.oreBlock_01_11.name=Miranium Ore
-item.oreBlock_01_12.name=Teyurarium Ore
-item.oreBlock_01_13.name=Diglite Ore
-item.oreBlock_01_14.name=Astnides Ore
-item.oreBlock_01_15.name=Pazilite Ore
+tile.oreBlock_01_3.name=Palazirite Ore
+tile.oreBlock_01_4.name=Soralite Ore
+tile.oreBlock_01_5.name=Emirinium Ore
+tile.oreBlock_01_6.name=Imidium Ore
+tile.oreBlock_01_7.name=Mitranidelite Ore
+tile.oreBlock_01_8.name=Stallvimolite Ore
+tile.oreBlock_01_9.name=Asuratomium Ore
+tile.oreBlock_01_10.name=Midonalite Ore
+tile.oreBlock_01_11.name=Miranium Ore
+tile.oreBlock_01_12.name=Teyurarium Ore
+tile.oreBlock_01_13.name=Diglite Ore
+tile.oreBlock_01_14.name=Astnides Ore
+tile.oreBlock_01_15.name=Pazilite Ore
 
 #--------------------------------------------machine
 tile.furnaceGeneratorAP.name=basic furnaceGenerator
