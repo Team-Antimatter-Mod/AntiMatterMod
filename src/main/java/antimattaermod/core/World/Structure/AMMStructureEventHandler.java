@@ -2,8 +2,6 @@ package antimattaermod.core.World.Structure;
 
 import antimattaermod.core.World.Structure.Test.TestMapGen;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
 import net.minecraftforge.event.terraingen.InitNoiseGensEvent;
 import net.minecraftforge.event.terraingen.PopulateChunkEvent;
 
