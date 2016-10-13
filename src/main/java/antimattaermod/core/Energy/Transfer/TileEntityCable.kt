@@ -1,5 +1,7 @@
 package antimattaermod.core.Energy.Transfer
 
+import antimattaermod.core.Energy.APVoltage
+import antimattaermod.core.Energy.IAPTransfer
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.network.NetworkManager
 import net.minecraft.network.Packet
@@ -11,15 +13,29 @@ import java.util.*
 /**
  * @author C6H2Cl2
  */
-class TileEntityCable :TileEntity(){
+class TileEntityCable :TileEntity,IAPTransfer{
+
+    private var voltage : APVoltage = APVoltage.ZeroVoltage
+    private var storedEnergy = 0
+    private var maxEnergy = 0
     private val isConnected : HashMap<ForgeDirection,Boolean> = HashMap()
-    init {
+
+    constructor() : super(){
         isConnected[ForgeDirection.UP] = false
         isConnected[ForgeDirection.DOWN] = false
         isConnected[ForgeDirection.EAST] = false
         isConnected[ForgeDirection.WEST] = false
         isConnected[ForgeDirection.NORTH] = false
         isConnected[ForgeDirection.SOUTH] = false
+    }
+
+    constructor(voltage : APVoltage) : this(){
+        this.voltage = voltage
+        if(voltage.maxEnergy >= Int.MAX_VALUE /10){
+            maxEnergy = Int.MAX_VALUE
+        }else{
+            maxEnergy = voltage.maxEnergy
+        }
     }
 
     override fun writeToNBT(nbtTagCompound: NBTTagCompound?) {
@@ -71,4 +87,11 @@ class TileEntityCable :TileEntity(){
         writeToNBT(tagCompound)
         return S35PacketUpdateTileEntity(xCoord,yCoord,zCoord,1,tagCompound)
     }
+
+    override fun getStoredEnergy(): Int =storedEnergy
+    override fun getReceiveVoltage(): APVoltage =voltage
+    override fun getSendVoltage(): APVoltage =voltage
+    override fun canReceiveEnergy(): Boolean =true
+    override fun canSendEnergy(): Boolean =true
+    override fun getMaxStoreEnergy(): Int =maxStoreEnergy
 }
