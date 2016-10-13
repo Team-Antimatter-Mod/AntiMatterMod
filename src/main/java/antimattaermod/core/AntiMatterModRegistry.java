@@ -129,6 +129,7 @@ public class AntiMatterModRegistry {
         
         //Recipe削除 ===================================================================================================
         RecipeRemover.removeRecipe(Items.stick);
+        RecipeRemover.removeShapedRecipe(new ItemStack(Items.bucket), "I I", " I ", 'I', Items.iron_ingot);
     }
     //initで行う登録処理
     static void registerInit(FMLInitializationEvent event){
