@@ -12,6 +12,7 @@ import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Item.StatesChecker;
 import antimattaermod.core.Util.AddInformationfunction;
+import antimattaermod.core.Util.BlockUtil;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.World.Ore.OreGenerator;
 import antimattaermod.core.World.Structure.AMMStructureEventHandler;
@@ -99,6 +100,7 @@ public class AntiMatterModRegistry {
     //ブロックの登録方法
 //    public static final Block testblock = BlockUtil.CreateBlock("名前","テクスチャ―名",Material.rock,11,5f,5f);
 //                                                               (名前,テクスチャ―名,ブロックマテリアル,最大メタ値,硬さ,耐爆値);
+    public static final Block machineCasing = BlockUtil.CreateBlock("machineCasing","machineCasing",Material.rock,1,5f,5f);
     //==================================================================================================================
 
 
@@ -124,6 +126,7 @@ public class AntiMatterModRegistry {
         GameRegistry.registerBlock(furnaceGenerator,"furnaceGeneratorAP");
         GameRegistry.registerBlock(cable, CableItemBlock.class,"Cable");
         GameRegistry.registerBlock(satStove,"satStove");
+        GameRegistry.registerBlock(machineCasing,"machineCasing");
         
         
         
