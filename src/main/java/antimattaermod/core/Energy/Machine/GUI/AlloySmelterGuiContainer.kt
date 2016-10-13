@@ -25,7 +25,6 @@ class AlloySmelterGuiContainer(private val x:Int, private val y:Int, private val
 
     override fun drawGuiContainerForegroundLayer(x: Int, p_146979_2_: Int) {
         super.drawGuiContainerForegroundLayer(x, p_146979_2_)
-        //fontRendererObj.drawString("Alloy Smelter",guiLeft+(xSize/2),guiTop+ySize/2,4210752,false)
         when(tileAlloySmelter.getSlotSize()){
             2,4 -> fontRendererObj.drawString("Alloy Smelter",xSize/2 - 26, 8,4210752,false)
             9 -> fontRendererObj.drawString("Alloy Smelter",xSize/2 - 6, 8,4210752,false)

@@ -1,5 +1,7 @@
 package antimattaermod.core.Energy.Machine
 
+import antimattaermod.core.Energy.APVoltage
+import antimattaermod.core.Energy.IAPMachine
 import net.minecraft.entity.player.EntityPlayer
 import net.minecraft.inventory.IInventory
 import net.minecraft.item.ItemStack
@@ -12,7 +14,7 @@ import net.minecraft.tileentity.TileEntity
 /**
  * @author C6H2Cl2
  */
-class TileAlloySmelter(private var tier:Int) :TileEntity(),IInventory{
+class TileAlloySmelter(private var tier:Int) :TileEntity(),IInventory,IAPMachine{
 
     private var slotSize = 0
     /*Slotの数について
@@ -22,11 +24,26 @@ class TileAlloySmelter(private var tier:Int) :TileEntity(),IInventory{
      */
     private var materialSlotItem: Array<ItemStack?> = emptyArray()
     private var resultSlotItem: Array<ItemStack?> = kotlin.arrayOfNulls(2)
+    private var voltage : APVoltage = APVoltage.ZeroVoltage
+    private var storedEnergy = 0
+    private var maxEnergy = 0
     init {
         when(tier){
-            1 -> slotSize = 2
-            2 -> slotSize = 4
-            3 -> slotSize = 9
+            1 -> {
+                slotSize = 2
+                voltage = APVoltage.MV
+                maxEnergy = voltage.maxEnergy * 20 * 20
+            }
+            2 -> {
+                slotSize = 4
+                voltage = APVoltage.HV
+                maxEnergy = voltage.maxEnergy * 20 * 20
+            }
+            3 -> {
+                slotSize = 9
+                voltage = APVoltage.EV
+                maxEnergy = voltage.maxEnergy * 20 * 20
+            }
         }
         materialSlotItem = kotlin.arrayOfNulls(slotSize)
     }
@@ -143,5 +160,29 @@ class TileAlloySmelter(private var tier:Int) :TileEntity(),IInventory{
         }else{
             resultSlotItem[slotNumber-slotSize]
         }
+    }
+
+    override fun getStoredEnergy(): Int {
+        return storedEnergy
+    }
+
+    override fun getReceiveVoltage(): APVoltage {
+        return voltage
+    }
+
+    override fun getSendVoltage(): APVoltage {
+        return APVoltage.ZeroVoltage
+    }
+
+    override fun canReceiveEnergy(): Boolean {
+        return true
+    }
+
+    override fun canSendEnergy(): Boolean {
+        return false
+    }
+
+    override fun getMaxStoreEnergy(): Int {
+        return maxStoreEnergy
     }
 }
