@@ -76,6 +76,9 @@ public class AntiMatterModRegistry {
     public static final Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",3,AntiMatterModRegistry.tabMaterials);
     public static final Item rod_01 = ItemUtil.CreateItem("rod_01","rod/rod_01",1,AntiMatterModRegistry.tabMaterials);
     public static final Item gear_01 = ItemUtil.CreateItem("gear_01","gear/gear_01",1,AntiMatterModRegistry.tabMaterials);
+    public static final Item turbine_01 = ItemUtil.CreateItem("turbine_01","turbine/turbine_01",1,AntiMatterModRegistry.tabMaterials);
+    public static final Item turbineblade_01 = ItemUtil.CreateItem("turbineblade_01","turbine/turbineblade_01",1,AntiMatterModRegistry.tabMaterials);
+    public static final Item shaft_01 = ItemUtil.CreateItem("shaft","turbine/shaft_01",1,AntiMatterModRegistry.tabMaterials);
 
     
     //ツール類
@@ -100,7 +103,8 @@ public class AntiMatterModRegistry {
     //ブロックの登録方法
 //    public static final Block testblock = BlockUtil.CreateBlock("名前","テクスチャ―名",Material.rock,11,5f,5f);
 //                                                               (名前,テクスチャ―名,ブロックマテリアル,最大メタ値,硬さ,耐爆値);
-    public static final Block machineCasing = BlockUtil.CreateBlock("machineCasing","machineCasing",Material.rock,1,5f,5f);
+    public static final Block tier1_machinecasing = BlockUtil.CreateBlock("tier1_machinecasing","casing/tier1_machinecasing_01",Material.rock,AntiMatterModRegistry.tabMachines,1,5f,5f);
+
     //==================================================================================================================
 
 
@@ -113,6 +117,9 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(plate_01,"plate_01");
         GameRegistry.registerItem(rod_01,"rod_01");
         GameRegistry.registerItem(gear_01,"gear_01");
+        GameRegistry.registerItem(turbine_01,"turbine_01");
+        GameRegistry.registerItem(turbineblade_01,"turbineblade_01");
+        GameRegistry.registerItem(shaft_01,"shaft_01");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         
         //Blockの登録 ==================================================================================================
@@ -126,7 +133,7 @@ public class AntiMatterModRegistry {
         GameRegistry.registerBlock(furnaceGenerator,"furnaceGeneratorAP");
         GameRegistry.registerBlock(cable, CableItemBlock.class,"Cable");
         GameRegistry.registerBlock(satStove,"satStove");
-        GameRegistry.registerBlock(machineCasing,"machineCasing");
+        GameRegistry.registerBlock(tier1_machinecasing,"tier1_machinecasing");
         
         
         
@@ -142,6 +149,10 @@ public class AntiMatterModRegistry {
         //レシピの登録 =================================================================================================
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0)," S ","S S"," S ",'S',new ItemStack(AntiMatterModRegistry.plate_01,1,1));
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.gear_01,1,0),"ABA","B B","ABA",'A',new ItemStack(AntiMatterModRegistry.rod_01,1,0),'B',new ItemStack(AntiMatterModRegistry.plate_01,1,2));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.turbineblade_01,1,0),"SSS",'S',new ItemStack(AntiMatterModRegistry.gear_01,1,0));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.shaft_01,1,0),"  S"," S ","S  ",'S',new ItemStack(AntiMatterModRegistry.rod_01,1,0));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.turbine_01,1,0),"   ","ABA","   ",'A',new ItemStack(AntiMatterModRegistry.turbineblade_01,1,0),'B',new ItemStack(AntiMatterModRegistry.shaft_01,1,0));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.tier1_machinecasing,1,0),"AAA","ABA","AAA",'A',new ItemStack(AntiMatterModRegistry.plate_01,1,0),'B',new ItemStack(AntiMatterModRegistry.gear_01,1,0));
 
         //TileEntityの登録 =============================================================================================
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
