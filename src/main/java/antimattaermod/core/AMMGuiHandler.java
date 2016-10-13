@@ -15,7 +15,7 @@ public class AMMGuiHandler implements IGuiHandler {
     @Override
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         switch (ID){
-            case GuiID_AlloySmelter: return new AlloySmelterContainer(x, y, z,(TileAlloySmelter)(world.getTileEntity(x,y,z)));
+            case GuiID_AlloySmelter: return new AlloySmelterContainer(x, y, z,(TileAlloySmelter)(world.getTileEntity(x,y,z)),player.inventory);
             default:return null;
         }
     }
@@ -23,7 +23,7 @@ public class AMMGuiHandler implements IGuiHandler {
     @Override
     public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         switch (ID){
-            case GuiID_AlloySmelter: return new AlloySmelterGuiContainer(x, y, z,(TileAlloySmelter)(world.getTileEntity(x,y,z)));
+            case GuiID_AlloySmelter: return new AlloySmelterGuiContainer(x, y, z,(TileAlloySmelter)(world.getTileEntity(x,y,z)),player.inventory);
             default:return null;
         }
     }

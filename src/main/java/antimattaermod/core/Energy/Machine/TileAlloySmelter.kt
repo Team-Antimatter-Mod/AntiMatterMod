@@ -73,7 +73,7 @@ class TileAlloySmelter(private var tier:Int) :TileEntity(),IInventory{
         if (itemStack != null && itemStack.stackSize > inventoryStackLimit){
             itemStack.stackSize = inventoryStackLimit
         }
-        if (slotNumber >= slotSize) {
+        if (slotNumber < slotSize) {
             materialSlotItem[slotNumber] = itemStack
         }else{
             resultSlotItem[slotNumber-slotSize] = itemStack
@@ -138,7 +138,7 @@ class TileAlloySmelter(private var tier:Int) :TileEntity(),IInventory{
 
     //そのまま返せばおｋ
     override fun getStackInSlot(slotNumber: Int): ItemStack? {
-        return if (slotNumber >= slotSize) {
+        return if (slotNumber < slotSize) {
             materialSlotItem[slotNumber]
         }else{
             resultSlotItem[slotNumber-slotSize]
