@@ -1,7 +1,7 @@
 package antimattaermod.core;
 
+import antimattaermod.core.Energy.Generator.Block.BlockSatStove;
 import antimattaermod.core.Block.Ores.BedrockOreBlock;
-import antimattaermod.core.Block.SimpleBlock;
 import antimattaermod.core.Energy.Transfer.BlockCable;
 import antimattaermod.core.Energy.Transfer.TileEntityCable;
 import antimattaermod.core.Item.ItemBlock.CableItemBlock;
@@ -12,7 +12,6 @@ import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Item.StatesChecker;
 import antimattaermod.core.Util.AddInformationfunction;
-import antimattaermod.core.Util.BlockUtil;
 import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.World.Ore.OreGenerator;
 import antimattaermod.core.World.Structure.AMMStructureEventHandler;
@@ -93,6 +92,9 @@ public class AntiMatterModRegistry {
     //発電機
     public static final Block furnaceGenerator = new BlockFurnaceGenerator();
     public static final Block cable = new BlockCable(Material.rock);
+
+    //かまど
+    public static final Block satStove = new BlockSatStove();
     
     //ブロックの登録方法
 //    public static final Block testblock = BlockUtil.CreateBlock("名前","テクスチャ―名",Material.rock,11,5f,5f);
@@ -121,6 +123,7 @@ public class AntiMatterModRegistry {
             //機械
         GameRegistry.registerBlock(furnaceGenerator,"furnaceGeneratorAP");
         GameRegistry.registerBlock(cable, CableItemBlock.class,"Cable");
+        GameRegistry.registerBlock(satStove,"satStove");
         
         
         
