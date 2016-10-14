@@ -188,6 +188,7 @@ public class AntiMatterModRegistry {
 
         //鉱石辞書登録
         OreDictionary.registerOre("plateIron",new ItemStack(AntiMatterModRegistry.industrialplate_01,1,0));
+        OreDictionary.registerOre("craftingToolHardHammer",new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE));
         
         
         

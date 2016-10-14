@@ -21,7 +21,7 @@ public class RecipeRegister {
 
      //used level1 hammer
         //プレート
-        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.industrialplate_01,1,0),"A","B","B",'A',new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE),'B',new ItemStack(Items.iron_ingot,1,0));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.industrialplate_01,1,0),"A","B","B",'A',"craftingToolHardHammer",'B',new ItemStack(Items.iron_ingot,1,0)));
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,0),"A","B","B",'A',new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE),'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,1));
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,1),"A","B","B",'A',new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE),'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,2));
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,2),"A","B","B",'A',new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE),'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,3));
