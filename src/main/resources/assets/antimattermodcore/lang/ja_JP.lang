@@ -41,6 +41,8 @@ item.plate_01_2.name=パラジライトプレート
 
 item.crystalplate_01_0.name=アルステマイトプレート
 
+item.industrialplate_01_0.name=鉄プレート
+
 #--------------------------------------------conductivematerial
 item.conductivematerial_01_0.name=伝導性ガラス板[Rank1]
 
@@ -98,6 +100,10 @@ tile.furnaceGeneratorAP.name=基本型火力発電機
 
 #--------------------------------------------その他
 item.StatesChecker.name=ステータスチェッカー
+
+#--------------------------------------------ツール
+item.IronHammer.name=鉄のハンマー[level0]
+item.IronWrench.name=鉄のレンチ[level0]
 
 #--------------------------------------------タブ
 itemGroup.ammaterials=反物質modコアの素材

@@ -41,6 +41,8 @@ item.plate_01_2.name=Palazirite Plate
 
 item.crystalplate_01_0.name=Arstetolite Plate
 
+item.industrialplate_01_0.name=Iron Plate
+
 #--------------------------------------------conductivematerial
 item.conductivematerial_01_0.name=Conductive Glass Plate[Rank1]
 
@@ -98,6 +100,10 @@ tile.furnaceGeneratorAP.name=basic furnaceGenerator
 
 #--------------------------------------------other
 item.StatesChecker.name=StatesChecker
+
+#--------------------------------------------tools
+item.IronHammer.name=Iron Hammer[level0]
+item.IronWrench.name=Iron Wrench[level0]
 
 #--------------------------------------------Tab
 itemGroup.ammaterials=AntiMatterModCore Materials
