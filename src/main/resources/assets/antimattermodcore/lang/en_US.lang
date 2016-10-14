@@ -28,6 +28,9 @@ item.ingot_01_14.name=Diglite Ingot
 item.ingot_01_15.name=Astnides Ingot
 item.ingot_01_16.name=Pazilite Ingot
 
+#--------------------------------------------powder
+item.powder_01_0.name=Antelite Powder
+
 #--------------------------------------------wire
 item.wire_01_0.name=Wire[Drantium]
 
@@ -36,14 +39,37 @@ item.plate_01_0.name=Raitium Plate
 item.plate_01_1.name=Drantium Plate
 item.plate_01_2.name=Palazirite Plate
 
-#--------------------------------------------ロッド
+item.crystalplate_01_0.name=Arstetolite Plate
+
+#--------------------------------------------conductivematerial
+item.conductivematerial_01_0.name=Conductive Glass Plate[Rank1]
+
+#--------------------------------------------rod
 item.rod_01_0.name=Palazirite Rod
 
-#--------------------------------------------歯車
-item.gear_01_0.name=Gear[Palazirite]
+#--------------------------------------------gear
+item.gear_01_0.name=Palazirite Gear
 
 #--------------------------------------------cable
 tile.Cable.name=Drantium cable
+
+#--------------------------------------------motor
+item.motor_01_0.name=Motor[Rank1}
+
+item.motorparts_01_0.name=MotorCase[Rank1]
+item.motorparts_01_1.name=MotorCover[Rank1]
+
+#--------------------------------------------shaft
+item.shaft_01_0.name=Palazirite shaft
+
+#--------------------------------------------turbine
+item.turbine_01_0.name=turbine[Rank1]
+
+#--------------------------------------------turbine blade
+item.turbineblade_01_0.name=Palazirite Turbine Blade
+
+#--------------------------------------------PowderOreBlock
+tile.powderOreBlock_01_0.name=Antelite Ore
 
 #--------------------------------------------CrystalOreBlock
 tile.crystalOreBlock_01_0.name=Crystalite Ore
@@ -75,8 +101,9 @@ item.StatesChecker.name=StatesChecker
 
 #--------------------------------------------Tab
 itemGroup.ammaterials=AntiMatterModCore Materials
-itemGroup.tabOreBlock=AntiMatterModCore OreBlock
+itemGroup.amOreBlock=AntiMatterModCore OreBlock
 itemGroup.ammachines=AntiMatterModCore Machines
+itemGroup.amIntermediateMaterial=AntiMatterModCore Intermediate Material
 
 #--------------------------------------------Info
 tile.ingot_01_0.information_1=There was metal in the Tiamat comet

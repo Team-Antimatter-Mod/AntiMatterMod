@@ -14,6 +14,7 @@ import java.util.Random;
 /**
  * Created by Raiti on 2016/10/12.
  */
+@SuppressWarnings("unchecked")
 public class StructureTestStart extends StructureStart {
 	
 	public StructureTestStart(){

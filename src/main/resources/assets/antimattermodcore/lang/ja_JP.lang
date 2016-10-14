@@ -28,6 +28,9 @@ item.ingot_01_14.name=ディグライト インゴット
 item.ingot_01_15.name=アストノイド インゴット
 item.ingot_01_16.name=パジライト インゴット
 
+#--------------------------------------------粉
+item.powder_01_0.name=アンティライトの粉
+
 #--------------------------------------------ワイヤー
 item.wire_01_0.name=ワイヤー[ドランチウム]
 
@@ -36,14 +39,37 @@ item.plate_01_0.name=ライチウムプレート
 item.plate_01_1.name=ドランチウムプレート
 item.plate_01_2.name=パラジライトプレート
 
+item.crystalplate_01_0.name=アルステマイトプレート
+
+#--------------------------------------------conductivematerial
+item.conductivematerial_01_0.name=伝導性ガラス板[Rank1]
+
 #--------------------------------------------ロッド
 item.rod_01_0.name=パラジライトロッド
 
 #--------------------------------------------歯車
-item.gear_01_0.name=歯車[パラジライト]
+item.gear_01_0.name=パラジライト製歯車
 
 #--------------------------------------------ケーブル
 tile.Cable.name=ドランチウムケーブル
+
+#--------------------------------------------motor
+item.motor_01_0.name=モーター[Rank1]
+
+item.motorparts_01_0.name=モーターケース[Rank1]
+item.motorparts_01_1.name=モーターカバー[Rank1]
+
+#--------------------------------------------シャフト
+item.shaft_01_0.name=パラジライト製シャフト
+
+#--------------------------------------------タービン
+item.turbine_01_0.name=タービン[Rank1]
+
+#--------------------------------------------タービンの刃
+item.turbineblade_01_0.name=パラジライト製タービンの刃
+
+#--------------------------------------------粉末鉱石ブロック
+tile.powderOreBlock_01_0.name=アンティライト鉱石
 
 #--------------------------------------------クリスタル鉱石ブロック
 tile.crystalOreBlock_01_0.name=アプスマイト鉱石
@@ -75,8 +101,9 @@ item.StatesChecker.name=ステータスチェッカー
 
 #--------------------------------------------タブ
 itemGroup.ammaterials=反物質modコアの素材
-itemGroup.tabOreBlock=反物質modコアの鉱石ブロック
+itemGroup.amOreBlock=反物質modコアの鉱石ブロック
 itemGroup.ammachines=反物質modコアの機械
+itemGroup.amIntermediateMaterial=反物質modコアの中間素材
 
 #--------------------------------------------情報
 tile.ingot_01_0.information_1=1200年前に半分に割れて落ちた
