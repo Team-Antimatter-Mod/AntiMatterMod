@@ -6,7 +6,7 @@ import antimattaermod.core.Energy.Transfer.BlockCable;
 import antimattaermod.core.Energy.Transfer.TileEntityCable;
 import antimattaermod.core.Item.ItemBlock.CableItemBlock;
 import antimattaermod.core.Item.ItemBlock.MetaItemBlock;
-import antimattaermod.core.Block.Ores.CrystalOreBlock;
+import antimattaermod.core.Block.Ores.DifferentOreBlock;
 import antimattaermod.core.Block.Ores.OreBlock;
 import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
@@ -93,10 +93,10 @@ public class AntiMatterModRegistry {
 
     //Block  ===========================================================================================================
     //鉱石
-    public static final Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3}, crystal_01, new int[]{0,1});
+    public static final Block crystalOreBlock_1 = new DifferentOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3}, crystal_01, new int[]{0,1});
     public static final Block bedrockCrystalOreBlock_1 = new BedrockOreBlock("bedrockCrystalOreBlock_01",crystalOreBlock_1);
 
-    public static final Block powderOreBlock_1 = new CrystalOreBlock(Material.rock, "powderOreBlock_01", "powderore/powderoreblock_01", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F,5.0F}, new byte[]{3,3}, powder_01, new int[]{0,1});
+    public static final Block powderOreBlock_1 = new DifferentOreBlock(Material.rock, "powderOreBlock_01", "powderore/powderoreblock_01", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F}, new byte[]{3}, powder_01, new int[]{0}, new int[]{8,8});
     public static final Block bedrockPowderOreBlock_1 = new BedrockOreBlock("bedrockPowderOreBlock_01",powderOreBlock_1);
 
 
@@ -111,8 +111,6 @@ public class AntiMatterModRegistry {
     public static final Block satStove = new BlockSatStove();
     
     //ブロックの登録方法
-//    public static final Block testblock = BlockUtil.CreateBlock("名前","テクスチャ―名",Material.rock,11,5f,5f);
-//                                                               (名前,テクスチャ―名,ブロックマテリアル,最大メタ値,硬さ,耐爆値);
     public static final Block tier1_machinecasing = BlockUtil.CreateBlock("tier1_machinecasing","casing/tier1_machinecasing_01",Material.rock,AntiMatterModRegistry.tabMachines,1,5f,5f);
 
     //==================================================================================================================
