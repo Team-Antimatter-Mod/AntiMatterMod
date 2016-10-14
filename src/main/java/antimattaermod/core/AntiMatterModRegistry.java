@@ -72,6 +72,7 @@ public class AntiMatterModRegistry {
     //素材
 	public static final Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot/ingot_01",17,AntiMatterModRegistry.tabMaterials, AddInformationfunction::IngotInformation);
     public static final Item crystal_01 = ItemUtil.CreateItem("crystal_01","crystal/crystal_01",7,AntiMatterModRegistry.tabMaterials);
+    public static final Item powder_01 = ItemUtil.CreateItem("powder_01","powder/powder_01",1,AntiMatterModRegistry.tabMaterials);
     public static final Item wire = ItemUtil.CreateItem("wire_01","wire/wire_01",1,AntiMatterModRegistry.tabMaterials);
     public static final Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",3,AntiMatterModRegistry.tabMaterials);
     public static final Item rod_01 = ItemUtil.CreateItem("rod_01","rod/rod_01",1,AntiMatterModRegistry.tabMaterials);
@@ -113,6 +114,7 @@ public class AntiMatterModRegistry {
         //Itemの登録 ===================================================================================================
         GameRegistry.registerItem(crystal_01, "material");
         GameRegistry.registerItem(ingot_01,"ingot_01");
+        GameRegistry.registerItem(powder_01,"powder_01");
         GameRegistry.registerItem(wire,"wire");
         GameRegistry.registerItem(plate_01,"plate_01");
         GameRegistry.registerItem(rod_01,"rod_01");

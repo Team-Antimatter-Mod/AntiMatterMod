@@ -28,6 +28,9 @@ item.ingot_01_14.name=Diglite Ingot
 item.ingot_01_15.name=Astnides Ingot
 item.ingot_01_16.name=Pazilite Ingot
 
+#--------------------------------------------powder
+item.powder_01_0.name=Antelite Powder
+
 #--------------------------------------------wire
 item.wire_01_0.name=Wire[Drantium]
 
@@ -36,14 +39,23 @@ item.plate_01_0.name=Raitium Plate
 item.plate_01_1.name=Drantium Plate
 item.plate_01_2.name=Palazirite Plate
 
-#--------------------------------------------ロッド
+#--------------------------------------------rod
 item.rod_01_0.name=Palazirite Rod
 
-#--------------------------------------------歯車
-item.gear_01_0.name=Gear[Palazirite]
+#--------------------------------------------gear
+item.gear_01_0.name=Palazirite Gear
 
 #--------------------------------------------cable
 tile.Cable.name=Drantium cable
+
+#--------------------------------------------shaft
+tile.shaft_01_0.name=Palazirite shaft
+
+#--------------------------------------------turbine
+tile.turbine_01_0.name=turbine[Rank1]
+
+#--------------------------------------------turbine blade
+tile.turbineblade_01_0.name=Palazirite Turbine Blade
 
 #--------------------------------------------CrystalOreBlock
 tile.crystalOreBlock_01_0.name=Crystalite Ore
