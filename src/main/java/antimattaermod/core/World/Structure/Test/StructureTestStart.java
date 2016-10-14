@@ -37,7 +37,6 @@ public class StructureTestStart extends StructureStart {
 			StructureComponent structureComponent = list.remove(k);
 			structureComponent.buildComponent(componentTest1,this.components,random);
 		}
-		
 		this.updateBoundingBox();
 	}
 	

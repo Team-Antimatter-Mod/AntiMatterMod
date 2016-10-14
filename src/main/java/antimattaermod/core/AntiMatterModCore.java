@@ -11,11 +11,10 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
-import cpw.mods.fml.common.registry.GameRegistry;
 
 /** <h1>AntiMatterModCore</h1>
  * AntiMatterModCora MainClass<br>
- * 
+ *
  * @author Raiti, C6H2Cl2
  * @version 1.0.0
  */
@@ -32,6 +31,7 @@ public class AntiMatterModCore {
 	public static AntiMatterModCoreProxy proxy;
 	
 	@Mod.EventHandler
+	@SuppressWarnings("unused")
 	public void preinit(FMLPreInitializationEvent event) {
 		loadMeta(modMetadata);
         AntiMatterModRegistry.registerPreInit(event);
@@ -39,6 +39,7 @@ public class AntiMatterModCore {
 	}
 	
 	@Mod.EventHandler
+	@SuppressWarnings("unused")
 	public void init(FMLInitializationEvent event) {
 		proxy.registerRenderer();
 		AntiMatterModRegistry.registerInit(event);
@@ -46,11 +47,13 @@ public class AntiMatterModCore {
 	}
 	
 	@Mod.EventHandler
+	@SuppressWarnings("unused")
 	public void posinit(FMLPostInitializationEvent event) {
 		AntiMatterModRegistry.registerPostInit(event);
 	}
 	
 	@Mod.EventHandler
+	@SuppressWarnings("unused")
 	public void serverSterting(FMLServerStartingEvent event){
 		event.registerServerCommand(new ExclusiveDeleteBlock());
 		event.registerServerCommand(new Createsphere());

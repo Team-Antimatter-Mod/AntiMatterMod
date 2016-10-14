@@ -20,6 +20,9 @@ import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.World.Ore.OreGenerator;
 import antimattaermod.core.World.Structure.AMMStructureEventHandler;
 import antimattaermod.core.World.Structure.Test.StructureTestStart;
+import antimattaermod.core.World.Structure.Tiamat.ComponentTiamatCenter;
+import antimattaermod.core.World.Structure.Tiamat.ComponentTiamatCenterLine;
+import antimattaermod.core.World.Structure.Tiamat.StructureTiamatStart;
 import antimattaermod.core.crafting.RecipeRemover;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -207,6 +210,10 @@ public class AntiMatterModRegistry {
         MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest2.class, "Test2");
         MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest3.class, "Test3");
         MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest4.class, "Test4");
+        
+        MapGenStructureIO.registerStructure(StructureTiamatStart.class, "TiamatComet");
+        MapGenStructureIO.func_143031_a(ComponentTiamatCenter.class, "TiamaitCometCenter");
+        MapGenStructureIO.func_143031_a(ComponentTiamatCenterLine.class, "TiamatCometCenterLine");
         
     }
     //postinitで行う処理
