@@ -49,13 +49,13 @@ item.gear_01_0.name=Palazirite Gear
 tile.Cable.name=Drantium cable
 
 #--------------------------------------------shaft
-tile.shaft_01_0.name=Palazirite shaft
+item.shaft_01_0.name=Palazirite shaft
 
 #--------------------------------------------turbine
-tile.turbine_01_0.name=turbine[Rank1]
+item.turbine_01_0.name=turbine[Rank1]
 
 #--------------------------------------------turbine blade
-tile.turbineblade_01_0.name=Palazirite Turbine Blade
+item.turbineblade_01_0.name=Palazirite Turbine Blade
 
 #--------------------------------------------PowderOreBlock
 tile.powderOreBlock_01_0.name=Antelite Ore

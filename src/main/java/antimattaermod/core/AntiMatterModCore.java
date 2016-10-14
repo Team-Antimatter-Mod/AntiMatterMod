@@ -3,6 +3,7 @@ package antimattaermod.core;
 import antimattaermod.core.command.Createsphere;
 import antimattaermod.core.command.ExclusiveDeleteBlock;
 import antimattaermod.core.common.AntiMatterModCoreProxy;
+import antimattaermod.core.crafting.RecipeRegister;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.ModMetadata;
 import cpw.mods.fml.common.SidedProxy;
@@ -41,6 +42,7 @@ public class AntiMatterModCore {
 	public void init(FMLInitializationEvent event) {
 		proxy.registerRenderer();
 		AntiMatterModRegistry.registerInit(event);
+		RecipeRegister.RecipeRegisterInit(event);
 	}
 	
 	@Mod.EventHandler
