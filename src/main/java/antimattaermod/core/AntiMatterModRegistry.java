@@ -75,13 +75,18 @@ public class AntiMatterModRegistry {
     public static final Item powder_01 = ItemUtil.CreateItem("powder_01","powder/powder_01",1,AntiMatterModRegistry.tabMaterials);
     public static final Item wire = ItemUtil.CreateItem("wire_01","wire/wire_01",1,AntiMatterModRegistry.tabMaterials);
     public static final Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",3,AntiMatterModRegistry.tabMaterials);
+    public static final Item crystalplate_01 = ItemUtil.CreateItem("crystalplate_01","plate/crystalplate_01",1,AntiMatterModRegistry.tabMaterials);
+    public static final Item conductivematerial_01 = ItemUtil.CreateItem("conductivematerial_01","conductivematerial/conductivematerial_01",1,AntiMatterModRegistry.tabMaterials);
     public static final Item rod_01 = ItemUtil.CreateItem("rod_01","rod/rod_01",1,AntiMatterModRegistry.tabMaterials);
     public static final Item gear_01 = ItemUtil.CreateItem("gear_01","gear/gear_01",1,AntiMatterModRegistry.tabMaterials);
     public static final Item turbine_01 = ItemUtil.CreateItem("turbine_01","turbine/turbine_01",1,AntiMatterModRegistry.tabMaterials);
     public static final Item turbineblade_01 = ItemUtil.CreateItem("turbineblade_01","turbine/turbineblade_01",1,AntiMatterModRegistry.tabMaterials);
-    public static final Item shaft_01 = ItemUtil.CreateItem("shaft","turbine/shaft_01",1,AntiMatterModRegistry.tabMaterials);
+    public static final Item shaft_01 = ItemUtil.CreateItem("shaft_01","turbine/shaft_01",1,AntiMatterModRegistry.tabMaterials);
+    public static final Item motor_01 = ItemUtil.CreateItem("motor_01","motor/motor_01",1,AntiMatterModRegistry.tabMaterials);
+    public static final Item motorparts_01 = ItemUtil.CreateItem("motorparts_01","motor/motorparts_01",2,AntiMatterModRegistry.tabMaterials);
 
-    
+
+
     //ツール類
     public static final Item statesChecker = new StatesChecker();
     //==================================================================================================================
@@ -121,12 +126,16 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(powder_01,"powder_01");
         GameRegistry.registerItem(wire,"wire");
         GameRegistry.registerItem(plate_01,"plate_01");
+        GameRegistry.registerItem(crystalplate_01,"crystalplate_01");
+        GameRegistry.registerItem(conductivematerial_01,"conductivematerial_01");
         GameRegistry.registerItem(rod_01,"rod_01");
         GameRegistry.registerItem(gear_01,"gear_01");
         GameRegistry.registerItem(turbine_01,"turbine_01");
         GameRegistry.registerItem(turbineblade_01,"turbineblade_01");
         GameRegistry.registerItem(shaft_01,"shaft_01");
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
+        GameRegistry.registerItem(motor_01,"motor_01");
+        GameRegistry.registerItem(motorparts_01,"motorparts_01");
         
         //Blockの登録 ==================================================================================================
             //鉱石
@@ -135,6 +144,7 @@ public class AntiMatterModRegistry {
         GameRegistry.registerBlock(oreBlock_1, MetaItemBlock.class, "oreBlock_01");
             //岩盤鉱石
         GameRegistry.registerBlock(bedrockCrystalOreBlock_1, MetaItemBlock.class, "bedrockCrystalOreBlock_01");
+        GameRegistry.registerBlock(bedrockPowderOreBlock_1, MetaItemBlock.class, "bedrockPowderOreBlock_01");
         GameRegistry.registerBlock(bedrockOreBlock_1, MetaItemBlock.class, "bedrockOreBlock_01");
             //機械
         GameRegistry.registerBlock(furnaceGenerator,"furnaceGeneratorAP");

@@ -39,6 +39,11 @@ item.plate_01_0.name=ライチウムプレート
 item.plate_01_1.name=ドランチウムプレート
 item.plate_01_2.name=パラジライトプレート
 
+item.crystalplate_01_0.name=アルステマイトプレート
+
+#--------------------------------------------conductivematerial
+item.conductivematerial_01_0.name=伝導性ガラス板[Rank1]
+
 #--------------------------------------------ロッド
 item.rod_01_0.name=パラジライトロッド
 
@@ -47,6 +52,12 @@ item.gear_01_0.name=パラジライト製歯車
 
 #--------------------------------------------ケーブル
 tile.Cable.name=ドランチウムケーブル
+
+#--------------------------------------------motor
+item.motor_01_0.name=モーター[Rank1}
+
+item.motorparts_01_0.name=モーターケース[Rank1]
+item.motorparts_01_1.name=モーターカバー[Rank1]
 
 #--------------------------------------------シャフト
 item.shaft_01_0.name=パラジライト製シャフト
