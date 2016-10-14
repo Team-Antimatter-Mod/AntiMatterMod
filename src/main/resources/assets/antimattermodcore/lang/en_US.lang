@@ -57,6 +57,9 @@ tile.turbine_01_0.name=turbine[Rank1]
 #--------------------------------------------turbine blade
 tile.turbineblade_01_0.name=Palazirite Turbine Blade
 
+#--------------------------------------------PowderOreBlock
+tile.powderOreBlock_01_0.name=Antelite Ore
+
 #--------------------------------------------CrystalOreBlock
 tile.crystalOreBlock_01_0.name=Crystalite Ore
 tile.crystalOreBlock_01_1.name=Abzumite Ore

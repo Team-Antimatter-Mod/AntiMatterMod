@@ -90,10 +90,14 @@ public class AntiMatterModRegistry {
     //鉱石
     public static final Block crystalOreBlock_1 = new CrystalOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3}, crystal_01, new int[]{0,1});
     public static final Block bedrockCrystalOreBlock_1 = new BedrockOreBlock("bedrockCrystalOreBlock_01",crystalOreBlock_1);
-    
+
+    public static final Block powderOreBlock_1 = new CrystalOreBlock(Material.rock, "powderOreBlock_01", "powderore/powderoreblock_01", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F,5.0F}, new byte[]{3,3}, powder_01, new int[]{0,1});
+    public static final Block bedrockPowderOreBlock_1 = new BedrockOreBlock("bedrockPowderOreBlock_01",powderOreBlock_1);
+
+
     public static final Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 16, new float[]{5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F}, new byte[]{3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3});
     public static final Block bedrockOreBlock_1 = new BedrockOreBlock("bedrockOreBlock_01",oreBlock_1);
-    
+
     //発電機
     public static final Block furnaceGenerator = new BlockFurnaceGenerator();
     public static final Block cable = new BlockCable(Material.rock);
@@ -127,6 +131,7 @@ public class AntiMatterModRegistry {
         //Blockの登録 ==================================================================================================
             //鉱石
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_01");
+        GameRegistry.registerBlock(powderOreBlock_1, MetaItemBlock.class, "powderOreBlock_01");
         GameRegistry.registerBlock(oreBlock_1, MetaItemBlock.class, "oreBlock_01");
             //岩盤鉱石
         GameRegistry.registerBlock(bedrockCrystalOreBlock_1, MetaItemBlock.class, "bedrockCrystalOreBlock_01");
