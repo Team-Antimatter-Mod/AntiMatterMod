@@ -1,5 +1,6 @@
 package antimattaermod.core;
 
+import antimattaermod.core.Block.BlockSoil;
 import antimattaermod.core.Energy.Generator.Block.BlockSatStove;
 import antimattaermod.core.Block.Ores.BedrockOreBlock;
 import antimattaermod.core.Energy.Transfer.BlockCable;
@@ -128,6 +129,9 @@ public class AntiMatterModRegistry {
 
     //かまど
     public static final Block satStove = new BlockSatStove();
+
+    //その他
+    public static final Block soilBlock = new BlockSoil();
     
     //ブロックの登録方法
     public static final Block tier1_machinecasing = BlockUtil.CreateBlock("tier1_machinecasing","casing/tier1_machinecasing_01",Material.rock,AntiMatterModRegistry.tabMachines,1,5f,5f);
@@ -173,6 +177,8 @@ public class AntiMatterModRegistry {
         GameRegistry.registerBlock(cable, CableItemBlock.class,"Cable");
         GameRegistry.registerBlock(satStove,"satStove");
         GameRegistry.registerBlock(tier1_machinecasing,"tier1_machinecasing");
+            //その他
+        GameRegistry.registerBlock(soilBlock,"soilBlock");
         
         
         
