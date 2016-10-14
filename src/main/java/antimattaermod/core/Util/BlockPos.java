@@ -1,6 +1,7 @@
 package antimattaermod.core.Util;
 
 import net.minecraft.block.Block;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.IWorldAccess;
@@ -12,6 +13,7 @@ import net.minecraftforge.common.util.ForgeDirection;
  */
 public class BlockPos {
     private int x,y,z;
+    public static final BlockPos empty = new BlockPos(0,0,0);
     public BlockPos(int x,int y,int z){
         this.x = x;
         this.y = y;
@@ -77,5 +79,28 @@ public class BlockPos {
         }else {
             return ForgeDirection.UNKNOWN;
         }
+    }
+
+    public void writeToNBT(NBTTagCompound tagCompound){
+        writeToNBT(tagCompound,"blockPos");
+    }
+
+    public void writeToNBT(NBTTagCompound tagCompound,String tagName){
+        NBTTagCompound tag = new NBTTagCompound();
+        tag.setInteger("x",x);
+        tag.setInteger("y",y);
+        tag.setInteger("z",z);
+        tagCompound.setTag(tagName,tag);
+    }
+
+    public void readFromNBT(NBTTagCompound tagCompound,String tagName){
+        NBTTagCompound tag = tagCompound.getCompoundTag(tagName);
+        x = tag.getInteger("x");
+        y = tag.getInteger("y");
+        z = tag.getInteger("z");
+    }
+
+    public void readFromNBT(NBTTagCompound tagCompound){
+        readFromNBT(tagCompound,"blockPos");
     }
 }
