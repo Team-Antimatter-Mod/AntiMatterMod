@@ -1,5 +1,6 @@
 package antimattaermod.core;
 
+import antimattaermod.core.Block.BlockSoil;
 import antimattaermod.core.Energy.Generator.Block.BlockSatStove;
 import antimattaermod.core.Block.Ores.BedrockOreBlock;
 import antimattaermod.core.Energy.Transfer.BlockCable;
@@ -19,6 +20,9 @@ import antimattaermod.core.Util.ItemUtil;
 import antimattaermod.core.World.Ore.OreGenerator;
 import antimattaermod.core.World.Structure.AMMStructureEventHandler;
 import antimattaermod.core.World.Structure.Test.StructureTestStart;
+import antimattaermod.core.World.Structure.Tiamat.ComponentTiamatCenter;
+import antimattaermod.core.World.Structure.Tiamat.ComponentTiamatCenterLine;
+import antimattaermod.core.World.Structure.Tiamat.StructureTiamatStart;
 import antimattaermod.core.crafting.RecipeRemover;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -94,6 +98,7 @@ public class AntiMatterModRegistry {
     public static final Item wire = ItemUtil.CreateItem("wire_01","wire/wire_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",3,AntiMatterModRegistry.tabImaterial);
     public static final Item crystalplate_01 = ItemUtil.CreateItem("crystalplate_01","plate/crystalplate_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item industrialplate_01 = ItemUtil.CreateItem("industrialplate_01","plate/industrialplate_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item conductivematerial_01 = ItemUtil.CreateItem("conductivematerial_01","conductivematerial/conductivematerial_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item rod_01 = ItemUtil.CreateItem("rod_01","rod/rod_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item gear_01 = ItemUtil.CreateItem("gear_01","gear/gear_01",1,AntiMatterModRegistry.tabImaterial);
@@ -107,8 +112,8 @@ public class AntiMatterModRegistry {
 
     //ツール類
     public static final Item statesChecker = new StatesChecker();
-    public static final Item hammer_01 = new Hammer(10);//耐久値10のハンマーを追加(使えるのは11回)
-    public static final Item wrench_01 = new Wrench(10);//耐久値10のレンチを追加(使えるのは11回)
+    public static final Item hammer_01 = new Hammer("IronHammer","iron_hammer",10);//耐久値10のハンマーを追加(使えるのは11回)
+    public static final Item wrench_01 = new Wrench("IronWrench","iron_wrench",10);//耐久値10のレンチを追加(使えるのは11回)
     //==================================================================================================================
 
     //Block  ===========================================================================================================
@@ -128,6 +133,9 @@ public class AntiMatterModRegistry {
 
     //かまど
     public static final Block satStove = new BlockSatStove();
+
+    //その他
+    public static final Block soilBlock = new BlockSoil();
     
     //ブロックの登録方法
     public static final Block tier1_machinecasing = BlockUtil.CreateBlock("tier1_machinecasing","casing/tier1_machinecasing_01",Material.rock,AntiMatterModRegistry.tabMachines,1,5f,5f);
@@ -146,6 +154,7 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(wire,"wire");
         GameRegistry.registerItem(plate_01,"plate_01");
         GameRegistry.registerItem(crystalplate_01,"crystalplate_01");
+        GameRegistry.registerItem(industrialplate_01,"industrialplate_01");
         GameRegistry.registerItem(conductivematerial_01,"conductivematerial_01");
         GameRegistry.registerItem(rod_01,"rod_01");
         GameRegistry.registerItem(gear_01,"gear_01");
@@ -156,8 +165,8 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(motorparts_01,"motorparts_01");
             //ツール
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
-        GameRegistry.registerItem(hammer_01,"hammer");//追加
-        GameRegistry.registerItem(wrench_01,"wrench");
+        GameRegistry.registerItem(hammer_01,"hammer_01");//追加
+        GameRegistry.registerItem(wrench_01,"wrench_01");
         
         //Blockの登録 ==================================================================================================
             //鉱石
@@ -173,6 +182,14 @@ public class AntiMatterModRegistry {
         GameRegistry.registerBlock(cable, CableItemBlock.class,"Cable");
         GameRegistry.registerBlock(satStove,"satStove");
         GameRegistry.registerBlock(tier1_machinecasing,"tier1_machinecasing");
+            //その他
+        GameRegistry.registerBlock(soilBlock,"soilBlock");
+
+
+        //鉱石辞書登録
+        OreDictionary.registerOre("plateIron",new ItemStack(AntiMatterModRegistry.industrialplate_01,1,0));
+        OreDictionary.registerOre("craftingToolHardHammer",new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE));
+        OreDictionary.registerOre("craftingToolWrench",new ItemStack(AntiMatterModRegistry.wrench_01,1,OreDictionary.WILDCARD_VALUE));
         
         
         
@@ -201,6 +218,10 @@ public class AntiMatterModRegistry {
         MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest2.class, "Test2");
         MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest3.class, "Test3");
         MapGenStructureIO.func_143031_a(StructureTestStart.ComponentTest4.class, "Test4");
+        
+        MapGenStructureIO.registerStructure(StructureTiamatStart.class, "TiamatComet");
+        MapGenStructureIO.func_143031_a(ComponentTiamatCenter.class, "TiamaitCometCenter");
+        MapGenStructureIO.func_143031_a(ComponentTiamatCenterLine.class, "TiamatCometCenterLine");
         
     }
     //postinitで行う処理
