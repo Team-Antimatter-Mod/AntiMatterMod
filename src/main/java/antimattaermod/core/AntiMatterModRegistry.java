@@ -107,8 +107,8 @@ public class AntiMatterModRegistry {
 
     //ツール類
     public static final Item statesChecker = new StatesChecker();
-    public static final Item hammer_01 = new Hammer(10);//耐久値10のハンマーを追加(使えるのは11回)
-    public static final Item wrench_01 = new Wrench(10);//耐久値10のレンチを追加(使えるのは11回)
+    public static final Item hammer_01 = new Hammer("TestHammer","test_hammer",10);//耐久値10のハンマーを追加(使えるのは11回)
+    public static final Item wrench_01 = new Wrench("TestHammer","test_hammer",10);//耐久値10のレンチを追加(使えるのは11回)
     //==================================================================================================================
 
     //Block  ===========================================================================================================
