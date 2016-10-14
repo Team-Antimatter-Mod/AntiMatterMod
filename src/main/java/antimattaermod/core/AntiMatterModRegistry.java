@@ -43,7 +43,7 @@ public class AntiMatterModRegistry {
 	
     //CreativeTab ======================================================================================================
     //鉱石
-    public static final CreativeTabs tabOreBlock = new CreativeTabs("tabOreBlock") {
+    public static final CreativeTabs tabOreBlock = new CreativeTabs("amOreBlock") {
         @Override
         public Item getTabIconItem() {
             return Item.getItemFromBlock(Blocks.diamond_ore);
@@ -55,6 +55,13 @@ public class AntiMatterModRegistry {
         @SideOnly(Side.CLIENT)
         public Item getTabIconItem() {
             return ingot_01;
+        }
+    };
+    //中間素材
+    public final static CreativeTabs tabImaterial = new CreativeTabs("amIntermediateMaterial") {
+        @Override
+        public Item getTabIconItem() {
+            return motor_01;
         }
     };
     //機械・発電機
@@ -73,17 +80,18 @@ public class AntiMatterModRegistry {
 	public static final Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot/ingot_01",17,AntiMatterModRegistry.tabMaterials, AddInformationfunction::IngotInformation);
     public static final Item crystal_01 = ItemUtil.CreateItem("crystal_01","crystal/crystal_01",7,AntiMatterModRegistry.tabMaterials);
     public static final Item powder_01 = ItemUtil.CreateItem("powder_01","powder/powder_01",1,AntiMatterModRegistry.tabMaterials);
-    public static final Item wire = ItemUtil.CreateItem("wire_01","wire/wire_01",1,AntiMatterModRegistry.tabMaterials);
-    public static final Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",3,AntiMatterModRegistry.tabMaterials);
-    public static final Item crystalplate_01 = ItemUtil.CreateItem("crystalplate_01","plate/crystalplate_01",1,AntiMatterModRegistry.tabMaterials);
-    public static final Item conductivematerial_01 = ItemUtil.CreateItem("conductivematerial_01","conductivematerial/conductivematerial_01",1,AntiMatterModRegistry.tabMaterials);
-    public static final Item rod_01 = ItemUtil.CreateItem("rod_01","rod/rod_01",1,AntiMatterModRegistry.tabMaterials);
-    public static final Item gear_01 = ItemUtil.CreateItem("gear_01","gear/gear_01",1,AntiMatterModRegistry.tabMaterials);
-    public static final Item turbine_01 = ItemUtil.CreateItem("turbine_01","turbine/turbine_01",1,AntiMatterModRegistry.tabMaterials);
-    public static final Item turbineblade_01 = ItemUtil.CreateItem("turbineblade_01","turbine/turbineblade_01",1,AntiMatterModRegistry.tabMaterials);
-    public static final Item shaft_01 = ItemUtil.CreateItem("shaft_01","turbine/shaft_01",1,AntiMatterModRegistry.tabMaterials);
-    public static final Item motor_01 = ItemUtil.CreateItem("motor_01","motor/motor_01",1,AntiMatterModRegistry.tabMaterials);
-    public static final Item motorparts_01 = ItemUtil.CreateItem("motorparts_01","motor/motorparts_01",2,AntiMatterModRegistry.tabMaterials);
+    
+    public static final Item wire = ItemUtil.CreateItem("wire_01","wire/wire_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",3,AntiMatterModRegistry.tabImaterial);
+    public static final Item crystalplate_01 = ItemUtil.CreateItem("crystalplate_01","plate/crystalplate_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item conductivematerial_01 = ItemUtil.CreateItem("conductivematerial_01","conductivematerial/conductivematerial_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item rod_01 = ItemUtil.CreateItem("rod_01","rod/rod_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item gear_01 = ItemUtil.CreateItem("gear_01","gear/gear_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item turbine_01 = ItemUtil.CreateItem("turbine_01","turbine/turbine_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item turbineblade_01 = ItemUtil.CreateItem("turbineblade_01","turbine/turbineblade_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item shaft_01 = ItemUtil.CreateItem("shaft_01","turbine/shaft_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item motor_01 = ItemUtil.CreateItem("motor_01","motor/motor_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item motorparts_01 = ItemUtil.CreateItem("motorparts_01","motor/motorparts_01",2,AntiMatterModRegistry.tabImaterial);
 
 
 
@@ -98,8 +106,7 @@ public class AntiMatterModRegistry {
 
     public static final Block powderOreBlock_1 = new DifferentOreBlock(Material.rock, "powderOreBlock_01", "powderore/powderoreblock_01", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F}, new byte[]{3}, powder_01, new int[]{0}, new int[]{8,8});
     public static final Block bedrockPowderOreBlock_1 = new BedrockOreBlock("bedrockPowderOreBlock_01",powderOreBlock_1);
-
-
+    
     public static final Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 16, new float[]{5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F}, new byte[]{3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3});
     public static final Block bedrockOreBlock_1 = new BedrockOreBlock("bedrockOreBlock_01",oreBlock_1);
 

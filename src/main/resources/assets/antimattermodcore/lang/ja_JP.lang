@@ -54,7 +54,7 @@ item.gear_01_0.name=パラジライト製歯車
 tile.Cable.name=ドランチウムケーブル
 
 #--------------------------------------------motor
-item.motor_01_0.name=モーター[Rank1}
+item.motor_01_0.name=モーター[Rank1]
 
 item.motorparts_01_0.name=モーターケース[Rank1]
 item.motorparts_01_1.name=モーターカバー[Rank1]
@@ -101,8 +101,9 @@ item.StatesChecker.name=ステータスチェッカー
 
 #--------------------------------------------タブ
 itemGroup.ammaterials=反物質modコアの素材
-itemGroup.tabOreBlock=反物質modコアの鉱石ブロック
+itemGroup.amOreBlock=反物質modコアの鉱石ブロック
 itemGroup.ammachines=反物質modコアの機械
+itemGroup.amIntermediateMaterial=反物質modコアの中間素材
 
 #--------------------------------------------情報
 tile.ingot_01_0.information_1=1200年前に半分に割れて落ちた

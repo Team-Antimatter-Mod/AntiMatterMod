@@ -101,8 +101,9 @@ item.StatesChecker.name=StatesChecker
 
 #--------------------------------------------Tab
 itemGroup.ammaterials=AntiMatterModCore Materials
-itemGroup.tabOreBlock=AntiMatterModCore OreBlock
+itemGroup.amOreBlock=AntiMatterModCore OreBlock
 itemGroup.ammachines=AntiMatterModCore Machines
+itemGroup.amIntermediateMaterial=AntiMatterModCore Intermediate Material
 
 #--------------------------------------------Info
 tile.ingot_01_0.information_1=There was metal in the Tiamat comet
