@@ -11,6 +11,8 @@ import antimattaermod.core.Block.Ores.OreBlock;
 import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Item.StatesChecker;
+import antimattaermod.core.Item.tool.Hammer;
+import antimattaermod.core.Item.tool.Wrench;
 import antimattaermod.core.Util.AddInformationfunction;
 import antimattaermod.core.Util.BlockUtil;
 import antimattaermod.core.Util.ItemUtil;
@@ -33,6 +35,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.gen.structure.MapGenStructureIO;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.oredict.OreDictionary;
 
 import static antimattaermod.core.AntiMatterModCore.proxy;
 
@@ -68,7 +71,14 @@ public class AntiMatterModRegistry {
     public final static CreativeTabs tabMachines = new CreativeTabs("ammachines") {
         @Override
         public Item getTabIconItem() {
-            return Item.getItemFromBlock(Blocks.furnace);
+            return Item.getItemFromBlock(furnaceGenerator);
+        }
+    };
+    //ツール
+    public final static CreativeTabs tabTools = new CreativeTabs("amtools") {
+        @Override
+        public Item getTabIconItem() {
+            return hammer_01;
         }
     };
 
@@ -97,6 +107,8 @@ public class AntiMatterModRegistry {
 
     //ツール類
     public static final Item statesChecker = new StatesChecker();
+    public static final Item hammer_01 = new Hammer("TestHammer","test_hammer",10);//耐久値10のハンマーを追加(使えるのは11回)
+    public static final Item wrench_01 = new Wrench("TestHammer","test_hammer",10);//耐久値10のレンチを追加(使えるのは11回)
     //==================================================================================================================
 
     //Block  ===========================================================================================================
@@ -126,9 +138,11 @@ public class AntiMatterModRegistry {
     //preinitで行う登録処理
     static void registerPreInit(FMLPreInitializationEvent event){
         //Itemの登録 ===================================================================================================
+            //素材
         GameRegistry.registerItem(crystal_01, "material");
         GameRegistry.registerItem(ingot_01,"ingot_01");
         GameRegistry.registerItem(powder_01,"powder_01");
+            //中間素材
         GameRegistry.registerItem(wire,"wire");
         GameRegistry.registerItem(plate_01,"plate_01");
         GameRegistry.registerItem(crystalplate_01,"crystalplate_01");
@@ -138,9 +152,12 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(turbine_01,"turbine_01");
         GameRegistry.registerItem(turbineblade_01,"turbineblade_01");
         GameRegistry.registerItem(shaft_01,"shaft_01");
-        GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         GameRegistry.registerItem(motor_01,"motor_01");
         GameRegistry.registerItem(motorparts_01,"motorparts_01");
+            //ツール
+        GameRegistry.registerItem(statesChecker,"statesCheckerAP");
+        GameRegistry.registerItem(hammer_01,"hammer");//追加
+        GameRegistry.registerItem(wrench_01,"wrench");
         
         //Blockの登録 ==================================================================================================
             //鉱石
