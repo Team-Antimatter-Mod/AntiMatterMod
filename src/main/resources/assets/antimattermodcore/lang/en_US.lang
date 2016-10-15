@@ -114,6 +114,8 @@ item.StatesChecker.name=StatesChecker
 #--------------------------------------------tools
 item.IronHammer.name=Iron Hammer[level0]
 item.IronWrench.name=Iron Wrench[level0]
+item.IronWirecutter.name=Iron Wire Cutter[level0]
+item.IronFile.name=Iron File[level0]
 
 #--------------------------------------------Tab
 itemGroup.ammaterials=AntiMatterModCore Materials

@@ -19,18 +19,22 @@ public class RecipeRegister {
         //レシピの登録 =================================================================================================
         //耐久値有のRecipeを登録するときはメタ値のところにOreDictionary.WILDCARD_VALUE
 
-     //used level1 hammer
         //プレート
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.industrialplate_01,1,0),"A","B","B",'A',"craftingToolHardHammer",'B',new ItemStack(Items.iron_ingot,1,0)));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,1),"A","B","B",'A',"craftingToolHardHammer",'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,1)));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,2),"A","B","B",'A',"craftingToolHardHammer",'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,2)));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,3),"A","B","B",'A',"craftingToolHardHammer",'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,3)));
 
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.crystalplate_01,1,0),"AB ","CC ","CC ",
+                'A',"craftingToolFile",'B',"craftingToolHardHammer",'C',new ItemStack(AntiMatterModRegistry.crystal_01,1,6)));
+
+        //ロッド
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.rod_01,1,0),"   ","A  "," B ",'A',"craftingToolFile",'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,3)));
+
         //その他
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.motorparts_01,1,0),"AAA","AB ","AAA",'A',new ItemStack(AntiMatterModRegistry.plate_01,1,1),'B',"craftingToolHardHammer"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.motorparts_01,1,1)," AA"," BA"," AA",'A',"plateIron",'B',"craftingToolHardHammer"));
 
-     //used level1 wrench
         //筐体
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.furnaceGenerator),"ABA","CDC","EFE",
                 'A',new ItemStack(AntiMatterModRegistry.motor_01,1,0), 'B',new ItemStack(AntiMatterModRegistry.turbine_01,1,0),
@@ -43,9 +47,9 @@ public class RecipeRegister {
                 'B',new ItemStack(AntiMatterModRegistry.conductivematerial_01,1,0),
                 'C',"craftingToolWrench"));
 
-     //通常レシピ
-        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0)," S ","S S"," S ",
-                'S',new ItemStack(AntiMatterModRegistry.plate_01,1,2));
+        //その他
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0)," S ","SCS"," S ",
+                'S',new ItemStack(AntiMatterModRegistry.plate_01,1,2),'C',"craftingToolWireCutter"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.gear_01,1,0),"ABA","BCB","ABA",
                 'A',new ItemStack(AntiMatterModRegistry.rod_01,1,0),'B',new ItemStack(AntiMatterModRegistry.plate_01,1,3),
                 'C',"craftingToolWrench"));

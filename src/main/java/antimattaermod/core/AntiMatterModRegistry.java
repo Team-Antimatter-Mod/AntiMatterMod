@@ -125,6 +125,8 @@ public class AntiMatterModRegistry {
     public static final Item statesChecker = new StatesChecker();
     public static final Item hammer_01 = new Hammer("IronHammer","iron_hammer",10);//耐久値10のハンマーを追加(使えるのは11回)
     public static final Item wrench_01 = new Wrench("IronWrench","iron_wrench",10);//耐久値10のレンチを追加(使えるのは11回)
+    public static final Item wirecutter_01 = new Wrench("IronWirecutter","iron_wirecutter",10);//耐久値10のワイヤーカッターを追加(使えるのは11回)
+    public static final Item file_01 = new Wrench("IronFile","iron_file",10);//耐久値10の鑢（ヤスリ）を追加(使えるのは11回)
     //==================================================================================================================
 
     //Block  ===========================================================================================================
@@ -187,6 +189,8 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         GameRegistry.registerItem(hammer_01,"hammer_01");//追加
         GameRegistry.registerItem(wrench_01,"wrench_01");
+        GameRegistry.registerItem(wirecutter_01,"wirecutter_01");
+        GameRegistry.registerItem(file_01,"file_01");
         
         //Blockの登録 ==================================================================================================
             //鉱石

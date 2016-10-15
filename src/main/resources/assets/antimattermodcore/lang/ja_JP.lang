@@ -46,7 +46,7 @@ item.crystalplate_01_0.name=アルステマイトプレート
 
 item.industrialplate_01_0.name=鉄プレート
 
-#--------------------------------------------conductivematerial
+#--------------------------------------------伝導性素材
 item.conductivematerial_01_0.name=伝導性ガラス板[Rank1]
 
 #--------------------------------------------ロッド
@@ -58,7 +58,7 @@ item.gear_01_0.name=パラジライト製歯車
 #--------------------------------------------ケーブル
 tile.Cable.name=ドランチウムケーブル
 
-#--------------------------------------------motor
+#--------------------------------------------モーター
 item.motor_01_0.name=モーター[Rank1]
 
 item.motorparts_01_0.name=モーターケース[Rank1]
@@ -115,6 +115,8 @@ item.StatesChecker.name=ステータスチェッカー
 #--------------------------------------------ツール
 item.IronHammer.name=鉄のハンマー[level0]
 item.IronWrench.name=鉄のレンチ[level0]
+item.IronWirecutter.name=鉄のワイヤーカッター[level0]
+item.IronFile.name=鉄の鑢(ヤスリ)[level0]
 
 #--------------------------------------------タブ
 itemGroup.ammaterials=反物質modコアの素材

@@ -16,5 +16,7 @@ public class OreDictionaryRegister {
         OreDictionary.registerOre("plateIron",new ItemStack(AntiMatterModRegistry.industrialplate_01,1,0));
         OreDictionary.registerOre("craftingToolHardHammer",new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE));
         OreDictionary.registerOre("craftingToolWrench",new ItemStack(AntiMatterModRegistry.wrench_01,1,OreDictionary.WILDCARD_VALUE));
+        OreDictionary.registerOre("craftingToolWireCutter",new ItemStack(AntiMatterModRegistry.wirecutter_01,1,OreDictionary.WILDCARD_VALUE));
+        OreDictionary.registerOre("craftingToolFile",new ItemStack(AntiMatterModRegistry.file_01,1,OreDictionary.WILDCARD_VALUE));
     }
 }
