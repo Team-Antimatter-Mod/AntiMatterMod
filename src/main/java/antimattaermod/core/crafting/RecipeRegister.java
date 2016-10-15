@@ -75,6 +75,6 @@ public class RecipeRegister {
         
         
         //バケツ
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.bucket),"IHI"," I ",'H',"craftingToolHardHammer",'I',"plateIron"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.bucket),"I I","IHI"," I ",'H',"craftingToolHardHammer",'I',"plateIron"));
     }
 }

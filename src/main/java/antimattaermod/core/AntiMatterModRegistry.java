@@ -3,7 +3,7 @@ package antimattaermod.core;
 import antimattaermod.core.Block.BlockSoil;
 import antimattaermod.core.Block.ClayCrucible;
 import antimattaermod.core.Block.TileEntity.TileEntityClayCrucible;
-import antimattaermod.core.Energy.Generator.Block.BlockSatStove;
+import antimattaermod.core.Block.BlockSatStove;
 import antimattaermod.core.Block.Ores.BedrockOreBlock;
 import antimattaermod.core.Energy.Transfer.BlockCable;
 import antimattaermod.core.Energy.Transfer.TileEntityCable;
