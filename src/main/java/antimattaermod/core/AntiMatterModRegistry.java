@@ -115,6 +115,9 @@ public class AntiMatterModRegistry {
     public static final Item shaft_01 = ItemUtil.CreateItem("shaft_01","turbine/shaft_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item motor_01 = ItemUtil.CreateItem("motor_01","motor/motor_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item motorparts_01 = ItemUtil.CreateItem("motorparts_01","motor/motorparts_01",2,AntiMatterModRegistry.tabImaterial);
+    public static final Item motormagnet_01 = ItemUtil.CreateItem("motormagnet_01","motormagnet/motormagnet_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item magnetizedingot_01 = ItemUtil.CreateItem("magnetizedingot_01","motormagnet/magnetizedingot_01",1,AntiMatterModRegistry.tabImaterial);
+
 
 
 
@@ -178,6 +181,8 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(shaft_01,"shaft_01");
         GameRegistry.registerItem(motor_01,"motor_01");
         GameRegistry.registerItem(motorparts_01,"motorparts_01");
+        GameRegistry.registerItem(motormagnet_01,"motormagnet_01");
+        GameRegistry.registerItem(magnetizedingot_01,"magnetizedingot_01");
             //ツール
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         GameRegistry.registerItem(hammer_01,"hammer_01");//追加

@@ -28,6 +28,8 @@ item.ingot_01_14.name=Diglite Ingot
 item.ingot_01_15.name=Astnides Ingot
 item.ingot_01_16.name=Pazilite Ingot
 
+item.magnetizedingot_01_0.name=Magnetized Raitium Ingot
+
 #--------------------------------------------powder
 item.powder_01_0.name=Antelite Powder
 
@@ -61,6 +63,8 @@ item.motor_01_0.name=Motor[Rank1}
 
 item.motorparts_01_0.name=MotorCase[Rank1]
 item.motorparts_01_1.name=MotorCover[Rank1]
+
+item.motormagnet_01_0.name=MotorMagnet[Rank1]
 
 #--------------------------------------------shaft
 item.shaft_01_0.name=Palazirite shaft
@@ -116,6 +120,8 @@ itemGroup.ammaterials=AntiMatterModCore Materials
 itemGroup.amOreBlock=AntiMatterModCore OreBlock
 itemGroup.ammachines=AntiMatterModCore Machines
 itemGroup.amIntermediateMaterial=AntiMatterModCore Intermediate Material
+itemGroup.amcompressedblocks=AntiMatterModCore Compressed Blocks
+itemGroup.amtools=AntiMatterModCore Tools
 
 #--------------------------------------------Info
 tile.ingot_01_0.information_1=There was metal in the Tiamat comet

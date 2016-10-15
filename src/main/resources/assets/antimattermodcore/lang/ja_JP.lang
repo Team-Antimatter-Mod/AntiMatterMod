@@ -28,6 +28,8 @@ item.ingot_01_14.name=ディグライト インゴット
 item.ingot_01_15.name=アストノイド インゴット
 item.ingot_01_16.name=パジライト インゴット
 
+item.magnetizedingot_01_0.name=磁気化ライチウムインゴット
+
 #--------------------------------------------粉
 item.powder_01_0.name=アンティライトの粉
 
@@ -61,6 +63,9 @@ item.motor_01_0.name=モーター[Rank1]
 
 item.motorparts_01_0.name=モーターケース[Rank1]
 item.motorparts_01_1.name=モーターカバー[Rank1]
+
+item.motormagnet_01_0.name=モーター用磁石[Rank1]
+
 
 #--------------------------------------------シャフト
 item.shaft_01_0.name=パラジライト製シャフト
@@ -116,6 +121,8 @@ itemGroup.ammaterials=反物質modコアの素材
 itemGroup.amOreBlock=反物質modコアの鉱石ブロック
 itemGroup.ammachines=反物質modコアの機械
 itemGroup.amIntermediateMaterial=反物質modコアの中間素材
+itemGroup.amcompressedblocks=反物質modコアの圧縮ブロック
+itemGroup.amtools=反物質modコアのツール
 
 #--------------------------------------------情報
 tile.ingot_01_0.information_1=1200年前に半分に割れて落ちた
