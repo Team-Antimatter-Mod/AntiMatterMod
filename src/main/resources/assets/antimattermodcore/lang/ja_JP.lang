@@ -77,6 +77,11 @@ tile.powderOreBlock_01_0.name=アンティライト鉱石
 #--------------------------------------------クリスタル鉱石ブロック
 tile.crystalOreBlock_01_0.name=アプスマイト鉱石
 tile.crystalOreBlock_01_1.name=クリスタライト鉱石
+tile.crystalOreBlock_01_2.name=メトライト鉱石
+tile.crystalOreBlock_01_3.name=アラモナイト鉱石
+tile.crystalOreBlock_01_4.name=アクアルチル鉱石
+tile.crystalOreBlock_01_5.name=リュウマイト鉱石
+tile.crystalOreBlock_01_6.name=アルステマイト鉱石
 
 #--------------------------------------------鉱石ブロック
 tile.oreBlock_01_0.name=ティアマイト鉱石
