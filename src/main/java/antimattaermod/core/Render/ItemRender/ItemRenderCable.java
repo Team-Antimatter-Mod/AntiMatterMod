@@ -1,4 +1,4 @@
-package antimattaermod.core.Render;
+package antimattaermod.core.Render.ItemRender;
 
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.item.ItemStack;

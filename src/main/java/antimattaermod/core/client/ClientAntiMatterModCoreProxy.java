@@ -4,9 +4,11 @@
 package antimattaermod.core.client;
 
 import antimattaermod.core.AntiMatterModRegistry;
+import antimattaermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattaermod.core.Energy.Transfer.TileEntityCable;
 import antimattaermod.core.Render.CableRender;
-import antimattaermod.core.Render.ItemRenderCable;
+import antimattaermod.core.Render.ClayCrucibleSpecialRender;
+import antimattaermod.core.Render.ItemRender.ItemRenderCable;
 import antimattaermod.core.Render.OverlayBlockRender;
 import antimattaermod.core.common.AntiMatterModCoreProxy;
 import cpw.mods.fml.client.FMLClientHandler;
@@ -40,6 +42,9 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 		
 		//オーバーレイブロックレンダ―
 		RenderingRegistry.registerBlockHandler(new OverlayBlockRender());
+		//粘土るつぼレンダ―
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityClayCrucible.class,new ClayCrucibleSpecialRender());
+		
 		//ケーブルレンダ―
 		TileEntitySpecialRenderer renderer = new CableRender();
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCable.class,renderer);

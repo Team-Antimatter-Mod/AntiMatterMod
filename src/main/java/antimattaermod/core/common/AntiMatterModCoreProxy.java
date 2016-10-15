@@ -19,11 +19,13 @@ public class AntiMatterModCoreProxy {
 	public void registerRenderer(){}
 
 	public void registerRenderThings(){}
-
+	
+	@SuppressWarnings("unused")
 	public void registerTileEntitySpecialRender(){
 
 	}
 	
+	@SuppressWarnings("unused")
 	public World getClientWorld(){
 		return null;
 	}

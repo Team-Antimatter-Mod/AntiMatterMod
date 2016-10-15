@@ -1,6 +1,8 @@
 package antimattaermod.core;
 
 import antimattaermod.core.Block.BlockSoil;
+import antimattaermod.core.Block.ClayCrucible;
+import antimattaermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattaermod.core.Energy.Generator.Block.BlockSatStove;
 import antimattaermod.core.Block.Ores.BedrockOreBlock;
 import antimattaermod.core.Energy.Transfer.BlockCable;
@@ -145,9 +147,12 @@ public class AntiMatterModRegistry {
 
     //筐体
     public static final Block tier1_machinecasing = BlockUtil.CreateBlock("tier1_machinecasing","casing/tier1_machinecasing_01",Material.rock,AntiMatterModRegistry.tabMachines,1,5f,5f);
-
+	
     //インゴット系圧縮ブロック
     public static final Block ingotblock_01 = BlockUtil.CreateBlock("ingotblock_01","compressedblock/ingotblock_01",Material.rock,AntiMatterModRegistry.tabCompressedBlocks,15,5f,5f);
+	
+	//テスト
+	public static final Block clayCrucible = new ClayCrucible();
 
 
     //==================================================================================================================
@@ -194,10 +199,14 @@ public class AntiMatterModRegistry {
         GameRegistry.registerBlock(tier1_machinecasing,"tier1_machinecasing");
             //その他
         GameRegistry.registerBlock(soilBlock,"soilBlock");
+            //テスト
+        GameRegistry.registerBlock(clayCrucible,"clayCrucible");
 
-            //インゴット系圧縮ブロック
-        GameRegistry.registerBlock(ingotblock_01,"ingotblock_01");
-
+	        //鉱石辞書登録
+        OreDictionary.registerOre("plateIron",new ItemStack(AntiMatterModRegistry.industrialplate_01,1,0));
+        OreDictionary.registerOre("craftingToolHardHammer",new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE));
+        OreDictionary.registerOre("craftingToolWrench",new ItemStack(AntiMatterModRegistry.wrench_01,1,OreDictionary.WILDCARD_VALUE));
+        
         
         
         //Renderの登録 =================================================================================================
@@ -213,6 +222,8 @@ public class AntiMatterModRegistry {
         //TileEntityの登録 =============================================================================================
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class,"tileFurnaceGeneratorAP");
         GameRegistry.registerTileEntity(TileEntityCable.class,"tileCableAP");
+        
+        GameRegistry.registerTileEntity(TileEntityClayCrucible.class, "tileClayCrucible");
         
         //WorldGeneratorの登録 =========================================================================================
         GameRegistry.registerWorldGenerator(new OreGenerator(),2);

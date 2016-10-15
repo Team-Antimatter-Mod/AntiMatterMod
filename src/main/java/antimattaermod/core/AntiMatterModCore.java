@@ -57,7 +57,7 @@ public class AntiMatterModCore {
 	
 	@Mod.EventHandler
 	@SuppressWarnings("unused")
-	public void serverSterting(FMLServerStartingEvent event){
+	public void serverStarting(FMLServerStartingEvent event){
 		event.registerServerCommand(new ExclusiveDeleteBlock());
 		event.registerServerCommand(new Createsphere());
 		

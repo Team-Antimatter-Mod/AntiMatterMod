@@ -1,5 +1,7 @@
 package antimattaermod.core.Block;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -45,6 +47,7 @@ public class SimpleMetaBlock extends Block{
 	}
 	
 	@Override
+	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister p_149651_1_) {
 		for (int i = 0; i < icons.length; i++){
 			icons[i] = p_149651_1_.registerIcon(this.getTextureName()+"_"+i);
@@ -52,6 +55,7 @@ public class SimpleMetaBlock extends Block{
 	}
 	
 	@Override
+	@SideOnly(Side.CLIENT)
 	public IIcon getIcon(int p_149691_1_, int p_149691_2_) {
 		return icons[p_149691_2_];
 	}
