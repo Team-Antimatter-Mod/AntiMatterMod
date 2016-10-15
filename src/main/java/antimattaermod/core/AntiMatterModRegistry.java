@@ -85,6 +85,12 @@ public class AntiMatterModRegistry {
             return hammer_01;
         }
     };
+    //圧縮ブロック
+    public final static CreativeTabs tabCompressedBlocks = new CreativeTabs("amcompressedblocks") {
+        @Override
+        public Item getTabIconItem() {
+            return Item.getItemFromBlock(ingotblock_01);}
+    };
 
 
     //==================================================================================================================
@@ -141,6 +147,8 @@ public class AntiMatterModRegistry {
     public static final Block tier1_machinecasing = BlockUtil.CreateBlock("tier1_machinecasing","casing/tier1_machinecasing_01",Material.rock,AntiMatterModRegistry.tabMachines,1,5f,5f);
 
     //インゴット系圧縮ブロック
+    public static final Block ingotblock_01 = BlockUtil.CreateBlock("ingotblock_01","compressedblock/ingotblock_01",Material.rock,AntiMatterModRegistry.tabCompressedBlocks,15,5f,5f);
+
 
     //==================================================================================================================
 
@@ -188,6 +196,7 @@ public class AntiMatterModRegistry {
         GameRegistry.registerBlock(soilBlock,"soilBlock");
 
             //インゴット系圧縮ブロック
+        GameRegistry.registerBlock(ingotblock_01,"ingotblock_01");
 
         
         
