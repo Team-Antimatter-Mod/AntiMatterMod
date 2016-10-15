@@ -35,9 +35,10 @@ item.powder_01_0.name=Antelite Powder
 item.wire_01_0.name=Wire[Drantium]
 
 #--------------------------------------------plate
-item.plate_01_0.name=Raitium Plate
-item.plate_01_1.name=Drantium Plate
-item.plate_01_2.name=Palazirite Plate
+item.plate_01_0.name=Tiamite Plate
+item.plate_01_1.name=Raitium Plate
+item.plate_01_2.name=Drantium Plate
+item.plate_01_3.name=Palazirite Plate
 
 item.crystalplate_01_0.name=Arstetolite Plate
 

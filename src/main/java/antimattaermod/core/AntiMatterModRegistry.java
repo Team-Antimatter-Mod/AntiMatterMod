@@ -96,7 +96,7 @@ public class AntiMatterModRegistry {
     public static final Item powder_01 = ItemUtil.CreateItem("powder_01","powder/powder_01",1,AntiMatterModRegistry.tabMaterials);
     
     public static final Item wire = ItemUtil.CreateItem("wire_01","wire/wire_01",1,AntiMatterModRegistry.tabImaterial);
-    public static final Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",3,AntiMatterModRegistry.tabImaterial);
+    public static final Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",4,AntiMatterModRegistry.tabImaterial);
     public static final Item crystalplate_01 = ItemUtil.CreateItem("crystalplate_01","plate/crystalplate_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item industrialplate_01 = ItemUtil.CreateItem("industrialplate_01","plate/industrialplate_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item conductivematerial_01 = ItemUtil.CreateItem("conductivematerial_01","conductivematerial/conductivematerial_01",1,AntiMatterModRegistry.tabImaterial);
@@ -121,7 +121,7 @@ public class AntiMatterModRegistry {
     public static final Block crystalOreBlock_1 = new DifferentOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 2, new float[]{5.0F,5.0F}, new byte[]{3,3}, crystal_01, new int[]{0,1});
     public static final Block bedrockCrystalOreBlock_1 = new BedrockOreBlock("bedrockCrystalOreBlock_01",crystalOreBlock_1);
 
-    public static final Block powderOreBlock_1 = new DifferentOreBlock(Material.rock, "powderOreBlock_01", "powderore/powderoreblock_01", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F}, new byte[]{3}, powder_01, new int[]{0}, new int[]{8,8});
+    public static final Block powderOreBlock_1 = new DifferentOreBlock(Material.rock, "powderOreBlock_01", "powderore/powderoreblock_01", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F}, new byte[]{3}, powder_01, new int[]{0}, new int[]{3,3});
     public static final Block bedrockPowderOreBlock_1 = new BedrockOreBlock("bedrockPowderOreBlock_01",powderOreBlock_1);
     
     public static final Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 16, new float[]{5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F}, new byte[]{3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3});
@@ -136,9 +136,11 @@ public class AntiMatterModRegistry {
 
     //その他
     public static final Block soilBlock = new BlockSoil();
-    
-    //ブロックの登録方法
+
+    //筐体
     public static final Block tier1_machinecasing = BlockUtil.CreateBlock("tier1_machinecasing","casing/tier1_machinecasing_01",Material.rock,AntiMatterModRegistry.tabMachines,1,5f,5f);
+
+    //インゴット系圧縮ブロック
 
     //==================================================================================================================
 
@@ -185,12 +187,8 @@ public class AntiMatterModRegistry {
             //その他
         GameRegistry.registerBlock(soilBlock,"soilBlock");
 
+            //インゴット系圧縮ブロック
 
-        //鉱石辞書登録
-        OreDictionary.registerOre("plateIron",new ItemStack(AntiMatterModRegistry.industrialplate_01,1,0));
-        OreDictionary.registerOre("craftingToolHardHammer",new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE));
-        OreDictionary.registerOre("craftingToolWrench",new ItemStack(AntiMatterModRegistry.wrench_01,1,OreDictionary.WILDCARD_VALUE));
-        
         
         
         //Renderの登録 =================================================================================================

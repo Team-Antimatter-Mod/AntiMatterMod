@@ -3,6 +3,7 @@ package antimattaermod.core;
 import antimattaermod.core.command.Createsphere;
 import antimattaermod.core.command.ExclusiveDeleteBlock;
 import antimattaermod.core.common.AntiMatterModCoreProxy;
+import antimattaermod.core.crafting.OreDictionaryRegister;
 import antimattaermod.core.crafting.RecipeRegister;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.ModMetadata;
@@ -36,6 +37,7 @@ public class AntiMatterModCore {
 	public void preinit(FMLPreInitializationEvent event) {
 		loadMeta(modMetadata);
         AntiMatterModRegistry.registerPreInit(event);
+		OreDictionaryRegister.OreDictionaryRegisterPreInit(event);
 		
 	}
 	
