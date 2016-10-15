@@ -54,7 +54,7 @@ public class RecipeRegister {
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.shaft_01,1,0),"  S"," S ","S  ",
                 'S',new ItemStack(AntiMatterModRegistry.rod_01,1,0));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.turbine_01,1,0),"  C","ABA","D  ",
-                'A',new ItemStack(AntiMatterModRegistry.turbineblade_01,1,0),'B',new ItemStack(AntiMatterModRegistry.shaft_01,1,0),
+		        'A',new ItemStack(AntiMatterModRegistry.turbineblade_01,1,0),'B',new ItemStack(AntiMatterModRegistry.shaft_01,1,0),
                 'C',"craftingToolHardHammer",'D',"craftingToolWrench"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.tier1_machinecasing,1,0),"AAA","ABA","ACA",
                 'A',new ItemStack(AntiMatterModRegistry.plate_01,1,1),'B',new ItemStack(AntiMatterModRegistry.gear_01,1,0),
@@ -72,6 +72,9 @@ public class RecipeRegister {
 
         //レンチ
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.wrench_01,1,0),"ABA","ACA"," A ",'A',"plateIron",'B',"craftingToolHardHammer",'C',new ItemStack(AntiMatterModRegistry.plate_01,1,1)));
-
+        
+        
+        //バケツ
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.bucket),"IHI"," I ",'H',"craftingToolHardHammer",'I',"plateIron"));
     }
 }
