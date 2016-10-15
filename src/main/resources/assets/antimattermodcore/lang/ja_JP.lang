@@ -30,6 +30,24 @@ item.ingot_01_16.name=パジライト インゴット
 
 item.magnetizedingot_01_0.name=磁気化ライチウムインゴット
 
+#-------------------------------------------nugget
+item.nugget_01_0.name=ライチウム ナゲット
+item.nugget_01_1.name=ドランチウム ナゲット
+item.nugget_01_2.name=パラジライト ナゲット
+item.nugget_01_3.name=タクミウム ナゲット
+item.nugget_01_4.name=ソラライト ナゲット
+item.nugget_01_5.name=エミリリウム ナゲット
+item.nugget_01_6.name=イミジウム ナゲット
+item.nugget_01_7.name=ミトラナイドライト ナゲット
+item.nugget_01_8.name=ストルビモライト ナゲット
+item.nugget_01_9.name=アスラトミウム ナゲット
+item.nugget_01_10.name=ミドナライト ナゲット
+item.nugget_01_11.name=ミラニウム ナゲット
+item.nugget_01_12.name=テューラリウム ナゲット
+item.nugget_01_13.name=ディグライト ナゲット
+item.nugget_01_14.name=アストノイド ナゲット
+item.nugget_01_15.name=パジライト ナゲット
+
 #--------------------------------------------粉
 item.powder_01_0.name=アンティライトの粉
 
