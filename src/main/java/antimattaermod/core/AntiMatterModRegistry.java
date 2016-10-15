@@ -91,7 +91,7 @@ public class AntiMatterModRegistry {
     public final static CreativeTabs tabCompressedBlocks = new CreativeTabs("amcompressedblocks") {
         @Override
         public Item getTabIconItem() {
-            return Items.apple;}
+            return Item.getItemFromBlock(Blocks.iron_block);}
     };
 
 

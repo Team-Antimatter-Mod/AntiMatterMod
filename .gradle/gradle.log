@@ -14,7 +14,7 @@
 :sourceMainJava
 :compileJava
 :copyMainKotlinClasses UP-TO-DATE
-:processResources UP-TO-DATE
+:processResources
 :classes
 :jar
 :getVersionJson
@@ -26,51 +26,51 @@
 [ant:javac] 警告: [options] ブートストラップ・クラスパスが-source 1.6と一緒に設定されていません
 [ant:javac] 警告1個
 :runClient
-[19:12:32] [main/INFO] [GradleStart]: Extra: []
-[19:12:32] [main/INFO] [GradleStart]: Found and added coremod: codechicken.core.launch.CodeChickenCorePlugin
-[19:12:32] [main/INFO] [GradleStart]: Found and added coremod: codechicken.nei.asm.NEICorePlugin
-[19:12:32] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/西村　航/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[19:12:32] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
-[19:12:32] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
-[19:12:32] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[19:12:32] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
-[19:12:32] [main/INFO] [FML]: Forge Mod Loader version 7.99.36.1558 for Minecraft 1.7.10 loading
-[19:12:32] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_101, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_101\jre
-[19:12:32] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[19:12:32] [main/INFO] [FML]: Found a command line coremod : codechicken.nei.asm.NEICorePlugin
-[19:12:32] [main/WARN] [FML]: The coremod codechicken.nei.asm.NEICorePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
-[19:12:32] [main/INFO] [FML]: Found a command line coremod : codechicken.core.launch.CodeChickenCorePlugin
-[19:12:32] [main/WARN] [FML]: The coremod codechicken.core.launch.CodeChickenCorePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
-[19:12:32] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[19:12:32] [main/INFO] [GradleStart]: Injecting location in coremod cpw.mods.fml.relauncher.FMLCorePlugin
-[19:12:32] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[19:12:32] [main/INFO] [GradleStart]: Injecting location in coremod codechicken.core.asm.MCPDeobfuscationTransformer.LoadPlugin
-[19:12:32] [main/INFO] [GradleStart]: Injecting location in coremod codechicken.nei.asm.NEICorePlugin
-[19:12:32] [main/INFO] [GradleStart]: Injecting location in coremod codechicken.core.launch.CodeChickenCorePlugin
-[19:12:32] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[19:12:32] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
-[19:12:32] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[19:12:32] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[19:12:32] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
-[19:12:32] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[19:12:32] [main/ERROR] [FML]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
-[19:12:33] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[19:12:33] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[19:12:33] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[19:12:33] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[19:12:33] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
-[19:12:33] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
-[19:12:34] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[19:12:34] [main/INFO] [GradleStart]: Remapping AccessTransformer rules...
-[19:12:34] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
-[19:12:34] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
-[19:12:34] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[19:12:35] [main/INFO]: Setting user: Player723
-[19:12:37] [Client thread/INFO]: LWJGL Version: 2.9.1
-[19:12:38] [Client thread/INFO] [STDOUT]: [cpw.mods.fml.client.SplashProgress:start:188]: ---- Minecraft Crash Report ----
-// Would you like a cupcake?
+[19:41:43] [main/INFO] [GradleStart]: Extra: []
+[19:41:43] [main/INFO] [GradleStart]: Found and added coremod: codechicken.core.launch.CodeChickenCorePlugin
+[19:41:43] [main/INFO] [GradleStart]: Found and added coremod: codechicken.nei.asm.NEICorePlugin
+[19:41:43] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/nisimura-t/.gradle/caches/minecraft/assets, --assetIndex, 1.7.10, --accessToken, {REDACTED}, --version, 1.7.10, --tweakClass, cpw.mods.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[19:41:43] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:41:43] [main/INFO] [LaunchWrapper]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[19:41:43] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:41:43] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[19:41:43] [main/INFO] [FML]: Forge Mod Loader version 7.99.36.1558 for Minecraft 1.7.10 loading
+[19:41:43] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_92, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_92\jre
+[19:41:43] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[19:41:43] [main/INFO] [FML]: Found a command line coremod : codechicken.nei.asm.NEICorePlugin
+[19:41:43] [main/WARN] [FML]: The coremod codechicken.nei.asm.NEICorePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[19:41:43] [main/INFO] [FML]: Found a command line coremod : codechicken.core.launch.CodeChickenCorePlugin
+[19:41:44] [main/WARN] [FML]: The coremod codechicken.core.launch.CodeChickenCorePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[19:41:44] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[19:41:44] [main/INFO] [GradleStart]: Injecting location in coremod cpw.mods.fml.relauncher.FMLCorePlugin
+[19:41:44] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[19:41:44] [main/INFO] [GradleStart]: Injecting location in coremod codechicken.core.asm.MCPDeobfuscationTransformer.LoadPlugin
+[19:41:44] [main/INFO] [GradleStart]: Injecting location in coremod codechicken.nei.asm.NEICorePlugin
+[19:41:44] [main/INFO] [GradleStart]: Injecting location in coremod codechicken.core.launch.CodeChickenCorePlugin
+[19:41:44] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:41:44] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[19:41:44] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[19:41:44] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:41:44] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:41:44] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:41:44] [main/ERROR] [FML]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[19:41:46] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[19:41:46] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:41:46] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:41:47] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:41:47] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:41:47] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[19:41:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[19:41:49] [main/INFO] [GradleStart]: Remapping AccessTransformer rules...
+[19:41:49] [main/INFO] [LaunchWrapper]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
+[19:41:49] [main/INFO] [LaunchWrapper]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
+[19:41:49] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[19:41:53] [main/INFO]: Setting user: Player40
+[19:41:57] [Client thread/INFO]: LWJGL Version: 2.9.1
+[19:41:59] [Client thread/INFO] [STDOUT]: [cpw.mods.fml.client.SplashProgress:start:188]: ---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
 
-Time: 16/10/15 19:12
+Time: 16/10/15 19:41
 Description: Loading screen debug info
 
 This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
@@ -83,196 +83,161 @@ A detailed walkthrough of the error, its code path and all known details is as f
 Details:
 	Minecraft Version: 1.7.10
 	Operating System: Windows 10 (amd64) version 10.0
-	Java Version: 1.8.0_101, Oracle Corporation
+	Java Version: 1.8.0_92, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 343830728 bytes (327 MB) / 699924480 bytes (667 MB) up to 3804758016 bytes (3628 MB)
+	Memory: 349664240 bytes (333 MB) / 693108736 bytes (661 MB) up to 3786407936 bytes (3611 MB)
 	JVM Flags: 0 total; 
 	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
-	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.5.0 NVIDIA 373.06' Renderer: 'GeForce GTX 1070/PCIe/SSE2'
-[19:12:38] [Client thread/INFO] [MinecraftForge]: Attempting early MinecraftForge initialization
-[19:12:38] [Client thread/INFO] [FML]: MinecraftForge v10.13.4.1558 Initialized
-[19:12:39] [Client thread/INFO] [FML]: Replaced 183 ore recipies
-[19:12:39] [Client thread/INFO] [MinecraftForge]: Completed early MinecraftForge initialization
-[19:12:39] [Client thread/INFO] [FML]: Found 0 mods from the command line. Injecting into mod discoverer
-[19:12:39] [Client thread/INFO] [FML]: Searching D:\Program\Forge-1.7.10\AntiMatterMod\eclipse\mods for mods
-[19:12:39] [Client thread/INFO] [FML]: Also searching D:\Program\Forge-1.7.10\AntiMatterMod\eclipse\mods\1.7.10 for mods
-[19:12:46] [Client thread/INFO] [AntiMatterModCore]: Mod AntiMatterModCore is missing the required element 'name'. Substituting AntiMatterModCore
-[19:12:46] [Client thread/WARN] [AntiMatterModCore]: Mod AntiMatterModCore is missing the required element 'version' and no fallback can be found. Substituting '1.0'.
-[19:12:46] [Client thread/INFO] [FML]: Forge Mod Loader has identified 6 mods to load
-[19:12:46] [Client thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge, NotEnoughItems, CodeChickenCore, AntiMatterModCore] at CLIENT
-[19:12:46] [Client thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge, NotEnoughItems, CodeChickenCore, AntiMatterModCore] at SERVER
-[19:12:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AntiMatterModCore
-[19:12:46] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
-[19:12:46] [Client thread/INFO] [FML]: Found 341 ObjectHolder annotations
-[19:12:46] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
-[19:12:46] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
-[19:12:47] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
-[19:12:47] [Client thread/INFO] [FML]: Applying holder lookups
-[19:12:47] [Client thread/INFO] [FML]: Holder lookups applied
-[19:12:47] [Client thread/INFO] [FML]: Injecting itemstacks
-[19:12:47] [Client thread/INFO] [FML]: Itemstack injection complete
-[19:12:47] [Sound Library Loader/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
-[19:12:47] [Sound Library Loader/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: Starting up SoundSystem...
-[19:12:47] [Thread-8/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: Initializing LWJGL OpenAL
-[19:12:47] [Thread-8/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]:     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[19:12:47] [Thread-8/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: OpenAL initialized.
-[19:12:47] [Sound Library Loader/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
-[19:12:47] [Sound Library Loader/INFO]: Sound engine started
-[19:12:49] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[19:12:49] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[19:12:49] [Client thread/ERROR] [CodeChickenCore]: Unable to do mod description scrolling due to lack of stencil buffer
-[19:12:50] [Client thread/INFO] [FML]: Injecting itemstacks
-[19:12:50] [Client thread/INFO] [FML]: Itemstack injection complete
-[19:12:50] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 6 mods
-[19:12:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AntiMatterMod Core
-[19:12:50] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[19:12:50] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[19:12:50] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
-[19:12:50] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: SoundSystem shutting down...
-[19:12:50] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:importantMessage:90]:     Author: Paul Lamb, www.paulscode.com
-[19:12:50] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
-[19:12:50] [Sound Library Loader/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
-[19:12:50] [Sound Library Loader/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: Starting up SoundSystem...
-[19:12:51] [Thread-11/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: Initializing LWJGL OpenAL
-[19:12:51] [Thread-11/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]:     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[19:12:51] [Thread-11/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: OpenAL initialized.
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: The following texture errors were found.
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: ==================================================
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:   DOMAIN minecraft
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: --------------------------------------------------
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:   domain minecraft is missing 4 textures
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:     domain minecraft has 3 locations:
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       unknown resourcepack type net.minecraft.client.resources.DefaultResourcePack : Default
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       mod FML resources at C:\Users\西村　航\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1558-1.7.10\forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       mod Forge resources at C:\Users\西村　航\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1558-1.7.10\forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: -------------------------
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:     The missing resources for domain minecraft are:
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/MISSING_ICON_BLOCK_167_oreBlock_01.png
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/MISSING_ICON_BLOCK_179_satStove.png
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/MISSING_ICON_BLOCK_166_powderOreBlock_01.png
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/MISSING_ICON_BLOCK_165_crystalOreBlock_01.png
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: -------------------------
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:     No other errors exist for domain minecraft
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: ==================================================
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: ==================================================
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:   DOMAIN antimattermodcore
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: --------------------------------------------------
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:   domain antimattermodcore is missing 5 textures
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:     domain antimattermodcore has 1 location:
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       mod AntiMatterModCore resources at D:\Program\Forge-1.7.10\AntiMatterMod\build\libs\AntiMatterMod-1.0.0.jar
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: -------------------------
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:     The missing resources for domain antimattermodcore are:
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/blocks/soilBlock.png
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks//blocks/cable.png
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/items/tool/iron_hammer.png
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/items/another/claycrucible.png
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/another/claycrucible.png
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: -------------------------
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]:     No other errors exist for domain antimattermodcore
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: ==================================================
-[19:12:51] [Client thread/ERROR] [TEXTURE ERRORS]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
-[19:12:51] [Sound Library Loader/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
-[19:12:51] [Sound Library Loader/INFO]: Sound engine started
-[19:12:53] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[19:12:53] [Server thread/INFO]: Generating keypair
-[19:12:53] [Server thread/INFO] [FML]: Injecting existing block and item data into this server instance
-[19:12:53] [Server thread/INFO] [FML]: Applying holder lookups
-[19:12:53] [Server thread/INFO] [FML]: Holder lookups applied
-[19:12:53] [Server thread/INFO] [FML]: Loading dimension 0 (Test) (net.minecraft.server.integrated.IntegratedServer@315afbb9)
-[19:12:53] [Server thread/INFO] [FML]: Loading dimension 1 (Test) (net.minecraft.server.integrated.IntegratedServer@315afbb9)
-[19:12:54] [Server thread/INFO] [FML]: Loading dimension -1 (Test) (net.minecraft.server.integrated.IntegratedServer@315afbb9)
-[19:12:54] [Server thread/INFO]: Preparing start region for level 0
-[19:12:54] [Server thread/INFO]: Changing view distance to 12, from 10
-[19:12:55] [Netty Client IO #0/INFO] [FML]: Server protocol version 2
-[19:12:55] [Netty IO #1/INFO] [FML]: Client protocol version 2
-[19:12:55] [Netty IO #1/INFO] [FML]: Client attempting to join with 6 mods : NotEnoughItems@1.0.3.74,CodeChickenCore@1.0.4.29,FML@7.10.99.99,Forge@10.13.4.1558,AntiMatterModCore@1.0,mcp@9.05
-[19:12:55] [Netty IO #1/INFO] [FML]: Attempting connection with missing mods [] at CLIENT
-[19:12:55] [Netty Client IO #0/INFO] [FML]: Attempting connection with missing mods [] at SERVER
-[19:12:55] [Client thread/INFO] [FML]: [Client thread] Client side modded connection established
-[19:12:55] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
-[19:12:55] [Server thread/INFO]: Player723[local:E:76073993] logged in with entity id 198 at (77.35019641811857, 64.0, 131.19806309421628)
-[19:12:55] [Server thread/INFO]: Player723 joined the game
-[19:12:57] [Client thread/INFO]: [CHAT] Version 1.0.5.120 of NotEnoughItems is available
-[19:12:59] [Server thread/INFO]: Player723 has just earned the achievement [Taking Inventory]
-[19:12:59] [Client thread/INFO]: [CHAT] Player723 has just earned the achievement [Taking Inventory]
-[19:13:39] [Client thread/WARN]: Failed to load texture: antimattermodcore:textures/models/claycrucible.png
-java.io.FileNotFoundException: antimattermodcore:textures/models/claycrucible.png
-	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:35) ~[SimpleTexture.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
-	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:45) [TextureManager.class:?]
-	at net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer.bindTexture(TileEntitySpecialRenderer.java:25) [TileEntitySpecialRenderer.class:?]
-	at antimattaermod.core.Render.ClayCrucibleSpecialRender.setRotation(ClayCrucibleSpecialRender.java:31) [ClayCrucibleSpecialRender.class:?]
-	at antimattaermod.core.Render.ClayCrucibleSpecialRender.renderTileEntityAt(ClayCrucibleSpecialRender.java:75) [ClayCrucibleSpecialRender.class:?]
-	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntityAt(TileEntityRendererDispatcher.java:141) [TileEntityRendererDispatcher.class:?]
-	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntity(TileEntityRendererDispatcher.java:126) [TileEntityRendererDispatcher.class:?]
-	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:539) [RenderGlobal.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300) [EntityRenderer.class:?]
-	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087) [EntityRenderer.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:962) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_101]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_101]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_101]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_101]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-[19:13:43] [Client thread/INFO]: [CHAT] You are now playing creative+
-[19:13:44] [Client thread/INFO]: [CHAT] You are now playing adventure
-[19:13:50] [Client thread/INFO]: [CHAT] You are now playing survival
-[19:15:00] [Client thread/INFO]: [CHAT] You are now playing creative
-[19:15:02] [Client thread/INFO]: [CHAT] You are now playing creative+
-[19:15:03] [Client thread/INFO]: [CHAT] You are now playing adventure
-[19:15:08] [Client thread/INFO]: [CHAT] You are now playing survival
-[19:15:08] [Client thread/INFO]: [CHAT] You are now playing creative
-[19:16:59] [Client thread/INFO]: [CHAT] You are now playing creative+
-[19:17:00] [Client thread/INFO]: [CHAT] You are now playing adventure
-[19:17:22] [Client thread/INFO]: [CHAT] Fuel Value:0.0/2048.0
-[19:17:22] [Client thread/INFO]: [CHAT] Stored Energy:65536/6144000
-[19:17:22] [Client thread/INFO]: [CHAT] Generating:0AP
-[19:17:23] [Client thread/INFO]: [CHAT] Fuel Value:0.0/2048.0
-[19:17:23] [Client thread/INFO]: [CHAT] Stored Energy:65536/6144000
-[19:17:23] [Client thread/INFO]: [CHAT] Generating:0AP
-[19:17:23] [Client thread/INFO]: [CHAT] Fuel Value:0.0/2048.0
-[19:17:23] [Client thread/INFO]: [CHAT] Stored Energy:65536/6144000
-[19:17:23] [Client thread/INFO]: [CHAT] Generating:0AP
-[19:17:24] [Client thread/INFO]: [CHAT] Fuel Value:0.0/2048.0
-[19:17:24] [Client thread/INFO]: [CHAT] Stored Energy:65536/6144000
-[19:17:24] [Client thread/INFO]: [CHAT] Generating:0AP
-[19:17:24] [Client thread/INFO]: [CHAT] Fuel Value:0.0/2048.0
-[19:17:24] [Client thread/INFO]: [CHAT] Stored Energy:65536/6144000
-[19:17:24] [Client thread/INFO]: [CHAT] Generating:0AP
-[19:17:24] [Client thread/INFO]: [CHAT] Fuel Value:0.0/2048.0
-[19:17:24] [Client thread/INFO]: [CHAT] Stored Energy:65536/6144000
-[19:17:24] [Client thread/INFO]: [CHAT] Generating:0AP
-[19:17:24] [Client thread/INFO]: [CHAT] Fuel Value:0.0/2048.0
-[19:17:24] [Client thread/INFO]: [CHAT] Stored Energy:65536/6144000
-[19:17:24] [Client thread/INFO]: [CHAT] Generating:0AP
-[19:17:38] [Client thread/INFO]: [CHAT] You are now playing survival
-[19:18:22] [Client thread/INFO]: Stopping!
-[19:18:22] [Server thread/INFO]: Stopping server
-[19:18:22] [Server thread/INFO]: Saving players
-[19:18:22] [Server thread/INFO]: Saving worlds
-[19:18:22] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
-[19:18:22] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
-[19:18:22] [Server thread/INFO]: Saving chunks for level 'Test'/The End
-[19:18:22] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
-[19:18:22] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: SoundSystem shutting down...
-[19:18:22] [Server thread/INFO] [FML]: Unloading dimension 0
-[19:18:22] [Server thread/INFO] [FML]: Unloading dimension -1
-[19:18:22] [Server thread/INFO] [FML]: Unloading dimension 1
-[19:18:22] [Server thread/INFO] [FML]: Applying holder lookups
-[19:18:22] [Server thread/INFO] [FML]: Holder lookups applied
-[19:18:22] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:importantMessage:90]:     Author: Paul Lamb, www.paulscode.com
-[19:18:22] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
+	GL info: ' Vendor: 'Intel' Version: '4.0.0 - Build 10.18.10.4425' Renderer: 'Intel(R) HD Graphics 4000'
+[19:41:59] [Client thread/INFO] [MinecraftForge]: Attempting early MinecraftForge initialization
+[19:41:59] [Client thread/INFO] [FML]: MinecraftForge v10.13.4.1558 Initialized
+[19:41:59] [Client thread/INFO] [FML]: Replaced 183 ore recipies
+[19:41:59] [Client thread/INFO] [MinecraftForge]: Completed early MinecraftForge initialization
+[19:42:00] [Client thread/INFO] [FML]: Found 0 mods from the command line. Injecting into mod discoverer
+[19:42:00] [Client thread/INFO] [FML]: Searching C:\Users\nisimura-t\Desktop\modding\AntiMatterMod\eclipse\mods for mods
+[19:42:00] [Client thread/INFO] [FML]: Also searching C:\Users\nisimura-t\Desktop\modding\AntiMatterMod\eclipse\mods\1.7.10 for mods
+[19:42:14] [Client thread/INFO] [AntiMatterModCore]: Mod AntiMatterModCore is missing the required element 'name'. Substituting AntiMatterModCore
+[19:42:14] [Client thread/WARN] [AntiMatterModCore]: Mod AntiMatterModCore is missing the required element 'version' and no fallback can be found. Substituting '1.0'.
+[19:42:14] [Client thread/INFO] [FML]: Forge Mod Loader has identified 6 mods to load
+[19:42:15] [Client thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge, NotEnoughItems, CodeChickenCore, AntiMatterModCore] at CLIENT
+[19:42:15] [Client thread/INFO] [FML]: Attempting connection with missing mods [mcp, FML, Forge, NotEnoughItems, CodeChickenCore, AntiMatterModCore] at SERVER
+[19:42:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AntiMatterModCore
+[19:42:17] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
+[19:42:17] [Client thread/INFO] [FML]: Found 341 ObjectHolder annotations
+[19:42:17] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[19:42:17] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[19:42:17] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[19:42:18] [Client thread/INFO] [FML]: Applying holder lookups
+[19:42:18] [Client thread/INFO] [FML]: Holder lookups applied
+[19:42:18] [Client thread/INFO] [FML]: Injecting itemstacks
+[19:42:18] [Client thread/INFO] [FML]: Itemstack injection complete
+[19:42:19] [Sound Library Loader/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[19:42:19] [Sound Library Loader/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: Starting up SoundSystem...
+[19:42:19] [Thread-8/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: Initializing LWJGL OpenAL
+[19:42:19] [Thread-8/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]:     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:42:20] [Thread-8/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: OpenAL initialized.
+[19:42:20] [Sound Library Loader/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[19:42:20] [Sound Library Loader/INFO]: Sound engine started
+[19:42:23] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[19:42:23] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[19:42:23] [Client thread/ERROR] [CodeChickenCore]: Unable to do mod description scrolling due to lack of stencil buffer
+[19:42:25] [Client thread/INFO] [FML]: Injecting itemstacks
+[19:42:25] [Client thread/INFO] [FML]: Itemstack injection complete
+[19:42:26] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 6 mods
+[19:42:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:AntiMatterMod Core
+[19:42:27] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[19:42:28] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[19:42:28] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[19:42:28] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: SoundSystem shutting down...
+[19:42:28] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:importantMessage:90]:     Author: Paul Lamb, www.paulscode.com
+[19:42:28] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[19:42:28] [Sound Library Loader/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[19:42:28] [Sound Library Loader/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: Starting up SoundSystem...
+[19:42:28] [Thread-11/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: Initializing LWJGL OpenAL
+[19:42:28] [Thread-11/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]:     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:42:29] [Thread-11/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: OpenAL initialized.
+[19:42:29] [Sound Library Loader/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[19:42:29] [Sound Library Loader/INFO]: Sound engine started
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: The following texture errors were found.
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: ==================================================
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:   DOMAIN minecraft
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: --------------------------------------------------
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:   domain minecraft is missing 4 textures
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:     domain minecraft has 3 locations:
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       unknown resourcepack type net.minecraft.client.resources.DefaultResourcePack : Default
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       mod FML resources at C:\Users\nisimura-t\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1558-1.7.10\forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       mod Forge resources at C:\Users\nisimura-t\.gradle\caches\minecraft\net\minecraftforge\forge\1.7.10-10.13.4.1558-1.7.10\forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: -------------------------
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:     The missing resources for domain minecraft are:
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/MISSING_ICON_BLOCK_167_oreBlock_01.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/MISSING_ICON_BLOCK_179_satStove.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/MISSING_ICON_BLOCK_166_powderOreBlock_01.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/MISSING_ICON_BLOCK_165_crystalOreBlock_01.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: -------------------------
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:     No other errors exist for domain minecraft
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: ==================================================
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: ==================================================
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:   DOMAIN antimattermodcore
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: --------------------------------------------------
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:   domain antimattermodcore is missing 20 textures
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:     domain antimattermodcore has 1 location:
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       mod AntiMatterModCore resources at C:\Users\nisimura-t\Desktop\modding\AntiMatterMod\build\libs\AntiMatterMod-1.0.0.jar
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: -------------------------
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:     The missing resources for domain antimattermodcore are:
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_8.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_3.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_14.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_12.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_6.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/items/another/claycrucible.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_5.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_1.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/another/claycrucible.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/blocks/soilBlock.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks//blocks/cable.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_13.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_2.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_4.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_9.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_10.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_7.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/items/plate/plate_01_0.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_11.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:       textures/blocks/compressedblock/ingotblock_01_0.png
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: -------------------------
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]:     No other errors exist for domain antimattermodcore
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: ==================================================
+[19:42:30] [Client thread/ERROR] [TEXTURE ERRORS]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+[19:42:35] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[19:42:35] [Server thread/INFO]: Generating keypair
+[19:42:35] [Server thread/INFO] [FML]: Injecting existing block and item data into this server instance
+[19:42:35] [Server thread/INFO] [FML]: Applying holder lookups
+[19:42:35] [Server thread/INFO] [FML]: Holder lookups applied
+[19:42:36] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@3ae65236)
+[19:42:36] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@3ae65236)
+[19:42:36] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@3ae65236)
+[19:42:36] [Server thread/INFO]: Preparing start region for level 0
+[19:42:37] [Server thread/INFO]: Changing view distance to 12, from 10
+[19:42:38] [Netty Client IO #0/INFO] [FML]: Server protocol version 2
+[19:42:38] [Netty IO #1/INFO] [FML]: Client protocol version 2
+[19:42:38] [Netty IO #1/INFO] [FML]: Client attempting to join with 6 mods : NotEnoughItems@1.0.3.74,CodeChickenCore@1.0.4.29,FML@7.10.99.99,Forge@10.13.4.1558,AntiMatterModCore@1.0,mcp@9.05
+[19:42:38] [Netty IO #1/INFO] [FML]: Attempting connection with missing mods [] at CLIENT
+[19:42:38] [Netty Client IO #0/INFO] [FML]: Attempting connection with missing mods [] at SERVER
+[19:42:38] [Client thread/INFO] [FML]: [Client thread] Client side modded connection established
+[19:42:38] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[19:42:38] [Server thread/INFO]: Player40[local:E:0a95b4fa] logged in with entity id 47 at (-700.5, 4.0, -861.5)
+[19:42:38] [Server thread/INFO]: Player40 joined the game
+[19:42:45] [Client thread/INFO]: [CHAT] Version 1.0.5.120 of NotEnoughItems is available
+[19:42:48] [Server thread/INFO]: Saving and pausing game...
+[19:42:48] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:42:48] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:42:48] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:42:54] [Server thread/INFO]: Player40 has just earned the achievement [Taking Inventory]
+[19:42:55] [Client thread/INFO]: [CHAT] Player40 has just earned the achievement [Taking Inventory]
+[19:43:01] [Server thread/INFO]: Saving and pausing game...
+[19:43:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:43:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:43:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:43:02] [Server thread/INFO]: Stopping server
+[19:43:02] [Server thread/INFO]: Saving players
+[19:43:02] [Server thread/INFO]: Saving worlds
+[19:43:02] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:43:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:43:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:43:02] [Server thread/INFO] [FML]: Unloading dimension 0
+[19:43:02] [Server thread/INFO] [FML]: Unloading dimension -1
+[19:43:02] [Server thread/INFO] [FML]: Unloading dimension 1
+[19:43:02] [Server thread/INFO] [FML]: Applying holder lookups
+[19:43:02] [Server thread/INFO] [FML]: Holder lookups applied
+[19:43:03] [Client thread/INFO]: Stopping!
+[19:43:03] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
+[19:43:03] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: SoundSystem shutting down...
+[19:43:04] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:importantMessage:90]:     Author: Paul Lamb, www.paulscode.com
+[19:43:04] [Client thread/INFO] [STDOUT]: [paulscode.sound.SoundSystemLogger:message:69]: 
 
 BUILD SUCCESSFUL
 
-Total time: 6 mins 14.495 secs
+Total time: 2 mins 9.885 secs
