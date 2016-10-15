@@ -14,7 +14,9 @@ import antimattaermod.core.Block.Ores.OreBlock;
 import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Item.StatesChecker;
+import antimattaermod.core.Item.tool.File;
 import antimattaermod.core.Item.tool.Hammer;
+import antimattaermod.core.Item.tool.WireCutter;
 import antimattaermod.core.Item.tool.Wrench;
 import antimattaermod.core.Util.AddInformationfunction;
 import antimattaermod.core.Util.BlockUtil;
@@ -125,8 +127,8 @@ public class AntiMatterModRegistry {
     public static final Item statesChecker = new StatesChecker();
     public static final Item hammer_01 = new Hammer("IronHammer","iron_hammer",10);//耐久値10のハンマーを追加(使えるのは11回)
     public static final Item wrench_01 = new Wrench("IronWrench","iron_wrench",10);//耐久値10のレンチを追加(使えるのは11回)
-    public static final Item wirecutter_01 = new Wrench("IronWirecutter","iron_wirecutter",10);//耐久値10のワイヤーカッターを追加(使えるのは11回)
-    public static final Item file_01 = new Wrench("IronFile","iron_file",10);//耐久値10の鑢（ヤスリ）を追加(使えるのは11回)
+    public static final Item wirecutter_01 = new WireCutter("IronWirecutter","iron_wirecutter",10);//耐久値10のワイヤーカッターを追加(使えるのは11回)
+    public static final Item file_01 = new File("IronFile","iron_file",10);//耐久値10の鑢（ヤスリ）を追加(使えるのは11回)
     //==================================================================================================================
 
     //Block  ===========================================================================================================
@@ -212,11 +214,7 @@ public class AntiMatterModRegistry {
             //テスト
         GameRegistry.registerBlock(clayCrucible,"clayCrucible");
 
-	        //鉱石辞書登録
-        OreDictionary.registerOre("plateIron",new ItemStack(AntiMatterModRegistry.industrialplate_01,1,0));
-        OreDictionary.registerOre("craftingToolHardHammer",new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE));
-        OreDictionary.registerOre("craftingToolWrench",new ItemStack(AntiMatterModRegistry.wrench_01,1,OreDictionary.WILDCARD_VALUE));
-        
+
         
         
         //Renderの登録 =================================================================================================
