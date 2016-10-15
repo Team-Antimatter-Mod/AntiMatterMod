@@ -1,8 +1,8 @@
 #---------------------------------------------------US-Lang
 
 #--------------------------------------------Crystal
-item.crystal_01_0.name=Abzumite
-item.crystal_01_1.name=Crystalite
+item.crystal_01_0.name=Crystalite
+item.crystal_01_1.name=Abzumite
 item.crystal_01_2.name=Metolite
 item.crystal_01_3.name=Alamonite
 item.crystal_01_4.name=Aqualutile

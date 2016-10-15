@@ -129,7 +129,7 @@ public class AntiMatterModRegistry {
 
     //Block  ===========================================================================================================
     //鉱石
-    public static final Block crystalOreBlock_1 = new DifferentOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 6, new float[]{5.0F,5.0F}, new byte[]{3,3}, crystal_01, new int[]{0,1});
+    public static final Block crystalOreBlock_1 = new DifferentOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 6, new float[]{5.0F,5.0F,5.0F,5.0F,5.0F,5.0F}, new byte[]{3,3,3,3,3,3}, crystal_01, new int[]{0,1,2,3,4,5});
     public static final Block bedrockCrystalOreBlock_1 = new BedrockOreBlock("bedrockCrystalOreBlock_01",crystalOreBlock_1);
 
     public static final Block powderOreBlock_1 = new DifferentOreBlock(Material.rock, "powderOreBlock_01", "powderore/powderoreblock_01", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F}, new byte[]{3}, powder_01, new int[]{0}, new int[]{3,3});

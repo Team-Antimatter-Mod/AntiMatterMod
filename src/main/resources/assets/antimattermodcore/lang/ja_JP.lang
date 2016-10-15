@@ -1,8 +1,8 @@
 ﻿#---------------------------------------------------JP-Lang
 
 #--------------------------------------------クリスタル
-item.crystal_01_0.name=アプスマイト
-item.crystal_01_1.name=クリスタライト
+item.crystal_01_0.name=クリスタライト
+item.crystal_01_1.name=アプスマイト
 item.crystal_01_2.name=メトライト
 item.crystal_01_3.name=アラモナイト
 item.crystal_01_4.name=アクアルチル
