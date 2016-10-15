@@ -76,10 +76,15 @@ public class TileEntityClayCrucible extends TileEntity {
 				ItemStack addStack = stack.copy();
 				addStack.stackSize = addStack.stackSize <= MaxOres ? addStack.stackSize:6;
 				this.oreBlock = addStack;
+				this.isHeated = oreBlock.stackSize >= MaxOres;
 				return addStack.stackSize;
-			}else if (oreBlock.stackSize < MaxOres){
+			}else if (oreBlock.stackSize < MaxOres && stack.getItem() == this.getOreBlock().getItem()){
 				int a = MaxOres - oreBlock.stackSize;
 				ItemStack addStack = stack.copy();
+				addStack.stackSize = addStack.stackSize <= a ? addStack.stackSize:a;
+				this.getOreBlock().stackSize += addStack.stackSize;
+				this.isHeated = oreBlock.stackSize >= MaxOres;
+				return addStack.stackSize;
 			}
 		}
 		return 0;

@@ -37,14 +37,14 @@ public class ClayCrucible extends BlockContainer {
 		if((heldItem = player.getHeldItem()) == null) return false;
 		//タイルエンチチーのしゅとく
 		TileEntityClayCrucible tile = (TileEntityClayCrucible)world.getTileEntity(x,y,z);
-		boolean didAdd = false;
-		if(didAdd){
-			heldItem.stackSize -= 6;
+		int addSize = tile.addOres(player.getHeldItem());
+		if(addSize != 0){
+			heldItem.stackSize -= addSize;
 			tile.markDirty();
 			player.inventory.markDirty();
 			world.markBlockForUpdate(x,y,z);
 		}
-		return true;
+		return addSize > 0;
 	}
 	
 	@Override
