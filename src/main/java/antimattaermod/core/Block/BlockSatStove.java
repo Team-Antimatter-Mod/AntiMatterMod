@@ -1,7 +1,6 @@
-package antimattaermod.core.Energy.Generator.Block;
+package antimattaermod.core.Block;
 
-import antimattaermod.core.Energy.Generator.TileEntity.TileEntitySatStove;
-import net.minecraft.block.Block;
+import antimattaermod.core.Block.TileEntity.TileEntitySatStove;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;

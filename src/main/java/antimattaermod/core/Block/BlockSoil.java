@@ -32,6 +32,7 @@ public class BlockSoil extends Block {
 
     @Override
     public boolean removedByPlayer(World world, EntityPlayer player, int x, int y, int z, boolean willHarvest) {
+        //手持ちのアイテムを取得する、nullの場合は普通にドロップ
         if (player.getHeldItem() != null && player.getHeldItem().getItem() == Items.stone_shovel){
             world.setBlock(x,y,z,AntiMatterModRegistry.satStove);
             player.dropItem(Items.clay_ball,1);
