@@ -66,7 +66,7 @@ public class TileEntityClayCrucible extends TileEntity {
 				getWorldObj().setBlock(xCoord,yCoord,zCoord, Blocks.iron_block);
 			}
 		}else {
-			time --;
+			time = time <= 0 ? 0 : time-1;
 		}
 	}
 	
