@@ -25,7 +25,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 /**
  * @author C6H2Cl2
  */
-public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerator{
+public class BlockFurnaceGenerator extends BlockContainer{
     //定数
     private APVoltage voltage = APVoltage.HV;
     private int energyStorage = voltage.getMaxEnergy() * 20 * 600;
@@ -116,56 +116,5 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
         return new TileEntityFurnaceGenerator();
-    }
-
-    @Override
-    public int getMaxStoreEnergy() {
-        return energyStorage;
-    }
-
-    @Override
-    public boolean canSendEnergy() {
-        return true;
-    }
-
-    @Override
-    public boolean canReceiveEnergy() {
-        return false;
-    }
-
-    @Override
-    public APVoltage getSendVoltage() {
-        return voltage;
-    }
-
-    @Override
-    public APVoltage getReceiveVoltage() {
-        return APVoltage.ZeroVoltage;
-    }
-
-    @Override
-    public int getStoredEnergy() {
-        return 0;
-    }
-
-    //BlockからIAPGeneratorのメソッドは呼ばないこと！
-    @Override
-    public float getMaxFuelValue() {
-        return 0;
-    }
-
-    @Override
-    public float getFuelValue() {
-        return 0;
-    }
-
-    @Override
-    public int getCurrentGenerate() {
-        return 0;
-    }
-
-    @Override
-    public boolean isFuelMax() {
-        return false;
     }
 }

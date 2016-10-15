@@ -35,4 +35,20 @@ enum class APVoltage private constructor(val maxEnergy: Int) {
         val tag = tagCompound.getCompoundTag("voltage")
         return getVoltageFromEnergy(tag.getInteger("energy"))
     }
+
+    override fun toString(): String {
+        return when (maxEnergy) {
+            8 -> "ULV"
+            32 -> "LV"
+            128 -> "MV"
+            512 -> "HV"
+            2048 -> "EV"
+            8192 -> "IV"
+            32768 -> "LuV"
+            131072 -> "ZPMV"
+            524288 -> "UV"
+            Int.MAX_VALUE -> "MaxV"
+            else -> "ZeroVoltage"
+        }
+    }
 }

@@ -4,6 +4,8 @@ import antimattaermod.core.AntiMatterModCore
 import antimattaermod.core.AntiMatterModRegistry
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator
 import antimattaermod.core.Energy.IAPGenerator
+import antimattaermod.core.Energy.IAPMachine
+import antimattaermod.core.Energy.IAPTransfer
 import net.minecraft.block.Block
 import net.minecraft.entity.player.EntityPlayer
 import net.minecraft.item.Item
@@ -23,17 +25,35 @@ class StatesChecker : Item(){
         setMaxStackSize(1)
     }
 
-    override fun onItemUse(itemStack: ItemStack?, player: EntityPlayer?, world: World?, x: Int, y: Int, z: Int, p_77648_7_: Int, p_77648_8_: Float, p_77648_9_: Float, p_77648_10_: Float): Boolean {
-        val targetBlock : Block = world!!.getBlock(x,y,z)
+    override fun onItemUse(itemStack: ItemStack?, player: EntityPlayer?, world: World, x: Int, y: Int, z: Int, p_77648_7_: Int, p_77648_8_: Float, p_77648_9_: Float, p_77648_10_: Float): Boolean {
         val targetTile : TileEntity? = world.getTileEntity(x,y,z)
-        if(!(targetBlock is IAPGenerator && targetTile != null && targetTile is IAPGenerator)){
+        if(!(targetTile != null && targetTile is IAPMachine)){
             return false
         }
         if (!world.isRemote){
-            val targetGenerator = targetTile as TileEntityFurnaceGenerator
-            player!!.addChatComponentMessage(ChatComponentText("Fuel Value:" + targetGenerator.fuelValue + "/" + targetGenerator.maxFuelValue))
-            player.addChatComponentMessage(ChatComponentText("Stored Energy:"+targetGenerator.storedEnergy + "/" + targetGenerator.maxStoreEnergy))
-            player.addChatComponentMessage(ChatComponentText("Generating:"+targetGenerator.currentGenerate+"AP"))
+            if (targetTile is IAPGenerator){
+                val targetGenerator : IAPGenerator = targetTile
+                player!!.addChatComponentMessage(ChatComponentText("Fuel Value:" + targetGenerator.fuelValue + "/" + targetGenerator.maxFuelValue))
+                player.addChatComponentMessage(ChatComponentText("Stored Energy:"+targetGenerator.storedEnergy + "/" + targetGenerator.maxStoreEnergy))
+                player.addChatComponentMessage(ChatComponentText("Generating:"+targetGenerator.currentGenerate+"AP"))
+            }else if (targetTile is IAPTransfer){
+                val targetTransfer : IAPTransfer = targetTile
+                player!!.addChatComponentMessage(ChatComponentText("Transfer Voltage:" + targetTransfer.sendVoltage))
+                player.addChatComponentMessage(ChatComponentText("Transfer Energy:" + targetTransfer.sendVoltage.maxEnergy))
+            }else{
+                val targetMachine : IAPMachine = targetTile
+                player!!.addChatComponentMessage(ChatComponentText("Energy:" + targetMachine.storedEnergy + "/" + targetMachine.maxStoreEnergy))
+                if (targetMachine.canReceiveEnergy()){
+                    player.addChatComponentMessage(ChatComponentText("Receive Voltage:" + targetMachine.receiveVoltage))
+                }else{
+                    player.addChatComponentMessage(ChatComponentText("Can't Receive Energy"))
+                }
+                if(targetMachine.canSendEnergy()){
+                    player.addChatComponentMessage(ChatComponentText("Send Voltage:" + targetMachine.sendVoltage))
+                }else{
+                    player.addChatComponentMessage(ChatComponentText("Can't Send Energy"))
+                }
+            }
         }
         return true
     }
