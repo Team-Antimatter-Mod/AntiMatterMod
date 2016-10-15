@@ -77,6 +77,11 @@ tile.powderOreBlock_01_0.name=Antelite Ore
 #--------------------------------------------CrystalOreBlock
 tile.crystalOreBlock_01_0.name=Crystalite Ore
 tile.crystalOreBlock_01_1.name=Abzumite Ore
+tile.crystalOreBlock_01_2.name=Metolite Ore
+tile.crystalOreBlock_01_3.name=Alamonite Ore
+tile.crystalOreBlock_01_4.name=Aqualutile Ore
+tile.crystalOreBlock_01_5.name=Lieumite Ore
+tile.crystalOreBlock_01_6.name=Arstetolite Ore
 
 #--------------------------------------------OreBlock
 tile.oreBlock_01_0.name=Tiamite Ore
