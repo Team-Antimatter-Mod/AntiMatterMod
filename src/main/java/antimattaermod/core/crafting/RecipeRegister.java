@@ -31,6 +31,9 @@ public class RecipeRegister {
         //ロッド
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.rod_01,1,0),"   ","A  "," B ",'A',"craftingToolFile",'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,3)));
 
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.motormagnet_01,1,0)," BA"," A ","AC ",
+                'A',new ItemStack(AntiMatterModRegistry.magnetizedingot_01,1,0),'B',"craftingToolHardHammer",'C',"craftingToolFile"));
+
         //その他
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.motorparts_01,1,0),"AAA","AB ","AAA",'A',new ItemStack(AntiMatterModRegistry.plate_01,1,1),'B',"craftingToolHardHammer"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.motorparts_01,1,1)," AA"," BA"," AA",'A',"plateIron",'B',"craftingToolHardHammer"));
