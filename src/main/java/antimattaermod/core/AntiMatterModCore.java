@@ -46,7 +46,9 @@ public class AntiMatterModCore {
 	public void init(FMLInitializationEvent event) {
 		proxy.registerRenderer();
 		AntiMatterModRegistry.registerInit(event);
+		RecipeRegister.beforeRemoveRecipeinit(event);
 		RecipeRegister.RecipeRegisterInit(event);
+		RecipeRegister.afterRemoveRecipeinit(event);
 	}
 	
 	@Mod.EventHandler
