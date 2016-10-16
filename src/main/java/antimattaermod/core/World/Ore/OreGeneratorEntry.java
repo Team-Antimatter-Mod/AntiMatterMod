@@ -24,6 +24,7 @@ public class OreGeneratorEntry {
 	public static final ArrayList<OreGeneratorEntry> ORE_GENERATOR_ENTRIES = new ArrayList<>();
 	
 	static {
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 0, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
 		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 1, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
 		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 2, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
 		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 3, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
@@ -40,6 +41,17 @@ public class OreGeneratorEntry {
 		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 14, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
 		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 15, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
 		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new BedrockGenerator(),1,true,false,false,0,4,5));
+
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.crystalOreBlock_1, 0, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.crystalOreBlock_1, 1, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.crystalOreBlock_1, 2, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.crystalOreBlock_1, 3, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.crystalOreBlock_1, 4, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.crystalOreBlock_1, 5, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
+
+		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.powderOreBlock_1, 0, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
+
+
 	}
 	
 	
