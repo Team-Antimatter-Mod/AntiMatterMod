@@ -76,7 +76,9 @@ public class RecipeRegister {
 
         //レンチ
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.wrench_01,1,0),"ABA","ACA"," A ",'A',"plateIron",'B',"craftingToolHardHammer",'C',new ItemStack(AntiMatterModRegistry.plate_01,1,1)));
-        
+
+        //ヤスリ
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.file_01,1,0),"  A"," AB","C  ",'A',"plateIron",'B',"craftingToolHardHammer",'C',"stickWood"));
         
         //バケツ
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.bucket),"I I","IHI"," I ",'H',"craftingToolHardHammer",'I',"plateIron"));
