@@ -65,7 +65,7 @@ item.crystalplate_01_0.name=アルステマイトプレート
 item.industrialplate_01_0.name=鉄プレート
 
 #--------------------------------------------伝導性素材
-item.conductivematerial_01_0.name=伝導性ガラス板[Rank1]
+item.conductivematerial_01_0.name=伝導性ガラス板[Rank:1]
 
 #--------------------------------------------ロッド
 item.rod_01_0.name=パラジライトロッド
@@ -77,19 +77,19 @@ item.gear_01_0.name=パラジライト製歯車
 tile.Cable.name=ドランチウムケーブル
 
 #--------------------------------------------モーター
-item.motor_01_0.name=モーター[Rank1]
+item.motor_01_0.name=モーター[Rank:1]
 
-item.motorparts_01_0.name=モーターケース[Rank1]
-item.motorparts_01_1.name=モーターカバー[Rank1]
+item.motorparts_01_0.name=モーターケース[Rank:1]
+item.motorparts_01_1.name=モーターカバー[Rank:1]
 
-item.motormagnet_01_0.name=モーター用磁石[Rank1]
+item.motormagnet_01_0.name=モーター用磁石[Rank:1]
 
 
 #--------------------------------------------シャフト
 item.shaft_01_0.name=パラジライト製シャフト
 
 #--------------------------------------------タービン
-item.turbine_01_0.name=タービン[Rank1]
+item.turbine_01_0.name=タービン[Rank:1]
 
 #--------------------------------------------タービンの刃
 item.turbineblade_01_0.name=パラジライト製タービンの刃
@@ -131,10 +131,10 @@ tile.furnaceGeneratorAP.name=基本型火力発電機
 item.StatesChecker.name=ステータスチェッカー
 
 #--------------------------------------------ツール
-item.IronHammer.name=鉄のハンマー[level0]
-item.IronWrench.name=鉄のレンチ[level0]
-item.IronWirecutter.name=鉄のワイヤーカッター[level0]
-item.IronFile.name=鉄の鑢(ヤスリ)[level0]
+item.IronHammer.name=鉄のハンマー[level:0]
+item.IronWrench.name=鉄のレンチ[level:0]
+item.IronWirecutter.name=鉄のワイヤーカッター[level:0]
+item.IronFile.name=鉄の鑢(ヤスリ)[level:0]
 
 #--------------------------------------------タブ
 itemGroup.ammaterials=反物質modコアの素材

@@ -65,7 +65,7 @@ item.crystalplate_01_0.name=Arstetolite Plate
 item.industrialplate_01_0.name=Iron Plate
 
 #--------------------------------------------conductivematerial
-item.conductivematerial_01_0.name=Conductive Glass Plate[Rank1]
+item.conductivematerial_01_0.name=Conductive Glass Plate[Rank:1]
 
 #--------------------------------------------rod
 item.rod_01_0.name=Palazirite Rod
@@ -77,18 +77,18 @@ item.gear_01_0.name=Palazirite Gear
 tile.Cable.name=Drantium cable
 
 #--------------------------------------------motor
-item.motor_01_0.name=Motor[Rank1}
+item.motor_01_0.name=Motor[Rank:1}
 
-item.motorparts_01_0.name=MotorCase[Rank1]
-item.motorparts_01_1.name=MotorCover[Rank1]
+item.motorparts_01_0.name=MotorCase[Rank:1]
+item.motorparts_01_1.name=MotorCover[Rank:1]
 
-item.motormagnet_01_0.name=MotorMagnet[Rank1]
+item.motormagnet_01_0.name=MotorMagnet[Rank:1]
 
 #--------------------------------------------shaft
 item.shaft_01_0.name=Palazirite shaft
 
 #--------------------------------------------turbine
-item.turbine_01_0.name=turbine[Rank1]
+item.turbine_01_0.name=turbine[Rank:1]
 
 #--------------------------------------------turbine blade
 item.turbineblade_01_0.name=Palazirite Turbine Blade
@@ -130,10 +130,10 @@ tile.furnaceGeneratorAP.name=basic furnaceGenerator
 item.StatesChecker.name=StatesChecker
 
 #--------------------------------------------tools
-item.IronHammer.name=Iron Hammer[level0]
-item.IronWrench.name=Iron Wrench[level0]
-item.IronWirecutter.name=Iron Wire Cutter[level0]
-item.IronFile.name=Iron File[level0]
+item.IronHammer.name=Iron Hammer[level:0]
+item.IronWrench.name=Iron Wrench[level:0]
+item.IronWirecutter.name=Iron Wire Cutter[level:0]
+item.IronFile.name=Iron File[level:0]
 
 #--------------------------------------------Tab
 itemGroup.ammaterials=AntiMatterModCore Materials
