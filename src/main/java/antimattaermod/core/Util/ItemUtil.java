@@ -10,15 +10,14 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-/** <h1>ItemUtil</h1>
+/**
+ * Created by Raiti-chan
  * 中間アイテム簡易登録クラス<br>
  * @author Raiti
- * @version 1.0.0
  * 
  */
 public class ItemUtil {
 	/**
-	 * <h1>CreateItem</h1>
 	 * 無機能なアイテムオブジェクトを作成します<br>
 	 * @param name アイテム名 {@link Item#setUnlocalizedName(String)}
 	 * @param textureName テクスチャ―名 {@link Item#setTextureName(String)}
@@ -48,12 +47,19 @@ public class ItemUtil {
 		return item;
 	}
 	
+	/**
+	 * {@link ItemUtil#CreateItem(String, String, CreativeTabs, int, boolean, int, boolean, Item)}のラッパー関数
+	 * @param name 名前
+	 * @param textureName テクスチャ名
+	 * @param maxMeta メタデータ最大値
+	 * @param tabs クリエイティブタブ
+	 * @return アイテムオブジェクト
+	 */
 	public static Item CreateItem(@NotNull String name,@NotNull String textureName,int maxMeta,@Nullable CreativeTabs tabs){
 		return CreateItem(name, textureName, tabs, 64, true, maxMeta, false, null);
 	}
 	
 	/**
-	 * <h1>CreateItem</h1>
 	 * {@link MetaItemBase}クラスを継承したクラスを使用してアイテムを生成します。<br>
 	 * 主にツールチップの説明表示などに使います。
 	 * @param name アイテム名 {@link Item#setUnlocalizedName(String)}

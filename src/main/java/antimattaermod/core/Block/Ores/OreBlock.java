@@ -38,7 +38,19 @@ public class OreBlock extends OverlayBlockBase implements AMMOreBlock{
     private byte[] harvestLevels;
 
     private short handle;
-
+    
+    /**
+     * 同化する鉱石ブロックを追加
+     * @param material 材質
+     * @param name 名前
+     * @param baseTextureName テクスチャ名
+     * @param handle ベーステクスチャの適応判定数値(2進数表記で1になるところのメタ値と対応したメタがベーステクスチャが反映される)
+     * @param overlayTextureName 鉱石テクスチャ名(いわゆる鉱石が露出してたりするところ)
+     * @param tabs タブ
+     * @param maxMeta メタデータ最大値(1~16)
+     * @param herdness 硬さの配列
+     * @param harvestLevels 採掘レベルの配列
+     */
     public OreBlock(Material material, String name, String baseTextureName, int handle, String overlayTextureName, CreativeTabs tabs, int maxMeta, float[] herdness, byte[] harvestLevels){
         super(material);
         this.setBlockName(name);
@@ -55,10 +67,33 @@ public class OreBlock extends OverlayBlockBase implements AMMOreBlock{
         if(baseTextureName != null) baseTextures = new IIcon[baseTextureNames.length];
     }
     
+    /**
+     * 同化する鉱石ブロックを追加
+     * @param material 材質
+     * @param name 名前
+     * @param overlayTextureName 鉱石テクスチャ名(いわゆる鉱石が露出してたりするところ)
+     * @param tabs タブ
+     * @param maxMeta メタデータ最大値(1~16)
+     * @param herdness 硬さの配列
+     * @param harvestLevels 採掘レベルの配列
+     */
     public OreBlock(Material material, String name, String overlayTextureName, CreativeTabs tabs, int maxMeta, float[] herdness, byte[] harvestLevels){
         this(material,name,null,0,overlayTextureName,tabs,maxMeta,herdness,harvestLevels);
     }
     
+    /**
+     * 同化する鉱石ブロックを追加
+     * @param material 材質
+     * @param name 名前
+     * @param baseTextureNames ベーステクスチャの名前配列
+     * @param overlayTextureName 鉱石テクスチャ名(いわゆる鉱石が露出してたりするところ)
+     * @param tabs タブ
+     * @param maxMeta メタデータ最大値(1~16)
+     * @param herdness 硬さの配列
+     * @param harvestLevels 採掘レベルの配列
+     * @deprecated まだテクスチャの判定がされない。
+     */
+    @Deprecated
     public OreBlock(Material material, String name, String baseTextureNames[], String overlayTextureName, CreativeTabs tabs, int maxMeta, float[] herdness, byte[] harvestLevels) {
         this(material, name, null, 0, overlayTextureName, tabs, maxMeta, herdness, harvestLevels);
         this.baseTextureNames = baseTextureNames;

@@ -23,7 +23,7 @@ public class SimpleMetaBlock extends Block{
 	
 	public SimpleMetaBlock(Material p_i45394_1_, int maxMeta) {
 		super(p_i45394_1_);
-		if (maxMeta > 15) throw new IllegalArgumentException("ブロックメタ値の最大は15です");
+		if (maxMeta > 16) throw new IllegalArgumentException("ブロックメタ値の最大は16です");
 		icons = new IIcon[maxMeta];
 	}
 	

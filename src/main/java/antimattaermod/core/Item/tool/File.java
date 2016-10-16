@@ -3,7 +3,9 @@ package antimattaermod.core.Item.tool;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Created by Raiti on 2016/10/15.
+ * Created by Raiti-chan on 2016/10/15.
+ * やすりクラス
+ * @author Raiti-chan
  */
 public class File extends CraftingTool {
 	
