@@ -10,7 +10,9 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 import java.util.Random;
 
 /**
- * Created by Raiti on 2016/09/25.
+ * Created by Raiti-chan on 2016/09/25.
+ * 鉱石生成基本アルゴリズム
+ * @author Raiti-chan
  */
 public class WorldGenOres extends WorldGenerator{
 	
@@ -20,13 +22,27 @@ public class WorldGenOres extends WorldGenerator{
 	
 	private Block genBlock;
 	
+	/**
+	 * 鉱石生成関数を生成
+	 * @param genBlock 生成するブロック
+	 * @param blockMata ブロックのメタデータ
+	 * @param number 生成密度
+	 */
 	public WorldGenOres(Block genBlock,int blockMata,int number){
 		this.genBlock = genBlock;
 		this.blockMata = blockMata;
 		this.number = number;
 	}
 	
-	
+	/**
+	 * 生成処理
+	 * @param world 生成するワールド
+	 * @param random Random
+	 * @param X 起点となるx座標
+	 * @param Y 起点となるy座標
+	 * @param Z 起点となるz座標
+	 * @return 生成できた場合true
+	 */
 	@Override
 	public boolean generate(World world, Random random, int X, int Y, int Z){
 		float f = random.nextFloat() * (float)Math.PI;
@@ -74,7 +90,8 @@ public class WorldGenOres extends WorldGenerator{
 		return true;
 	}
 	
-	private boolean isReplaceableOreGen(Block block, World world,int k2, int l2, int i3){
+	//ブロックが置き換え可能かのcheckメソッド
+	private static boolean isReplaceableOreGen(Block block, World world,int k2, int l2, int i3){
 		if(block.isReplaceableOreGen(world, k2, l2, i3, Blocks.stone)){
 			return true;
 		}else if (block.isReplaceableOreGen(world, k2, l2, i3, Blocks.netherrack)){

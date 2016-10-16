@@ -3,12 +3,18 @@ package antimattaermod.core.Block;
 import antimattaermod.core.AntiMatterModCore;
 import antimattaermod.core.AntiMatterModRegistry;
 import antimattaermod.core.Block.TileEntity.TileEntityClayCrucible;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+
+import java.util.List;
 
 /**
  * Created by Raiti on 2016/10/15.
@@ -26,7 +32,7 @@ public class ClayCrucible extends BlockContainer {
 	}
 	
 	@Override
-	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
+	public TileEntity createNewTileEntity(World world, int meta) {
 		return new TileEntityClayCrucible();
 	}
 	
@@ -53,6 +59,11 @@ public class ClayCrucible extends BlockContainer {
 	}
 	
 	@Override
+	public void getSubBlocks(Item item, CreativeTabs tab, List list) {
+		
+	}
+	
+	@Override
 	public String getItemIconName() {
 		return AntiMatterModCore.MOD_ID+":another/claycrucible";
 	}
@@ -70,5 +81,12 @@ public class ClayCrucible extends BlockContainer {
 	@Override
 	public boolean renderAsNormalBlock() {
 		return false;
+	}
+	
+	public class ClayCrucibleItem extends ItemBlock{
+		
+		public ClayCrucibleItem(Block p_i45328_1_) {
+			super(p_i45328_1_);
+		}
 	}
 }
