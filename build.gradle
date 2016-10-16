@@ -23,6 +23,13 @@ apply plugin: "kotlin"
 tasks.withType(Jar) {
     compileJava.options.encoding = 'UTF-8'
     compileJava.options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+
+}
+
+jar{
+    into(''){
+        from 'src/main/java'
+    }
 }
 sourceCompatibility = "1.8"
 targetCompatibility = "1.8"
