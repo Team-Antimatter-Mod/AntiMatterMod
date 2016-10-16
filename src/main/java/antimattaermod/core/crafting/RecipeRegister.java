@@ -51,6 +51,10 @@ public class RecipeRegister {
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.motormagnet_01,1,0)," BA"," A ","AC ",
                 'A',new ItemStack(AntiMatterModRegistry.magnetizedingot_01,1,0),'B',OreDictionaryRegister.craftingToolHardHammer,'C',OreDictionaryRegister.craftingToolWrench));
 
+        //ネジ
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.screw_01,2,0),"AB",
+                'A',new ItemStack(AntiMatterModRegistry.rod_01,0,0),'B',OreDictionaryRegister.craftingToolFile));
+
         //その他
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.motorparts_01,1,0),"AAA","AB ","AAA",'A', new ItemStack(AntiMatterModRegistry.plate_01,1,1),'B',OreDictionaryRegister.craftingToolHardHammer));
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.motorparts_01,1,1)," AA"," BA"," AA",'A',OreDictionaryRegister.plateIron,'B',OreDictionaryRegister.craftingToolHardHammer));
@@ -134,7 +138,15 @@ public class RecipeRegister {
                 'A',OreDictionaryRegister.plateIron,'B',OreDictionaryRegister.craftingToolHardHammer,'C',new ItemStack(AntiMatterModRegistry.plate_01,1,1)));
 
         //ヤスリ
-        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.file_01,1,0),"  A"," AB","C  ",'A',OreDictionaryRegister.plateIron,'B',OreDictionaryRegister.craftingToolHardHammer,'C',OreDictionaryRegister.stickWood));
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.file_01,1,0),"  A"," AB","C  ",
+                'A',OreDictionaryRegister.plateIron,'B',OreDictionaryRegister.craftingToolHardHammer,'C',OreDictionaryRegister.stickWood));
+
+
+        //ワイヤーカッター
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.wirecutter_01,1,0),"ADA","EBF","C C",
+                'A',OreDictionaryRegister.plateIron,'B',new ItemStack(AntiMatterModRegistry.screw_01,0,0),'C',OreDictionaryRegister.stickWood,
+                'D',OreDictionaryRegister.craftingScrewdriver,'E',OreDictionaryRegister.craftingToolHardHammer,'F',OreDictionaryRegister.craftingToolFile));
+
 
         //バケツ
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(Items.bucket),"I I","IHI"," I ",
