@@ -73,6 +73,9 @@ item.rod_01_0.name=Palazirite Rod
 #--------------------------------------------gear
 item.gear_01_0.name=Palazirite Gear
 
+#--------------------------------------------screw
+item.screw_01_0.name=Palazirite Screw
+
 #--------------------------------------------cable
 tile.Cable.name=Drantium cable
 
