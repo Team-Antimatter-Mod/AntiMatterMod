@@ -14,10 +14,7 @@ import antimattaermod.core.Block.Ores.OreBlock;
 import antimattaermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattaermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import antimattaermod.core.Item.StatesChecker;
-import antimattaermod.core.Item.tool.File;
-import antimattaermod.core.Item.tool.Hammer;
-import antimattaermod.core.Item.tool.WireCutter;
-import antimattaermod.core.Item.tool.Wrench;
+import antimattaermod.core.Item.tool.*;
 import antimattaermod.core.Util.AddInformationfunction;
 import antimattaermod.core.Util.BlockUtil;
 import antimattaermod.core.Util.ItemUtil;
@@ -132,6 +129,7 @@ public class AntiMatterModRegistry {
     public static final Item wrench_01 = new Wrench("IronWrench","iron_wrench",10);//耐久値10のレンチを追加(使えるのは11回)
     public static final Item wirecutter_01 = new WireCutter("IronWirecutter","iron_wirecutter",10);//耐久値10のワイヤーカッターを追加(使えるのは11回)
     public static final Item file_01 = new File("IronFile","iron_file",10);//耐久値10の鑢（ヤスリ）を追加(使えるのは11回)
+    public static final Item screwdriver_01 = new ScrewDriver("IronScrewDriver","iron_screwdriver",10);//耐久値10のドライバーを追加(使えるのは11回)
     //==================================================================================================================
 
     //Block  ===========================================================================================================
@@ -198,6 +196,7 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(wrench_01,"wrench_01");
         GameRegistry.registerItem(wirecutter_01,"wirecutter_01");
         GameRegistry.registerItem(file_01,"file_01");
+        GameRegistry.registerItem(screwdriver_01,"screwdriver_01");
         
         //Blockの登録 ==================================================================================================
             //鉱石
