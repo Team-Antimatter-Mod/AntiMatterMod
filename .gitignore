@@ -15,4 +15,5 @@ eclipse/
 .gradle/
 classes/
 build/
+!build/libs
 
