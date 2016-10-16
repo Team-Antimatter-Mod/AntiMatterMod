@@ -7,8 +7,9 @@ import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * Created by kojin15 on 2016/10/15.
+ * Changed by Raiti-chan on 2016/10/16.
  * 鉱石辞書に関すするEnum定数
- * @author kojin15
+ * @author kojin15 Raiti-chan
  */
 public enum OreDictionaryRegister {
     /*
@@ -16,7 +17,12 @@ public enum OreDictionaryRegister {
      * 追加名(追加するItemStack),
      * 複数登録は 追加名(ItemStack,ItemStack,ItemStack), とする。もちろんいくつでも可能
      * ,←これわすれないように
+     * あと、例えばironIngotとかみたいにこのmodでは追加しないけど、使うよ(主にバニラの鉱石辞書)
+     * って物は
+     * 追加名,
+     * って登録してね。(一応 "ingotIron"は入れておいた)
      */
+    ingotIron,
 	plateIron(new ItemStack(AntiMatterModRegistry.industrialplate_01,0,0)),
 	craftingToolHardHammer(new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE)),
 	craftingToolWrench(new ItemStack(AntiMatterModRegistry.wrench_01,1,OreDictionary.WILDCARD_VALUE)),
@@ -25,12 +31,14 @@ public enum OreDictionaryRegister {
 	
 	//追加はこのコメントより上に
 	;
+
 	/*
 	 * レシピでの使用の際は、
 	 * 登録名を入れるところに
-	 * OreDictionaryRegister.plateIron.toString() や
-	 * OreDictionaryRegister.craftingTookWrench.toString();
-	 * とすること
+	 * OreDictionaryRegister.plateIron や
+	 * OreDictionaryRegister.craftingTookWrench;
+	 * で、RecipeRegisterクラスのメソッド shapedOreRecipe や shapelessOreRecipe
+	 * を通すこと
 	 * IDEAなので候補が出てきます。
 	 * その方が効率いいでしょ
 	 */
