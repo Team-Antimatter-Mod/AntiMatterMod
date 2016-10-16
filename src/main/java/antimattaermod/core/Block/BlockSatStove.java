@@ -18,20 +18,24 @@ public class BlockSatStove extends BlockContainer {
         setResistance(0.0f);
     }
 
+    //trueで不透過になる
     @Override
     public boolean isOpaqueCube() {
         return false;
     }
 
+    //独自レンダーの使用時は-1
     public int getRenderType(){
         return -1;
     }
 
+    //レンダーが普通と違うよってこと
     @Override
     public boolean renderAsNormalBlock() {
         return false;
     }
 
+    //Entityの作成
     @Override
     public TileEntity  createNewTileEntity(World var1, int var2){
         return new TileEntitySatStove();
