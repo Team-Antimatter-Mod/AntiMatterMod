@@ -11,9 +11,19 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Created by C6H2Cl2 on 2016/09/19.
+ * 無機能なブロックを簡易追加する関数クラス
  */
 public class BlockUtil {
     
+    /**
+     * 無機能なブロックを追加します
+     * @param name ブロック名
+     * @param textureName テクスチャ―名
+     * @param material 材質
+     * @param hardness 硬さ
+     * @param resistance 耐爆値
+     * @return Blockオブジェクト
+     */
     public static Block CreateBlock(@NotNull String name, @Nullable String textureName, @NotNull Material material, float hardness, float resistance){
         Block block = new SimpleBlock(material);
         block.setHardness(hardness);
@@ -27,7 +37,18 @@ public class BlockUtil {
         return block;
     }
     
-    
+    /**
+     * 無機能なメタデータ持ちブロックを追加します。
+     * メタ値による硬さ、耐爆値の変更はできません
+     * @param name ブロック名
+     * @param textureName テクスチャ―名
+     * @param material 素材名
+     * @param tab 追加タブ
+     * @param maxMeta メタデータ最大値 1~16
+     * @param hardness ブロックの硬さ
+     * @param resistance 耐爆値
+     * @return Blockオブジェクト
+     */
     public static Block CreateBlock(@NotNull String name, @NotNull String textureName, @NotNull Material material, @Nullable CreativeTabs tab, int maxMeta, float hardness, float resistance){
         Block block = new SimpleMetaBlock(material,maxMeta);
         block.setHardness(hardness);

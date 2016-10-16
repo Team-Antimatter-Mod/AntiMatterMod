@@ -48,6 +48,7 @@ import net.minecraftforge.oredict.OreDictionary;
 import static antimattaermod.core.AntiMatterModCore.proxy;
 
 /**
+ * AMMのメインレジストリークラス
  * @author C6H2Cl2
  */
 public class AntiMatterModRegistry {
@@ -157,7 +158,7 @@ public class AntiMatterModRegistry {
     public static final Block tier1_machinecasing = BlockUtil.CreateBlock("tier1_machinecasing","casing/tier1_machinecasing_01",Material.rock,AntiMatterModRegistry.tabMachines,1,5f,5f);
 	
     //インゴット系圧縮ブロック
-    public static final Block ingotblock_01 = BlockUtil.CreateBlock("ingotblock_01","compressedblock/ingotblock_01",Material.rock,AntiMatterModRegistry.tabCompressedBlocks,15,5f,5f);
+    public static final Block ingotblock_01 = BlockUtil.CreateBlock("ingotblock_01","compressedblock/ingotblock_01",Material.rock,AntiMatterModRegistry.tabCompressedBlocks,1,5f,5f);
 	
 	//テスト
 	public static final Block clayCrucible = new ClayCrucible();
@@ -226,6 +227,7 @@ public class AntiMatterModRegistry {
         RecipeRemover.removeRecipe(Items.stick);
         RecipeRemover.removeShapedRecipe(new ItemStack(Items.bucket), "I I", " I ", 'I', Items.iron_ingot);
     }
+    
     //initで行う登録処理
     static void registerInit(FMLInitializationEvent event){
 
@@ -252,6 +254,7 @@ public class AntiMatterModRegistry {
         MapGenStructureIO.func_143031_a(ComponentTiamatCenterLine.class, "TiamatCometCenterLine");
         
     }
+    
     //postinitで行う処理
     static void registerPostInit(FMLPostInitializationEvent event){
         //他mod関連の操作

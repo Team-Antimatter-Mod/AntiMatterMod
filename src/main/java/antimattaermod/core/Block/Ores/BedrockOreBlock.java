@@ -18,13 +18,20 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Created by Raiti on 2016/10/09.
+ * Created by Raiti-chan on 2016/10/09.
+ * 岩盤鉱石
+ * @author Raiti-chan
  */
 public class BedrockOreBlock extends Block implements AMMOreBlock{
 	
 	
 	private Block dropBlock = null;
 	
+	/**
+	 * 岩盤鉱石の追加
+	 * @param name 鉱石名
+	 * @param block 対応する鉱石ブロック
+	 */
 	public BedrockOreBlock(String name, @NotNull Block block){
 		super(Material.rock);
 		if(!(block instanceof AMMOreBlock))throw new IllegalArgumentException("渡されたBlockインスタンスはAMMOreBlockをimportしていません");
@@ -72,6 +79,11 @@ public class BedrockOreBlock extends Block implements AMMOreBlock{
 		}
 	}
 	
+	/**
+	 * silkタッチを持っているかのチェック
+	 * @param item 確認するアイテム
+	 * @return 持っていたらtrue
+	 */
 	public static boolean hasSilkTouch(ItemStack item){
 		NBTTagList list = item.getEnchantmentTagList();
 		if (list == null) return false;

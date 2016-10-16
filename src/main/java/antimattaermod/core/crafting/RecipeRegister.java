@@ -134,7 +134,7 @@ public class RecipeRegister {
                 'A',OreDictionaryRegister.plateIron,'B',OreDictionaryRegister.craftingToolHardHammer,'C',new ItemStack(AntiMatterModRegistry.plate_01,1,1)));
 
         //ヤスリ
-        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.file_01,1,0),"  A"," AB","C  ",'A',OreDictionaryRegister.plateIron,'B',OreDictionaryRegister.craftingToolHardHammer,'C',"stickWood"));
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.file_01,1,0),"  A"," AB","C  ",'A',OreDictionaryRegister.plateIron,'B',OreDictionaryRegister.craftingToolHardHammer,'C',OreDictionaryRegister.stickWood));
 
         //バケツ
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(Items.bucket),"I I","IHI"," I ",

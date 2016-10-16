@@ -14,8 +14,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.oredict.OreDictionary;
 
-/** <h1>AntiMatterModCore</h1>
- * AntiMatterModCora MainClass<br>
+/**
+ * AntiMatterModCora MainClass
  *
  * @author Raiti, C6H2Cl2
  * @version 1.0.0

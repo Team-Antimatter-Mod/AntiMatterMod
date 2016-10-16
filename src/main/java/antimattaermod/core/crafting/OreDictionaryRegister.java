@@ -22,6 +22,7 @@ public enum OreDictionaryRegister {
      * 追加名,
      * って登録してね。(一応 "ingotIron"は入れておいた)
      */
+    stickWood,
     ingotIron,
 	plateIron(new ItemStack(AntiMatterModRegistry.industrialplate_01,0,0)),
 	craftingToolHardHammer(new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE)),
@@ -31,7 +32,7 @@ public enum OreDictionaryRegister {
 	
 	//追加はこのコメントより上に
 	;
-
+	
 	/*
 	 * レシピでの使用の際は、
 	 * 登録名を入れるところに
@@ -55,6 +56,10 @@ public enum OreDictionaryRegister {
 		this.stacks = itemStack;
 	}
 	
+	OreDictionaryRegister(){
+		this.stacks = null;
+	}
+	
 	/**
 	 * ItemStack配列を取得
 	 * @return ItemStack配列
@@ -72,8 +77,10 @@ public enum OreDictionaryRegister {
     public static void OreDictionaryRegisterPreInit(FMLPreInitializationEvent event){
 
         //鉱石辞書登録
-	    for(OreDictionaryRegister element:OreDictionaryRegister.values()){
-		    for(ItemStack stack:element.getStacks()){
+	    a:for (OreDictionaryRegister element:OreDictionaryRegister.values()){
+		    if(element.getStacks() == null) continue a;
+		    b:for (ItemStack stack:element.getStacks()){
+			    if (stack == null) continue b;
 			    OreDictionary.registerOre(element.toString(),stack);
 		    }
 		    
