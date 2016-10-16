@@ -74,7 +74,7 @@ item.rod_01_0.name=パラジライトロッド
 item.gear_01_0.name=パラジライト製歯車
 
 #--------------------------------------------ネジ
-item.screw_01_0.name=パラジライトネジ
+item.screw_01_0.name=パラジライトのネジ
 
 #--------------------------------------------ケーブル
 tile.Cable.name=ドランチウムケーブル
@@ -138,6 +138,7 @@ item.IronHammer.name=鉄のハンマー[level:0]
 item.IronWrench.name=鉄のレンチ[level:0]
 item.IronWirecutter.name=鉄のワイヤーカッター[level:0]
 item.IronFile.name=鉄の鑢(ヤスリ)[level:0]
+item.IronScrewDriver.name=鉄のドライバー[level:0]
 
 #--------------------------------------------タブ
 itemGroup.ammaterials=反物質modコアの素材

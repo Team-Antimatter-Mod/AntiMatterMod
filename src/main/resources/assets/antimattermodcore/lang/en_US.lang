@@ -137,6 +137,7 @@ item.IronHammer.name=Iron Hammer[level:0]
 item.IronWrench.name=Iron Wrench[level:0]
 item.IronWirecutter.name=Iron Wire Cutter[level:0]
 item.IronFile.name=Iron File[level:0]
+item.IronScrewDriver.name=Iron Screw Driver[level:0]
 
 #--------------------------------------------Tab
 itemGroup.ammaterials=AntiMatterModCore Materials
