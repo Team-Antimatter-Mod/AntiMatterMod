@@ -24,7 +24,6 @@ public class OreGeneratorEntry {
 	public static final ArrayList<OreGeneratorEntry> ORE_GENERATOR_ENTRIES = new ArrayList<>();
 	
 	static {
-		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 0, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
 		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 1, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
 		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 2, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
 		ORE_GENERATOR_ENTRIES.add(new OreGeneratorEntry(new WorldGenOres(AntiMatterModRegistry.oreBlock_1, 3, 10),5,true,true,true,PROPERTY_OVERWORLD,10,100,PROPERTY_HELL,10,200,PROPERTY_END,10,200));
