@@ -28,7 +28,8 @@ public enum OreDictionaryRegister {
 	craftingToolHardHammer(new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE)),
 	craftingToolWrench(new ItemStack(AntiMatterModRegistry.wrench_01,1,OreDictionary.WILDCARD_VALUE)),
 	craftingToolWireCutter(new ItemStack(AntiMatterModRegistry.wirecutter_01,1,OreDictionary.WILDCARD_VALUE)),
-    craftingToolFile(new ItemStack(AntiMatterModRegistry.file_01,1,OreDictionary.WILDCARD_VALUE)),
+	craftingToolFile(new ItemStack(AntiMatterModRegistry.file_01,1,OreDictionary.WILDCARD_VALUE)),
+	craftingScrewdriver(new ItemStack(AntiMatterModRegistry.screwdriver_01,1,OreDictionary.WILDCARD_VALUE)),
 	
 	//追加はこのコメントより上に
 	;
