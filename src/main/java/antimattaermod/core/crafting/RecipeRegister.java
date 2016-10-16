@@ -31,6 +31,9 @@ public class RecipeRegister {
         //ロッド
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.rod_01,1,0),"   ","A  "," B ",'A',"craftingToolFile",'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,3)));
 
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.motormagnet_01,1,0)," BA"," A ","AC ",
+                'A',new ItemStack(AntiMatterModRegistry.magnetizedingot_01,1,0),'B',"craftingToolHardHammer",'C',"craftingToolFile"));
+
         //その他
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.motorparts_01,1,0),"AAA","AB ","AAA",'A',new ItemStack(AntiMatterModRegistry.plate_01,1,1),'B',"craftingToolHardHammer"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.motorparts_01,1,1)," AA"," BA"," AA",'A',"plateIron",'B',"craftingToolHardHammer"));
@@ -46,6 +49,40 @@ public class RecipeRegister {
                 'A',new ItemStack(AntiMatterModRegistry.wire,1,0),
                 'B',new ItemStack(AntiMatterModRegistry.conductivematerial_01,1,0),
                 'C',"craftingToolWrench"));
+
+        //ナゲット→インゴット
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,1),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,0));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,2),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,1));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,3),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,2));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,4),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,3));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,5),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,4));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,6),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,5));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,7),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,6));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,8),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,7));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,9),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,8));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,10),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,9));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,11),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,10));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,12),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,11));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,13),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,12));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,14),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,13));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,15),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,14));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,16),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,15));
 
         //その他
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0)," S ","SCS"," S ",
@@ -82,5 +119,23 @@ public class RecipeRegister {
         
         //バケツ
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.bucket),"I I","IHI"," I ",'H',"craftingToolHardHammer",'I',"plateIron"));
+
+        //精錬
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,1),new ItemStack(AntiMatterModRegistry.nugget_01,3,0),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,2),new ItemStack(AntiMatterModRegistry.nugget_01,3,1),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,3),new ItemStack(AntiMatterModRegistry.nugget_01,3,2),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,4),new ItemStack(AntiMatterModRegistry.nugget_01,3,4),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,5),new ItemStack(AntiMatterModRegistry.nugget_01,3,5),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,6),new ItemStack(AntiMatterModRegistry.nugget_01,3,6),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,7),new ItemStack(AntiMatterModRegistry.nugget_01,3,7),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,8),new ItemStack(AntiMatterModRegistry.nugget_01,3,8),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,9),new ItemStack(AntiMatterModRegistry.nugget_01,3,9),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,10),new ItemStack(AntiMatterModRegistry.nugget_01,3,10),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,11),new ItemStack(AntiMatterModRegistry.nugget_01,3,11),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,12),new ItemStack(AntiMatterModRegistry.nugget_01,3,12),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,13),new ItemStack(AntiMatterModRegistry.nugget_01,3,13),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,14),new ItemStack(AntiMatterModRegistry.nugget_01,3,14),0.7f);
+        GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,15),new ItemStack(AntiMatterModRegistry.nugget_01,3,15),0.7f);
+
     }
 }

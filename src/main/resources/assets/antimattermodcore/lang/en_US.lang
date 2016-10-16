@@ -30,6 +30,24 @@ item.ingot_01_16.name=Pazilite Ingot
 
 item.magnetizedingot_01_0.name=Magnetized Raitium Ingot
 
+#-------------------------------------------nugget
+item.nugget_01_0.name=Raitium Nugget
+item.nugget_01_1.name=Drantium Nugget
+item.nugget_01_2.name=Palazirite Nugget
+item.nugget_01_3.name=Takumium Nugget
+item.nugget_01_4.name=Soralite Nugget
+item.nugget_01_5.name=Emirinium Nugget
+item.nugget_01_6.name=Imidium Nugget
+item.nugget_01_7.name=Mitranidelite Nugget
+item.nugget_01_8.name=Stallvimolite Nugget
+item.nugget_01_9.name=Asuratomium Nugget
+item.nugget_01_10.name=Midonalite Nugget
+item.nugget_01_11.name=Miranium Nugget
+item.nugget_01_12.name=Teyurarium Nugget
+item.nugget_01_13.name=Diglite Nugget
+item.nugget_01_14.name=Astnides Nugget
+item.nugget_01_15.name=Pazilite Nugget
+
 #--------------------------------------------powder
 item.powder_01_0.name=Antelite Powder
 
