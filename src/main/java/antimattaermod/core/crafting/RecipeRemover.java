@@ -10,10 +10,7 @@ import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class RecipeRemover {
 
@@ -59,7 +56,7 @@ public class RecipeRemover {
     @SuppressWarnings("unchecked")
     public static void removeShapedRecipe(ItemStack itemStack,Object ... par){
 	
-	    ItemStack[] itemStacks;
+	    Object[] itemStacks;
 	    {//ItemStackの配列の生成
 		    String s = new String();
 		    int i = 0;
@@ -83,28 +80,35 @@ public class RecipeRemover {
 			    }
 		    }
 		
-		    HashMap<Character, ItemStack> hashMap = new HashMap<>();
+		    HashMap<Character, Object> hashMap = new HashMap<>();
 		    for (; i < par.length; i += 2) {
 			    if (!(par[i] instanceof Character)) throw new IllegalArgumentException("パラメータがcharではありません");
 			    Character character = (Character) par[i];
-			    ItemStack itemStack1;
+			    Object itemStack1;
 			    Object parB = par[i + 1];
 			    if (parB instanceof Item) {
 				    itemStack1 = new ItemStack((Item) parB);
 			    } else if (parB instanceof Block) {
 				    itemStack1 = new ItemStack((Block) parB);
 			    } else if (parB instanceof ItemStack) {
-				    itemStack1 = (ItemStack) parB;
-			    } else throw new IllegalArgumentException("パラメーターBがItem、Block、ItemStackのどれかではありません");
+				    itemStack1 = parB;
+			    }else if (parB instanceof String || parB instanceof OreDictionaryRegister){
+				    itemStack1 = parB.toString();
+			    }else throw new IllegalArgumentException("パラメーターBがItem、Block、ItemStack、String、OreDictionaryRegisterのどれかではありません");
 			    hashMap.put(character, itemStack1);
 		    }
 		
-		    itemStacks = new ItemStack[j * k];
+		    itemStacks = new Object[j * k];
 		
 		    for (i = 0; i < j * k; i++) {
 			    char c = s.charAt(i);
 			    if (hashMap.containsKey(Character.valueOf(c))) {
-				    itemStacks[i] = (hashMap.get(Character.valueOf(c))).copy();
+				    Object object = hashMap.get(Character.valueOf(c));
+				    if(object instanceof ItemStack){
+					    itemStacks[i] = ((ItemStack)object).copy();
+				    }else {
+					    itemStacks[i] = object;
+				    }
 			    } else {
 				    itemStacks[i] = null;
 			    }
@@ -123,7 +127,8 @@ public class RecipeRemover {
 				    if (itemStacks.length != recipe.recipeItems.length) continue a;
 				
 				    for (int i = 0; i < itemStacks.length; i++) {
-					    if (!itemStacks[i].isItemEqual(recipe.recipeItems[i])) continue a;
+					    if(!(itemStacks[i] instanceof ItemStack)) continue a;
+					    if (!((ItemStack)itemStacks[i]).isItemEqual(recipe.recipeItems[i])) continue a;
 				    }
 				    remover.remove();
 			    }
@@ -133,14 +138,10 @@ public class RecipeRemover {
 			    if (outItem != null && outItem.isItemEqual(itemStack)) {
 				    if (itemStacks.length != recipe.getInput().length) continue a;
 				    for (int i = 0; i < itemStacks.length; i++){
-					    if (recipe.getInput()[i] instanceof ItemStack){
-						    if (!itemStacks[i].isItemEqual((ItemStack) recipe.getInput()[i])) continue a;
-						}else if (recipe.getInput()[i] instanceof String){
-						    int[] ids = OreDictionary.getOreIDs(itemStacks[i]);
-						    if (ids.length < 1) continue a;
-						    for (int id:ids) {
-							    if (!OreDictionary.getOreName(id).equals(recipe.getInput()[i])) continue a;
-						    }
+					    if (recipe.getInput()[i] instanceof ItemStack && itemStacks[i] instanceof ItemStack){
+						    if (!((ItemStack)itemStacks[i]).isItemEqual((ItemStack) recipe.getInput()[i])) continue a;
+						}else if (recipe.getInput()[i] instanceof String && itemStacks[i] instanceof String){
+						    if(!recipe.getInput()[i].equals(itemStacks[i])) continue a;
 					    }
 				    }
 				    remover.remove();

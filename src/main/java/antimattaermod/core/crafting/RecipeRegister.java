@@ -5,8 +5,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
@@ -149,8 +149,10 @@ public class RecipeRegister {
 
 
         //バケツ
-        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(Items.bucket),"I I","IHI"," I ",
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(Items.bucket,1,0),"I I","IHI"," I ",
                 'H',OreDictionaryRegister.craftingToolHardHammer,'I',OreDictionaryRegister.plateIron));
+	    //大釜
+	    GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(Items.cauldron,1,0),"I I","IHI","III",'H',OreDictionaryRegister.craftingToolHardHammer,'I',OreDictionaryRegister.plateIron));
 
         //精錬
         GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,1),new ItemStack(AntiMatterModRegistry.nugget_01,3,0),0.7f);
@@ -169,6 +171,24 @@ public class RecipeRegister {
         GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,14),new ItemStack(AntiMatterModRegistry.nugget_01,3,14),0.7f);
         GameRegistry.addSmelting(new ItemStack(AntiMatterModRegistry.oreBlock_1,1,15),new ItemStack(AntiMatterModRegistry.nugget_01,3,15),0.7f);
 
+    }
+	
+	/**
+	 * {@link RecipeRegister#RecipeRegisterInit(FMLInitializationEvent)}が実行される前に実行されるレシピ消去
+	 * @param event FMLイベント
+	 */
+    public static void beforeRemoveRecipeinit(FMLInitializationEvent event){
+	    //Recipe削除 ===================================================================================================
+	    RecipeRemover.removeRecipe(Items.stick);//木の棒
+	    RecipeRemover.removeShapedRecipe(new ItemStack(Items.bucket), "I I", " I ", 'I', Items.iron_ingot);//バケツ
+	    RecipeRemover.removeShapedRecipe(new ItemStack(Items.cauldron, 1),"# #", "# #", "###", '#', Items.iron_ingot);//大釜
+    }
+	
+	/**
+	 * {@link RecipeRegister#RecipeRegisterInit(FMLInitializationEvent)}が実行された後に実行されるレシピ消去
+	 * @param event FMLイベント
+	 */
+    public static void afterRemoveRecipeinit(FMLInitializationEvent event){
     }
 
 

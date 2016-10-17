@@ -217,16 +217,12 @@ public class AntiMatterModRegistry {
         GameRegistry.registerBlock(ingotblock_01,"ingotblock_01");
             //テスト
         GameRegistry.registerBlock(clayCrucible,"clayCrucible");
-
-
-        
+	    
         
         //Renderの登録 =================================================================================================
         proxy.registerRenderThings();
         
-        //Recipe削除 ===================================================================================================
-        RecipeRemover.removeRecipe(Items.stick);
-        RecipeRemover.removeShapedRecipe(new ItemStack(Items.bucket), "I I", " I ", 'I', Items.iron_ingot);
+        
     }
     
     //initで行う登録処理
