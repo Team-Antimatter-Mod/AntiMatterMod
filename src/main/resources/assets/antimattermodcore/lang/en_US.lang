@@ -127,6 +127,8 @@ tile.oreBlock_01_14.name=Astnides Ore
 tile.oreBlock_01_15.name=Pazilite Ore
 
 #--------------------------------------------machine
+tile.tier1_machinecasing.name=T1 Machine Casing
+tile.tier1_machinehull.name=T1 Machine Hull
 tile.furnaceGeneratorAP.name=basic furnaceGenerator
 
 #--------------------------------------------other

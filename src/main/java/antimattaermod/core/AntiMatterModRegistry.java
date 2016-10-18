@@ -134,7 +134,7 @@ public class AntiMatterModRegistry {
 
     //Block  ===========================================================================================================
     //鉱石
-    public static final Block crystalOreBlock_1 = new DifferentOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 6, new float[]{5.0F,5.0F,5.0F,5.0F,5.0F,5.0F}, new byte[]{3,3,3,3,3,3}, crystal_01, new int[]{0,1,2,3,4,5});
+    public static final Block crystalOreBlock_1 = new DifferentOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 7, new float[]{5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F}, new byte[]{3,3,3,3,3,3,3}, crystal_01, new int[]{0,1,2,3,4,5,6});
     public static final Block bedrockCrystalOreBlock_1 = new BedrockOreBlock("bedrockCrystalOreBlock_01",crystalOreBlock_1);
 
     public static final Block powderOreBlock_1 = new DifferentOreBlock(Material.rock, "powderOreBlock_01", "powderore/powderoreblock_01", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F}, new byte[]{3}, powder_01, new int[]{0}, new int[]{3,3});
@@ -155,7 +155,8 @@ public class AntiMatterModRegistry {
 
     //筐体
     public static final Block tier1_machinecasing = BlockUtil.CreateBlock("tier1_machinecasing","casing/tier1_machinecasing_01",Material.rock,AntiMatterModRegistry.tabMachines,1,5f,5f);
-	
+    public static final Block tier1_machinehull = BlockUtil.CreateBlock("tier1_machinehull","casing/tier1_machinehull_01",Material.rock,AntiMatterModRegistry.tabMachines,1,5f,5f);
+
     //インゴット系圧縮ブロック
     public static final Block ingotblock_01 = BlockUtil.CreateBlock("ingotblock_01","compressedblock/ingotblock_01",Material.rock,AntiMatterModRegistry.tabCompressedBlocks,1,5f,5f);
 	
@@ -212,6 +213,7 @@ public class AntiMatterModRegistry {
         GameRegistry.registerBlock(cable, CableItemBlock.class,"Cable");
         GameRegistry.registerBlock(satStove,"satStove");
         GameRegistry.registerBlock(tier1_machinecasing,"tier1_machinecasing");
+        GameRegistry.registerBlock(tier1_machinehull,"tier1_machinehull");
             //その他
         GameRegistry.registerBlock(soilBlock,"soilBlock");
         GameRegistry.registerBlock(ingotblock_01,"ingotblock_01");

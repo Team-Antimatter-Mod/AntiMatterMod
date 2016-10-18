@@ -128,6 +128,8 @@ tile.oreBlock_01_14.name=アストノイド鉱石
 tile.oreBlock_01_15.name=パジライト鉱石
 
 #--------------------------------------------機械
+tile.tier1_machinecasing.name=基本型マシンケーシング
+tile.tier1_machinehull.name=基本型マシン筐体
 tile.furnaceGeneratorAP.name=基本型火力発電機
 
 #--------------------------------------------その他
