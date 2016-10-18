@@ -98,6 +98,8 @@ item.turbineblade_01_0.name=Palazirite Turbine Blade
 
 #--------------------------------------------PowderOreBlock
 tile.powderOreBlock_01_0.name=Antelite Ore
+#--------------------------------------------bedrock
+tile.bedrockPowderOreBlock_01_01.name=Antelite BedrockOre
 
 #--------------------------------------------CrystalOreBlock
 tile.crystalOreBlock_01_0.name=Crystalite Ore
@@ -107,6 +109,14 @@ tile.crystalOreBlock_01_3.name=Alamonite Ore
 tile.crystalOreBlock_01_4.name=Aqualutile Ore
 tile.crystalOreBlock_01_5.name=Lieumite Ore
 tile.crystalOreBlock_01_6.name=Arstetolite Ore
+#--------------------------------------------bedrock
+tile.bedrockCrystalOreBlock_01_0.name=Crystalite BedrockOre
+tile.bedrockCrystalOreBlock_01_1.name=Abzumite BedrockOre
+tile.bedrockCrystalOreBlock_01_2.name=Metolite BedrockOre
+tile.bedrockCrystalOreBlock_01_3.name=Alamonite BedrockOre
+tile.bedrockCrystalOreBlock_01_4.name=Aqualutile BedrockOre
+tile.bedrockCrystalOreBlock_01_5.name=Lieumite BedrockOre
+tile.bedrockCrystalOreBlock_01_6.name=Arstetolite BedrockOre
 
 #--------------------------------------------OreBlock
 tile.oreBlock_01_0.name=Tiamite Ore
@@ -125,6 +135,23 @@ tile.oreBlock_01_12.name=Teyurarium Ore
 tile.oreBlock_01_13.name=Diglite Ore
 tile.oreBlock_01_14.name=Astnides Ore
 tile.oreBlock_01_15.name=Pazilite Ore
+#--------------------------------------------bedrock
+tile.bedrockOreBlock_01_0.name=Tiamite BedrockOre
+tile.bedrockOreBlock_01_1.name=Raitium BedrockOre
+tile.bedrockOreBlock_01_2.name=Drantium BedrockOre
+tile.bedrockOreBlock_01_3.name=Palazirite BedrockOre
+tile.bedrockOreBlock_01_4.name=Soralite BedrockOre
+tile.bedrockOreBlock_01_5.name=Emirinium BedrockOre
+tile.bedrockOreBlock_01_6.name=Imidium BedrockOre
+tile.bedrockOreBlock_01_7.name=Mitranidelite BedrockOre
+tile.bedrockOreBlock_01_8.name=Stallvimolite BedrockOre
+tile.bedrockOreBlock_01_9.name=Asuratomium BedrockOre
+tile.bedrockOreBlock_01_10.name=Midonalite BedrockOre
+tile.bedrockOreBlock_01_11.name=Miranium BedrockOre
+tile.bedrockOreBlock_01_12.name=Teyurarium BedrockOre
+tile.bedrockOreBlock_01_13.name=Diglite BedrockOre
+tile.bedrockOreBlock_01_14.name=Astnides BedrockOre
+tile.bedrockOreBlock_01_15.name=Pazilite BedrockOre
 
 #--------------------------------------------machine
 tile.tier1_machinecasing.name=T1 Machine Casing

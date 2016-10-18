@@ -99,6 +99,8 @@ item.turbineblade_01_0.name=パラジライト製タービンの刃
 
 #--------------------------------------------粉末鉱石ブロック
 tile.powderOreBlock_01_0.name=アンティライト鉱石
+#--------------------------------------------岩盤鉱石
+tile.bedrockPowderOreBlock_01_01.name=アンティライト岩盤鉱石
 
 #--------------------------------------------クリスタル鉱石ブロック
 tile.crystalOreBlock_01_0.name=アプスマイト鉱石
@@ -108,6 +110,14 @@ tile.crystalOreBlock_01_3.name=アラモナイト鉱石
 tile.crystalOreBlock_01_4.name=アクアルチル鉱石
 tile.crystalOreBlock_01_5.name=リュウマイト鉱石
 tile.crystalOreBlock_01_6.name=アルステマイト鉱石
+#--------------------------------------------岩盤鉱石
+tile.bedrockCrystalOreBlock_01_0.name=アプスマイト岩盤鉱石
+tile.bedrockCrystalOreBlock_01_1.name=クリスタライト岩盤鉱石
+tile.bedrockCrystalOreBlock_01_2.name=メトライト岩盤鉱石
+tile.bedrockCrystalOreBlock_01_3.name=アラモナイト岩盤鉱石
+tile.bedrockCrystalOreBlock_01_4.name=アクアルチル岩盤鉱石
+tile.bedrockCrystalOreBlock_01_5.name=リュウマイト岩盤鉱石
+tile.bedrockCrystalOreBlock_01_6.name=アルステマイト岩盤鉱石
 
 #--------------------------------------------鉱石ブロック
 tile.oreBlock_01_0.name=ティアマイト鉱石
@@ -126,6 +136,24 @@ tile.oreBlock_01_12.name=テューラリウム鉱石
 tile.oreBlock_01_13.name=ディグライト鉱石
 tile.oreBlock_01_14.name=アストノイド鉱石
 tile.oreBlock_01_15.name=パジライト鉱石
+#--------------------------------------------岩盤鉱石
+tile.bedrockOreBlock_01_0.name=ティアマイト岩盤鉱石
+tile.bedrockOreBlock_01_1.name=ライチウム岩盤鉱石
+tile.bedrockOreBlock_01_2.name=ドランチウム岩盤鉱石
+tile.bedrockOreBlock_01_3.name=パラジライト岩盤鉱石
+tile.bedrockOreBlock_01_4.name=ソラライト岩盤鉱石
+tile.bedrockOreBlock_01_5.name=エミリリウム岩盤鉱石
+tile.bedrockOreBlock_01_6.name=イミジウム岩盤鉱石
+tile.bedrockOreBlock_01_7.name=ミトラナイドライト岩盤鉱石
+tile.bedrockOreBlock_01_8.name=ストルビモナイト岩盤鉱石
+tile.bedrockOreBlock_01_9.name=アスラトミウム岩盤鉱石
+tile.bedrockOreBlock_01_10.name=ミドナライト岩盤鉱石
+tile.bedrockOreBlock_01_11.name=ミラニウム岩盤鉱石
+tile.bedrockOreBlock_01_12.name=テューラリウム岩盤鉱石
+tile.bedrockOreBlock_01_13.name=ディグライト岩盤鉱石
+tile.bedrockOreBlock_01_14.name=アストノイド岩盤鉱石
+tile.bedrockOreBlock_01_15.name=パジライト岩盤鉱石
+
 
 #--------------------------------------------機械
 tile.tier1_machinecasing.name=基本型マシンケーシング
