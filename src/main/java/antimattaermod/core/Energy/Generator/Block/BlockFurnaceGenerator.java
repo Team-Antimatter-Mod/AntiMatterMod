@@ -84,7 +84,7 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
     public void registerBlockIcons(IIconRegister register) {
         this.Front_OFF = register.registerIcon(AntiMatterModCore.MOD_ID+":machine/tier1_furnacegenerator_off");
         this.Front_ON = register.registerIcon(AntiMatterModCore.MOD_ID+":machine/tier1_furnacegenerator_on");
-        this.AnotherIcon = register.registerIcon(AntiMatterModCore.MOD_ID+":machine/tier1_casing");
+        this.AnotherIcon = register.registerIcon(AntiMatterModCore.MOD_ID+":machine/tier1_hull");
     }
     
     @Override
