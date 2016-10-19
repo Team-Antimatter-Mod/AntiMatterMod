@@ -14,7 +14,7 @@ import net.minecraft.tileentity.TileEntity
 /**
  * @author C6H2Cl2
  */
-class TileAlloySmelter(private var tier:Int) :TileEntity(),IInventory,IAPMachine{
+class TileAlloySmelter(private var tier:Int) :TileEntity(),IInventory{
 
     private var slotSize = 0
     /*Slotの数について
@@ -162,7 +162,7 @@ class TileAlloySmelter(private var tier:Int) :TileEntity(),IInventory,IAPMachine
         }
     }
 
-    override fun getStoredEnergy(): Int {
+    /*override fun getStoredEnergy(): Int {
         return storedEnergy
     }
 
@@ -184,5 +184,5 @@ class TileAlloySmelter(private var tier:Int) :TileEntity(),IInventory,IAPMachine
 
     override fun getMaxStoreEnergy(): Int {
         return maxStoreEnergy
-    }
+    }*/
 }

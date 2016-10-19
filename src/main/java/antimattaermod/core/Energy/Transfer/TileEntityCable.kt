@@ -13,7 +13,7 @@ import java.util.*
 /**
  * @author C6H2Cl2
  */
-class TileEntityCable :TileEntity,IAPTransfer{
+class TileEntityCable :TileEntity{
 
     private var voltage : APVoltage = APVoltage.ZeroVoltage
     private var storedEnergy = 0
@@ -88,10 +88,10 @@ class TileEntityCable :TileEntity,IAPTransfer{
         return S35PacketUpdateTileEntity(xCoord,yCoord,zCoord,1,tagCompound)
     }
 
-    override fun getStoredEnergy(): Int =storedEnergy
+    /*override fun getStoredEnergy(): Int =storedEnergy
     override fun getReceiveVoltage(): APVoltage =voltage
     override fun getSendVoltage(): APVoltage =voltage
     override fun canReceiveEnergy(): Boolean =true
     override fun canSendEnergy(): Boolean =true
-    override fun getMaxStoreEnergy(): Int =maxStoreEnergy
+    override fun getMaxStoreEnergy(): Int =maxStoreEnergy*/
 }
