@@ -23,8 +23,9 @@ class StatesChecker : Item(){
         setTextureName(AntiMatterModCore.MOD_ID+":tool/stateschecker")
         creativeTab = AntiMatterModRegistry.tabMachines
         setMaxStackSize(1)
+        val a :IAPGenerator? = null
     }
-
+/*
     override fun onItemUse(itemStack: ItemStack?, player: EntityPlayer?, world: World, x: Int, y: Int, z: Int, p_77648_7_: Int, p_77648_8_: Float, p_77648_9_: Float, p_77648_10_: Float): Boolean {
         val targetTile : TileEntity? = world.getTileEntity(x,y,z)
         if(!(targetTile != null && targetTile is IAPMachine)){
@@ -56,5 +57,5 @@ class StatesChecker : Item(){
             }
         }
         return true
-    }
+    }*/
 }

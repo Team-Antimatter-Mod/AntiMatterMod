@@ -29,8 +29,12 @@ abstract class IAPAccessible : TileEntity() {
         return S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 1, tagCompound)
     }
 
-    protected val voltage: APVoltage = APVoltage.ZeroVoltage
+    var voltage: APVoltage = APVoltage.ZeroVoltage
+    protected set
+    var maxStoredEnergy: Int = 0
+    protected set
+    var storedEnergy: Int = 0
+    protected set
+
     public abstract fun explode()
-    protected val maxStoredEnergy: Int = 0
-    protected val storedEnergy: Int = 0
 }

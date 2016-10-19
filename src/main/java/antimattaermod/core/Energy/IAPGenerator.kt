@@ -17,4 +17,11 @@ abstract class IAPGenerator :IAPProvider(){
     override fun writeToNBT(tagCompound: NBTTagCompound) {
         super.writeToNBT(tagCompound)
     }
+
+    var currentGenerateValue = 0
+    protected set
+    var maxGenerateValue = 0
+    protected set
+    var isGenerating = false
+    protected set
 }
