@@ -7,11 +7,13 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -61,6 +63,18 @@ public class ClayCrucible extends BlockContainer {
 	@Override
 	public void getSubBlocks(Item item, CreativeTabs tab, List list) {
 		
+	}
+	
+	@Override
+	public void addCollisionBoxesToList(World world, int x, int y, int z, AxisAlignedBB aabb, List list, Entity entity) {
+		this.setBlockBounds(2F/16F, 0F, 2F/16F, 14F/16F, 14F/16, 14F/16F);
+		super.addCollisionBoxesToList(world, x, y, z, aabb, list, entity);
+		
+	}
+	
+	@Override
+	public void setBlockBoundsForItemRender() {
+		super.setBlockBoundsForItemRender();
 	}
 	
 	@Override
