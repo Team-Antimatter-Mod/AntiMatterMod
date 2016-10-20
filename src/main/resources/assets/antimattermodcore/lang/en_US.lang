@@ -68,8 +68,10 @@ item.industrialplate_01_0.name=Iron Plate
 #--------------------------------------------conductivematerial
 item.conductivematerial_01_0.name=Conductive Glass Plate[Rank:1]
 
-#--------------------------------------------rod
-item.rod_01_0.name=Palazirite Rod
+#--------------------------------------------stick
+item.stick_01_0.name=Palazirite Rod
+
+item.industrialstick_01_0.name=Iron Rod
 
 #--------------------------------------------gear
 item.gear_01_0.name=Palazirite Gear

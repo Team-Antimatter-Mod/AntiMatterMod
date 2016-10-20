@@ -110,7 +110,8 @@ public class AntiMatterModRegistry {
     public static final Item crystalplate_02 = ItemUtil.CreateItem("crystalplate_02","plate/crystalplate_02",1,AntiMatterModRegistry.tabImaterial);
     public static final Item industrialplate_01 = ItemUtil.CreateItem("industrialplate_01","plate/industrialplate_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item conductivematerial_01 = ItemUtil.CreateItem("conductivematerial_01","conductivematerial/conductivematerial_01",1,AntiMatterModRegistry.tabImaterial);
-    public static final Item rod_01 = ItemUtil.CreateItem("rod_01","rod/rod_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item stick_01 = ItemUtil.CreateItem("stick_01","stick/stick_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item industrialstick_01 = ItemUtil.CreateItem("industrialstick_01","stick/industrialstick_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item gear_01 = ItemUtil.CreateItem("gear_01","gear/gear_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item turbine_01 = ItemUtil.CreateItem("turbine_01","turbine/turbine_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item turbineblade_01 = ItemUtil.CreateItem("turbineblade_01","turbine/turbineblade_01",1,AntiMatterModRegistry.tabImaterial);
@@ -186,7 +187,8 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(crystalplate_02,"crystalplate_02");
         GameRegistry.registerItem(industrialplate_01,"industrialplate_01");
         GameRegistry.registerItem(conductivematerial_01,"conductivematerial_01");
-        GameRegistry.registerItem(rod_01,"rod_01");
+        GameRegistry.registerItem(stick_01,"stick_01");
+        GameRegistry.registerItem(industrialstick_01,"industrialstick_01");
         GameRegistry.registerItem(gear_01,"gear_01");
         GameRegistry.registerItem(turbine_01,"turbine_01");
         GameRegistry.registerItem(turbineblade_01,"turbineblade_01");
