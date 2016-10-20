@@ -7,7 +7,8 @@ item.crystal_01_2.name=Metolite
 item.crystal_01_3.name=Alamonite
 item.crystal_01_4.name=Aqualutile
 item.crystal_01_5.name=Lieumite
-item.crystal_01_6.name=Arstetolite
+
+item.crystal_02_0.name=Arstetolite
 
 #--------------------------------------------Ingot
 item.ingot_01_0.name=Tiamite
@@ -60,7 +61,7 @@ item.plate_01_1.name=Raitium Plate
 item.plate_01_2.name=Drantium Plate
 item.plate_01_3.name=Palazirite Plate
 
-item.crystalplate_01_0.name=Arstetolite Plate
+item.crystalplate_02_0.name=Arstetolite Plate
 
 item.industrialplate_01_0.name=Iron Plate
 
@@ -108,7 +109,9 @@ tile.crystalOreBlock_01_2.name=Metolite Ore
 tile.crystalOreBlock_01_3.name=Alamonite Ore
 tile.crystalOreBlock_01_4.name=Aqualutile Ore
 tile.crystalOreBlock_01_5.name=Lieumite Ore
-tile.crystalOreBlock_01_6.name=Arstetolite Ore
+
+tile.crystalOreBlock_02_0.name=Arstetolite Ore
+
 #--------------------------------------------bedrock
 tile.bedrockCrystalOreBlock_01_0.name=Crystalite BedrockOre
 tile.bedrockCrystalOreBlock_01_1.name=Abzumite BedrockOre
@@ -116,7 +119,8 @@ tile.bedrockCrystalOreBlock_01_2.name=Metolite BedrockOre
 tile.bedrockCrystalOreBlock_01_3.name=Alamonite BedrockOre
 tile.bedrockCrystalOreBlock_01_4.name=Aqualutile BedrockOre
 tile.bedrockCrystalOreBlock_01_5.name=Lieumite BedrockOre
-tile.bedrockCrystalOreBlock_01_6.name=Arstetolite BedrockOre
+
+tile.bedrockCrystalOreBlock_02_0.name=Arstetolite BedrockOre
 
 #--------------------------------------------OreBlock
 tile.oreBlock_01_0.name=Tiamite Ore

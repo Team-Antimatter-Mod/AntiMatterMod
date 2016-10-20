@@ -100,13 +100,14 @@ public class AntiMatterModRegistry {
     //Item  ============================================================================================================
     //素材
 	public static final Item ingot_01 = ItemUtil.CreateItem("ingot_01","ingot/ingot_01",17,AntiMatterModRegistry.tabMaterials, AddInformationfunction::IngotInformation);
-    public static final Item crystal_01 = ItemUtil.CreateItem("crystal_01","crystal/crystal_01",7,AntiMatterModRegistry.tabMaterials);
+    public static final Item crystal_01 = ItemUtil.CreateItem("crystal_01","crystal/crystal_01",6,AntiMatterModRegistry.tabMaterials);
+    public static final Item crystal_02 = ItemUtil.CreateItem("crystal_02","crystal/crystal_02",1,AntiMatterModRegistry.tabMaterials);
     public static final Item powder_01 = ItemUtil.CreateItem("powder_01","powder/powder_01",1,AntiMatterModRegistry.tabMaterials);
     public static final Item nugget_01 = ItemUtil.CreateItem("nugget_01","nugget/nugget_01",16,AntiMatterModRegistry.tabMaterials);
     
     public static final Item wire = ItemUtil.CreateItem("wire_01","wire/wire_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",4,AntiMatterModRegistry.tabImaterial);
-    public static final Item crystalplate_01 = ItemUtil.CreateItem("crystalplate_01","plate/crystalplate_01",1,AntiMatterModRegistry.tabImaterial);
+    public static final Item crystalplate_02 = ItemUtil.CreateItem("crystalplate_02","plate/crystalplate_02",1,AntiMatterModRegistry.tabImaterial);
     public static final Item industrialplate_01 = ItemUtil.CreateItem("industrialplate_01","plate/industrialplate_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item conductivematerial_01 = ItemUtil.CreateItem("conductivematerial_01","conductivematerial/conductivematerial_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item rod_01 = ItemUtil.CreateItem("rod_01","rod/rod_01",1,AntiMatterModRegistry.tabImaterial);
@@ -134,8 +135,11 @@ public class AntiMatterModRegistry {
 
     //Block  ===========================================================================================================
     //鉱石
-    public static final Block crystalOreBlock_1 = new DifferentOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 7, new float[]{5.0F,5.0F,5.0F,5.0F,5.0F,5.0F,5.0F}, new byte[]{3,3,3,3,3,3,3}, crystal_01, new int[]{0,1,2,3,4,5,6});
+    public static final Block crystalOreBlock_1 = new DifferentOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 6, new float[]{5.0F,5.0F,5.0F,5.0F,5.0F,5.0F}, new byte[]{3,3,3,3,3,3}, crystal_01, new int[]{0,1,2,3,4,5});
     public static final Block bedrockCrystalOreBlock_1 = new BedrockOreBlock("bedrockCrystalOreBlock_01",crystalOreBlock_1);
+
+    public static final Block crystalOreBlock_2 = new DifferentOreBlock(Material.rock, "crystalOreBlock_02", "crystalore/crystaloreblock_02", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F}, new byte[]{3}, crystal_02, new int[]{0});
+    public static final Block bedrockCrystalOreBlock_2 = new BedrockOreBlock("bedrockCrystalOreBlock_02",crystalOreBlock_2);
 
     public static final Block powderOreBlock_1 = new DifferentOreBlock(Material.rock, "powderOreBlock_01", "powderore/powderoreblock_01", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F}, new byte[]{3}, powder_01, new int[]{0}, new int[]{3,3});
     public static final Block bedrockPowderOreBlock_1 = new BedrockOreBlock("bedrockPowderOreBlock_01",powderOreBlock_1);
@@ -171,14 +175,15 @@ public class AntiMatterModRegistry {
     static void registerPreInit(FMLPreInitializationEvent event){
         //Itemの登録 ===================================================================================================
             //素材
-        GameRegistry.registerItem(crystal_01, "material");
+        GameRegistry.registerItem(crystal_01, "crystal_01");
+        GameRegistry.registerItem(crystal_02, "crystal_02");
         GameRegistry.registerItem(ingot_01,"ingot_01");
         GameRegistry.registerItem(powder_01,"powder_01");
         GameRegistry.registerItem(nugget_01,"nugget_01");
             //中間素材
         GameRegistry.registerItem(wire,"wire");
         GameRegistry.registerItem(plate_01,"plate_01");
-        GameRegistry.registerItem(crystalplate_01,"crystalplate_01");
+        GameRegistry.registerItem(crystalplate_02,"crystalplate_02");
         GameRegistry.registerItem(industrialplate_01,"industrialplate_01");
         GameRegistry.registerItem(conductivematerial_01,"conductivematerial_01");
         GameRegistry.registerItem(rod_01,"rod_01");
@@ -202,10 +207,12 @@ public class AntiMatterModRegistry {
         //Blockの登録 ==================================================================================================
             //鉱石
         GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_01");
+        GameRegistry.registerBlock(crystalOreBlock_2, MetaItemBlock.class, "crystalOreBlock_02");
         GameRegistry.registerBlock(powderOreBlock_1, MetaItemBlock.class, "powderOreBlock_01");
         GameRegistry.registerBlock(oreBlock_1, MetaItemBlock.class, "oreBlock_01");
             //岩盤鉱石
         GameRegistry.registerBlock(bedrockCrystalOreBlock_1, MetaItemBlock.class, "bedrockCrystalOreBlock_01");
+        GameRegistry.registerBlock(bedrockCrystalOreBlock_2, MetaItemBlock.class, "bedrockCrystalOreBlock_02");
         GameRegistry.registerBlock(bedrockPowderOreBlock_1, MetaItemBlock.class, "bedrockPowderOreBlock_01");
         GameRegistry.registerBlock(bedrockOreBlock_1, MetaItemBlock.class, "bedrockOreBlock_01");
             //機械

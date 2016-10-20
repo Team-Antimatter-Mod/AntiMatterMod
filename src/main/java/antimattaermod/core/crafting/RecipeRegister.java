@@ -42,8 +42,8 @@ public class RecipeRegister {
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,2),"A","B","B",'A',OreDictionaryRegister.craftingToolHardHammer,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,2)));
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,3),"A","B","B",'A',OreDictionaryRegister.craftingToolHardHammer,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,3)));
 
-        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.crystalplate_01,1,0),"AB ","CC ","CC ",
-                'A',OreDictionaryRegister.craftingToolFile,'B',OreDictionaryRegister.craftingToolHardHammer,'C',new ItemStack(AntiMatterModRegistry.crystal_01,1,6)));
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.crystalplate_02,1,0),"AB ","CC ","CC ",
+                'A',OreDictionaryRegister.craftingToolFile,'B',OreDictionaryRegister.craftingToolHardHammer,'C',new ItemStack(AntiMatterModRegistry.crystal_02,1,0)));
 
         //ロッド
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.rod_01,1,0),"   ","A  "," B ", 'A',OreDictionaryRegister.craftingToolFile,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,3)));
@@ -124,7 +124,7 @@ public class RecipeRegister {
 		        'A',new ItemStack(AntiMatterModRegistry.turbineblade_01,1,0),'B',new ItemStack(AntiMatterModRegistry.shaft_01,1,0),
                 'C',OreDictionaryRegister.craftingToolHardHammer,'D',OreDictionaryRegister.craftingToolWrench));
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.conductivematerial_01,1,0),"ABA","BCB","ABA",
-                'A',new ItemStack(AntiMatterModRegistry.crystalplate_01,1,0),'B',new ItemStack(AntiMatterModRegistry.powder_01,1,0),
+                'A',new ItemStack(AntiMatterModRegistry.crystalplate_02,1,0),'B',new ItemStack(AntiMatterModRegistry.powder_01,1,0),
                 'C',new ItemStack(Blocks.glass_pane,1,0));
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.motor_01,1,0),"ABC","DEF","ABC",
                 'A',OreDictionaryRegister.plateIron,'B',new ItemStack(AntiMatterModRegistry.wire,1,0),

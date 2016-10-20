@@ -7,7 +7,8 @@ item.crystal_01_2.name=メトライト
 item.crystal_01_3.name=アラモナイト
 item.crystal_01_4.name=アクアルチル
 item.crystal_01_5.name=リュウマイト
-item.crystal_01_6.name=アルステマイト
+
+item.crystal_02_0.name=アルステマイト
 
 #--------------------------------------------インゴット
 item.ingot_01_0.name=ティアマイト
@@ -60,7 +61,7 @@ item.plate_01_1.name=ライチウムプレート
 item.plate_01_2.name=ドランチウムプレート
 item.plate_01_3.name=パラジライトプレート
 
-item.crystalplate_01_0.name=アルステマイトプレート
+item.crystalplate_02_0.name=アルステマイトプレート
 
 item.industrialplate_01_0.name=鉄プレート
 
@@ -109,7 +110,9 @@ tile.crystalOreBlock_01_2.name=メトライト鉱石
 tile.crystalOreBlock_01_3.name=アラモナイト鉱石
 tile.crystalOreBlock_01_4.name=アクアルチル鉱石
 tile.crystalOreBlock_01_5.name=リュウマイト鉱石
-tile.crystalOreBlock_01_6.name=アルステマイト鉱石
+
+tile.crystalOreBlock_02_0.name=アルステマイト鉱石
+
 #--------------------------------------------岩盤鉱石
 tile.bedrockCrystalOreBlock_01_0.name=アプスマイト岩盤鉱石
 tile.bedrockCrystalOreBlock_01_1.name=クリスタライト岩盤鉱石
@@ -117,7 +120,8 @@ tile.bedrockCrystalOreBlock_01_2.name=メトライト岩盤鉱石
 tile.bedrockCrystalOreBlock_01_3.name=アラモナイト岩盤鉱石
 tile.bedrockCrystalOreBlock_01_4.name=アクアルチル岩盤鉱石
 tile.bedrockCrystalOreBlock_01_5.name=リュウマイト岩盤鉱石
-tile.bedrockCrystalOreBlock_01_6.name=アルステマイト岩盤鉱石
+
+tile.bedrockCrystalOreBlock_02_0.name=アルステマイト岩盤鉱石
 
 #--------------------------------------------鉱石ブロック
 tile.oreBlock_01_0.name=ティアマイト鉱石
