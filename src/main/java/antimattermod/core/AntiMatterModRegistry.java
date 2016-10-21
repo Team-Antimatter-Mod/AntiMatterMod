@@ -160,8 +160,11 @@ public class AntiMatterModRegistry {
 
     //インゴット系圧縮ブロック
     public static final Block ingotblock_01 = BlockUtil.CreateBlock("ingotblock_01","compressedblock/ingotblock_01",Material.rock,AntiMatterModRegistry.tabCompressedBlocks,1,5f,5f);
-	
-	//テスト
+    public static final Block crystalblock_01 = BlockUtil.CreateBlock("crystalblock_01","compressedblock/crystalblock_01",Material.rock,AntiMatterModRegistry.tabCompressedBlocks,1,5f,5f);
+    public static final Block crystalblock_02 = BlockUtil.CreateBlock("crystalblock_02","compressedblock/crystalblock_02",Material.rock,AntiMatterModRegistry.tabCompressedBlocks,1,5f,5f);
+    public static final Block powderblock_01 = BlockUtil.CreateBlock("powderblock_01","compressedblock/powderblock_01",Material.rock,AntiMatterModRegistry.tabCompressedBlocks,1,5f,5f);
+
+    //テスト
 	public static final Block clayCrucible = new ClayCrucible();
 
 
@@ -222,6 +225,9 @@ public class AntiMatterModRegistry {
             //その他
         GameRegistry.registerBlock(soilBlock,"soilBlock");
         GameRegistry.registerBlock(ingotblock_01,"ingotblock_01");
+        GameRegistry.registerBlock(crystalblock_01,"crystalblock_01");
+        GameRegistry.registerBlock(crystalblock_02,"crystalblock_02");
+        GameRegistry.registerBlock(powderblock_01,"powderblock_01");
             //テスト
         GameRegistry.registerBlock(clayCrucible,"clayCrucible");
 	    

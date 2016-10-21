@@ -165,6 +165,9 @@ tile.tier1_machinecasing.name=T1 Machine Casing
 tile.tier1_machinehull.name=T1 Machine Hull
 tile.furnaceGeneratorAP.name=basic furnaceGenerator
 
+#--------------------------------------------圧縮ブロック
+tile.powderblock_01.name=Block of Antelite
+
 #--------------------------------------------other
 item.StatesChecker.name=StatesChecker
 

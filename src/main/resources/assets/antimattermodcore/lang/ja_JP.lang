@@ -167,6 +167,9 @@ tile.tier1_machinecasing.name=基本型マシンケーシング
 tile.tier1_machinehull.name=基本型マシン筐体
 tile.furnaceGeneratorAP.name=基本型火力発電機
 
+#--------------------------------------------圧縮ブロック
+tile.powderblock_01.name=アンティライトブロック
+
 #--------------------------------------------その他
 item.StatesChecker.name=ステータスチェッカー
 

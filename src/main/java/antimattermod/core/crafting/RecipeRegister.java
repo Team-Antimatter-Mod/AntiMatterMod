@@ -113,6 +113,10 @@ public class RecipeRegister {
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01,1,16),"AAA","AAA","AAA",
                 'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,15));
 
+        //圧縮ブロック
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.powderblock_01,1,0),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.powder_01,1,0));
+
 
         //その他
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0)," S ","SCS"," S ",
