@@ -41,9 +41,9 @@ public class RecipeRegister {
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,2),"A","B","B",'A',OreDictionaryRegister.craftingToolHardHammer,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,2)));
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,3),"A","B","B",'A',OreDictionaryRegister.craftingToolHardHammer,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,3)));
 
-        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.crystalplate_02,1,0),"AB ","CC ","CC ",
-                'A',OreDictionaryRegister.craftingToolFile,'B',OreDictionaryRegister.craftingToolHardHammer,'C',new ItemStack(AntiMatterModRegistry.crystal_02,1,0)));
-
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.crystalplate_02,2,0)," A","BC",
+                'A',OreDictionaryRegister.craftingToolHardHammer,'B',OreDictionaryRegister.craftingToolFile,
+                'C',new ItemStack(AntiMatterModRegistry.crystalblock_02,1,0)));
         //ロッド
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.stick_01,1,0),"A "," B",
                 'A',OreDictionaryRegister.craftingToolFile,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,3)));
@@ -114,6 +114,8 @@ public class RecipeRegister {
                 'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,15));
 
         //圧縮ブロック
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.crystalblock_02,1,0),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.crystal_02,1,0));
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.powderblock_01,1,0),"AAA","AAA","AAA",
                 'A',new ItemStack(AntiMatterModRegistry.powder_01,1,0));
 
