@@ -28,7 +28,7 @@ public class AntiMatterModCore {
 
 	@Mod.Metadata
 	public static ModMetadata modMetadata;
-	@SidedProxy(clientSide = "antimattaermod.core.client.ClientAntiMatterModCoreProxy", serverSide = "antimattaermod.core.common.AntiMatterModCoreProxy")
+	@SidedProxy(clientSide = "antimattermod.core.client.ClientAntiMatterModCoreProxy", serverSide = "antimattermod.core.common.AntiMatterModCoreProxy")
 	public static AntiMatterModCoreProxy proxy;
 	
 	@Mod.EventHandler
