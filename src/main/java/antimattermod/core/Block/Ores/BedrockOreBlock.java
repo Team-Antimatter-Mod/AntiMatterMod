@@ -96,14 +96,16 @@ public class BedrockOreBlock extends Block implements AMMOreBlock{
 	
 	@Override
 	public int quantityDropped(int meta, int fortune, Random random){
-		int j = random.nextInt(fortune + 1) - 1;
-		
-		if (j < 0)
-		{
-			j = 0;
+		if(dropBlock instanceof DifferentOreBlock){
+			return ((DifferentOreBlock)dropBlock).quantityDropped(meta,fortune,random);
 		}
 		
-		return this.quantityDropped(random) * (j + 1);
+		int j = random.nextInt(fortune + 1) - 1;
+		
+		if (j < 0) {
+			j = 0;
+		}
+		return dropBlock.quantityDropped(random) * (j + 1);
 	}
 	
 	@Override
