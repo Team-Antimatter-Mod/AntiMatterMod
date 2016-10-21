@@ -102,8 +102,9 @@ item.turbineblade_01_0.name=パラジライト製タービンの刃
 
 #--------------------------------------------粉末鉱石ブロック
 tile.powderOreBlock_01_0.name=アンティライト鉱石
+
 #--------------------------------------------岩盤鉱石
-tile.bedrockPowderOreBlock_01_01.name=アンティライト岩盤鉱石
+tile.bedrockPowderOreBlock_01_0.name=アンティライト岩盤鉱石
 
 #--------------------------------------------クリスタル鉱石ブロック
 tile.crystalOreBlock_01_0.name=アプスマイト鉱石

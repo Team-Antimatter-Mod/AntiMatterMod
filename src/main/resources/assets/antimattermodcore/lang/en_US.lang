@@ -101,8 +101,9 @@ item.turbineblade_01_0.name=Palazirite Turbine Blade
 
 #--------------------------------------------PowderOreBlock
 tile.powderOreBlock_01_0.name=Antelite Ore
+
 #--------------------------------------------bedrock
-tile.bedrockPowderOreBlock_01_01.name=Antelite BedrockOre
+tile.bedrockPowderOreBlock_01_0.name=Antelite BedrockOre
 
 #--------------------------------------------CrystalOreBlock
 tile.crystalOreBlock_01_0.name=Crystalite Ore
