@@ -110,8 +110,8 @@ tile.powderOreBlock_01_0.name=アンティライト鉱石
 tile.bedrockPowderOreBlock_01_0.name=アンティライト岩盤鉱石
 
 #--------------------------------------------クリスタル鉱石ブロック
-tile.crystalOreBlock_01_0.name=アプスマイト鉱石
-tile.crystalOreBlock_01_1.name=クリスタライト鉱石
+tile.crystalOreBlock_01_0.name=クリスタライト鉱石
+tile.crystalOreBlock_01_1.name=アプスマイト鉱石
 tile.crystalOreBlock_01_2.name=メトライト鉱石
 tile.crystalOreBlock_01_3.name=アラモナイト鉱石
 tile.crystalOreBlock_01_4.name=アクアルチル鉱石
@@ -120,8 +120,8 @@ tile.crystalOreBlock_01_5.name=リュウマイト鉱石
 tile.crystalOreBlock_02_0.name=アルステマイト鉱石
 
 #--------------------------------------------岩盤鉱石
-tile.bedrockCrystalOreBlock_01_0.name=アプスマイト岩盤鉱石
-tile.bedrockCrystalOreBlock_01_1.name=クリスタライト岩盤鉱石
+tile.bedrockCrystalOreBlock_01_0.name=クリスタライト岩盤鉱石
+tile.bedrockCrystalOreBlock_01_1.name=アプスマイト岩盤鉱石
 tile.bedrockCrystalOreBlock_01_2.name=メトライト岩盤鉱石
 tile.bedrockCrystalOreBlock_01_3.name=アラモナイト岩盤鉱石
 tile.bedrockCrystalOreBlock_01_4.name=アクアルチル岩盤鉱石
@@ -171,6 +171,15 @@ tile.tier1_machinehull.name=基本型マシン筐体
 tile.furnaceGeneratorAP.name=基本型火力発電機
 
 #--------------------------------------------圧縮ブロック
+tile.tiamiteblock_0.name=ティアマイトブロック
+
+tile.crystalblock_01_0.name=クリスタライトブロック
+tile.crystalblock_01_1.name=アプスマイトブロック
+tile.crystalblock_01_2.name=メトライトブロック
+tile.crystalblock_01_3.name=アラモナイトブロック
+tile.crystalblock_01_4.name=アクアルチルブロック
+tile.crystalblock_01_5.name=リュウマイトブロック
+
 tile.powderblock_01.name=アンティライトブロック
 
 #--------------------------------------------その他

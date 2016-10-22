@@ -168,7 +168,16 @@ tile.tier1_machinecasing.name=T1 Machine Casing
 tile.tier1_machinehull.name=T1 Machine Hull
 tile.furnaceGeneratorAP.name=basic furnaceGenerator
 
-#--------------------------------------------圧縮ブロック
+#--------------------------------------------compressedblock
+tile.tiamiteblock_0.name=Block of Tiamite
+
+tile.crystalblock_01_0.name=Block of Crystalite
+tile.crystalblock_01_1.name=Block of Abzumite
+tile.crystalblock_01_2.name=Block of Metolite
+tile.crystalblock_01_3.name=Block of Alamonite
+tile.crystalblock_01_4.name=Block of Aqualutile
+tile.crystalblock_01_5.name=Block of Lieumite
+
 tile.powderblock_01.name=Block of Antelite
 
 #--------------------------------------------other
