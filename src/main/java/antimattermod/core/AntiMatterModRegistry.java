@@ -230,11 +230,12 @@ public class AntiMatterModRegistry {
         GameRegistry.registerBlock(tier1_machinehull,"tier1_machinehull");
             //その他
         GameRegistry.registerBlock(soilBlock,"soilBlock");
-        GameRegistry.registerBlock(tiamiteblock,"tiamiteblock");
-        GameRegistry.registerBlock(ingotblock_01,"ingotblock_01");
-        GameRegistry.registerBlock(crystalblock_01,"crystalblock_01");
-        GameRegistry.registerBlock(crystalblock_02,"crystalblock_02");
-        GameRegistry.registerBlock(powderblock_01,"powderblock_01");
+            //鉱石ブロック
+        GameRegistry.registerBlock(tiamiteblock,MetaItemBlock.class,"tiamiteblock");
+        GameRegistry.registerBlock(ingotblock_01,MetaItemBlock.class,"ingotblock_01");
+        GameRegistry.registerBlock(crystalblock_01,MetaItemBlock.class,"crystalblock_01");
+        GameRegistry.registerBlock(crystalblock_02,MetaItemBlock.class,"crystalblock_02");
+        GameRegistry.registerBlock(powderblock_01,MetaItemBlock.class,"powderblock_01");
             //テスト
         GameRegistry.registerBlock(clayCrucible,"clayCrucible");
 	    
