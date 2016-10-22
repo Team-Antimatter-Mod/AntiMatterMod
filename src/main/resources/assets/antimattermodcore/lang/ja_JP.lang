@@ -173,6 +173,23 @@ tile.furnaceGeneratorAP.name=基本型火力発電機
 #--------------------------------------------圧縮ブロック
 tile.tiamiteblock_0.name=ティアマイトブロック
 
+tile.ingotblock_01_0.name=ライチウムブロック
+tile.ingotblock_01_1.name=ドランチウムブロック
+tile.ingotblock_01_2.name=パラジライトブロック
+tile.ingotblock_01_3.name=タクミウムブロック
+tile.ingotblock_01_4.name=ソラライトブロック
+tile.ingotblock_01_5.name=エミリリウムブロック
+tile.ingotblock_01_6.name=イミジウムブロック
+tile.ingotblock_01_7.name=ミトラナイドライトブロック
+tile.ingotblock_01_8.name=ストルビモナイトブロック
+tile.ingotblock_01_9.name=アスラトミウムブロック
+tile.ingotblock_01_10.name=ミドナライトブロック
+tile.ingotblock_01_11.name=ミラニウムブロック
+tile.ingotblock_01_12.name=テューラリウムブロック
+tile.ingotblock_01_13.name=ディグライトブロック
+tile.ingotblock_01_14.name=アストノイドブロック
+tile.ingotblock_01_15.name=パジライトブロック
+
 tile.crystalblock_01_0.name=クリスタライトブロック
 tile.crystalblock_01_1.name=アプスマイトブロック
 tile.crystalblock_01_2.name=メトライトブロック

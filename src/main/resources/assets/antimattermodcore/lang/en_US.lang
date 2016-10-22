@@ -171,6 +171,23 @@ tile.furnaceGeneratorAP.name=basic furnaceGenerator
 #--------------------------------------------compressedblock
 tile.tiamiteblock_0.name=Block of Tiamite
 
+tile.ingotblock_01_0.name=Block of Raitium
+tile.ingotblock_01_1.name=Block of Drantium
+tile.ingotblock_01_2.name=Block of Palazirite
+tile.ingotblock_01_3.name=Block of Takumium
+tile.ingotblock_01_4.name=Block of Soralite
+tile.ingotblock_01_5.name=Block of Emirinium
+tile.ingotblock_01_6.name=Block of Imidium
+tile.ingotblock_01_7.name=Block of Mitranidelite
+tile.ingotblock_01_8.name=Block of Stallvimolite
+tile.ingotblock_01_9.name=Block of Asuratomium
+tile.ingotblock_01_10.name=Block of Midonalite
+tile.ingotblock_01_11.name=Block of Miranium
+tile.ingotblock_01_12.name=Block of Teyurarium
+tile.ingotblock_01_13.name=Block of Diglite
+tile.ingotblock_01_14.name=Block of Astnides
+tile.ingotblock_01_15.name=Block of Pazilite
+
 tile.crystalblock_01_0.name=Block of Crystalite
 tile.crystalblock_01_1.name=Block of Abzumite
 tile.crystalblock_01_2.name=Block of Metolite
