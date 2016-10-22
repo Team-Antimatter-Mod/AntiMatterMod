@@ -31,6 +31,9 @@ item.ingot_01_16.name=パジライト インゴット
 
 item.magnetizedingot_01_0.name=磁気化ライチウムインゴット
 
+item.alloyingot_01_0.name=紫合金インゴット
+item.alloyingot_01_1.name=ドラコライチウムインゴット
+
 #-------------------------------------------nugget
 item.nugget_01_0.name=ライチウム ナゲット
 item.nugget_01_1.name=ドランチウム ナゲット

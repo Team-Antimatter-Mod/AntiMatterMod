@@ -31,6 +31,9 @@ item.ingot_01_16.name=Pazilite Ingot
 
 item.magnetizedingot_01_0.name=Magnetized Raitium Ingot
 
+item.alloyingot_01_0.name=Purple Alloy Ingot
+item.alloyingot_01_1.name=Dracoraitium Ingot
+
 #-------------------------------------------nugget
 item.nugget_01_0.name=Raitium Nugget
 item.nugget_01_1.name=Drantium Nugget
