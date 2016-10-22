@@ -114,6 +114,18 @@ public class RecipeRegister {
                 'A',new ItemStack(AntiMatterModRegistry.nugget_01,1,15));
 
         //圧縮ブロック
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.crystalblock_01,1,0),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.crystal_01,1,0));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.crystalblock_01,1,1),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.crystal_01,1,1));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.crystalblock_01,1,2),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.crystal_01,1,2));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.crystalblock_01,1,3),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.crystal_01,1,3));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.crystalblock_01,1,4),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.crystal_01,1,4));
+        GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.crystalblock_01,1,5),"AAA","AAA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.crystal_01,1,5));
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.crystalblock_02,1,0),"AAA","AAA","AAA",
                 'A',new ItemStack(AntiMatterModRegistry.crystal_02,1,0));
         GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.powderblock_01,1,0),"AAA","AAA","AAA",
