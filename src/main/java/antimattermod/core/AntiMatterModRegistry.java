@@ -13,6 +13,7 @@ import antimattermod.core.Block.Ores.DifferentOreBlock;
 import antimattermod.core.Block.Ores.OreBlock;
 import antimattermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import antimattermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
+import antimattermod.core.Item.Marmite;
 import antimattermod.core.Item.StatesChecker;
 import antimattermod.core.Item.tool.*;
 import antimattermod.core.Util.AddInformationfunction;
@@ -35,8 +36,10 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 import net.minecraft.world.gen.structure.MapGenStructureIO;
 import net.minecraftforge.common.MinecraftForge;
+import scala.tools.cmd.gen.AnyVals;
 
 import static antimattermod.core.AntiMatterModCore.proxy;
 
@@ -121,6 +124,9 @@ public class AntiMatterModRegistry {
     public static final Item magnetizedingot_01 = ItemUtil.CreateItem("magnetizedingot_01","motormagnet/magnetizedingot_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item screw_01 = ItemUtil.CreateItem("screw_01","screw/screw_01",1,AntiMatterModRegistry.tabImaterial);
 
+    //食料
+    public static final ItemFood marmite = new Marmite("marmite");
+
 
 
 
@@ -203,6 +209,8 @@ public class AntiMatterModRegistry {
         GameRegistry.registerItem(motormagnet_01,"motormagnet_01");
         GameRegistry.registerItem(magnetizedingot_01,"magnetizedingot_01");
         GameRegistry.registerItem(screw_01,"screw_01");
+            //食料
+        GameRegistry.registerItem(marmite,"marmite");
             //ツール
         GameRegistry.registerItem(statesChecker,"statesCheckerAP");
         GameRegistry.registerItem(hammer_01,"hammer_01");//追加
