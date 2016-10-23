@@ -108,7 +108,7 @@ public class AntiMatterModRegistry {
 
 
     public static final Item wire = ItemUtil.CreateItem("wire_01","wire/wire_01",1,AntiMatterModRegistry.tabImaterial);
-    public static final Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",4,AntiMatterModRegistry.tabImaterial);
+    public static final Item plate_01 = ItemUtil.CreateItem("plate_01","plate/plate_01",8,AntiMatterModRegistry.tabImaterial);
     public static final Item crystalplate_02 = ItemUtil.CreateItem("crystalplate_02","plate/crystalplate_02",1,AntiMatterModRegistry.tabImaterial);
     public static final Item industrialplate_01 = ItemUtil.CreateItem("industrialplate_01","plate/industrialplate_01",1,AntiMatterModRegistry.tabImaterial);
     public static final Item conductivematerial_01 = ItemUtil.CreateItem("conductivematerial_01","conductivematerial/conductivematerial_01",1,AntiMatterModRegistry.tabImaterial);

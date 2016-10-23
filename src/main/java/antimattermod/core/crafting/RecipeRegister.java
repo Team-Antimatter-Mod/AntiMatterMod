@@ -40,6 +40,10 @@ public class RecipeRegister {
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,1),"A","B","B",'A',OreDictionaryRegister.craftingToolHardHammer,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,1)));
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,2),"A","B","B",'A',OreDictionaryRegister.craftingToolHardHammer,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,2)));
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,3),"A","B","B",'A',OreDictionaryRegister.craftingToolHardHammer,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,3)));
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,4),"A","B","B",'A',OreDictionaryRegister.craftingToolHardHammer,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,4)));
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,5),"A","B","B",'A',OreDictionaryRegister.craftingToolHardHammer,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,5)));
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,6),"A","B","B",'A',OreDictionaryRegister.craftingToolHardHammer,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,6)));
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.plate_01,1,7),"A","B","B",'A',OreDictionaryRegister.craftingToolHardHammer,'B',new ItemStack(AntiMatterModRegistry.ingot_01,1,7)));
 
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.crystalplate_02,2,0)," A","BC",
                 'A',OreDictionaryRegister.craftingToolHardHammer,'B',OreDictionaryRegister.craftingToolFile,
