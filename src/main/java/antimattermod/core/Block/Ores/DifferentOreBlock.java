@@ -127,6 +127,10 @@ public class DifferentOreBlock extends OreBlock{
 	}
 	
 	
+	@Override
+	protected boolean canSilkHarvest() {
+		return true;
+	}
 	
 	@Override
 	public int getExpDrop(IBlockAccess world, int metadata, int fortune) {

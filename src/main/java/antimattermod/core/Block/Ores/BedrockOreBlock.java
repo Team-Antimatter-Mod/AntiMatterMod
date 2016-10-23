@@ -71,6 +71,7 @@ public class BedrockOreBlock extends Block implements AMMOreBlock{
 		}else if(hasSilkTouch(player.getHeldItem())){
 			return super.removedByPlayer(world, player, x, y, z, willHarvest);
 		} else{
+			//noinspection SimplifiableIfStatement
 			if (world.rand.nextInt(100) >= 90+world.rand.nextInt(5)){
 				return super.removedByPlayer(world, player, x, y, z, willHarvest);
 			}else{
@@ -84,6 +85,7 @@ public class BedrockOreBlock extends Block implements AMMOreBlock{
 	 * @param item 確認するアイテム
 	 * @return 持っていたらtrue
 	 */
+	@SuppressWarnings("WeakerAccess")
 	public static boolean hasSilkTouch(ItemStack item){
 		NBTTagList list = item.getEnchantmentTagList();
 		if (list == null) return false;

@@ -9,27 +9,21 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Created by Raiti on 2016/10/14.
  */
-public class CraftingTool extends Item {
+public class CraftingTool extends AMMTool {
 	
 	
 	protected CraftingTool (@NotNull String name, @NotNull String textureName, ToolMaterial material){
-		this.maxStackSize = 1;
+		super(name,textureName);
 		this.setMaxDamage(material.getMaxUses());
-		this.setCreativeTab(AntiMatterModRegistry.tabTools);
 		this.setFull3D();
 		this.setContainerItem(this);
-		this.setTextureName(AntiMatterModCore.MOD_ID+":tool/"+textureName);
-		this.setUnlocalizedName(name);
 	}
 	
 	protected CraftingTool (@NotNull String name,@NotNull String textureName, int maxUses){
-		this.maxStackSize = 1;
+		super(name,textureName);
 		this.setMaxDamage(maxUses);
-		this.setCreativeTab(AntiMatterModRegistry.tabTools);
 		this.setFull3D();
 		this.setContainerItem(this);
-		this.setTextureName(AntiMatterModCore.MOD_ID+":tool/"+textureName);
-		this.setUnlocalizedName(name);
 	}
 	
 	@Override

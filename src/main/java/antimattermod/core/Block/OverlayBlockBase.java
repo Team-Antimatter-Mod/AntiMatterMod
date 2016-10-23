@@ -1,7 +1,6 @@
 package antimattermod.core.Block;
 
 import antimattermod.core.Render.OverlayBlockRender;
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
@@ -12,7 +11,7 @@ import net.minecraft.world.IBlockAccess;
  * このクラスを継承したクラスはオーバーレイテクスチャが使えます。
  *
  */
-public abstract class OverlayBlockBase extends Block{
+public abstract class OverlayBlockBase extends AMMBlock {
 
     /**
      * Blockクラスのコンストラクタといっしょ

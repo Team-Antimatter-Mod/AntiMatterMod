@@ -2,21 +2,21 @@ package antimattermod.core.Block;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
-import net.minecraft.world.World;
 
 import java.util.List;
 
 /**
- * Created by Raiti on 2016/10/13.
+ * Created by Raiti-chan on 2016/10/13.
+ * メタデータを持つ基本的なアイテム
+ * @author Raiti-chan
  */
-public class SimpleMetaBlock extends Block{
+public class SimpleMetaBlock extends AMMBlock{
 	
 	
 	private IIcon[] icons;
