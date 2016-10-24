@@ -140,7 +140,10 @@ public class AntiMatterModRegistry {
 	
 	//マイニングハンマー
 	public static final Item miningHammer_01 = new MiningHammer("IronMiningHammer", "iron_mininghammer", Item.ToolMaterial.IRON, 1);//鉄素材のハンマー3×3を追加
-	public static final Item miningHammer_02 = new MiningHammer("RaitiumMiningHammer","raitium_mininghammer", AMMToolMaterial.Raitium.getToolMaterial(),2);//ライチウム素材のハンマー5×5
+	public static final Item miningHammer_02 = new MiningHammer("DiamondMiningHammer","diamond_mininghammer", Item.ToolMaterial.EMERALD,1);//ダイヤ素材のハンマー3×3
+	public static final Item miningHammer_03 = new MiningHammer("RaitiumMiningHammer","raitium_mininghammer", AMMToolMaterial.Raitium.getToolMaterial(),1);//ライチウム素材のハンマー3×3
+	public static final Item miningHammer_04 = new MiningHammer("DrantiumMiningHammer","drantium_mininghammer", AMMToolMaterial.Raitium.getToolMaterial(),1);
+	public static final Item miningHammer_05 = new MiningHammer("PalaziriteMiningHammer","palazirite_mininghammer", AMMToolMaterial.Raitium.getToolMaterial(),1);
 	//==================================================================================================================
 	
 	//Block  ===========================================================================================================
@@ -225,6 +228,9 @@ public class AntiMatterModRegistry {
 		//マイニングハンマー
 		GameRegistry.registerItem(miningHammer_01,"miningHammer_01");
 		GameRegistry.registerItem(miningHammer_02,"miningHammer_02");
+		GameRegistry.registerItem(miningHammer_03,"miningHammer_03");
+		GameRegistry.registerItem(miningHammer_04,"miningHammer_04");
+		GameRegistry.registerItem(miningHammer_05,"miningHammer_05");
 		
 		//Blockの登録 ==================================================================================================
 		//鉱石

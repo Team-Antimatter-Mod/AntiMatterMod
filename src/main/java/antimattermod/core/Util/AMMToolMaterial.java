@@ -12,7 +12,9 @@ import net.minecraftforge.common.util.EnumHelper;
  * @author Raiti-chan
  */
 public enum AMMToolMaterial {
-	Raitium(3,200,6.0F,3.0F,14,new ItemStack(AntiMatterModRegistry.ingot_01,1,1)),
+	Raitium(3,250,8.0F,3.0F,14,new ItemStack(AntiMatterModRegistry.ingot_01,1,1)),
+	Drantium(3,250,6.0F,2.0F,22,new ItemStack(AntiMatterModRegistry.ingot_01,1,2)),
+	Palazirite(3,400,6.0F,2.0F,14,new ItemStack(AntiMatterModRegistry.ingot_01,1,3)),
 	;
 	
 
