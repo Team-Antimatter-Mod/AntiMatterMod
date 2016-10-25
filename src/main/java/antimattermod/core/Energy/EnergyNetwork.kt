@@ -72,6 +72,27 @@ class EnergyNetwork {
         }
     }
 
+    fun registerTileEntity(blockPos: BlockPos,apType: APType){
+        when(apType){
+            APType.Receiver -> networkComponentsReceiver.add(blockPos)
+            APType.Transfer -> networkComponentsTransfer.add(blockPos)
+            APType.Provider -> networkComponentsProvider.add(blockPos)
+            else -> throw IllegalArgumentException()
+        }
+    }
+
+    fun registerTileEntity(tileEntity: TileEntity,apType: APType){
+        registerTileEntity(BlockPos(tileEntity.xCoord,tileEntity.yCoord,tileEntity.zCoord),apType)
+    }
+
+    fun registerTileEntity(tileEntity: TileEntity){
+        when(tileEntity){
+            is IAPProvider -> registerTileEntity(tileEntity,APType.Provider)
+            is IAPReceiver -> registerTileEntity(tileEntity,APType.Receiver)
+            is IAPTransfer -> registerTileEntity(tileEntity,APType.Transfer)
+        }
+    }
+
     fun isContains(blockPos: BlockPos):Boolean{
         return isContains(blockPos,APType.Provider) || isContains(blockPos,APType.Receiver) || isContains(blockPos,APType.Transfer)
     }
