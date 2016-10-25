@@ -2,8 +2,6 @@ package antimattermod.core.ASM;
 
 import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper;
-import cpw.mods.fml.relauncher.FMLLaunchHandler;
-import cpw.mods.fml.relauncher.Side;
 import net.minecraft.launchwrapper.IClassTransformer;
 import org.apache.logging.log4j.Level;
 import org.objectweb.asm.ClassReader;
@@ -22,9 +20,7 @@ public class AMMCoreTransformer implements IClassTransformer,Opcodes {
 
     @Override
     public byte[] transform(String name, String unTransformedName, byte[] basicClass) {
-        System.out.println(name);
-        //FMLLaunchHandler.side() != Side.SERVER ||
-        if(!name.equals(TARGET_CLASS)){
+        if (!name.equals(TARGET_CLASS)){
             return basicClass;
         }
         byte[] classChanged = hookWorldTick(name, unTransformedName, basicClass);
@@ -67,9 +63,9 @@ public class AMMCoreTransformer implements IClassTransformer,Opcodes {
             // mnode.instructions.insertで、指定した位置にバイトコードを挿入します。
             //mnode.instructions.insert(mnode.instructions.get(1), overrideList);
             // 改変したクラスファイルをバイト列に書き出します
-            ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_FRAMES | ClassWriter.COMPUTE_MAXS);
-            classNode.accept(cw);
-            return cw.toByteArray();
+            //ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_FRAMES | ClassWriter.COMPUTE_MAXS);
+            //classNode.accept(cw);
+            //return cw.toByteArray();
         }
         return basicClass;
     }
