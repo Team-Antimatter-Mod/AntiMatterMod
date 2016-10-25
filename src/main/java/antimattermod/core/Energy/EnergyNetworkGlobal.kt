@@ -2,6 +2,7 @@ package antimattermod.core.Energy
 
 import antimattermod.core.Util.BlockPos
 import net.minecraft.nbt.NBTTagCompound
+import net.minecraft.nbt.NBTTagList
 import net.minecraft.tileentity.TileEntity
 import net.minecraft.world.WorldSavedData
 import java.util.*
@@ -10,20 +11,36 @@ import java.util.*
  * @author C6H2Cl2
  */
 class EnergyNetworkGlobal : WorldSavedData(DATA_NAME) {
-    override fun writeToNBT(tagCompound: NBTTagCompound) {
-        throw UnsupportedOperationException("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+    private val energyNetworkList = LinkedList<EnergyNetwork>()
+
+    override fun writeToNBT(nbtTagCompound: NBTTagCompound) {
+        val tagCompound = NBTTagCompound()
+        val tagList = NBTTagList()
+        var tag = NBTTagCompound()
+        for (network in energyNetworkList){
+            network.writeToNBT(tag)
+            tagList.appendTag(tag)
+            tag = NBTTagCompound()
+        }
+        tagCompound.setTag("energyNetworkList",tagList)
+        tagCompound.setInteger("networkNum",tagList.tagCount())
+        nbtTagCompound.setTag(DATA_NAME,tagCompound)
     }
 
-    override fun readFromNBT(tagCompound: NBTTagCompound) {
-        throw UnsupportedOperationException("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun readFromNBT(nbtTagCompound: NBTTagCompound) {
+        val tagCompound = nbtTagCompound.getCompoundTag(DATA_NAME)
+        val tagList = nbtTagCompound.getTagList("energyNetworkList",tagCompound.getInteger("networkNum"))
+        for (i in 0..tagList.tagCount()-1){
+            val network = EnergyNetwork()
+            network.readFromNBT(tagList.getCompoundTagAt(i))
+            energyNetworkList.add(network)
+        }
     }
 
     companion object{
-        val INSTANCE = EnergyNetworkGlobal()
         val DATA_NAME = "AMMGlobalEnergyNetwork"
     }
-
-    private val energyNetworkList = LinkedList<EnergyNetwork>()
 
     public fun getEnergyNetwork(blockPos: BlockPos):EnergyNetwork?{
         var energyNetwork :EnergyNetwork? = null
