@@ -4,7 +4,9 @@ import antimattermod.core.Util.BlockPos
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.nbt.NBTTagList
 import net.minecraft.tileentity.TileEntity
+import net.minecraft.world.World
 import net.minecraft.world.WorldSavedData
+import net.minecraft.world.storage.MapStorage
 import java.util.*
 
 /**
@@ -13,6 +15,24 @@ import java.util.*
 class EnergyNetworkGlobal : WorldSavedData(DATA_NAME) {
 
     private val energyNetworkList = LinkedList<EnergyNetwork>()
+
+    companion object{
+        val DATA_NAME = "AMMGlobalEnergyNetwork"
+        fun get(world : World):EnergyNetworkGlobal{
+            val storage :MapStorage = if (world.isRemote){
+                world.mapStorage
+            }else{
+                world.perWorldStorage
+            }
+            @Suppress("JAVA_CLASS_ON_COMPANION")
+            var instance = storage.loadData(EnergyNetworkGlobal.javaClass, DATA_NAME) as EnergyNetworkGlobal?
+            if(instance == null){
+                instance = EnergyNetworkGlobal()
+                storage.setData(DATA_NAME,instance)
+            }
+            return instance
+        }
+    }
 
     override fun writeToNBT(nbtTagCompound: NBTTagCompound) {
         val tagCompound = NBTTagCompound()
@@ -36,10 +56,6 @@ class EnergyNetworkGlobal : WorldSavedData(DATA_NAME) {
             network.readFromNBT(tagList.getCompoundTagAt(i))
             energyNetworkList.add(network)
         }
-    }
-
-    companion object{
-        val DATA_NAME = "AMMGlobalEnergyNetwork"
     }
 
     public fun getEnergyNetwork(blockPos: BlockPos):EnergyNetwork?{
