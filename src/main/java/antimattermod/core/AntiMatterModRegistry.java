@@ -142,8 +142,8 @@ public class AntiMatterModRegistry {
 	public static final Item miningHammer_01 = new MiningHammer("IronMiningHammer", "iron_mininghammer", Item.ToolMaterial.IRON, 1);//鉄素材のハンマー3×3を追加
 	public static final Item miningHammer_02 = new MiningHammer("DiamondMiningHammer","diamond_mininghammer", Item.ToolMaterial.EMERALD,1);//ダイヤ素材のハンマー3×3
 	public static final Item miningHammer_03 = new MiningHammer("RaitiumMiningHammer","raitium_mininghammer", AMMToolMaterial.Raitium.getToolMaterial(),1);//ライチウム素材のハンマー3×3
-	public static final Item miningHammer_04 = new MiningHammer("DrantiumMiningHammer","drantium_mininghammer", AMMToolMaterial.Raitium.getToolMaterial(),1);
-	public static final Item miningHammer_05 = new MiningHammer("PalaziriteMiningHammer","palazirite_mininghammer", AMMToolMaterial.Raitium.getToolMaterial(),1);
+	public static final Item miningHammer_04 = new MiningHammer("DrantiumMiningHammer","drantium_mininghammer", AMMToolMaterial.Drantium.getToolMaterial(),1);
+	public static final Item miningHammer_05 = new MiningHammer("PalaziriteMiningHammer","palazirite_mininghammer", AMMToolMaterial.Palazirite.getToolMaterial(),1);
 	//==================================================================================================================
 	
 	//Block  ===========================================================================================================
