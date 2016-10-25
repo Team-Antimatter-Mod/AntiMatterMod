@@ -231,7 +231,7 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerItem(miningHammer_03,"miningHammer_03");
 		GameRegistry.registerItem(miningHammer_04,"miningHammer_04");
 		GameRegistry.registerItem(miningHammer_05,"miningHammer_05");
-		
+
 		//Blockの登録 ==================================================================================================
 		//鉱石
 		GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_01");

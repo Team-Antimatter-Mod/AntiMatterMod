@@ -211,6 +211,12 @@ item.IronWirecutter.name=Iron Wire Cutter[level:0]
 item.IronFile.name=Iron File[level:0]
 item.IronScrewDriver.name=Iron Screw Driver[level:0]
 
+item.IronMiningHammer.name=Iron MiningHammer
+item.DiamondMiningHammer.name=Diamond MiningHammer
+item.RaitiumMiningHammer.name=Raitium MiningHammer
+item.DrantiumMiningHammer.name=Drantium MiningHammer
+item.PalaziriteMiningHammer.name=PalaziriteMiningHammer
+
 #--------------------------------------------Tab
 itemGroup.ammaterials=AntiMatterModCore Materials
 itemGroup.amOreBlock=AntiMatterModCore OreBlock

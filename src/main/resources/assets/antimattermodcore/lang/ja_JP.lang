@@ -213,6 +213,12 @@ item.IronWirecutter.name=鉄のワイヤーカッター[level:0]
 item.IronFile.name=鉄の鑢(ヤスリ)[level:0]
 item.IronScrewDriver.name=鉄のドライバー[level:0]
 
+item.IronMiningHammer.name=鉄の採掘用ハンマー
+item.DiamondMiningHammer.name=ダイヤの採掘用ハンマー
+item.RaitiumMiningHammer.name=ライチウムの採掘用ハンマー
+item.DrantiumMiningHammer.name=ドランチウムの採掘用ハンマー
+item.PalaziriteMiningHammer.name=パラジライトの採掘用ハンマー
+
 #--------------------------------------------タブ
 itemGroup.ammaterials=反物質modコアの素材
 itemGroup.amOreBlock=反物質modコアの鉱石ブロック
