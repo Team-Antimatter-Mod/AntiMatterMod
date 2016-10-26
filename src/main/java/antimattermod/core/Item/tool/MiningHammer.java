@@ -1,5 +1,6 @@
 package antimattermod.core.Item.tool;
 
+import antimattermod.core.Util.AMMToolMaterial;
 import com.google.common.collect.Multimap;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityLivingBase;
@@ -23,9 +24,6 @@ import net.minecraftforge.event.world.BlockEvent.BreakEvent;
  */
 public class MiningHammer extends AMMTool {
 	
-	private ToolMaterial material;
-	private float efficiencyOnProperMaterial;
-	private float damageVsEntity = 10F;
 	private int harvestRange = 1;
 	
 	/**
@@ -35,15 +33,10 @@ public class MiningHammer extends AMMTool {
 	 * @param material ツールマテリアル
 	 * @param range 採掘範囲 range*2 + 1 平方ブロックの範囲採掘
 	 */
-	public MiningHammer(String name, String textureName, ToolMaterial material, int range) {
-		super(name, textureName);
-		this.setMaxDamage(material.getMaxUses()/9);
-		this.damageVsEntity = material.getDamageVsEntity();
-		this.efficiencyOnProperMaterial = material.getEfficiencyOnProperMaterial()+3;
+	public MiningHammer(String name, String textureName, AMMToolMaterial material, int range) {
+		super(name,textureName,material,4F);
 		this.harvestRange = range;
-		this.material = material;
-		setFull3D();
-		setHarvestLevel("pickaxe", material.getHarvestLevel());
+		setHarvestLevel("pickaxe", toolMaterial.getHarvestLevel());
 	}
 	
 	/**
@@ -129,8 +122,6 @@ public class MiningHammer extends AMMTool {
 		return false;
 	}
 	
-	
-	
 	/**
 	 * プレイヤーの向きを取得します
 	 *
@@ -161,74 +152,7 @@ public class MiningHammer extends AMMTool {
 		return null;
 	}
 	
-	/**
-	 * ブロックがこのツールによって破壊された時({@link net.minecraft.item.Item#onBlockDestroyed(ItemStack, World, Block, int, int, int, EntityLivingBase)}より前)
-	 * に呼ばれます
-	 *
-	 * @param itemStack ツールのItemStack
-	 * @param x         x座標
-	 * @param y         y座標
-	 * @param z         z座標
-	 * @param player    player
-	 * @return trueを返すとブロックが壊れない。(ひび割れのアニメーションは出る)
-	 */
-	@Override
-	public boolean onBlockStartBreak(ItemStack itemStack, int x, int y, int z, EntityPlayer player) {
-		return false;
-	}
+
 	
-	/**
-	 * 攻撃力を追加します
-	 * @param stack ItemStack
-	 * @return Multimap
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public Multimap getAttributeModifiers(ItemStack stack) {
-		Multimap multimap = super.getAttributeModifiers(stack);
-		multimap.put(SharedMonsterAttributes.attackDamage.getAttributeUnlocalizedName(), new AttributeModifier(field_111210_e, "Tool modifier", (double) this.damageVsEntity, 0));
-		return multimap;
-	}
-	
-	/**
-	 * Mobを攻撃したときに呼ばれます
-	 * @param toolStack ツールのItemStack
-	 * @param entity 攻撃したentity
-	 * @param player プレイヤー
-	 * @return ダメージが1でない場合true
-	 */
-	@Override
-	public boolean hitEntity(ItemStack toolStack, EntityLivingBase entity, EntityLivingBase player) {
-		toolStack.damageItem(2, player);
-		return true;
-	}
-	
-	/**
-	 * 金床によるツールの修復
-	 * @param itemStack1 左スロットのアイテム
-	 * @param itemStack2 右スロットのアイテム
-	 * @return できる場合true
-	 */
-	@Override
-	public boolean getIsRepairable(ItemStack itemStack1, ItemStack itemStack2) {
-		ItemStack mat = this.material.getRepairItemStack();
-		if (mat != null && net.minecraftforge.oredict.OreDictionary.itemMatches(mat, itemStack2, false)) return true;
-		return super.getIsRepairable(itemStack1, itemStack2);
-	}
-	
-	/**
-	 * 採掘速度を返します。
-	 *
-	 * @param toolStack 自身のItemStack
-	 * @param block     採掘対象ブロック
-	 * @param metadata  採掘対象ブロックのメタ値
-	 * @return 採掘速度
-	 */
-	@Override
-	public float getDigSpeed(ItemStack toolStack, Block block, int metadata) {
-		if (ForgeHooks.isToolEffective(toolStack, block, metadata)) {
-			return efficiencyOnProperMaterial;
-		}
-		return super.getDigSpeed(toolStack, block, metadata);
-	}
+
 }

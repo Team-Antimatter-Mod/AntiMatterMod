@@ -207,11 +207,11 @@ tile.powderblock_01.name=アンティライトブロック
 item.StatesChecker.name=ステータスチェッカー
 
 #--------------------------------------------ツール
-item.IronHammer.name=鉄のハンマー[level:0]
-item.IronWrench.name=鉄のレンチ[level:0]
-item.IronWirecutter.name=鉄のワイヤーカッター[level:0]
-item.IronFile.name=鉄の鑢(ヤスリ)[level:0]
-item.IronScrewDriver.name=鉄のドライバー[level:0]
+item.IronHammer.name=鉄のハンマー
+item.IronWrench.name=鉄のレンチ
+item.IronWirecutter.name=鉄のワイヤーカッター
+item.IronFile.name=鉄の鑢(ヤスリ)
+item.IronScrewDriver.name=鉄のドライバー
 
 item.IronMiningHammer.name=鉄の採掘用ハンマー
 item.DiamondMiningHammer.name=ダイヤの採掘用ハンマー

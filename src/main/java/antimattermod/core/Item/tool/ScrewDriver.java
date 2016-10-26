@@ -1,5 +1,6 @@
 package antimattermod.core.Item.tool;
 
+import antimattermod.core.Util.AMMToolMaterial;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -9,11 +10,7 @@ import org.jetbrains.annotations.NotNull;
  */
 public class ScrewDriver extends CraftingTool {
 
-	public ScrewDriver(@NotNull String name, @NotNull String textureName, ToolMaterial material) {
+	public ScrewDriver(@NotNull String name, @NotNull String textureName, AMMToolMaterial material) {
 		super(name, textureName, material);
-	}
-
-	public ScrewDriver(@NotNull String name, @NotNull String textureName, int maxUses) {
-		super(name, textureName, maxUses);
 	}
 }

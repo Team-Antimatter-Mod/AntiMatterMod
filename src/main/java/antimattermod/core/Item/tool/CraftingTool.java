@@ -1,29 +1,29 @@
 package antimattermod.core.Item.tool;
 
-import antimattermod.core.AntiMatterModCore;
-import antimattermod.core.AntiMatterModRegistry;
-import net.minecraft.item.Item;
+import antimattermod.core.Util.AMMToolMaterial;
+import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Created by Raiti on 2016/10/14.
  */
-public class CraftingTool extends AMMTool {
+public class CraftingTool extends AMMToolNotToolClass {
 	
-	
-	protected CraftingTool (@NotNull String name, @NotNull String textureName, ToolMaterial material){
-		super(name,textureName);
-		this.setMaxDamage(material.getMaxUses());
+	protected CraftingTool(@NotNull String name, @NotNull String textureName, AMMToolMaterial material) {
+		super(name, textureName, material);
+		this.setMaxDamage(material.getCraftingToolMaxUse());
 		this.setFull3D();
 		this.setContainerItem(this);
 	}
 	
-	protected CraftingTool (@NotNull String name,@NotNull String textureName, int maxUses){
-		super(name,textureName);
-		this.setMaxDamage(maxUses);
-		this.setFull3D();
-		this.setContainerItem(this);
+	public int getToolLevel() {
+		return this.toolMaterial.getCraftingToolLevel();
+	}
+	
+	@Override
+	public String getItemStackDisplayName(ItemStack p_77653_1_) {
+		return super.getItemStackDisplayName(p_77653_1_) + ChatFormatting.GOLD + " [level:" + getToolLevel() + "]" + ChatFormatting.WHITE;
 	}
 	
 	@Override
@@ -33,7 +33,7 @@ public class CraftingTool extends AMMTool {
 	
 	@Override
 	public ItemStack getContainerItem(ItemStack itemStack) {
-		itemStack.setItemDamage(itemStack.getItemDamage()+1);
+		itemStack.setItemDamage(itemStack.getItemDamage() + 1);
 		return itemStack;
 	}
 	

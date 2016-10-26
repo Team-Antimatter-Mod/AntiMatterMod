@@ -205,11 +205,11 @@ tile.powderblock_01.name=Block of Antelite
 item.StatesChecker.name=StatesChecker
 
 #--------------------------------------------tools
-item.IronHammer.name=Iron Hammer[level:0]
-item.IronWrench.name=Iron Wrench[level:0]
-item.IronWirecutter.name=Iron Wire Cutter[level:0]
-item.IronFile.name=Iron File[level:0]
-item.IronScrewDriver.name=Iron Screw Driver[level:0]
+item.IronHammer.name=Iron Hammer
+item.IronWrench.name=Iron Wrench
+item.IronWirecutter.name=Iron Wire Cutter
+item.IronFile.name=Iron File
+item.IronScrewDriver.name=Iron Screw Driver
 
 item.IronMiningHammer.name=Iron MiningHammer
 item.DiamondMiningHammer.name=Diamond MiningHammer
