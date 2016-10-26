@@ -1,5 +1,7 @@
 package antimattermod.core.Block.TileEntity;
 
+import antimattermod.core.AntiMatterModRegistry;
+import antimattermod.core.Item.ClayCruciblePattern;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -10,11 +12,15 @@ import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 
 /**
- * Created by Raiti on 2016/10/15.
+ * Created by Raiti-chan on 2016/10/15.
+ * 粘土るつぼのたいるえんちちー
+ * @author Raiti-chan
  */
 public class TileEntityClayCrucible extends TileEntity {
 	
 	private ItemStack oreBlock;
+	
+	private int modeMeta = -1;
 	
 	private static final int MaxOres = 6;
 	
@@ -90,6 +96,17 @@ public class TileEntityClayCrucible extends TileEntity {
 		return 0;
 	}
 	
+	public ItemStack setMode(ItemStack stack){
+		if(stack!= null && stack.getItem() instanceof ClayCruciblePattern){
+			ItemStack retItemStack = modeMeta < 0 ? null : new ItemStack(AntiMatterModRegistry.clayCruciblePattern,1,modeMeta);
+			this.modeMeta = stack.getItemDamage();
+			return retItemStack;
+		}else {
+			ItemStack retItemStack = modeMeta < 0 ? null : new ItemStack(AntiMatterModRegistry.clayCruciblePattern, 1, modeMeta);
+			this.modeMeta = -1;
+			return retItemStack;
+		}
+	}
 	
 	public ItemStack getOreBlock(){
 		return oreBlock;

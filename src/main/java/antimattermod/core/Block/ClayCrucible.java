@@ -3,6 +3,7 @@ package antimattermod.core.Block;
 import antimattermod.core.AntiMatterModCore;
 import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
+import antimattermod.core.Item.ClayCruciblePattern;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -43,11 +44,20 @@ public class ClayCrucible extends BlockContainer {
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
 		//手持ちアイテムの判定
 		ItemStack heldItem;
-		if ((heldItem = player.getHeldItem()) == null) return false;
+		
 		
 		if (world.getTileEntity(x, y, z) instanceof TileEntityClayCrucible) {
+			
 			//タイルエンチチーのしゅとく
 			TileEntityClayCrucible tile = (TileEntityClayCrucible) world.getTileEntity(x, y, z);
+			
+			//手持ち無しの場合か、粘土るつぼパターンの場合
+			if ((heldItem = player.getHeldItem()) == null || heldItem.getItem() instanceof ClayCruciblePattern){
+				player.inventory.mainInventory[player.inventory.currentItem] = tile.setMode(heldItem);
+				return true;
+			}
+			
+			//その他だった場合
 			int addSize = tile.addOres(player.getHeldItem());
 			if (addSize != 0) {
 				heldItem.stackSize -= addSize;
@@ -66,24 +76,11 @@ public class ClayCrucible extends BlockContainer {
 		return -1;
 	}
 	
-	@SuppressWarnings("unchecked")
-	@Override
-	public void getSubBlocks(Item item, CreativeTabs tab, List list) {
-		list.add(new ItemStack(item, 1, 0));
-		list.add(new ItemStack(item, 1, 1));
-	}
-	
-	@Override
-	public int damageDropped(int meta) {
-		return meta;
-	}
-	
 	@Override
 	public void addCollisionBoxesToList(World world, int x, int y, int z, AxisAlignedBB aabb, List list, Entity entity) {
 		this.setBlockBounds(2F / 16F, 0F, 2F / 16F, 14F / 16F, 14F / 16, 14F / 16F);
 		super.addCollisionBoxesToList(world, x, y, z, aabb, list, entity);
 	}
-	
 	
 	@Override
 	public String getItemIconName() {

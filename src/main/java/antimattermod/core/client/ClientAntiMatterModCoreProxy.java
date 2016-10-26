@@ -48,16 +48,17 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 		//オーバーレイブロックレンダ―
 		RenderingRegistry.registerBlockHandler(new OverlayBlockRender());
 		//粘土るつぼレンダ―
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityClayCrucible.class,new ClayCrucibleSpecialRender());
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(AntiMatterModRegistry.clayCrucible), new ItemRenderClayCrucibles());
+		TileEntitySpecialRenderer clayCrucibleSpecialRender = new ClayCrucibleSpecialRender();
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityClayCrucible.class,clayCrucibleSpecialRender);
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(AntiMatterModRegistry.clayCrucible), new ItemRenderClayCrucibles(clayCrucibleSpecialRender,new TileEntityClayCrucible()));
 
 		//土かまどレンダー
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySatStove.class,new SatStoveSpecialRender());
 		
 		//ケーブルレンダ―
-		TileEntitySpecialRenderer renderer = new CableRender();
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCable.class,renderer);
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(AntiMatterModRegistry.cable),new ItemRenderCable(renderer,new TileEntityCable()));
+		TileEntitySpecialRenderer cableRender = new CableRender();
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCable.class,cableRender);
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(AntiMatterModRegistry.cable),new ItemRenderCable(cableRender,new TileEntityCable()));
 	}
 	
 	@Override

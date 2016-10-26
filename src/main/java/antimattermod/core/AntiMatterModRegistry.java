@@ -7,6 +7,7 @@ import antimattermod.core.Block.BlockSatStove;
 import antimattermod.core.Block.Ores.BedrockOreBlock;
 import antimattermod.core.Energy.Transfer.BlockCable;
 import antimattermod.core.Energy.Transfer.TileEntityCable;
+import antimattermod.core.Item.ClayCruciblePattern;
 import antimattermod.core.Item.ItemBlock.CableItemBlock;
 import antimattermod.core.Item.ItemBlock.MetaItemBlock;
 import antimattermod.core.Block.Ores.DifferentOreBlock;
@@ -48,6 +49,7 @@ import static antimattermod.core.AntiMatterModCore.proxy;
  *
  * @author C6H2Cl2
  */
+@SuppressWarnings("WeakerAccess")
 public class AntiMatterModRegistry {
 	
 	//CreativeTab ======================================================================================================
@@ -126,6 +128,9 @@ public class AntiMatterModRegistry {
 	public static final Item magnetizedingot_01 = ItemUtil.CreateItem("magnetizedingot_01", "motormagnet/magnetizedingot_01", 1, AntiMatterModRegistry.tabImaterial);
 	public static final Item screw_01 = ItemUtil.CreateItem("screw_01", "screw/screw_01", 1, AntiMatterModRegistry.tabImaterial);
 	
+	//粘土るつぼのパターンアイテム
+	public static final Item clayCruciblePattern = new ClayCruciblePattern();
+	
 	//食料
 	public static final ItemFood marmite = new Marmite("marmite");
 	
@@ -189,7 +194,7 @@ public class AntiMatterModRegistry {
 	
 	
 	//preinitで行う登録処理
-	static void registerPreInit(FMLPreInitializationEvent event) {
+	static void registerPreInit(@SuppressWarnings("UnusedParameters") FMLPreInitializationEvent event) {
 		//Itemの登録 ===================================================================================================
 		//素材
 		GameRegistry.registerItem(crystal_01, "crystal_01");
@@ -216,6 +221,8 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerItem(motormagnet_01, "motormagnet_01");
 		GameRegistry.registerItem(magnetizedingot_01, "magnetizedingot_01");
 		GameRegistry.registerItem(screw_01, "screw_01");
+		//粘土るつぼのパターンアイテム
+		GameRegistry.registerItem(clayCruciblePattern,"clayCruciblePattern");
 		//食料
 		GameRegistry.registerItem(marmite, "marmite");
 		//ツール
@@ -268,7 +275,7 @@ public class AntiMatterModRegistry {
 	}
 	
 	//initで行う登録処理
-	static void registerInit(FMLInitializationEvent event) {
+	static void registerInit(@SuppressWarnings("UnusedParameters") FMLInitializationEvent event) {
 		
 		//TileEntityの登録 =============================================================================================
 		GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class, "tileFurnaceGeneratorAP");
@@ -295,7 +302,7 @@ public class AntiMatterModRegistry {
 	}
 	
 	//postinitで行う処理
-	static void registerPostInit(FMLPostInitializationEvent event) {
+	static void registerPostInit(@SuppressWarnings("UnusedParameters") FMLPostInitializationEvent event) {
 		//他mod関連の操作
 	}
 }
