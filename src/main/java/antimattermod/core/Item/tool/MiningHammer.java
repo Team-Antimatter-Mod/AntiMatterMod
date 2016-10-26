@@ -16,6 +16,8 @@ import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.event.world.BlockEvent.BreakEvent;
 
+import java.util.List;
+
 /**
  * Created by Raiti-chan on 2016/10/22.
  * 範囲採掘ハンマー
@@ -28,13 +30,14 @@ public class MiningHammer extends AMMTool {
 	
 	/**
 	 * 範囲採掘できるマイニングハンマーの作成
-	 * @param name ツール名
+	 *
+	 * @param name        ツール名
 	 * @param textureName テクスチャ―名
-	 * @param material ツールマテリアル
-	 * @param range 採掘範囲 range*2 + 1 平方ブロックの範囲採掘
+	 * @param material    ツールマテリアル
+	 * @param range       採掘範囲 range*2 + 1 平方ブロックの範囲採掘
 	 */
 	public MiningHammer(String name, String textureName, AMMToolMaterial material, int range) {
-		super(name,textureName,material,4F);
+		super(name, textureName, material, 4F);
 		this.harvestRange = range;
 		setHarvestLevel("pickaxe", toolMaterial.getHarvestLevel());
 	}
@@ -57,7 +60,7 @@ public class MiningHammer extends AMMTool {
 			ForgeDirection direction = getPlayerDirection(entity);
 			if (direction == null) return false;
 			int xEx = direction.offsetX == 0 ? this.harvestRange : 0, yEx = direction.offsetY == 0 ? this.harvestRange : 0, zEx = direction.offsetZ == 0 ? this.harvestRange : 0;
-			toolStack.damageItem(1,entity);
+			toolStack.damageItem(1, entity);
 			for (int xPoint = -xEx; xPoint <= xEx; xPoint++) {
 				for (int yPoint = -yEx; yPoint <= yEx; yPoint++) {
 					for (int zPoint = -zEx; zPoint <= zEx; zPoint++) {
@@ -152,7 +155,11 @@ public class MiningHammer extends AMMTool {
 		return null;
 	}
 	
-
-	
-
+	@SuppressWarnings("unchecked")
+	@Override
+	public void addInformation(ItemStack itemStack, EntityPlayer player, List informationList, boolean advanced){
+		int range = harvestRange*2+1;
+		informationList.add(range+"X"+range);
+		informationList.add(getMaxDamage()-getDamage(itemStack)+"/"+getMaxDamage());
+	}
 }

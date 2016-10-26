@@ -2,13 +2,19 @@ package antimattermod.core.Item.tool;
 
 import antimattermod.core.Util.AMMToolMaterial;
 import com.mojang.realmsclient.gui.ChatFormatting;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
+
 /**
- * Created by Raiti on 2016/10/14.
+ * Created by Raiti-chan on 2016/10/14.
+ * クラフティングで耐久値が減るツールのベース
+ * @author Raiti-chan
  */
-public class CraftingTool extends AMMToolNotToolClass {
+@SuppressWarnings("WeakerAccess")
+public abstract class CraftingTool extends AMMToolNotToolClass {
 	
 	protected CraftingTool(@NotNull String name, @NotNull String textureName, AMMToolMaterial material) {
 		super(name, textureName, material);
@@ -35,6 +41,12 @@ public class CraftingTool extends AMMToolNotToolClass {
 	public ItemStack getContainerItem(ItemStack itemStack) {
 		itemStack.setItemDamage(itemStack.getItemDamage() + 1);
 		return itemStack;
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Override
+	public void addInformation(ItemStack itemStack, EntityPlayer player, List informationList, boolean advanced){
+		informationList.add(getMaxDamage()-getDamage(itemStack)+"/"+getMaxDamage());
 	}
 	
 }

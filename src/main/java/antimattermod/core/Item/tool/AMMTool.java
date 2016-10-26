@@ -4,12 +4,9 @@ import antimattermod.core.AntiMatterModCore;
 import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Util.AMMToolMaterial;
 import net.minecraft.block.Block;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
-import net.minecraft.world.World;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -18,11 +15,12 @@ import org.jetbrains.annotations.NotNull;
  *
  * @author Raiti-chan
  */
-public class AMMTool extends ItemTool implements AMMToolBase{
+@SuppressWarnings("WeakerAccess")
+public class AMMTool extends ItemTool implements AMMItemBase {
 	
 	protected final AMMToolMaterial material;
 	
-	public AMMTool(@NotNull String name, @NotNull String textureName, AMMToolMaterial material, float toolDamage){
+	protected AMMTool(@NotNull String name, @NotNull String textureName, AMMToolMaterial material, float toolDamage){
 		super(toolDamage,material.getToolMaterial(),null);
 		this.setCreativeTab(AntiMatterModRegistry.tabTools);
 		this.material = material;
@@ -47,5 +45,7 @@ public class AMMTool extends ItemTool implements AMMToolBase{
 	public float func_150893_a(ItemStack itemStack, Block block) {
 		return 1.0F;
 	}
+	
+	
 	
 }

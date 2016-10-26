@@ -13,7 +13,7 @@ import net.minecraft.item.Item;
  * @author Raiti-chan
  */
 @SuppressWarnings("WeakerAccess")
-public class AMMToolNotToolClass extends Item implements AMMToolBase {
+public class AMMToolNotToolClass extends Item implements AMMItemBase {
 	
 	protected final AMMToolMaterial toolMaterial;
 	
