@@ -10,6 +10,7 @@ import antimattermod.core.Energy.Transfer.TileEntityCable;
 import antimattermod.core.Render.CableRender;
 import antimattermod.core.Render.ClayCrucibleSpecialRender;
 import antimattermod.core.Render.ItemRender.ItemRenderCable;
+import antimattermod.core.Render.ItemRender.ItemRenderClayCrucibles;
 import antimattermod.core.Render.OverlayBlockRender;
 import antimattermod.core.Render.SatStoveSpecialRender;
 import antimattermod.core.common.AntiMatterModCoreProxy;
@@ -18,7 +19,9 @@ import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.MinecraftForgeClient;
 
 /** <h1>ClientAntiMatterModCoreProxy</h1>
@@ -46,6 +49,7 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 		RenderingRegistry.registerBlockHandler(new OverlayBlockRender());
 		//粘土るつぼレンダ―
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityClayCrucible.class,new ClayCrucibleSpecialRender());
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(AntiMatterModRegistry.clayCrucible), new ItemRenderClayCrucibles());
 
 		//土かまどレンダー
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySatStove.class,new SatStoveSpecialRender());
