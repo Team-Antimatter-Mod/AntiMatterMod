@@ -26,16 +26,14 @@ tasks.withType(Jar) {
 
 }
 
-jar{
-    into(''){
-        from 'src/main/java'
-    }
-}
+//noinspection GroovyUnusedAssignment
 sourceCompatibility = "1.8"
+//noinspection GroovyUnusedAssignment
 targetCompatibility = "1.8"
 
 version = "1.0.0"
 group= "TeamAntimatterMod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+//noinspection GroovyUnusedAssignment
 archivesBaseName = "AntiMatterMod"
 
 minecraft {
