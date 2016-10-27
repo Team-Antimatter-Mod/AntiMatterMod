@@ -19,12 +19,7 @@ buildscript {
 
 apply plugin: 'forge'
 apply plugin: "kotlin"
-jar {
-    manifest {
-        attributes 'FMLCorePlugin': 'antimattermod.core.ASM.AMMCoreASMPlugin',
-                'FMLCorePluginContainsFMLMod': 'true'
-    }
-}
+
 tasks.withType(Jar) {
     compileJava.options.encoding = 'UTF-8'
     compileJava.options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
@@ -41,25 +36,24 @@ minecraft {
     runDir = "eclipse"
 }
 
+configurations {
+    embed
+    compile.extendsFrom(embed)
+}
+
 dependencies {
+    embed 'org.jetbrains.kotlin:kotlin-stdlib:0.12.613'
     compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
-    compile 'org.jetbrains:annotations:13.0'
-
+    embed 'org.jetbrains:annotations:13.0'
     compile fileTree(dir: 'libs', include: '*.jar')
+}
 
-    // you may put jars on which you depend on in ./libs
-    // or you may define them like so..
-    //compile "some.group:artifact:version:classifier"
-    //compile "some.group:artifact:version"
-      
-    // real examples
-    //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
-    //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
-
-    // for more info...
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
-
+jar {
+    manifest {
+        attributes 'FMLCorePlugin': 'antimattermod.core.ASM.AMMCoreASMPlugin',
+                'FMLCorePluginContainsFMLMod': 'true'
+    }
+    from configurations.embed.collect { it.isDirectory() ? it : zipTree(it) }
 }
 
 processResources
@@ -69,15 +63,15 @@ processResources
     inputs.property "mcversion", project.minecraft.version
 
     // replace stuff in mcmod.info, nothing else
-    from(sourceSets.main.resources.srcDirs) {
+    /*from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
                 
         // replace version and mcversion
         expand 'version':project.version, 'mcversion':project.minecraft.version
-    }
-        
+    }*/
+       /*
     // copy everything else, thats not the mcmod.info
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
-    }
+    }*/
 }
