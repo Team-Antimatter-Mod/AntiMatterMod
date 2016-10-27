@@ -1,15 +1,13 @@
 package antimattermod.core.Block;
 
-import antimattermod.core.AntiMatterModCore;
 import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattermod.core.Item.ClayCruciblePattern;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
@@ -28,7 +26,6 @@ public class ClayCrucible extends BlockContainer {
 	public ClayCrucible() {
 		super(Material.rock);
 		this.setBlockName("claycrucible");
-		this.setBlockTextureName(AntiMatterModCore.MOD_ID + ":another/claycrucible");
 		this.setCreativeTab(AntiMatterModRegistry.tabMachines);
 		this.setResistance(5F);
 		this.setHardness(10F);
@@ -71,6 +68,22 @@ public class ClayCrucible extends BlockContainer {
 		}
 	}
 	
+	
+	@Override
+	public void breakBlock(World world, int x, int y, int z, Block block, int meta) {
+		TileEntity tileEntity = world.getTileEntity(x,y,z);
+		if(tileEntity instanceof TileEntityClayCrucible) {
+			TileEntityClayCrucible entity = (TileEntityClayCrucible)tileEntity;
+			if(entity.getOreBlock() != null)this.dropBlockAsItem(world,x,y,z,entity.getOreBlock());
+			ItemStack stack;
+			if((stack = entity.setMode(null)) != null){
+				this.dropBlockAsItem(world,x,y,z,stack);
+			}
+		}
+		
+		super.breakBlock(world, x, y, z, block, meta);
+	}
+	
 	@Override
 	public int getRenderType() {
 		return -1;
@@ -82,10 +95,6 @@ public class ClayCrucible extends BlockContainer {
 		super.addCollisionBoxesToList(world, x, y, z, aabb, list, entity);
 	}
 	
-	@Override
-	public String getItemIconName() {
-		return AntiMatterModCore.MOD_ID + ":another/claycrucible";
-	}
 	
 	@Override
 	public boolean isNormalCube() {
