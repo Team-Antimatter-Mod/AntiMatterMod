@@ -17,6 +17,9 @@ import antimattermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator
 import antimattermod.core.Item.Marmite;
 import antimattermod.core.Item.StatesChecker;
 import antimattermod.core.Item.tool.*;
+import antimattermod.core.Mob.EntityHoeHoeMan;
+import antimattermod.core.Mob.ItemEgg.ItemHoeHoeManEgg;
+import antimattermod.core.Mob.render.RenderHoeHoeMan;
 import antimattermod.core.Util.AMMToolMaterial;
 import antimattermod.core.Util.AddInformationfunction;
 import antimattermod.core.Util.BlockUtil;
@@ -27,9 +30,12 @@ import antimattermod.core.World.Structure.Test.StructureTestStart;
 import antimattermod.core.World.Structure.Tiamat.ComponentTiamatCenter;
 import antimattermod.core.World.Structure.Tiamat.ComponentTiamatCenterLine;
 import antimattermod.core.World.Structure.Tiamat.StructureTiamatStart;
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -39,9 +45,11 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.world.gen.structure.MapGenStructureIO;
 import net.minecraftforge.common.MinecraftForge;
 
+import static antimattermod.core.AntiMatterModCore.MOD_ID;
 import static antimattermod.core.AntiMatterModCore.proxy;
 
 /**
@@ -133,7 +141,9 @@ public class AntiMatterModRegistry {
 	
 	//食料
 	public static final ItemFood marmite = new Marmite("marmite");
-	
+
+	//mobエッグ
+	public static final Item itemEggHoeHoeMan = new ItemHoeHoeManEgg();
 	
 	//ツール類
 	public static final Item statesChecker = new StatesChecker();
@@ -225,6 +235,8 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerItem(clayCruciblePattern,"clayCruciblePattern");
 		//食料
 		GameRegistry.registerItem(marmite, "marmite");
+        //モブEgg
+        GameRegistry.registerItem(itemEggHoeHoeMan,"itemEggHoeHoeMan");
 		//ツール
 		GameRegistry.registerItem(statesChecker, "statesCheckerAP");
 		GameRegistry.registerItem(hammer_01, "hammer_01");//追加
@@ -298,7 +310,13 @@ public class AntiMatterModRegistry {
 		MapGenStructureIO.registerStructure(StructureTiamatStart.class, "TiamatComet");
 		MapGenStructureIO.func_143031_a(ComponentTiamatCenter.class, "TiamaitCometCenter");
 		MapGenStructureIO.func_143031_a(ComponentTiamatCenterLine.class, "TiamatCometCenterLine");
-		
+
+		EntityRegistry.registerModEntity(EntityHoeHoeMan.class,"HoeHoeMan",0,AntiMatterModCore.MOD_ID,250,1,false);
+		if(FMLCommonHandler.instance().getSide() == Side.CLIENT) {
+            RenderingRegistry.registerEntityRenderingHandler(EntityHoeHoeMan.class, new RenderHoeHoeMan());
+		}
+
+
 	}
 	
 	//postinitで行う処理

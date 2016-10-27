@@ -16,3 +16,6 @@ eclipse/
 classes/
 build/
 !build/libs/
+src/api/
+src/main/kotlin/
+src/test/
