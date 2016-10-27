@@ -1,2 +1,1 @@
 call gradlew uploadArchives
-pause
