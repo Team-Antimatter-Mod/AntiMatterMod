@@ -141,10 +141,10 @@ public class AntiMatterModRegistry {
 	public static final Item clayCruciblePattern = new ClayCruciblePattern();
 	
 	//食料
-	public static final ItemFood marmite = new Marmite("marmite");
+	public static final ItemFood marmite = new Marmite("marmite");//マーマイト（エンドコンテンツ）
 
 	//mobエッグ
-	public static final Item itemEggHoeHoeMan = new ItemHoeHoeManEgg();
+	public static final Item itemEggHoeHoeMan = new ItemHoeHoeManEgg();//チュウボスの卵
 	
 	//ツール類
 	public static final Item statesChecker = new StatesChecker();
@@ -311,7 +311,7 @@ public class AntiMatterModRegistry {
 		MapGenStructureIO.func_143031_a(ComponentTiamatCenter.class, "TiamaitCometCenter");
 		MapGenStructureIO.func_143031_a(ComponentTiamatCenterLine.class, "TiamatCometCenterLine");
 
-		EntityRegistry.registerModEntity(EntityHoeHoeMan.class,"HoeHoeMan",0,AntiMatterModCore.MOD_ID,250,1,false);
+		EntityRegistry.registerModEntity(EntityHoeHoeMan.class,"HoeHoeMan",0,AntiMatterModCore.MOD_ID,250,1,false);//中ボスの追加
 		if(FMLCommonHandler.instance().getSide() == Side.CLIENT) {
             RenderingRegistry.registerEntityRenderingHandler(EntityHoeHoeMan.class, new RenderHoeHoeMan());
 		}
