@@ -34,6 +34,10 @@ class EnergyNetworkGlobal : WorldSavedData(DATA_NAME) {
         }
     }
 
+    fun onTick(world: World){
+
+    }
+
     override fun writeToNBT(nbtTagCompound: NBTTagCompound) {
         val tagCompound = NBTTagCompound()
         val tagList = NBTTagList()
@@ -83,34 +87,23 @@ class EnergyNetworkGlobal : WorldSavedData(DATA_NAME) {
         if (world.isRemote){
             return
         }
-        if (tilePos.up.getTileEntityFromPos(world) is IAPAccessible && tilePos.up.getTileEntityFromPos(world) !is IAPReceiver){
-            for (energyNetwork in getEnergyNetwork(tilePos.up)){
-                energyNetwork.registerTileEntity(tilePos.up.getTileEntityFromPos(world))
-            }
+        registerTileEntity(tileEntity,tilePos.up.getTileEntityFromPos(world))
+        registerTileEntity(tileEntity,tilePos.down.getTileEntityFromPos(world))
+        registerTileEntity(tileEntity,tilePos.north.getTileEntityFromPos(world))
+        registerTileEntity(tileEntity,tilePos.south.getTileEntityFromPos(world))
+        registerTileEntity(tileEntity,tilePos.east.getTileEntityFromPos(world))
+        registerTileEntity(tileEntity,tilePos.west.getTileEntityFromPos(world))
+    }
+
+    private fun registerTileEntity(tileEntityBase: TileEntity, tileEntityNeighbor:TileEntity?){
+        if(tileEntityNeighbor == null || tileEntityBase !is IAPAccessible || tileEntityNeighbor !is IAPAccessible){
+            return
         }
-        if (tilePos.down.getTileEntityFromPos(world) is IAPAccessible && tilePos.down.getTileEntityFromPos(world) !is IAPReceiver){
-            for (energyNetwork in getEnergyNetwork(tilePos.down)){
-                energyNetwork.registerTileEntity(tilePos.down.getTileEntityFromPos(world))
-            }
-        }
-        if (tilePos.north.getTileEntityFromPos(world) is IAPAccessible && tilePos.north.getTileEntityFromPos(world) !is IAPReceiver){
-            for (energyNetwork in getEnergyNetwork(tilePos.north)){
-                energyNetwork.registerTileEntity(tilePos.north.getTileEntityFromPos(world))
-            }
-        }
-        if (tilePos.south.getTileEntityFromPos(world) is IAPAccessible && tilePos.south.getTileEntityFromPos(world) !is IAPReceiver){
-            for (energyNetwork in getEnergyNetwork(tilePos.south)){
-                energyNetwork.registerTileEntity(tilePos.south.getTileEntityFromPos(world))
-            }
-        }
-        if (tilePos.east.getTileEntityFromPos(world) is IAPAccessible && tilePos.east.getTileEntityFromPos(world) !is IAPReceiver){
-            for (energyNetwork in getEnergyNetwork(tilePos.east)){
-                energyNetwork.registerTileEntity(tilePos.east.getTileEntityFromPos(world))
-            }
-        }
-        if (tilePos.west.getTileEntityFromPos(world) is IAPAccessible && tilePos.west.getTileEntityFromPos(world) !is IAPReceiver){
-            for (energyNetwork in getEnergyNetwork(tilePos.west)){
-                energyNetwork.registerTileEntity(tilePos.west.getTileEntityFromPos(world))
+        if (tileEntityBase is IAPReceiver && tileEntityNeighbor is IAPReceiver){
+            return
+        }else{
+            for (energyNetwork in getEnergyNetwork(tileEntityNeighbor)){
+                energyNetwork.registerTileEntity(tileEntityBase)
             }
         }
     }

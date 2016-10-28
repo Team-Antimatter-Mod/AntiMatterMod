@@ -35,7 +35,7 @@ data class BlockPos(var x: Int,var y: Int,var z: Int) {
         return world.getBlock(x, y, z)
     }
 
-    fun getTileEntityFromPos(world: IBlockAccess): TileEntity {
+    fun getTileEntityFromPos(world: IBlockAccess): TileEntity? {
         return world.getTileEntity(x, y, z)
     }
 
