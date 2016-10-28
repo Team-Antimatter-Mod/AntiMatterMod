@@ -66,15 +66,20 @@ public class RecipeRegister {
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.motorparts_01,1,0),"AAA","AB ","AAA",'A', new ItemStack(AntiMatterModRegistry.plate_01,1,1),'B',OreDictionaryRegister.craftingToolHardHammer));
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.motorparts_01,1,1)," AA"," BA"," AA",'A',OreDictionaryRegister.plateIron,'B',OreDictionaryRegister.craftingToolHardHammer));
         //筐体
-        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.tier1_machinecasing,1,0),"AAA","ABA","AAA",
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.machinecasing,1,0),"AAA","ABA","AAA",
                 'A',new ItemStack(AntiMatterModRegistry.plate_01,1,1), 'B',OreDictionaryRegister.craftingToolWrench));
-        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.tier1_machinehull,1,0),"ABA","CDC","EFE",
+
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.machinecasing,1,1),"AAA","ABA","AAA",
+                'A',new ItemStack(AntiMatterModRegistry.plate_01,1,4), 'B',OreDictionaryRegister.craftingToolWrench));
+
+        GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.machinehull,1,0),"ABA","CDC","EFE",
                 'A',new ItemStack(AntiMatterModRegistry.screw_01,1,0),'B',OreDictionaryRegister.craftingScrewdriver,
-                'C',new ItemStack(AntiMatterModRegistry.cable,1,0),'D',new ItemStack(AntiMatterModRegistry.tier1_machinecasing,1,0),
+                'C',new ItemStack(AntiMatterModRegistry.cable,1,0),'D',new ItemStack(AntiMatterModRegistry.machinecasing,1,0),
                 'E',new ItemStack(AntiMatterModRegistry.conductivematerial_01,1,0),'F',OreDictionaryRegister.craftingToolWrench));
+
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.furnaceGenerator),"ABA","CDC","EFE",
                 'A',new ItemStack(AntiMatterModRegistry.motor_01,1,0), 'B',new ItemStack(AntiMatterModRegistry.turbine_01,1,0),
-                'C',new ItemStack(AntiMatterModRegistry.conductivematerial_01,1,0), 'D',new ItemStack(AntiMatterModRegistry.tier1_machinehull,1,0),
+                'C',new ItemStack(AntiMatterModRegistry.conductivematerial_01,1,0), 'D',new ItemStack(AntiMatterModRegistry.machinehull,1,0),
                 'E',new ItemStack(Blocks.furnace,1,0),'F',OreDictionaryRegister.craftingToolWrench));
 
         //ケーブル

@@ -168,8 +168,12 @@ tile.bedrockOreBlock_01_14.name=Astnides BedrockOre
 tile.bedrockOreBlock_01_15.name=Pazilite BedrockOre
 
 #--------------------------------------------machine
-tile.tier1_machinecasing.name=T1 Machine Casing
-tile.tier1_machinehull.name=T1 Machine Hull
+tile.machinecasing_0.name=T1 Machine Casing
+tile.machinecasing_1.name=T2 Machine Casing
+
+tile.machinehull_0.name=T1 Machine Hull
+tile.machinehull_1.name=T2 Machine Hull
+
 tile.furnaceGeneratorAP.name=basic furnaceGenerator
 
 #--------------------------------------------compressedblock

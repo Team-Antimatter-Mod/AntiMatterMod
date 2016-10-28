@@ -170,8 +170,12 @@ tile.bedrockOreBlock_01_15.name=パジライト岩盤鉱石
 
 
 #--------------------------------------------機械
-tile.tier1_machinecasing.name=基本型マシンケーシング
-tile.tier1_machinehull.name=基本型マシン筐体
+tile.machinecasing_0.name=T1 マシンケーシング
+tile.machinecasing_1.name=T2 マシンケーシング
+
+tile.machinehull_0.name=T1 マシン筐体
+tile.machinehull_1.name=T2 マシン筐体
+
 tile.furnaceGeneratorAP.name=基本型火力発電機
 
 #--------------------------------------------圧縮ブロック

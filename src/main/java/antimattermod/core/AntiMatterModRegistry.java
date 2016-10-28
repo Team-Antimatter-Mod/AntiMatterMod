@@ -185,8 +185,8 @@ public class AntiMatterModRegistry {
 	public static final Block soilBlock = new BlockSoil();
 	
 	//筐体
-	public static final Block tier1_machinecasing = BlockUtil.CreateBlock("tier1_machinecasing", "casing/tier1_machinecasing_01", Material.rock, AntiMatterModRegistry.tabMachines, 1, 5f, 5f);
-	public static final Block tier1_machinehull = BlockUtil.CreateBlock("tier1_machinehull", "casing/tier1_machinehull_01", Material.rock, AntiMatterModRegistry.tabMachines, 1, 5f, 5f);
+	public static final Block machinecasing = BlockUtil.CreateBlock("machinecasing", "casing/machinecasing_01", Material.rock, AntiMatterModRegistry.tabMachines, 2, 5f, 5f);
+	public static final Block machinehull = BlockUtil.CreateBlock("machinehull", "casing/machinehull_01", Material.rock, AntiMatterModRegistry.tabMachines, 2, 5f, 5f);
 	
 	//インゴット系圧縮ブロック
 	public static final Block tiamiteblock = BlockUtil.CreateBlock("tiamiteblock", "compressedblock/tiamiteblock", Material.rock, AntiMatterModRegistry.tabCompressedBlocks, 1, 5f, 5f);
@@ -266,8 +266,8 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerBlock(furnaceGenerator, "furnaceGeneratorAP");
 		GameRegistry.registerBlock(cable, CableItemBlock.class, "Cable");
 		GameRegistry.registerBlock(satStove, "satStove");
-		GameRegistry.registerBlock(tier1_machinecasing, "tier1_machinecasing");
-		GameRegistry.registerBlock(tier1_machinehull, "tier1_machinehull");
+		GameRegistry.registerBlock(machinecasing, "machinecasing");
+		GameRegistry.registerBlock(machinehull, "machinehull");
 		//その他
 		GameRegistry.registerBlock(soilBlock, "soilBlock");
 		//鉱石ブロック
