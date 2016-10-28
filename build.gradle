@@ -47,7 +47,7 @@ configurations {
 dependencies {
     compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
     embed 'org.jetbrains:annotations:13.0'
-    embed 'org.jetbrains.kotlinkoting-stdlib:0.12.613'
+    embed 'org.jetbrains.kotlin:kotlin-stdlib:0.12.613'
 
     compile fileTree(dir: 'libs', include: '*.jar')
 
