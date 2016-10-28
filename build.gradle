@@ -46,9 +46,9 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository url: "file://${repo.absolutePath}"
-            pom.version = version
-            pom.groupId = group
-            pom.artifactId = archivesBaseName
+            //pom.version = version
+            //pom.groupId = group
+            //pom.artifactId = archivesBaseName
         }
     }
 }
