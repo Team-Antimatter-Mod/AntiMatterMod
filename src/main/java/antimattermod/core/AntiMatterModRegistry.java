@@ -6,6 +6,7 @@ import antimattermod.core.Block.ClayCrucibleHeater;
 import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattermod.core.Block.BlockSatStove;
 import antimattermod.core.Block.Ores.BedrockOreBlock;
+import antimattermod.core.Block.TileEntity.TileEntityClayCrucibleHeater;
 import antimattermod.core.Energy.Transfer.BlockCable;
 import antimattermod.core.Energy.Transfer.TileEntityCable;
 import antimattermod.core.Item.ClayCruciblePattern;
@@ -294,6 +295,7 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerTileEntity(TileEntityCable.class, "tileCableAP");
 		
 		GameRegistry.registerTileEntity(TileEntityClayCrucible.class, "tileClayCrucible");
+		GameRegistry.registerTileEntity(TileEntityClayCrucibleHeater.class, "tileClayCrucibleHeater");
 		
 		//WorldGeneratorの登録 =========================================================================================
 		GameRegistry.registerWorldGenerator(new OreGenerator(), 2);

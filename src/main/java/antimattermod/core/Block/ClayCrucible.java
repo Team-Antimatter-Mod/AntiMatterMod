@@ -32,6 +32,7 @@ public class ClayCrucible extends BlockContainer {
 		this.setHarvestLevel("pickaxe", 1);
 	}
 	
+	
 	@Override
 	public TileEntity createNewTileEntity(World world, int meta) {
 		return meta == 0 ? new TileEntityClayCrucible() : null;

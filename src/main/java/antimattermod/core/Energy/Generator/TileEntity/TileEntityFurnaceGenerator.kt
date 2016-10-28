@@ -56,7 +56,7 @@ class TileEntityFurnaceGenerator : TileEntity(), IAPGenerator {
             currentGenerate = (voltage.maxEnergy * fuel).toInt()
             storedEnergy += currentGenerate
             fuel = 0f
-            val meta : Int = this.worldObj.getBlockMetadata(this.xCoord,this.yCoord,this.zCoord);
+            val meta : Int = this.worldObj.getBlockMetadata(this.xCoord,this.yCoord,this.zCoord)
             worldObj.setBlockMetadataWithNotify(this.xCoord,this.yCoord,this.zCoord,if(meta > 5) meta - 6 else meta,2)
         }else{
             currentGenerate = 0
@@ -65,7 +65,7 @@ class TileEntityFurnaceGenerator : TileEntity(), IAPGenerator {
     }
 
     //燃料追加
-    public fun addFuel(amount: Float) :Float{
+    fun addFuel(amount: Float) :Float{
         val value :Float= amount / 1600
         fuel += value
         if (fuel > maxFuel){

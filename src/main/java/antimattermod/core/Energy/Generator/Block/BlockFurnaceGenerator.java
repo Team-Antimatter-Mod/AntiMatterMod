@@ -96,7 +96,6 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side) {
-        TileEntityFurnaceGenerator fg = (TileEntityFurnaceGenerator) world.getTileEntity(x,y,z);
         return side == world.getBlockMetadata(x,y,z) ? this.Front_OFF : side == world.getBlockMetadata(x,y,z)-6 ? this.Front_ON : this.AnotherIcon;
     }
     
