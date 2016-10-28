@@ -70,7 +70,7 @@ public class RecipeRegister {
                 'A',new ItemStack(AntiMatterModRegistry.plate_01,1,1), 'B',OreDictionaryRegister.craftingToolWrench));
 
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.machinecasing,1,1),"AAA","ABA","AAA",
-                'A',new ItemStack(AntiMatterModRegistry.plate_01,1,4), 'B',OreDictionaryRegister.craftingToolWrench));
+                'A',new ItemStack(AntiMatterModRegistry.plate_01,1,5), 'B',OreDictionaryRegister.craftingToolWrench));
 
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.machinehull,1,0),"ABA","CDC","EFE",
                 'A',new ItemStack(AntiMatterModRegistry.screw_01,1,0),'B',OreDictionaryRegister.craftingScrewdriver,
@@ -178,7 +178,7 @@ public class RecipeRegister {
 
         //その他
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.wire,1,0)," S ","SCS"," S ",
-                'S',new ItemStack(AntiMatterModRegistry.plate_01,1,2),'C',OreDictionaryRegister.craftingToolWrench));
+                'S',new ItemStack(AntiMatterModRegistry.plate_01,1,2),'C',OreDictionaryRegister.craftingToolWireCutter));
         GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.gear_01,1,0),"ABA","BCB","ABA",
                 'A',new ItemStack(AntiMatterModRegistry.stick_01,1,0),'B',new ItemStack(AntiMatterModRegistry.plate_01,1,3),
                 'C',OreDictionaryRegister.craftingToolWrench));
