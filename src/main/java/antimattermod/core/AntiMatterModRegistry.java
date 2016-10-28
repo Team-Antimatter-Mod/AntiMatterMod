@@ -2,6 +2,7 @@ package antimattermod.core;
 
 import antimattermod.core.Block.BlockSoil;
 import antimattermod.core.Block.ClayCrucible;
+import antimattermod.core.Block.ClayCrucibleHeater;
 import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattermod.core.Block.BlockSatStove;
 import antimattermod.core.Block.Ores.BedrockOreBlock;
@@ -17,6 +18,9 @@ import antimattermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator
 import antimattermod.core.Item.Marmite;
 import antimattermod.core.Item.StatesChecker;
 import antimattermod.core.Item.tool.*;
+import antimattermod.core.Mob.EntityHoeHoeMan;
+import antimattermod.core.Mob.ItemEgg.ItemHoeHoeManEgg;
+import antimattermod.core.Mob.render.RenderHoeHoeMan;
 import antimattermod.core.Util.AMMToolMaterial;
 import antimattermod.core.Util.AddInformationfunction;
 import antimattermod.core.Util.BlockUtil;
@@ -27,9 +31,12 @@ import antimattermod.core.World.Structure.Test.StructureTestStart;
 import antimattermod.core.World.Structure.Tiamat.ComponentTiamatCenter;
 import antimattermod.core.World.Structure.Tiamat.ComponentTiamatCenterLine;
 import antimattermod.core.World.Structure.Tiamat.StructureTiamatStart;
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -39,9 +46,11 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.world.gen.structure.MapGenStructureIO;
 import net.minecraftforge.common.MinecraftForge;
 
+import static antimattermod.core.AntiMatterModCore.MOD_ID;
 import static antimattermod.core.AntiMatterModCore.proxy;
 
 /**
@@ -132,8 +141,10 @@ public class AntiMatterModRegistry {
 	public static final Item clayCruciblePattern = new ClayCruciblePattern();
 	
 	//食料
-	public static final ItemFood marmite = new Marmite("marmite");
-	
+	public static final ItemFood marmite = new Marmite("marmite");//マーマイト（エンドコンテンツ）
+
+	//mobエッグ
+	public static final Item itemEggHoeHoeMan = new ItemHoeHoeManEgg();//チュウボスの卵
 	
 	//ツール類
 	public static final Item statesChecker = new StatesChecker();
@@ -145,23 +156,20 @@ public class AntiMatterModRegistry {
 	
 	//マイニングハンマー
 	public static final Item miningHammer_01 = new MiningHammer("IronMiningHammer", "iron_mininghammer", AMMToolMaterial.IRON, 1);//鉄素材のハンマー3×3を追加
-	public static final Item miningHammer_02 = new MiningHammer("DiamondMiningHammer","diamond_mininghammer", AMMToolMaterial.DIAMOND,1);//ダイヤ素材のハンマー3×3
-	public static final Item miningHammer_03 = new MiningHammer("RaitiumMiningHammer","raitium_mininghammer", AMMToolMaterial.Raitium,1);//ライチウム素材のハンマー3×3
-	public static final Item miningHammer_04 = new MiningHammer("DrantiumMiningHammer","drantium_mininghammer", AMMToolMaterial.Drantium,1);
-	public static final Item miningHammer_05 = new MiningHammer("PalaziriteMiningHammer","palazirite_mininghammer", AMMToolMaterial.Palazirite,1);
+	public static final Item miningHammer_02 = new MiningHammer("DiamondMiningHammer", "diamond_mininghammer", AMMToolMaterial.DIAMOND, 1);//ダイヤ素材のハンマー3×3
+	public static final Item miningHammer_03 = new MiningHammer("RaitiumMiningHammer", "raitium_mininghammer", AMMToolMaterial.Raitium, 1);//ライチウム素材のハンマー3×3
+	public static final Item miningHammer_04 = new MiningHammer("DrantiumMiningHammer", "drantium_mininghammer", AMMToolMaterial.Drantium, 1);
+	public static final Item miningHammer_05 = new MiningHammer("PalaziriteMiningHammer", "palazirite_mininghammer", AMMToolMaterial.Palazirite, 1);
 	//==================================================================================================================
 	
 	//Block  ===========================================================================================================
 	//鉱石
 	public static final Block crystalOreBlock_1 = new DifferentOreBlock(Material.rock, "crystalOreBlock_01", "crystalore/crystaloreblock_01", AntiMatterModRegistry.tabOreBlock, 6, new float[]{5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F}, new byte[]{3, 3, 3, 3, 3, 3}, crystal_01, new int[]{0, 1, 2, 3, 4, 5});
 	public static final Block bedrockCrystalOreBlock_1 = new BedrockOreBlock("bedrockCrystalOreBlock_01", crystalOreBlock_1);
-	
 	public static final Block crystalOreBlock_2 = new DifferentOreBlock(Material.rock, "crystalOreBlock_02", "crystalore/crystaloreblock_02", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F}, new byte[]{3}, crystal_02, new int[]{0});
 	public static final Block bedrockCrystalOreBlock_2 = new BedrockOreBlock("bedrockCrystalOreBlock_02", crystalOreBlock_2);
-	
 	public static final Block powderOreBlock_1 = new DifferentOreBlock(Material.rock, "powderOreBlock_01", "powderore/powderoreblock_01", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F}, new byte[]{3}, powder_01, new int[]{0}, new int[]{3, 3});
 	public static final Block bedrockPowderOreBlock_1 = new BedrockOreBlock("bedrockPowderOreBlock_01", powderOreBlock_1);
-	
 	public static final Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 16, new float[]{5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F}, new byte[]{3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3});
 	public static final Block bedrockOreBlock_1 = new BedrockOreBlock("bedrockOreBlock_01", oreBlock_1);
 	
@@ -186,8 +194,9 @@ public class AntiMatterModRegistry {
 	public static final Block crystalblock_02 = BlockUtil.CreateBlock("crystalblock_02", "compressedblock/crystalblock_02", Material.rock, AntiMatterModRegistry.tabCompressedBlocks, 1, 5f, 5f);
 	public static final Block powderblock_01 = BlockUtil.CreateBlock("powderblock_01", "compressedblock/powderblock_01", Material.rock, AntiMatterModRegistry.tabCompressedBlocks, 1, 5f, 5f);
 	
-	//テスト
+	//粘土るつぼ
 	public static final Block clayCrucible = new ClayCrucible();
+	public static final Block clayCrucibleHeater = new ClayCrucibleHeater();
 	
 	
 	//==================================================================================================================
@@ -222,9 +231,11 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerItem(magnetizedingot_01, "magnetizedingot_01");
 		GameRegistry.registerItem(screw_01, "screw_01");
 		//粘土るつぼのパターンアイテム
-		GameRegistry.registerItem(clayCruciblePattern,"clayCruciblePattern");
+		GameRegistry.registerItem(clayCruciblePattern, "clayCruciblePattern");
 		//食料
 		GameRegistry.registerItem(marmite, "marmite");
+        //モブEgg
+        GameRegistry.registerItem(itemEggHoeHoeMan,"itemEggHoeHoeMan");
 		//ツール
 		GameRegistry.registerItem(statesChecker, "statesCheckerAP");
 		GameRegistry.registerItem(hammer_01, "hammer_01");//追加
@@ -233,12 +244,12 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerItem(file_01, "file_01");
 		GameRegistry.registerItem(screwdriver_01, "screwdriver_01");
 		//マイニングハンマー
-		GameRegistry.registerItem(miningHammer_01,"miningHammer_01");
-		GameRegistry.registerItem(miningHammer_02,"miningHammer_02");
-		GameRegistry.registerItem(miningHammer_03,"miningHammer_03");
-		GameRegistry.registerItem(miningHammer_04,"miningHammer_04");
-		GameRegistry.registerItem(miningHammer_05,"miningHammer_05");
-
+		GameRegistry.registerItem(miningHammer_01, "miningHammer_01");
+		GameRegistry.registerItem(miningHammer_02, "miningHammer_02");
+		GameRegistry.registerItem(miningHammer_03, "miningHammer_03");
+		GameRegistry.registerItem(miningHammer_04, "miningHammer_04");
+		GameRegistry.registerItem(miningHammer_05, "miningHammer_05");
+		
 		//Blockの登録 ==================================================================================================
 		//鉱石
 		GameRegistry.registerBlock(crystalOreBlock_1, MetaItemBlock.class, "crystalOreBlock_01");
@@ -264,8 +275,9 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerBlock(crystalblock_01, MetaItemBlock.class, "crystalblock_01");
 		GameRegistry.registerBlock(crystalblock_02, MetaItemBlock.class, "crystalblock_02");
 		GameRegistry.registerBlock(powderblock_01, MetaItemBlock.class, "powderblock_01");
-		//テスト
+		//粘土るつぼ
 		GameRegistry.registerBlock(clayCrucible, "clayCrucible");
+		GameRegistry.registerBlock(clayCrucibleHeater, "clayCrucibleHeater");
 		
 		
 		//Renderの登録 =================================================================================================
@@ -298,7 +310,13 @@ public class AntiMatterModRegistry {
 		MapGenStructureIO.registerStructure(StructureTiamatStart.class, "TiamatComet");
 		MapGenStructureIO.func_143031_a(ComponentTiamatCenter.class, "TiamaitCometCenter");
 		MapGenStructureIO.func_143031_a(ComponentTiamatCenterLine.class, "TiamatCometCenterLine");
-		
+
+		EntityRegistry.registerModEntity(EntityHoeHoeMan.class,"HoeHoeMan",0,AntiMatterModCore.MOD_ID,250,1,false);//中ボスの追加
+		if(FMLCommonHandler.instance().getSide() == Side.CLIENT) {
+            RenderingRegistry.registerEntityRenderingHandler(EntityHoeHoeMan.class, new RenderHoeHoeMan());
+		}
+
+
 	}
 	
 	//postinitで行う処理
