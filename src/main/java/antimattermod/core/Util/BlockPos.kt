@@ -71,4 +71,11 @@ data class BlockPos(var x: Int,var y: Int,var z: Int) {
         y = tag.getInteger("y")
         z = tag.getInteger("z")
     }
+
+    fun getDistance(pos: BlockPos):Double{
+        val xDist = x - pos.x
+        val yDist = y - pos.y
+        val zDist = z - pos.z
+        return Math.sqrt((xDist * xDist + yDist * yDist + zDist * zDist).toDouble())
+    }
 }

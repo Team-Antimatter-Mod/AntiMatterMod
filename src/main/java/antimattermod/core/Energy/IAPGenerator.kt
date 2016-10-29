@@ -5,7 +5,7 @@ import net.minecraft.nbt.NBTTagCompound
 /**
  * @author C6H2Cl2
  */
-abstract class IAPGenerator : IAPProvider(){
+open class IAPGenerator : IAPProvider(){
     init {
 
     }

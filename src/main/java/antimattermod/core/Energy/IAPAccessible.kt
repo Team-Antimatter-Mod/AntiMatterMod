@@ -9,14 +9,23 @@ import net.minecraft.tileentity.TileEntity
 /**
  * @author C6H2Cl2
  */
-abstract class IAPAccessible : TileEntity() {
+open class IAPAccessible : TileEntity() {
 
     override fun writeToNBT(tagCompound: NBTTagCompound) {
         super.writeToNBT(tagCompound)
+        val tag = NBTTagCompound()
+        voltage.writeToNBT(tagCompound)
+        tag.setInteger("maxStoredEnergy",maxStoredEnergy)
+        tag.setInteger("storedEnergy",storedEnergy)
+        tagCompound.setTag("IAPAccessible",tag)
     }
 
     override fun readFromNBT(tagCompound: NBTTagCompound) {
         super.readFromNBT(tagCompound)
+        val tag = tagCompound.getCompoundTag("IAPAccessible")
+        voltage.readFromNBT(tag)
+        maxStoredEnergy = tag.getInteger("maxStoredEnergy")
+        storedEnergy = tag.getInteger("storedEnergy")
     }
 
     override fun onDataPacket(net: NetworkManager?, pkt: S35PacketUpdateTileEntity?) {
@@ -36,5 +45,7 @@ abstract class IAPAccessible : TileEntity() {
     var storedEnergy: Int = 0
     protected set
 
-    public abstract fun explode()
+    fun explode(){
+
+    }
 }

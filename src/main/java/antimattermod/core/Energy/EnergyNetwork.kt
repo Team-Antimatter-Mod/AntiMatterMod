@@ -121,4 +121,6 @@ class EnergyNetwork {
             else -> false
         }
     }
+
+    fun getProviders():LinkedList<BlockPos> = networkComponentsProvider
 }

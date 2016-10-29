@@ -5,7 +5,7 @@ import net.minecraft.nbt.NBTTagCompound
 /**
  * @author C6H2Cl2
  */
-abstract class IAPMachine : IAPReceiver(){
+open class IAPMachine : IAPReceiver(){
     init {
 
     }

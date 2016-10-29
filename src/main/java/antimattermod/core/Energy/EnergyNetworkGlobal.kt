@@ -15,6 +15,8 @@ import java.util.*
 class EnergyNetworkGlobal : WorldSavedData(DATA_NAME) {
 
     private val energyNetworkList = LinkedList<EnergyNetwork>()
+    private val energyRequest = LinkedList<EnergyNode>()
+    private val energyProvide = LinkedList<EnergyNode>()
 
     companion object{
         val DATA_NAME = "AMMGlobalEnergyNetwork"
@@ -35,6 +37,25 @@ class EnergyNetworkGlobal : WorldSavedData(DATA_NAME) {
     }
 
     fun onTick(world: World){
+        //ToDo:1tickごとの処理
+        //リクエストの処理
+        for (node in energyRequest){
+            val receiver = node.getTargetPos()
+            var pos = BlockPos(0,0,0)
+            var distance :Double = 0.0
+            //2つの直線距離が一番近いのを探す
+            for (network in getEnergyNetwork(receiver)){
+                for (provider in network.getProviders()){
+                    val dist = provider.getDistance(receiver)
+                    if(distance == 0.0 || dist < distance){
+                        distance = dist
+                        pos = provider
+                    }
+                }
+            }
+            energyProvide.add(EnergyNode(node.getVoltage(),node.getEnergyValue(),pos,node.getTargetPos()))
+        }
+        //輸送処理
 
     }
 
@@ -106,5 +127,13 @@ class EnergyNetworkGlobal : WorldSavedData(DATA_NAME) {
                 energyNetwork.registerTileEntity(tileEntityBase)
             }
         }
+    }
+
+    fun requestEnergy(energyNode: EnergyNode){
+        energyRequest.add(energyNode)
+    }
+
+    fun requestEnergy(pos : BlockPos,voltage:APVoltage,energy:Int = voltage.maxEnergy){
+        requestEnergy(EnergyNode(voltage,energy, BlockPos(0,0,0),pos))
     }
 }

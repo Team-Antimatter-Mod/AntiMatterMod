@@ -5,7 +5,7 @@ import net.minecraft.nbt.NBTTagCompound
 /**
  * @author C6H2Cl2
  */
-abstract class IAPReceiver : IAPAccessible(){
+open class IAPReceiver : IAPAccessible(){
     init {
 
     }

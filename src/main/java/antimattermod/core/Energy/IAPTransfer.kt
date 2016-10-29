@@ -5,7 +5,7 @@ import net.minecraft.nbt.NBTTagCompound
 /**
  * @author C6H2Cl2
  */
-abstract class IAPTransfer : IAPAccessible() {
+open class IAPTransfer : IAPAccessible() {
     init {
 
     }

@@ -23,15 +23,15 @@ class EnergyNode {
 
     }
 
-    public fun writeToNBT(tagCompound : NBTTagCompound){
+    fun writeToNBT(tagCompound : NBTTagCompound){
         writeToNBT(tagCompound,"EnergyNode")
     }
 
-    public fun readFromNBT(tagCompound: NBTTagCompound){
+    fun readFromNBT(tagCompound: NBTTagCompound){
         readFromNBT(tagCompound,"EnergyNode")
     }
 
-    public fun writeToNBT(tagCompound: NBTTagCompound, tagName: String){
+    fun writeToNBT(tagCompound: NBTTagCompound, tagName: String){
         val tag = NBTTagCompound()
         voltage.writeToNBT(tag)
         tag.setInteger("energyValue",energyValue)
@@ -40,7 +40,7 @@ class EnergyNode {
         tagCompound.setTag(tagName,tag)
     }
 
-    public fun readFromNBT(tagCompound: NBTTagCompound, tagName: String){
+    fun readFromNBT(tagCompound: NBTTagCompound, tagName: String){
         val tag = tagCompound.getCompoundTag(tagName)
         voltage.readFromNBT(tag)
         energyValue = tag.getInteger("energyValue")
@@ -48,8 +48,8 @@ class EnergyNode {
         target.readFromNBT(tag)
     }
 
-    public fun getVoltage() : APVoltage = voltage
-    public fun getEnergyValue() : Int = energyValue
-    public fun getSource() : BlockPos = source
-    public fun getTargetPos() : BlockPos = target
+    fun getVoltage() : APVoltage = voltage
+    fun getEnergyValue() : Int = energyValue
+    fun getSource() : BlockPos = source
+    fun getTargetPos() : BlockPos = target
 }
