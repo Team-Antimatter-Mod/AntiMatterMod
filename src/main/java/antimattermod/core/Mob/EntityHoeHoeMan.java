@@ -24,10 +24,10 @@ public class EntityHoeHoeMan extends EntityMob implements IBossDisplayData {
     @Override
     protected void applyEntityAttributes(){
         super.applyEntityAttributes();
-        getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(20D);
+        getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(60D);
         getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(1280D);
-        getEntityAttribute(SharedMonsterAttributes.knockbackResistance).setBaseValue(1000);
-        getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(1000);
-        getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(1);
+        getEntityAttribute(SharedMonsterAttributes.knockbackResistance).setBaseValue(3000);
+        getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(3000);
+        getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(3);
     }
 }
