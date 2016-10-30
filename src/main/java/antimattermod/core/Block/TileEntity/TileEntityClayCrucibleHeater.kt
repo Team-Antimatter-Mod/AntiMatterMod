@@ -2,7 +2,7 @@ package antimattermod.core.Block.TileEntity
 
 import antimattermod.core.AntiMatterModRegistry
 import antimattermod.core.Block.ClayCrucibleHeater
-import net.minecraft.block.Block
+import net.minecraft.init.Blocks
 import net.minecraft.init.Items
 import net.minecraft.item.ItemStack
 import net.minecraft.nbt.NBTTagCompound
@@ -42,8 +42,11 @@ class TileEntityClayCrucibleHeater : TileEntity() {
 				if (stack.stackSize < 1 || this.worldObj.getBlock(this.xCoord, this.yCoord + 1, this.zCoord) != AntiMatterModRegistry.clayCrucible) return
 				stack.stackSize--
 				charcoalSize = if (charcoalSize > 0) --charcoalSize else 0
-				time += 160
+				time += 1600
 				isBurning = true
+				if(!this.worldObj.isRemote){
+					this.worldObj.markBlockForUpdate(this.xCoord,this.yCoord,this.zCoord)
+				}
 				val meta = worldObj.getBlockMetadata(this.xCoord, this.yCoord, this.zCoord)
 				worldObj.setBlockMetadataWithNotify(this.xCoord, this.yCoord, this.zCoord, if (meta < 6) meta + 6 else meta, 2)
 			}
@@ -56,11 +59,23 @@ class TileEntityClayCrucibleHeater : TileEntity() {
 				} else {
 					--time
 					isBurning = false
+					if(!this.worldObj.isRemote){
+						this.worldObj.markBlockForUpdate(this.xCoord,this.yCoord,this.zCoord)
+					}
 					val meta: Int = this.worldObj.getBlockMetadata(this.xCoord, this.yCoord, this.zCoord)
 					this.getWorldObj().setBlockMetadataWithNotify(this.xCoord, this.yCoord, this.zCoord, if (meta > 5) meta - 6 else meta, 2)
 				}
 			}
 			else -> --time
+		}
+		if(isBurning){
+			if (this.worldObj.getBlock(this.xCoord, this.yCoord + 1, this.zCoord) == Blocks.air) {
+				this.worldObj.setBlock(this.xCoord, this.yCoord + 1, this.zCoord, Blocks.fire)
+			}
+		}else {
+			if (this.worldObj.getBlock(this.xCoord, this.yCoord + 1, this.zCoord) == Blocks.fire){
+				this.worldObj.setBlock(this.xCoord, this.yCoord + 1, this.zCoord, Blocks.air)
+			}
 		}
 	}
 	
@@ -78,6 +93,7 @@ class TileEntityClayCrucibleHeater : TileEntity() {
 		this.time = compound!!.getInteger("time")
 		this.stack.stackSize = compound.getInteger("fuel")
 		this.charcoalSize = compound.getInteger("charcoalSize")
+		this.isBurning = this.time > 0
 	}
 	
 	//読み込みパケット
