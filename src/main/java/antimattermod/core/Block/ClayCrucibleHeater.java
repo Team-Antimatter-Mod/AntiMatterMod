@@ -21,6 +21,8 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
+import java.util.Random;
+
 /**
  * Created by Raiti-chan on 2016/10/27.
  * 粘土かまどヒーター

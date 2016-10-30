@@ -47,11 +47,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
-import net.minecraft.item.ItemHoe;
 import net.minecraft.world.gen.structure.MapGenStructureIO;
 import net.minecraftforge.common.MinecraftForge;
 
-import static antimattermod.core.AntiMatterModCore.MOD_ID;
 import static antimattermod.core.AntiMatterModCore.proxy;
 
 /**
@@ -117,11 +115,10 @@ public class AntiMatterModRegistry {
 	public static final Item crystal_02 = ItemUtil.CreateItem("crystal_02", "crystal/crystal_02", 1, AntiMatterModRegistry.tabMaterials);
 	public static final Item powder_01 = ItemUtil.CreateItem("powder_01", "powder/powder_01", 1, AntiMatterModRegistry.tabMaterials);
 	public static final Item nugget_01 = ItemUtil.CreateItem("nugget_01", "nugget/nugget_01", 16, AntiMatterModRegistry.tabMaterials);
-	
+	//合金
 	public static final Item alloyingot_01 = ItemUtil.CreateItem("alloyingot_01", "ingot/alloyingot_01", 17, AntiMatterModRegistry.tabMaterials);
-	
-	
-	public static final Item wire = ItemUtil.CreateItem("wire_01", "wire/wire_01", 1, AntiMatterModRegistry.tabImaterial);
+	//中間素材
+	public static final Item wire_01 = ItemUtil.CreateItem("wire_01", "wire_01/wire_01", 1, AntiMatterModRegistry.tabImaterial);
 	public static final Item plate_01 = ItemUtil.CreateItem("plate_01", "plate/plate_01", 8, AntiMatterModRegistry.tabImaterial);
 	public static final Item crystalplate_02 = ItemUtil.CreateItem("crystalplate_02", "plate/crystalplate_02", 1, AntiMatterModRegistry.tabImaterial);
 	public static final Item industrialplate_01 = ItemUtil.CreateItem("industrialplate_01", "plate/industrialplate_01", 1, AntiMatterModRegistry.tabImaterial);
@@ -138,12 +135,15 @@ public class AntiMatterModRegistry {
 	public static final Item magnetizedingot_01 = ItemUtil.CreateItem("magnetizedingot_01", "motormagnet/magnetizedingot_01", 1, AntiMatterModRegistry.tabImaterial);
 	public static final Item screw_01 = ItemUtil.CreateItem("screw_01", "screw/screw_01", 1, AntiMatterModRegistry.tabImaterial);
 	
+	//ツール中間素材
+	public static final Item iron_tool_material = ItemUtil.CreateItem("iron_tool_material", "iron_tool_material", 5, AntiMatterModRegistry.tabImaterial);
+	
 	//粘土るつぼのパターンアイテム
 	public static final Item clayCruciblePattern = new ClayCruciblePattern();
 	
 	//食料
 	public static final ItemFood marmite = new Marmite("marmite");//マーマイト（エンドコンテンツ）
-
+	
 	//mobエッグ
 	public static final Item itemEggHoeHoeMan = new ItemHoeHoeManEgg();//チュウボスの卵
 	
@@ -215,7 +215,7 @@ public class AntiMatterModRegistry {
 		
 		GameRegistry.registerItem(alloyingot_01, "alloyingot_01");
 		//中間素材
-		GameRegistry.registerItem(wire, "wire");
+		GameRegistry.registerItem(wire_01, "wire_01");
 		GameRegistry.registerItem(plate_01, "plate_01");
 		GameRegistry.registerItem(crystalplate_02, "crystalplate_02");
 		GameRegistry.registerItem(industrialplate_01, "industrialplate_01");
@@ -231,12 +231,14 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerItem(motormagnet_01, "motormagnet_01");
 		GameRegistry.registerItem(magnetizedingot_01, "magnetizedingot_01");
 		GameRegistry.registerItem(screw_01, "screw_01");
+		//ツール中間素材
+		GameRegistry.registerItem(iron_tool_material, "iron_tool_material");
 		//粘土るつぼのパターンアイテム
 		GameRegistry.registerItem(clayCruciblePattern, "clayCruciblePattern");
 		//食料
 		GameRegistry.registerItem(marmite, "marmite");
-        //モブEgg
-        GameRegistry.registerItem(itemEggHoeHoeMan,"itemEggHoeHoeMan");
+		//モブEgg
+		GameRegistry.registerItem(itemEggHoeHoeMan, "itemEggHoeHoeMan");
 		//ツール
 		GameRegistry.registerItem(statesChecker, "statesCheckerAP");
 		GameRegistry.registerItem(hammer_01, "hammer_01");//追加
@@ -312,13 +314,13 @@ public class AntiMatterModRegistry {
 		MapGenStructureIO.registerStructure(StructureTiamatStart.class, "TiamatComet");
 		MapGenStructureIO.func_143031_a(ComponentTiamatCenter.class, "TiamaitCometCenter");
 		MapGenStructureIO.func_143031_a(ComponentTiamatCenterLine.class, "TiamatCometCenterLine");
-
-		EntityRegistry.registerModEntity(EntityHoeHoeMan.class,"HoeHoeMan",0,AntiMatterModCore.MOD_ID,250,1,false);//中ボスの追加
-		if(FMLCommonHandler.instance().getSide() == Side.CLIENT) {
-            RenderingRegistry.registerEntityRenderingHandler(EntityHoeHoeMan.class, new RenderHoeHoeMan());
+		
+		EntityRegistry.registerModEntity(EntityHoeHoeMan.class, "HoeHoeMan", 0, AntiMatterModCore.MOD_ID, 250, 1, false);//中ボスの追加
+		if (FMLCommonHandler.instance().getSide() == Side.CLIENT) {
+			RenderingRegistry.registerEntityRenderingHandler(EntityHoeHoeMan.class, new RenderHoeHoeMan());
 		}
-
-
+		
+		
 	}
 	
 	//postinitで行う処理

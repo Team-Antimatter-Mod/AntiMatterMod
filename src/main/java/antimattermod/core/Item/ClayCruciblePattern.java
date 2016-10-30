@@ -56,9 +56,18 @@ public class ClayCruciblePattern extends Item{
 		return super.getUnlocalizedName()+"_"+itemStack.getItemDamage();
 	}
 	
-	private enum ClayCruciblePatternList{
-		HammerHed,
+	public enum ClayCruciblePatternList{
+		HammerHead(6),
+		ScrewDriverHead(2),
+		PickaxeHead(3),
+		ShovelHead(1),
+		SwordBlade(2),
 		;
+		
+		public final int stackSize;
+		ClayCruciblePatternList (int stackSize){
+			this.stackSize = stackSize;
+		}
 	}
 	
 }

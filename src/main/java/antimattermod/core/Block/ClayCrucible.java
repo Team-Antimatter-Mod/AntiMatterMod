@@ -1,16 +1,21 @@
 package antimattermod.core.Block;
 
+import antimattermod.core.AntiMatterModCore;
 import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattermod.core.Item.ClayCruciblePattern;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.DamageSource;
+import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -22,6 +27,8 @@ import java.util.List;
  * @author Raiti-chan
  */
 public class ClayCrucible extends BlockContainer {
+	
+	public IIcon meltedIron;
 	
 	public ClayCrucible() {
 		super(Material.rock);
@@ -50,7 +57,7 @@ public class ClayCrucible extends BlockContainer {
 			TileEntityClayCrucible tile = (TileEntityClayCrucible) world.getTileEntity(x, y, z);
 			
 			//手持ち無しの場合か、粘土るつぼパターンの場合
-			if ((heldItem = player.getHeldItem()) == null || heldItem.getItem() instanceof ClayCruciblePattern){
+			if ((heldItem = player.getHeldItem()) == null || heldItem.getItem() instanceof ClayCruciblePattern) {
 				player.inventory.mainInventory[player.inventory.currentItem] = tile.setMode(heldItem);
 				return true;
 			}
@@ -72,17 +79,55 @@ public class ClayCrucible extends BlockContainer {
 	
 	@Override
 	public void breakBlock(World world, int x, int y, int z, Block block, int meta) {
-		TileEntity tileEntity = world.getTileEntity(x,y,z);
-		if(tileEntity instanceof TileEntityClayCrucible) {
-			TileEntityClayCrucible entity = (TileEntityClayCrucible)tileEntity;
-			if(entity.getOreBlock() != null)this.dropBlockAsItem(world,x,y,z,entity.getOreBlock());
-			ItemStack stack;
-			if((stack = entity.setMode(null)) != null){
-				this.dropBlockAsItem(world,x,y,z,stack);
+		TileEntity tileEntity = world.getTileEntity(x, y, z);
+		if (tileEntity instanceof TileEntityClayCrucible) {
+			TileEntityClayCrucible entity = (TileEntityClayCrucible) tileEntity;
+			switch (entity.getState()) {
+				case NONE:
+				case HEATING:
+					if (entity.getStack() != null) this.dropBlockAsItem(world, x, y, z, entity.getStack());
+					ItemStack stack;
+					if ((stack = entity.setMode(null)) != null) {
+						this.dropBlockAsItem(world, x, y, z, stack);
+					}
+					break;
+				
+				case MELTED:
+					break;
+				case SOLIDIFIED:
+					break;
 			}
+			
 		}
 		
 		super.breakBlock(world, x, y, z, block, meta);
+	}
+	
+	
+	@Override
+	public void onBlockHarvested(World world, int x, int y, int z, int meta, EntityPlayer player) {
+		TileEntity tileEntity = world.getTileEntity(x, y, z);
+		if (tileEntity instanceof TileEntityClayCrucible){
+			TileEntityClayCrucible entity = (TileEntityClayCrucible)tileEntity;
+			switch (entity.getState()){
+				case MELTED:
+					player.attackEntityFrom(DamageSource.magic,10F);
+					break;
+			}
+		}
+	}
+	
+	
+	
+	@Override
+	public boolean isReplaceableOreGen(World world, int x, int y, int z, Block target) {
+		return true;
+	}
+	
+	@Override
+	public boolean removedByPlayer(World world, EntityPlayer player, int x, int y, int z, boolean willHarvest) {
+		return super.removedByPlayer(world, player, x, y, z, willHarvest);
+		
 	}
 	
 	@Override
@@ -96,6 +141,11 @@ public class ClayCrucible extends BlockContainer {
 		super.addCollisionBoxesToList(world, x, y, z, aabb, list, entity);
 	}
 	
+	@Override
+	public void registerBlockIcons(IIconRegister register) {
+		this.blockIcon = Blocks.hardened_clay.getIcon(0, 0);
+		this.meltedIron = register.registerIcon(AntiMatterModCore.MOD_ID + ":liquid/liquid_iron");
+	}
 	
 	@Override
 	public boolean isNormalCube() {
