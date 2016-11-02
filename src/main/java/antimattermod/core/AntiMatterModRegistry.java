@@ -47,7 +47,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
+import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraft.world.gen.structure.MapGenStructureIO;
+import net.minecraftforge.common.ChestGenHooks;
 import net.minecraftforge.common.MinecraftForge;
 
 import static antimattermod.core.AntiMatterModCore.proxy;
@@ -118,7 +120,7 @@ public class AntiMatterModRegistry {
 	//合金
 	public static final Item alloyingot_01 = ItemUtil.CreateItem("alloyingot_01", "ingot/alloyingot_01", 17, AntiMatterModRegistry.tabMaterials);
 	//中間素材
-	public static final Item wire_01 = ItemUtil.CreateItem("wire_01", "wire_01/wire_01", 1, AntiMatterModRegistry.tabImaterial);
+	public static final Item wire_01 = ItemUtil.CreateItem("wire_01", "wire/wire_01", 1, AntiMatterModRegistry.tabImaterial);
 	public static final Item plate_01 = ItemUtil.CreateItem("plate_01", "plate/plate_01", 8, AntiMatterModRegistry.tabImaterial);
 	public static final Item crystalplate_02 = ItemUtil.CreateItem("crystalplate_02", "plate/crystalplate_02", 1, AntiMatterModRegistry.tabImaterial);
 	public static final Item industrialplate_01 = ItemUtil.CreateItem("industrialplate_01", "plate/industrialplate_01", 1, AntiMatterModRegistry.tabImaterial);
@@ -320,7 +322,12 @@ public class AntiMatterModRegistry {
 			RenderingRegistry.registerEntityRenderingHandler(EntityHoeHoeMan.class, new RenderHoeHoeMan());
 		}
 		
-		
+		//村のチェストの中身============================================================================================
+		ChestGenHooks.addItem(ChestGenHooks.VILLAGE_BLACKSMITH, new WeightedRandomChestContent(ingot_01,1,1,5,5));
+		ChestGenHooks.addItem(ChestGenHooks.VILLAGE_BLACKSMITH, new WeightedRandomChestContent(ingot_01,2,1,5,5));
+		ChestGenHooks village =ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH);
+		village.setMax(village.getMax()+10);
+		village.setMin(village.getMin()+10);
 	}
 	
 	//postinitで行う処理
