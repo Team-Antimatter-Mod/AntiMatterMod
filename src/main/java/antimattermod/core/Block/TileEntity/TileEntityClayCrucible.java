@@ -83,6 +83,7 @@ public class TileEntityClayCrucible extends TileEntity {
 				case HEATING://加熱中処理
 					if (time > 200 * this.stack.stackSize) {
 						this.state = ClayCrucibleState.MELTED;
+						worldObj.setBlockMetadataWithNotify(this.xCoord, this.yCoord, this.zCoord, 1 , 0);
 						worldObj.markBlockForUpdate(this.xCoord, this.yCoord, this.zCoord);
 					} else {
 						heatingCheck();
@@ -102,6 +103,10 @@ public class TileEntityClayCrucible extends TileEntity {
 					break;
 			}
 		}
+	}
+	
+	public ItemStack getDropCompletionItem() {
+		return new ItemStack(modeMeta.completionItem, 1, modeMeta.itemMeta);
 	}
 	
 	private void heatingCheck() {
@@ -124,7 +129,7 @@ public class TileEntityClayCrucible extends TileEntity {
 		TileEntity tileEntity = this.worldObj.getTileEntity(this.xCoord, this.yCoord - 1, this.zCoord);
 		if (tileEntity instanceof TileEntityClayCrucibleHeater) {
 			if (((TileEntityClayCrucibleHeater) tileEntity).isBurning()) {
-				time ++;
+				time++;
 			}
 		}
 		

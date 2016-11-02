@@ -17,13 +17,13 @@ import java.util.List;
  *
  * @author Raiti-chan
  */
-public class ClayCruciblePattern extends Item{
+public class ClayCruciblePattern extends Item {
 	
 	private IIcon[] icons;
 	
-	public ClayCruciblePattern(){
+	public ClayCruciblePattern() {
 		this.setUnlocalizedName("clayCruciblePattern");
-		this.setTextureName(AntiMatterModCore.MOD_ID+":ccpattern/");
+		this.setTextureName(AntiMatterModCore.MOD_ID + ":ccpattern/");
 		this.setCreativeTab(AntiMatterModRegistry.tabMachines);
 		this.setMaxStackSize(1);
 		icons = new IIcon[ClayCruciblePatternList.values().length];
@@ -32,8 +32,8 @@ public class ClayCruciblePattern extends Item{
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister register) {
-		for (int i=0;i<icons.length;i++){
-			this.icons[i] = register.registerIcon(this.getIconString()+"_"+i);
+		for (int i = 0; i < icons.length; i++) {
+			this.icons[i] = register.registerIcon(this.getIconString() + "_" + i);
 		}
 	}
 	
@@ -41,8 +41,8 @@ public class ClayCruciblePattern extends Item{
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void getSubItems(Item item, CreativeTabs tab, List list) {
-		for (int i=0;i<icons.length;i++){
-			list.add(new ItemStack(this,1,i));
+		for (int i = 0; i < icons.length; i++) {
+			list.add(new ItemStack(this, 1, i));
 		}
 	}
 	
@@ -52,21 +52,25 @@ public class ClayCruciblePattern extends Item{
 	}
 	
 	@Override
-	public String getUnlocalizedName(ItemStack itemStack){
-		return super.getUnlocalizedName()+"_"+itemStack.getItemDamage();
+	public String getUnlocalizedName(ItemStack itemStack) {
+		return super.getUnlocalizedName() + "_" + itemStack.getItemDamage();
 	}
 	
-	public enum ClayCruciblePatternList{
-		HammerHead(6),
-		ScrewDriverHead(2),
-		PickaxeHead(3),
-		ShovelHead(1),
-		SwordBlade(2),
-		;
+	public enum ClayCruciblePatternList {
+		HammerHead(6, AntiMatterModRegistry.iron_tool_material, 0),
+		ScrewDriverHead(2, AntiMatterModRegistry.iron_tool_material, 1),
+		PickaxeHead(3, AntiMatterModRegistry.iron_tool_material, 2),
+		ShovelHead(1, AntiMatterModRegistry.iron_tool_material, 3),
+		SwordBlade(2, AntiMatterModRegistry.iron_tool_material, 4),;
 		
 		public final int stackSize;
-		ClayCruciblePatternList (int stackSize){
+		public final Item completionItem;
+		public final int itemMeta;
+		
+		ClayCruciblePatternList(int stackSize, Item completionItem, int itemMeta) {
 			this.stackSize = stackSize;
+			this.completionItem = completionItem;
+			this.itemMeta = itemMeta;
 		}
 	}
 	

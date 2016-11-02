@@ -11,6 +11,8 @@ import java.util.Random;
 
 /**
  * Created by Raiti on 2016/10/11.
+ * 岩盤鉱石ジェネレーター
+ * @author Raiti-chan
  */
 public class BedrockGenerator extends WorldGenerator{
 	
@@ -21,12 +23,18 @@ public class BedrockGenerator extends WorldGenerator{
 	
 	
 	@Override
-	public boolean generate(World p_76484_1_, Random p_76484_2_, int p_76484_3_, int p_76484_4_, int p_76484_5_) {
-		for(int i =0 ; i < 1; i++){
-			int x = ((p_76484_3_ >> 4) << 4) + p_76484_2_.nextInt(16);
-			int z = ((p_76484_5_ >> 4) << 4) + p_76484_2_.nextInt(16);
-			int rad = p_76484_2_.nextInt(blocks.length);
-			if(!Block.isEqualTo(p_76484_1_.getBlock(x,p_76484_4_,z), Blocks.air))p_76484_1_.setBlock(x,p_76484_4_,z,blocks[rad],p_76484_2_.nextInt(blocks[rad].getMaxMetadate()),2);
+	public boolean generate(World world, Random random, int px, int py, int pz) {
+		for (int i = 0; i < 1; i++) {
+			int x = ((px >> 4) << 4) + random.nextInt(16);
+			int z = ((pz >> 4) << 4) + random.nextInt(16);
+			int rad = random.nextInt(blocks.length);
+			int meta;
+			if(rad == 0 || rad == 1) {
+				meta = random.nextInt(blocks[rad].getMaxMetadate()-1)+1;
+			} else {
+				meta = random.nextInt(blocks[rad].getMaxMetadate());
+			}
+			if (!Block.isEqualTo(world.getBlock(x, py, z), Blocks.air)) world.setBlock(x, py, z, blocks[rad], meta, 2);
 		}
 		return true;
 	}

@@ -42,7 +42,7 @@ public class ClayCrucible extends BlockContainer {
 	
 	@Override
 	public TileEntity createNewTileEntity(World world, int meta) {
-		return meta == 0 ? new TileEntityClayCrucible() : null;
+		return new TileEntityClayCrucible();
 	}
 	
 	@Override
@@ -95,6 +95,7 @@ public class ClayCrucible extends BlockContainer {
 				case MELTED:
 					break;
 				case SOLIDIFIED:
+					this.dropBlockAsItem(world, x, y, z, entity.getDropCompletionItem());
 					break;
 			}
 			
@@ -107,17 +108,26 @@ public class ClayCrucible extends BlockContainer {
 	@Override
 	public void onBlockHarvested(World world, int x, int y, int z, int meta, EntityPlayer player) {
 		TileEntity tileEntity = world.getTileEntity(x, y, z);
-		if (tileEntity instanceof TileEntityClayCrucible){
-			TileEntityClayCrucible entity = (TileEntityClayCrucible)tileEntity;
-			switch (entity.getState()){
+		if (tileEntity instanceof TileEntityClayCrucible) {
+			TileEntityClayCrucible entity = (TileEntityClayCrucible) tileEntity;
+			switch (entity.getState()) {
 				case MELTED:
-					player.attackEntityFrom(DamageSource.magic,10F);
+					player.attackEntityFrom(DamageSource.magic, 10F);
 					break;
 			}
 		}
 	}
 	
 	
+	@Override
+	public boolean canHarvestBlock(EntityPlayer player, int meta) {
+		return meta == 0 && super.canHarvestBlock(player, meta);
+	}
+	
+	@Override
+	protected boolean canSilkHarvest() {
+		return false;
+	}
 	
 	@Override
 	public boolean isReplaceableOreGen(World world, int x, int y, int z, Block target) {
