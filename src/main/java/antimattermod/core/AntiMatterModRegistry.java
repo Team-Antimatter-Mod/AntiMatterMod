@@ -190,7 +190,8 @@ public class AntiMatterModRegistry {
 	//筐体
 	public static final Block machinecasing = BlockUtil.CreateBlock("machinecasing", "casing/machinecasing_01", Material.rock, AntiMatterModRegistry.tabMachines, 2, 5f, 5f);
 	public static final Block machinehull = BlockUtil.CreateBlock("machinehull", "casing/machinehull_01", Material.rock, AntiMatterModRegistry.tabMachines, 2, 5f, 5f);
-	
+
+
 	//インゴット系圧縮ブロック
 	public static final Block tiamiteblock = BlockUtil.CreateBlock("tiamiteblock", "compressedblock/tiamiteblock", Material.rock, AntiMatterModRegistry.tabCompressedBlocks, 1, 5f, 5f);
 	public static final Block ingotblock_01 = BlockUtil.CreateBlock("ingotblock_01", "compressedblock/ingotblock_01", Material.rock, AntiMatterModRegistry.tabCompressedBlocks, 16, 5f, 5f);
@@ -273,8 +274,8 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerBlock(furnaceGenerator, "furnaceGeneratorAP");
 		GameRegistry.registerBlock(cable, CableItemBlock.class, "Cable");
 		GameRegistry.registerBlock(satStove, "satStove");
-		GameRegistry.registerBlock(machinecasing, "machinecasing");
-		GameRegistry.registerBlock(machinehull, "machinehull");
+		GameRegistry.registerBlock(machinecasing, MetaItemBlock.class, "machinecasing");
+		GameRegistry.registerBlock(machinehull, MetaItemBlock.class, "machinehull");
 		//その他
 		GameRegistry.registerBlock(soilBlock, "soilBlock");
 		//鉱石ブロック
