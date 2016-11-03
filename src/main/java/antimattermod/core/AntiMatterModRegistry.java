@@ -51,6 +51,7 @@ import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraft.world.gen.structure.MapGenStructureIO;
 import net.minecraftforge.common.ChestGenHooks;
 import net.minecraftforge.common.MinecraftForge;
+import test.ExplosionTestBlock;
 
 import static antimattermod.core.AntiMatterModCore.proxy;
 
@@ -201,6 +202,8 @@ public class AntiMatterModRegistry {
 	public static final Block clayCrucible = new ClayCrucible();
 	public static final Block clayCrucibleHeater = new ClayCrucibleHeater();
 	
+	//テスト
+	public static final Block explosionTestBlock = new ExplosionTestBlock();
 	
 	//==================================================================================================================
 	
@@ -284,6 +287,8 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerBlock(clayCrucible, "clayCrucible");
 		GameRegistry.registerBlock(clayCrucibleHeater, "clayCrucibleHeater");
 		
+		//テスト
+		GameRegistry.registerBlock(explosionTestBlock, "explosionTestBlock");
 		
 		//Renderの登録 =================================================================================================
 		proxy.registerRenderThings();
