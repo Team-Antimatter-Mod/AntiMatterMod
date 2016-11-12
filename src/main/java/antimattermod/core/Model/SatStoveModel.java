@@ -279,11 +279,48 @@ public class SatStoveModel extends ModelBase {
         Ingot.render(f5);
     }
 
+
+
     private void setRotation(ModelRenderer model, float x, float y, float z)
     {
         model.rotateAngleX = x;
         model.rotateAngleY = y;
         model.rotateAngleZ = z;
+    }
+
+    public void renderModel(float f){
+        Shape1.render(f);
+        FireWood1.render(f);
+        FireWood2.render(f);
+        FireWood3.render(f);
+        FireWood4.render(f);
+        FireWood5.render(f);
+        FireWood6.render(f);
+        FireWood7.render(f);
+        FireWood8.render(f);
+        Shape3.render(f);
+        Shape4.render(f);
+        Shape5.render(f);
+        Shape6.render(f);
+        Shape7.render(f);
+        Shape8.render(f);
+        Shape9.render(f);
+        Shape10.render(f);
+        Shape11.render(f);
+        Shape12.render(f);
+        Shape13.render(f);
+        Shape14.render(f);
+        Shape15.render(f);
+        Shape16.render(f);
+        Shape17.render(f);
+        Shape18.render(f);
+        Shape19.render(f);
+        Shape20.render(f);
+        Shape21.render(f);
+        Shape22.render(f);
+        Shape23.render(f);
+        Shape24.render(f);
+        Ingot.render(f);
     }
 
     public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5,Entity entity)
