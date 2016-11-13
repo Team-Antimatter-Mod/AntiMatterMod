@@ -201,16 +201,16 @@ public class RecipeRegister {
 				'E', new ItemStack(AntiMatterModRegistry.motorparts_01, 1, 0), 'F', new ItemStack(AntiMatterModRegistry.motorparts_01, 1, 1)));
 		
 		//ハンマー
-		GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.hammer_01, 1, 0), " AA", "BBC", " AA",
-				'A', OreDictionaryRegister.ingotIron, 'B', Items.stick, 'C', Blocks.iron_block));
+		GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.hammer_01, 1, 0), " AA", "BDC", " AA",
+				'A', OreDictionaryRegister.ingotIron, 'B', Items.stick, 'C', Blocks.iron_block, 'D', new ItemStack(AntiMatterModRegistry.ingot_01, 0, 2)));
 		
 		//レンチ
 		GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.wrench_01, 1, 0), "ABA", "ACA", " A ",
 				'A', OreDictionaryRegister.plateIron, 'B', OreDictionaryRegister.craftingToolHardHammer, 'C', new ItemStack(AntiMatterModRegistry.plate_01, 1, 1)));
 		
 		//ヤスリ
-		GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.file_01, 1, 0), "  A", "BA ", "C  ",
-				'A', OreDictionaryRegister.plateIron, 'B', OreDictionaryRegister.craftingToolHardHammer, 'C', OreDictionaryRegister.stickWood));
+		GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.file_01, 1, 0), "  A", "BD ", "C  ",
+				'A', OreDictionaryRegister.plateIron, 'B', OreDictionaryRegister.craftingToolHardHammer, 'C', OreDictionaryRegister.stickWood, 'D', new ItemStack(AntiMatterModRegistry.plate_01, 0, 5)));
 		
 		
 		//ワイヤーカッター
@@ -220,9 +220,9 @@ public class RecipeRegister {
 				'E', OreDictionaryRegister.craftingToolWrench, 'F', OreDictionaryRegister.stickWood));
 		
 		//ドライバー
-		GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.screwdriver_01, 1, 0), " AB", "CBD", "CC ",
+		GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.screwdriver_01, 1, 0), " AB", "CBD", "EC ",
 				'A', OreDictionaryRegister.craftingToolHardHammer, 'B', OreDictionaryRegister.stickIron,
-				'C', OreDictionaryRegister.plateIron, 'D', OreDictionaryRegister.craftingToolFile));
+				'C', OreDictionaryRegister.plateIron, 'D', OreDictionaryRegister.craftingToolFile, 'E', new ItemStack(AntiMatterModRegistry.plate_01,0,6)));
 		
 		
 		//バケツ
