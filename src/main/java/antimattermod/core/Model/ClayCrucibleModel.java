@@ -4,20 +4,20 @@ import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-import java.awt.*;
-
 /**
- * Created by Raiti on 2016/10/15.
+ * Created by Raiti-chan on 2016/10/15.
+ * 粘土るつぼのモデル
+ * @author Raiti-chan
  */
 public class ClayCrucibleModel extends ModelBase {
 	
-	ModelRenderer Shape1;
-	ModelRenderer Shape2;
-	ModelRenderer Shape3;
-	ModelRenderer Shape4;
-	ModelRenderer Shape5;
+	private ModelRenderer Shape1;
+	private ModelRenderer Shape2;
+	private ModelRenderer Shape3;
+	private ModelRenderer Shape4;
+	private ModelRenderer Shape5;
 	
-	public ClayCrucibleModel(){
+	public ClayCrucibleModel() {
 		textureWidth = 64;
 		textureHeight = 32;
 		
@@ -57,10 +57,9 @@ public class ClayCrucibleModel extends ModelBase {
 		setRotation(Shape5, 0F, 0F, 0F);
 	}
 	
-	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
-	{
+	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 		super.render(entity, f, f1, f2, f3, f4, f5);
-		setRotationAngles(f, f1, f2, f3, f4, f5,entity);
+		setRotationAngles(f, f1, f2, f3, f4, f5, entity);
 		Shape1.render(f5);
 		Shape2.render(f5);
 		Shape3.render(f5);
@@ -68,7 +67,7 @@ public class ClayCrucibleModel extends ModelBase {
 		Shape5.render(f5);
 	}
 	
-	public void renderModel(float f){
+	public void renderModel(float f) {
 		Shape1.render(f);
 		Shape2.render(f);
 		Shape3.render(f);
@@ -77,16 +76,13 @@ public class ClayCrucibleModel extends ModelBase {
 	}
 	
 	
-	
-	private void setRotation(ModelRenderer model, float x, float y, float z)
-	{
+	private void setRotation(ModelRenderer model, float x, float y, float z) {
 		model.rotateAngleX = x;
 		model.rotateAngleY = y;
 		model.rotateAngleZ = z;
 	}
 	
-	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity)
-	{
-		super.setRotationAngles(f, f1, f2, f3, f4, f5,entity);
+	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity) {
+		super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
 	}
 }
