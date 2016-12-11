@@ -1,6 +1,7 @@
 package antimattermod.core.Energy
 
 import antimattermod.core.Util.BlockPos
+import antimattermod.core.Util.QuickSort
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.nbt.NBTTagList
 import net.minecraft.tileentity.TileEntity
@@ -41,18 +42,36 @@ class EnergyNetworkGlobal : WorldSavedData(DATA_NAME) {
         //リクエストの処理
         for (node in energyRequest){
             val receiver = node.getTargetPos()
-            var pos = BlockPos(0,0,0)
-            var distance :Double = 0.0
-            //2つの直線距離が一番近いのを探す
-            for (network in getEnergyNetwork(receiver)){
-                for (provider in network.getProviders()){
-                    val dist = provider.getDistance(receiver)
-                    if(distance == 0.0 || dist < distance){
-                        distance = dist
-                        pos = provider
+            val pos = node.getSource()
+            //✗2つの直線距離が一番近いのを探す
+            //○距離でソートするためにとりあえず距離を求める
+            val distances = HashMap<Double,BlockPos>()
+            getEnergyNetwork(receiver)
+                    .flatMap { it.getProviders() }
+                    .forEach {
+                        var dist = it.getDistance(pos)
+                        while (distances.containsKey(dist)){
+                            dist *= 1.0000000001
+                        }
+                    }
+            //クイックソート
+            val sort = QuickSort()
+            val sortedDistances :Array<Double> = sort.quickSort(distances.keys.toDoubleArray().toTypedArray())
+            var sentEnergy = node.getEnergyValue()
+            var i = 0
+            while (sentEnergy > 0){
+                val sender = distances[sortedDistances[i]]?.getTileEntityFromPos(world)
+                if(sender is IAPProvider){
+                    sentEnergy = sender.useEnergy(sentEnergy)
+                    var energyNode :EnergyNode? = null
+                    if (sender.voltage.maxEnergy > node.getVoltage().maxEnergy){
+                        //energyNode = EnergyNode(node.getVoltage(),node.getEnergyValue() - sentEnergy,pos,)
+                    }else{
+
                     }
                 }
             }
+
             energyProvide.add(EnergyNode(node.getVoltage(),node.getEnergyValue(),pos,node.getTargetPos()))
         }
         //輸送処理
