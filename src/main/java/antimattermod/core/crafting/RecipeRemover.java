@@ -42,7 +42,7 @@ public class RecipeRemover {
     public  static  void removeRecipe(Item item,int meta){
         List<IRecipe> recipes = CraftingManager.getInstance().getRecipeList();//全レシピを取得
 	    Iterator<IRecipe> remover = recipes.iterator();//レシピリストのイテレーター取得
-	    
+
 	    while (remover.hasNext()){
             ItemStack outItem = remover.next().getRecipeOutput();
             if(outItem != null && outItem.getItem() == item && outItem.getItemDamage() == meta){
@@ -50,17 +50,17 @@ public class RecipeRemover {
             }
         }
     }
-    
+
     @SuppressWarnings("unchecked")
     public static void removeShapedRecipe(ItemStack itemStack,Object ... par){
-	
+
 	    Object[] itemStacks;
 	    {//ItemStackの配列の生成
 		    String s = new String();
 		    int i = 0;
 		    int j = 0;
 		    int k = 0;
-		
+
 		    if (par[i] instanceof String[]) {
 			    String[] astring = (String[]) ((String[]) par[i++]);
 			    for (int l = 0; l < astring.length; ++l) {
@@ -77,7 +77,7 @@ public class RecipeRemover {
 				    s = s + s2;
 			    }
 		    }
-		
+
 		    HashMap<Character, Object> hashMap = new HashMap<>();
 		    for (; i < par.length; i += 2) {
 			    if (!(par[i] instanceof Character)) throw new IllegalArgumentException("パラメータがcharではありません");
@@ -95,9 +95,9 @@ public class RecipeRemover {
 			    }else throw new IllegalArgumentException("パラメーターBがItem、Block、ItemStack、String、OreDictionaryRegisterのどれかではありません");
 			    hashMap.put(character, itemStack1);
 		    }
-		
+
 		    itemStacks = new Object[j * k];
-		
+
 		    for (i = 0; i < j * k; i++) {
 			    char c = s.charAt(i);
 			    if (hashMap.containsKey(Character.valueOf(c))) {
@@ -112,10 +112,10 @@ public class RecipeRemover {
 			    }
 		    }
 	    }
-	
+
 	    List<IRecipe> recipes = CraftingManager.getInstance().getRecipeList();//全レシピを取得
 	    Iterator<IRecipe> remover = recipes.iterator();//レシピリストのイテレーター取得
-	
+
 	    a:while (remover.hasNext()){
 		    IRecipe iRecipe = remover.next();
 		    if (iRecipe instanceof ShapedRecipes) {
@@ -123,7 +123,7 @@ public class RecipeRemover {
 			    ItemStack outItem = recipe.getRecipeOutput();
 			    if (outItem != null && outItem.isItemEqual(itemStack)) {
 				    if (itemStacks.length != recipe.recipeItems.length) continue a;
-				
+
 				    for (int i = 0; i < itemStacks.length; i++) {
 					    if(!(itemStacks[i] instanceof ItemStack)) continue a;
 					    if (!((ItemStack)itemStacks[i]).isItemEqual(recipe.recipeItems[i])) continue a;
@@ -146,7 +146,7 @@ public class RecipeRemover {
 			    }
 		    }
 	    }
-	    
+
     }
 
 }

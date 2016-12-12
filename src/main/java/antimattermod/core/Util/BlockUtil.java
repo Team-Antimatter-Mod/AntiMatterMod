@@ -14,7 +14,7 @@ import org.jetbrains.annotations.Nullable;
  * 無機能なブロックを簡易追加する関数クラス
  */
 public class BlockUtil {
-    
+
     /**
      * 無機能なブロックを追加します
      * @param name ブロック名
@@ -36,7 +36,7 @@ public class BlockUtil {
         block.setBlockTextureName(textureName);
         return block;
     }
-    
+
     /**
      * 無機能なメタデータ持ちブロックを追加します。
      * メタ値による硬さ、耐爆値の変更はできません
@@ -61,7 +61,5 @@ public class BlockUtil {
         textureName = AntiMatterModCore.MOD_ID + ":" + textureName;
         block.setBlockTextureName(textureName);
         return block;
-        
-        
     }
 }

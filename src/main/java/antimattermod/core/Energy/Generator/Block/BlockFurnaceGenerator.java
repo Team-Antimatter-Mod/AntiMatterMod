@@ -4,18 +4,14 @@ import antimattermod.core.AntiMatterModCore;
 import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Energy.APVoltage;
 import antimattermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
-import antimattermod.core.Energy.IAPGenerator;
-import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
@@ -25,7 +21,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 /**
  * @author C6H2Cl2
  */
-public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerator{
+public class BlockFurnaceGenerator extends BlockContainer{
     //定数
     private APVoltage voltage = APVoltage.HV;
     private int energyStorage = voltage.getMaxEnergy() * 20 * 600;
@@ -47,7 +43,7 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
         setHarvestLevel("pickaxe",3);
         setCreativeTab(AntiMatterModRegistry.tabMachines);
     }
-
+/*
     @Override
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_) {
         if(player.getHeldItem() == null){
@@ -77,7 +73,7 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
         }
         
         return true;
-    }
+    }*/
     
     @Override
     @SideOnly(Side.CLIENT)
@@ -115,56 +111,5 @@ public class BlockFurnaceGenerator extends BlockContainer implements IAPGenerato
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
         return new TileEntityFurnaceGenerator();
-    }
-
-    @Override
-    public int getMaxStoreEnergy() {
-        return energyStorage;
-    }
-
-    @Override
-    public boolean canSendEnergy() {
-        return true;
-    }
-
-    @Override
-    public boolean canReceiveEnergy() {
-        return false;
-    }
-
-    @Override
-    public APVoltage getSendVoltage() {
-        return voltage;
-    }
-
-    @Override
-    public APVoltage getReceiveVoltage() {
-        return APVoltage.ZeroVoltage;
-    }
-
-    @Override
-    public int getStoredEnergy() {
-        return 0;
-    }
-
-    //BlockからIAPGeneratorのメソッドは呼ばないこと！
-    @Override
-    public float getMaxFuelValue() {
-        return 0;
-    }
-
-    @Override
-    public float getFuelValue() {
-        return 0;
-    }
-
-    @Override
-    public int getCurrentGenerate() {
-        return 0;
-    }
-
-    @Override
-    public boolean isFuelMax() {
-        return false;
     }
 }

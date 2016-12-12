@@ -12,8 +12,7 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
-        classpath 'org.jetbrains:annotations:13.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.5-2'
     }
 }
 
@@ -24,14 +23,10 @@ tasks.withType(Jar) {
     compileJava.options.encoding = 'UTF-8'
     compileJava.options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
 }
-//noinspection GroovyUnusedAssignment
-sourceCompatibility = "1.8"
-//noinspection GroovyUnusedAssignment
-targetCompatibility = "1.8"
+sourceCompatibility = targetCompatibility = "1.8"
 
 version = "1.0.0"
-group= "TeamAntimatterMod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-//noinspection GroovyUnusedAssignment
+group= "TeamAntimatterMod"
 archivesBaseName = "AntimatterMod-Core"
 
 minecraft {
@@ -46,15 +41,14 @@ configurations {
 
 dependencies {
     compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
-    embed 'org.jetbrains:annotations:13.0'
-    embed 'org.jetbrains.kotlin:kotlin-stdlib:0.12.613'
-
     compile fileTree(dir: 'libs', include: '*.jar')
-
 }
 
 jar {
-    from configurations.embed.collect { it.isDirectory() ? it : zipTree(it) }
+    manifest {
+        attributes 'FMLCorePlugin': 'antimattermod.core.ASM.AMMCoreASMPlugin',
+                'FMLCorePluginContainsFMLMod': 'true'
+    }
 }
 
 processResources

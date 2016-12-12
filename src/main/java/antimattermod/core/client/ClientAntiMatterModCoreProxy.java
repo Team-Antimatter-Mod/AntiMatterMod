@@ -54,7 +54,7 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 
 		//土かまどレンダー
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySatStove.class,new SatStoveSpecialRender());
-		
+
 		//ケーブルレンダ―
 		TileEntitySpecialRenderer cableRender = new CableRender();
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCable.class,cableRender);

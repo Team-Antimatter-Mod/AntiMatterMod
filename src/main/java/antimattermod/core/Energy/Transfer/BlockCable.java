@@ -2,6 +2,7 @@ package antimattermod.core.Energy.Transfer;
 
 import antimattermod.core.AntiMatterModCore;
 import antimattermod.core.AntiMatterModRegistry;
+import antimattermod.core.Energy.APVoltage;
 import antimattermod.core.Energy.IAPMachine;
 import antimattermod.core.Util.BlockPos;
 import net.minecraft.block.BlockContainer;
@@ -61,6 +62,6 @@ public class BlockCable extends BlockContainer {
     //Entityの作成
     @Override
     public TileEntity createNewTileEntity(World var1,int var2){
-        return new TileEntityCable();
+        return new TileEntityCable(APVoltage.HV);
     }
 }

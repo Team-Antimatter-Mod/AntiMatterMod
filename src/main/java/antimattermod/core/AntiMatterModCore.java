@@ -19,7 +19,7 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
  * @author Raiti, C6H2Cl2
  * @version 1.0.0
  */
-@Mod(modid = AntiMatterModCore.MOD_ID,useMetadata = true,dependencies = "required-after:Forge@[10.13.4.1558,)")
+@Mod(modid = AntiMatterModCore.MOD_ID,useMetadata = true,dependencies = "required-after:Forge@[10.13.4.1558,);required-after:YukariLib@[1.0.1-1.7.10,)")
 public class AntiMatterModCore {
 
 	public static final String MOD_ID = "AntiMatterModCore";
@@ -30,14 +30,17 @@ public class AntiMatterModCore {
 	public static ModMetadata modMetadata;
 	@SidedProxy(clientSide = "antimattermod.core.client.ClientAntiMatterModCoreProxy", serverSide = "antimattermod.core.common.AntiMatterModCoreProxy")
 	public static AntiMatterModCoreProxy proxy;
-	
+
+	@Mod.Instance(MOD_ID)
+	public static AntiMatterModCore INSTANCE;
+
 	@Mod.EventHandler
 	@SuppressWarnings("unused")
 	public void preinit(FMLPreInitializationEvent event) {
 		loadMeta(modMetadata);
         AntiMatterModRegistry.registerPreInit(event);
 		OreDictionaryRegister.OreDictionaryRegisterPreInit(event);
-		
+
 	}
 	
 	@Mod.EventHandler
@@ -61,7 +64,7 @@ public class AntiMatterModCore {
 	public void serverStarting(FMLServerStartingEvent event){
 		event.registerServerCommand(new ExclusiveDeleteBlock());
 		event.registerServerCommand(new Createsphere());
-		
+
 	}
 	
 	

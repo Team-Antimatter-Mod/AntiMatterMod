@@ -8,14 +8,13 @@ import cpw.mods.fml.relauncher.SideOnly
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.network.NetworkManager
 import net.minecraft.network.Packet
-import net.minecraft.network.play.server.S25PacketBlockBreakAnim
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity
 import net.minecraft.tileentity.TileEntity
 
 /**
  * @author C6H2Cl2
  */
-class TileEntityFurnaceGenerator : TileEntity(), IAPGenerator {
+class TileEntityFurnaceGenerator : TileEntity(){
 
     //定数
     private val voltage : APVoltage = APVoltage.HV
@@ -88,7 +87,7 @@ class TileEntityFurnaceGenerator : TileEntity(), IAPGenerator {
         return S35PacketUpdateTileEntity(xCoord,yCoord,zCoord,1,tagCompound)
     }
 
-    override fun getStoredEnergy(): Int {
+    /*override fun getStoredEnergy(): Int {
         return storedEnergy
     }
     //Interfaceの実装
@@ -126,5 +125,5 @@ class TileEntityFurnaceGenerator : TileEntity(), IAPGenerator {
 
     override fun getMaxFuelValue(): Float {
         return maxFuel
-    }
+    }*/
 }
