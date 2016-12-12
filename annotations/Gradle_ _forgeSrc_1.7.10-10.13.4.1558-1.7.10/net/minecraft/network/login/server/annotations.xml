@@ -1,0 +1,38 @@
+<root>
+    <item name='net.minecraft.network.login.server.S00PacketDisconnect void processPacket(net.minecraft.network.login.INetHandlerLoginClient) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.login.server.S02PacketLoginSuccess void processPacket(net.minecraft.network.login.INetHandlerLoginClient) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.login.server.S01PacketEncryptionRequest void processPacket(net.minecraft.network.INetHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.login.server.S00PacketDisconnect void processPacket(net.minecraft.network.INetHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.login.server.S02PacketLoginSuccess void processPacket(net.minecraft.network.INetHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.login.server.S01PacketEncryptionRequest void processPacket(net.minecraft.network.login.INetHandlerLoginClient) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.login.server.S02PacketLoginSuccess void readPacketData(net.minecraft.network.PacketBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.login.server.S00PacketDisconnect void readPacketData(net.minecraft.network.PacketBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.login.server.S01PacketEncryptionRequest void readPacketData(net.minecraft.network.PacketBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.login.server.S01PacketEncryptionRequest void writePacketData(net.minecraft.network.PacketBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.login.server.S00PacketDisconnect void writePacketData(net.minecraft.network.PacketBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.login.server.S02PacketLoginSuccess void writePacketData(net.minecraft.network.PacketBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

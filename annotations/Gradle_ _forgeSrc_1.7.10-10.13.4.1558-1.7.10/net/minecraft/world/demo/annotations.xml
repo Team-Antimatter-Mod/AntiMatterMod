@@ -1,0 +1,14 @@
+<root>
+    <item name='net.minecraft.world.demo.DemoWorldServer DemoWorldServer(net.minecraft.server.MinecraftServer, net.minecraft.world.storage.ISaveHandler, java.lang.String, int, net.minecraft.profiler.Profiler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.demo.DemoWorldServer demoWorldSettings'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.demo.DemoWorldManager boolean tryUseItem(net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, net.minecraft.item.ItemStack) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

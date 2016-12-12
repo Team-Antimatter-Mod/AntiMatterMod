@@ -1,0 +1,14 @@
+<root>
+    <item name='net.minecraft.network.handshake.client.C00Handshake void writePacketData(net.minecraft.network.PacketBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.handshake.client.C00Handshake void processPacket(net.minecraft.network.INetHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.handshake.client.C00Handshake void readPacketData(net.minecraft.network.PacketBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.handshake.client.C00Handshake void processPacket(net.minecraft.network.handshake.INetHandlerHandshakeServer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

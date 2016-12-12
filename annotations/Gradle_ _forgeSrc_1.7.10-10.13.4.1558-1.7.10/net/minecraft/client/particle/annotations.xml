@@ -1,0 +1,155 @@
+<root>
+    <item name='net.minecraft.client.particle.EntityFX void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.particle.EntityFX net.minecraft.client.particle.EntityFX multiplyVelocity(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityDiggingFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EffectRenderer void renderParticles(net.minecraft.entity.Entity, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityDiggingFX EntityDiggingFX(net.minecraft.world.World, double, double, double, double, double, double, net.minecraft.block.Block, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntitySmokeFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityLavaFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityPortalFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EffectRenderer void addEffect(net.minecraft.client.particle.EntityFX) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityCloudFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityCrit2FX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.particle.EntityBlockDustFX EntityBlockDustFX(net.minecraft.world.World, double, double, double, double, double, double, net.minecraft.block.Block, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityBreakingFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityBreakingFX EntityBreakingFX(net.minecraft.world.World, double, double, double, net.minecraft.item.Item, int) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityNoteFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityLargeExplodeFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.particle.EffectRenderer void addBlockDestroyEffects(int, int, int, net.minecraft.block.Block, int) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityCrit2FX EntityCrit2FX(net.minecraft.world.World, net.minecraft.entity.Entity, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityBreakingFX EntityBreakingFX(net.minecraft.world.World, double, double, double, double, double, double, net.minecraft.item.Item, int) 7'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityFootStepFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityDiggingFX EntityDiggingFX(net.minecraft.world.World, double, double, double, double, double, double, net.minecraft.block.Block, int) 7'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityDiggingFX net.minecraft.client.particle.EntityDiggingFX applyColourMultiplier(int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityCrit2FX EntityCrit2FX(net.minecraft.world.World, net.minecraft.entity.Entity) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityDiggingFX net.minecraft.client.particle.EntityDiggingFX applyRenderColor(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EffectRenderer void renderLitParticles(net.minecraft.entity.Entity, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityPickupFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.particle.EntityReddustFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityPickupFX EntityPickupFX(net.minecraft.world.World, net.minecraft.entity.Entity, net.minecraft.entity.Entity, float) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityBreakingFX EntityBreakingFX(net.minecraft.world.World, double, double, double, net.minecraft.item.Item) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityFX void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.particle.EntityHeartFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntitySnowShovelFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityFX net.minecraft.client.particle.EntityFX multipleParticleScaleBy(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityCritFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityFireworkSparkFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.particle.EntitySpellParticleFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityHugeExplodeFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.particle.EntityDiggingFX EntityDiggingFX(net.minecraft.world.World, double, double, double, double, double, double, net.minecraft.block.Block, int, int) 7'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityFlameFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityBlockDustFX EntityBlockDustFX(net.minecraft.world.World, double, double, double, double, double, double, net.minecraft.block.Block, int) 7'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityFireworkOverlayFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityFireworkStarterFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

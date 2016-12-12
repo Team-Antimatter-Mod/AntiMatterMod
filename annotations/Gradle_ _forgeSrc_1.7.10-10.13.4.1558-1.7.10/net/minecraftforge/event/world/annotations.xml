@@ -1,0 +1,116 @@
+<root>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent void setNote(net.minecraftforge.event.world.NoteBlockEvent.Note, net.minecraftforge.event.world.NoteBlockEvent.Octave) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Note F_SHARP'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Note G_SHARP'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Note C_SHARP'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Note D_SHARP'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.WorldEvent.PotentialSpawns list'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.BlockEvent.MultiPlaceEvent MultiPlaceEvent(java.util.List&lt;net.minecraftforge.common.util.BlockSnapshot&gt;, net.minecraft.block.Block, net.minecraft.entity.player.EntityPlayer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Change oldOctave'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Instrument SNARE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.ChunkDataEvent.Load Load(net.minecraft.world.chunk.Chunk, net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.ChunkEvent net.minecraft.world.chunk.Chunk getChunk()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.ChunkEvent.Unload Unload(net.minecraft.world.chunk.Chunk) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Note E'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Note G'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Note A'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.ChunkEvent ChunkEvent(net.minecraft.world.chunk.Chunk) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Note C'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent void setNote(net.minecraftforge.event.world.NoteBlockEvent.Note, net.minecraftforge.event.world.NoteBlockEvent.Octave) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Octave MID'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.ChunkDataEvent.Save Save(net.minecraft.world.chunk.Chunk, net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.ChunkEvent.Load Load(net.minecraft.world.chunk.Chunk) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Octave LOW'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Instrument PIANO'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.BlockEvent.MultiPlaceEvent MultiPlaceEvent(java.util.List&lt;net.minecraftforge.common.util.BlockSnapshot&gt;, net.minecraft.block.Block, net.minecraft.entity.player.EntityPlayer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.BlockEvent.PlaceEvent PlaceEvent(net.minecraftforge.common.util.BlockSnapshot, net.minecraft.block.Block, net.minecraft.entity.player.EntityPlayer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Instrument CLICKS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Octave HIGH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.ChunkDataEvent ChunkDataEvent(net.minecraft.world.chunk.Chunk, net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Note A_SHARP'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.BlockEvent.PlaceEvent PlaceEvent(net.minecraftforge.common.util.BlockSnapshot, net.minecraft.block.Block, net.minecraft.entity.player.EntityPlayer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent net.minecraftforge.event.world.NoteBlockEvent.Octave getOctave()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Instrument BASSDRUM'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Instrument BASSGUITAR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Note D'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Note F'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.BlockEvent.PlaceEvent player'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.BlockEvent.PlaceEvent blockSnapshot'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent.Note B'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

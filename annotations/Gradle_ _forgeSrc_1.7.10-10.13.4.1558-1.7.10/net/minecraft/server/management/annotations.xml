@@ -1,0 +1,359 @@
+<root>
+    <item name='net.minecraft.server.management.ServerConfigurationManager playerEntityList'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager java.lang.String allowUserToConnect(java.net.SocketAddress, com.mojang.authlib.GameProfile) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void transferPlayerToDimension(net.minecraft.entity.player.EntityPlayerMP, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PreYggdrasilConverter field_152731_d'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PreYggdrasilConverter boolean func_152723_a(net.minecraft.server.dedicated.DedicatedServer, net.minecraft.server.dedicated.PropertyManager) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void sendChatMsgImpl(net.minecraft.util.IChatComponent, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void transferEntityToWorld(net.minecraft.entity.Entity, int, net.minecraft.world.WorldServer, net.minecraft.world.WorldServer, net.minecraft.world.Teleporter) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PlayerPositionComparator int compare(net.minecraft.entity.player.EntityPlayerMP, net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListOps java.lang.String func_152681_a(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserList java.lang.String[] func_152685_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.management.UserList boolean func_152692_d(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void updatePlayerPertinentChunks(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void updateTimeAndWeatherForPlayer(net.minecraft.entity.player.EntityPlayerMP, net.minecraft.world.WorldServer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListWhitelistEntry void func_152641_a(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.management.LowerStringMap void putAll(java.util.Map) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserList void func_152687_a(net.minecraft.server.management.UserListEntry) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserList net.minecraft.server.management.UserListEntry func_152682_a(com.google.gson.JsonObject)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void writePlayerData(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void transferEntityToWorld(net.minecraft.entity.Entity, int, net.minecraft.world.WorldServer, net.minecraft.world.WorldServer, net.minecraft.world.Teleporter) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListBans java.lang.String func_152681_a(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListWhitelist java.lang.String func_152681_a(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void transferEntityToWorld(net.minecraft.entity.Entity, int, net.minecraft.world.WorldServer, net.minecraft.world.WorldServer) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ItemInWorldManager boolean tryUseItem(net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, net.minecraft.item.ItemStack) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.entity.player.EntityPlayerMP respawnPlayer(net.minecraft.entity.player.EntityPlayerMP, int, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.server.management.UserListWhitelist func_152599_k()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListBans net.minecraft.server.management.UserListEntry func_152682_a(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.server.management.BanList getBannedIPs()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void updateTimeAndWeatherForPlayer(net.minecraft.entity.player.EntityPlayerMP, net.minecraft.world.WorldServer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager java.lang.String[] func_152606_n()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void transferEntityToWorld(net.minecraft.entity.Entity, int, net.minecraft.world.WorldServer, net.minecraft.world.WorldServer, net.minecraft.world.Teleporter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.LowerStringMap boolean containsKey(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager field_152615_c'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.nbt.NBTTagCompound readPlayerDataFromFile(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PlayerProfileCache void func_152649_a(com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PreYggdrasilConverter field_152728_a'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager field_152613_a'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager java.lang.String[] getAllUsernames()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListOpsEntry void func_152641_a(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.management.UserListWhitelist java.lang.String[] func_152685_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.entity.player.EntityPlayerMP createPlayerForUser(com.mojang.authlib.GameProfile)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void setPlayerManager(net.minecraft.world.WorldServer[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.entity.player.EntityPlayerMP respawnPlayer(net.minecraft.entity.player.EntityPlayerMP, int, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.BanEntry dateFormat'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.LowerStringMap java.lang.Object put(java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.LowerStringMap java.lang.Object put(java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.LowerStringMap java.lang.Object get(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void func_96456_a(net.minecraft.scoreboard.ServerScoreboard, net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserList void func_152684_c(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListOps net.minecraft.server.management.UserListEntry func_152682_a(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.BanList net.minecraft.server.management.UserListEntry func_152682_a(com.google.gson.JsonObject)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PlayerManager void removePlayer(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void sendChatMsg(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PreYggdrasilConverter field_152730_c'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void transferPlayerToDimension(net.minecraft.entity.player.EntityPlayerMP, int, net.minecraft.world.Teleporter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListBans java.lang.String[] func_152685_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void initializeConnectionToPlayer(net.minecraft.network.NetworkManager, net.minecraft.entity.player.EntityPlayerMP, net.minecraft.network.NetHandlerPlayServer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListBansEntry void func_152641_a(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.management.PlayerProfileCache com.mojang.authlib.GameProfile func_152655_a(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PlayerPositionComparator int compare(java.lang.Object, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListBans net.minecraft.server.management.UserListEntry func_152682_a(com.google.gson.JsonObject)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PlayerManager void filterChunkLoadQueue(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserList java.lang.String func_152681_a(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void transferEntityToWorld(net.minecraft.entity.Entity, int, net.minecraft.world.WorldServer, net.minecraft.world.WorldServer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListWhitelist net.minecraft.server.management.UserListEntry func_152682_a(com.google.gson.JsonObject)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void initializeConnectionToPlayer(net.minecraft.network.NetworkManager, net.minecraft.entity.player.EntityPlayerMP, net.minecraft.network.NetHandlerPlayServer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.BanList net.minecraft.server.management.UserListEntry func_152682_a(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.IPBanEntry void func_152641_a(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.management.LowerStringMap java.lang.Object remove(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.BanList boolean func_152708_a(java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.nbt.NBTTagCompound getPlayerNBT(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListOps java.lang.String func_152699_b(com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PlayerPositionComparator int compare(java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager com.mojang.authlib.GameProfile[] func_152600_g()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.IPBanEntry IPBanEntry(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager java.util.List getPlayerList(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListBansEntry UserListBansEntry(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PlayerManager net.minecraft.world.WorldServer getWorldServer()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager java.lang.String[] func_152598_l()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.server.management.UserListBans func_152608_h()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.stats.StatisticsFile func_152602_a(net.minecraft.entity.player.EntityPlayer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.entity.player.EntityPlayerMP createPlayerForUser(com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListOps net.minecraft.server.management.UserListEntry func_152682_a(com.google.gson.JsonObject)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void playerLoggedOut(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void initializeConnectionToPlayer(net.minecraft.network.NetworkManager, net.minecraft.entity.player.EntityPlayerMP, net.minecraft.network.NetHandlerPlayServer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PlayerProfileCache field_152659_a'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PreYggdrasilConverter field_152729_b'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void syncPlayerInventory(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void playerLoggedIn(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.server.management.UserListOps func_152603_m()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void func_72375_a(net.minecraft.entity.player.EntityPlayerMP, net.minecraft.world.WorldServer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager void transferEntityToWorld(net.minecraft.entity.Entity, int, net.minecraft.world.WorldServer, net.minecraft.world.WorldServer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListEntry void func_152641_a(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager field_152616_d'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.BanEntry void func_152641_a(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ItemInWorldManager void setGameType(net.minecraft.world.WorldSettings.GameType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PlayerManager void addPlayer(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager field_152614_b'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListWhitelist net.minecraft.server.management.UserListEntry func_152682_a(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListWhitelistEntry UserListWhitelistEntry(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PlayerManager void updatePlayerPertinentChunks(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserList net.minecraft.server.management.UserListEntry func_152682_a(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.management.UserListBans java.lang.String func_152701_b(com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.BanList net.minecraft.server.management.IPBanEntry func_152709_b(java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListWhitelist java.lang.String func_152704_b(com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PlayerPositionComparator int compare(net.minecraft.entity.player.EntityPlayerMP, net.minecraft.entity.player.EntityPlayerMP) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserList net.minecraft.server.management.UserListEntry func_152683_b(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.stats.StatisticsFile func_152602_a(net.minecraft.entity.player.EntityPlayer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListOps java.lang.String[] func_152685_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.PlayerManager PlayerManager(net.minecraft.world.WorldServer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.BanEntry BanEntry(java.lang.Object, com.google.gson.JsonObject) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.management.UserListOpsEntry UserListOpsEntry(com.google.gson.JsonObject) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

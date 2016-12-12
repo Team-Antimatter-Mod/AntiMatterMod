@@ -1,0 +1,26 @@
+<root>
+    <item name='net.minecraft.network.status.server.S00PacketServerInfo void processPacket(net.minecraft.network.status.INetHandlerStatusClient) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.status.server.S00PacketServerInfo void readPacketData(net.minecraft.network.PacketBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.status.server.S00PacketServerInfo void writePacketData(net.minecraft.network.PacketBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.status.server.S01PacketPong void processPacket(net.minecraft.network.INetHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.status.server.S01PacketPong void readPacketData(net.minecraft.network.PacketBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.status.server.S01PacketPong void processPacket(net.minecraft.network.status.INetHandlerStatusClient) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.status.server.S00PacketServerInfo void processPacket(net.minecraft.network.INetHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.status.server.S01PacketPong void writePacketData(net.minecraft.network.PacketBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

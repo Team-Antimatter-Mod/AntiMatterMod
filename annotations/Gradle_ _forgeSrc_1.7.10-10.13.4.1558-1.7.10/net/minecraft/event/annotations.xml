@@ -1,0 +1,26 @@
+<root>
+    <item name='net.minecraft.event.HoverEvent.Action SHOW_ACHIEVEMENT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.event.ClickEvent.Action TWITCH_USER_INFO'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.event.ClickEvent.Action OPEN_FILE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.event.HoverEvent.Action SHOW_ITEM'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.event.ClickEvent.Action OPEN_URL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.event.HoverEvent.Action SHOW_TEXT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.event.ClickEvent.Action RUN_COMMAND'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.event.ClickEvent.Action SUGGEST_COMMAND'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,14 @@
+<root>
+    <item name='cpw.mods.fml.common.asm.transformers.deobf.FMLRemappingAdapter org.objectweb.asm.MethodVisitor createRemappingMethodAdapter(int, java.lang.String, org.objectweb.asm.MethodVisitor)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper java.lang.String getStaticFieldType(java.lang.String, java.lang.String, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.deobf.LZMAInputSupplier java.io.InputStream openStream()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper INSTANCE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

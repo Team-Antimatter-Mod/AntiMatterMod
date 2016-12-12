@@ -1,0 +1,53 @@
+<root>
+    <item name='net.minecraft.pathfinding.PathEntity net.minecraft.util.Vec3 getVectorFromIndex(net.minecraft.entity.Entity, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.Path net.minecraft.pathfinding.PathPoint addPoint(net.minecraft.pathfinding.PathPoint) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.Path void changeDistance(net.minecraft.pathfinding.PathPoint, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.Path net.minecraft.pathfinding.PathPoint addPoint(net.minecraft.pathfinding.PathPoint)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.PathPoint float distanceTo(net.minecraft.pathfinding.PathPoint) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.PathEntity net.minecraft.util.Vec3 getPosition(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.PathPoint float distanceToSquared(net.minecraft.pathfinding.PathPoint) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.PathFinder net.minecraft.pathfinding.PathEntity createEntityPathTo(net.minecraft.entity.Entity, net.minecraft.entity.Entity, float) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.PathFinder net.minecraft.pathfinding.PathEntity createEntityPathTo(net.minecraft.entity.Entity, net.minecraft.entity.Entity, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.PathFinder int func_82565_a(net.minecraft.entity.Entity, int, int, int, net.minecraft.pathfinding.PathPoint, boolean, boolean, boolean) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.PathEntity net.minecraft.util.Vec3 getPosition(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.PathFinder net.minecraft.pathfinding.PathEntity createEntityPathTo(net.minecraft.entity.Entity, int, int, int, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.PathEntity PathEntity(net.minecraft.pathfinding.PathPoint[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.Path net.minecraft.pathfinding.PathPoint dequeue()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.PathEntity net.minecraft.util.Vec3 getVectorFromIndex(net.minecraft.entity.Entity, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.PathNavigate PathNavigate(net.minecraft.entity.EntityLiving, net.minecraft.world.World) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.pathfinding.PathFinder int getVerticalOffset(net.minecraft.entity.Entity, int, int, int, net.minecraft.pathfinding.PathPoint) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

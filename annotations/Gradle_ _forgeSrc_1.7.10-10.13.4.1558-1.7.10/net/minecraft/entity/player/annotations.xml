@@ -1,0 +1,365 @@
+<root>
+    <item name='net.minecraft.entity.player.EntityPlayer.EnumStatus NOT_POSSIBLE_NOW'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.InventoryPlayer java.lang.String getInventoryName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void sendContainerAndContentsToPlayer(net.minecraft.inventory.Container, java.util.List) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer PERSISTED_NBT_TAG'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP mcServer'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP EntityPlayerMP(net.minecraft.server.MinecraftServer, net.minecraft.world.WorldServer, com.mojang.authlib.GameProfile, net.minecraft.server.management.ItemInWorldManager) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getSplashSound()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer net.minecraft.util.ChunkCoordinates verifyRespawnCoordinates(net.minecraft.world.World, net.minecraft.util.ChunkCoordinates, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer.EnumStatus OK'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.InventoryPlayer boolean isItemValidForSlot(int, net.minecraft.item.ItemStack) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void displayGUIHopperMinecart(net.minecraft.entity.item.EntityMinecartHopper) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getHurtSound()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void func_146098_a(net.minecraft.tileentity.TileEntityBrewingStand) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void requestTexturePackLoad(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void func_146093_a(net.minecraft.tileentity.TileEntityHopper) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP EntityPlayerMP(net.minecraft.server.MinecraftServer, net.minecraft.world.WorldServer, com.mojang.authlib.GameProfile, net.minecraft.server.management.ItemInWorldManager) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void func_152339_d(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void func_146098_a(net.minecraft.tileentity.TileEntityBrewingStand) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void onEnchantmentCritical(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer boolean canAttackPlayer(net.minecraft.entity.player.EntityPlayer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void sendContainerToPlayer(net.minecraft.inventory.Container) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void func_147100_a(net.minecraft.network.play.client.C15PacketClientSettings) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void displayGUIHopperMinecart(net.minecraft.entity.item.EntityMinecartHopper) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void onEnchantmentCritical(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP net.minecraft.stats.StatisticsFile func_147099_x()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer net.minecraft.util.IIcon getItemIcon(net.minecraft.item.ItemStack, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void onNewPotionEffect(net.minecraft.potion.PotionEffect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.PlayerCapabilities void readCapabilitiesFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void func_146102_a(net.minecraft.tileentity.TileEntityDispenser) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer.EnumStatus NOT_POSSIBLE_HERE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP theItemInWorldManager'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void updateItemUse(net.minecraft.item.ItemStack, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void onDeath(net.minecraft.util.DamageSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void func_146102_a(net.minecraft.tileentity.TileEntityDispenser) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer com.mojang.authlib.GameProfile getGameProfile()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void func_146101_a(net.minecraft.tileentity.TileEntityFurnace) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void onChangedPotionEffect(net.minecraft.potion.PotionEffect, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void func_146104_a(net.minecraft.tileentity.TileEntityBeacon) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void clonePlayer(net.minecraft.entity.player.EntityPlayer, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.InventoryPlayer void readFromNBT(net.minecraft.nbt.NBTTagList) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer.EnumStatus NOT_SAFE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer net.minecraft.util.IChatComponent func_145748_c_()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer.EnumStatus TOO_FAR_AWAY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP EntityPlayerMP(net.minecraft.server.MinecraftServer, net.minecraft.world.WorldServer, com.mojang.authlib.GameProfile, net.minecraft.server.management.ItemInWorldManager) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void sendContainerAndContentsToPlayer(net.minecraft.inventory.Container, java.util.List) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer.EnumChatVisibility FULL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void displayGUIHorse(net.minecraft.entity.passive.EntityHorse, net.minecraft.inventory.IInventory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.InventoryPlayer void copyInventory(net.minecraft.entity.player.InventoryPlayer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer net.minecraft.util.ChunkCoordinates verifyRespawnCoordinates(net.minecraft.world.World, net.minecraft.util.ChunkCoordinates, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer boolean canHarvestBlock(net.minecraft.block.Block) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.PlayerCapabilities void writeCapabilitiesToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer EntityPlayer(net.minecraft.world.World, com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void onFinishedPotionEffect(net.minecraft.potion.PotionEffect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer.EnumChatVisibility HIDDEN'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void displayGUIHorse(net.minecraft.entity.passive.EntityHorse, net.minecraft.inventory.IInventory) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void displayGUIHorse(net.minecraft.entity.passive.EntityHorse, net.minecraft.inventory.IInventory) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP loadedChunks'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void addChatMessage(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer.EnumChatVisibility SYSTEM'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer.EnumStatus OTHER_PROBLEM'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void displayGUIChest(net.minecraft.inventory.IInventory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void addChatComponentMessage(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void addChatComponentMessage(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void onCriticalHit(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void setGameType(net.minecraft.world.WorldSettings.GameType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void displayGUIChest(net.minecraft.inventory.IInventory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void setGameType(net.minecraft.world.WorldSettings.GameType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void displayGUIMerchant(net.minecraft.entity.IMerchant, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void onCriticalHit(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getDeathSound()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer java.util.UUID func_146094_a(com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer net.minecraft.util.Vec3 getPosition(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP EntityPlayerMP(net.minecraft.server.MinecraftServer, net.minecraft.world.WorldServer, com.mojang.authlib.GameProfile, net.minecraft.server.management.ItemInWorldManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void func_146104_a(net.minecraft.tileentity.TileEntityBeacon) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void onKillEntity(net.minecraft.entity.EntityLivingBase) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void clonePlayer(net.minecraft.entity.player.EntityPlayer, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getSwimSound()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void displayGUIMerchant(net.minecraft.entity.IMerchant, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP boolean canAttackPlayer(net.minecraft.entity.player.EntityPlayer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.InventoryPlayer boolean func_146025_b(net.minecraft.block.Block) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void func_146101_a(net.minecraft.tileentity.TileEntityFurnace) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void onDeath(net.minecraft.util.DamageSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void func_146093_a(net.minecraft.tileentity.TileEntityHopper) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer void displayGUIBook(net.minecraft.item.ItemStack) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void displayGUIHorse(net.minecraft.entity.passive.EntityHorse, net.minecraft.inventory.IInventory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void sendSlotContents(net.minecraft.inventory.Container, int, net.minecraft.item.ItemStack) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void sendProgressBarUpdate(net.minecraft.inventory.Container, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer EntityPlayer(net.minecraft.world.World, com.mojang.authlib.GameProfile) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String func_146067_o(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void onItemPickup(net.minecraft.entity.Entity, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

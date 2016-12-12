@@ -1,0 +1,14 @@
+<root>
+    <item name='cpw.mods.fml.common.patcher.ClassPatchManager byte[] getPatchedResource(java.lang.String, java.lang.String, net.minecraft.launchwrapper.LaunchClassLoader) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.patcher.GenDiffSet void main(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.patcher.ClassPatchManager INSTANCE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.patcher.ClassPatchManager void setup(cpw.mods.fml.relauncher.Side) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

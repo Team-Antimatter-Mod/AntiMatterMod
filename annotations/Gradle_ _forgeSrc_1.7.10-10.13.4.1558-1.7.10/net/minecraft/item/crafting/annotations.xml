@@ -1,0 +1,128 @@
+<root>
+    <item name='net.minecraft.item.crafting.IRecipe boolean matches(net.minecraft.inventory.InventoryCrafting, net.minecraft.world.World) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.item.crafting.CraftingManager net.minecraft.item.ItemStack findMatchingRecipe(net.minecraft.inventory.InventoryCrafting, net.minecraft.world.World) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.ShapedRecipes boolean matches(net.minecraft.inventory.InventoryCrafting, net.minecraft.world.World) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.item.crafting.CraftingManager net.minecraft.item.crafting.ShapedRecipes addRecipe(net.minecraft.item.ItemStack, java.lang.Object...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipeFireworks net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesMapCloning boolean matches(net.minecraft.inventory.InventoryCrafting, net.minecraft.world.World) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesFood void addRecipes(net.minecraft.item.crafting.CraftingManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.ShapelessRecipes boolean matches(net.minecraft.inventory.InventoryCrafting, net.minecraft.world.World) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesDyes void addRecipes(net.minecraft.item.crafting.CraftingManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesMapExtending net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesMapExtending boolean matches(net.minecraft.inventory.InventoryCrafting, net.minecraft.world.World) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.item.crafting.CraftingManager net.minecraft.item.crafting.ShapedRecipes addRecipe(net.minecraft.item.ItemStack, java.lang.Object...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesMapCloning net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.ShapedRecipes net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesTools void addRecipes(net.minecraft.item.crafting.CraftingManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesMapExtending net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.CraftingManager void addShapelessRecipe(net.minecraft.item.ItemStack, java.lang.Object...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.ShapelessRecipes net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipeFireworks boolean matches(net.minecraft.inventory.InventoryCrafting, net.minecraft.world.World) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesArmorDyes net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.FurnaceRecipes float func_151398_b(net.minecraft.item.ItemStack) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipeBookCloning net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.ShapelessRecipes net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesIngots void addRecipes(net.minecraft.item.crafting.CraftingManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.ShapedRecipes net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesCrafting void addRecipes(net.minecraft.item.crafting.CraftingManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.IRecipe net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesWeapons void addRecipes(net.minecraft.item.crafting.CraftingManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.FurnaceRecipes net.minecraft.item.crafting.FurnaceRecipes smelting()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.CraftingManager net.minecraft.item.crafting.CraftingManager getInstance()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.ShapedRecipes net.minecraft.item.crafting.ShapedRecipes func_92100_c()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipeFireworks net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipesArmorDyes boolean matches(net.minecraft.inventory.InventoryCrafting, net.minecraft.world.World) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.crafting.RecipeBookCloning boolean matches(net.minecraft.inventory.InventoryCrafting, net.minecraft.world.World) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

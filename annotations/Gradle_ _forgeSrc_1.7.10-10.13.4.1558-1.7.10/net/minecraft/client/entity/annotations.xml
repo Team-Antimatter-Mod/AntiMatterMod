@@ -1,0 +1,122 @@
+<root>
+    <item name='net.minecraft.client.entity.EntityOtherPlayerMP void addChatMessage(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void displayGUIChest(net.minecraft.inventory.IInventory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityOtherPlayerMP boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void displayGUIHorse(net.minecraft.entity.passive.EntityHorse, net.minecraft.inventory.IInventory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void addChatComponentMessage(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void displayGUIBook(net.minecraft.item.ItemStack) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.AbstractClientPlayer locationStevePng'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void func_146098_a(net.minecraft.tileentity.TileEntityBrewingStand) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP EntityPlayerSP(net.minecraft.client.Minecraft, net.minecraft.world.World, net.minecraft.util.Session, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void func_146093_a(net.minecraft.tileentity.TileEntityHopper) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void onCriticalHit(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void displayGUIHopperMinecart(net.minecraft.entity.item.EntityMinecartHopper) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.AbstractClientPlayer void func_152121_a(com.mojang.authlib.minecraft.MinecraftProfileTexture.Type, net.minecraft.util.ResourceLocation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.AbstractClientPlayer AbstractClientPlayer(net.minecraft.world.World, com.mojang.authlib.GameProfile) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void onEnchantmentCritical(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityClientPlayerMP EntityClientPlayerMP(net.minecraft.client.Minecraft, net.minecraft.world.World, net.minecraft.util.Session, net.minecraft.client.network.NetHandlerPlayClient, net.minecraft.stats.StatFileWriter) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityOtherPlayerMP EntityOtherPlayerMP(net.minecraft.world.World, com.mojang.authlib.GameProfile) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void onItemPickup(net.minecraft.entity.Entity, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.AbstractClientPlayer net.minecraft.client.renderer.ThreadDownloadImageData getDownloadImageSkin(net.minecraft.util.ResourceLocation, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.AbstractClientPlayer net.minecraft.util.ResourceLocation getLocationSkin(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityOtherPlayerMP net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityClientPlayerMP void sendChatMessage(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void displayGUIHorse(net.minecraft.entity.passive.EntityHorse, net.minecraft.inventory.IInventory) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP EntityPlayerSP(net.minecraft.client.Minecraft, net.minecraft.world.World, net.minecraft.util.Session, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void func_146102_a(net.minecraft.tileentity.TileEntityDispenser) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void displayGUIMerchant(net.minecraft.entity.IMerchant, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void addChatMessage(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityClientPlayerMP boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void func_146101_a(net.minecraft.tileentity.TileEntityFurnace) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.entity.EntityOtherPlayerMP EntityOtherPlayerMP(net.minecraft.world.World, com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP void func_146104_a(net.minecraft.tileentity.TileEntityBeacon) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.AbstractClientPlayer AbstractClientPlayer(net.minecraft.world.World, com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityClientPlayerMP EntityClientPlayerMP(net.minecraft.client.Minecraft, net.minecraft.world.World, net.minecraft.util.Session, net.minecraft.client.network.NetHandlerPlayClient, net.minecraft.stats.StatFileWriter) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

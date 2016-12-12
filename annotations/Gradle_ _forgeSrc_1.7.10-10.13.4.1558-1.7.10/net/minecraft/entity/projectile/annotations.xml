@@ -1,0 +1,146 @@
+<root>
+    <item name='net.minecraft.entity.projectile.EntityEgg void onImpact(net.minecraft.util.MovingObjectPosition) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityWitherSkull EntityWitherSkull(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase, double, double, double) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityFireball EntityFireball(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase, double, double, double) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityFishHook EntityFishHook(net.minecraft.world.World, double, double, double, net.minecraft.entity.player.EntityPlayer) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityArrow void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityWitherSkull void onImpact(net.minecraft.util.MovingObjectPosition) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityPotion EntityPotion(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityArrow EntityArrow(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase, net.minecraft.entity.EntityLivingBase, float, float) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityLargeFireball void onImpact(net.minecraft.util.MovingObjectPosition) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityPotion void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityArrow EntityArrow(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase, float) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityWitherSkull boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityLargeFireball void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntitySnowball EntitySnowball(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityThrowable void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityFireball void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityFishHook EntityFishHook(net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityFishHook void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityFireball void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityLargeFireball EntityLargeFireball(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase, double, double, double) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityPotion EntityPotion(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityArrow void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityFishHook void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityThrowable void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntitySmallFireball EntitySmallFireball(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase, double, double, double) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityFireball void onImpact(net.minecraft.util.MovingObjectPosition) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityThrowable void onImpact(net.minecraft.util.MovingObjectPosition) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityPotion void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntitySmallFireball void onImpact(net.minecraft.util.MovingObjectPosition) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityEgg EntityEgg(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityThrowable EntityThrowable(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityLargeFireball void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityArrow EntityArrow(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase, net.minecraft.entity.EntityLivingBase, float, float) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityFireball boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntitySmallFireball boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityPotion void onImpact(net.minecraft.util.MovingObjectPosition) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntityWitherSkull float func_145772_a(net.minecraft.world.Explosion, net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 5'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.projectile.EntitySnowball void onImpact(net.minecraft.util.MovingObjectPosition) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

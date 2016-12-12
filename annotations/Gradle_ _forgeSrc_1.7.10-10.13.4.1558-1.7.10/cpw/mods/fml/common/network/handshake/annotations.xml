@@ -1,0 +1,161 @@
+<root>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage void fromBytes(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeCodec void encodeInto(io.netty.channel.ChannelHandlerContext, java.lang.Object, io.netty.buffer.ByteBuf) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher IS_LOCAL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher cpw.mods.fml.common.network.handshake.NetworkDispatcher allocAndSet(net.minecraft.network.NetworkManager, net.minecraft.server.management.ServerConfigurationManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.ClientHello void fromBytes(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.ModIdData void toBytes(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.ModList void toBytes(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.HandshakeMessageHandler void channelRead0(io.netty.channel.ChannelHandlerContext, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeCodec void decodeInto(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, java.lang.Object) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.ChannelRegistrationHandler void channelRead0(io.netty.channel.ChannelHandlerContext, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.ServerHello void toBytes(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher cpw.mods.fml.common.network.handshake.NetworkDispatcher allocAndSet(net.minecraft.network.NetworkManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher void flush(io.netty.channel.ChannelHandlerContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.HandshakeAck void toBytes(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage cpw.mods.fml.common.network.internal.FMLProxyPacket makeCustomChannelRegistration(java.util.Set&lt;java.lang.String&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage void toBytes(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.IHandshakeState S accept(io.netty.channel.ChannelHandlerContext, cpw.mods.fml.common.network.handshake.FMLHandshakeMessage) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.HandshakeMessageHandler void channelActive(io.netty.channel.ChannelHandlerContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.HandshakeAck void fromBytes(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.HandshakeMessageHandler void channelRead0(io.netty.channel.ChannelHandlerContext, cpw.mods.fml.common.network.handshake.FMLHandshakeMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher void connect(io.netty.channel.ChannelHandlerContext, java.net.SocketAddress, java.net.SocketAddress, io.netty.channel.ChannelPromise) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.HandshakeMessageHandler void channelRead0(io.netty.channel.ChannelHandlerContext, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.ClientHello void toBytes(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.ServerHello void fromBytes(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher void disconnect(io.netty.channel.ChannelHandlerContext, io.netty.channel.ChannelPromise) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher cpw.mods.fml.common.network.handshake.NetworkDispatcher allocAndSet(net.minecraft.network.NetworkManager)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher cpw.mods.fml.common.network.handshake.NetworkDispatcher allocAndSet(net.minecraft.network.NetworkManager, net.minecraft.server.management.ServerConfigurationManager)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher void read(io.netty.channel.ChannelHandlerContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.ModIdData void fromBytes(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher NetworkDispatcher(net.minecraft.network.NetworkManager, net.minecraft.server.management.ServerConfigurationManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher void bind(io.netty.channel.ChannelHandlerContext, java.net.SocketAddress, io.netty.channel.ChannelPromise) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher void write(io.netty.channel.ChannelHandlerContext, java.lang.Object, io.netty.channel.ChannelPromise) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.ChannelRegistrationHandler void channelRead0(io.netty.channel.ChannelHandlerContext, cpw.mods.fml.common.network.internal.FMLProxyPacket) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.ModList ModList(java.util.List&lt;cpw.mods.fml.common.ModContainer&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeCodec void encodeInto(io.netty.channel.ChannelHandlerContext, cpw.mods.fml.common.network.handshake.FMLHandshakeMessage, io.netty.buffer.ByteBuf) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.ModList void fromBytes(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeCodec void decodeInto(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, cpw.mods.fml.common.network.handshake.FMLHandshakeMessage) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.IHandshakeState S accept(io.netty.channel.ChannelHandlerContext, cpw.mods.fml.common.network.handshake.FMLHandshakeMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.HandshakeMessageHandler void userEventTriggered(io.netty.channel.ChannelHandlerContext, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher cpw.mods.fml.common.network.handshake.NetworkDispatcher get(net.minecraft.network.NetworkManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.IHandshakeState S accept(io.netty.channel.ChannelHandlerContext, cpw.mods.fml.common.network.handshake.FMLHandshakeMessage)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher void close(io.netty.channel.ChannelHandlerContext, io.netty.channel.ChannelPromise) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher FML_DISPATCHER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.HandshakeMessageHandler void channelRead0(io.netty.channel.ChannelHandlerContext, cpw.mods.fml.common.network.handshake.FMLHandshakeMessage) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher NetworkDispatcher(net.minecraft.network.NetworkManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher void deregister(io.netty.channel.ChannelHandlerContext, io.netty.channel.ChannelPromise) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.NetworkDispatcher manager'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.ModIdData ModIdData(cpw.mods.fml.common.registry.GameData.GameDataSnapshot) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

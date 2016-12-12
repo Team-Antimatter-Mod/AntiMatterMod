@@ -1,0 +1,35 @@
+<root>
+    <item name='net.minecraft.network.rcon.RConConsoleSource instance'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.rcon.RConOutputStream void writeByteArray(byte[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.rcon.RConThreadQuery RConThreadQuery(net.minecraft.network.rcon.IServer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.rcon.RConConsoleSource net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.rcon.RConConsoleSource java.lang.String getCommandSenderName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.rcon.RConThreadMain RConThreadMain(net.minecraft.network.rcon.IServer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.rcon.RConUtils java.lang.String getBytesAsString(byte[], int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.rcon.RConConsoleSource void addChatMessage(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.rcon.RConConsoleSource net.minecraft.util.IChatComponent func_145748_c_()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.rcon.RConUtils int getRemainingBytesAsLEInt(byte[], int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.rcon.RConUtils java.lang.String getBytesAsString(byte[], int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

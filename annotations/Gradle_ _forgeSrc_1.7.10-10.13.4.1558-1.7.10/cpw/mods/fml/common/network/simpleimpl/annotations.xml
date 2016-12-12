@@ -1,0 +1,32 @@
+<root>
+    <item name='cpw.mods.fml.common.network.simpleimpl.SimpleChannelHandlerWrapper void channelRead0(io.netty.channel.ChannelHandlerContext, REQ) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper void registerMessage(cpw.mods.fml.common.network.simpleimpl.IMessageHandler&lt;? super REQ,? extends REPLY&gt;, java.lang.Class&lt;REQ&gt;, int, cpw.mods.fml.relauncher.Side) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.simpleimpl.SimpleIndexedCodec void encodeInto(io.netty.channel.ChannelHandlerContext, cpw.mods.fml.common.network.simpleimpl.IMessage, io.netty.buffer.ByteBuf) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.simpleimpl.SimpleChannelHandlerWrapper void channelRead0(io.netty.channel.ChannelHandlerContext, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper SimpleNetworkWrapper(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.simpleimpl.SimpleChannelHandlerWrapper SimpleChannelHandlerWrapper(java.lang.Class&lt;? extends cpw.mods.fml.common.network.simpleimpl.IMessageHandler&lt;? super REQ,? extends REPLY&gt;&gt;, cpw.mods.fml.relauncher.Side, java.lang.Class&lt;REQ&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.simpleimpl.SimpleIndexedCodec void encodeInto(io.netty.channel.ChannelHandlerContext, java.lang.Object, io.netty.buffer.ByteBuf) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.simpleimpl.SimpleIndexedCodec void decodeInto(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, cpw.mods.fml.common.network.simpleimpl.IMessage) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.simpleimpl.SimpleIndexedCodec void decodeInto(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, java.lang.Object) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper void registerMessage(java.lang.Class&lt;? extends cpw.mods.fml.common.network.simpleimpl.IMessageHandler&lt;REQ,REPLY&gt;&gt;, java.lang.Class&lt;REQ&gt;, int, cpw.mods.fml.relauncher.Side) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

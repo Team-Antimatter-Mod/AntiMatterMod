@@ -1,0 +1,587 @@
+<root>
+    <item name='net.minecraft.command.server.CommandSetBlock java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandWhitelist java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandDeOp java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPublishLocalServer void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandStop void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandBlockLogic void addChatMessage(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandBlockLogic void func_145757_a(io.netty.buffer.ByteBuf) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandSaveOn void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandTestForBlock void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard java.util.List func_147184_a(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSaveAll void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandAchievement boolean isUsernameIndex(java.lang.String[], int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandListPlayers java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPardonPlayer java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPardonPlayer java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147200_e(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147196_d(net.minecraft.command.ICommandSender) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTeleport java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPardonIp java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTestFor void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPublishLocalServer java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandEmote java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandListBans boolean canCommandSenderUseCommand(net.minecraft.command.ICommandSender) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandStop void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandSaveOn void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBlockLogic void func_145759_b(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSaveAll void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSaveOff void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandSetBlock java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandDeOp java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandEmote java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147187_n(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandNetstat java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSaveAll java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanIp void func_147210_a(net.minecraft.command.ICommandSender, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSetBlock void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanIp boolean canCommandSenderUseCommand(net.minecraft.command.ICommandSender) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandSetBlock void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanIp void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPardonPlayer void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandMessageRaw java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTeleport java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanPlayer void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandMessage java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBroadcast java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSaveOff java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147186_g(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBlockLogic void func_145755_a(net.minecraft.world.World) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSaveOn java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandWhitelist java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTestFor java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPardonIp void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandSetDefaultSpawnpoint void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPublishLocalServer void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanIp java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanIp void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandAchievement java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandAchievement java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanPlayer void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147194_f(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard boolean isUsernameIndex(java.lang.String[], int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandListBans java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandOp java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard net.minecraft.scoreboard.ScoreObjective func_147189_a(java.lang.String, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147186_g(net.minecraft.command.ICommandSender, java.lang.String[], int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBroadcast java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSetDefaultSpawnpoint java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSummon java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandListBans java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSummon java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandMessage java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandBlockLogic void func_145758_a(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSetDefaultSpawnpoint void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandMessage boolean isUsernameIndex(java.lang.String[], int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandListPlayers java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandStop java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSummon java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPardonIp java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTeleport boolean isUsernameIndex(java.lang.String[], int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandSaveAll java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanIp java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTestForBlock java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPublishLocalServer java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTeleport void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanPlayer java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandNetstat void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanPlayer java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandOp java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandOp java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandAchievement java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandMessageRaw java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandDeOp void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandSetBlock java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandEmote void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPardonIp boolean canCommandSenderUseCommand(net.minecraft.command.ICommandSender) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147185_d(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147188_j(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandListPlayers void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandWhitelist java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTestForBlock java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPardonPlayer void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandTeleport void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSaveOn java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPardonPlayer java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147193_c(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandNetstat void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanPlayer boolean canCommandSenderUseCommand(net.minecraft.command.ICommandSender) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandDeOp void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandEmote java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPardonIp void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandEmote void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSummon void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandDeOp java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandWhitelist void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandListPlayers void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandMessageRaw boolean isUsernameIndex(java.lang.String[], int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandTestFor java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanIp java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandMessage void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPardonIp java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard net.minecraft.scoreboard.ScorePlayerTeam func_147183_a(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandOp void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBroadcast void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandListBans void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSaveOff void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandAchievement void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandNetstat java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTeleport java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandMessageRaw void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandBlockLogic net.minecraft.util.IChatComponent func_145748_c_()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTestForBlock java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSetDefaultSpawnpoint java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBroadcast void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147190_h(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBroadcast java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSaveOff java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandSummon void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandStop java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandWhitelist void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandMessage void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147197_m(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTestForBlock void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandMessageRaw java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandListBans void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandOp void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147195_l(net.minecraft.command.ICommandSender, java.lang.String[], int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147195_l(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTestFor boolean isUsernameIndex(java.lang.String[], int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147198_k(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandBanPlayer java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandAchievement void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.server.CommandMessageRaw void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandListBans java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandScoreboard void func_147199_i(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandTestFor void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandMessage java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.server.CommandPardonPlayer boolean canCommandSenderUseCommand(net.minecraft.command.ICommandSender) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

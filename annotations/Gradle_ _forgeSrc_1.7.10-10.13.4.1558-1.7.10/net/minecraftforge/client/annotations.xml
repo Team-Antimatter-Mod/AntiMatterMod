@@ -1,0 +1,71 @@
+<root>
+    <item name='net.minecraftforge.client.ForgeHooksClient boolean renderEntityItem(net.minecraft.entity.item.EntityItem, net.minecraft.item.ItemStack, float, float, java.util.Random, net.minecraft.client.renderer.texture.TextureManager, net.minecraft.client.renderer.RenderBlocks, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.IItemRenderer.ItemRenderType FIRST_PERSON_MAP'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.ForgeHooksClient void orientBedCamera(net.minecraft.client.Minecraft, net.minecraft.entity.EntityLivingBase) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.IItemRenderer.ItemRendererHelper ENTITY_ROTATION'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.IItemRenderer.ItemRenderType EQUIPPED'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.ForgeHooksClient net.minecraft.client.audio.ISound playSound(net.minecraft.client.audio.SoundManager, net.minecraft.client.audio.ISound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.IItemRenderer.ItemRenderType INVENTORY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.IItemRenderer.ItemRendererHelper EQUIPPED_BLOCK'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.ForgeHooksClient java.lang.String getArmorTexture(net.minecraft.entity.Entity, net.minecraft.item.ItemStack, java.lang.String, int, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.ForgeHooksClient void renderEquippedItem(net.minecraftforge.client.IItemRenderer.ItemRenderType, net.minecraftforge.client.IItemRenderer, net.minecraft.client.renderer.RenderBlocks, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.IItemRenderer.ItemRendererHelper BLOCK_3D'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.IItemRenderer.ItemRendererHelper INVENTORY_BLOCK'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.ForgeHooksClient net.minecraft.client.model.ModelBiped getArmorModel(net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack, int, net.minecraft.client.model.ModelBiped) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.IItemRenderer.ItemRenderType ENTITY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.ForgeHooksClient java.lang.String fixDomain(java.lang.String, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.MinecraftForgeClient net.minecraftforge.client.IItemRenderer getItemRenderer(net.minecraft.item.ItemStack, net.minecraftforge.client.IItemRenderer.ItemRenderType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.ClientCommandHandler instance'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.ForgeHooksClient boolean renderInventoryItem(net.minecraft.client.renderer.RenderBlocks, net.minecraft.client.renderer.texture.TextureManager, net.minecraft.item.ItemStack, boolean, float, float, float) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.ClientCommandHandler void autoComplete(java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.ForgeHooksClient net.minecraft.client.audio.ISound playSound(net.minecraft.client.audio.SoundManager, net.minecraft.client.audio.ISound) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.IItemRenderer.ItemRenderType EQUIPPED_FIRST_PERSON'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.IItemRenderer.ItemRendererHelper ENTITY_BOBBING'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.ForgeHooksClient void orientBedCamera(net.minecraft.client.Minecraft, net.minecraft.entity.EntityLivingBase) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,35 @@
+<root>
+    <item name='net.minecraft.client.util.JsonException net.minecraft.client.util.JsonException func_151379_a(java.lang.Exception)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.util.QuadComparator int compare(java.lang.Integer, java.lang.Integer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.util.JsonBlendingMode net.minecraft.client.util.JsonBlendingMode func_148110_a(com.google.gson.JsonObject)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.util.QuadComparator int compare(java.lang.Integer, java.lang.Integer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.util.QuadComparator int compare(java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.util.RenderDistanceSorter int compare(net.minecraft.client.renderer.RenderList, net.minecraft.client.renderer.RenderList) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.util.QuadComparator int compare(java.lang.Object, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.util.RenderDistanceSorter int compare(java.lang.Object, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.util.RenderDistanceSorter int compare(java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.util.JsonException net.minecraft.client.util.JsonException func_151379_a(java.lang.Exception) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.util.RenderDistanceSorter int compare(net.minecraft.client.renderer.RenderList, net.minecraft.client.renderer.RenderList) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

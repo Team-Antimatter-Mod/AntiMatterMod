@@ -1,0 +1,239 @@
+<root>
+    <item name='cpw.mods.fml.common.registry.GameData itemRegistry'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.block.Block registerBlock(net.minecraft.block.Block, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry void addRecipe(net.minecraft.item.ItemStack, java.lang.Object...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.block.Block registerBlock(net.minecraft.block.Block, java.lang.Class&lt;? extends net.minecraft.item.ItemBlock&gt;, java.lang.String, java.lang.Object...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.ObjectHolderRegistry void findObjectHolders(cpw.mods.fml.common.discovery.ASMDataTable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.item.crafting.IRecipe addShapedRecipe(net.minecraft.item.ItemStack, java.lang.Object...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.VillagerRegistry void applyRandomTrade(net.minecraft.entity.passive.EntityVillager, java.util.Random) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData java.util.List&lt;java.lang.String&gt; injectWorldIDMap(java.util.Map&lt;java.lang.String,java.lang.Integer&gt;, java.util.Set&lt;java.lang.Integer&gt;, java.util.Map&lt;java.lang.String,java.lang.String&gt;, java.util.Map&lt;java.lang.String,java.lang.String&gt;, java.util.Set&lt;java.lang.String&gt;, java.util.Set&lt;java.lang.String&gt;, boolean, boolean) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData blockRegistry'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.item.Item registerItem(net.minecraft.item.Item, java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry void registerItem(net.minecraft.item.Item, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry void putObject(java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.block.Block registerBlock(net.minecraft.block.Block, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.VillagerRegistry java.lang.Object getVillageComponent(net.minecraft.world.gen.structure.StructureVillagePieces.PieceWeight, net.minecraft.world.gen.structure.StructureVillagePieces.Start, java.util.List, java.util.Random, int, int, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData java.util.List&lt;java.lang.String&gt; injectWorldIDMap(java.util.Map&lt;java.lang.String,java.lang.Integer&gt;, java.util.Set&lt;java.lang.String&gt;, java.util.Set&lt;java.lang.String&gt;, boolean, boolean) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.EntityRegistry void addSpawn(java.lang.Class&lt;? extends net.minecraft.entity.EntityLiving&gt;, int, int, int, net.minecraft.entity.EnumCreatureType, net.minecraft.world.biome.BiomeGenBase...) 5'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry void serializeSubstitutions(java.util.Set&lt;java.lang.String&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.block.Block registerBlock(net.minecraft.block.Block, java.lang.Class&lt;? extends net.minecraft.item.ItemBlock&gt;, java.lang.String, java.lang.String, java.lang.Object...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry.UniqueIdentifier UniqueIdentifier(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.item.ItemStack makeItemStack(java.lang.String, int, int, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.VillagerRegistry void addEmeraldSellRecipe(net.minecraft.entity.passive.EntityVillager, net.minecraft.village.MerchantRecipeList, java.util.Random, net.minecraft.item.Item, float, int, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry I get(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData int[] getBlockedIds()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry void addSubstitutionAlias(java.lang.String, cpw.mods.fml.common.registry.GameRegistry.Type, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.VillagerRegistry void addEmeraldBuyRecipe(net.minecraft.entity.passive.EntityVillager, net.minecraft.village.MerchantRecipeList, java.util.Random, net.minecraft.item.Item, float, int, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry boolean contains(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.block.Block registerBlock(net.minecraft.block.Block, java.lang.Class&lt;? extends net.minecraft.item.ItemBlock&gt;, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry boolean containsKey(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.VillagerRegistry void registerVillageCreationHandler(cpw.mods.fml.common.registry.VillagerRegistry.IVillageCreationHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry.Type BLOCK'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.ObjectHolderRegistry INSTANCE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData java.util.List&lt;java.lang.String&gt; injectWorldIDMap(java.util.Map&lt;java.lang.String,java.lang.Integer&gt;, java.util.Set&lt;java.lang.Integer&gt;, java.util.Map&lt;java.lang.String,java.lang.String&gt;, java.util.Map&lt;java.lang.String,java.lang.String&gt;, java.util.Set&lt;java.lang.String&gt;, java.util.Set&lt;java.lang.String&gt;, boolean, boolean) 5'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.LanguageRegistry cpw.mods.fml.common.registry.LanguageRegistry instance()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.EntityRegistry void removeSpawn(java.lang.Class&lt;? extends net.minecraft.entity.EntityLiving&gt;, net.minecraft.entity.EnumCreatureType, net.minecraft.world.biome.BiomeGenBase...) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData java.util.List&lt;java.lang.String&gt; injectWorldIDMap(java.util.Map&lt;java.lang.String,java.lang.Integer&gt;, java.util.Set&lt;java.lang.Integer&gt;, java.util.Map&lt;java.lang.String,java.lang.String&gt;, java.util.Map&lt;java.lang.String,java.lang.String&gt;, java.util.Set&lt;java.lang.String&gt;, java.util.Set&lt;java.lang.String&gt;, boolean, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.item.Item registerItem(net.minecraft.item.Item, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.VillagerRegistry cpw.mods.fml.common.registry.VillagerRegistry instance()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.IncompatibleSubstitutionException IncompatibleSubstitutionException(java.lang.String, java.lang.Object, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.ItemStackHolderInjector INSTANCE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry void addObject(int, java.lang.String, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry.Type cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry&lt;?&gt; getRegistry()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.registry.LanguageRegistry void loadLanguagesFor(cpw.mods.fml.common.ModContainer, cpw.mods.fml.relauncher.Side) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry java.lang.Iterable&lt;I&gt; typeSafeIterable()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.item.crafting.IRecipe addShapedRecipe(net.minecraft.item.ItemStack, java.lang.Object...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry void addSubstitutionAlias(java.lang.String, cpw.mods.fml.common.registry.GameRegistry.Type, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData cpw.mods.fml.common.registry.GameData getMain()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData void fixBrokenIds(java.util.Map&lt;java.lang.String,java.lang.Integer&gt;, java.util.Set&lt;java.lang.Integer&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData java.util.List&lt;java.lang.String&gt; processIdRematches(java.lang.Iterable&lt;cpw.mods.fml.common.event.FMLMissingMappingsEvent.MissingMapping&gt;, boolean, cpw.mods.fml.common.registry.GameData, java.util.Map&lt;java.lang.String,java.lang.Integer[]&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry void registerTileEntityWithAlternatives(java.lang.Class&lt;? extends net.minecraft.tileentity.TileEntity&gt;, java.lang.String, java.lang.String...) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.block.Block registerBlock(net.minecraft.block.Block, java.lang.Class&lt;? extends net.minecraft.item.ItemBlock&gt;, java.lang.String, java.lang.String, java.lang.Object...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.EntityRegistry cpw.mods.fml.common.registry.EntityRegistry instance()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.block.Block registerBlock(net.minecraft.block.Block, java.lang.Class&lt;? extends net.minecraft.item.ItemBlock&gt;, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.LanguageRegistry void addName(java.lang.Object, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData cpw.mods.fml.common.registry.GameData.GameDataSnapshot buildItemDataList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry I getRaw(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry void generateWorld(int, int, net.minecraft.world.World, net.minecraft.world.chunk.IChunkProvider, net.minecraft.world.chunk.IChunkProvider) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData java.util.List&lt;java.lang.String&gt; injectWorldIDMap(java.util.Map&lt;java.lang.String,java.lang.Integer&gt;, java.util.Set&lt;java.lang.Integer&gt;, java.util.Map&lt;java.lang.String,java.lang.String&gt;, java.util.Map&lt;java.lang.String,java.lang.String&gt;, java.util.Set&lt;java.lang.String&gt;, java.util.Set&lt;java.lang.String&gt;, boolean, boolean) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry I getObject(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.IncompatibleSubstitutionException IncompatibleSubstitutionException(java.lang.String, java.lang.Object, java.lang.Object) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry cpw.mods.fml.common.registry.RegistryDelegate&lt;I&gt; getDelegate(I, java.lang.Class&lt;I&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry&lt;net.minecraft.item.Item&gt; getItemRegistry()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry void addObject(int, java.lang.String, java.lang.Object) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.RegistryDelegate java.lang.Class&lt;T&gt; type()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry net.minecraft.block.Block registerBlock(net.minecraft.block.Block, java.lang.Class&lt;? extends net.minecraft.item.ItemBlock&gt;, java.lang.String, java.lang.Object...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry&lt;net.minecraft.block.Block&gt; getBlockRegistry()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.ItemStackHolderInjector void findHolders(cpw.mods.fml.common.discovery.ASMDataTable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.VillagerRegistry void applyRandomTrade(net.minecraft.entity.passive.EntityVillager, java.util.Random) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.EntityRegistry boolean tryTrackingEntity(net.minecraft.entity.EntityTracker, net.minecraft.entity.Entity) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData java.util.List&lt;java.lang.String&gt; injectWorldIDMap(java.util.Map&lt;java.lang.String,java.lang.Integer&gt;, java.util.Set&lt;java.lang.Integer&gt;, java.util.Map&lt;java.lang.String,java.lang.String&gt;, java.util.Map&lt;java.lang.String,java.lang.String&gt;, java.util.Set&lt;java.lang.String&gt;, java.util.Set&lt;java.lang.String&gt;, boolean, boolean) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData java.util.List&lt;java.lang.String&gt; processIdRematches(java.lang.Iterable&lt;cpw.mods.fml.common.event.FMLMissingMappingsEvent.MissingMapping&gt;, boolean, cpw.mods.fml.common.registry.GameData, java.util.Map&lt;java.lang.String,java.lang.Integer[]&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry.Type ITEM'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.FMLControlledNamespacedRegistry int getId(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData java.util.List&lt;java.lang.String&gt; injectWorldIDMap(java.util.Map&lt;java.lang.String,java.lang.Integer&gt;, java.util.Set&lt;java.lang.String&gt;, java.util.Set&lt;java.lang.String&gt;, boolean, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.LanguageRegistry void addNameForObject(java.lang.Object, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameRegistry void addShapelessRecipe(net.minecraft.item.ItemStack, java.lang.Object...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.registry.GameData cpw.mods.fml.common.ModContainer findModOwner(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

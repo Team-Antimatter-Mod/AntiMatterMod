@@ -1,0 +1,35 @@
+<root>
+    <item name='cpw.mods.fml.common.asm.transformers.DeobfuscationTransformer java.lang.String remapClassName(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.AccessTransformer void processATFile(com.google.common.io.CharSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.ModAPITransformer void initTable(cpw.mods.fml.common.discovery.ASMDataTable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.TerminalTransformer.ExitVisitor void runtimeHaltCalled(java.lang.Runtime, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.MarkerTransformer void main(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.ModAPITransformer byte[] transform(java.lang.String, java.lang.String, byte[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.AccessTransformer void main(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.TerminalTransformer.ExitVisitor void runtimeExitCalled(java.lang.Runtime, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.TerminalTransformer.ExitVisitor org.objectweb.asm.MethodVisitor visitMethod(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.DeobfuscationTransformer java.lang.String unmapClassName(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.asm.transformers.ModAccessTransformer void addJar(java.util.jar.JarFile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

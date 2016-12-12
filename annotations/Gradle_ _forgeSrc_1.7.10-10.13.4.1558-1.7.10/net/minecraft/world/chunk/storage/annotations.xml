@@ -1,0 +1,59 @@
+<root>
+    <item name='net.minecraft.world.chunk.storage.AnvilSaveConverter AnvilSaveConverter(java.io.File) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.AnvilSaveHandler void saveWorldInfoWithPlayer(net.minecraft.world.storage.WorldInfo, net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.AnvilChunkLoader java.lang.Object[] checkedReadChunkFromNBT__Async(net.minecraft.world.World, int, int, net.minecraft.nbt.NBTTagCompound) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.AnvilSaveConverter net.minecraft.world.storage.ISaveHandler getSaveLoader(java.lang.String, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.RegionFileCache net.minecraft.world.chunk.storage.RegionFile createOrLoadRegionFile(java.io.File, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.IChunkLoader void saveChunk(net.minecraft.world.World, net.minecraft.world.chunk.Chunk) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.AnvilSaveConverter boolean convertMapFormat(java.lang.String, net.minecraft.util.IProgressUpdate) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.AnvilChunkLoader void saveChunk(net.minecraft.world.World, net.minecraft.world.chunk.Chunk) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.ChunkLoader void convertToAnvilFormat(net.minecraft.world.chunk.storage.ChunkLoader.AnvilConverterData, net.minecraft.nbt.NBTTagCompound, net.minecraft.world.biome.WorldChunkManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.AnvilSaveHandler net.minecraft.world.chunk.storage.IChunkLoader getChunkLoader(net.minecraft.world.WorldProvider) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.ChunkLoader net.minecraft.world.chunk.storage.ChunkLoader.AnvilConverterData load(net.minecraft.nbt.NBTTagCompound)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.AnvilSaveConverter java.lang.String func_154333_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.AnvilSaveConverter java.util.List getSaveList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.AnvilChunkLoader net.minecraft.world.chunk.Chunk checkedReadChunkFromNBT(net.minecraft.world.World, int, int, net.minecraft.nbt.NBTTagCompound) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.AnvilChunkLoader void loadEntities(net.minecraft.world.World, net.minecraft.nbt.NBTTagCompound, net.minecraft.world.chunk.Chunk) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.AnvilSaveHandler net.minecraft.world.chunk.storage.IChunkLoader getChunkLoader(net.minecraft.world.WorldProvider)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.ChunkLoader void convertToAnvilFormat(net.minecraft.world.chunk.storage.ChunkLoader.AnvilConverterData, net.minecraft.nbt.NBTTagCompound, net.minecraft.world.biome.WorldChunkManager) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.storage.ChunkLoader net.minecraft.world.chunk.storage.ChunkLoader.AnvilConverterData load(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

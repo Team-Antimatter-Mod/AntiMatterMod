@@ -1,0 +1,32 @@
+<root>
+    <item name='net.minecraft.server.integrated.IntegratedServer IntegratedServer(net.minecraft.client.Minecraft, java.lang.String, java.lang.String, net.minecraft.world.WorldSettings) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.integrated.IntegratedServer void setGameType(net.minecraft.world.WorldSettings.GameType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.integrated.IntegratedServer IntegratedServer(net.minecraft.client.Minecraft, java.lang.String, java.lang.String, net.minecraft.world.WorldSettings) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.integrated.IntegratedServer net.minecraft.crash.CrashReport addServerInfoToCrashReport(net.minecraft.crash.CrashReport) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.integrated.IntegratedServer net.minecraft.crash.CrashReport addServerInfoToCrashReport(net.minecraft.crash.CrashReport)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.integrated.IntegratedPlayerList java.lang.String allowUserToConnect(java.net.SocketAddress, com.mojang.authlib.GameProfile) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.integrated.IntegratedPlayerList void writePlayerData(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.integrated.IntegratedServer void addServerStatsToSnooper(net.minecraft.profiler.PlayerUsageSnooper) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

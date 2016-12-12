@@ -1,0 +1,23 @@
+<root>
+    <item name='cpw.mods.fml.common.gameevent.TickEvent.Phase START'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.gameevent.TickEvent.Type CLIENT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.gameevent.TickEvent.Type SERVER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.gameevent.TickEvent.Type RENDER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.gameevent.TickEvent.Phase END'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.gameevent.TickEvent.Type WORLD'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.gameevent.TickEvent.Type PLAYER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

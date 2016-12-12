@@ -1,0 +1,20 @@
+<root>
+    <item name='net.minecraftforge.client.model.techne.TechneModelLoader net.minecraftforge.client.model.IModelCustom loadInstance(net.minecraft.util.ResourceLocation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.model.techne.TechneModelLoader java.lang.String getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.model.techne.TechneModel TechneModel(net.minecraft.util.ResourceLocation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.model.techne.TechneModelLoader java.lang.String[] getSuffixes()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.model.techne.TechneModelLoader net.minecraftforge.client.model.IModelCustom loadInstance(net.minecraft.util.ResourceLocation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.model.techne.TechneModel java.lang.String getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

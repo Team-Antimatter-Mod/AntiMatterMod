@@ -1,0 +1,47 @@
+<root>
+    <item name='cpw.mods.fml.common.versioning.DefaultArtifactVersion boolean equals(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.ComparableVersion int compareTo(cpw.mods.fml.common.versioning.ComparableVersion) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.VersionRange cpw.mods.fml.common.versioning.VersionRange cloneOf()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.VersionRange cpw.mods.fml.common.versioning.VersionRange restrict(cpw.mods.fml.common.versioning.VersionRange)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.VersionParser cpw.mods.fml.common.versioning.ArtifactVersion parseVersionReference(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.VersionParser boolean satisfies(cpw.mods.fml.common.versioning.ArtifactVersion, cpw.mods.fml.common.versioning.ArtifactVersion) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.Restriction EVERYTHING'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.DefaultArtifactVersion boolean containsVersion(cpw.mods.fml.common.versioning.ArtifactVersion) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.VersionRange cpw.mods.fml.common.versioning.VersionRange restrict(cpw.mods.fml.common.versioning.VersionRange) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.ArtifactVersion boolean containsVersion(cpw.mods.fml.common.versioning.ArtifactVersion) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.ComparableVersion int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.VersionRange cpw.mods.fml.common.versioning.VersionRange newRange(cpw.mods.fml.common.versioning.ArtifactVersion, java.util.List&lt;cpw.mods.fml.common.versioning.Restriction&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.VersionRange cpw.mods.fml.common.versioning.ArtifactVersion matchVersion(java.util.List&lt;cpw.mods.fml.common.versioning.ArtifactVersion&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.versioning.VersionRange cpw.mods.fml.common.versioning.VersionRange createFromVersion(java.lang.String, cpw.mods.fml.common.versioning.ArtifactVersion)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

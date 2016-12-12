@@ -1,0 +1,119 @@
+<root>
+    <item name='net.minecraft.client.multiplayer.ServerData.ServerResourceMode net.minecraft.util.IChatComponent func_152589_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP void flipPlayer(net.minecraft.entity.player.EntityPlayer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.GuiConnecting GuiConnecting(net.minecraft.client.gui.GuiScreen, net.minecraft.client.Minecraft, java.lang.String, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.ServerData net.minecraft.client.multiplayer.ServerData getServerDataFromNBTCompound(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.WorldClient WorldClient(net.minecraft.client.network.NetHandlerPlayClient, net.minecraft.world.WorldSettings, int, net.minecraft.world.EnumDifficulty, net.minecraft.profiler.Profiler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.ServerData net.minecraft.nbt.NBTTagCompound getNBTCompound()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.WorldClient void removeEntity(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP void attackEntity(net.minecraft.entity.player.EntityPlayer, net.minecraft.entity.Entity) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.ThreadLanServerPing java.lang.String getAdFromPingResponse(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP void clickBlockCreative(net.minecraft.client.Minecraft, net.minecraft.client.multiplayer.PlayerControllerMP, int, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.GuiConnecting GuiConnecting(net.minecraft.client.gui.GuiScreen, net.minecraft.client.Minecraft, net.minecraft.client.multiplayer.ServerData) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP boolean interactWithEntitySendPacket(net.minecraft.entity.player.EntityPlayer, net.minecraft.entity.Entity) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.ServerData.ServerResourceMode ENABLED'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.ServerData net.minecraft.client.multiplayer.ServerData getServerDataFromNBTCompound(net.minecraft.nbt.NBTTagCompound)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.ChunkProviderClient net.minecraft.world.chunk.Chunk loadChunk(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP net.minecraft.item.ItemStack windowClick(int, int, int, int, net.minecraft.entity.player.EntityPlayer) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.WorldClient void onEntityRemoved(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP void onStoppedUsingItem(net.minecraft.entity.player.EntityPlayer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.ServerData.ServerResourceMode DISABLED'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.WorldClient void addEntityToWorld(int, net.minecraft.entity.Entity) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP boolean sendUseItem(net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, net.minecraft.item.ItemStack) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.WorldClient WorldClient(net.minecraft.client.network.NetHandlerPlayClient, net.minecraft.world.WorldSettings, int, net.minecraft.world.EnumDifficulty, net.minecraft.profiler.Profiler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.ThreadLanServerPing java.lang.String getMotdFromPingResponse(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP net.minecraft.client.entity.EntityClientPlayerMP func_147493_a(net.minecraft.world.World, net.minecraft.stats.StatFileWriter) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.ServerData void func_152583_a(net.minecraft.client.multiplayer.ServerData) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.WorldClient void playSound(double, double, double, java.lang.String, float, float, boolean) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP boolean interactWithEntitySendPacket(net.minecraft.entity.player.EntityPlayer, net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP boolean onPlayerRightClick(net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, net.minecraft.item.ItemStack, int, int, int, int, net.minecraft.util.Vec3) 7'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.GuiConnecting GuiConnecting(net.minecraft.client.gui.GuiScreen, net.minecraft.client.Minecraft, net.minecraft.client.multiplayer.ServerData) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP void attackEntity(net.minecraft.entity.player.EntityPlayer, net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.WorldClient void onEntityAdded(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP net.minecraft.client.entity.EntityClientPlayerMP func_147493_a(net.minecraft.world.World, net.minecraft.stats.StatFileWriter)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP void setPlayerCapabilities(net.minecraft.entity.player.EntityPlayer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.WorldClient net.minecraft.crash.CrashReportCategory addWorldInfoToCrashReport(net.minecraft.crash.CrashReport)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.PlayerControllerMP boolean sendUseItem(net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, net.minecraft.item.ItemStack) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.ServerData.ServerResourceMode PROMPT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.GuiConnecting void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.multiplayer.WorldClient net.minecraft.crash.CrashReportCategory addWorldInfoToCrashReport(net.minecraft.crash.CrashReport) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

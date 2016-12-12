@@ -19,7 +19,7 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
  * @author Raiti, C6H2Cl2
  * @version 1.0.0
  */
-@Mod(modid = AntiMatterModCore.MOD_ID,useMetadata = true,dependencies = "required-after:Forge@[10.13.4.1558,);required-after:YukariLib@[1.0.1-1.7.10,)")
+@Mod(modid = AntiMatterModCore.MOD_ID,useMetadata = true,dependencies = "required-after:Forge@[10.13.4.1558,);required-after:YukariLib")
 public class AntiMatterModCore {
 
 	public static final String MOD_ID = "AntiMatterModCore";

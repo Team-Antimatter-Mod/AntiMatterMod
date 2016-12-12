@@ -1,0 +1,8 @@
+<root>
+    <item name='net.minecraft.network.handshake.INetHandlerHandshakeServer void processHandshake(net.minecraft.network.handshake.client.C00Handshake) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

@@ -1,0 +1,35 @@
+<root>
+    <item name='net.minecraftforge.client.gui.ForgeGuiFactory.ForgeConfigGui.ModIDEntry ModIDEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.gui.ForgeGuiFactory.ForgeConfigGui.ChunkLoaderEntry net.minecraft.client.gui.GuiScreen buildChildScreen()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.gui.ForgeGuiFactory.ForgeConfigGui.ModOverridesEntry ModOverridesEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.gui.ForgeGuiFactory.ForgeConfigGui.GeneralEntry net.minecraft.client.gui.GuiScreen buildChildScreen()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.gui.ForgeGuiFactory java.lang.Class&lt;? extends net.minecraft.client.gui.GuiScreen&gt; mainConfigGuiClass()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.gui.ForgeGuiFactory.ForgeConfigGui.GeneralEntry GeneralEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.gui.ForgeGuiFactory.ForgeConfigGui.AddModOverrideEntry AddModOverrideEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.gui.ForgeGuiFactory.ForgeConfigGui.AddModOverrideEntry net.minecraft.client.gui.GuiScreen buildChildScreen()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.gui.ForgeGuiFactory.ForgeConfigGui.ChunkLoaderEntry ChunkLoaderEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.gui.ForgeGuiFactory.ForgeConfigGui.ModIDEntry ModIDEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.gui.ForgeGuiFactory.ForgeConfigGui.ModOverridesEntry net.minecraft.client.gui.GuiScreen buildChildScreen()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

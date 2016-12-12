@@ -1,0 +1,26 @@
+<root>
+    <item name='cpw.mods.fml.common.toposort.ModSorter ModSorter(java.util.List&lt;cpw.mods.fml.common.ModContainer&gt;, java.util.Map&lt;java.lang.String,cpw.mods.fml.common.ModContainer&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.toposort.TopologicalSort cpw.mods.fml.common.toposort.TopologicalSort.DirectedGraph&lt;T&gt; reverse(cpw.mods.fml.common.toposort.TopologicalSort.DirectedGraph&lt;T&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.toposort.TopologicalSort java.util.List&lt;T&gt; topologicalSort(cpw.mods.fml.common.toposort.TopologicalSort.DirectedGraph&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.toposort.TopologicalSort java.util.List&lt;T&gt; topologicalSort(cpw.mods.fml.common.toposort.TopologicalSort.DirectedGraph&lt;T&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.toposort.ModSorter java.util.List&lt;cpw.mods.fml.common.ModContainer&gt; sort()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.toposort.TopologicalSort void explore(T, cpw.mods.fml.common.toposort.TopologicalSort.DirectedGraph&lt;T&gt;, java.util.List&lt;T&gt;, java.util.Set&lt;T&gt;, java.util.Set&lt;T&gt;) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.toposort.TopologicalSort cpw.mods.fml.common.toposort.TopologicalSort.DirectedGraph&lt;T&gt; reverse(cpw.mods.fml.common.toposort.TopologicalSort.DirectedGraph&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.toposort.TopologicalSort void explore(T, cpw.mods.fml.common.toposort.TopologicalSort.DirectedGraph&lt;T&gt;, java.util.List&lt;T&gt;, java.util.Set&lt;T&gt;, java.util.Set&lt;T&gt;) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

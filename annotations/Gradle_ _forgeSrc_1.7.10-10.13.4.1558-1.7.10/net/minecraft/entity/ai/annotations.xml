@@ -1,0 +1,86 @@
+<root>
+    <item name='net.minecraft.entity.ai.EntityAIMate EntityAIMate(net.minecraft.entity.passive.EntityAnimal, double) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAIFleeSun EntityAIFleeSun(net.minecraft.entity.EntityCreature, double) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityMinecartMobSpawner void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.RandomPositionGenerator net.minecraft.util.Vec3 findRandomTargetBlockTowards(net.minecraft.entity.EntityCreature, int, int, net.minecraft.util.Vec3) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityMinecartMobSpawner void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityMoveHelper EntityMoveHelper(net.minecraft.entity.EntityLiving) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.RandomPositionGenerator net.minecraft.util.Vec3 findRandomTarget(net.minecraft.entity.EntityCreature, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAIOcelotAttack EntityAIOcelotAttack(net.minecraft.entity.EntityLiving) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAIArrowAttack EntityAIArrowAttack(net.minecraft.entity.IRangedAttackMob, double, int, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAINearestAttackableTarget.Sorter int compare(net.minecraft.entity.Entity, net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAIAttackOnCollide EntityAIAttackOnCollide(net.minecraft.entity.EntityCreature, double, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.RandomPositionGenerator net.minecraft.util.Vec3 findRandomTargetBlockAwayFrom(net.minecraft.entity.EntityCreature, int, int, net.minecraft.util.Vec3) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAISwimming EntityAISwimming(net.minecraft.entity.EntityLiving) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAIAvoidEntity field_98218_a'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAINearestAttackableTarget.Sorter int compare(java.lang.Object, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAIAvoidEntity EntityAIAvoidEntity(net.minecraft.entity.EntityCreature, java.lang.Class, float, double, double) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAIEatGrass EntityAIEatGrass(net.minecraft.entity.EntityLiving) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAIVillagerMate EntityAIVillagerMate(net.minecraft.entity.passive.EntityVillager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityMinecartMobSpawner net.minecraft.tileentity.MobSpawnerBaseLogic func_98039_d()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAIArrowAttack EntityAIArrowAttack(net.minecraft.entity.IRangedAttackMob, double, int, int, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityLookHelper void setLookPositionWithEntity(net.minecraft.entity.Entity, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAIFollowOwner EntityAIFollowOwner(net.minecraft.entity.passive.EntityTameable, double, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.RandomPositionGenerator net.minecraft.util.Vec3 findRandomTargetBlockTowards(net.minecraft.entity.EntityCreature, int, int, net.minecraft.util.Vec3) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAINearestAttackableTarget.Sorter int compare(net.minecraft.entity.Entity, net.minecraft.entity.Entity) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAIBeg EntityAIBeg(net.minecraft.entity.passive.EntityWolf, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.RandomPositionGenerator net.minecraft.util.Vec3 findRandomTargetBlockAwayFrom(net.minecraft.entity.EntityCreature, int, int, net.minecraft.util.Vec3) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAIAttackOnCollide EntityAIAttackOnCollide(net.minecraft.entity.EntityCreature, java.lang.Class, double, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityAINearestAttackableTarget.Sorter int compare(java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

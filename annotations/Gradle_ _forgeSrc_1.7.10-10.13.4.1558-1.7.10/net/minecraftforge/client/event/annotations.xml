@@ -1,0 +1,80 @@
+<root>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType ALL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.Pre Pre(net.minecraftforge.client.event.RenderGameOverlayEvent, net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType AIR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType TEXT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType ARMOR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType BOSSHEALTH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderBlockOverlayEvent.OverlayType WATER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType HOTBAR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderItemInFrameEvent entityItemFrame'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType HEALTH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType HEALTHMOUNT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderBlockOverlayEvent.OverlayType BLOCK'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType FOOD'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType DEBUG'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderBlockOverlayEvent.OverlayType FIRE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType EXPERIENCE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType CHAT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType JUMPBAR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.Post Post(net.minecraftforge.client.event.RenderGameOverlayEvent, net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderItemInFrameEvent RenderItemInFrameEvent(net.minecraft.entity.item.EntityItemFrame, net.minecraft.client.renderer.tileentity.RenderItemFrame) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType PLAYER_LIST'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType CROSSHAIRS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.Text Text(net.minecraftforge.client.event.RenderGameOverlayEvent, java.util.ArrayList&lt;java.lang.String&gt;, java.util.ArrayList&lt;java.lang.String&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType PORTAL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.Chat Chat(net.minecraftforge.client.event.RenderGameOverlayEvent, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType HELMET'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

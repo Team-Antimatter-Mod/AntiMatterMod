@@ -1,0 +1,23 @@
+<root>
+    <item name='cpw.mods.fml.common.functions.ModNameFunction java.lang.Object apply(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.functions.ArtifactVersionNameFunction java.lang.Object apply(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.functions.GenericIterableFactory java.lang.Iterable&lt;T&gt; newCastingIterable(java.util.Iterator&lt;?&gt;, java.lang.Class&lt;T&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.functions.ModIdFunction java.lang.String apply(cpw.mods.fml.common.ModContainer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.functions.ModNameFunction java.lang.String apply(cpw.mods.fml.common.ModContainer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.functions.ModIdFunction java.lang.Object apply(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.functions.ArtifactVersionNameFunction java.lang.String apply(cpw.mods.fml.common.versioning.ArtifactVersion) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

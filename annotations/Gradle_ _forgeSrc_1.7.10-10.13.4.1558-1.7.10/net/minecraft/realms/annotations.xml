@@ -1,0 +1,89 @@
+<root>
+    <item name='net.minecraft.realms.RealmsLevelSummary int compareTo(net.minecraft.realms.RealmsLevelSummary) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsScreen net.minecraft.realms.RealmsButton newButton(int, int, int, int, int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsLevelSummary int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsScreen net.minecraft.realms.RealmsButton newButton(int, int, int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.Realms void setScreen(net.minecraft.realms.RealmsScreen) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.DisconnectedOnlineScreen void buttonClicked(net.minecraft.realms.RealmsButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.Tezzelator net.minecraft.client.shader.TesselatorVertexState sortQuads(float, float, float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsAnvilLevelStorageSource java.util.List getLevelList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsEditBox void setValue(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsMth double average(long[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsScreen void bind(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsScreen java.util.List buttons()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsScreen void renderTooltip(net.minecraft.item.ItemStack, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsScreen java.util.List fontSplit(java.lang.String, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RendererUtility void render(net.minecraft.realms.RealmsButton, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsScreen void buttonClicked(net.minecraft.realms.RealmsButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.realms.RealmsScreen net.minecraft.realms.RealmsEditBox newEditBox(int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsScreen void renderTooltip(java.util.List, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.Realms java.lang.String getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsSliderButton java.lang.String getMessage()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsLevelSummary int compareTo(net.minecraft.world.storage.SaveFormatComparator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsScreen net.minecraft.realms.RealmsAnvilLevelStorageSource getLevelStorageSource()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsEditBox void insertText(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.Tezzelator void restoreState(net.minecraft.client.shader.TesselatorVertexState) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.Tezzelator instance'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.Realms java.lang.String uuidToName(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.Realms java.lang.String userName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.realms.RealmsScreen void buttonsAdd(net.minecraft.realms.RealmsButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

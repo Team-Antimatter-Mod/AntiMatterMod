@@ -1,0 +1,149 @@
+<root>
+    <item name='net.minecraftforge.common.util.BlockSnapshot net.minecraftforge.common.util.BlockSnapshot getBlockSnapshot(net.minecraft.world.World, int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.FakePlayer net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.ForgeDirection UP'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.ForgeDirection UNKNOWN'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.ForgeDirection WEST'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.BlockSnapshot void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.EnumHelper void setFailsafeFieldValue(java.lang.reflect.Field, java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.BlockSnapshot BlockSnapshot(net.minecraft.world.World, int, int, int, net.minecraft.block.Block, int, net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.FakePlayer void onDeath(net.minecraft.util.DamageSource) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraftforge.common.util.ChunkCoordComparator ChunkCoordComparator(net.minecraft.entity.player.EntityPlayerMP) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.EnumHelper T addEnum(java.lang.Class&lt;T&gt;, java.lang.String, java.lang.Class&lt;?&gt;[], java.lang.Object[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.FakePlayer boolean canAttackPlayer(net.minecraft.entity.player.EntityPlayer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraftforge.common.util.ForgeDirection DOWN'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.BlockSnapshot net.minecraftforge.common.util.BlockSnapshot readFromNBT(net.minecraft.nbt.NBTTagCompound)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.RotationHelper net.minecraftforge.common.util.ForgeDirection[] getValidVanillaBlockRotations(net.minecraft.block.Block)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.ForgeDirection ROTATION_MATRIX'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.BlockSnapshot net.minecraftforge.common.util.BlockSnapshot getBlockSnapshot(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.FakePlayer FakePlayer(net.minecraft.world.WorldServer, com.mojang.authlib.GameProfile) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.AsynchronousExecutor AsynchronousExecutor(net.minecraftforge.common.util.AsynchronousExecutor.CallBackProvider&lt;P,T,C,E&gt;, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.FakePlayer void func_147100_a(net.minecraft.network.play.client.C15PacketClientSettings) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraftforge.common.util.FakePlayer void addChatComponentMessage(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraftforge.common.util.ForgeDirection NORTH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.ForgeDirection OPPOSITES'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.ForgeDirection net.minecraftforge.common.util.ForgeDirection getRotation(net.minecraftforge.common.util.ForgeDirection) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.BlockSnapshot net.minecraftforge.common.util.BlockSnapshot getBlockSnapshot(net.minecraft.world.World, int, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.AsynchronousExecutor T getSkipQueue(P, java.lang.Iterable&lt;C&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.ChunkCoordComparator int compare(net.minecraft.world.ChunkCoordIntPair, net.minecraft.world.ChunkCoordIntPair) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.RotationHelper boolean rotateVanillaBlock(net.minecraft.block.Block, net.minecraft.world.World, int, int, int, net.minecraftforge.common.util.ForgeDirection) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.AsynchronousExecutor T getSkipQueue(P, C...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.ChunkCoordComparator int compare(java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.AsynchronousExecutor.CallBackProvider T callStage1(P) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraftforge.common.util.BlockSnapshot net.minecraftforge.common.util.BlockSnapshot getBlockSnapshot(net.minecraft.world.World, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.ForgeDirection VALID_DIRECTIONS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.AsynchronousExecutor.CallBackProvider void callStage3(P, T, C) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraftforge.common.util.BlockSnapshot net.minecraftforge.common.util.BlockSnapshot readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.ForgeDirection SOUTH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.FakePlayer FakePlayer(net.minecraft.world.WorldServer, com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.AsynchronousExecutor.CallBackProvider void callStage2(P, T) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraftforge.common.util.BlockSnapshot BlockSnapshot(net.minecraft.world.World, int, int, int, net.minecraft.block.Block, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.ForgeDirection EAST'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.EnumHelper T addEnum(java.lang.Class[], java.lang.Class&lt;T&gt;, java.lang.String, java.lang.Object...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.BlockSnapshot BlockSnapshot(net.minecraft.world.World, int, int, int, net.minecraft.block.Block, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

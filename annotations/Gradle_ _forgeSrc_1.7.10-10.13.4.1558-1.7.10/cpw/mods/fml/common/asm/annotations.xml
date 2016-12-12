@@ -1,0 +1,5 @@
+<root>
+    <item name='cpw.mods.fml.common.asm.FMLSanityChecker void injectData(java.util.Map&lt;java.lang.String,java.lang.Object&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

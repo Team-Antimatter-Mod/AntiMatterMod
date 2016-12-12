@@ -1,0 +1,23 @@
+<root>
+    <item name='net.minecraft.profiler.Profiler.Result int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.profiler.PlayerUsageSnooper java.util.Map getCurrentStats()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.profiler.Profiler.Result int compareTo(net.minecraft.profiler.Profiler.Result) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.profiler.IPlayerUsage void addServerStatsToSnooper(net.minecraft.profiler.PlayerUsageSnooper) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.profiler.IPlayerUsage void addServerTypeToSnooper(net.minecraft.profiler.PlayerUsageSnooper) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

@@ -1,0 +1,32 @@
+<root>
+    <item name='net.minecraft.server.dedicated.DedicatedServer net.minecraft.crash.CrashReport addServerInfoToCrashReport(net.minecraft.crash.CrashReport) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.dedicated.DedicatedServer void addServerStatsToSnooper(net.minecraft.profiler.PlayerUsageSnooper) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.dedicated.DedicatedServer java.lang.String shareToLAN(net.minecraft.world.WorldSettings.GameType, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.dedicated.PropertyManager PropertyManager(java.io.File) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.dedicated.DedicatedServer DedicatedServer(java.io.File) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.dedicated.DedicatedServer boolean isBlockProtected(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.dedicated.DedicatedServer net.minecraft.crash.CrashReport addServerInfoToCrashReport(net.minecraft.crash.CrashReport)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.dedicated.DedicatedPlayerList DedicatedPlayerList(net.minecraft.server.dedicated.DedicatedServer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.dedicated.PropertyManager java.io.File getPropertiesFile()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

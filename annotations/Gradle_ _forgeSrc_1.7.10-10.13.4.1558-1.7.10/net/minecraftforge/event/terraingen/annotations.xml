@@ -1,0 +1,152 @@
+<root>
+    <item name='net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType REDSTONE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType CACTUS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType CLAY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.InitMapGenEvent.EventType NETHER_BRIDGE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.InitMapGenEvent.EventType NETHER_CAVE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType GRASS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType BIG_SHROOM'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.WorldTypeEvent.InitBiomeGens InitBiomeGens(net.minecraft.world.WorldType, long, net.minecraft.world.gen.layer.GenLayer[]) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType LAPIS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType ICE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType DIRT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DeferredBiomeDecorator void decorateChunk(net.minecraft.world.World, java.util.Random, net.minecraft.world.biome.BiomeGenBase, int, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.InitMapGenEvent.EventType SCATTERED_FEATURE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType LAKE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.InitNoiseGensEvent originalNoiseGens'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType FLOWERS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.InitMapGenEvent.EventType CAVE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType FIRE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType NETHER_LAVA'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType PUMPKIN'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType REED'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType LAVA'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType LILYPAD'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType DUNGEON'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.WorldTypeEvent.InitBiomeGens originalBiomeGens'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.InitMapGenEvent.EventType MINESHAFT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType COAL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType GLOWSTONE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.InitMapGenEvent.EventType STRONGHOLD'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType TREE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType DIAMOND'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType SHROOM'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType QUARTZ'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.InitMapGenEvent.EventType VILLAGE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType CUSTOM'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType CUSTOM'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.InitNoiseGensEvent InitNoiseGensEvent(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.NoiseGenerator[]) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType CUSTOM'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType GOLD'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.InitMapGenEvent.EventType RAVINE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType LAKE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate.EventType ANIMALS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType SAND'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.TerrainGen net.minecraft.world.gen.NoiseGenerator[] getModdedNoiseGenerators(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.NoiseGenerator[]) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType IRON'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType SAND_PASS2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType GRAVEL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DeferredBiomeDecorator void fireCreateEventAndReplace(net.minecraft.world.biome.BiomeGenBase) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType DEAD_BUSH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.terraingen.InitMapGenEvent.EventType CUSTOM'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

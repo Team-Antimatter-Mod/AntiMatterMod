@@ -1,0 +1,65 @@
+<root>
+    <item name='cpw.mods.fml.common.eventhandler.EventPriority NORMAL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.ListenerList void register(int, cpw.mods.fml.common.eventhandler.EventPriority, cpw.mods.fml.common.eventhandler.IEventListener) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.EventPriority HIGHEST'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.EventPriority void invoke(cpw.mods.fml.common.eventhandler.Event) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.IEventListener void invoke(cpw.mods.fml.common.eventhandler.Event) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.Event void setPhase(cpw.mods.fml.common.eventhandler.EventPriority) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.EventPriority LOWEST'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.EventBus EventBus(cpw.mods.fml.common.eventhandler.IEventExceptionHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.EventBus void handleException(cpw.mods.fml.common.eventhandler.EventBus, cpw.mods.fml.common.eventhandler.Event, cpw.mods.fml.common.eventhandler.IEventListener[], int, java.lang.Throwable) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.Event.Result DEFAULT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.EventBus boolean post(cpw.mods.fml.common.eventhandler.Event) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.EventPriority HIGH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.ASMEventHandler void invoke(cpw.mods.fml.common.eventhandler.Event) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.EventPriority LOW'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.IEventExceptionHandler void handleException(cpw.mods.fml.common.eventhandler.EventBus, cpw.mods.fml.common.eventhandler.Event, cpw.mods.fml.common.eventhandler.IEventListener[], int, java.lang.Throwable) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.Event.Result ALLOW'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.ASMEventHandler ASMEventHandler(java.lang.Object, java.lang.reflect.Method, cpw.mods.fml.common.ModContainer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.eventhandler.Event.Result DENY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

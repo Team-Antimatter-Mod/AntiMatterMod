@@ -1,0 +1,167 @@
+<root>
+    <item name='net.minecraft.potion.Potion moveSlowdown'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion damageBoost'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper speckledMelonEffect'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionAttackDamage double func_111183_a(int, net.minecraft.entity.ai.attributes.AttributeModifier) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.potion.Potion weakness'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionEffect void combine(net.minecraft.potion.PotionEffect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion confusion'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion void removeAttributesModifiersFromEntity(net.minecraft.entity.EntityLivingBase, net.minecraft.entity.ai.attributes.BaseAttributeMap, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper glowstoneEffect'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper fermentedSpiderEyeEffect'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion void applyAttributesModifiersToEntity(net.minecraft.entity.EntityLivingBase, net.minecraft.entity.ai.attributes.BaseAttributeMap, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.potion.Potion jump'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion regeneration'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion setIconIndex(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper spiderEyeEffect'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionEffect net.minecraft.nbt.NBTTagCompound writeCustomPotionEffectToNBT(net.minecraft.nbt.NBTTagCompound)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionEffect net.minecraft.potion.PotionEffect readCustomPotionEffectFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper redstoneEffect'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper ghastTearEffect'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion invisibility'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion poison'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper int applyIngredient(int, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion hunger'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion potionTypes'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion field_76444_x'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion wither'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionAbsoption void removeAttributesModifiersFromEntity(net.minecraft.entity.EntityLivingBase, net.minecraft.entity.ai.attributes.BaseAttributeMap, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper gunpowderEffect'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper field_151423_m'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHealthBoost void removeAttributesModifiersFromEntity(net.minecraft.entity.EntityLivingBase, net.minecraft.entity.ai.attributes.BaseAttributeMap, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionEffect PotionEffect(net.minecraft.potion.PotionEffect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper magmaCreamEffect'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionAbsoption void applyAttributesModifiersToEntity(net.minecraft.entity.EntityLivingBase, net.minecraft.entity.ai.attributes.BaseAttributeMap, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion resistance'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion blindness'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper blazePowderEffect'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper sugarEffect'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion digSpeed'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion func_111184_a(net.minecraft.entity.ai.attributes.IAttribute, java.lang.String, double, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion waterBreathing'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion field_76434_w'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionEffect net.minecraft.nbt.NBTTagCompound writeCustomPotionEffectToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion nightVision'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion setPotionName(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion double func_111183_a(int, net.minecraft.entity.ai.attributes.AttributeModifier) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion digSlowdown'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion java.lang.String getDurationString(net.minecraft.potion.PotionEffect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion setEffectiveness(double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion fireResistance'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion moveSpeed'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper boolean func_82817_b(java.util.Collection) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionHelper goldenCarrotEffect'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

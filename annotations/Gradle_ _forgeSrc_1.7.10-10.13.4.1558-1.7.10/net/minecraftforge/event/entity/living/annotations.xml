@@ -1,0 +1,5 @@
+<root>
+    <item name='net.minecraftforge.event.entity.living.LivingSpawnEvent.AllowDespawn AllowDespawn(net.minecraft.entity.EntityLiving) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

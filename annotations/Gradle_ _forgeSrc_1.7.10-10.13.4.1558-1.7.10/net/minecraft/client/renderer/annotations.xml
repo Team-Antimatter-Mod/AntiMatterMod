@@ -1,0 +1,341 @@
+<root>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderFaceYNeg(net.minecraft.block.Block, double, double, double, net.minecraft.util.IIcon) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.EntityRenderer void onResourceManagerReload(net.minecraft.client.resources.IResourceManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.renderer.ItemRenderer void renderItem(net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderBlockSandFalling(net.minecraft.block.Block, net.minecraft.world.World, int, int, int, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.ActiveRenderInfo net.minecraft.util.Vec3 projectViewFromEntity(net.minecraft.entity.EntityLivingBase, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderStandardBlockWithAmbientOcclusionPartial(net.minecraft.block.Block, int, int, int, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks float renderBlockAnvilRotate(net.minecraft.block.BlockAnvil, int, int, int, int, float, float, float, float, boolean, boolean, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderPistonBaseAllFaces(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockWall(net.minecraft.block.BlockWall, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks net.minecraft.util.IIcon getBlockIconFromSide(net.minecraft.block.Block, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderStandardBlockWithColorMultiplier(net.minecraft.block.Block, int, int, int, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderBlockAsItem(net.minecraft.block.Block, int, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockStairs(net.minecraft.block.BlockStairs, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderTorchAtAngle(net.minecraft.block.Block, double, double, double, double, double, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.ActiveRenderInfo void updateRenderInfo(net.minecraft.entity.player.EntityPlayer, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockRedstoneWire(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockLiquid(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockStem(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.EntitySorter EntitySorter(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks net.minecraft.util.IIcon getIconSafe(net.minecraft.util.IIcon)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderCrossedSquares(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockCrops(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockFire(net.minecraft.block.BlockFire, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.EntityRenderer itemRenderer'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderGlobal void drawBlockDamageTexture(net.minecraft.client.renderer.Tessellator, net.minecraft.entity.EntityLivingBase, float) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockByRenderType(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderGlobal void onEntityCreate(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.renderer.WorldRenderer void updateInFrustum(net.minecraft.client.renderer.culling.ICamera) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockBrewingStand(net.minecraft.block.BlockBrewingStand, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderStandardBlock(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockCactusImpl(net.minecraft.block.Block, int, int, int, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.ActiveRenderInfo net.minecraft.block.Block getBlockAtEntityViewpoint(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderFaceXNeg(net.minecraft.block.Block, double, double, double, net.minecraft.util.IIcon) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderFaceZNeg(net.minecraft.block.Block, double, double, double, net.minecraft.util.IIcon) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks net.minecraft.util.IIcon getBlockIcon(net.minecraft.block.Block, net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderFaceXPos(net.minecraft.block.Block, double, double, double, net.minecraft.util.IIcon) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockHopper(net.minecraft.block.BlockHopper, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderGlobal void onEntityDestroy(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void drawCrossedSquares(net.minecraft.util.IIcon, double, double, double, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderFaceYPos(net.minecraft.block.Block, double, double, double, net.minecraft.util.IIcon) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockCocoa(net.minecraft.block.BlockCocoa, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.ItemRenderer void renderItemIn2D(net.minecraft.client.renderer.Tessellator, float, float, float, float, int, int, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks net.minecraft.util.IIcon getBlockIconFromSide(net.minecraft.block.Block, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockLilyPad(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockRedstoneDiode(net.minecraft.block.BlockRedstoneDiode, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.EntityRenderer net.minecraft.client.gui.MapItemRenderer getMapItemRenderer()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderGlobal void drawOutlinedBoundingBox(net.minecraft.util.AxisAlignedBB, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockRedstoneComparator(net.minecraft.block.BlockRedstoneComparator, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockHopperMetadata(net.minecraft.block.BlockHopper, int, int, int, int, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderSorter int compare(java.lang.Object, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockFlowerpot(net.minecraft.block.BlockFlowerPot, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockTorch(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderBlockUsingTexture(net.minecraft.block.Block, int, int, int, net.minecraft.util.IIcon) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockQuartz(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks net.minecraft.util.IIcon getBlockIconFromSideAndMetadata(net.minecraft.block.Block, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockTripWireSource(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderBlockSandFalling(net.minecraft.block.Block, net.minecraft.world.World, int, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockBeacon(net.minecraft.block.BlockBeacon, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderBlockRedstoneDiodeMetadata(net.minecraft.block.BlockRedstoneDiode, int, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.Tessellator net.minecraft.client.shader.TesselatorVertexState getVertexState(float, float, float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockAnvilMetadata(net.minecraft.block.BlockAnvil, int, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockMinecartTrack(net.minecraft.block.BlockRailBase, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.Tessellator instance'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockCactus(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderSorter int compare(java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockFence(net.minecraft.block.BlockFence, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks net.minecraft.util.IIcon getBlockIcon(net.minecraft.block.Block) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockLog(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks net.minecraft.util.IIcon getBlockIcon(net.minecraft.block.Block, net.minecraft.world.IBlockAccess, int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockBed(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockTripWire(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.ThreadDownloadImageData void loadTexture(net.minecraft.client.resources.IResourceManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockDoublePlant(net.minecraft.block.BlockDoublePlant, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.EntityRenderer EntityRenderer(net.minecraft.client.Minecraft, net.minecraft.client.resources.IResourceManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.EntitySorter int compare(java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks net.minecraft.util.IIcon getBlockIcon(net.minecraft.block.Block, net.minecraft.world.IBlockAccess, int, int, int, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks net.minecraft.util.IIcon getBlockIconFromSideAndMetadata(net.minecraft.block.Block, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockPane(net.minecraft.block.BlockPane, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.ItemRenderer void renderItem(net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack, int, net.minecraftforge.client.IItemRenderer.ItemRenderType) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockCauldron(net.minecraft.block.BlockCauldron, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockEndPortalFrame(net.minecraft.block.BlockEndPortalFrame, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockLadder(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockVine(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.ActiveRenderInfo net.minecraft.util.Vec3 projectViewFromEntity(net.minecraft.entity.EntityLivingBase, double) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockStainedGlassPane(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.EntitySorter int compare(java.lang.Object, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderGlobal RenderGlobal(net.minecraft.client.Minecraft) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderFaceZPos(net.minecraft.block.Block, double, double, double, net.minecraft.util.IIcon) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.EntitySorter int compare(net.minecraft.client.renderer.WorldRenderer, net.minecraft.client.renderer.WorldRenderer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderBlockAllFaces(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockLever(net.minecraft.block.Block, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks net.minecraft.util.IIcon getBlockIcon(net.minecraft.block.Block)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.WorldRenderer float distanceToEntitySquared(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockRepeater(net.minecraft.block.BlockRedstoneRepeater, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockAnvilOrient(net.minecraft.block.BlockAnvil, int, int, int, int, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.ActiveRenderInfo net.minecraft.block.Block getBlockAtEntityViewpoint(net.minecraft.world.World, net.minecraft.entity.EntityLivingBase, float) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderBlockCropsImpl(net.minecraft.block.Block, int, double, double, double) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderGlobal int sortAndRender(net.minecraft.entity.EntityLivingBase, int, double) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.Tessellator void setVertexState(net.minecraft.client.shader.TesselatorVertexState) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderBlockStemBig(net.minecraft.block.BlockStem, int, int, double, double, double, double) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.EntitySorter int compare(net.minecraft.client.renderer.WorldRenderer, net.minecraft.client.renderer.WorldRenderer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderSorter int compare(net.minecraft.client.renderer.WorldRenderer, net.minecraft.client.renderer.WorldRenderer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockAnvil(net.minecraft.block.BlockAnvil, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks void renderBlockStemSmall(net.minecraft.block.Block, int, double, double, double, double) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderGlobal void drawBlockDamageTexture(net.minecraft.client.renderer.Tessellator, net.minecraft.entity.player.EntityPlayer, float) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderSorter int compare(net.minecraft.client.renderer.WorldRenderer, net.minecraft.client.renderer.WorldRenderer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderPistonBase(net.minecraft.block.Block, int, int, int, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderBlockFenceGate(net.minecraft.block.BlockFenceGate, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.RenderBlocks boolean renderStandardBlockWithAmbientOcclusion(net.minecraft.block.Block, int, int, int, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

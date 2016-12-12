@@ -1,0 +1,14 @@
+<root>
+    <item name='cpw.mods.fml.client.registry.ClientRegistry void bindTileEntitySpecialRenderer(java.lang.Class&lt;? extends net.minecraft.tileentity.TileEntity&gt;, net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.registry.RenderingRegistry cpw.mods.fml.client.registry.RenderingRegistry instance()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.registry.ClientRegistry void registerTileEntity(java.lang.Class&lt;? extends net.minecraft.tileentity.TileEntity&gt;, java.lang.String, net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.registry.RenderingRegistry void registerBlockHandler(cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,29 @@
+<root>
+    <item name='net.minecraftforge.common.network.ForgeRuntimeCodec void encodeInto(io.netty.channel.ChannelHandlerContext, net.minecraftforge.common.network.ForgeMessage, io.netty.buffer.ByteBuf) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.network.ServerToClientConnectionEstablishedHandler void userEventTriggered(io.netty.channel.ChannelHandlerContext, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.network.DimensionMessageHandler void channelRead0(io.netty.channel.ChannelHandlerContext, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.network.FluidIdRegistryMessageHandler void channelRead0(io.netty.channel.ChannelHandlerContext, net.minecraftforge.common.network.ForgeMessage.FluidIdMapMessage) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.network.FluidIdRegistryMessageHandler void channelRead0(io.netty.channel.ChannelHandlerContext, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.network.DimensionMessageHandler void channelRead0(io.netty.channel.ChannelHandlerContext, net.minecraftforge.common.network.ForgeMessage.DimensionRegisterMessage) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.network.ForgeRuntimeCodec void decodeInto(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, net.minecraftforge.common.network.ForgeMessage) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.network.ForgeRuntimeCodec void decodeInto(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, java.lang.Object) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.network.ForgeRuntimeCodec void encodeInto(io.netty.channel.ChannelHandlerContext, java.lang.Object, io.netty.buffer.ByteBuf) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

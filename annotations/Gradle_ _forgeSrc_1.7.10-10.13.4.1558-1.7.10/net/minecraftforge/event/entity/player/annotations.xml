@@ -1,0 +1,26 @@
+<root>
+    <item name='net.minecraftforge.event.entity.player.PlayerDropsEvent PlayerDropsEvent(net.minecraft.entity.player.EntityPlayer, net.minecraft.util.DamageSource, java.util.ArrayList&lt;net.minecraft.entity.item.EntityItem&gt;, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.entity.player.PlayerInteractEvent.Action RIGHT_CLICK_BLOCK'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.entity.player.PlayerEvent.SaveToFile java.io.File getPlayerFile(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.entity.player.PlayerInteractEvent.Action LEFT_CLICK_BLOCK'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.entity.player.PlayerEvent.LoadFromFile java.io.File getPlayerFile(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.entity.player.PlayerOpenContainerEvent PlayerOpenContainerEvent(net.minecraft.entity.player.EntityPlayer, net.minecraft.inventory.Container) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.entity.player.PlayerInteractEvent PlayerInteractEvent(net.minecraft.entity.player.EntityPlayer, net.minecraftforge.event.entity.player.PlayerInteractEvent.Action, int, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.entity.player.PlayerInteractEvent.Action RIGHT_CLICK_AIR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

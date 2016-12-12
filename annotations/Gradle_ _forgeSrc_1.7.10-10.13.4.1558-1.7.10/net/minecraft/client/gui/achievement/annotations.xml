@@ -1,0 +1,17 @@
+<root>
+    <item name='net.minecraft.client.gui.achievement.GuiAchievement void func_146256_a(net.minecraft.stats.Achievement) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.achievement.GuiStats void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.achievement.GuiAchievement void func_146255_b(net.minecraft.stats.Achievement) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.achievement.GuiAchievements void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

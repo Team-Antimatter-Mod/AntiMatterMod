@@ -1,0 +1,332 @@
+<root>
+    <item name='net.minecraft.client.gui.GuiScreenRealmsProxy java.util.List func_154323_a(java.lang.String, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreenOptionsSounds void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiMerchant GuiMerchant(net.minecraft.entity.player.InventoryPlayer, net.minecraft.entity.IMerchant, net.minecraft.world.World, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiControls void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.MapItemRenderer void func_148250_a(net.minecraft.world.storage.MapData, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiIngame widgetsTexPath'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreenRealmsProxy void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiOptionsRowList GuiOptionsRowList(net.minecraft.client.Minecraft, int, int, int, int, int, net.minecraft.client.settings.GameSettings.Options...) 6'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiCreateFlatWorld void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiButton buttonTextures'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiMultiplayer void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiDisconnected void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiGameOver void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiResourcePackAvailable GuiResourcePackAvailable(net.minecraft.client.Minecraft, int, int, java.util.List) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiKeyBindingList GuiKeyBindingList(net.minecraft.client.gui.GuiControls, net.minecraft.client.Minecraft) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.ServerSelectionList void func_148195_a(net.minecraft.client.multiplayer.ServerList) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.Gui void drawTexturedModelRectFromIcon(int, int, net.minecraft.util.IIcon, int, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiHopper GuiHopper(net.minecraft.entity.player.InventoryPlayer, net.minecraft.inventory.IInventory) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreen void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.gui.GuiSlot void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiTextField void setText(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.IProgressMeter field_146510_b_'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiConfirmOpenLink void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreen void func_146283_a(java.util.List, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiRepair void sendContainerAndContentsToPlayer(net.minecraft.inventory.Container, java.util.List) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.ScreenChatOptions void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiTextField void writeText(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.Gui void drawString(net.minecraft.client.gui.FontRenderer, java.lang.String, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiResourcePackList GuiResourcePackList(net.minecraft.client.Minecraft, int, int, java.util.List) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiMultiplayer net.minecraft.client.network.OldServerPinger func_146789_i()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiOptions void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiPlayerInfo name'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiCreateWorld void func_146318_a(net.minecraft.world.storage.WorldInfo) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreenResourcePacks void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.ScaledResolution ScaledResolution(net.minecraft.client.Minecraft, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiResourcePackList field_148205_k'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiCommandBlock void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiRepair void sendContainerAndContentsToPlayer(net.minecraft.inventory.Container, java.util.List) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.gui.FontRenderer java.io.InputStream getResourceInputStream(net.minecraft.util.ResourceLocation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.gui.GuiLanguage void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.MapItemRenderer void func_148246_a(net.minecraft.world.storage.MapData) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiKeyBindingList.CategoryEntry CategoryEntry(net.minecraft.client.gui.GuiKeyBindingList, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreenRealmsProxy java.util.List func_154320_j()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiButton void func_146113_a(net.minecraft.client.audio.SoundHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreen void renderToolTip(net.minecraft.item.ItemStack, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiYesNo void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiIngame rand'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiSnooper void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiMemoryErrorScreen void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiMainMenu void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiVideoSettings void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiSelectWorld void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiShareToLan void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiNewChat java.util.List getSentMessages()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiRenameWorld void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiSleepMP void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreenRealmsProxy void func_154327_a(net.minecraft.realms.RealmsButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiIngame vignetteTexPath'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiSlot void drawContainerBackground(net.minecraft.client.renderer.Tessellator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiErrorScreen void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.gui.GuiFlatPresets void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiIngame persistantChatGUI'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.ServerListEntryNormal net.minecraft.client.multiplayer.ServerData func_148296_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.FontRenderer java.io.InputStream getResourceInputStream(net.minecraft.util.ResourceLocation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.gui.GuiNewChat void printChatMessageWithOptionalDeletion(net.minecraft.util.IChatComponent, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiSelectWorld net.minecraft.client.gui.GuiYesNo func_152129_a(net.minecraft.client.gui.GuiYesNoCallback, java.lang.String, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiIngame net.minecraft.client.gui.GuiNewChat getChatGUI()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.Gui icons'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.ServerSelectionList void func_148194_a(java.util.List) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.FontRenderer int splitStringWidth(java.lang.String, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreenServerList void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.Gui void drawCenteredString(net.minecraft.client.gui.FontRenderer, java.lang.String, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.Gui statIcons'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiIngame field_152127_m'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiIngame itemRenderer'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiPlayerInfo GuiPlayerInfo(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreen void drawHoveringText(java.util.List, int, int, net.minecraft.client.gui.FontRenderer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiMerchant void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.gui.Gui optionsBackground'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiResourcePackSelected GuiResourcePackSelected(net.minecraft.client.Minecraft, int, int, java.util.List) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.ServerListEntryNormal ServerListEntryNormal(net.minecraft.client.gui.GuiMultiplayer, net.minecraft.client.multiplayer.ServerData) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiKeyBindingList GuiKeyBindingList(net.minecraft.client.gui.GuiControls, net.minecraft.client.Minecraft) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiRepair void sendProgressBarUpdate(net.minecraft.inventory.Container, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.gui.FontRenderer java.util.List listFormattedStringToWidth(java.lang.String, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreen void setWorldAndResolution(net.minecraft.client.Minecraft, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiCreateWorld java.lang.String func_146317_a(net.minecraft.world.storage.ISaveFormat, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreenRealmsProxy void func_146283_a(java.util.List, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.FontRenderer void onResourceManagerReload(net.minecraft.client.resources.IResourceManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreenBook GuiScreenBook(net.minecraft.entity.player.EntityPlayer, net.minecraft.item.ItemStack, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiIngameMenu void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiRepair void sendSlotContents(net.minecraft.inventory.Container, int, net.minecraft.item.ItemStack) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreenRealmsProxy void renderToolTip(net.minecraft.item.ItemStack, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiIngame void func_96136_a(net.minecraft.scoreboard.ScoreObjective, int, int, net.minecraft.client.gui.FontRenderer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiNewChat void printChatMessage(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiOptionSlider GuiOptionSlider(int, int, int, net.minecraft.client.settings.GameSettings.Options, float, float) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiOptionSlider GuiOptionSlider(int, int, int, net.minecraft.client.settings.GameSettings.Options) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreenDemo void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiCreateWorld void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiIngame pumpkinBlurTexPath'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreenBook void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.GuiScreenAddServer void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

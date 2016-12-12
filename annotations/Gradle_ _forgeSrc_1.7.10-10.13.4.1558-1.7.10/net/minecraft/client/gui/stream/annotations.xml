@@ -1,0 +1,59 @@
+<root>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable.Reason ACCOUNT_NOT_MIGRATED'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable.Reason NO_FBO'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable.Reason UNKNOWN'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiIngestServers void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable.Reason LIBRARY_FAILURE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamOptions void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable.Reason ACCOUNT_NOT_BOUND'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable.Reason UNSUPPORTED_OS_OTHER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable.Reason LIBRARY_ARCH_MISMATCH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable.Reason INITIALIZATION_FAILURE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable.Reason FAILED_TWITCH_AUTH'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable.Reason UNSUPPORTED_OS_MAC'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiTwitchUserMode GuiTwitchUserMode(net.minecraft.client.stream.IStream, tv.twitch.chat.ChatUserInfo) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable.Reason UNSUPPORTED_OS_WINDOWS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiTwitchUserMode void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiTwitchUserMode java.util.List func_152328_a(java.util.Set, java.util.Set, net.minecraft.client.stream.IStream) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiTwitchUserMode java.util.List func_152328_a(java.util.Set, java.util.Set, net.minecraft.client.stream.IStream) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.gui.stream.GuiStreamUnavailable.Reason FAILED_TWITCH_AUTH_ERROR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

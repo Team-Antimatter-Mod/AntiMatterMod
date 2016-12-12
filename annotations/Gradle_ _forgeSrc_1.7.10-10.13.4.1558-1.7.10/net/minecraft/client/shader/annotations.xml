@@ -1,0 +1,68 @@
+<root>
+    <item name='net.minecraft.client.shader.ShaderLinkHelper void func_148075_b(net.minecraft.client.shader.ShaderManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderLoader.ShaderType VERTEX'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderGroup net.minecraft.client.shader.Shader addShader(java.lang.String, net.minecraft.client.shader.Framebuffer, net.minecraft.client.shader.Framebuffer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderLinkHelper void func_148077_a(net.minecraft.client.shader.ShaderManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderGroup ShaderGroup(net.minecraft.client.renderer.texture.TextureManager, net.minecraft.client.resources.IResourceManager, net.minecraft.client.shader.Framebuffer, net.minecraft.util.ResourceLocation) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderGroup ShaderGroup(net.minecraft.client.renderer.texture.TextureManager, net.minecraft.client.resources.IResourceManager, net.minecraft.client.shader.Framebuffer, net.minecraft.util.ResourceLocation) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderLoader void func_148056_a(net.minecraft.client.shader.ShaderManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderManager ShaderManager(net.minecraft.client.resources.IResourceManager, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderLoader.ShaderType FRAGMENT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderLoader net.minecraft.client.shader.ShaderLoader func_148057_a(net.minecraft.client.resources.IResourceManager, net.minecraft.client.shader.ShaderLoader.ShaderType, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.Shader Shader(net.minecraft.client.resources.IResourceManager, java.lang.String, net.minecraft.client.shader.Framebuffer, net.minecraft.client.shader.Framebuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderDefault void func_148097_a(float[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderManager net.minecraft.client.shader.ShaderLoader func_147989_e()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderLoader net.minecraft.client.shader.ShaderLoader func_148057_a(net.minecraft.client.resources.IResourceManager, net.minecraft.client.shader.ShaderLoader.ShaderType, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.Shader net.minecraft.client.shader.ShaderManager getShaderManager()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderDefault void func_148088_a(javax.vecmath.Matrix4f) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderUniform void func_148097_a(float[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderUniform int func_148085_a(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderManager net.minecraft.client.shader.ShaderLoader func_147994_f()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.shader.ShaderUniform void func_148088_a(javax.vecmath.Matrix4f) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

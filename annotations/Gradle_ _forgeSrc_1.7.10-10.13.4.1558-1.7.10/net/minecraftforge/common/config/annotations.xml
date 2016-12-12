@@ -1,0 +1,362 @@
+<root>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, double[], java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setRequiresMcRestart(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, double, java.lang.String, double, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigElement net.minecraftforge.common.config.ConfigElement&lt;T&gt; listCategoriesFirst(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property.Type MOD_ID'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, java.lang.String[], java.lang.String, java.util.regex.Pattern)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValues(double[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property.Type STRING'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setIsListLengthFixed(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setMinValue(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setDefaultValues(boolean[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property double[] getDoubleList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValues(java.lang.String[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigElement cpw.mods.fml.client.config.ConfigGuiType getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValue(double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, boolean[]) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigElement net.minecraftforge.common.config.ConfigElement&lt;?&gt; getTypedElement(net.minecraftforge.common.config.Property) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, double, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration CATEGORY_GENERAL'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setArrayEntryClass(java.lang.Class&lt;? extends cpw.mods.fml.client.config.GuiEditArrayEntries.IArrayEntry&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, double[], java.lang.String, double, double, boolean, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setDefaultValues(double[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, boolean[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Configuration setCategoryConfigEntryClass(java.lang.String, java.lang.Class&lt;? extends cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setLanguageKey(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Configuration setCategoryRequiresWorldRestart(java.lang.String, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property boolean[] getBooleanList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValidValues(java.lang.String[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, double[], java.lang.String, double, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setMaxValue(double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, double[], java.lang.String, double, double, boolean, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, int[], java.lang.String, int, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property void set(boolean[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigElement net.minecraftforge.common.config.ConfigElement&lt;?&gt; getTypedElement(net.minecraftforge.common.config.Property)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, int[], java.lang.String, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValue(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property Property(java.lang.String, java.lang.String[], net.minecraftforge.common.config.Property.Type, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration Configuration(java.io.File, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration void removeCategory(net.minecraftforge.common.config.ConfigCategory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigCategory net.minecraftforge.common.config.ConfigCategory setShowInGui(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Configuration setCategoryPropertyOrder(java.lang.String, java.util.List&lt;java.lang.String&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property.Type COLOR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValidationPattern(java.util.regex.Pattern)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration DEFAULT_ENCODING'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigElement cpw.mods.fml.client.config.ConfigGuiType getType(net.minecraftforge.common.config.Property)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property.Type BOOLEAN'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Configuration setCategoryRequiresMcRestart(java.lang.String, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property void set(double[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setConfigEntryClass(java.lang.Class&lt;? extends cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setShowInGui(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, int[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property.Type DOUBLE'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property Property(java.lang.String, java.lang.String[], net.minecraftforge.common.config.Property.Type) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setMaxListLength(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValues(boolean[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, double[], java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, int[]) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValue(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setDefaultValue(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigCategory net.minecraftforge.common.config.ConfigCategory setRequiresWorldRestart(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setDefaultValues(double[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigCategory net.minecraftforge.common.config.ConfigCategory setPropertyOrder(java.util.List&lt;java.lang.String&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setMinValue(double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property.Type INTEGER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValues(int[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property void set(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setDefaultValue(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setDefaultValues(int[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setToDefault()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigCategory net.minecraftforge.common.config.ConfigCategory setRequiresMcRestart(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration Configuration(java.io.File) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration COMMENT_SEPARATOR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Configuration setCategoryLanguageKey(java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigCategory net.minecraftforge.common.config.ConfigCategory setLanguageKey(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigCategory net.minecraftforge.common.config.ConfigCategory setConfigEntryClass(java.lang.Class&lt;? extends cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, java.lang.String[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, java.lang.String[], java.lang.String, boolean, int, java.util.regex.Pattern)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, boolean[], java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setRequiresWorldRestart(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, double[]) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, int, java.lang.String, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, boolean[], java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration ALLOWED_CHARS'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, double[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, java.lang.String[], java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setDefaultValues(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigElement cpw.mods.fml.client.config.ConfigGuiType getType(net.minecraftforge.common.config.Property) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration Configuration(java.io.File, java.lang.String, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setDefaultValue(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, double[], java.lang.String, double, double) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValues(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.ConfigElement ConfigElement(net.minecraftforge.common.config.Property) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, int[], java.lang.String, int, int, boolean, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setDefaultValues(int[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValues(int[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValues(boolean[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration boolean moveProperty(java.lang.String, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, int[], java.lang.String, int, int, boolean, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Configuration setCategoryComment(java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, int[], java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, boolean, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setDefaultValue(double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, boolean[], java.lang.String, boolean, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValues(double[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property int[] getIntList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setMaxValue(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setValue(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setDefaultValues(boolean[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.regex.Pattern)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, int[], java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration Configuration(java.io.File, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration net.minecraftforge.common.config.Property get(java.lang.String, java.lang.String, boolean[], java.lang.String, boolean, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property void set(int[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Property net.minecraftforge.common.config.Property setDefaultValues(java.lang.String[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.config.Configuration CATEGORY_SPLITTER'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

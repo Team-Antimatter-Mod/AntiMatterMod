@@ -1,0 +1,56 @@
+<root>
+    <item name='net.minecraft.server.network.NetHandlerLoginServer void onConnectionStateTransition(net.minecraft.network.EnumConnectionState, net.minecraft.network.EnumConnectionState) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.network.NetHandlerLoginServer void processEncryptionResponse(net.minecraft.network.login.client.C01PacketEncryptionResponse) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.network.NetHandlerStatusServer void onDisconnect(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.network.NetHandlerLoginServer void onDisconnect(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.network.NetHandlerStatusServer void onConnectionStateTransition(net.minecraft.network.EnumConnectionState, net.minecraft.network.EnumConnectionState) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.network.NetHandlerHandshakeTCP void processHandshake(net.minecraft.network.handshake.client.C00Handshake) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.network.NetHandlerHandshakeTCP void onConnectionStateTransition(net.minecraft.network.EnumConnectionState, net.minecraft.network.EnumConnectionState) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.server.network.NetHandlerLoginServer com.mojang.authlib.GameProfile func_152506_a(com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.network.NetHandlerStatusServer void processPing(net.minecraft.network.status.client.C01PacketPing) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.network.NetHandlerLoginServer com.mojang.authlib.GameProfile func_152506_a(com.mojang.authlib.GameProfile)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.network.NetHandlerLoginServer void processLoginStart(net.minecraft.network.login.client.C00PacketLoginStart) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.network.NetHandlerHandshakeTCP void onDisconnect(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>
