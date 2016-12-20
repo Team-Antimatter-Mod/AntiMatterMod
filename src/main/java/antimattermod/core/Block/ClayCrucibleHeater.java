@@ -29,7 +29,7 @@ import java.util.Random;
  *
  * @author Raiti-chan
  */
-public class ClayCrucibleHeater extends BlockContainer {
+public class ClayCrucibleHeater extends BlockContainer implements IWrenchAction {
 	
 	
 	private IIcon iIcon_TOP;
@@ -128,5 +128,24 @@ public class ClayCrucibleHeater extends BlockContainer {
 	@Override
 	public int getLightValue(IBlockAccess world, int x, int y, int z) {
 		return world.getBlockMetadata(x,y,z) < 6 ? 0 : 15;
+	}
+
+	@Override
+	public void onWrenchClick(World world, EntityPlayer player, int x, int y, int z, int meta, int side, int wside) {
+		if (wside != 0 && wside != 1) {
+			if (meta < 6) {
+				world.setBlockMetadataWithNotify(x, y, z, wside, 2);
+			}
+			else {
+				world.setBlockMetadataWithNotify(x, y, z, wside + 6, 2);
+			}
+		}
+	}
+
+	@Override
+	public void onWrenchShiftClick(World world, EntityPlayer player, int x, int y, int z, int meta, int side, int wside) {
+		if (this.removedByPlayer(world, player, x, y, z, true)) {
+			this.harvestBlock(world, player, x, y, z, meta);
+		}
 	}
 }

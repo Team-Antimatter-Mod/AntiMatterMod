@@ -158,6 +158,8 @@ public class AntiMatterModRegistry {
 	public static final Item file_01 = new File("IronFile", "iron_file", AMMToolMaterial.IRON);//耐久値10の鑢（ヤスリ）を追加(使えるのは11回)
 	public static final Item screwdriver_01 = new ScrewDriver("IronScrewDriver", "iron_screwdriver", AMMToolMaterial.IRON);//耐久値10のドライバーを追加(使えるのは11回)
 
+	public static final Item toolWrench = new ItemWrench("wrench", "toolwrench");
+
 	//マイニングハンマー
 	public static final Item miningHammer_01 = new MiningHammer("IronMiningHammer", "iron_mininghammer", AMMToolMaterial.IRON, 1);//鉄素材のハンマー3×3を追加
 	public static final Item miningHammer_02 = new MiningHammer("DiamondMiningHammer", "diamond_mininghammer", AMMToolMaterial.DIAMOND, 1);//ダイヤ素材のハンマー3×3
@@ -252,6 +254,8 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerItem(wirecutter_01, "wirecutter_01");
 		GameRegistry.registerItem(file_01, "file_01");
 		GameRegistry.registerItem(screwdriver_01, "screwdriver_01");
+
+		GameRegistry.registerItem(toolWrench, "toolWrench");
 		//マイニングハンマー
 		GameRegistry.registerItem(miningHammer_01, "miningHammer_01");
 		GameRegistry.registerItem(miningHammer_02, "miningHammer_02");

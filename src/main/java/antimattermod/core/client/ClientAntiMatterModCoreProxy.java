@@ -7,12 +7,9 @@ import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattermod.core.Block.TileEntity.TileEntitySatStove;
 import antimattermod.core.Energy.Transfer.TileEntityCable;
-import antimattermod.core.Render.CableRender;
-import antimattermod.core.Render.ClayCrucibleSpecialRender;
+import antimattermod.core.Render.*;
 import antimattermod.core.Render.ItemRender.ItemRenderCable;
 import antimattermod.core.Render.ItemRender.ItemRenderClayCrucibles;
-import antimattermod.core.Render.OverlayBlockRender;
-import antimattermod.core.Render.SatStoveSpecialRender;
 import antimattermod.core.common.AntiMatterModCoreProxy;
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.registry.ClientRegistry;
@@ -23,6 +20,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.MinecraftForgeClient;
+import net.minecraftforge.common.MinecraftForge;
 
 /** <h1>ClientAntiMatterModCoreProxy</h1>
  * <br>
@@ -59,6 +57,9 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 		TileEntitySpecialRenderer cableRender = new CableRender();
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCable.class,cableRender);
 		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(AntiMatterModRegistry.cable),new ItemRenderCable(cableRender,new TileEntityCable()));
+
+		//レンチ使用時の補助線
+		MinecraftForge.EVENT_BUS.register(new RenderWrenchSelectionBox());
 	}
 	
 	@Override

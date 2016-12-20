@@ -2,6 +2,7 @@ package antimattermod.core.Energy.Generator.Block;
 
 import antimattermod.core.AntiMatterModCore;
 import antimattermod.core.AntiMatterModRegistry;
+import antimattermod.core.Block.IWrenchAction;
 import antimattermod.core.Energy.APVoltage;
 import antimattermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
 import cpw.mods.fml.relauncher.Side;
@@ -10,6 +11,7 @@ import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
@@ -21,7 +23,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 /**
  * @author C6H2Cl2
  */
-public class BlockFurnaceGenerator extends BlockContainer{
+public class BlockFurnaceGenerator extends BlockContainer implements IWrenchAction{
     //定数
     private APVoltage voltage = APVoltage.HV;
     private int energyStorage = voltage.getMaxEnergy() * 20 * 600;
@@ -111,5 +113,24 @@ public class BlockFurnaceGenerator extends BlockContainer{
     @Override
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
         return new TileEntityFurnaceGenerator();
+    }
+
+    @Override
+    public void onWrenchClick(World world, EntityPlayer player, int x, int y, int z, int meta, int side, int wside) {
+        if (wside != 0 && wside != 1) {
+            if (meta < 6) {
+                world.setBlockMetadataWithNotify(x, y, z, wside, 2);
+            }
+            else {
+                world.setBlockMetadataWithNotify(x, y, z, wside + 6, 2);
+            }
+        }
+    }
+
+    @Override
+    public void onWrenchShiftClick(World world, EntityPlayer player, int x, int y, int z, int meta, int side, int wside) {
+        if (this.removedByPlayer(world, player, x, y, z, true)) {
+            this.harvestBlock(world, player, x, y, z, meta);
+        }
     }
 }
