@@ -34,21 +34,9 @@ minecraft {
     runDir = "eclipse"
 }
 
-configurations {
-    embed
-    compile.extendsFrom(embed)
-}
-
 dependencies {
     compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
     compile fileTree(dir: 'libs', include: '*.jar')
-}
-
-jar {
-    manifest {
-        attributes 'FMLCorePlugin': 'antimattermod.core.ASM.AMMCoreASMPlugin',
-                'FMLCorePluginContainsFMLMod': 'true'
-    }
 }
 
 processResources
