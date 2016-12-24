@@ -4,10 +4,14 @@ import antimattermod.core.AntiMatterModCore;
 import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Util.AMMToolMaterial;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
+import net.minecraft.util.IIcon;
 import org.jetbrains.annotations.NotNull;
+
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by Raiti-chan on 2016/10/22.
@@ -17,6 +21,8 @@ import org.jetbrains.annotations.NotNull;
  */
 @SuppressWarnings("WeakerAccess")
 public class AMMTool extends ItemTool implements AMMItemBase {
+
+	public static IIcon[] icons = new IIcon[9];
 	
 	protected final AMMToolMaterial material;
 	
@@ -24,8 +30,8 @@ public class AMMTool extends ItemTool implements AMMItemBase {
 		super(toolDamage,material.getToolMaterial(),null);
 		this.setCreativeTab(AntiMatterModRegistry.tabTools);
 		this.material = material;
-		setUnlocalizedName(name);
-		setTextureName(textureName);
+		this.setUnlocalizedName(name);
+		this.setTextureName(textureName);
 		this.maxStackSize = 1;
 	}
 	
@@ -45,7 +51,11 @@ public class AMMTool extends ItemTool implements AMMItemBase {
 	public float func_150893_a(ItemStack itemStack, Block block) {
 		return 1.0F;
 	}
-	
-	
-	
+
+	@Override
+	public void registerIcons(IIconRegister register) {
+		for (int i = 0;i < icons.length; i++) {
+			icons[i] = register.registerIcon(AntiMatterModCore.MOD_ID + ":damage/DURABILITY_BAR_" + i);
+		}
+	}
 }

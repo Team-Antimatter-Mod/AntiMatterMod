@@ -7,9 +7,11 @@ import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattermod.core.Block.TileEntity.TileEntitySatStove;
 import antimattermod.core.Energy.Transfer.TileEntityCable;
+import antimattermod.core.Item.tool.AMMTool;
 import antimattermod.core.Render.*;
 import antimattermod.core.Render.ItemRender.ItemRenderCable;
 import antimattermod.core.Render.ItemRender.ItemRenderClayCrucibles;
+import antimattermod.core.Render.ItemRender.ToolDamageRender;
 import antimattermod.core.common.AntiMatterModCoreProxy;
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.registry.ClientRegistry;
@@ -60,6 +62,9 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 
 		//レンチ使用時の補助線
 		MinecraftForge.EVENT_BUS.register(new RenderWrenchSelectionBox());
+
+		//MinecraftForgeClient.registerItemRenderer(AntiMatterModRegistry.toolWrench, new ToolDamageRender());
+
 	}
 	
 	@Override
