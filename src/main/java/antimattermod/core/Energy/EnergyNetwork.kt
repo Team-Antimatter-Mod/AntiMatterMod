@@ -104,12 +104,7 @@ class EnergyNetwork {
             APType.Transfer -> networkComponentsTransfer
             APType.ぬるぽ -> null
         } ?: return false
-        for (pos : BlockPos in targetList){
-            if(pos == blockPos){
-                return true
-            }
-        }
-        return false
+        return targetList.contains(blockPos)
     }
 /*
     fun isContains(tileEntity: TileEntity):Boolean{
