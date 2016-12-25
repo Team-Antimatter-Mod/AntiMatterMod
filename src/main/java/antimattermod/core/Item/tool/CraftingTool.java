@@ -48,5 +48,9 @@ public abstract class CraftingTool extends AMMToolNotToolClass {
 	public void addInformation(ItemStack itemStack, EntityPlayer player, List informationList, boolean advanced){
 		informationList.add(getMaxDamage()-getDamage(itemStack)+"/"+getMaxDamage());
 	}
-	
+
+	/*@Override
+	public boolean showDurabilityBar(ItemStack stack) {
+		return false;
+	}*/
 }

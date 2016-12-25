@@ -58,4 +58,9 @@ public class AMMTool extends ItemTool implements AMMItemBase {
 			icons[i] = register.registerIcon(AntiMatterModCore.MOD_ID + ":damage/DURABILITY_BAR_" + i);
 		}
 	}
+
+	/*@Override
+	public boolean showDurabilityBar(ItemStack stack) {
+		return false;
+	}*/
 }

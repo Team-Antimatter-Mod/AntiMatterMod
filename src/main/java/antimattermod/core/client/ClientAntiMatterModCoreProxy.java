@@ -63,7 +63,7 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 		//レンチ使用時の補助線
 		MinecraftForge.EVENT_BUS.register(new RenderWrenchSelectionBox());
 
-		//MinecraftForgeClient.registerItemRenderer(AntiMatterModRegistry.toolWrench, new ToolDamageRender());
+		//MinecraftForgeClient.registerItemRenderer(AntiMatterModRegistry.hammer_01, new ToolDamageRender());
 
 	}
 	
