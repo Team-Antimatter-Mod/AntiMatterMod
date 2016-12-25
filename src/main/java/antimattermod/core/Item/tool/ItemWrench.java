@@ -2,9 +2,7 @@ package antimattermod.core.Item.tool;
 
 import antimattermod.core.AntiMatterModCore;
 import antimattermod.core.AntiMatterModRegistry;
-import antimattermod.core.Block.ClayCrucibleHeater;
 import antimattermod.core.Block.IWrenchAction;
-import antimattermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -40,7 +38,7 @@ public class ItemWrench extends Item implements AMMItemBase {
 
 
 
-    public static boolean onTop(double hitX, double hitY, double hitZ, int side) {
+    private static boolean onTop(double hitX, double hitY, double hitZ, int side) {
         switch (side) {
             case 0:
                 if (hitX >= 0.25D && hitX <= 0.75D && hitZ >= 0.25D && hitZ <= 0.75D) {
