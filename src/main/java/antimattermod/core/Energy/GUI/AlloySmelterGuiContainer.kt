@@ -1,7 +1,8 @@
-package antimattermod.core.Energy.Machine.GUI
+package antimattermod.core.Energy.GUI
 
 import antimattermod.core.AntiMatterModCore
-import antimattermod.core.Energy.Machine.TileAlloySmelter
+import antimattermod.core.Energy.GUI.AlloySmelterContainer
+import antimattermod.core.Energy.TileEntity.Machine.TileAlloySmelter
 import net.minecraft.client.gui.inventory.GuiContainer
 import net.minecraft.entity.player.InventoryPlayer
 import net.minecraft.util.ResourceLocation

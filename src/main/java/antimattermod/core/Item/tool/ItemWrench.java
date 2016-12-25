@@ -2,9 +2,7 @@ package antimattermod.core.Item.tool;
 
 import antimattermod.core.AntiMatterModCore;
 import antimattermod.core.AntiMatterModRegistry;
-import antimattermod.core.Block.ClayCrucibleHeater;
 import antimattermod.core.Block.IWrenchAction;
-import antimattermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;

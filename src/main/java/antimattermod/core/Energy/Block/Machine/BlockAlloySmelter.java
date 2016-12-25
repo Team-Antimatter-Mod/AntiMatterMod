@@ -1,8 +1,9 @@
-package antimattermod.core.Energy.Machine;
+package antimattermod.core.Energy.Block.Machine;
 
 import antimattermod.core.AMMGuiHandler;
 import antimattermod.core.AntiMatterModCore;
 import antimattermod.core.AntiMatterModRegistry;
+import antimattermod.core.Energy.TileEntity.Machine.TileAlloySmelter;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;

@@ -1,10 +1,10 @@
-package antimattermod.core.Energy.Generator.Block;
+package antimattermod.core.Energy.Block.Generator;
 
 import antimattermod.core.AntiMatterModCore;
 import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Block.IWrenchAction;
 import antimattermod.core.Energy.APVoltage;
-import antimattermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
+import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockContainer;

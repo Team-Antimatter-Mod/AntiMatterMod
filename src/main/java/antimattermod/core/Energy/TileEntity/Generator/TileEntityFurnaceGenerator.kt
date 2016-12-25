@@ -1,4 +1,4 @@
-package antimattermod.core.Energy.Generator.TileEntity
+package antimattermod.core.Energy.TileEntity.Generator
 
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.Energy.APVoltage

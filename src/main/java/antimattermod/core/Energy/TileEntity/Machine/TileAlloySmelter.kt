@@ -1,4 +1,4 @@
-package antimattermod.core.Energy.Machine
+package antimattermod.core.Energy.TileEntity.Machine
 
 import antimattermod.core.Energy.APVoltage
 import net.minecraft.entity.player.EntityPlayer

@@ -7,15 +7,12 @@ import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattermod.core.Block.BlockSatStove;
 import antimattermod.core.Block.Ores.BedrockOreBlock;
 import antimattermod.core.Block.TileEntity.TileEntityClayCrucibleHeater;
-import antimattermod.core.Energy.Transfer.BlockCable;
-import antimattermod.core.Energy.Transfer.TileEntityCable;
 import antimattermod.core.Item.ClayCruciblePattern;
-import antimattermod.core.Item.ItemBlock.CableItemBlock;
 import antimattermod.core.Item.ItemBlock.MetaItemBlock;
 import antimattermod.core.Block.Ores.DifferentOreBlock;
 import antimattermod.core.Block.Ores.OreBlock;
-import antimattermod.core.Energy.Generator.Block.BlockFurnaceGenerator;
-import antimattermod.core.Energy.Generator.TileEntity.TileEntityFurnaceGenerator;
+import antimattermod.core.Energy.Block.Generator.BlockFurnaceGenerator;
+import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator;
 import antimattermod.core.Item.Marmite;
 import antimattermod.core.Item.StatesChecker;
 import antimattermod.core.Item.tool.*;
@@ -181,7 +178,6 @@ public class AntiMatterModRegistry {
 
 	//発電機
 	public static final Block furnaceGenerator = new BlockFurnaceGenerator();
-	public static final Block cable = new BlockCable(Material.rock);
 
 	//かまど
 	public static final Block satStove = new BlockSatStove();
@@ -276,7 +272,6 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerBlock(bedrockOreBlock_1, MetaItemBlock.class, "bedrockOreBlock_01");
 		//機械
 		GameRegistry.registerBlock(furnaceGenerator, "furnaceGeneratorAP");
-		GameRegistry.registerBlock(cable, CableItemBlock.class, "Cable");
 		GameRegistry.registerBlock(satStove, "satStove");
 		GameRegistry.registerBlock(machinecasing, MetaItemBlock.class, "machinecasing");
 		GameRegistry.registerBlock(machinehull, MetaItemBlock.class, "machinehull");
@@ -306,7 +301,6 @@ public class AntiMatterModRegistry {
 
 		//TileEntityの登録 =============================================================================================
 		GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class, "tileFurnaceGeneratorAP");
-		GameRegistry.registerTileEntity(TileEntityCable.class, "tileCableAP");
 
 		GameRegistry.registerTileEntity(TileEntityClayCrucible.class, "tileClayCrucible");
 		GameRegistry.registerTileEntity(TileEntityClayCrucibleHeater.class, "tileClayCrucibleHeater");
