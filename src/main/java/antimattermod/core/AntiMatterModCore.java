@@ -23,7 +23,9 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
 public class AntiMatterModCore {
 
 	public static final String MOD_ID = "AntiMatterModCore";
+	@SuppressWarnings("WeakerAccess")
 	public static final String MOD_NAME = "AntiMatterMod Core";
+	@SuppressWarnings("WeakerAccess")
 	public static final String MOD_VERSION = "1.0.0";
 
 	@Mod.Metadata
