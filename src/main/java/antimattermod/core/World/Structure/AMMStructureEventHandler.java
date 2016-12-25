@@ -32,10 +32,10 @@ public class AMMStructureEventHandler {
 		// 通常世界(Overworld)にサンプルダンジョンを生成したいのでディメンションIDで通常世界かどうか判断する
 		if(event.world.provider.dimensionId == 0){
 			// ８チャンク以内に追加構造物生成に適したチャンクがあるかを調べ、ある場合は生成する追加構造物の構成パーツを決定する
-			tiamatMapGen.func_151539_a(event.chunkProvider, event.world, event.chunkX, event.chunkZ, null);
+			this.tiamatMapGen.func_151539_a(event.chunkProvider, event.world, event.chunkX, event.chunkZ, null);
 			
 			//追加構造物の一部が このチャンク範囲に重複するかどうかを調べ、重複する場合は追加構造物のブロックをチャンク内に設置する
-			tiamatMapGen.generateStructuresInChunk(event.world,event.rand,event.chunkX,event.chunkZ);
+			this.tiamatMapGen.generateStructuresInChunk(event.world,event.rand,event.chunkX,event.chunkZ);
 		}
 	}
 	

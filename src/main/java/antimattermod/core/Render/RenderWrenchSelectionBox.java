@@ -27,6 +27,8 @@ import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
 public class RenderWrenchSelectionBox {
+    
+    @SuppressWarnings("unused")
     @SubscribeEvent
     public void onRenderSelectionBox(RenderWorldLastEvent event) {
         EntityPlayer player = Minecraft.getMinecraft().thePlayer;
@@ -34,7 +36,7 @@ public class RenderWrenchSelectionBox {
         MovingObjectPosition MOP = Minecraft.getMinecraft().objectMouseOver;
         Block block = world.getBlock(MOP.blockX, MOP.blockY, MOP.blockZ);
 
-        if ((player != null) && (world != null)) {
+        if (player != null) {
 
             ItemStack itemStack = player.getCurrentEquippedItem();
             // ItemBlockを持っていて、ブロックにポインタが行っている時

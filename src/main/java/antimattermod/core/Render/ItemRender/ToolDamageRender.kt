@@ -48,8 +48,19 @@ class ToolDamageRender : IItemRenderer {
             val maxDamage = item.maxDamage
             val baseDamage = maxDamage.div(8)
             val typeD : Array<Int> = arrayOf(0, baseDamage.times(1), baseDamage.times(2), baseDamage.times(3), baseDamage.times(4), baseDamage.times(5), baseDamage.times(6), baseDamage.times(7), baseDamage.times(8), maxDamage)
-            //this.renderItemIcon(damageIcon[8], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
-            if (damage > typeD[8]) {
+
+            when {
+                damage > typeD[8] -> this.renderItemIcon(damageIcon[0], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
+                damage > typeD[7] -> this.renderItemIcon(damageIcon[1], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
+                damage > typeD[6] -> this.renderItemIcon(damageIcon[2], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
+                damage > typeD[5] -> this.renderItemIcon(damageIcon[3], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
+                damage > typeD[4] -> this.renderItemIcon(damageIcon[4], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
+                damage > typeD[3] -> this.renderItemIcon(damageIcon[5], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
+                damage > typeD[2] -> this.renderItemIcon(damageIcon[6], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
+                damage > typeD[1] -> this.renderItemIcon(damageIcon[7], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
+                damage > typeD[0] -> this.renderItemIcon(damageIcon[8], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
+            }
+            /*if (damage > typeD[8]) {
                 this.renderItemIcon(damageIcon[0], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
             } else if (damage > typeD[7]) {
                 this.renderItemIcon(damageIcon[1], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
@@ -67,7 +78,7 @@ class ToolDamageRender : IItemRenderer {
                 this.renderItemIcon(damageIcon[7], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
             } else if (damage > typeD[0]) {
                 this.renderItemIcon(damageIcon[8], 16.0, 0.001, 0.0F, 0.0F, -1.0F)
-            }
+            }*/
 
 
             GL11.glDisable(3042)

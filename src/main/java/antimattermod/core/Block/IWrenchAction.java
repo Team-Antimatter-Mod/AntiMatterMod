@@ -11,7 +11,6 @@ public interface IWrenchAction {
     /**
      * レンチで右クリックされた時
      * @param  side 実際にクリックされた側面
-     * *
      * @param  selected レンチで選択した側面
      */
     void onWrenchClick(World world, EntityPlayer player, int x, int y, int z, int meta, int side, int selected);
@@ -19,7 +18,6 @@ public interface IWrenchAction {
     /**
      * レンチで右クリックされた時
      * @param  side 実際にクリックされた側面
-     * *
      * @param  selected レンチで選択した側面
      */
     void onWrenchShiftClick(World world, EntityPlayer player, int x, int y, int z, int meta, int side, int selected);
