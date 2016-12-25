@@ -12,7 +12,7 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.5-2'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.5-3'
     }
 }
 
@@ -21,7 +21,7 @@ apply plugin: "kotlin"
 
 tasks.withType(Jar) {
     compileJava.options.encoding = 'UTF-8'
-    compileJava.options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+    compileJava.options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" << "-Xms2G" << "-Xmx8G"
 }
 sourceCompatibility = targetCompatibility = "1.8"
 
@@ -35,7 +35,7 @@ minecraft {
 }
 
 dependencies {
-    compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
+    compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.5-3'
     compile fileTree(dir: 'libs', include: '*.jar')
 }
 
