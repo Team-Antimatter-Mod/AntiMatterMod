@@ -1,9 +1,7 @@
-package antimattermod.core.Item
+package antimattermod.core.Energy.Item
 
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.AntiMatterModRegistry
-import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator
-import antimattermod.core.Energy.IAPGenerator
 import net.minecraft.block.Block
 import net.minecraft.entity.player.EntityPlayer
 import net.minecraft.item.Item

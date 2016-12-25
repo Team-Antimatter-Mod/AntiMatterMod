@@ -41,8 +41,8 @@ public class AntiMatterModCore {
 	public void preinit(FMLPreInitializationEvent event) {
 		loadMeta(modMetadata);
         AntiMatterModRegistry.registerPreInit(event);
+        AMMRegistry.INSTANCE.handlePreinit();
 		OreDictionaryRegister.OreDictionaryRegisterPreInit(event);
-
 	}
 	
 	@Mod.EventHandler
@@ -50,6 +50,7 @@ public class AntiMatterModCore {
 	public void init(FMLInitializationEvent event) {
 		proxy.registerRenderer();
 		AntiMatterModRegistry.registerInit(event);
+		AMMRegistry.INSTANCE.handleInit();
 		RecipeRegister.beforeRemoveRecipeinit(event);
 		RecipeRegister.RecipeRegisterInit(event);
 		RecipeRegister.afterRemoveRecipeinit(event);

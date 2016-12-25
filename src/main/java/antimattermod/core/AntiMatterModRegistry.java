@@ -11,10 +11,7 @@ import antimattermod.core.Item.ClayCruciblePattern;
 import antimattermod.core.Item.ItemBlock.MetaItemBlock;
 import antimattermod.core.Block.Ores.DifferentOreBlock;
 import antimattermod.core.Block.Ores.OreBlock;
-import antimattermod.core.Energy.Block.Generator.BlockFurnaceGenerator;
-import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator;
 import antimattermod.core.Item.Marmite;
-import antimattermod.core.Item.StatesChecker;
 import antimattermod.core.Item.tool.*;
 import antimattermod.core.Mob.EntityHoeHoeMan;
 import antimattermod.core.Mob.ItemEgg.ItemHoeHoeManEgg;
@@ -87,7 +84,7 @@ public class AntiMatterModRegistry {
 	public final static CreativeTabs tabMachines = new CreativeTabs("ammachines") {
 		@Override
 		public Item getTabIconItem() {
-			return Item.getItemFromBlock(furnaceGenerator);
+			return Item.getItemFromBlock(AMMRegistry.INSTANCE.getFurnaceGenerator());
 		}
 	};
 	//ツール
@@ -148,7 +145,6 @@ public class AntiMatterModRegistry {
 	public static final Item itemEggHoeHoeMan = new ItemHoeHoeManEgg();//チュウボスの卵
 
 	//ツール類
-	public static final Item statesChecker = new StatesChecker();
 	public static final Item hammer_01 = new Hammer("IronHammer", "iron_hammer", AMMToolMaterial.IRON);//耐久値10のハンマーを追加(使えるのは11回)
 	public static final Item wrench_01 = new Wrench("IronWrench", "iron_wrench", AMMToolMaterial.IRON);//耐久値10のレンチを追加(使えるのは11回)
 	public static final Item wirecutter_01 = new WireCutter("IronWirecutter", "iron_wirecutter", AMMToolMaterial.IRON);//耐久値10のワイヤーカッターを追加(使えるのは11回)
@@ -175,9 +171,6 @@ public class AntiMatterModRegistry {
 	public static final Block bedrockPowderOreBlock_1 = new BedrockOreBlock("bedrockPowderOreBlock_01", powderOreBlock_1);
 	public static final Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 16, new float[]{5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F}, new byte[]{3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3});
 	public static final Block bedrockOreBlock_1 = new BedrockOreBlock("bedrockOreBlock_01", oreBlock_1);
-
-	//発電機
-	public static final Block furnaceGenerator = new BlockFurnaceGenerator();
 
 	//かまど
 	public static final Block satStove = new BlockSatStove();
@@ -244,7 +237,6 @@ public class AntiMatterModRegistry {
 		//モブEgg
 		GameRegistry.registerItem(itemEggHoeHoeMan, "itemEggHoeHoeMan");
 		//ツール
-		GameRegistry.registerItem(statesChecker, "statesCheckerAP");
 		GameRegistry.registerItem(hammer_01, "hammer_01");//追加
 		GameRegistry.registerItem(wrench_01, "wrench_01");
 		GameRegistry.registerItem(wirecutter_01, "wirecutter_01");
@@ -271,7 +263,6 @@ public class AntiMatterModRegistry {
 		GameRegistry.registerBlock(bedrockPowderOreBlock_1, MetaItemBlock.class, "bedrockPowderOreBlock_01");
 		GameRegistry.registerBlock(bedrockOreBlock_1, MetaItemBlock.class, "bedrockOreBlock_01");
 		//機械
-		GameRegistry.registerBlock(furnaceGenerator, "furnaceGeneratorAP");
 		GameRegistry.registerBlock(satStove, "satStove");
 		GameRegistry.registerBlock(machinecasing, MetaItemBlock.class, "machinecasing");
 		GameRegistry.registerBlock(machinehull, MetaItemBlock.class, "machinehull");
@@ -300,7 +291,6 @@ public class AntiMatterModRegistry {
 	static void registerInit(@SuppressWarnings("UnusedParameters") FMLInitializationEvent event) {
 
 		//TileEntityの登録 =============================================================================================
-		GameRegistry.registerTileEntity(TileEntityFurnaceGenerator.class, "tileFurnaceGeneratorAP");
 
 		GameRegistry.registerTileEntity(TileEntityClayCrucible.class, "tileClayCrucible");
 		GameRegistry.registerTileEntity(TileEntityClayCrucibleHeater.class, "tileClayCrucibleHeater");

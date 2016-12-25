@@ -7,17 +7,15 @@ import java.util.*
 /**
  * @author C6H2Cl2
  */
-//RecipeRegistryKT.INSTANCE
-val INSTANCE : RecipeRegistry = RecipeRegistry()
-class RecipeRegistry {
+object RecipeRegistry {
     private val alloySmelterRecipes : HashMap<String, AlloySmelterRecipe> = HashMap()
 
-    public fun addAlloySmelterRecipe(name : String,alloySmelterRecipe: AlloySmelterRecipe){
+    fun addAlloySmelterRecipe(name : String,alloySmelterRecipe: AlloySmelterRecipe){
         alloySmelterRecipes.put(name,alloySmelterRecipe)
     }
 
     //ForgeのGameRegistry.addRecipe()形式でレシピ受付したいなぁ
-    public fun addAlloySmelterRecipe(name: String,tier : Int,isShapeless:Boolean,vararg recipeShape : Any){
+    fun addAlloySmelterRecipe(name: String,tier : Int,isShapeless:Boolean,vararg recipeShape : Any){
         val size = recipeShape.size
         var numRecipe = 0
         val recipeShapeString = arrayOfNulls<String?>(3)
@@ -66,11 +64,11 @@ class RecipeRegistry {
 
     //ラッパ達
     //不定形
-    public fun addAlloySmelterRecipeShapeless(name: String,tier: Int,vararg recipeShape: Array<out Any>){
+    fun addAlloySmelterRecipeShapeless(name: String,tier: Int,vararg recipeShape: Array<out Any>){
         addAlloySmelterRecipe(name,tier,true,recipeShape)
     }
     //定形
-    public fun addAlloySmelterRecipeShaped(name: String,tier: Int,vararg recipeShape: Array<out Any>){
+    fun addAlloySmelterRecipeShaped(name: String,tier: Int,vararg recipeShape: Array<out Any>){
         addAlloySmelterRecipe(name,tier,false,recipeShape)
     }
 }

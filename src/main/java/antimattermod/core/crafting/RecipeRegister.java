@@ -1,5 +1,6 @@
 package antimattermod.core.crafting;
 
+import antimattermod.core.AMMRegistry;
 import antimattermod.core.AntiMatterModRegistry;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -74,23 +75,24 @@ public class RecipeRegister {
 		
 		GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.machinecasing, 1, 1), "AAA", "ABA", "AAA",
 				'A', new ItemStack(AntiMatterModRegistry.plate_01, 1, 5), 'B', OreDictionaryRegister.craftingToolWrench));
-		
+		//TODO ケーブルの部分を置換する
+		/*
 		GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.machinehull, 1, 0), "ABA", "CDC", "EFE",
 				'A', new ItemStack(AntiMatterModRegistry.screw_01, 1, 0), 'B', OreDictionaryRegister.craftingScrewdriver,
 				'C', new ItemStack(AntiMatterModRegistry.cable, 1, 0), 'D', new ItemStack(AntiMatterModRegistry.machinecasing, 1, 0),
 				'E', new ItemStack(AntiMatterModRegistry.conductivematerial_01, 1, 0), 'F', OreDictionaryRegister.craftingToolWrench));
-		
-		GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.furnaceGenerator), "ABA", "CDC", "EFE",
+		*/
+		GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AMMRegistry.INSTANCE.getFurnaceGenerator()), "ABA", "CDC", "EFE",
 				'A', new ItemStack(AntiMatterModRegistry.motor_01, 1, 0), 'B', new ItemStack(AntiMatterModRegistry.turbine_01, 1, 0),
 				'C', new ItemStack(AntiMatterModRegistry.conductivematerial_01, 1, 0), 'D', new ItemStack(AntiMatterModRegistry.machinehull, 1, 0),
 				'E', new ItemStack(Blocks.furnace, 1, 0), 'F', OreDictionaryRegister.craftingToolWrench));
 		
 		//ケーブル
-		GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.cable, 2, 0), "ABA", "BCB", "ABA",
+		/*GameRegistry.addRecipe(shapedOreRecipe(new ItemStack(AntiMatterModRegistry.cable, 2, 0), "ABA", "BCB", "ABA",
 				'A', new ItemStack(AntiMatterModRegistry.wire_01, 1, 0),
 				'B', new ItemStack(AntiMatterModRegistry.conductivematerial_01, 1, 0),
 				'C', OreDictionaryRegister.craftingToolWrench));
-		
+		*/
 		//ナゲット→インゴット  \\なんでクラフトでできるんだ！！！ by Raiti//
 		GameRegistry.addRecipe(new ItemStack(AntiMatterModRegistry.ingot_01, 1, 1), "AAA", "AAA", "AAA",
 				'A', new ItemStack(AntiMatterModRegistry.nugget_01, 1, 0));

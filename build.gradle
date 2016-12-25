@@ -21,7 +21,7 @@ apply plugin: "kotlin"
 
 tasks.withType(Jar) {
     compileJava.options.encoding = 'UTF-8'
-    compileJava.options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" << "-Xms2G" << "-Xmx8G"
+    compileJava.options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
 }
 sourceCompatibility = targetCompatibility = "1.8"
 

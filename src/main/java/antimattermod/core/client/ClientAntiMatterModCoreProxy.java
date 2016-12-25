@@ -6,10 +6,8 @@ package antimattermod.core.client;
 import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattermod.core.Block.TileEntity.TileEntitySatStove;
-import antimattermod.core.Energy.Transfer.TileEntityCable;
 import antimattermod.core.Item.tool.AMMTool;
 import antimattermod.core.Render.*;
-import antimattermod.core.Render.ItemRender.ItemRenderCable;
 import antimattermod.core.Render.ItemRender.ItemRenderClayCrucibles;
 import antimattermod.core.Render.ItemRender.ToolDamageRender;
 import antimattermod.core.common.AntiMatterModCoreProxy;
@@ -54,11 +52,6 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 
 		//土かまどレンダー
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySatStove.class,new SatStoveSpecialRender());
-
-		//ケーブルレンダ―
-		TileEntitySpecialRenderer cableRender = new CableRender();
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCable.class,cableRender);
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(AntiMatterModRegistry.cable),new ItemRenderCable(cableRender,new TileEntityCable()));
 
 		//レンチ使用時の補助線
 		MinecraftForge.EVENT_BUS.register(new RenderWrenchSelectionBox());
