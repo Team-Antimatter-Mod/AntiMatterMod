@@ -2,7 +2,6 @@ package antimattermod.core.Energy.Generator.TileEntity
 
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.Energy.APVoltage
-import antimattermod.core.Energy.IAPGenerator
 import cpw.mods.fml.relauncher.Side
 import cpw.mods.fml.relauncher.SideOnly
 import net.minecraft.nbt.NBTTagCompound

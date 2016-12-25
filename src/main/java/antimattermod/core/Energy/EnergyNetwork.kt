@@ -84,7 +84,7 @@ class EnergyNetwork {
     fun registerTileEntity(tileEntity: TileEntity,apType: APType){
         registerTileEntity(BlockPos(tileEntity.xCoord,tileEntity.yCoord,tileEntity.zCoord),apType)
     }
-
+/*
     fun registerTileEntity(tileEntity: TileEntity){
         when(tileEntity){
             is IAPProvider -> registerTileEntity(tileEntity,APType.Provider)
@@ -92,7 +92,7 @@ class EnergyNetwork {
             is IAPTransfer -> registerTileEntity(tileEntity,APType.Transfer)
         }
     }
-
+*/
     fun isContains(blockPos: BlockPos):Boolean{
         return isContains(blockPos,APType.Provider) || isContains(blockPos,APType.Receiver) || isContains(blockPos,APType.Transfer)
     }
@@ -111,7 +111,7 @@ class EnergyNetwork {
         }
         return false
     }
-
+/*
     fun isContains(tileEntity: TileEntity):Boolean{
         val blockPos = BlockPos(tileEntity.xCoord,tileEntity.yCoord,tileEntity.zCoord)
         return when(tileEntity){
@@ -121,6 +121,6 @@ class EnergyNetwork {
             else -> false
         }
     }
-
+*/
     fun getProviders():LinkedList<BlockPos> = networkComponentsProvider
 }

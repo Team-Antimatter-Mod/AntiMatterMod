@@ -1,7 +1,6 @@
 package antimattermod.core.Energy.Machine
 
 import antimattermod.core.Energy.APVoltage
-import antimattermod.core.Energy.IAPMachine
 import net.minecraft.entity.player.EntityPlayer
 import net.minecraft.inventory.IInventory
 import net.minecraft.item.ItemStack
