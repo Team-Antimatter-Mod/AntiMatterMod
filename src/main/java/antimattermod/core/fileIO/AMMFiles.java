@@ -10,13 +10,19 @@ package antimattermod.core.fileIO;
  * @version 1.0.0
  * @since 1.0.0
  */
-@SuppressWarnings("unused")
-public class AMMFiles {
+@SuppressWarnings({"unused", "WeakerAccess"})
+public final class AMMFiles {
     
     /**
      * このMODのConfig用のパス
      */
     public static final String CONFIG_DIRECTORY = "config/AntiMatterMod/";
     
+    /**
+     * 開発者BOSSテクスチャのダウンロード場所
+     */
+    public static final String DEVELOPER_BOSS_TEXTURE_DIRECTORY = "config/AntiMatterMod/developerBossTexture/";
+    
+
     
 }

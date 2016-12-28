@@ -18,7 +18,7 @@ import java.net.URLConnection;
  * @version 1.0.0
  * @since 1.0.0
  */
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "WeakerAccess"})
 public class DownloadFiles {
     
     /**
@@ -54,9 +54,9 @@ public class DownloadFiles {
      *
      * @param url  ファイルのURL
      * @param path 保存するパスへの{@link File}オブジェクト
+     * @return ダウンロードしたファイルへのパス文字列
      */
-    @SuppressWarnings("WeakerAccess")
-    public static void download(String url, File path) {
+    public static String download(String url, File path) {
         boolean flag;//URLへの接続が成功した場合trueになるフラグ
         URLConnection connection = null;//URLへの接続オブジェクト
         try {
@@ -89,10 +89,12 @@ public class DownloadFiles {
                 }
                 //ダウンロード終了
                 System.out.println("Finish!!");
+                return path.toString();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+        return null;
         
     }
     
@@ -101,9 +103,10 @@ public class DownloadFiles {
      *
      * @param url  ファイルのURL
      * @param path 保存するパスへの{@link File}オブジェクト
+     * @return ダウンロードしたファイルへのパス文字列
      */
-    public static void download(String url, String path) {
-        DownloadFiles.download(url, new File(path));
+    public static String download(String url, String path) {
+        return DownloadFiles.download(url, new File(path));
     }
     
     

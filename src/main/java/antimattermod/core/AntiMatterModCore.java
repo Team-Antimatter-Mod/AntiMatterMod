@@ -5,6 +5,7 @@ import antimattermod.core.command.ExclusiveDeleteBlock;
 import antimattermod.core.common.AntiMatterModCoreProxy;
 import antimattermod.core.crafting.OreDictionaryRegister;
 import antimattermod.core.crafting.RecipeRegister;
+import antimattermod.core.fileIO.DeveloperBossTexture;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.ModMetadata;
 import cpw.mods.fml.common.SidedProxy;
@@ -19,68 +20,69 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
  * @author Raiti, C6H2Cl2
  * @version 1.0.0
  */
-@Mod(modid = AntiMatterModCore.MOD_ID,useMetadata = true,dependencies = "required-after:Forge@[10.13.4.1558,);required-after:YukariLib")
+@Mod(modid = AntiMatterModCore.MOD_ID, useMetadata = true, dependencies = "required-after:Forge@[10.13.4.1558,);required-after:YukariLib")
 public class AntiMatterModCore {
-
-	public static final String MOD_ID = "AntiMatterModCore";
-	@SuppressWarnings("WeakerAccess")
-	public static final String MOD_NAME = "AntiMatterMod Core";
-	@SuppressWarnings("WeakerAccess")
-	public static final String MOD_VERSION = "1.0.0";
-
-	@Mod.Metadata
-	public static ModMetadata modMetadata;
-	@SidedProxy(clientSide = "antimattermod.core.client.ClientAntiMatterModCoreProxy", serverSide = "antimattermod.core.common.AntiMatterModCoreProxy")
-	public static AntiMatterModCoreProxy proxy;
-
-	@Mod.Instance(MOD_ID)
-	public static AntiMatterModCore INSTANCE;
-
-	@Mod.EventHandler
-	@SuppressWarnings("unused")
-	public void preinit(FMLPreInitializationEvent event) {
-		loadMeta(modMetadata);
+    
+    public static final String MOD_ID = "AntiMatterModCore";
+    @SuppressWarnings("WeakerAccess")
+    public static final String MOD_NAME = "AntiMatterMod Core";
+    @SuppressWarnings("WeakerAccess")
+    public static final String MOD_VERSION = "1.0.0";
+    
+    @Mod.Metadata
+    public static ModMetadata modMetadata;
+    @SidedProxy(clientSide = "antimattermod.core.client.ClientAntiMatterModCoreProxy", serverSide = "antimattermod.core.common.AntiMatterModCoreProxy")
+    public static AntiMatterModCoreProxy proxy;
+    
+    @Mod.Instance(MOD_ID)
+    public static AntiMatterModCore INSTANCE;
+    
+    @Mod.EventHandler
+    @SuppressWarnings("unused")
+    public void preinit(FMLPreInitializationEvent event) {
+        loadMeta(modMetadata);
+        DeveloperBossTexture.downloadTexture();//開発者のスキンのダウンロード
         AntiMatterModRegistry.registerPreInit(event);
         AMMRegistry.INSTANCE.handlePreinit();
-		OreDictionaryRegister.OreDictionaryRegisterPreInit(event);
-	}
-	
-	@Mod.EventHandler
-	@SuppressWarnings("unused")
-	public void init(FMLInitializationEvent event) {
-		proxy.registerRenderer();
-		AntiMatterModRegistry.registerInit(event);
-		AMMRegistry.INSTANCE.handleInit();
-		RecipeRegister.beforeRemoveRecipeinit(event);
-		RecipeRegister.RecipeRegisterInit(event);
-		RecipeRegister.afterRemoveRecipeinit(event);
-	}
-	
-	@Mod.EventHandler
-	@SuppressWarnings("unused")
-	public void posinit(FMLPostInitializationEvent event) {
-		AntiMatterModRegistry.registerPostInit(event);
-	}
-	
-	@Mod.EventHandler
-	@SuppressWarnings("unused")
-	public void serverStarting(FMLServerStartingEvent event){
-		event.registerServerCommand(new ExclusiveDeleteBlock());
-		event.registerServerCommand(new Createsphere());
-
-	}
-	
-	
-	private void loadMeta(ModMetadata metadata){
-		metadata.modId = MOD_ID;
-		metadata.name = MOD_NAME;
-		metadata.version = MOD_VERSION;
-		metadata.authorList.add("C6H2Cl2");
-		metadata.authorList.add("Raiti-Chan");
-		metadata.authorList.add("Kojin15");
-		metadata.authorList.add("Worldofthetakumi");
+        OreDictionaryRegister.OreDictionaryRegisterPreInit(event);
+    }
+    
+    @Mod.EventHandler
+    @SuppressWarnings("unused")
+    public void init(FMLInitializationEvent event) {
+        proxy.registerRenderer();
+        AntiMatterModRegistry.registerInit(event);
+        AMMRegistry.INSTANCE.handleInit();
+        RecipeRegister.beforeRemoveRecipeinit(event);
+        RecipeRegister.RecipeRegisterInit(event);
+        RecipeRegister.afterRemoveRecipeinit(event);
+    }
+    
+    @Mod.EventHandler
+    @SuppressWarnings("unused")
+    public void posinit(FMLPostInitializationEvent event) {
+        AntiMatterModRegistry.registerPostInit(event);
+    }
+    
+    @Mod.EventHandler
+    @SuppressWarnings("unused")
+    public void serverStarting(FMLServerStartingEvent event) {
+        event.registerServerCommand(new ExclusiveDeleteBlock());
+        event.registerServerCommand(new Createsphere());
+        
+    }
+    
+    
+    private void loadMeta(ModMetadata metadata) {
+        metadata.modId = MOD_ID;
+        metadata.name = MOD_NAME;
+        metadata.version = MOD_VERSION;
+        metadata.authorList.add("C6H2Cl2");
+        metadata.authorList.add("Raiti-Chan");
+        metadata.authorList.add("Kojin15");
+        metadata.authorList.add("Worldofthetakumi");
         metadata.authorList.add("Sora-Suke");
-		metadata.description = "Make Anti-Matter in Minecraft!";
+        metadata.description = "Make Anti-Matter in Minecraft!";
         metadata.autogenerated = false;
-	}
+    }
 }
