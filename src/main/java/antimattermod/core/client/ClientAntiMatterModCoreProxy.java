@@ -7,6 +7,9 @@ import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattermod.core.Block.TileEntity.TileEntitySatStove;
 import antimattermod.core.Item.tool.AMMTool;
+import antimattermod.core.Mob.EntityDeveloperBoss;
+import antimattermod.core.Mob.model.ModelDeveloperBoss;
+import antimattermod.core.Mob.render.RenderDeveloperBoss;
 import antimattermod.core.Render.*;
 import antimattermod.core.Render.ItemRender.ItemRenderClayCrucibles;
 import antimattermod.core.Render.ItemRender.ToolDamageRender;
@@ -55,6 +58,8 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 
 		//レンチ使用時の補助線
 		MinecraftForge.EVENT_BUS.register(new RenderWrenchSelectionBox());
+
+		RenderingRegistry.registerEntityRenderingHandler(EntityDeveloperBoss.class, new RenderDeveloperBoss(new ModelDeveloperBoss()));
 
 		//MinecraftForgeClient.registerItemRenderer(AntiMatterModRegistry.hammer_01, new ToolDamageRender());
 
