@@ -14,6 +14,7 @@ package antimattermod.core.fileIO;
 @SuppressWarnings("unused")
 public enum DeveloperBossTexture {
     Raitichan,
+    sora_suke,
     
     ;
     
