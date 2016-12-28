@@ -13,7 +13,10 @@ package antimattermod.core.fileIO;
  */
 @SuppressWarnings("unused")
 public enum DeveloperBossTexture {
-    Raitichan,;
+    Raitichan,
+    
+    ;
+    
     /**
      * このプレイヤーのスキンへのパス
      */
