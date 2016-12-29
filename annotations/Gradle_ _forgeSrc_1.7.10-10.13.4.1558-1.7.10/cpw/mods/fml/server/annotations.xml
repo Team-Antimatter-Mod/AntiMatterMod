@@ -1,8 +1,8 @@
 <root>
-    <item name='cpw.mods.fml.server.FMLServerHandler java.io.File getSavesDirectory()'>
+    <item name='cpw.mods.fml.server.FMLServerHandler cpw.mods.fml.server.FMLServerHandler instance()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.server.FMLServerHandler cpw.mods.fml.server.FMLServerHandler instance()'>
+    <item name='cpw.mods.fml.server.FMLServerHandler java.io.File getSavesDirectory()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.server.FMLServerHandler void queryUser(cpw.mods.fml.common.StartupQuery) 0'>
@@ -11,13 +11,13 @@
     <item name='cpw.mods.fml.server.FMLServerHandler void fireNetRegistrationEvent(cpw.mods.fml.common.eventhandler.EventBus, net.minecraft.network.NetworkManager, java.util.Set&lt;java.lang.String&gt;, java.lang.String, cpw.mods.fml.relauncher.Side) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.server.FMLServerHandler cpw.mods.fml.relauncher.Side getSide()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.server.FMLServerHandler void fireNetRegistrationEvent(cpw.mods.fml.common.eventhandler.EventBus, net.minecraft.network.NetworkManager, java.util.Set&lt;java.lang.String&gt;, java.lang.String, cpw.mods.fml.relauncher.Side) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.server.FMLServerHandler java.lang.String getCurrentLanguage()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.server.FMLServerHandler cpw.mods.fml.relauncher.Side getSide()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.server.FMLServerHandler void addModAsResource(cpw.mods.fml.common.ModContainer) 0'>

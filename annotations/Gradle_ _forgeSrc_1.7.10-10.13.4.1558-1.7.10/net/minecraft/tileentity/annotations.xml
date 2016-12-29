@@ -1,29 +1,20 @@
 <root>
-    <item name='net.minecraft.tileentity.TileEntity net.minecraft.util.AxisAlignedBB getRenderBoundingBox()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.tileentity.TileEntityHopper boolean func_145891_a(net.minecraft.tileentity.IHopper) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntityBeacon effectsList'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.tileentity.TileEntityBrewingStand int[] getAccessibleSlotsFromSide(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.tileentity.TileEntityCommandBlock void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.tileentity.TileEntityFurnace int[] getAccessibleSlotsFromSide(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntityNote void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.tileentity.TileEntityMobSpawner void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.tileentity.TileEntityFlowerPot net.minecraft.network.Packet getDescriptionPacket()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.tileentity.MobSpawnerBaseLogic.WeightedRandomMinecart net.minecraft.nbt.NBTTagCompound func_98220_a()'>
+    <item name='net.minecraft.tileentity.TileEntityMobSpawner void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntitySign void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
@@ -35,14 +26,14 @@
     <item name='net.minecraft.tileentity.TileEntityNote void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.tileentity.TileEntityCommandBlock net.minecraft.command.server.CommandBlockLogic func_145993_a()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.tileentity.TileEntityHopper boolean isItemValidForSlot(int, net.minecraft.item.ItemStack) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.tileentity.TileEntityMobSpawner net.minecraft.tileentity.MobSpawnerBaseLogic func_145881_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntityPiston void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -54,9 +45,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntityHopper net.minecraft.entity.item.EntityItem func_145897_a(net.minecraft.world.World, double, double, double) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.tileentity.TileEntitySign net.minecraft.network.Packet getDescriptionPacket()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntityCommandBlock void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
@@ -74,16 +62,7 @@
     <item name='net.minecraft.tileentity.TileEntity void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.tileentity.TileEntityMobSpawner net.minecraft.network.Packet getDescriptionPacket()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.tileentity.TileEntityMobSpawner void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.tileentity.TileEntityCommandBlock net.minecraft.network.Packet getDescriptionPacket()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.tileentity.TileEntitySkull net.minecraft.network.Packet getDescriptionPacket()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntityBrewingStand void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
@@ -96,6 +75,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntityBrewingStand void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.tileentity.TileEntity net.minecraft.util.AxisAlignedBB getRenderBoundingBox()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntityDispenser void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
@@ -116,10 +98,16 @@
     <item name='net.minecraft.tileentity.TileEntityPiston void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.tileentity.TileEntityBrewingStand int[] getAccessibleSlotsFromSide(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.tileentity.TileEntitySkull void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.MobSpawnerBaseLogic.WeightedRandomMinecart WeightedRandomMinecart(net.minecraft.tileentity.MobSpawnerBaseLogic, net.minecraft.nbt.NBTTagCompound, java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.tileentity.TileEntityMobSpawner net.minecraft.network.Packet getDescriptionPacket()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.MobSpawnerBaseLogic void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
@@ -131,6 +119,9 @@
     <item name='net.minecraft.tileentity.TileEntityBeacon void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.tileentity.MobSpawnerBaseLogic.WeightedRandomMinecart net.minecraft.nbt.NBTTagCompound func_98220_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.tileentity.TileEntityFurnace void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -138,12 +129,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntityChest void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.tileentity.TileEntityBeacon net.minecraft.network.Packet getDescriptionPacket()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.tileentity.TileEntityFlowerPot net.minecraft.network.Packet getDescriptionPacket()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntityNote void triggerNote(net.minecraft.world.World, int, int, int) 0'>
@@ -158,7 +143,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.tileentity.TileEntityCommandBlock net.minecraft.command.server.CommandBlockLogic func_145993_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.tileentity.TileEntityBrewingStand boolean isItemValidForSlot(int, net.minecraft.item.ItemStack) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.tileentity.TileEntityBeacon net.minecraft.network.Packet getDescriptionPacket()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntityHopper net.minecraft.item.ItemStack func_145889_a(net.minecraft.inventory.IInventory, net.minecraft.item.ItemStack, int) 0'>
@@ -176,11 +167,20 @@
     <item name='net.minecraft.tileentity.TileEntityBeacon void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.tileentity.TileEntitySign net.minecraft.network.Packet getDescriptionPacket()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.tileentity.TileEntityChest boolean isItemValidForSlot(int, net.minecraft.item.ItemStack) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.tileentity.TileEntityCommandBlock net.minecraft.network.Packet getDescriptionPacket()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.tileentity.TileEntityFurnace int[] getAccessibleSlotsFromSide(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntityHopper void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -200,10 +200,10 @@
     <item name='net.minecraft.tileentity.TileEntityChest void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.tileentity.TileEntityFurnace void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.tileentity.TileEntitySkull net.minecraft.network.Packet getDescriptionPacket()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.tileentity.TileEntityMobSpawner net.minecraft.tileentity.MobSpawnerBaseLogic func_145881_a()'>
+    <item name='net.minecraft.tileentity.TileEntityFurnace void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.tileentity.TileEntitySign void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>

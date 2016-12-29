@@ -6,7 +6,11 @@ package antimattermod.core.client;
 import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattermod.core.Block.TileEntity.TileEntitySatStove;
+import antimattermod.core.Energy.Item.Wrench.WrenchKeyEvent;
 import antimattermod.core.Item.tool.AMMTool;
+import antimattermod.core.Mob.EntityDeveloperBoss;
+import antimattermod.core.Mob.model.ModelDeveloperBoss;
+import antimattermod.core.Mob.render.RenderDeveloperBoss;
 import antimattermod.core.Render.*;
 import antimattermod.core.Render.ItemRender.ItemRenderClayCrucibles;
 import antimattermod.core.Render.ItemRender.ToolDamageRender;
@@ -14,13 +18,16 @@ import antimattermod.core.common.AntiMatterModCoreProxy;
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.FMLCommonHandler;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.common.MinecraftForge;
+import org.lwjgl.input.Keyboard;
 
 /** <h1>ClientAntiMatterModCoreProxy</h1>
  * <br>
@@ -30,7 +37,9 @@ import net.minecraftforge.common.MinecraftForge;
  */
 @SuppressWarnings("unused")
 public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
-	
+
+	public static final KeyBinding wrenchSetting = new KeyBinding("WrenchSetting", Keyboard.KEY_X, "AntiMatterMod");
+
 	/**
 	 * 空いてるレンダ―IDを取得
 	 * @return 空いてるレンダ―ID
@@ -55,6 +64,12 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 
 		//レンチ使用時の補助線
 		MinecraftForge.EVENT_BUS.register(new RenderWrenchSelectionBox());
+
+		ClientRegistry.registerKeyBinding(wrenchSetting);
+		MinecraftForge.EVENT_BUS.register(new WrenchKeyEvent());
+		FMLCommonHandler.instance().bus().register(new WrenchKeyEvent());
+
+		RenderingRegistry.registerEntityRenderingHandler(EntityDeveloperBoss.class, new RenderDeveloperBoss());
 
 		//MinecraftForgeClient.registerItemRenderer(AntiMatterModRegistry.hammer_01, new ToolDamageRender());
 

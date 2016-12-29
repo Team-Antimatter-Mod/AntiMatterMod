@@ -53,9 +53,6 @@
     <item name='net.minecraft.entity.ai.EntityAIVillagerMate EntityAIVillagerMate(net.minecraft.entity.passive.EntityVillager) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.ai.EntityMinecartMobSpawner net.minecraft.tileentity.MobSpawnerBaseLogic func_98039_d()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.entity.ai.EntityAIArrowAttack EntityAIArrowAttack(net.minecraft.entity.IRangedAttackMob, double, int, int, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -63,6 +60,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.ai.EntityAIFollowOwner EntityAIFollowOwner(net.minecraft.entity.passive.EntityTameable, double, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.ai.EntityMinecartMobSpawner net.minecraft.tileentity.MobSpawnerBaseLogic func_98039_d()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.ai.RandomPositionGenerator net.minecraft.util.Vec3 findRandomTargetBlockTowards(net.minecraft.entity.EntityCreature, int, int, net.minecraft.util.Vec3) 0'>

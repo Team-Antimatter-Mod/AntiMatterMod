@@ -5,6 +5,9 @@
     <item name='net.minecraft.client.entity.EntityPlayerSP void displayGUIChest(net.minecraft.inventory.IInventory) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.entity.AbstractClientPlayer net.minecraft.client.renderer.ThreadDownloadImageData getDownloadImageSkin(net.minecraft.util.ResourceLocation, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.entity.EntityOtherPlayerMP boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -59,19 +62,16 @@
     <item name='net.minecraft.client.entity.EntityPlayerSP void onItemPickup(net.minecraft.entity.Entity, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.entity.AbstractClientPlayer net.minecraft.client.renderer.ThreadDownloadImageData getDownloadImageSkin(net.minecraft.util.ResourceLocation, java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.entity.AbstractClientPlayer net.minecraft.util.ResourceLocation getLocationSkin(java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.entity.EntityOtherPlayerMP net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.entity.EntityClientPlayerMP void sendChatMessage(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.entity.EntityPlayerSP void displayGUIHorse(net.minecraft.entity.passive.EntityHorse, net.minecraft.inventory.IInventory) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.entity.EntityPlayerSP net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.entity.EntityPlayerSP EntityPlayerSP(net.minecraft.client.Minecraft, net.minecraft.world.World, net.minecraft.util.Session, int) 2'>
@@ -83,14 +83,14 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.client.entity.EntityOtherPlayerMP net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.entity.EntityPlayerSP void displayGUIMerchant(net.minecraft.entity.IMerchant, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.client.entity.EntityPlayerSP net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.entity.EntityPlayerSP void addChatMessage(net.minecraft.util.IChatComponent) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>

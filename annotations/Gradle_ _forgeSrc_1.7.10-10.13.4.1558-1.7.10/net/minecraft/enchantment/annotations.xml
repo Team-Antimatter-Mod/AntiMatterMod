@@ -2,6 +2,9 @@
     <item name='net.minecraft.enchantment.EnchantmentHelper int getEnchantmentModifierDamage(net.minecraft.item.ItemStack[], net.minecraft.util.DamageSource) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.enchantment.EnchantmentHelper java.util.Map getEnchantments(net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.enchantment.Enchantment int calcModifierDamage(int, net.minecraft.util.DamageSource) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -35,6 +38,9 @@
     <item name='net.minecraft.enchantment.Enchantment field_151369_A'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.enchantment.EnchantmentHelper net.minecraft.item.ItemStack addRandomEnchantment(java.util.Random, net.minecraft.item.ItemStack, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.enchantment.EnchantmentHelper int calcItemStackEnchantability(java.util.Random, int, int, net.minecraft.item.ItemStack) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -51,9 +57,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.enchantment.EnchantmentHelper int getRespiration(net.minecraft.entity.EntityLivingBase) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.enchantment.Enchantment net.minecraft.enchantment.Enchantment setName(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.enchantment.EnchantmentHelper int getLootingModifier(net.minecraft.entity.EntityLivingBase) 0'>
@@ -128,7 +131,7 @@
     <item name='net.minecraft.enchantment.Enchantment protection'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.enchantment.EnchantmentHelper net.minecraft.item.ItemStack addRandomEnchantment(java.util.Random, net.minecraft.item.ItemStack, int)'>
+    <item name='net.minecraft.enchantment.Enchantment net.minecraft.enchantment.Enchantment setName(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.enchantment.Enchantment baneOfArthropods'>
@@ -237,9 +240,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.enchantment.EnumEnchantmentType armor'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.enchantment.EnchantmentHelper java.util.Map getEnchantments(net.minecraft.item.ItemStack)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

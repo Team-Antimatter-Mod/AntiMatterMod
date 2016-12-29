@@ -8,10 +8,10 @@
     <item name='cpw.mods.fml.common.toposort.TopologicalSort java.util.List&lt;T&gt; topologicalSort(cpw.mods.fml.common.toposort.TopologicalSort.DirectedGraph&lt;T&gt;) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.toposort.TopologicalSort java.util.List&lt;T&gt; topologicalSort(cpw.mods.fml.common.toposort.TopologicalSort.DirectedGraph&lt;T&gt;)'>
+    <item name='cpw.mods.fml.common.toposort.ModSorter java.util.List&lt;cpw.mods.fml.common.ModContainer&gt; sort()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.toposort.ModSorter java.util.List&lt;cpw.mods.fml.common.ModContainer&gt; sort()'>
+    <item name='cpw.mods.fml.common.toposort.TopologicalSort java.util.List&lt;T&gt; topologicalSort(cpw.mods.fml.common.toposort.TopologicalSort.DirectedGraph&lt;T&gt;)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.toposort.TopologicalSort void explore(T, cpw.mods.fml.common.toposort.TopologicalSort.DirectedGraph&lt;T&gt;, java.util.List&lt;T&gt;, java.util.Set&lt;T&gt;, java.util.Set&lt;T&gt;) 3'>

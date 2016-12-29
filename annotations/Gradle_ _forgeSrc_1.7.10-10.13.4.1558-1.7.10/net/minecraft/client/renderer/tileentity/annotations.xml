@@ -1,7 +1,4 @@
 <root>
-    <item name='net.minecraft.client.renderer.tileentity.RenderEnderCrystal net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.tileentity.TileEntityChestRenderer void renderTileEntityAt(net.minecraft.tileentity.TileEntity, double, double, double, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -19,6 +16,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.client.renderer.tileentity.RenderEnderCrystal net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.tileentity.RenderWitherSkull void doRender(net.minecraft.entity.projectile.EntityWitherSkull, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -53,16 +53,13 @@
     <item name='net.minecraft.client.renderer.tileentity.TileEntityRendererPiston void renderTileEntityAt(net.minecraft.tileentity.TileEntity, double, double, double, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.tileentity.RenderWitherSkull net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.tileentity.TileEntitySkullRenderer void renderTileEntityAt(net.minecraft.tileentity.TileEntitySkull, double, double, double, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.tileentity.TileEntityEnderChestRenderer void renderTileEntityAt(net.minecraft.tileentity.TileEntity, double, double, double, float) 0'>
+    <item name='net.minecraft.client.renderer.tileentity.RenderWitherSkull net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.projectile.EntityWitherSkull)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.tileentity.RenderWitherSkull net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.projectile.EntityWitherSkull)'>
+    <item name='net.minecraft.client.renderer.tileentity.TileEntityEnderChestRenderer void renderTileEntityAt(net.minecraft.tileentity.TileEntity, double, double, double, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.tileentity.RenderItemFrame void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
@@ -76,6 +73,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.client.renderer.tileentity.RenderWitherSkull net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.tileentity.TileEntityRendererPiston void renderTileEntityAt(net.minecraft.tileentity.TileEntityPiston, double, double, double, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -101,14 +101,14 @@
     <item name='net.minecraft.client.renderer.tileentity.RenderWitherSkull net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.projectile.EntityWitherSkull) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.tileentity.RenderEnderCrystal net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityEnderCrystal)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer void renderTileEntityAt(net.minecraft.tileentity.TileEntity, double, double, double, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.client.renderer.tileentity.RenderEnderCrystal net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityEnderCrystal)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.tileentity.RenderWitherSkull net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>

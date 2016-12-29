@@ -5,9 +5,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.particle.EntityFX net.minecraft.client.particle.EntityFX multiplyVelocity(float)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.particle.EntityDiggingFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -47,6 +44,9 @@
     <item name='net.minecraft.client.particle.EntityBreakingFX EntityBreakingFX(net.minecraft.world.World, double, double, double, net.minecraft.item.Item, int) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.particle.EntityFX net.minecraft.client.particle.EntityFX multiplyVelocity(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.particle.EntityNoteFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -59,10 +59,16 @@
     <item name='net.minecraft.client.particle.EffectRenderer void addBlockDestroyEffects(int, int, int, net.minecraft.block.Block, int) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.particle.EntityDiggingFX net.minecraft.client.particle.EntityDiggingFX applyRenderColor(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.particle.EntityCrit2FX EntityCrit2FX(net.minecraft.world.World, net.minecraft.entity.Entity, java.lang.String) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.particle.EntityBreakingFX EntityBreakingFX(net.minecraft.world.World, double, double, double, double, double, double, net.minecraft.item.Item, int) 7'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityDiggingFX net.minecraft.client.particle.EntityDiggingFX applyColourMultiplier(int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.particle.EntityFootStepFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
@@ -71,13 +77,7 @@
     <item name='net.minecraft.client.particle.EntityDiggingFX EntityDiggingFX(net.minecraft.world.World, double, double, double, double, double, double, net.minecraft.block.Block, int) 7'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.particle.EntityDiggingFX net.minecraft.client.particle.EntityDiggingFX applyColourMultiplier(int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.particle.EntityCrit2FX EntityCrit2FX(net.minecraft.world.World, net.minecraft.entity.Entity) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.particle.EntityDiggingFX net.minecraft.client.particle.EntityDiggingFX applyRenderColor(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.particle.EffectRenderer void renderLitParticles(net.minecraft.entity.Entity, float) 0'>
@@ -110,9 +110,6 @@
     <item name='net.minecraft.client.particle.EntitySnowShovelFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.particle.EntityFX net.minecraft.client.particle.EntityFX multipleParticleScaleBy(float)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.particle.EntityCritFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -132,6 +129,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.client.particle.EntityDiggingFX EntityDiggingFX(net.minecraft.world.World, double, double, double, double, double, double, net.minecraft.block.Block, int, int) 7'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.particle.EntityFX net.minecraft.client.particle.EntityFX multipleParticleScaleBy(float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.particle.EntityFlameFX void renderParticle(net.minecraft.client.renderer.Tessellator, float, float, float, float, float, float) 0'>

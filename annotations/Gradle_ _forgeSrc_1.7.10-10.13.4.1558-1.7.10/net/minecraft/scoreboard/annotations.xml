@@ -1,5 +1,5 @@
 <root>
-    <item name='net.minecraft.scoreboard.ScorePlayerTeam java.util.Collection getMembershipCollection()'>
+    <item name='net.minecraft.scoreboard.Scoreboard net.minecraft.scoreboard.Score func_96529_a(java.lang.String, net.minecraft.scoreboard.ScoreObjective)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.scoreboard.Scoreboard int getObjectiveDisplaySlotNumber(java.lang.String) 0'>
@@ -11,10 +11,10 @@
     <item name='net.minecraft.scoreboard.ServerScoreboard void func_96536_a(net.minecraft.scoreboard.Score) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.scoreboard.Scoreboard java.util.Collection func_96534_i(net.minecraft.scoreboard.ScoreObjective)'>
+    <item name='net.minecraft.scoreboard.Scoreboard java.util.Collection func_96528_e()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.scoreboard.ScoreboardSaveData net.minecraft.nbt.NBTTagList func_96505_b()'>
+    <item name='net.minecraft.scoreboard.Scoreboard java.util.Collection func_96520_a(net.minecraft.scoreboard.IScoreObjectiveCriteria)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.scoreboard.Scoreboard void broadcastTeamCreated(net.minecraft.scoreboard.ScorePlayerTeam) 0'>
@@ -29,9 +29,6 @@
     <item name='net.minecraft.scoreboard.IScoreObjectiveCriteria health'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.scoreboard.Scoreboard net.minecraft.scoreboard.ScoreObjective addScoreObjective(java.lang.String, net.minecraft.scoreboard.IScoreObjectiveCriteria)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.scoreboard.ScoreboardSaveData void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -44,10 +41,7 @@
     <item name='net.minecraft.scoreboard.IScoreObjectiveCriteria totalKillCount'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.scoreboard.Scoreboard net.minecraft.scoreboard.ScorePlayerTeam createTeam(java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.scoreboard.ScoreboardSaveData net.minecraft.nbt.NBTTagList func_96496_a()'>
+    <item name='net.minecraft.scoreboard.ServerScoreboard java.util.List func_96550_d(net.minecraft.scoreboard.ScoreObjective)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.scoreboard.Scoreboard void removePlayerFromTeam(java.lang.String, net.minecraft.scoreboard.ScorePlayerTeam) 1'>
@@ -71,13 +65,16 @@
     <item name='net.minecraft.scoreboard.ScorePlayerTeam void setNamePrefix(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.scoreboard.ScoreboardSaveData net.minecraft.nbt.NBTTagList func_96503_e()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.scoreboard.ScoreboardSaveData void func_96502_a(net.minecraft.scoreboard.ScorePlayerTeam, net.minecraft.nbt.NBTTagList) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.scoreboard.Scoreboard void func_96519_k(net.minecraft.scoreboard.ScoreObjective) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.scoreboard.Scoreboard java.util.Map func_96510_d(java.lang.String)'>
+    <item name='net.minecraft.scoreboard.ServerScoreboard java.util.List func_96548_f(net.minecraft.scoreboard.ScoreObjective)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.scoreboard.Scoreboard void broadcastTeamRemoved(net.minecraft.scoreboard.ScorePlayerTeam) 0'>
@@ -86,13 +83,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.scoreboard.Scoreboard net.minecraft.scoreboard.Score func_96529_a(java.lang.String, net.minecraft.scoreboard.ScoreObjective)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.scoreboard.ScoreboardSaveData void func_96498_a(net.minecraft.nbt.NBTTagList) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.scoreboard.Scoreboard java.util.Collection func_96528_e()'>
+    <item name='net.minecraft.scoreboard.Scoreboard net.minecraft.scoreboard.ScoreObjective addScoreObjective(java.lang.String, net.minecraft.scoreboard.IScoreObjectiveCriteria)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.scoreboard.ServerScoreboard void func_96546_g(net.minecraft.scoreboard.ScoreObjective) 0'>
@@ -107,6 +101,9 @@
     <item name='net.minecraft.scoreboard.ServerScoreboard void broadcastTeamCreated(net.minecraft.scoreboard.ScorePlayerTeam) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.scoreboard.ScorePlayerTeam java.util.Collection getMembershipCollection()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.scoreboard.IScoreObjectiveCriteria deathCount'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -119,7 +116,10 @@
     <item name='net.minecraft.scoreboard.Score field_96658_a'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.scoreboard.ServerScoreboard java.util.List func_96550_d(net.minecraft.scoreboard.ScoreObjective)'>
+    <item name='net.minecraft.scoreboard.Scoreboard java.util.Collection func_96534_i(net.minecraft.scoreboard.ScoreObjective)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.scoreboard.ScoreboardSaveData net.minecraft.nbt.NBTTagList func_96505_b()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.scoreboard.Scoreboard void func_96536_a(net.minecraft.scoreboard.Score) 0'>
@@ -140,10 +140,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.scoreboard.ScoreboardSaveData void func_96500_c(net.minecraft.nbt.NBTTagList) 0'>
+    <item name='net.minecraft.scoreboard.Scoreboard net.minecraft.scoreboard.ScorePlayerTeam createTeam(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.scoreboard.Scoreboard java.util.Collection func_96520_a(net.minecraft.scoreboard.IScoreObjectiveCriteria)'>
+    <item name='net.minecraft.scoreboard.ScoreboardSaveData void func_96500_c(net.minecraft.nbt.NBTTagList) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.scoreboard.ServerScoreboard void func_96549_e(net.minecraft.scoreboard.ScoreObjective) 0'>
@@ -152,7 +152,13 @@
     <item name='net.minecraft.scoreboard.ScorePlayerTeam void setTeamName(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.scoreboard.Scoreboard java.util.Map func_96510_d(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.scoreboard.ScorePlayerTeam void setNameSuffix(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.scoreboard.ScoreboardSaveData net.minecraft.nbt.NBTTagList func_96496_a()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.scoreboard.ScoreboardSaveData void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
@@ -162,12 +168,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.scoreboard.ServerScoreboard void removePlayerFromTeam(java.lang.String, net.minecraft.scoreboard.ScorePlayerTeam) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.scoreboard.ServerScoreboard java.util.List func_96548_f(net.minecraft.scoreboard.ScoreObjective)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.scoreboard.ScoreboardSaveData net.minecraft.nbt.NBTTagList func_96503_e()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>
