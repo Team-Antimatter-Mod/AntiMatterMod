@@ -116,9 +116,6 @@
     <item name='net.minecraft.network.play.server.S18PacketEntityTeleport S18PacketEntityTeleport(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.play.server.S21PacketChunkData net.minecraft.network.play.server.S21PacketChunkData.Extracted func_149269_a(net.minecraft.world.chunk.Chunk, boolean, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.network.play.server.S0CPacketSpawnPlayer void writePacketData(net.minecraft.network.PacketBuffer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -299,6 +296,9 @@
     <item name='net.minecraft.network.play.server.S37PacketStatistics void processPacket(net.minecraft.network.play.INetHandlerPlayClient) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.network.play.server.S21PacketChunkData net.minecraft.network.play.server.S21PacketChunkData.Extracted func_149269_a(net.minecraft.world.chunk.Chunk, boolean, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.network.play.server.S0EPacketSpawnObject S0EPacketSpawnObject(net.minecraft.entity.Entity, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -366,6 +366,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.play.server.S2FPacketSetSlot void processPacket(net.minecraft.network.play.INetHandlerPlayClient) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.play.server.S20PacketEntityProperties java.util.List func_149441_d()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.play.server.S02PacketChat void processPacket(net.minecraft.network.play.INetHandlerPlayClient) 0'>
@@ -516,9 +519,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.play.server.S01PacketJoinGame void readPacketData(net.minecraft.network.PacketBuffer) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.network.play.server.S20PacketEntityProperties java.util.List func_149441_d()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.play.server.S01PacketJoinGame void writePacketData(net.minecraft.network.PacketBuffer) 0'>

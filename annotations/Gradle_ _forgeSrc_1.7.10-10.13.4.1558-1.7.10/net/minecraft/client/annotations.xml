@@ -1,17 +1,17 @@
 <root>
+    <item name='net.minecraft.client.Minecraft net.minecraft.util.Session getSession()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.Minecraft void displayCrashReport(net.minecraft.crash.CrashReport) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.LoadingScreenRenderer LoadingScreenRenderer(net.minecraft.client.Minecraft) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.Minecraft net.minecraft.crash.CrashReport addGraphicsAndWorldToCrashReport(net.minecraft.crash.CrashReport)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.Minecraft net.minecraft.client.audio.MusicTicker.MusicType func_147109_W()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.LoadingScreenRenderer LoadingScreenRenderer(net.minecraft.client.Minecraft) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.Minecraft net.minecraft.util.Session getSession()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.Minecraft mcProfiler'>

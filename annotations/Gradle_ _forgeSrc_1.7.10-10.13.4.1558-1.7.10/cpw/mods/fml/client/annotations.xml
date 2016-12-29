@@ -2,15 +2,6 @@
     <item name='cpw.mods.fml.client.FMLClientHandler java.lang.String fixDescription(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.IModGuiFactory java.lang.Class&lt;? extends net.minecraft.client.gui.GuiScreen&gt; mainConfigGuiClass()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='cpw.mods.fml.client.FMLClientHandler cpw.mods.fml.relauncher.Side getSide()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.client.GuiConfirmation void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -29,10 +20,16 @@
     <item name='cpw.mods.fml.client.FMLClientHandler void captureAdditionalData(net.minecraft.network.ServerStatusResponse, com.google.gson.JsonObject) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.client.FMLConfigGuiFactory cpw.mods.fml.client.IModGuiFactory.RuntimeOptionGuiHandler getHandlerFor(cpw.mods.fml.client.IModGuiFactory.RuntimeOptionCategoryElement)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.client.FMLClientHandler void fireNetRegistrationEvent(cpw.mods.fml.common.eventhandler.EventBus, net.minecraft.network.NetworkManager, java.util.Set&lt;java.lang.String&gt;, java.lang.String, cpw.mods.fml.relauncher.Side) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.FMLClientHandler void beginMinecraftLoading(net.minecraft.client.Minecraft, java.util.List, net.minecraft.client.resources.IReloadableResourceManager) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.FMLClientHandler java.io.File getSavesDir()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.FMLFileResourcePack FMLFileResourcePack(cpw.mods.fml.common.ModContainer) 0'>
@@ -47,10 +44,13 @@
     <item name='cpw.mods.fml.client.FMLClientHandler void trackBrokenTexture(net.minecraft.util.ResourceLocation, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.FMLConfigGuiFactory cpw.mods.fml.client.IModGuiFactory.RuntimeOptionGuiHandler getHandlerFor(cpw.mods.fml.client.IModGuiFactory.RuntimeOptionCategoryElement)'>
+    <item name='cpw.mods.fml.client.FMLFolderResourcePack java.io.InputStream getInputStreamByName(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.GuiSlotModList GuiSlotModList(cpw.mods.fml.client.GuiModList, java.util.ArrayList&lt;cpw.mods.fml.common.ModContainer&gt;, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.FMLClientHandler cpw.mods.fml.relauncher.Side getSide()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.IModGuiFactory.RuntimeOptionGuiHandler void addWidgets(java.util.List&lt;net.minecraft.client.gui.Gui&gt;, int, int, int, int) 0'>
@@ -59,16 +59,22 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='cpw.mods.fml.client.FMLFolderResourcePack java.io.InputStream getInputStreamByName(java.lang.String)'>
+    <item name='cpw.mods.fml.client.IModGuiFactory java.lang.Class&lt;? extends net.minecraft.client.gui.GuiScreen&gt; mainConfigGuiClass()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
-    <item name='cpw.mods.fml.client.FMLClientHandler java.io.File getSavesDir()'>
+    <item name='cpw.mods.fml.client.FMLClientHandler java.io.File getSavesDirectory()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.GuiScrollingList void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.FMLClientHandler void queryUser(cpw.mods.fml.common.StartupQuery) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.FMLConfigGuiFactory java.lang.Class&lt;? extends net.minecraft.client.gui.GuiScreen&gt; mainConfigGuiClass()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.CustomModLoadingErrorDisplayException void printStackTrace(cpw.mods.fml.common.EnhancedRuntimeException.WrappedPrintStream) 0'>
@@ -89,22 +95,16 @@
     <item name='cpw.mods.fml.client.FMLClientHandler void addModAsResource(cpw.mods.fml.common.ModContainer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.client.FMLClientHandler cpw.mods.fml.client.FMLClientHandler instance()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.client.FMLClientHandler void fireNetRegistrationEvent(cpw.mods.fml.common.eventhandler.EventBus, net.minecraft.network.NetworkManager, java.util.Set&lt;java.lang.String&gt;, java.lang.String, cpw.mods.fml.relauncher.Side) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.GuiOldSaveLoadConfirm void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.FMLClientHandler java.io.File getSavesDirectory()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.client.GuiModOptionList GuiModOptionList(cpw.mods.fml.client.GuiIngameModOptions) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.FMLClientHandler cpw.mods.fml.client.FMLClientHandler instance()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.FMLConfigGuiFactory java.lang.Class&lt;? extends net.minecraft.client.gui.GuiScreen&gt; mainConfigGuiClass()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

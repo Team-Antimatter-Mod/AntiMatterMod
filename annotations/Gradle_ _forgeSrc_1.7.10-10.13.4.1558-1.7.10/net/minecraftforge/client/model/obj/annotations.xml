@@ -1,4 +1,7 @@
 <root>
+    <item name='net.minecraftforge.client.model.obj.WavefrontObject java.lang.String getType()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraftforge.client.model.obj.ObjModelLoader net.minecraftforge.client.model.IModelCustom loadInstance(net.minecraft.util.ResourceLocation)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -11,16 +14,13 @@
     <item name='net.minecraftforge.client.model.obj.ObjModelLoader java.lang.String getType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.client.model.obj.ObjModelLoader java.lang.String[] getSuffixes()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraftforge.client.model.obj.Face void addFaceForRender(net.minecraft.client.renderer.Tessellator) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.client.model.obj.Face void addFaceForRender(net.minecraft.client.renderer.Tessellator, float) 0'>
+    <item name='net.minecraftforge.client.model.obj.ObjModelLoader java.lang.String[] getSuffixes()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.client.model.obj.WavefrontObject java.lang.String getType()'>
+    <item name='net.minecraftforge.client.model.obj.Face void addFaceForRender(net.minecraft.client.renderer.Tessellator, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.client.model.obj.WavefrontObject WavefrontObject(net.minecraft.util.ResourceLocation) 0'>

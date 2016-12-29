@@ -2,25 +2,28 @@
     <item name='net.minecraft.entity.boss.EntityWither void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.entity.boss.EntityWither java.lang.String getLivingSound()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.entity.boss.EntityDragon boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.boss.EntityWither java.lang.String getLivingSound()'>
+    <item name='net.minecraft.entity.boss.EntityDragon java.lang.String getHurtSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.boss.EntityDragon double[] getMovementOffsets(int, float)'>
+    <item name='net.minecraft.entity.boss.EntityWither java.lang.String getDeathSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.boss.EntityDragonPart EntityDragonPart(net.minecraft.entity.IEntityMultiPart, java.lang.String, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.boss.EntityDragon java.lang.String getLivingSound()'>
+    <item name='net.minecraft.entity.boss.EntityWither void attackEntityWithRangedAttack(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.boss.EntityWither void attackEntityWithRangedAttack(net.minecraft.entity.EntityLivingBase, float) 0'>
+    <item name='net.minecraft.entity.boss.EntityWither net.minecraft.entity.EnumCreatureAttribute getCreatureAttribute()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.boss.EntityWither boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
@@ -29,10 +32,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.boss.EntityWither java.lang.String getHurtSound()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.entity.boss.EntityWither net.minecraft.entity.EnumCreatureAttribute getCreatureAttribute()'>
+    <item name='net.minecraft.entity.boss.EntityDragon java.lang.String getLivingSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.boss.EntityWither void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
@@ -65,10 +65,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.boss.EntityWither java.lang.String getDeathSound()'>
+    <item name='net.minecraft.entity.boss.EntityWither java.lang.String getHurtSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.boss.EntityDragon java.lang.String getHurtSound()'>
+    <item name='net.minecraft.entity.boss.EntityDragon double[] getMovementOffsets(int, float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

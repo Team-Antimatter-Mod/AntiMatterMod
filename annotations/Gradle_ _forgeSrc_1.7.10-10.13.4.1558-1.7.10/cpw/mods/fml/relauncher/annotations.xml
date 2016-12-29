@@ -1,4 +1,10 @@
 <root>
+    <item name='cpw.mods.fml.relauncher.FMLCorePlugin java.lang.String[] getASMTransformerClass()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.relauncher.FMLCorePlugin java.lang.String getAccessTransformerClass()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.relauncher.FMLSecurityManager void checkPermission(java.security.Permission) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -29,41 +35,17 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='cpw.mods.fml.relauncher.ReflectionHelper java.lang.reflect.Method findMethod(java.lang.Class&lt;? super E&gt;, E, java.lang.String[], java.lang.Class&lt;?&gt;...)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.relauncher.ReflectionHelper void setPrivateValue(java.lang.Class&lt;? super T&gt;, T, E, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.relauncher.ReflectionHelper void setPrivateValue(java.lang.Class&lt;? super T&gt;, T, E, java.lang.String...) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.relauncher.FMLInjectionData java.lang.Object[] data()'>
+    <item name='cpw.mods.fml.relauncher.FMLCorePlugin java.lang.String getModContainerClass()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.relauncher.ReflectionHelper T getPrivateValue(java.lang.Class&lt;? super E&gt;, E, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.relauncher.ReflectionHelper java.lang.reflect.Field findField(java.lang.Class&lt;?&gt;, java.lang.String...) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.relauncher.ReflectionHelper java.lang.Class&lt;? super java.lang.Object&gt; getClass(java.lang.ClassLoader, java.lang.String...) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.relauncher.FMLCorePlugin java.lang.String getAccessTransformerClass()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.relauncher.FMLCorePlugin java.lang.String[] getASMTransformerClass()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.relauncher.ReflectionHelper java.lang.reflect.Field findField(java.lang.Class&lt;?&gt;, java.lang.String...)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.relauncher.IFMLLoadingPlugin java.lang.String[] getASMTransformerClass()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='cpw.mods.fml.relauncher.IFMLLoadingPlugin java.lang.String getAccessTransformerClass()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -71,13 +53,19 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='cpw.mods.fml.relauncher.ReflectionHelper java.lang.reflect.Field findField(java.lang.Class&lt;?&gt;, java.lang.String...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.relauncher.ReflectionHelper java.lang.Class&lt;? super java.lang.Object&gt; getClass(java.lang.ClassLoader, java.lang.String...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.relauncher.ReflectionHelper java.lang.reflect.Method findMethod(java.lang.Class&lt;? super E&gt;, E, java.lang.String[], java.lang.Class&lt;?&gt;...) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.relauncher.FMLCorePlugin java.lang.String getSetupClass()'>
+    <item name='cpw.mods.fml.relauncher.Side CLIENT'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.relauncher.Side CLIENT'>
+    <item name='cpw.mods.fml.relauncher.FMLInjectionData java.lang.Object[] data()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.relauncher.FileListHelper java.io.File[] sortFileList(java.io.File, java.io.FilenameFilter) 0'>
@@ -86,16 +74,10 @@
     <item name='cpw.mods.fml.relauncher.ReflectionHelper java.lang.reflect.Method findMethod(java.lang.Class&lt;? super E&gt;, E, java.lang.String[], java.lang.Class&lt;?&gt;...) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.relauncher.FMLCorePlugin java.lang.String getModContainerClass()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.relauncher.CoreModManager void handleLaunch(java.io.File, net.minecraft.launchwrapper.LaunchClassLoader, cpw.mods.fml.common.launcher.FMLTweaker) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.relauncher.ReflectionHelper T getPrivateValue(java.lang.Class&lt;? super E&gt;, E, java.lang.String...) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.relauncher.ReflectionHelper void setPrivateValue(java.lang.Class&lt;? super T&gt;, T, E, java.lang.String...) 0'>
+    <item name='cpw.mods.fml.relauncher.ReflectionHelper java.lang.reflect.Method findMethod(java.lang.Class&lt;? super E&gt;, E, java.lang.String[], java.lang.Class&lt;?&gt;...)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.relauncher.IFMLLoadingPlugin java.lang.String getModContainerClass()'>
@@ -104,10 +86,28 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='cpw.mods.fml.relauncher.ReflectionHelper T getPrivateValue(java.lang.Class&lt;? super E&gt;, E, java.lang.String...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.relauncher.ReflectionHelper void setPrivateValue(java.lang.Class&lt;? super T&gt;, T, E, java.lang.String...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.relauncher.ReflectionHelper T getPrivateValue(java.lang.Class&lt;? super E&gt;, E, java.lang.String...) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.relauncher.ReflectionHelper java.lang.reflect.Field findField(java.lang.Class&lt;?&gt;, java.lang.String...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.relauncher.FMLCorePlugin java.lang.String getSetupClass()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.relauncher.IFMLLoadingPlugin java.lang.String[] getASMTransformerClass()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.relauncher.ReflectionHelper java.lang.reflect.Field findField(java.lang.Class&lt;?&gt;, java.lang.String...)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

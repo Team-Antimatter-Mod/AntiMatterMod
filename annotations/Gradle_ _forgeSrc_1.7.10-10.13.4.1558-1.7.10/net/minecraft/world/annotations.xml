@@ -1,11 +1,8 @@
 <root>
-    <item name='net.minecraft.world.World net.minecraft.util.Vec3 getFogColor(float)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.World java.util.List getEntitiesWithinAABBExcludingEntity(net.minecraft.entity.Entity, net.minecraft.util.AxisAlignedBB, net.minecraft.command.IEntitySelector) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldSettings.GameType net.minecraft.world.WorldSettings.GameType getByName(java.lang.String)'>
+    <item name='net.minecraft.world.WorldServer net.minecraft.world.Teleporter getDefaultTeleporter()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World boolean checkNoEntityCollision(net.minecraft.util.AxisAlignedBB) 0'>
@@ -14,19 +11,10 @@
     <item name='net.minecraft.world.World net.minecraft.entity.player.EntityPlayer getClosestPlayerToEntity(net.minecraft.entity.Entity, double) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldSettings net.minecraft.world.WorldSettings enableCommands()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.WorldSettings.GameType SURVIVAL'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldSettings net.minecraft.world.WorldSettings enableBonusChest()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.WorldProviderHell net.minecraft.util.Vec3 getFogColor(float, float)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.WorldServer net.minecraft.server.management.PlayerManager getPlayerManager()'>
+    <item name='net.minecraft.world.World net.minecraft.util.Vec3 getCloudColour(float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World boolean isAnyLiquid(net.minecraft.util.AxisAlignedBB) 0'>
@@ -38,16 +26,19 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.World void func_147467_a(int, int, net.minecraft.world.chunk.Chunk) 2'>
+    <item name='net.minecraft.world.WorldProviderHell net.minecraft.world.chunk.IChunkProvider createChunkGenerator()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldType net.minecraft.world.WorldType getWorldTypeForGeneratorVersion(int)'>
+    <item name='net.minecraft.world.World void func_147467_a(int, int, net.minecraft.world.chunk.Chunk) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World net.minecraft.pathfinding.PathEntity getEntityPathToXYZ(net.minecraft.entity.Entity, int, int, int, float, boolean, boolean, boolean, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldType net.minecraft.world.biome.WorldChunkManager getChunkManager(net.minecraft.world.World)'>
+    <item name='net.minecraft.world.World net.minecraft.world.Explosion createExplosion(net.minecraft.entity.Entity, double, double, double, float, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.World net.minecraft.util.Vec3 getSkyColor(net.minecraft.entity.Entity, float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World void playSound(double, double, double, java.lang.String, float, float, boolean) 3'>
@@ -56,7 +47,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.WorldProviderEnd java.lang.String getDimensionName()'>
+    <item name='net.minecraft.world.World net.minecraft.util.Vec3 getSkyColorBody(net.minecraft.entity.Entity, float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World net.minecraft.entity.player.EntityPlayer getClosestVulnerablePlayerToEntity(net.minecraft.entity.Entity, double) 0'>
@@ -71,6 +62,9 @@
     <item name='net.minecraft.world.World void joinEntityInSurroundings(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.WorldSettings net.minecraft.world.WorldSettings func_82750_a(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.EnumDifficulty NORMAL'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -83,16 +77,13 @@
     <item name='net.minecraft.world.WorldType net.minecraft.world.biome.WorldChunkManager getChunkManager(net.minecraft.world.World) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldType java.lang.String getWorldTypeName()'>
+    <item name='net.minecraft.world.WorldServer net.minecraft.entity.EntityTracker getEntityTracker()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.WorldType net.minecraft.world.gen.layer.GenLayer getBiomeLayer(long, net.minecraft.world.gen.layer.GenLayer)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.EnumDifficulty EASY'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.World java.util.List getEntitiesWithinAABBExcludingEntity(net.minecraft.entity.Entity, net.minecraft.util.AxisAlignedBB, net.minecraft.command.IEntitySelector)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.World net.minecraft.util.ChunkCoordinates getSpawnPoint()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World void onEntityAdded(net.minecraft.entity.Entity) 0'>
@@ -101,10 +92,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.world.WorldProviderEnd net.minecraft.util.ChunkCoordinates getEntrancePortalLocation()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.WorldSettings WorldSettings(net.minecraft.world.storage.WorldInfo) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.WorldType net.minecraft.world.chunk.IChunkProvider getChunkGenerator(net.minecraft.world.World, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.WorldServer net.minecraft.world.Explosion newExplosion(net.minecraft.entity.Entity, double, double, double, float, boolean, boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World net.minecraft.util.MovingObjectPosition rayTraceBlocks(net.minecraft.util.Vec3, net.minecraft.util.Vec3, boolean) 0'>
@@ -113,22 +110,22 @@
     <item name='net.minecraft.world.World net.minecraft.pathfinding.PathEntity getPathEntityToEntity(net.minecraft.entity.Entity, net.minecraft.entity.Entity, float, boolean, boolean, boolean, boolean) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.WorldProvider net.minecraft.util.ChunkCoordinates getRandomizedSpawnPoint()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.WorldServer WorldServer(net.minecraft.server.MinecraftServer, net.minecraft.world.storage.ISaveHandler, java.lang.String, int, net.minecraft.world.WorldSettings, net.minecraft.profiler.Profiler) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.WorldSettings.GameType net.minecraft.world.WorldSettings.GameType getByID(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.ChunkCoordIntPair net.minecraft.world.ChunkPosition func_151349_a(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World void addBlockEvent(int, int, int, net.minecraft.block.Block, int, int) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.World net.minecraft.util.Vec3 getSkyColorBody(net.minecraft.entity.Entity, float)'>
+    <item name='net.minecraft.world.WorldProviderHell java.lang.String getDimensionName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.World net.minecraft.world.Explosion newExplosion(net.minecraft.entity.Entity, double, double, double, float, boolean, boolean)'>
+    <item name='net.minecraft.world.GameRules net.minecraft.nbt.NBTTagCompound writeGameRulesToNBT()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.World java.util.List getEntitiesWithinAABB(java.lang.Class, net.minecraft.util.AxisAlignedBB)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World net.minecraft.util.Vec3 getSkyColorBody(net.minecraft.entity.Entity, float) 0'>
@@ -137,10 +134,10 @@
     <item name='net.minecraft.world.World java.util.List getCollidingBoundingBoxes(net.minecraft.entity.Entity, net.minecraft.util.AxisAlignedBB) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldType net.minecraft.world.chunk.IChunkProvider getChunkGenerator(net.minecraft.world.World, java.lang.String)'>
+    <item name='net.minecraft.world.World java.util.List getEntitiesWithinAABB(java.lang.Class, net.minecraft.util.AxisAlignedBB) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.World java.util.List getEntitiesWithinAABB(java.lang.Class, net.minecraft.util.AxisAlignedBB) 1'>
+    <item name='net.minecraft.world.WorldType net.minecraft.world.biome.WorldChunkManager getChunkManager(net.minecraft.world.World)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.ChunkPosition ChunkPosition(net.minecraft.util.Vec3) 0'>
@@ -155,6 +152,9 @@
     <item name='net.minecraft.world.World void addLoadedEntities(java.util.List) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.World net.minecraft.util.Vec3 drawCloudsBody(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.WorldServer void onEntityRemoved(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -164,32 +164,20 @@
     <item name='net.minecraft.world.World void func_147448_a(java.util.Collection) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.World net.minecraft.crash.CrashReportCategory addWorldInfoToCrashReport(net.minecraft.crash.CrashReport)'>
+    <item name='net.minecraft.world.WorldProviderSurface java.lang.String getDimensionName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.WorldProvider net.minecraft.util.Vec3 drawClouds(float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World World(net.minecraft.world.storage.ISaveHandler, java.lang.String, net.minecraft.world.WorldProvider, net.minecraft.world.WorldSettings, net.minecraft.profiler.Profiler) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldProviderEnd net.minecraft.util.Vec3 getFogColor(float, float)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.WorldProviderHell net.minecraft.world.chunk.IChunkProvider createChunkGenerator()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.WorldProvider void registerWorld(net.minecraft.world.World) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.WorldProvider net.minecraft.util.ChunkCoordinates getSpawnPoint()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.NextTickListEntry int compareTo(net.minecraft.world.NextTickListEntry) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.WorldProvider java.lang.String getDimensionName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='net.minecraft.world.WorldSavedData void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -197,13 +185,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.WorldProviderEnd net.minecraft.world.chunk.IChunkProvider createChunkGenerator()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.WorldServer net.minecraft.world.Teleporter getDefaultTeleporter()'>
+    <item name='net.minecraft.world.WorldProvider net.minecraft.world.WorldProvider getProviderForDimension(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.WorldType LARGE_BIOMES'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.World net.minecraft.crash.CrashReportCategory addWorldInfoToCrashReport(net.minecraft.crash.CrashReport)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World boolean doesBlockHaveSolidTopSurface(net.minecraft.world.IBlockAccess, int, int, int) 0'>
@@ -218,16 +206,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.WorldProviderEnd net.minecraft.util.ChunkCoordinates getEntrancePortalLocation()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.SpawnerAnimals boolean canCreatureTypeSpawnAtLocation(net.minecraft.entity.EnumCreatureType, net.minecraft.world.World, int, int, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.WorldType AMPLIFIED'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldProviderHell java.lang.String getDimensionName()'>
+    <item name='net.minecraft.world.WorldType java.lang.String getWorldTypeName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.WorldServer void onEntityAdded(net.minecraft.entity.Entity) 0'>
@@ -236,10 +221,13 @@
     <item name='net.minecraft.world.World void removePlayerEntityDangerously(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.World void removeEntity(net.minecraft.entity.Entity) 0'>
+    <item name='net.minecraft.world.World java.util.List selectEntitiesWithinAABB(java.lang.Class, net.minecraft.util.AxisAlignedBB, net.minecraft.command.IEntitySelector)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldSettings net.minecraft.world.WorldSettings func_82750_a(java.lang.String)'>
+    <item name='net.minecraft.world.WorldType net.minecraft.world.chunk.IChunkProvider getChunkGenerator(net.minecraft.world.World, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.World void removeEntity(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.IWorldAccess void onEntityCreate(net.minecraft.entity.Entity) 0'>
@@ -248,7 +236,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.WorldServer net.minecraft.world.Explosion newExplosion(net.minecraft.entity.Entity, double, double, double, float, boolean, boolean)'>
+    <item name='net.minecraft.world.World net.minecraft.world.Explosion newExplosion(net.minecraft.entity.Entity, double, double, double, float, boolean, boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.WorldServerMulti WorldServerMulti(net.minecraft.server.MinecraftServer, net.minecraft.world.storage.ISaveHandler, java.lang.String, int, net.minecraft.world.WorldSettings, net.minecraft.world.WorldServer, net.minecraft.profiler.Profiler) 5'>
@@ -260,16 +248,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.WorldSettings net.minecraft.world.WorldSettings.GameType getGameTypeById(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.World void addTileEntity(net.minecraft.tileentity.TileEntity) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.World java.util.List getEntitiesWithinAABB(java.lang.Class, net.minecraft.util.AxisAlignedBB)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.GameRules net.minecraft.nbt.NBTTagCompound writeGameRulesToNBT()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World boolean isAABBInMaterial(net.minecraft.util.AxisAlignedBB, net.minecraft.block.material.Material) 0'>
@@ -284,19 +263,19 @@
     <item name='net.minecraft.world.Teleporter void placeInPortal(net.minecraft.entity.Entity, double, double, double, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldProvider net.minecraft.world.WorldProvider getProviderForDimension(int)'>
+    <item name='net.minecraft.world.WorldProvider net.minecraft.util.Vec3 getFogColor(float, float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.World net.minecraft.world.Explosion createExplosion(net.minecraft.entity.Entity, double, double, double, float, boolean)'>
+    <item name='net.minecraft.world.WorldProvider java.lang.String getDimensionName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.world.World villageSiegeObj'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldProvider net.minecraft.util.Vec3 drawClouds(float)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.WorldProvider net.minecraft.util.Vec3 getSkyColor(net.minecraft.entity.Entity, float)'>
+    <item name='net.minecraft.world.WorldType net.minecraft.world.WorldType getWorldTypeForGeneratorVersion(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.WorldSettings.GameType void configurePlayerCapabilities(net.minecraft.entity.player.PlayerCapabilities) 0'>
@@ -305,7 +284,7 @@
     <item name='net.minecraft.world.WorldServer void updateEntityWithOptionalForce(net.minecraft.entity.Entity, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.World net.minecraft.util.Vec3 getCloudColour(float)'>
+    <item name='net.minecraft.world.World java.util.List getEntitiesWithinAABBExcludingEntity(net.minecraft.entity.Entity, net.minecraft.util.AxisAlignedBB, net.minecraft.command.IEntitySelector)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.SpawnerAnimals boolean canCreatureTypeSpawnAtLocation(net.minecraft.entity.EnumCreatureType, net.minecraft.world.World, int, int, int) 0'>
@@ -315,6 +294,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.Teleporter Teleporter(net.minecraft.world.WorldServer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.WorldProviderHell net.minecraft.util.Vec3 getFogColor(float, float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.IWorldAccess void onEntityDestroy(net.minecraft.entity.Entity) 0'>
@@ -335,22 +317,37 @@
     <item name='net.minecraft.world.World boolean checkBlockCollision(net.minecraft.util.AxisAlignedBB) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.WorldSettings net.minecraft.world.WorldSettings enableCommands()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.WorldProviderEnd net.minecraft.util.Vec3 getFogColor(float, float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.WorldSettings.GameType net.minecraft.world.WorldSettings.GameType getByName(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.WorldSettings net.minecraft.world.WorldSettings enableBonusChest()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.World net.minecraft.entity.Entity findNearestEntityWithinAABB(java.lang.Class, net.minecraft.util.AxisAlignedBB, net.minecraft.entity.Entity) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.WorldProvider moonPhaseFactors'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldProviderSurface java.lang.String getDimensionName()'>
+    <item name='net.minecraft.world.NextTickListEntry int compareTo(java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.NextTickListEntry int compareTo(java.lang.Object) 0'>
+    <item name='net.minecraft.world.SpawnerAnimals net.minecraft.world.ChunkPosition func_151350_a(net.minecraft.world.World, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.SpawnerAnimals net.minecraft.world.ChunkPosition func_151350_a(net.minecraft.world.World, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.Teleporter boolean placeInExistingPortal(net.minecraft.entity.Entity, double, double, double, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.WorldSettings net.minecraft.world.WorldSettings.GameType getGameTypeById(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World net.minecraft.crash.CrashReportCategory addWorldInfoToCrashReport(net.minecraft.crash.CrashReport) 0'>
@@ -362,12 +359,6 @@
     <item name='net.minecraft.world.GameRules void readGameRulesFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.World java.util.List selectEntitiesWithinAABB(java.lang.Class, net.minecraft.util.AxisAlignedBB, net.minecraft.command.IEntitySelector)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.NextTickListEntry net.minecraft.world.NextTickListEntry setScheduledTime(long)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.World perWorldStorage'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -377,10 +368,10 @@
     <item name='net.minecraft.world.WorldServer void setEntityState(net.minecraft.entity.Entity, byte) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.World net.minecraft.util.Vec3 getSkyColor(net.minecraft.entity.Entity, float) 0'>
+    <item name='net.minecraft.world.WorldProviderEnd java.lang.String getDimensionName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.World java.util.List getEntitiesWithinAABBExcludingEntity(net.minecraft.entity.Entity, net.minecraft.util.AxisAlignedBB)'>
+    <item name='net.minecraft.world.World net.minecraft.util.Vec3 getSkyColor(net.minecraft.entity.Entity, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.WorldServer bonusChestContent'>
@@ -389,13 +380,16 @@
     <item name='net.minecraft.world.WorldManager void onEntityDestroy(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldServer java.util.List func_147486_a(int, int, int, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.EnumDifficulty PEACEFUL'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldProvider net.minecraft.world.chunk.IChunkProvider createChunkGenerator()'>
+    <item name='net.minecraft.world.WorldProvider net.minecraft.util.ChunkCoordinates getSpawnPoint()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.WorldProviderEnd net.minecraft.world.chunk.IChunkProvider createChunkGenerator()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.ChunkCoordIntPair net.minecraft.world.ChunkPosition func_151349_a(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.WorldSavedData void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
@@ -413,9 +407,6 @@
     <item name='net.minecraft.world.WorldType WorldType(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.World net.minecraft.util.Vec3 getSkyColor(net.minecraft.entity.Entity, float)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.World boolean func_147470_e(net.minecraft.util.AxisAlignedBB) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -428,25 +419,37 @@
     <item name='net.minecraft.world.WorldServer java.util.List getPendingBlockUpdates(net.minecraft.world.chunk.Chunk, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.World java.util.List getEntitiesWithinAABBExcludingEntity(net.minecraft.entity.Entity, net.minecraft.util.AxisAlignedBB)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.World boolean handleMaterialAcceleration(net.minecraft.util.AxisAlignedBB, net.minecraft.block.material.Material, net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.WorldSettings.GameType ADVENTURE'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.WorldProvider net.minecraft.world.chunk.IChunkProvider createChunkGenerator()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.World float getBlockDensity(net.minecraft.util.Vec3, net.minecraft.util.AxisAlignedBB) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldServer net.minecraft.entity.EntityTracker getEntityTracker()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.World net.minecraft.util.Vec3 drawCloudsBody(float)'>
+    <item name='net.minecraft.world.WorldServer java.util.List func_147486_a(int, int, int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World net.minecraft.util.MovingObjectPosition func_147447_a(net.minecraft.util.Vec3, net.minecraft.util.Vec3, boolean, boolean, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.World net.minecraft.util.Vec3 getFogColor(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.World boolean isMaterialInBB(net.minecraft.util.AxisAlignedBB, net.minecraft.block.material.Material) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.WorldSettings.GameType net.minecraft.world.WorldSettings.GameType getByID(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.NextTickListEntry net.minecraft.world.NextTickListEntry setScheduledTime(long)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.EnumSkyBlock Block'>
@@ -455,22 +458,16 @@
     <item name='net.minecraft.world.Teleporter boolean makePortal(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldType net.minecraft.world.gen.layer.GenLayer getBiomeLayer(long, net.minecraft.world.gen.layer.GenLayer)'>
+    <item name='net.minecraft.world.World net.minecraft.util.ChunkCoordinates getSpawnPoint()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldProvider net.minecraft.util.Vec3 getFogColor(float, float)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.WorldProvider net.minecraft.util.ChunkCoordinates getRandomizedSpawnPoint()'>
+    <item name='net.minecraft.world.WorldServer net.minecraft.server.management.PlayerManager getPlayerManager()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World java.util.List getEntitiesWithinAABBExcludingEntity(net.minecraft.entity.Entity, net.minecraft.util.AxisAlignedBB) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World boolean checkNoEntityCollision(net.minecraft.util.AxisAlignedBB, net.minecraft.entity.Entity) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.SpawnerAnimals net.minecraft.world.ChunkPosition func_151350_a(net.minecraft.world.World, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.WorldType DEFAULT'>
@@ -481,6 +478,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.world.WorldProvider net.minecraft.util.Vec3 getSkyColor(net.minecraft.entity.Entity, float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.WorldServerMulti WorldServerMulti(net.minecraft.server.MinecraftServer, net.minecraft.world.storage.ISaveHandler, java.lang.String, int, net.minecraft.world.WorldSettings, net.minecraft.world.WorldServer, net.minecraft.profiler.Profiler) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>

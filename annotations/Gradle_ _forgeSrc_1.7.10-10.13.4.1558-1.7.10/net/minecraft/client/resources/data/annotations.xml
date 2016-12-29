@@ -2,46 +2,40 @@
     <item name='net.minecraft.client.resources.data.LanguageMetadataSectionSerializer net.minecraft.client.resources.data.LanguageMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.data.IMetadataSectionSerializer java.lang.String getSectionName()'>
+    <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
+    </item>
+    <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.data.TextureMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer java.lang.String getSectionName()'>
+    <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer net.minecraft.client.resources.data.PackMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.data.FontMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+    <item name='net.minecraft.client.resources.data.TextureMetadataSectionSerializer java.lang.String getSectionName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.data.IMetadataSerializer net.minecraft.client.resources.data.IMetadataSection parseMetadataSection(java.lang.String, com.google.gson.JsonObject) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.data.LanguageMetadataSectionSerializer net.minecraft.client.resources.data.LanguageMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+    <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer net.minecraft.client.resources.data.AnimationMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer com.google.gson.JsonElement serialize(net.minecraft.client.resources.data.AnimationMetadataSection, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.data.TextureMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.resources.data.LanguageMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer com.google.gson.JsonElement serialize(net.minecraft.client.resources.data.PackMetadataSection, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.resources.data.FontMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.data.LanguageMetadataSectionSerializer java.lang.String getSectionName()'>
+    <item name='net.minecraft.client.resources.data.IMetadataSerializer void registerMetadataSectionType(net.minecraft.client.resources.data.IMetadataSectionSerializer, java.lang.Class) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.data.IMetadataSerializer void registerMetadataSectionType(net.minecraft.client.resources.data.IMetadataSectionSerializer, java.lang.Class) 0'>
+    <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 2'>
@@ -59,43 +53,43 @@
     <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer com.google.gson.JsonElement serialize(net.minecraft.client.resources.data.PackMetadataSection, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.data.TextureMetadataSectionSerializer java.lang.String getSectionName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer net.minecraft.client.resources.data.AnimationMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+    <item name='net.minecraft.client.resources.data.TextureMetadataSectionSerializer net.minecraft.client.resources.data.TextureMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer com.google.gson.JsonElement serialize(net.minecraft.client.resources.data.PackMetadataSection, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.resources.data.LanguageMetadataSectionSerializer net.minecraft.client.resources.data.LanguageMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.resources.data.TextureMetadataSectionSerializer net.minecraft.client.resources.data.TextureMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.resources.data.IMetadataSectionSerializer java.lang.String getSectionName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer com.google.gson.JsonElement serialize(net.minecraft.client.resources.data.AnimationMetadataSection, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.data.FontMetadataSectionSerializer net.minecraft.client.resources.data.FontMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer net.minecraft.client.resources.data.PackMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+    <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer com.google.gson.JsonElement serialize(net.minecraft.client.resources.data.PackMetadataSection, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.resources.data.FontMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.data.IMetadataSerializer net.minecraft.client.resources.data.IMetadataSection parseMetadataSection(java.lang.String, com.google.gson.JsonObject) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.data.FontMetadataSectionSerializer net.minecraft.client.resources.data.FontMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+    <item name='net.minecraft.client.resources.data.LanguageMetadataSectionSerializer java.lang.String getSectionName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.resources.data.TextureMetadataSectionSerializer net.minecraft.client.resources.data.TextureMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+    <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer java.lang.String getSectionName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer net.minecraft.client.resources.data.AnimationMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
@@ -104,10 +98,22 @@
     <item name='net.minecraft.client.resources.data.FontMetadataSectionSerializer java.lang.String getSectionName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.resources.data.LanguageMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer java.lang.String getSectionName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer net.minecraft.client.resources.data.PackMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer net.minecraft.client.resources.data.PackMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.resources.data.TextureMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.resources.data.FontMetadataSectionSerializer net.minecraft.client.resources.data.FontMetadataSection deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.data.LanguageMetadataSectionSerializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
@@ -117,12 +123,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.resources.data.PackMetadataSectionSerializer java.lang.String getSectionName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.resources.data.AnimationMetadataSectionSerializer com.google.gson.JsonElement serialize(net.minecraft.client.resources.data.AnimationMetadataSection, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

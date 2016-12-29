@@ -1,0 +1,14 @@
+<root>
+    <item name='com.mojang.authlib.yggdrasil.request.AuthenticationRequest AuthenticationRequest(com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.request.InvalidateRequest InvalidateRequest(com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.request.RefreshRequest RefreshRequest(com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.request.RefreshRequest RefreshRequest(com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication, com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

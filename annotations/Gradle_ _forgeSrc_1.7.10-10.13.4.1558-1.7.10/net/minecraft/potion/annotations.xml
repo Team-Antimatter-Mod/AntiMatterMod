@@ -1,4 +1,10 @@
 <root>
+    <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion func_111184_a(net.minecraft.entity.ai.attributes.IAttribute, java.lang.String, double, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.PotionEffect net.minecraft.nbt.NBTTagCompound writeCustomPotionEffectToNBT(net.minecraft.nbt.NBTTagCompound)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.potion.Potion moveSlowdown'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -50,16 +56,10 @@
     <item name='net.minecraft.potion.PotionHelper spiderEyeEffect'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion setEffectiveness(double)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.potion.PotionEffect net.minecraft.potion.PotionEffect readCustomPotionEffectFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.potion.PotionHelper redstoneEffect'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion func_111184_a(net.minecraft.entity.ai.attributes.IAttribute, java.lang.String, double, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.potion.PotionHelper ghastTearEffect'>
@@ -75,9 +75,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.potion.Potion hunger'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion setPotionName(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.potion.Potion potionTypes'>
@@ -101,13 +98,13 @@
     <item name='net.minecraft.potion.PotionHealthBoost void removeAttributesModifiersFromEntity(net.minecraft.entity.EntityLivingBase, net.minecraft.entity.ai.attributes.BaseAttributeMap, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion setIconIndex(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.potion.PotionEffect PotionEffect(net.minecraft.potion.PotionEffect) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.potion.PotionHelper magmaCreamEffect'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion setIconIndex(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.potion.PotionAbsoption void applyAttributesModifiersToEntity(net.minecraft.entity.EntityLivingBase, net.minecraft.entity.ai.attributes.BaseAttributeMap, int) 0'>
@@ -149,6 +146,12 @@
     <item name='net.minecraft.potion.Potion java.lang.String getDurationString(net.minecraft.potion.PotionEffect) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion setPotionName(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion setEffectiveness(double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.potion.Potion fireResistance'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -159,9 +162,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.potion.PotionHelper goldenCarrotEffect'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.potion.PotionEffect net.minecraft.nbt.NBTTagCompound writeCustomPotionEffectToNBT(net.minecraft.nbt.NBTTagCompound)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

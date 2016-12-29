@@ -1,0 +1,20 @@
+<root>
+    <item name='com.mojang.authlib.properties.PropertyMap.Serializer com.google.gson.JsonElement serialize(com.mojang.authlib.properties.PropertyMap, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.properties.PropertyMap.Serializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.properties.PropertyMap.Serializer com.google.gson.JsonElement serialize(com.mojang.authlib.properties.PropertyMap, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.properties.PropertyMap.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.properties.PropertyMap.Serializer com.mojang.authlib.properties.PropertyMap deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.properties.PropertyMap.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

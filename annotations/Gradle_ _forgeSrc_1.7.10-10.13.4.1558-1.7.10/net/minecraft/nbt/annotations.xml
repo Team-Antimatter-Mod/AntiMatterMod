@@ -1,14 +1,14 @@
 <root>
-    <item name='net.minecraft.nbt.CompressedStreamTools net.minecraft.nbt.NBTTagCompound readCompressed(java.io.InputStream)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.nbt.CompressedStreamTools net.minecraft.nbt.NBTTagCompound func_152457_a(byte[], net.minecraft.nbt.NBTSizeTracker)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.nbt.CompressedStreamTools void write(net.minecraft.nbt.NBTTagCompound, java.io.DataOutput) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.nbt.NBTTagShort net.minecraft.nbt.NBTBase copy()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.nbt.NBTTagCompound void setString(java.lang.String, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.nbt.NBTTagEnd java.lang.String toString()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.nbt.NBTUtil void func_152460_a(net.minecraft.nbt.NBTTagCompound, com.mojang.authlib.GameProfile) 1'>
@@ -17,22 +17,31 @@
     <item name='net.minecraft.nbt.CompressedStreamTools void write(net.minecraft.nbt.NBTTagCompound, java.io.File) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.NBTTagString net.minecraft.nbt.NBTBase copy()'>
+    <item name='net.minecraft.nbt.NBTBase net.minecraft.nbt.NBTBase copy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.nbt.NBTSizeTracker field_152451_a'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.NBTTagIntArray net.minecraft.nbt.NBTBase copy()'>
+    <item name='net.minecraft.nbt.CompressedStreamTools net.minecraft.nbt.NBTTagCompound func_152456_a(java.io.DataInput, net.minecraft.nbt.NBTSizeTracker)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.nbt.NBTTagFloat net.minecraft.nbt.NBTBase copy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.nbt.CompressedStreamTools net.minecraft.nbt.NBTTagCompound func_152458_a(java.io.File, net.minecraft.nbt.NBTSizeTracker) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.CompressedStreamTools net.minecraft.nbt.NBTTagCompound read(java.io.DataInputStream)'>
+    <item name='net.minecraft.nbt.CompressedStreamTools void writeCompressed(net.minecraft.nbt.NBTTagCompound, java.io.OutputStream) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.CompressedStreamTools void writeCompressed(net.minecraft.nbt.NBTTagCompound, java.io.OutputStream) 0'>
+    <item name='net.minecraft.nbt.NBTTagList net.minecraft.nbt.NBTBase copy()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.nbt.NBTTagByte net.minecraft.nbt.NBTBase copy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.nbt.CompressedStreamTools net.minecraft.nbt.NBTTagCompound func_152456_a(java.io.DataInput, net.minecraft.nbt.NBTSizeTracker) 1'>
@@ -50,31 +59,34 @@
     <item name='net.minecraft.nbt.NBTSizeTracker void readUTF(net.minecraft.nbt.NBTSizeTracker, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.NBTTagList net.minecraft.nbt.NBTBase copy()'>
+    <item name='net.minecraft.nbt.CompressedStreamTools net.minecraft.nbt.NBTTagCompound readCompressed(java.io.InputStream)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.NBTTagFloat net.minecraft.nbt.NBTBase copy()'>
+    <item name='net.minecraft.nbt.CompressedStreamTools net.minecraft.nbt.NBTTagCompound read(java.io.DataInputStream)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.NBTTagList net.minecraft.nbt.NBTTagCompound getCompoundTagAt(int)'>
+    <item name='net.minecraft.nbt.CompressedStreamTools net.minecraft.nbt.NBTTagCompound func_152457_a(byte[], net.minecraft.nbt.NBTSizeTracker)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.nbt.NBTTagCompound net.minecraft.nbt.NBTTagList getTagList(java.lang.String, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.nbt.NBTTagLong net.minecraft.nbt.NBTBase copy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.NBTTagShort net.minecraft.nbt.NBTBase copy()'>
+    <item name='net.minecraft.nbt.NBTTagString net.minecraft.nbt.NBTBase copy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.nbt.CompressedStreamTools void write(net.minecraft.nbt.NBTTagCompound, java.io.DataOutput) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.NBTBase net.minecraft.nbt.NBTBase copy()'>
+    <item name='net.minecraft.nbt.NBTBase java.lang.String toString()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.nbt.NBTTagInt net.minecraft.nbt.NBTBase copy()'>
+    <item name='net.minecraft.nbt.NBTTagList net.minecraft.nbt.NBTTagCompound getCompoundTagAt(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.nbt.NBTTagString NBTTagString(java.lang.String) 0'>
@@ -83,22 +95,10 @@
     <item name='net.minecraft.nbt.NBTUtil com.mojang.authlib.GameProfile func_152459_a(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.NBTTagEnd java.lang.String toString()'>
+    <item name='net.minecraft.nbt.NBTTagCompound net.minecraft.nbt.NBTBase copy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.NBTTagByte net.minecraft.nbt.NBTBase copy()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.nbt.CompressedStreamTools net.minecraft.nbt.NBTTagCompound func_152456_a(java.io.DataInput, net.minecraft.nbt.NBTSizeTracker)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.nbt.NBTTagByteArray net.minecraft.nbt.NBTBase copy()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.nbt.NBTTagDouble net.minecraft.nbt.NBTBase copy()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.nbt.NBTTagEnd net.minecraft.nbt.NBTBase copy()'>
+    <item name='net.minecraft.nbt.NBTTagIntArray net.minecraft.nbt.NBTBase copy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.nbt.NBTBase NBTTypes'>
@@ -119,16 +119,16 @@
     <item name='net.minecraft.nbt.CompressedStreamTools void safeWrite(net.minecraft.nbt.NBTTagCompound, java.io.File) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.NBTTagCompound net.minecraft.nbt.NBTBase copy()'>
+    <item name='net.minecraft.nbt.NBTTagByteArray net.minecraft.nbt.NBTBase copy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.nbt.NBTBase java.lang.String toString()'>
+    <item name='net.minecraft.nbt.NBTTagInt net.minecraft.nbt.NBTBase copy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
-    <item name='net.minecraft.nbt.NBTTagCompound net.minecraft.nbt.NBTTagList getTagList(java.lang.String, int)'>
+    <item name='net.minecraft.nbt.NBTTagEnd net.minecraft.nbt.NBTBase copy()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.nbt.NBTTagDouble net.minecraft.nbt.NBTBase copy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

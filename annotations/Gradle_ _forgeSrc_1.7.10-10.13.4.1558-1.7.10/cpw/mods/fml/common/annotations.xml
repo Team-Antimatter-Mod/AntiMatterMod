@@ -1,26 +1,14 @@
 <root>
-    <item name='cpw.mods.fml.common.FMLCommonHandler cpw.mods.fml.common.FMLCommonHandler instance()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.ModClassLoader cpw.mods.fml.common.asm.transformers.ModAPITransformer addModAPITransformer(cpw.mods.fml.common.discovery.ASMDataTable)'>
+    <item name='cpw.mods.fml.common.FMLModContainer java.util.Map&lt;java.lang.String,java.lang.String&gt; getSharedModDescriptor()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.ModContainer.Disableable NEVER'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.WorldAccessContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='cpw.mods.fml.common.ModAPIManager void cleanupAPIContainers(java.util.List&lt;cpw.mods.fml.common.ModContainer&gt;) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.ModClassLoader cpw.mods.fml.common.asm.transformers.ModAPITransformer addModAPITransformer(cpw.mods.fml.common.discovery.ASMDataTable) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.FMLContainer java.lang.Class&lt;?&gt; getCustomResourcePackClass()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.LoaderState PREINITIALIZATION'>
@@ -29,10 +17,13 @@
     <item name='cpw.mods.fml.common.LoaderState.ModState CONSTRUCTED'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.common.MCPDummyContainer cpw.mods.fml.common.ModContainer.Disableable canBeDisabled()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.common.ObfuscationReflectionHelper java.lang.String[] remapFieldNames(java.lang.String, java.lang.String...) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.MetadataCollection.ArtifactVersionAdapter cpw.mods.fml.common.versioning.ArtifactVersion read(com.google.gson.stream.JsonReader)'>
+    <item name='cpw.mods.fml.common.FMLContainer java.lang.Object getMod()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.MetadataCollection.ArtifactVersionAdapter cpw.mods.fml.common.versioning.ArtifactVersion read(com.google.gson.stream.JsonReader) 0'>
@@ -41,28 +32,25 @@
     <item name='cpw.mods.fml.common.ObfuscationReflectionHelper T getPrivateValue(java.lang.Class&lt;? super E&gt;, E, java.lang.String...) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.common.MetadataCollection.ArtifactVersionAdapter java.lang.Object read(com.google.gson.stream.JsonReader)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.DummyModContainer cpw.mods.fml.common.ModContainer.Disableable canBeDisabled()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.common.FMLContainer boolean registerBus(com.google.common.eventbus.EventBus, cpw.mods.fml.common.LoadController) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.IFMLSidedHandler java.io.File getSavesDirectory()'>
+    <item name='cpw.mods.fml.common.IFMLSidedHandler java.lang.String getCurrentLanguage()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='cpw.mods.fml.common.ObfuscationReflectionHelper java.lang.String[] remapFieldNames(java.lang.String, java.lang.String...)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.DummyModContainer java.lang.String getSortingRules()'>
+    <item name='cpw.mods.fml.common.ModClassLoader java.io.File[] getParentSources()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.FMLModContainer FMLModContainer(java.lang.String, cpw.mods.fml.common.discovery.ModCandidate, java.util.Map&lt;java.lang.String,java.lang.Object&gt;) 2'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.ProgressManager cpw.mods.fml.common.ProgressManager.ProgressBar push(java.lang.String, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.FMLCommonHandler cpw.mods.fml.relauncher.Side getEffectiveSide()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.ObfuscationReflectionHelper T getPrivateValue(java.lang.Class&lt;? super E&gt;, E, int) 0'>
@@ -83,6 +71,12 @@
     <item name='cpw.mods.fml.common.ProgressManager.ProgressBar void step(java.lang.Class&lt;?&gt;, java.lang.String...) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.common.FMLContainer java.lang.String getGuiClassName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.ModMetadata java.lang.String printableSortingRules()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.common.ObfuscationReflectionHelper void setPrivateValue(java.lang.Class&lt;? super T&gt;, T, E, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -98,13 +92,13 @@
     <item name='cpw.mods.fml.common.LoaderState SERVER_STOPPED'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.MetadataCollection cpw.mods.fml.common.MetadataCollection from(java.io.InputStream, java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.common.LoadController cpw.mods.fml.common.LoaderState.ModState getModState(cpw.mods.fml.common.ModContainer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.ModMetadata java.lang.String printableSortingRules()'>
+    <item name='cpw.mods.fml.common.DummyModContainer java.lang.String getSortingRules()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.ObfuscationReflectionHelper java.lang.String[] remapFieldNames(java.lang.String, java.lang.String...)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.DummyModContainer void bindMetadata(cpw.mods.fml.common.MetadataCollection) 0'>
@@ -119,13 +113,7 @@
     <item name='cpw.mods.fml.common.Loader java.util.List&lt;java.lang.String&gt; fireMissingMappingEvent(java.util.LinkedHashMap&lt;java.lang.String,java.lang.Integer&gt;, boolean, cpw.mods.fml.common.registry.GameData, java.util.Map&lt;java.lang.String,java.lang.Integer[]&gt;) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.FMLContainer java.lang.Object getMod()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.common.ModAPIManager void injectAPIModContainers(java.util.List&lt;cpw.mods.fml.common.ModContainer&gt;, java.util.Map&lt;java.lang.String,cpw.mods.fml.common.ModContainer&gt;) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.MCPDummyContainer cpw.mods.fml.common.ModContainer.Disableable canBeDisabled()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.LoaderState SERVER_ABOUT_TO_START'>
@@ -134,7 +122,7 @@
     <item name='cpw.mods.fml.common.Loader MC_VERSION'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.DummyModContainer cpw.mods.fml.common.ModContainer.Disableable canBeDisabled()'>
+    <item name='cpw.mods.fml.common.MetadataCollection cpw.mods.fml.common.MetadataCollection from(java.io.InputStream, java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.DummyModContainer boolean registerBus(com.google.common.eventbus.EventBus, cpw.mods.fml.common.LoadController) 0'>
@@ -161,14 +149,14 @@
     <item name='cpw.mods.fml.common.ObfuscationReflectionHelper void setPrivateValue(java.lang.Class&lt;? super T&gt;, T, E, java.lang.String...) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.ICrashCallable java.lang.String getLabel()'>
+    <item name='cpw.mods.fml.common.ModContainerFactory cpw.mods.fml.common.ModContainer build(cpw.mods.fml.common.discovery.asm.ASMModParser, java.io.File, cpw.mods.fml.common.discovery.ModCandidate) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.ModContainer cpw.mods.fml.common.ModContainer.Disableable canBeDisabled()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='cpw.mods.fml.common.ModContainerFactory cpw.mods.fml.common.ModContainer build(cpw.mods.fml.common.discovery.asm.ASMModParser, java.io.File, cpw.mods.fml.common.discovery.ModCandidate) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.ILanguageAdapter.ScalaAdapter void setInternalProxies(cpw.mods.fml.common.ModContainer, cpw.mods.fml.relauncher.Side, java.lang.ClassLoader) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -197,9 +185,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='cpw.mods.fml.common.ProgressManager cpw.mods.fml.common.ProgressManager.ProgressBar push(java.lang.String, int, boolean)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.common.ModClassLoader void addFile(java.io.File) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -216,6 +201,9 @@
         </annotation>
     </item>
     <item name='cpw.mods.fml.common.Loader void injectData(java.lang.Object...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.ProgressManager cpw.mods.fml.common.ProgressManager.ProgressBar push(java.lang.String, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.LoaderException void printStackTrace(cpw.mods.fml.common.EnhancedRuntimeException.WrappedPrintStream) 0'>
@@ -257,6 +245,9 @@
     <item name='cpw.mods.fml.common.DuplicateModsFoundException void printStackTrace(cpw.mods.fml.common.EnhancedRuntimeException.WrappedPrintStream) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.common.MetadataCollection.ArtifactVersionAdapter cpw.mods.fml.common.versioning.ArtifactVersion read(com.google.gson.stream.JsonReader)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.common.LoaderState.ModState PREINITIALIZED'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -269,6 +260,12 @@
     <item name='cpw.mods.fml.common.ILanguageAdapter.JavaAdapter void setProxy(java.lang.reflect.Field, java.lang.Class&lt;?&gt;, java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.common.IFMLSidedHandler cpw.mods.fml.relauncher.Side getSide()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
     <item name='cpw.mods.fml.common.ILanguageAdapter.ScalaAdapter void setProxy(java.lang.reflect.Field, java.lang.Class&lt;?&gt;, java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -278,8 +275,11 @@
     <item name='cpw.mods.fml.common.LoaderState NOINIT'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.FMLModContainer java.util.Map&lt;java.lang.String,java.lang.String&gt; getSharedModDescriptor()'>
+    <item name='cpw.mods.fml.common.WorldAccessContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='cpw.mods.fml.common.ILanguageAdapter void setProxy(java.lang.reflect.Field, java.lang.Class&lt;?&gt;, java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -299,6 +299,9 @@
     <item name='cpw.mods.fml.common.ModContainer.Disableable RESTART'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.common.FMLCommonHandler cpw.mods.fml.common.FMLCommonHandler instance()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.common.LoaderState SERVER_STARTED'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -308,11 +311,11 @@
     <item name='cpw.mods.fml.common.LoaderState.ModState ERRORED'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.IFMLSidedHandler java.lang.String getCurrentLanguage()'>
+    <item name='cpw.mods.fml.common.ModClassLoader cpw.mods.fml.common.asm.transformers.ModAPITransformer addModAPITransformer(cpw.mods.fml.common.discovery.ASMDataTable)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.FMLContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.LoaderState.ModState UNLOADED'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -320,13 +323,19 @@
     <item name='cpw.mods.fml.common.Loader void fireRemapEvent(java.util.Map&lt;java.lang.String,java.lang.Integer[]&gt;) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.common.ModContainer java.lang.String getSortingRules()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
     <item name='cpw.mods.fml.common.ModAPIManager void manageAPI(cpw.mods.fml.common.ModClassLoader, cpw.mods.fml.common.discovery.ModDiscoverer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.LoaderState CONSTRUCTING'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.ModContainer cpw.mods.fml.common.ModContainer.Disableable canBeDisabled()'>
+    <item name='cpw.mods.fml.common.ICrashCallable java.lang.String getLabel()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -338,14 +347,20 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='cpw.mods.fml.common.ProgressManager cpw.mods.fml.common.ProgressManager.ProgressBar push(java.lang.String, int, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.common.ILanguageAdapter.ScalaAdapter void setProxy(java.lang.reflect.Field, java.lang.Class&lt;?&gt;, java.lang.Object) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.FMLModContainer void handleModStateEvent(cpw.mods.fml.common.event.FMLEvent) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.ModClassLoader java.io.File[] getParentSources()'>
+    <item name='cpw.mods.fml.common.IFMLSidedHandler java.io.File getSavesDirectory()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='cpw.mods.fml.common.FMLModContainer FMLModContainer(java.lang.String, cpw.mods.fml.common.discovery.ModCandidate, java.util.Map&lt;java.lang.String,java.lang.Object&gt;) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -359,9 +374,6 @@
     <item name='cpw.mods.fml.common.LoaderState INITIALIZATION'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.FMLContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.common.ILanguageAdapter.ScalaAdapter java.lang.Object getNewInstance(cpw.mods.fml.common.FMLModContainer, java.lang.Class&lt;?&gt;, java.lang.ClassLoader, java.lang.reflect.Method) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -370,6 +382,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.Loader cpw.mods.fml.common.ICrashCallable getCallableCrashInformation()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.Loader cpw.mods.fml.common.LoaderState.ModState getModState(cpw.mods.fml.common.ModContainer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -381,6 +396,9 @@
         </annotation>
     </item>
     <item name='cpw.mods.fml.common.ProxyInjector void inject(cpw.mods.fml.common.ModContainer, cpw.mods.fml.common.discovery.ASMDataTable, cpw.mods.fml.relauncher.Side, cpw.mods.fml.common.ILanguageAdapter) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.FMLContainer java.lang.Class&lt;?&gt; getCustomResourcePackClass()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.FMLContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo) 1'>
@@ -422,15 +440,6 @@
     <item name='cpw.mods.fml.common.LoaderState SERVER_STOPPING'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.MetadataCollection.ArtifactVersionAdapter java.lang.Object read(com.google.gson.stream.JsonReader)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.IFMLSidedHandler cpw.mods.fml.relauncher.Side getSide()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='cpw.mods.fml.common.ModAPIManager INSTANCE'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -455,12 +464,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='cpw.mods.fml.common.ModContainer java.lang.String getSortingRules()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='cpw.mods.fml.common.ObfuscationReflectionHelper java.lang.String[] remapFieldNames(java.lang.String, java.lang.String...) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -476,10 +479,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='cpw.mods.fml.common.Loader cpw.mods.fml.common.ICrashCallable getCallableCrashInformation()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.FMLContainer java.lang.String getGuiClassName()'>
+    <item name='cpw.mods.fml.common.FMLCommonHandler cpw.mods.fml.relauncher.Side getEffectiveSide()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.LoaderState ERRORED'>

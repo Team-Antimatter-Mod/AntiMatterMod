@@ -1,11 +1,8 @@
 <root>
-    <item name='net.minecraftforge.oredict.ShapedOreRecipe net.minecraftforge.oredict.ShapedOreRecipe setMirrored(boolean)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraftforge.oredict.ShapelessOreRecipe ShapelessOreRecipe(net.minecraft.block.Block, java.lang.Object...) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.oredict.ShapelessOreRecipe net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting)'>
+    <item name='net.minecraftforge.oredict.ShapedOreRecipe net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.oredict.ShapelessOreRecipe net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting) 0'>
@@ -20,10 +17,10 @@
     <item name='net.minecraftforge.oredict.OreDictionary java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getOres(java.lang.Integer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.oredict.RecipeSorter net.minecraftforge.oredict.RecipeSorter.Category getCategory(net.minecraft.item.crafting.IRecipe)'>
+    <item name='net.minecraftforge.oredict.ShapelessOreRecipe ShapelessOreRecipe(net.minecraft.item.ItemStack, java.lang.Object...) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.oredict.ShapelessOreRecipe ShapelessOreRecipe(net.minecraft.item.ItemStack, java.lang.Object...) 1'>
+    <item name='net.minecraftforge.oredict.OreDictionary int[] getOreIDs(net.minecraft.item.ItemStack)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.oredict.RecipeSorter int compare(net.minecraft.item.crafting.IRecipe, net.minecraft.item.crafting.IRecipe) 0'>
@@ -47,6 +44,9 @@
     <item name='net.minecraftforge.oredict.RecipeSorter.Category SHAPELESS'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraftforge.oredict.RecipeSorter net.minecraftforge.oredict.RecipeSorter.Category getCategory(net.minecraft.item.crafting.IRecipe)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraftforge.oredict.RecipeSorter int compare(java.lang.Object, java.lang.Object) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -68,13 +68,10 @@
     <item name='net.minecraftforge.oredict.ShapedOreRecipe ShapedOreRecipe(net.minecraft.item.ItemStack, java.lang.Object...) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.oredict.ShapedOreRecipe net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraftforge.oredict.RecipeSorter net.minecraftforge.oredict.RecipeSorter.Category getCategory(java.lang.Class&lt;?&gt;)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.oredict.OreDictionary int[] getOreIDs(net.minecraft.item.ItemStack)'>
+    <item name='net.minecraftforge.oredict.ShapelessOreRecipe net.minecraft.item.ItemStack getCraftingResult(net.minecraft.inventory.InventoryCrafting)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.oredict.RecipeSorter int compare(net.minecraft.item.crafting.IRecipe, net.minecraft.item.crafting.IRecipe) 1'>
@@ -87,6 +84,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.oredict.ShapelessOreRecipe ShapelessOreRecipe(net.minecraft.item.Item, java.lang.Object...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.oredict.ShapedOreRecipe net.minecraftforge.oredict.ShapedOreRecipe setMirrored(boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.oredict.ShapelessOreRecipe ShapelessOreRecipe(net.minecraft.item.ItemStack, java.lang.Object...) 0'>

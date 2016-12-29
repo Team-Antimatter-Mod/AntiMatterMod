@@ -11,6 +11,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.entity.EntityMinecartCommandBlock net.minecraft.command.server.CommandBlockLogic func_145822_e()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.entity.EntityLivingBase net.minecraft.util.IIcon getItemIcon(net.minecraft.item.ItemStack, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -34,12 +37,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.entity.EntityLivingBase net.minecraft.util.Vec3 getLookVec()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.entity.Entity java.lang.String getSplashSound()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.IMerchant void useRecipe(net.minecraft.village.MerchantRecipe) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -65,7 +62,10 @@
     <item name='net.minecraft.entity.EntityLivingBase void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.EntityLivingBase net.minecraft.util.Vec3 getPosition(float)'>
+    <item name='net.minecraft.entity.SharedMonsterAttributes net.minecraft.nbt.NBTTagList writeBaseAttributeMapToNBT(net.minecraft.entity.ai.attributes.BaseAttributeMap)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.Entity net.minecraft.nbt.NBTTagList newFloatNBTList(float...)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.EntityLivingBase boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
@@ -110,13 +110,13 @@
     <item name='net.minecraft.entity.EntityLiving void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.SharedMonsterAttributes net.minecraft.entity.ai.attributes.AttributeModifier readAttributeModifierFromNBT(net.minecraft.nbt.NBTTagCompound)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.entity.SharedMonsterAttributes net.minecraft.nbt.NBTTagList writeBaseAttributeMapToNBT(net.minecraft.entity.ai.attributes.BaseAttributeMap) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.Entity.EnumEntitySize SIZE_4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.Entity net.minecraft.util.IChatComponent func_145748_c_()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.EntityLivingBase void onItemPickup(net.minecraft.entity.Entity, int) 0'>
@@ -140,9 +140,6 @@
     <item name='net.minecraft.entity.EntityTracker void func_151247_a(net.minecraft.entity.Entity, net.minecraft.network.Packet) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.EntityLivingBase net.minecraft.entity.EnumCreatureAttribute getCreatureAttribute()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.entity.EntityList int getEntityID(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -158,6 +155,9 @@
     <item name='net.minecraft.entity.SharedMonsterAttributes net.minecraft.entity.ai.attributes.AttributeModifier readAttributeModifierFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.entity.Entity java.lang.String getSplashSound()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.entity.Entity net.minecraft.nbt.NBTTagList newFloatNBTList(float...) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -165,9 +165,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.EntityTracker void addEntityToTracker(net.minecraft.entity.Entity) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.entity.Entity net.minecraft.nbt.NBTTagList newDoubleNBTList(double...)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.EntityLivingBase boolean isPotionActive(net.minecraft.potion.Potion) 0'>
@@ -179,10 +176,10 @@
     <item name='net.minecraft.entity.EntityLeashKnot boolean interactFirst(net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.Entity java.lang.String getSwimSound()'>
+    <item name='net.minecraft.entity.Entity boundingBox'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.Entity boundingBox'>
+    <item name='net.minecraft.entity.EntityLivingBase net.minecraft.entity.EnumCreatureAttribute getCreatureAttribute()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.EntityTracker void removeEntityFromAllTrackingPlayers(net.minecraft.entity.Entity) 0'>
@@ -191,10 +188,13 @@
     <item name='net.minecraft.entity.Entity void addEntityCrashInfo(net.minecraft.crash.CrashReportCategory) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.Entity net.minecraft.nbt.NBTTagList newFloatNBTList(float...)'>
+    <item name='net.minecraft.entity.EntityLivingBase net.minecraft.util.Vec3 getLook(float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.Entity.EnumEntitySize SIZE_3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.EntityLivingBase net.minecraft.util.Vec3 getLookVec()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.DataWatcher void updateWatchedObjectsFromList(java.util.List) 0'>
@@ -206,10 +206,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.EntityLivingBase net.minecraft.util.Vec3 getLook(float)'>
+    <item name='net.minecraft.entity.SharedMonsterAttributes attackDamage'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.SharedMonsterAttributes attackDamage'>
+    <item name='net.minecraft.entity.Entity net.minecraft.nbt.NBTTagList newDoubleNBTList(double...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.EntityLeashKnot net.minecraft.entity.EntityLeashKnot func_110129_a(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.EntityLivingBase void onFinishedPotionEffect(net.minecraft.potion.PotionEffect) 0'>
@@ -251,6 +254,9 @@
     <item name='net.minecraft.entity.Entity net.minecraft.entity.item.EntityItem entityDropItem(net.minecraft.item.ItemStack, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.entity.Entity java.lang.String getSwimSound()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.entity.Entity void applyEntityCollision(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -268,9 +274,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.entity.Entity net.minecraft.util.IChatComponent func_145748_c_()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.EntityMinecartCommandBlock void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -302,13 +305,10 @@
     <item name='net.minecraft.entity.EntityList java.lang.String getEntityString(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.EntityLivingBase java.lang.String func_146067_o(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.entity.DataWatcher void writeWatchedListToPacketBuffer(java.util.List, net.minecraft.network.PacketBuffer) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.EntityMinecartCommandBlock net.minecraft.command.server.CommandBlockLogic func_145822_e()'>
+    <item name='net.minecraft.entity.EntityLivingBase net.minecraft.util.CombatTracker func_110142_aN()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.NpcMerchant void useRecipe(net.minecraft.village.MerchantRecipe) 0'>
@@ -347,15 +347,6 @@
     <item name='net.minecraft.entity.EntityAgeable void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.EntityAgeable net.minecraft.entity.EntityAgeable createChild(net.minecraft.entity.EntityAgeable)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='net.minecraft.entity.EntityLeashKnot net.minecraft.entity.EntityLeashKnot func_110129_a(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.entity.EntityAgeable void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -380,9 +371,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.SharedMonsterAttributes net.minecraft.nbt.NBTTagList writeBaseAttributeMapToNBT(net.minecraft.entity.ai.attributes.BaseAttributeMap)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.entity.EntityLeashKnot void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -395,17 +383,17 @@
     <item name='net.minecraft.entity.EntityLeashKnot net.minecraft.entity.EntityLeashKnot func_110129_a(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.EntityLiving net.minecraft.entity.IEntityLivingData onSpawnWithEgg(net.minecraft.entity.IEntityLivingData)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.entity.EntityLivingBase net.minecraft.potion.PotionEffect getActivePotionEffect(net.minecraft.potion.Potion) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.EntityLivingBase void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.EntityLiving net.minecraft.entity.IEntityLivingData onSpawnWithEgg(net.minecraft.entity.IEntityLivingData)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.entity.EntityLiving targetTasks'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -428,13 +416,25 @@
     <item name='net.minecraft.entity.Entity boolean isCreatureType(net.minecraft.entity.EnumCreatureType, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.entity.SharedMonsterAttributes net.minecraft.entity.ai.attributes.AttributeModifier readAttributeModifierFromNBT(net.minecraft.nbt.NBTTagCompound)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.entity.Entity float getDistanceToEntity(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.SharedMonsterAttributes void func_151475_a(net.minecraft.entity.ai.attributes.BaseAttributeMap, net.minecraft.nbt.NBTTagList) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.EntityLivingBase net.minecraft.util.CombatTracker func_110142_aN()'>
+    <item name='net.minecraft.entity.EntityAgeable net.minecraft.entity.EntityAgeable createChild(net.minecraft.entity.EntityAgeable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.entity.EntityLivingBase java.lang.String func_146067_o(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.EntityLivingBase net.minecraft.util.Vec3 getPosition(float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.EntityLivingBase float applyArmorCalculations(net.minecraft.util.DamageSource, float) 0'>

@@ -1,0 +1,32 @@
+<root>
+    <item name='com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService void joinServer(com.mojang.authlib.GameProfile, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication void selectGameProfile(com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService com.mojang.authlib.GameProfile fillProfileProperties(com.mojang.authlib.GameProfile, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService com.mojang.authlib.GameProfileRepository createProfileRepository()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService com.mojang.authlib.minecraft.MinecraftSessionService createMinecraftSessionService()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService java.util.Map&lt;com.mojang.authlib.minecraft.MinecraftProfileTexture.Type,com.mojang.authlib.minecraft.MinecraftProfileTexture&gt; getTextures(com.mojang.authlib.GameProfile, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService com.mojang.authlib.GameProfile hasJoinedServer(com.mojang.authlib.GameProfile, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService com.mojang.authlib.UserAuthentication createUserAuthentication(com.mojang.authlib.Agent)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication void loadFromStorage(java.util.Map&lt;java.lang.String,java.lang.Object&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.YggdrasilGameProfileRepository void findProfilesByNames(java.lang.String[], com.mojang.authlib.Agent, com.mojang.authlib.ProfileLookupCallback) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

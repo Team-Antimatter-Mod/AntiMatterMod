@@ -1,23 +1,20 @@
 <root>
-    <item name='net.minecraft.server.MinecraftServer net.minecraft.crash.CrashReport addServerInfoToCrashReport(net.minecraft.crash.CrashReport)'>
+    <item name='net.minecraft.server.MinecraftServer net.minecraft.network.NetworkSystem func_147137_ag()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.server.MinecraftServer com.mojang.authlib.GameProfile[] func_152357_F()'>
+    <item name='net.minecraft.server.MinecraftServer java.util.List getPossibleCompletions(net.minecraft.command.ICommandSender, java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.server.MinecraftServer net.minecraft.crash.CrashReport addServerInfoToCrashReport(net.minecraft.crash.CrashReport) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.server.MinecraftServer java.io.File getDataDirectory()'>
+    <item name='net.minecraft.server.MinecraftServer net.minecraft.world.storage.ISaveFormat getActiveAnvilConverter()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.server.MinecraftServer net.minecraft.util.IChatComponent func_145748_c_()'>
+    <item name='net.minecraft.server.MinecraftServer net.minecraft.command.ICommandManager getCommandManager()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.server.MinecraftServer net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.MinecraftServer java.lang.String[] getAllUsernames()'>
+    <item name='net.minecraft.server.MinecraftServer java.lang.String getCommandSenderName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.server.MinecraftServer field_152367_a'>
@@ -29,46 +26,49 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.server.MinecraftServer java.util.List getPossibleCompletions(net.minecraft.command.ICommandSender, java.lang.String) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.MinecraftServer net.minecraft.command.ICommandManager getCommandManager()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.MinecraftServer java.lang.String getMinecraftVersion()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.MinecraftServer java.lang.String getPlugins()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.MinecraftServer void addServerTypeToSnooper(net.minecraft.profiler.PlayerUsageSnooper) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.MinecraftServer net.minecraft.network.NetworkSystem func_147137_ag()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.MinecraftServer java.lang.String getCommandSenderName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.MinecraftServer theProfiler'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.MinecraftServer java.util.List getPossibleCompletions(net.minecraft.command.ICommandSender, java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.MinecraftServer void addChatMessage(net.minecraft.util.IChatComponent) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.MinecraftServer MinecraftServer(java.io.File, java.net.Proxy) 0'>
+    <item name='net.minecraft.server.MinecraftServer net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.server.MinecraftServer net.minecraft.server.management.PlayerProfileCache func_152358_ax()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.server.MinecraftServer java.util.List getPossibleCompletions(net.minecraft.command.ICommandSender, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.MinecraftServer void addServerTypeToSnooper(net.minecraft.profiler.PlayerUsageSnooper) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.MinecraftServer com.mojang.authlib.GameProfile[] func_152357_F()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.MinecraftServer net.minecraft.crash.CrashReport addServerInfoToCrashReport(net.minecraft.crash.CrashReport)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.MinecraftServer theProfiler'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.MinecraftServer net.minecraft.util.IChatComponent func_145748_c_()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.MinecraftServer void addChatMessage(net.minecraft.util.IChatComponent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.MinecraftServer java.lang.String getPlugins()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.MinecraftServer MinecraftServer(java.io.File, java.net.Proxy) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.server.MinecraftServer tickTimeArray'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.server.MinecraftServer java.io.File getFile(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.server.MinecraftServer void addServerStatsToSnooper(net.minecraft.profiler.PlayerUsageSnooper) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.server.MinecraftServer java.lang.String getMinecraftVersion()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.server.MinecraftServer boolean isBlockProtected(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer) 0'>
@@ -77,16 +77,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.server.MinecraftServer net.minecraft.profiler.PlayerUsageSnooper getPlayerUsageSnooper()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.server.MinecraftServer net.minecraft.network.ServerStatusResponse func_147134_at()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.server.MinecraftServer java.io.File getFile(java.lang.String)'>
+    <item name='net.minecraft.server.MinecraftServer java.lang.String[] getAllUsernames()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.server.MinecraftServer net.minecraft.world.storage.ISaveFormat getActiveAnvilConverter()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.MinecraftServer net.minecraft.profiler.PlayerUsageSnooper getPlayerUsageSnooper()'>
+    <item name='net.minecraft.server.MinecraftServer java.io.File getDataDirectory()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

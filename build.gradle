@@ -9,10 +9,14 @@ buildscript {
             name = "sonatype"
             url = "https://oss.sonatype.org/content/repositories/snapshots/"
         }
+        maven {
+            name = "kotlin"
+            url = "http://dl.bintray.com/kotlin/kotlin-eap-1.1/"
+        }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.5-3'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.1-M04'
     }
 }
 
@@ -34,8 +38,15 @@ minecraft {
     runDir = "eclipse"
 }
 
+repositories{
+    maven {
+        name = "kotlin"
+        url = "http://dl.bintray.com/kotlin/kotlin-eap-1.1/"
+    }
+}
+
 dependencies {
-    compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.5-3'
+    compile 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.1-M04'
     compile fileTree(dir: 'libs', include: '*.jar')
 }
 

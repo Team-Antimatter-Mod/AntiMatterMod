@@ -1,8 +1,8 @@
 <root>
-    <item name='ibxm.Player ibxm.Module load_module(java.io.InputStream)'>
+    <item name='ibxm.Player void main(java.lang.String[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='ibxm.Player void main(java.lang.String[]) 0'>
+    <item name='ibxm.ProTracker ibxm.Module load_mod(byte[], java.io.DataInput)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='ibxm.ScreamTracker3 ibxm.Module load_s3m(byte[], java.io.DataInput) 0'>
@@ -11,16 +11,13 @@
     <item name='ibxm.IBXM VERSION'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='ibxm.ProTracker ibxm.Module load_mod(byte[], java.io.DataInput)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='ibxm.ProTracker ibxm.Module load_mod(byte[], java.io.DataInput) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='ibxm.ProTracker boolean is_mod(byte[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='ibxm.ScreamTracker3 ibxm.Module load_s3m(byte[], java.io.DataInput)'>
+    <item name='ibxm.FastTracker2 ibxm.Module load_xm(byte[], java.io.DataInput)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='ibxm.FastTracker2 ibxm.Module load_xm(byte[], java.io.DataInput) 1'>
@@ -32,7 +29,10 @@
     <item name='ibxm.Sample void set_sample_data(short[], int, int, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='ibxm.FastTracker2 ibxm.Module load_xm(byte[], java.io.DataInput)'>
+    <item name='ibxm.ScreamTracker3 ibxm.Module load_s3m(byte[], java.io.DataInput)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='ibxm.Player ibxm.Module load_module(java.io.InputStream)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

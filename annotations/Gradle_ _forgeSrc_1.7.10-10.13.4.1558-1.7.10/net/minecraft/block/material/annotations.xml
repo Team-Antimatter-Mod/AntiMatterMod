@@ -11,9 +11,6 @@
     <item name='net.minecraft.block.material.Material web'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.material.Material net.minecraft.block.material.Material setBurning()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.material.MapColor blackColor'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -36,6 +33,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.material.MapColor diamondColor'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.material.Material net.minecraft.block.material.Material setAdventureModeExempt()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.material.MapColor stoneColor'>
@@ -89,7 +89,13 @@
     <item name='net.minecraft.block.material.MapColor lapisColor'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.material.Material net.minecraft.block.material.Material setNoPushMobility()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.material.Material ice'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.material.Material net.minecraft.block.material.Material setReplaceable()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.material.MapColor grayColor'>
@@ -99,6 +105,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.material.MapColor snowColor'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.material.Material net.minecraft.block.material.Material setImmovableMobility()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.material.Material wood'>
@@ -119,31 +128,16 @@
     <item name='net.minecraft.block.material.MapColor goldColor'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.material.Material net.minecraft.block.material.Material setRequiresTool()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.material.MapColor net.minecraft.block.material.MapColor getMapColorForBlockColored(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.material.Material glass'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.material.Material rock'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.material.Material net.minecraft.block.material.Material setAdventureModeExempt()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.material.Material net.minecraft.block.material.Material setNoPushMobility()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.material.MapColor ironColor'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.material.MapColor yellowColor'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.material.Material net.minecraft.block.material.Material setReplaceable()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.material.MapColor magentaColor'>
@@ -165,6 +159,12 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.material.Material cake'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.material.MapColor net.minecraft.block.material.MapColor getMapColorForBlockColored(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.material.Material net.minecraft.block.material.Material setRequiresTool()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.material.Material coral'>
@@ -194,10 +194,10 @@
     <item name='net.minecraft.block.material.Material sponge'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.material.MapColor pinkColor'>
+    <item name='net.minecraft.block.material.Material net.minecraft.block.material.Material setBurning()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.material.Material net.minecraft.block.material.Material setImmovableMobility()'>
+    <item name='net.minecraft.block.material.MapColor pinkColor'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.material.Material ground'>

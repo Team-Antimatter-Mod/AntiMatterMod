@@ -1,7 +1,4 @@
 <root>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase func_76733_a(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.biome.BiomeGenBase void plantFlower(net.minecraft.world.World, java.util.Random, int, int, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -35,9 +32,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.biome.WorldChunkManagerHell net.minecraft.world.biome.BiomeGenBase[] getBiomeGenAt(net.minecraft.world.biome.BiomeGenBase[], int, int, int, int, boolean)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.biome.BiomeGenForest field_150630_aD'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -59,16 +53,19 @@
     <item name='net.minecraft.world.biome.BiomeGenBase frozenOcean'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase mushroomIslandShore'>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase.TempCategory getTempCategory()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.WorldChunkManager net.minecraft.world.biome.BiomeGenBase[] loadBlockGeneratorData(net.minecraft.world.biome.BiomeGenBase[], int, int, int, int)'>
+    <item name='net.minecraft.world.biome.BiomeGenBase mushroomIslandShore'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase.TempCategory MEDIUM'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase coldTaigaHills'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeDecorator createBiomeDecorator()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenForest java.lang.String func_150572_a(java.util.Random, int, int, int) 0'>
@@ -80,7 +77,7 @@
     <item name='net.minecraft.world.biome.BiomeGenBase deepOcean'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenJungle net.minecraft.world.gen.feature.WorldGenerator getRandomWorldGenForGrass(java.util.Random)'>
+    <item name='net.minecraft.world.biome.BiomeGenForest net.minecraft.world.biome.BiomeGenBase createMutation()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase savanna'>
@@ -107,15 +104,6 @@
     <item name='net.minecraft.world.biome.BiomeGenBase void plantFlower(net.minecraft.world.World, java.util.Random, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenTaiga net.minecraft.world.gen.feature.WorldGenerator getRandomWorldGenForGrass(java.util.Random)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenMutated net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.world.biome.WorldChunkManagerHell boolean areBiomesViable(int, int, int, java.util.List) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -125,13 +113,13 @@
     <item name='net.minecraft.world.biome.BiomeGenDesert void decorate(net.minecraft.world.World, java.util.Random, int, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.biome.BiomeGenHills net.minecraft.world.biome.BiomeGenHills mutateHills(net.minecraft.world.biome.BiomeGenBase)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.biome.BiomeGenBase void genTerrainBlocks(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenMutated void genTerrainBlocks(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 2'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.WorldChunkManagerHell net.minecraft.world.biome.BiomeGenBase[] loadBlockGeneratorData(net.minecraft.world.biome.BiomeGenBase[], int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenTaiga net.minecraft.world.gen.feature.WorldGenerator getRandomWorldGenForGrass(java.util.Random) 0'>
@@ -149,16 +137,7 @@
     <item name='net.minecraft.world.biome.BiomeGenBase java.lang.String func_150572_a(java.util.Random, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeCache net.minecraft.world.biome.BiomeCache.Block getBiomeCacheBlock(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.biome.BiomeGenBase desertHills'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenSavanna net.minecraft.world.biome.BiomeGenBase createMutation()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.WorldChunkManagerHell net.minecraft.world.biome.BiomeGenBase[] getBiomesForGeneration(net.minecraft.world.biome.BiomeGenBase[], int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenMesa void decorate(net.minecraft.world.World, java.util.Random, int, int) 1'>
@@ -166,6 +145,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase.Height net.minecraft.world.biome.BiomeGenBase.Height attenuate()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase icePlains'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -179,12 +161,6 @@
     <item name='net.minecraft.world.biome.BiomeGenBase stoneBeach'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenMutated net.minecraft.world.biome.BiomeGenBase.TempCategory getTempCategory()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase setEnableSnow()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.biome.BiomeGenForest field_150629_aC'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -192,6 +168,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.gen.feature.WorldGenerator getRandomWorldGenForGrass(java.util.Random)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenSnow void decorate(net.minecraft.world.World, java.util.Random, int, int) 1'>
@@ -205,9 +184,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase setColor(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.WorldChunkManager WorldChunkManager(long, net.minecraft.world.WorldType) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -245,6 +221,9 @@
     <item name='net.minecraft.world.biome.BiomeGenBase extremeHillsPlus'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.biome.BiomeGenOcean net.minecraft.world.biome.BiomeGenBase.TempCategory getTempCategory()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.biome.BiomeGenSwamp net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -269,9 +248,6 @@
     <item name='net.minecraft.world.biome.BiomeGenBase.TempCategory WARM'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase func_150557_a(int, boolean)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.biome.BiomeGenBase hell'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -290,19 +266,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenMesa net.minecraft.world.biome.BiomeGenBase createMutation()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.biome.BiomeGenBase sky'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase setDisableRain()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase mushroomIsland'>
@@ -320,6 +284,18 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase setTemperatureRainfall(float, float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase func_150557_a(int, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.biome.BiomeGenPlains void decorate(net.minecraft.world.World, java.util.Random, int, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -332,10 +308,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase.TempCategory getTempCategory()'>
+    <item name='net.minecraft.world.biome.BiomeGenTaiga net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenSnow net.minecraft.world.biome.BiomeGenBase createMutation()'>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase setEnableSnow()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase taigaHills'>
@@ -347,7 +323,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase[] getBiomeGenArray()'>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase func_150563_c(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeDecorator getModdedBiomeDecorator(net.minecraft.world.biome.BiomeDecorator)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenTaiga void decorate(net.minecraft.world.World, java.util.Random, int, int) 0'>
@@ -362,13 +341,16 @@
     <item name='net.minecraft.world.biome.BiomeGenHills net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenHills net.minecraft.world.biome.BiomeGenHills mutateHills(net.minecraft.world.biome.BiomeGenBase)'>
+    <item name='net.minecraft.world.biome.BiomeCache net.minecraft.world.biome.BiomeCache.Block getBiomeCacheBlock(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase roofedForest'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenJungle void decorate(net.minecraft.world.World, java.util.Random, int, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.WorldChunkManagerHell net.minecraft.world.biome.BiomeGenBase[] loadBlockGeneratorData(net.minecraft.world.biome.BiomeGenBase[], int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase plantNoise'>
@@ -386,6 +368,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase setDisableRain()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.biome.BiomeGenTaiga net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -395,7 +380,13 @@
     <item name='net.minecraft.world.biome.BiomeGenBase plains'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase setBiomeName(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.biome.BiomeGenOcean void genTerrainBlocks(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.WorldChunkManager net.minecraft.world.biome.BiomeGenBase[] getBiomeGenAt(net.minecraft.world.biome.BiomeGenBase[], int, int, int, int, boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase coldBeach'>
@@ -410,10 +401,19 @@
     <item name='net.minecraft.world.biome.BiomeGenHills net.minecraft.world.biome.BiomeGenHills mutateHills(net.minecraft.world.biome.BiomeGenBase) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase void genBiomeTerrain(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 1'>
+    <item name='net.minecraft.world.biome.BiomeGenTaiga net.minecraft.world.gen.feature.WorldGenerator getRandomWorldGenForGrass(java.util.Random)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenForest net.minecraft.world.biome.BiomeGenBase createMutation()'>
+    <item name='net.minecraft.world.biome.BiomeGenMutated net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenMutated net.minecraft.world.biome.BiomeGenBase.TempCategory getTempCategory()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase void genBiomeTerrain(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenPlains void decorate(net.minecraft.world.World, java.util.Random, int, int) 0'>
@@ -422,7 +422,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase createMutation()'>
+    <item name='net.minecraft.world.biome.WorldChunkManagerHell net.minecraft.world.biome.BiomeGenBase[] getBiomesForGeneration(net.minecraft.world.biome.BiomeGenBase[], int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenMesa net.minecraft.world.biome.BiomeGenBase createMutation()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenJungle net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random) 0'>
@@ -437,6 +440,9 @@
     <item name='net.minecraft.world.biome.BiomeGenBase ocean'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.biome.WorldChunkManager net.minecraft.world.biome.BiomeGenBase[] loadBlockGeneratorData(net.minecraft.world.biome.BiomeGenBase[], int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.biome.BiomeGenMesa void genTerrainBlocks(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -449,7 +455,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenTaiga net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random)'>
+    <item name='net.minecraft.world.biome.BiomeGenSnow net.minecraft.world.biome.BiomeGenBase createMutation()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenHills net.minecraft.world.biome.BiomeGenBase createMutation()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenJungle net.minecraft.world.gen.feature.WorldGenerator getRandomWorldGenForGrass(java.util.Random)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenSavanna.Mutated void decorate(net.minecraft.world.World, java.util.Random, int, int) 0'>
@@ -457,9 +469,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeDecorator createBiomeDecorator()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.WorldChunkManagerHell net.minecraft.world.ChunkPosition findBiomePosition(int, int, int, java.util.List, java.util.Random) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -470,10 +479,10 @@
     <item name='net.minecraft.world.biome.BiomeGenBase mesaPlateau_F'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase height_Default'>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase func_76733_a(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.WorldChunkManager float[] getRainfall(float[], int, int, int, int)'>
+    <item name='net.minecraft.world.biome.BiomeGenBase height_Default'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenHills void genTerrainBlocks(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 2'>
@@ -482,7 +491,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.gen.feature.WorldGenerator getRandomWorldGenForGrass(java.util.Random)'>
+    <item name='net.minecraft.world.biome.BiomeGenSnow net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.WorldChunkManagerHell net.minecraft.world.biome.BiomeGenBase[] getBiomeGenAt(net.minecraft.world.biome.BiomeGenBase[], int, int, int, int, boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenOcean void genTerrainBlocks(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 2'>
@@ -492,6 +504,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase void genBiomeTerrain(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.WorldChunkManagerHell float[] getRainfall(float[], int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeDecorator void decorateChunk(net.minecraft.world.World, java.util.Random, net.minecraft.world.biome.BiomeGenBase, int, int) 2'>
@@ -518,13 +533,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase[] getBiomeGenArray()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase setHeight(net.minecraft.world.biome.BiomeGenBase.Height)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.biome.BiomeGenBase forestHills'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenForest net.minecraft.world.biome.BiomeGenBase func_150557_a(int, boolean)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeDecorator getModdedBiomeDecorator(net.minecraft.world.biome.BiomeDecorator)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.gen.feature.WorldGenerator getRandomWorldGenForGrass(java.util.Random) 0'>
@@ -539,32 +554,11 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenTaiga net.minecraft.world.biome.BiomeGenBase createMutation()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenOcean net.minecraft.world.biome.BiomeGenBase.TempCategory getTempCategory()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenPlains net.minecraft.world.biome.BiomeGenBase createMutation()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase func_150563_c(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase setTemperatureRainfall(float, float)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.biome.BiomeGenSavanna.Mutated void decorate(net.minecraft.world.World, java.util.Random, int, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenSnow net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.biome.WorldChunkManagerHell float[] getRainfall(float[], int, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase birchForestHills'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -581,6 +575,9 @@
     <item name='net.minecraft.world.biome.BiomeGenBase jungleEdge'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.biome.WorldChunkManager float[] getRainfall(float[], int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.biome.BiomeGenBase height_ShallowWaters'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -589,9 +586,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase setHeight(net.minecraft.world.biome.BiomeGenBase.Height)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenSwamp void genTerrainBlocks(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -614,13 +608,13 @@
     <item name='net.minecraft.world.biome.BiomeGenMutated net.minecraft.world.gen.feature.WorldGenAbstractTree func_150567_a(java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.WorldChunkManager net.minecraft.world.biome.BiomeGenBase[] getBiomesForGeneration(net.minecraft.world.biome.BiomeGenBase[], int, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.biome.BiomeGenBase genTallFlowers'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase taiga'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase setColor(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase extremeHillsEdge'>
@@ -635,14 +629,14 @@
     <item name='net.minecraft.world.biome.BiomeGenBase height_MidPlains'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.WorldChunkManager net.minecraft.world.biome.BiomeGenBase[] getBiomeGenAt(net.minecraft.world.biome.BiomeGenBase[], int, int, int, int, boolean)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.biome.BiomeGenOcean void genTerrainBlocks(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.world.biome.WorldChunkManager net.minecraft.world.biome.BiomeGenBase[] getBiomesForGeneration(net.minecraft.world.biome.BiomeGenBase[], int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenMutated void genTerrainBlocks(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -656,10 +650,10 @@
     <item name='net.minecraft.world.biome.BiomeGenMesa void genTerrainBlocks(net.minecraft.world.World, java.util.Random, net.minecraft.block.Block[], byte[], int, int, double) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenHills net.minecraft.world.biome.BiomeGenBase createMutation()'>
+    <item name='net.minecraft.world.biome.BiomeGenPlains net.minecraft.world.biome.BiomeGenBase createMutation()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase.Height net.minecraft.world.biome.BiomeGenBase.Height attenuate()'>
+    <item name='net.minecraft.world.biome.BiomeGenSavanna net.minecraft.world.biome.BiomeGenBase createMutation()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenForest void decorate(net.minecraft.world.World, java.util.Random, int, int) 1'>
@@ -671,7 +665,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.world.biome.BiomeGenTaiga net.minecraft.world.biome.BiomeGenBase createMutation()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.biome.BiomeGenMutated BiomeGenMutated(int, net.minecraft.world.biome.BiomeGenBase) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.biome.BiomeGenForest net.minecraft.world.biome.BiomeGenBase func_150557_a(int, boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.biome.BiomeGenBase height_RockyWaters'>
@@ -692,10 +692,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase height_DeepOceans'>
+    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase createMutation()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.biome.BiomeGenBase net.minecraft.world.biome.BiomeGenBase setBiomeName(java.lang.String)'>
+    <item name='net.minecraft.world.biome.BiomeGenBase height_DeepOceans'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

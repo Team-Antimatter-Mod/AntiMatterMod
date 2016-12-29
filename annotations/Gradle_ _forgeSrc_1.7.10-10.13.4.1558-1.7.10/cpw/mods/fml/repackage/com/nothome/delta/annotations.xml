@@ -1,11 +1,11 @@
 <root>
-    <item name='cpw.mods.fml.repackage.com.nothome.delta.Checksum char[] getSingleHash()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.repackage.com.nothome.delta.GDiffPatcher void main(java.lang.String[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.repackage.com.nothome.delta.Delta void main(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.repackage.com.nothome.delta.Checksum char[] getSingleHash()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.repackage.com.nothome.delta.Checksum Checksum(cpw.mods.fml.repackage.com.nothome.delta.SeekableSource, int) 0'>

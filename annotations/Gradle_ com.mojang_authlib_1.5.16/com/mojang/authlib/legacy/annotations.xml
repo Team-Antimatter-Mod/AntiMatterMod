@@ -1,0 +1,44 @@
+<root>
+    <item name='com.mojang.authlib.legacy.LegacyUserAuthentication com.mojang.authlib.GameProfile[] getAvailableProfiles()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.legacy.LegacyMinecraftSessionService void joinServer(com.mojang.authlib.GameProfile, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.legacy.LegacyMinecraftSessionService java.util.Map&lt;com.mojang.authlib.minecraft.MinecraftProfileTexture.Type,com.mojang.authlib.minecraft.MinecraftProfileTexture&gt; getTextures(com.mojang.authlib.GameProfile, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.legacy.LegacyMinecraftSessionService com.mojang.authlib.GameProfile fillProfileProperties(com.mojang.authlib.GameProfile, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.mojang.authlib.legacy.LegacyMinecraftSessionService java.util.Map&lt;com.mojang.authlib.minecraft.MinecraftProfileTexture.Type,com.mojang.authlib.minecraft.MinecraftProfileTexture&gt; getTextures(com.mojang.authlib.GameProfile, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.mojang.authlib.legacy.LegacyMinecraftSessionService com.mojang.authlib.GameProfile hasJoinedServer(com.mojang.authlib.GameProfile, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.legacy.LegacyAuthenticationService com.mojang.authlib.UserAuthentication createUserAuthentication(com.mojang.authlib.Agent)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.legacy.LegacyAuthenticationService com.mojang.authlib.legacy.LegacyUserAuthentication createUserAuthentication(com.mojang.authlib.Agent)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.legacy.LegacyAuthenticationService com.mojang.authlib.legacy.LegacyMinecraftSessionService createMinecraftSessionService()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.legacy.LegacyAuthenticationService com.mojang.authlib.minecraft.MinecraftSessionService createMinecraftSessionService()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.legacy.LegacyUserAuthentication void selectGameProfile(com.mojang.authlib.GameProfile) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

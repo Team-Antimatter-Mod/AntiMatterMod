@@ -14,10 +14,10 @@
     <item name='net.minecraft.item.ItemFishingRod void registerIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.Item setNoRepair()'>
+    <item name='net.minecraft.item.Item void getSubItems(net.minecraft.item.Item, net.minecraft.creativetab.CreativeTabs, java.util.List) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.Item void getSubItems(net.minecraft.item.Item, net.minecraft.creativetab.CreativeTabs, java.util.List) 2'>
+    <item name='net.minecraft.item.ItemRecord net.minecraft.util.ResourceLocation getRecordResource(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemDye field_150921_b'>
@@ -47,13 +47,22 @@
     <item name='net.minecraft.item.ItemPickaxe ItemPickaxe(net.minecraft.item.Item.ToolMaterial) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.ItemStack net.minecraft.item.ItemStack setStackDisplayName(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemSkull void registerIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.item.ItemArmor net.minecraft.item.ItemArmor.ArmorMaterial getArmorMaterial()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemPotion net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.ItemEnchantedBook net.minecraft.item.EnumRarity getRarity(net.minecraft.item.ItemStack)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemMap net.minecraft.world.storage.MapData getMapData(net.minecraft.item.ItemStack, net.minecraft.world.World) 0'>
@@ -77,6 +86,9 @@
     <item name='net.minecraft.item.ItemTool ItemTool(float, net.minecraft.item.Item.ToolMaterial, java.util.Set) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.ItemFood net.minecraft.item.EnumAction getItemUseAction(net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.Item boolean hasEffect(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -86,9 +98,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.Item setMaxStackSize(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemDoor boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -96,6 +105,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.item.ItemMap net.minecraft.network.Packet func_150911_c(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.ItemStack net.minecraft.item.EnumRarity getRarity()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemBow net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 2'>
@@ -110,16 +122,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.Item setHasSubtypes(boolean)'>
+    <item name='net.minecraft.item.ItemTool com.google.common.collect.Multimap getItemAttributeModifiers()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemDoor void placeDoorBlock(net.minecraft.world.World, int, int, int, int, net.minecraft.block.Block) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.ItemEnchantedBook net.minecraft.util.WeightedRandomChestContent func_92112_a(java.util.Random, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.ItemEnchantedBook net.minecraft.item.ItemStack getEnchantedItemStack(net.minecraft.enchantment.EnchantmentData)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemMap void addInformation(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, java.util.List, boolean) 0'>
@@ -134,7 +140,7 @@
     <item name='net.minecraft.item.ItemEnchantedBook void func_92113_a(net.minecraft.enchantment.Enchantment, java.util.List) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemSword com.google.common.collect.Multimap getItemAttributeModifiers()'>
+    <item name='net.minecraft.item.ItemMap net.minecraft.world.storage.MapData func_150912_a(int, net.minecraft.world.World)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemPotion int getColorFromItemStack(net.minecraft.item.ItemStack, int) 0'>
@@ -146,32 +152,23 @@
     <item name='net.minecraft.item.EnumRarity rare'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.EnumAction getItemUseAction(net.minecraft.item.ItemStack)'>
+    <item name='net.minecraft.item.ItemColored net.minecraft.item.ItemColored func_150943_a(java.lang.String[])'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemFireball boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemStack net.minecraft.item.EnumAction getItemUseAction()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.ItemStack net.minecraft.nbt.NBTTagCompound writeToNBT(net.minecraft.nbt.NBTTagCompound)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemSword boolean hitEntity(net.minecraft.item.ItemStack, net.minecraft.entity.EntityLivingBase, net.minecraft.entity.EntityLivingBase) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.Item java.lang.String getUnlocalizedName(net.minecraft.item.ItemStack)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='net.minecraft.item.ItemEnderEye boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.item.ItemBlock net.minecraft.item.ItemBlock setUnlocalizedName(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemMinecart boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -197,15 +194,6 @@
     <item name='net.minecraft.item.Item void registerIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemEnchantedBook net.minecraft.util.WeightedRandomChestContent func_92114_b(java.util.Random)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.Item.ToolMaterial net.minecraft.item.Item.ToolMaterial setRepairItem(net.minecraft.item.ItemStack)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.ItemBow net.minecraft.item.EnumAction getItemUseAction(net.minecraft.item.ItemStack)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemEnderEye boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -215,13 +203,16 @@
     <item name='net.minecraft.item.ItemBed boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.Item net.minecraft.item.Item setCreativeTab(net.minecraft.creativetab.CreativeTabs)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemFishingRod net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.ItemStack net.minecraft.item.ItemStack splitStack(int)'>
+    <item name='net.minecraft.item.ItemSeeds net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.Item net.minecraft.util.IIcon getIconIndex(net.minecraft.item.ItemStack) 0'>
@@ -239,25 +230,16 @@
     <item name='net.minecraft.item.ItemEnchantedBook net.minecraft.item.EnumRarity getRarity(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemCoal java.lang.String getUnlocalizedName(net.minecraft.item.ItemStack)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemDye void registerIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.ItemSeedFood net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.ItemStack net.minecraft.item.ItemStack copy()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemFireworkCharge void registerIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemStack java.util.List getTooltip(net.minecraft.entity.player.EntityPlayer, boolean)'>
+    <item name='net.minecraft.item.ItemSoup net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.Item int getDamage(net.minecraft.item.ItemStack) 0'>
@@ -299,6 +281,9 @@
     <item name='net.minecraft.item.ItemFireworkCharge net.minecraft.nbt.NBTBase func_150903_a(net.minecraft.item.ItemStack, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.ItemRecord net.minecraft.item.EnumRarity getRarity(net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemMonsterPlacer int getColorFromItemStack(net.minecraft.item.ItemStack, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -314,11 +299,20 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.item.Item net.minecraft.item.Item setMaxDamage(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.ItemFood net.minecraft.item.ItemFood setAlwaysEdible()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemBow net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.item.ItemPotion net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemBlock java.lang.String getUnlocalizedName(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -330,6 +324,12 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemDye void getSubItems(net.minecraft.item.Item, net.minecraft.creativetab.CreativeTabs, java.util.List) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.item.Item net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -348,9 +348,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.item.ItemRecord boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 2'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.ItemAppleGold net.minecraft.item.EnumRarity getRarity(net.minecraft.item.ItemStack)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemBow net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 0'>
@@ -377,10 +374,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.ItemSoup net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.ItemFood net.minecraft.item.ItemFood setPotionEffect(int, int, int, float)'>
+    <item name='net.minecraft.item.ItemFishFood.FishType net.minecraft.item.ItemFishFood.FishType func_150974_a(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemStack field_111284_a'>
@@ -407,13 +401,16 @@
     <item name='net.minecraft.item.ItemFishFood void onFoodEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.ItemBucketMilk net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemSlab java.lang.String getUnlocalizedName(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.EnumAction none'>
+    <item name='net.minecraft.item.ItemFood net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.Item setMaxDamage(int)'>
+    <item name='net.minecraft.item.EnumAction none'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemEditableBook java.lang.String getItemStackDisplayName(net.minecraft.item.ItemStack) 0'>
@@ -457,6 +454,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.item.ItemStack net.minecraft.item.ItemStack copy()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.Item float func_150893_a(net.minecraft.item.ItemStack, net.minecraft.block.Block) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -551,6 +551,12 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.item.Item net.minecraft.item.Item setUnlocalizedName(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.ItemSword com.google.common.collect.Multimap getItemAttributeModifiers()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemRecord net.minecraft.util.ResourceLocation getRecordResource(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -563,13 +569,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.Item setContainerItem(net.minecraft.item.Item)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemDye java.lang.String getUnlocalizedName(net.minecraft.item.ItemStack) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.ItemArmor net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemSeeds boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 0'>
@@ -610,6 +610,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.item.ItemStack net.minecraft.item.ItemStack splitStack(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemFishFood void onFoodEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -671,13 +674,13 @@
     <item name='net.minecraft.item.ItemStack void onCrafting(net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemColored net.minecraft.item.ItemColored func_150943_a(java.lang.String[])'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemLeaves int getColorFromItemStack(net.minecraft.item.ItemStack, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemPotion void registerIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.Item net.minecraft.item.EnumAction getItemUseAction(net.minecraft.item.ItemStack)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemBucketMilk net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 0'>
@@ -712,9 +715,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.item.ItemFishFood.FishType net.minecraft.item.ItemFishFood.FishType func_150974_a(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.Item boolean itemInteractionForEntity(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.entity.EntityLivingBase) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -755,7 +755,7 @@
     <item name='net.minecraft.item.ItemShears boolean onBlockStartBreak(net.minecraft.item.ItemStack, int, int, int, net.minecraft.entity.player.EntityPlayer) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemArmor net.minecraft.item.ItemArmor.ArmorMaterial getArmorMaterial()'>
+    <item name='net.minecraft.item.ItemFood net.minecraft.item.ItemFood setPotionEffect(int, int, int, float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemRecord void addInformation(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, java.util.List, boolean) 0'>
@@ -763,9 +763,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.item.Item net.minecraft.creativetab.CreativeTabs[] getCreativeTabs()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.Item boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -785,11 +782,17 @@
     <item name='net.minecraft.item.ItemBucketMilk net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.Item net.minecraft.item.Item setTextureName(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemRecord void addInformation(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, java.util.List, boolean) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.item.Item net.minecraft.item.Item setContainerItem(net.minecraft.item.Item)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemReed boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -836,9 +839,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.ItemFood net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemFood net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -875,9 +875,6 @@
     <item name='net.minecraft.item.ItemLead boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemRecord net.minecraft.item.EnumRarity getRarity(net.minecraft.item.ItemStack)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemSword boolean onBlockDestroyed(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.block.Block, int, int, int, net.minecraft.entity.EntityLivingBase) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -896,19 +893,10 @@
     <item name='net.minecraft.item.ItemLilyPad int getColorFromItemStack(net.minecraft.item.ItemStack, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemBucketMilk net.minecraft.item.EnumAction getItemUseAction(net.minecraft.item.ItemStack)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemBook boolean isItemTool(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemDoor boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 2'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -938,6 +926,9 @@
     <item name='net.minecraft.item.ItemStack boolean isItemEqual(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.ItemBucketMilk net.minecraft.item.EnumAction getItemUseAction(net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemSnowball net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -956,9 +947,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.ItemSword net.minecraft.item.EnumAction getItemUseAction(net.minecraft.item.ItemStack)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemAppleGold void getSubItems(net.minecraft.item.Item, net.minecraft.creativetab.CreativeTabs, java.util.List) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -971,10 +959,19 @@
     <item name='net.minecraft.item.ItemHoe ItemHoe(net.minecraft.item.Item.ToolMaterial) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.ItemCoal java.lang.String getUnlocalizedName(net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemStack void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemPotion void addInformation(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, java.util.List, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.ItemStack java.util.List getTooltip(net.minecraft.entity.player.EntityPlayer, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.ItemArmor net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemEnchantedBook void addEnchantment(net.minecraft.item.ItemStack, net.minecraft.enchantment.EnchantmentData) 0'>
@@ -1010,6 +1007,9 @@
     <item name='net.minecraft.item.ItemStack boolean tryPlaceItemIntoWorld(net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.ItemAppleGold net.minecraft.item.EnumRarity getRarity(net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemHangingEntity boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -1028,13 +1028,13 @@
     <item name='net.minecraft.item.ItemFood net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.Item setUnlocalizedName(java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.Item.ToolMaterial net.minecraft.item.Item.ToolMaterial setRepairItem(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemPotion java.util.List getEffects(net.minecraft.item.ItemStack) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.ItemStack net.minecraft.nbt.NBTTagCompound writeToNBT(net.minecraft.nbt.NBTTagCompound)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemMap void onCreated(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 0'>
@@ -1061,6 +1061,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.item.ItemBow net.minecraft.item.EnumAction getItemUseAction(net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.Item boolean isItemTool(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -1075,6 +1078,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.item.ItemEnchantedBook net.minecraft.util.WeightedRandomChestContent func_92114_b(java.util.Random)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemLilyPad net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1094,13 +1100,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.Item setPotionEffect(java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemPotion net.minecraft.util.IIcon func_94589_d(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemArmor net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.Item net.minecraft.item.Item setHasSubtypes(boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemPotion boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 0'>
@@ -1160,9 +1166,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.ItemEnchantedBook net.minecraft.item.EnumRarity getRarity(net.minecraft.item.ItemStack)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemEnderPearl net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -1193,10 +1196,10 @@
     <item name='net.minecraft.item.ItemEgg net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemRecord net.minecraft.util.ResourceLocation getRecordResource(java.lang.String)'>
+    <item name='net.minecraft.item.ItemArmor net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemArmor net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 0'>
+    <item name='net.minecraft.item.Item net.minecraft.item.Item setNoRepair()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemFirework boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 2'>
@@ -1235,8 +1238,11 @@
     <item name='net.minecraft.item.ItemMonsterPlacer java.lang.String getItemStackDisplayName(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.EnumRarity getRarity(net.minecraft.item.ItemStack)'>
+    <item name='net.minecraft.item.Item net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.item.ItemSlab boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1256,12 +1262,6 @@
     <item name='net.minecraft.item.Item boolean isDamaged(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemBlock net.minecraft.item.ItemBlock setUnlocalizedName(java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.Item setTextureName(java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemFireworkCharge void addInformation(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, java.util.List, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1276,9 +1276,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.Item setFull3D()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemFireworkCharge int getColorFromItemStack(net.minecraft.item.ItemStack, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1313,6 +1310,9 @@
     <item name='net.minecraft.item.ItemAxe ItemAxe(net.minecraft.item.Item.ToolMaterial) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.ItemEnchantedBook net.minecraft.item.ItemStack getEnchantedItemStack(net.minecraft.enchantment.EnchantmentData)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemGlassBottle void registerIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -1343,6 +1343,12 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.item.Item com.google.common.collect.Multimap getItemAttributeModifiers()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
     <item name='net.minecraft.item.ItemEgg net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1361,10 +1367,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.ItemStack net.minecraft.item.EnumRarity getRarity()'>
+    <item name='net.minecraft.item.ItemMap void updateMapData(net.minecraft.world.World, net.minecraft.entity.Entity, net.minecraft.world.storage.MapData) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemMap void updateMapData(net.minecraft.world.World, net.minecraft.entity.Entity, net.minecraft.world.storage.MapData) 2'>
+    <item name='net.minecraft.item.Item net.minecraft.item.Item setMaxStackSize(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.ItemFishFood.FishType net.minecraft.item.ItemFishFood.FishType func_150978_a(net.minecraft.item.ItemStack)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemFishFood void getSubItems(net.minecraft.item.Item, net.minecraft.creativetab.CreativeTabs, java.util.List) 2'>
@@ -1421,6 +1430,9 @@
     <item name='net.minecraft.item.ItemAppleGold boolean hasEffect(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.Item net.minecraft.creativetab.CreativeTabs[] getCreativeTabs()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemMonsterPlacer net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -1433,9 +1445,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.Item setCreativeTab(net.minecraft.creativetab.CreativeTabs)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemEnchantedBook void addInformation(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, java.util.List, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1444,6 +1453,12 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.item.ItemBlock net.minecraft.item.Item setUnlocalizedName(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.ItemSeedFood net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemEnderEye net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1460,9 +1475,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.ItemTool com.google.common.collect.Multimap getItemAttributeModifiers()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.ItemArmor.ArmorMaterial CHAIN'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1473,6 +1485,12 @@
         </annotation>
     </item>
     <item name='net.minecraft.item.EnumAction eat'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.Item.ToolMaterial net.minecraft.item.Item.ToolMaterial setRepairItem(net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.ItemEnchantedBook net.minecraft.util.WeightedRandomChestContent func_92112_a(java.util.Random, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemMonsterPlacer net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 1'>
@@ -1488,12 +1506,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.item.ItemSimpleFoiled boolean hasEffect(net.minecraft.item.ItemStack) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='net.minecraft.item.Item com.google.common.collect.Multimap getItemAttributeModifiers()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -1540,12 +1552,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.item.ItemEmptyMap net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.ItemPotion net.minecraft.item.EnumAction getItemUseAction(net.minecraft.item.ItemStack)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemSoup net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1598,6 +1604,9 @@
     <item name='net.minecraft.item.ItemBow bowPullIconNameArray'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.ItemEmptyMap net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemHoe boolean onItemUse(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int, int, float, float, float) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1610,10 +1619,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.ItemFood net.minecraft.item.EnumAction getItemUseAction(net.minecraft.item.ItemStack)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.ItemSeeds net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess, int, int, int)'>
+    <item name='net.minecraft.item.ItemPotion net.minecraft.item.EnumAction getItemUseAction(net.minecraft.item.ItemStack)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemBow void registerIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
@@ -1637,13 +1643,13 @@
     <item name='net.minecraft.item.Item net.minecraft.util.IIcon getIcon(net.minecraft.item.ItemStack, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemBlock net.minecraft.item.Item setUnlocalizedName(java.lang.String)'>
+    <item name='net.minecraft.item.Item java.lang.String getUnlocalizedName(net.minecraft.item.ItemStack)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.item.ItemFood net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 2'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.item.ItemBucketMilk net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemPotion java.lang.String getItemStackDisplayName(net.minecraft.item.ItemStack) 0'>
@@ -1655,9 +1661,6 @@
     <item name='net.minecraft.item.ItemBoat net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemMap net.minecraft.world.storage.MapData func_150912_a(int, net.minecraft.world.World)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.item.Item.ToolMaterial GOLD'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1667,7 +1670,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.item.ItemStack net.minecraft.item.ItemStack setStackDisplayName(java.lang.String)'>
+    <item name='net.minecraft.item.ItemSword net.minecraft.item.EnumAction getItemUseAction(net.minecraft.item.ItemStack)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemSeedFood int getPlantMetadata(net.minecraft.world.IBlockAccess, int, int, int) 0'>
@@ -1697,7 +1700,7 @@
     <item name='net.minecraft.item.ItemFood net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.ItemFishFood.FishType net.minecraft.item.ItemFishFood.FishType func_150978_a(net.minecraft.item.ItemStack)'>
+    <item name='net.minecraft.item.Item net.minecraft.item.Item setFull3D()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.Item delegate'>
@@ -1736,7 +1739,13 @@
     <item name='net.minecraft.item.ItemFood net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.item.Item net.minecraft.item.Item setPotionEffect(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.ItemSkull java.lang.String getUnlocalizedName(net.minecraft.item.ItemStack) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.item.ItemStack net.minecraft.item.EnumAction getItemUseAction()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.Item double getDurabilityForDisplay(net.minecraft.item.ItemStack) 0'>
@@ -1747,9 +1756,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.item.ItemPotion net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemWritableBook net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1787,12 +1793,6 @@
     <item name='net.minecraft.item.ItemCloth java.lang.String getUnlocalizedName(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.item.Item net.minecraft.item.ItemStack onEaten(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.item.ItemRecord net.minecraft.item.EnumRarity getRarity(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -1814,14 +1814,14 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.item.Item net.minecraft.item.EnumRarity getRarity(net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.item.Item net.minecraft.item.ItemStack onItemRightClick(net.minecraft.item.ItemStack, net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.item.ItemFood net.minecraft.item.ItemFood setAlwaysEdible()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.item.ItemDye boolean applyBonemeal(net.minecraft.item.ItemStack, net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
