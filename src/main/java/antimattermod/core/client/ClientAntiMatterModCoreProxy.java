@@ -62,9 +62,8 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 		//土かまどレンダー
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySatStove.class,new SatStoveSpecialRender());
 
-		//レンチ使用時の補助線
+		//レンチ関係
 		MinecraftForge.EVENT_BUS.register(new RenderWrenchSelectionBox());
-
 		ClientRegistry.registerKeyBinding(wrenchSetting);
 		MinecraftForge.EVENT_BUS.register(new WrenchKeyEvent());
 		FMLCommonHandler.instance().bus().register(new WrenchKeyEvent());

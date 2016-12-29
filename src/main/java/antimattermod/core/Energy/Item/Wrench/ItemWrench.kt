@@ -7,6 +7,7 @@ import antimattermod.core.Energy.Item.Wrench.IDirectionWrenchAction
 import antimattermod.core.Item.tool.AMMItemBase
 import antimattermod.core.Util.AddInformationfunction
 import antimattermod.core.Util.ClickPos
+import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.block.Block
 import net.minecraft.entity.Entity
 import net.minecraft.entity.player.EntityPlayer
@@ -28,6 +29,10 @@ class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
         setTextureName(AntiMatterModCore.MOD_ID + ":" + "tool/" + texture)
     }
 
+    override fun isFull3D(): Boolean {
+        return true
+    }
+
     override fun onUpdate(itemStack: ItemStack?, world: World?, entity: Entity?, i: Int, flag: Boolean) {
         if (!(itemStack!!.hasTagCompound())) {
             val nbt = NBTTagCompound()
@@ -41,6 +46,7 @@ class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
         val isSneaking: Boolean = player!!.isSneaking
         val block = world!!.getBlock(x, y, z)
         val meta = world.getBlockMetadata(x, y, z)
+        val blockPos = BlockPos(x, y, z)
         val clickPos = ClickPos(side, posX, posY, posZ)
         val wrenchMode = WrenchMode.values()
 
@@ -49,14 +55,14 @@ class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
                 if (block is IDirectionWrenchAction) {
                     if (!isSneaking) {
                         this.settingDirection(world, block, x, y, z, meta, clickPos, block.isVerticalChange())
-                    } else block.onBlockRemoval(block, player, world, x, y, z, side, meta, clickPos)
+                    } else block.onBlockRemoval(block, player, world, blockPos, clickPos, side, meta)
                     return true
                 }
             }
             WrenchMode.Transceiver -> {
                 if (block is IEnergyWrenchAction) {
-                    this.settingTransceiver(itemStack, player, world, x, y, z, side, isSneaking)
-                    block.settingTransceiver(itemStack, player, world, x, y, z, side, isSneaking)
+                    this.settingTransceiver(itemStack, player, world, blockPos, side, isSneaking)
+                    block.settingTransceiver(itemStack, player, world, blockPos, side, isSneaking)
                 }
                 return true
             }
@@ -88,7 +94,7 @@ class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
     /**
      * レンチ側の送受信設定
      */
-    fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, x: Int, y: Int, z: Int, side: Int, isSneaking: Boolean) {
+    fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, blockPos: BlockPos, side: Int, isSneaking: Boolean) {
 
     }
 

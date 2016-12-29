@@ -10,8 +10,6 @@ import net.minecraft.world.World
  */
 class EntityDeveloperBoss(world: World) : EntityMob(world), IBossDisplayData {
     
-    
-    
     init {
 
     }
