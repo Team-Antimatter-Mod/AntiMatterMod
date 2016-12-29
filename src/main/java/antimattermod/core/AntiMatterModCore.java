@@ -45,6 +45,7 @@ public class AntiMatterModCore {
         AntiMatterModRegistry.registerPreInit(event);
         AMMRegistry.INSTANCE.handlePreinit();
         OreDictionaryRegister.OreDictionaryRegisterPreInit(event);
+        proxy.registerClientInfo();
     }
     
     @Mod.EventHandler

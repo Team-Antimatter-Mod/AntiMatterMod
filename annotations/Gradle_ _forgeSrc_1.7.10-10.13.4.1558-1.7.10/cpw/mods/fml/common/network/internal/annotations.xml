@@ -53,10 +53,10 @@
     <item name='cpw.mods.fml.common.network.internal.HandshakeCompletionHandler void channelRead0(io.netty.channel.ChannelHandlerContext, java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.network.internal.FMLNetworkHandler void enhanceStatusQuery(com.google.gson.JsonObject) 0'>
+    <item name='cpw.mods.fml.common.network.internal.FMLNetworkHandler java.util.List&lt;cpw.mods.fml.common.network.internal.FMLProxyPacket&gt; forwardHandshake(cpw.mods.fml.common.network.internal.FMLMessage.CompleteHandshake, cpw.mods.fml.common.network.handshake.NetworkDispatcher, cpw.mods.fml.relauncher.Side)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.network.internal.FMLProxyPacket net.minecraft.network.Packet toS3FPacket()'>
+    <item name='cpw.mods.fml.common.network.internal.FMLNetworkHandler void enhanceStatusQuery(com.google.gson.JsonObject) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.network.internal.FMLNetworkHandler net.minecraft.network.Packet getEntitySpawningPacket(net.minecraft.entity.Entity) 0'>
@@ -86,6 +86,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='cpw.mods.fml.common.network.internal.FMLProxyPacket net.minecraft.network.Packet toS3FPacket()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.common.network.internal.HandshakeCompletionHandler void channelRead0(io.netty.channel.ChannelHandlerContext, cpw.mods.fml.common.network.internal.FMLMessage.CompleteHandshake) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -105,9 +108,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.network.internal.HandshakeCompletionHandler void channelRead0(io.netty.channel.ChannelHandlerContext, java.lang.Object) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.network.internal.FMLNetworkHandler java.util.List&lt;cpw.mods.fml.common.network.internal.FMLProxyPacket&gt; forwardHandshake(cpw.mods.fml.common.network.internal.FMLMessage.CompleteHandshake, cpw.mods.fml.common.network.handshake.NetworkDispatcher, cpw.mods.fml.relauncher.Side)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

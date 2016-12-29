@@ -1,11 +1,8 @@
 <root>
-    <item name='net.minecraftforge.common.util.BlockSnapshot net.minecraftforge.common.util.BlockSnapshot getBlockSnapshot(net.minecraft.world.World, int, int, int, int)'>
+    <item name='net.minecraftforge.common.util.ForgeDirection UP'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.util.FakePlayer net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.util.ForgeDirection UP'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.util.ForgeDirection UNKNOWN'>
@@ -20,6 +17,9 @@
     <item name='net.minecraftforge.common.util.EnumHelper void setFailsafeFieldValue(java.lang.reflect.Field, java.lang.Object, java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraftforge.common.util.BlockSnapshot net.minecraftforge.common.util.BlockSnapshot getBlockSnapshot(net.minecraft.world.World, int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraftforge.common.util.BlockSnapshot BlockSnapshot(net.minecraft.world.World, int, int, int, net.minecraft.block.Block, int, net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -28,6 +28,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraftforge.common.util.RotationHelper net.minecraftforge.common.util.ForgeDirection[] getValidVanillaBlockRotations(net.minecraft.block.Block)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.util.ChunkCoordComparator ChunkCoordComparator(net.minecraft.entity.player.EntityPlayerMP) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -44,16 +47,7 @@
     <item name='net.minecraftforge.common.util.ForgeDirection DOWN'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.util.BlockSnapshot net.minecraftforge.common.util.BlockSnapshot readFromNBT(net.minecraft.nbt.NBTTagCompound)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.util.RotationHelper net.minecraftforge.common.util.ForgeDirection[] getValidVanillaBlockRotations(net.minecraft.block.Block)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraftforge.common.util.ForgeDirection ROTATION_MATRIX'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.util.BlockSnapshot net.minecraftforge.common.util.BlockSnapshot getBlockSnapshot(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.util.FakePlayer FakePlayer(net.minecraft.world.WorldServer, com.mojang.authlib.GameProfile) 1'>
@@ -67,6 +61,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraftforge.common.util.BlockSnapshot net.minecraftforge.common.util.BlockSnapshot readFromNBT(net.minecraft.nbt.NBTTagCompound)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.util.FakePlayer void addChatComponentMessage(net.minecraft.util.IChatComponent) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -96,6 +93,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.util.AsynchronousExecutor T getSkipQueue(P, C...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.util.BlockSnapshot net.minecraftforge.common.util.BlockSnapshot getBlockSnapshot(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.util.ChunkCoordComparator int compare(java.lang.Object, java.lang.Object) 0'>

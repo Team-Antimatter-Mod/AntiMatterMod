@@ -13,7 +13,9 @@ public class AntiMatterModCoreProxy {
 	public int getNewRenderType(){
 		return -1;
 	}
-	
+
+	public void registerClientInfo(){}
+
 	public void registerRenderer(){}
 
 	public void registerRenderThings(){}

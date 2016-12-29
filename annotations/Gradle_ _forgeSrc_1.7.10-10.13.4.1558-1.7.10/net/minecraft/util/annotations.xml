@@ -2,7 +2,13 @@
     <item name='net.minecraft.util.ChatComponentTranslation ChatComponentTranslation(java.lang.String, java.lang.Object...) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.util.EntityDamageSource net.minecraft.util.IChatComponent func_151519_b(net.minecraft.entity.EntityLivingBase)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.RegistryNamespaced java.lang.Object getObject(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB setBounds(double, double, double, double, double, double)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.AxisAlignedBB double calculateXOffset(net.minecraft.util.AxisAlignedBB, double) 0'>
@@ -44,6 +50,9 @@
     <item name='net.minecraft.util.JsonUtils boolean jsonElementTypeIsString(com.google.gson.JsonElement) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB contract(double, double, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.RegistryNamespacedDefaultedByKey void addObject(int, java.lang.String, java.lang.Object) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -53,16 +62,16 @@
     <item name='net.minecraft.util.JsonUtils com.google.gson.JsonObject func_152754_s(com.google.gson.JsonObject, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.WeightedRandomFishable net.minecraft.util.WeightedRandomFishable func_150709_a(float)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.util.WeightedRandom net.minecraft.util.WeightedRandom.Item getRandomItem(java.util.Random, java.util.Collection, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.MathHelper double average(long[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource causeFireballDamage(net.minecraft.entity.projectile.EntityFireball, net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.util.ChatComponentTranslation net.minecraft.util.IChatComponent setChatStyle(net.minecraft.util.ChatStyle)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setBold(java.lang.Boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.IRegistry java.lang.Object getObject(java.lang.Object) 0'>
@@ -70,6 +79,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.util.EntityDamageSourceIndirect net.minecraft.util.IChatComponent func_151519_b(net.minecraft.entity.EntityLivingBase)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.ChatStyle.Serializer com.google.gson.JsonElement serialize(net.minecraft.util.ChatStyle, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -83,13 +95,10 @@
     <item name='net.minecraft.util.EnumChatFormatting YELLOW'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource causeMobDamage(net.minecraft.entity.EntityLivingBase)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.util.MessageDeserializer2 void decode(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, java.util.List) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.JsonSerializableSet com.google.gson.JsonElement getSerializableElement()'>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.IChatComponent func_151519_b(net.minecraft.entity.EntityLivingBase)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.ChunkCoordinates ChunkCoordinates(net.minecraft.util.ChunkCoordinates) 0'>
@@ -101,19 +110,19 @@
     <item name='net.minecraft.util.EntityDamageSourceIndirect net.minecraft.util.IChatComponent func_151519_b(net.minecraft.entity.EntityLivingBase) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.IChatComponent net.minecraft.util.IChatComponent createCopy()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.util.JsonUtils java.lang.String getJsonElementStringValue(com.google.gson.JsonElement, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setMagicDamage()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.Direction rotateRight'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.Vec3 double dotProduct(net.minecraft.util.Vec3) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.ChatComponentTranslation net.minecraft.util.ChatComponentTranslation createCopy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.CryptManager javax.crypto.Cipher func_151229_a(int, java.security.Key) 1'>
@@ -140,10 +149,19 @@
     <item name='net.minecraft.util.Session.Type MOJANG'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setChatHoverEvent(net.minecraft.event.HoverEvent)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.JsonUtils com.google.gson.JsonObject getJsonObjectFieldOrDefault(com.google.gson.JsonObject, java.lang.String, com.google.gson.JsonObject) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.Facing oppositeSide'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.CryptManager javax.crypto.Cipher func_151229_a(int, java.security.Key)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 createVectorHelper(double, double, double)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.ResourceLocation ResourceLocation(java.lang.String) 0'>
@@ -152,10 +170,13 @@
     <item name='net.minecraft.util.EnumChatFormatting BOLD'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB offset(double, double, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.EnumFacing DOWN'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setParentStyle(net.minecraft.util.ChatStyle)'>
+    <item name='net.minecraft.util.ChatComponentStyle net.minecraft.util.IChatComponent setChatStyle(net.minecraft.util.ChatStyle)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumFacing EAST'>
@@ -164,13 +185,16 @@
     <item name='net.minecraft.util.JsonUtils boolean getJsonElementBooleanValue(com.google.gson.JsonElement, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.util.IChatComponent.Serializer com.google.gson.JsonElement serialize(net.minecraft.util.IChatComponent, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.AxisAlignedBB double calculateZOffset(net.minecraft.util.AxisAlignedBB, double) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.WeightedRandomChestContent net.minecraft.item.ItemStack[] generateChestContent(java.util.Random, net.minecraft.inventory.IInventory)'>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource causeIndirectMagicDamage(net.minecraft.entity.Entity, net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setDamageBypassesArmor()'>
+    <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 crossProduct(net.minecraft.util.Vec3)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.MovingObjectPosition.MovingObjectType BLOCK'>
@@ -179,53 +203,53 @@
     <item name='net.minecraft.util.ChatStyle.Serializer net.minecraft.util.ChatStyle deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setItalic(java.lang.Boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.EnumChatFormatting DARK_AQUA'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumChatFormatting GRAY'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle createDeepCopy()'>
+    <item name='net.minecraft.util.CombatTracker net.minecraft.util.IChatComponent func_151521_b()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setExplosionSource(net.minecraft.world.Explosion)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.IChatComponent.Serializer com.google.gson.JsonElement serialize(net.minecraft.util.IChatComponent, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB getBoundingBox(double, double, double, double, double, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.Util.EnumOS UNKNOWN'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.Util net.minecraft.util.Util.EnumOS getOSType()'>
+    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setParentStyle(net.minecraft.util.ChatStyle)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.MovingObjectPosition MovingObjectPosition(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB getOffsetBoundingBox(double, double, double)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.util.ChunkCoordinates int compareTo(java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatComponentText net.minecraft.util.IChatComponent createCopy()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.IChatComponent net.minecraft.util.IChatComponent appendSibling(net.minecraft.util.IChatComponent)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 normalize()'>
+    <item name='net.minecraft.util.ChatComponentTranslation net.minecraft.util.IChatComponent createCopy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 crossProduct(net.minecraft.util.Vec3) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setMagicDamage()'>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setDifficultyScaled()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatComponentTranslation net.minecraft.util.ChatComponentTranslation createCopy()'>
+    <item name='net.minecraft.util.IJsonSerializable com.google.gson.JsonElement getSerializableElement()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.util.RegistrySimple boolean containsKey(java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -233,22 +257,22 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 addVector(double, double, double)'>
+    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle createShallowCopy()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setDamageBypassesArmor()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumChatFormatting DARK_RED'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 crossProduct(net.minecraft.util.Vec3)'>
+    <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 normalize()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.WeightedRandom net.minecraft.util.WeightedRandom.Item getItem(java.util.Collection, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.Direction offsetZ'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.WeightedRandomFishable net.minecraft.item.ItemStack func_150708_a(java.util.Random)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.Util.EnumOS WINDOWS'>
@@ -269,32 +293,32 @@
     <item name='net.minecraft.util.MessageSerializer2 void encode(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, io.netty.buffer.ByteBuf) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.WeightedRandomFishable net.minecraft.util.WeightedRandomFishable func_150707_a()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.util.JsonUtils java.lang.String getJsonObjectStringFieldValue(com.google.gson.JsonObject, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatComponentStyle net.minecraft.util.IChatComponent appendSibling(net.minecraft.util.IChatComponent)'>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setDamageAllowedInCreativeMode()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumChatFormatting UNDERLINE'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setItalic(java.lang.Boolean)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.util.MovingObjectPosition MovingObjectPosition(int, int, int, int, net.minecraft.util.Vec3, boolean) 4'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB copy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumChatFormatting STRIKETHROUGH'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB setBounds(double, double, double, double, double, double)'>
+    <item name='net.minecraft.util.Session java.lang.String getUsername()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.ChatComponentText net.minecraft.util.ChatComponentText createCopy()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.IChatComponent net.minecraft.util.IChatComponent appendSibling(net.minecraft.util.IChatComponent)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.util.Session.Type LEGACY'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -305,9 +329,6 @@
     <item name='net.minecraft.util.ChatStyle.Serializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setDifficultyScaled()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.util.EnumFacing WEST'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -315,9 +336,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.JsonSerializableSet void func_152753_a(com.google.gson.JsonElement) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.IChatComponent.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.MessageDeserializer void decode(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, java.util.List) 1'>
@@ -338,6 +356,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 addVector(double, double, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.RegistryNamespacedDefaultedByKey java.lang.Object getObject(java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -356,23 +377,20 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.util.IJsonSerializable com.google.gson.JsonElement getSerializableElement()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='net.minecraft.util.Session java.lang.String getUsername()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.util.Session.Type net.minecraft.util.Session.Type func_152421_a(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatComponentText net.minecraft.util.ChatComponentText createCopy()'>
+    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB copy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumTypeAdapterFactory com.google.gson.TypeAdapter create(com.google.gson.Gson, com.google.gson.reflect.TypeToken) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.ChatStyle java.lang.String toString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.util.Direction offsetX'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -380,10 +398,10 @@
     <item name='net.minecraft.util.EnumChatFormatting ITALIC'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle createShallowCopy()'>
+    <item name='net.minecraft.util.HttpUtil java.lang.String func_152755_a(java.net.URL) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.HttpUtil java.lang.String func_152755_a(java.net.URL) 0'>
+    <item name='net.minecraft.util.WeightedRandomFishable net.minecraft.util.WeightedRandomFishable func_150709_a(float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.FoodStats void onUpdate(net.minecraft.entity.player.EntityPlayer) 0'>
@@ -404,10 +422,13 @@
     <item name='net.minecraft.util.AxisAlignedBB void setBB(net.minecraft.util.AxisAlignedBB) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.MovingObjectPosition MovingObjectPosition(int, int, int, int, net.minecraft.util.Vec3) 4'>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setFireDamage()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setChatHoverEvent(net.minecraft.event.HoverEvent)'>
+    <item name='net.minecraft.util.WeightedRandomChestContent net.minecraft.item.ItemStack[] generateChestContent(java.util.Random, net.minecraft.inventory.IInventory)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.MovingObjectPosition MovingObjectPosition(int, int, int, int, net.minecraft.util.Vec3) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumChatFormatting AQUA'>
@@ -416,22 +437,13 @@
     <item name='net.minecraft.util.EnumChatFormatting OBFUSCATED'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ScreenShotHelper net.minecraft.util.IChatComponent saveScreenshot(java.io.File, int, int, net.minecraft.client.shader.Framebuffer)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.CryptManager javax.crypto.Cipher func_151229_a(int, java.security.Key)'>
+    <item name='net.minecraft.util.IChatComponent.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.Util.EnumOS OSX'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.IChatComponent func_151519_b(net.minecraft.entity.EntityLivingBase)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.util.ChunkCoordinates int compareTo(net.minecraft.util.ChunkCoordinates) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setDamageAllowedInCreativeMode()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.IJsonSerializable void func_152753_a(com.google.gson.JsonElement) 0'>
@@ -440,10 +452,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB expand(double, double, double)'>
+    <item name='net.minecraft.util.JsonUtils com.google.gson.JsonArray getJsonObjectJsonArrayField(com.google.gson.JsonObject, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.JsonUtils com.google.gson.JsonArray getJsonObjectJsonArrayField(com.google.gson.JsonObject, java.lang.String) 0'>
+    <item name='net.minecraft.util.WeightedRandomFishable net.minecraft.util.WeightedRandomFishable func_150707_a()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.WeightedRandomChestContent net.minecraft.item.ItemStack[] generateChestContent(java.util.Random, net.minecraft.inventory.IInventory) 0'>
@@ -451,12 +463,6 @@
     </item>
     <item name='net.minecraft.util.RegistryNamespaced boolean containsKey(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.IChatComponent net.minecraft.util.IChatComponent setChatStyle(net.minecraft.util.ChatStyle)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='net.minecraft.util.MessageSerializer void encode(io.netty.channel.ChannelHandlerContext, java.lang.Object, io.netty.buffer.ByteBuf) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -467,28 +473,16 @@
     <item name='net.minecraft.util.Vec3 double distanceTo(net.minecraft.util.Vec3) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.JsonUtils com.google.gson.JsonArray getJsonObjectJsonArrayFieldOrDefault(com.google.gson.JsonObject, java.lang.String, com.google.gson.JsonArray) 0'>
+    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle createDeepCopy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setExplosionSource(net.minecraft.world.Explosion)'>
+    <item name='net.minecraft.util.JsonUtils com.google.gson.JsonArray getJsonObjectJsonArrayFieldOrDefault(com.google.gson.JsonObject, java.lang.String, com.google.gson.JsonArray) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumChatFormatting BLUE'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB getBoundingBox(double, double, double, double, double, double)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB contract(double, double, double)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.ChatStyle java.lang.String toString()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='net.minecraft.util.CombatTracker net.minecraft.util.IChatComponent func_151521_b()'>
+    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setStrikethrough(java.lang.Boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.RegistryNamespaced java.lang.Object getObject(java.lang.Object) 0'>
@@ -509,10 +503,13 @@
     <item name='net.minecraft.util.JsonUtils float getJsonObjectFloatFieldValue(com.google.gson.JsonObject, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.util.EnumChatFormatting java.util.Collection getValidValues(boolean, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.JsonUtils int getJsonObjectIntegerFieldValue(com.google.gson.JsonObject, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setExplosion()'>
+    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setColor(net.minecraft.util.EnumChatFormatting)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.FoodStats void readNBT(net.minecraft.nbt.NBTTagCompound) 0'>
@@ -521,22 +518,16 @@
     <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 getIntermediateWithZValue(net.minecraft.util.Vec3, double) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.util.WeightedRandomFishable net.minecraft.item.ItemStack func_150708_a(java.util.Random)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setUnderlined(java.lang.Boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.HttpUtil java.lang.String buildPostString(java.util.Map) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.JsonUtils int getJsonObjectIntegerFieldValueOrDefault(com.google.gson.JsonObject, java.lang.String, int) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.WeightedRandomChestContent net.minecraft.util.WeightedRandomChestContent[] func_92080_a(net.minecraft.util.WeightedRandomChestContent[], net.minecraft.util.WeightedRandomChestContent...)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.ChatStyle java.lang.String getFormattingCode()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 setComponents(double, double, double)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.RegistryNamespaced java.lang.String ensureNamespaced(java.lang.String) 0'>
@@ -551,16 +542,22 @@
     <item name='net.minecraft.util.EnumChatFormatting DARK_GREEN'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.util.Session com.mojang.authlib.GameProfile func_148256_e()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.Util.EnumOS LINUX'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnchantmentNameParts instance'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 subtract(net.minecraft.util.Vec3)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.EnumChatFormatting DARK_PURPLE'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB offset(double, double, double)'>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource causeMobDamage(net.minecraft.entity.EntityLivingBase)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.ChatComponentStyle net.minecraft.util.IChatComponent appendSibling(net.minecraft.util.IChatComponent) 0'>
@@ -581,11 +578,14 @@
     <item name='net.minecraft.util.ChatComponentStyle java.util.Iterator createDeepCopyIterator(java.lang.Iterable) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.EntityDamageSource net.minecraft.util.IChatComponent func_151519_b(net.minecraft.entity.EntityLivingBase)'>
+    <item name='net.minecraft.util.ChatComponentStyle net.minecraft.util.IChatComponent appendSibling(net.minecraft.util.IChatComponent)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.CryptManager javax.crypto.SecretKey decryptSharedKey(java.security.PrivateKey, byte[])'>
+    <item name='net.minecraft.util.IChatComponent net.minecraft.util.IChatComponent createCopy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 subtract(net.minecraft.util.Vec3) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -596,7 +596,7 @@
     <item name='net.minecraft.util.WeightedRandom int getTotalWeight(net.minecraft.util.WeightedRandom.Item[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 createVectorHelper(double, double, double)'>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setExplosion()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.JsonUtils com.google.gson.JsonArray getJsonElementAsJsonArray(com.google.gson.JsonElement, java.lang.String) 0'>
@@ -605,20 +605,23 @@
     <item name='net.minecraft.util.RegistryNamespaced void addObject(int, java.lang.String, java.lang.Object) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ScreenShotHelper net.minecraft.util.IChatComponent saveScreenshot(java.io.File, java.lang.String, int, int, net.minecraft.client.shader.Framebuffer)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setColor(net.minecraft.util.EnumChatFormatting)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.util.Direction facingToDirection'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumChatFormatting WHITE'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatComponentStyle net.minecraft.util.IChatComponent setChatStyle(net.minecraft.util.ChatStyle)'>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource causePlayerDamage(net.minecraft.entity.player.EntityPlayer)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.WeightedRandomChestContent net.minecraft.util.WeightedRandomChestContent[] func_92080_a(net.minecraft.util.WeightedRandomChestContent[], net.minecraft.util.WeightedRandomChestContent...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.ChatStyle java.lang.String getFormattingCode()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.util.ChatAllowedCharacters allowedCharacters'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -626,13 +629,10 @@
     <item name='net.minecraft.util.MessageSerializer2 void encode(io.netty.channel.ChannelHandlerContext, java.lang.Object, io.netty.buffer.ByteBuf) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatComponentStyle net.minecraft.util.IChatComponent appendText(java.lang.String)'>
+    <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 setComponents(double, double, double)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setUnderlined(java.lang.Boolean)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.EnumChatFormatting java.util.Collection getValidValues(boolean, boolean)'>
+    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setObfuscated(java.lang.Boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumChatFormatting RED'>
@@ -641,28 +641,16 @@
     <item name='net.minecraft.util.WeightedRandomChestContent net.minecraft.util.WeightedRandomChestContent[] func_92080_a(net.minecraft.util.WeightedRandomChestContent[], net.minecraft.util.WeightedRandomChestContent...) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.IChatComponent.Serializer com.google.gson.JsonElement serialize(net.minecraft.util.IChatComponent, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.Session com.mojang.authlib.GameProfile func_148256_e()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.util.WeightedRandom net.minecraft.util.WeightedRandom.Item getRandomItem(java.util.Random, net.minecraft.util.WeightedRandom.Item[], int) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setDamageIsAbsolute()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.FoodStats void writeNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 subtract(net.minecraft.util.Vec3)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.util.WeightedRandom net.minecraft.util.WeightedRandom.Item getItem(net.minecraft.util.WeightedRandom.Item[], int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setChatClickEvent(net.minecraft.event.ClickEvent)'>
+    <item name='net.minecraft.util.ChatComponentText net.minecraft.util.IChatComponent createCopy()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumChatFormatting GREEN'>
@@ -671,7 +659,7 @@
     <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB func_111270_a(net.minecraft.util.AxisAlignedBB) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatComponentTranslation net.minecraft.util.IChatComponent createCopy()'>
+    <item name='net.minecraft.util.ChatComponentTranslation java.lang.Object[] getFormatArgs()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.RegistryNamespaced void addObject(int, java.lang.String, java.lang.Object) 2'>
@@ -681,6 +669,12 @@
         </annotation>
     </item>
     <item name='net.minecraft.util.Direction directionToFacing'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB getOffsetBoundingBox(double, double, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.CryptManager javax.crypto.SecretKey decryptSharedKey(java.security.PrivateKey, byte[])'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumChatFormatting GOLD'>
@@ -695,13 +689,13 @@
     <item name='net.minecraft.util.WeightedRandomChestContent net.minecraft.util.WeightedRandomChestContent[] func_92080_a(net.minecraft.util.WeightedRandomChestContent[], net.minecraft.util.WeightedRandomChestContent...) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setProjectile()'>
+    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB func_111270_a(net.minecraft.util.AxisAlignedBB)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.Util net.minecraft.util.Util.EnumOS getOSType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.MovingObjectPosition.MovingObjectType MISS'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource causeIndirectMagicDamage(net.minecraft.entity.Entity, net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.EnumChatFormatting DARK_BLUE'>
@@ -710,7 +704,7 @@
     <item name='net.minecraft.util.WeightedRandom net.minecraft.util.WeightedRandom.Item getRandomItem(java.util.Random, net.minecraft.util.WeightedRandom.Item[], int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setFireDamage()'>
+    <item name='net.minecraft.util.ChatComponentStyle net.minecraft.util.IChatComponent appendText(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.JsonUtils float getJsonObjectFloatFieldValueOrDefault(com.google.gson.JsonObject, java.lang.String, float) 0'>
@@ -719,7 +713,13 @@
     <item name='net.minecraft.util.RegistryNamespacedDefaultedByKey java.lang.Object getObject(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource causePlayerDamage(net.minecraft.entity.player.EntityPlayer)'>
+    <item name='net.minecraft.util.ScreenShotHelper net.minecraft.util.IChatComponent saveScreenshot(java.io.File, int, int, net.minecraft.client.shader.Framebuffer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.ScreenShotHelper net.minecraft.util.IChatComponent saveScreenshot(java.io.File, java.lang.String, int, int, net.minecraft.client.shader.Framebuffer)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.JsonSerializableSet com.google.gson.JsonElement getSerializableElement()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.Direction directions'>
@@ -728,22 +728,31 @@
     <item name='net.minecraft.util.EnumFacing SOUTH'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource causeFireballDamage(net.minecraft.entity.projectile.EntityFireball, net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB addCoord(double, double, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.util.MessageSerializer void encode(io.netty.channel.ChannelHandlerContext, net.minecraft.network.Packet, io.netty.buffer.ByteBuf) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.Direction rotateOpposite'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setObfuscated(java.lang.Boolean)'>
+    <item name='net.minecraft.util.IChatComponent net.minecraft.util.IChatComponent setChatStyle(net.minecraft.util.ChatStyle)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB expand(double, double, double)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setBold(java.lang.Boolean)'>
+    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setChatClickEvent(net.minecraft.event.ClickEvent)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatComponentTranslation net.minecraft.util.IChatComponent setChatStyle(net.minecraft.util.ChatStyle)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.ChatComponentTranslation java.lang.Object[] getFormatArgs()'>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setProjectile()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.RegistrySimple java.lang.Object getObject(java.lang.Object) 0'>
@@ -764,22 +773,13 @@
     <item name='net.minecraft.util.ChunkCoordinates float getDistanceSquaredToChunkCoordinates(net.minecraft.util.ChunkCoordinates) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB addCoord(double, double, double)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.AxisAlignedBB net.minecraft.util.AxisAlignedBB func_111270_a(net.minecraft.util.AxisAlignedBB)'>
+    <item name='net.minecraft.util.DamageSource net.minecraft.util.DamageSource setDamageIsAbsolute()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.WeightedRandom net.minecraft.util.WeightedRandom.Item getRandomItem(java.util.Random, net.minecraft.util.WeightedRandom.Item[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.ChatStyle net.minecraft.util.ChatStyle setStrikethrough(java.lang.Boolean)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.util.WeightedRandom net.minecraft.util.WeightedRandom.Item getRandomItem(java.util.Random, java.util.Collection, int) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.util.EntityDamageSourceIndirect net.minecraft.util.IChatComponent func_151519_b(net.minecraft.entity.EntityLivingBase)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

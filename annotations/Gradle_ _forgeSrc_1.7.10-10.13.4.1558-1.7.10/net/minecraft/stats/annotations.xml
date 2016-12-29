@@ -1,23 +1,20 @@
 <root>
-    <item name='net.minecraft.stats.StatBase net.minecraft.util.IChatComponent func_150955_j()'>
+    <item name='net.minecraft.stats.Achievement net.minecraft.stats.StatBase initIndependentStat()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.stats.Achievement net.minecraft.stats.Achievement setSpecial()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.stats.StatBase net.minecraft.stats.StatBase registerStat()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.stats.StatBase net.minecraft.stats.StatBase func_150953_b(java.lang.Class)'>
+    <item name='net.minecraft.stats.Achievement net.minecraft.stats.StatBase registerStat()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.stats.Achievement net.minecraft.util.IChatComponent func_150951_e()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.stats.Achievement net.minecraft.stats.StatBase initIndependentStat()'>
+    <item name='net.minecraft.stats.Achievement net.minecraft.stats.Achievement setSpecial()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.stats.ObjectiveStat ObjectiveStat(net.minecraft.stats.StatBase) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.stats.StatBase net.minecraft.util.IChatComponent func_150955_j()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.stats.StatList objectBreakStats'>
@@ -29,31 +26,28 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.stats.StatFileWriter void func_150871_b(net.minecraft.entity.player.EntityPlayer, net.minecraft.stats.StatBase, int) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.stats.Achievement net.minecraft.stats.StatBase registerStat()'>
+    <item name='net.minecraft.stats.StatBase net.minecraft.scoreboard.IScoreObjectiveCriteria func_150952_k()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.stats.StatBase net.minecraft.stats.StatBase initIndependentStat()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.stats.StatBase net.minecraft.scoreboard.IScoreObjectiveCriteria func_150952_k()'>
+    <item name='net.minecraft.stats.StatBase net.minecraft.stats.StatBase registerStat()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.stats.Achievement net.minecraft.stats.Achievement initIndependentStat()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.stats.StatList mineBlockStatArray'>
+    <item name='net.minecraft.stats.StatFileWriter void func_150871_b(net.minecraft.entity.player.EntityPlayer, net.minecraft.stats.StatBase, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.stats.StatBase net.minecraft.util.IChatComponent func_150951_e()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.stats.Achievement net.minecraft.stats.Achievement setStatStringFormatter(net.minecraft.stats.IStatStringFormat)'>
+    <item name='net.minecraft.stats.StatList mineBlockStatArray'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.stats.StatBasic net.minecraft.stats.StatBase registerStat()'>
+    <item name='net.minecraft.stats.Achievement net.minecraft.stats.Achievement func_150953_b(java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.stats.Achievement net.minecraft.stats.Achievement initIndependentStat()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.stats.StatisticsFile java.lang.String func_150880_a(java.util.Map) 0'>
@@ -62,10 +56,16 @@
     <item name='net.minecraft.stats.Achievement net.minecraft.stats.Achievement registerStat()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.stats.Achievement net.minecraft.stats.Achievement setStatStringFormatter(net.minecraft.stats.IStatStringFormat)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.stats.StatBasic net.minecraft.stats.StatBase registerStat()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.stats.StatList net.minecraft.stats.StatBase func_151182_a(net.minecraft.entity.EntityList.EntityEggInfo) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.stats.Achievement net.minecraft.stats.Achievement func_150953_b(java.lang.Class)'>
+    <item name='net.minecraft.stats.Achievement net.minecraft.stats.StatBase func_150953_b(java.lang.Class)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.stats.StatList objectUseStats'>
@@ -80,6 +80,9 @@
     <item name='net.minecraft.stats.StatisticsFile void func_150876_a(net.minecraft.entity.player.EntityPlayerMP) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.stats.StatBase net.minecraft.stats.StatBase func_150953_b(java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.stats.StatList objectCraftStats'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -87,9 +90,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.stats.StatList net.minecraft.stats.StatBase func_151176_b(net.minecraft.entity.EntityList.EntityEggInfo) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.stats.Achievement net.minecraft.stats.StatBase func_150953_b(java.lang.Class)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

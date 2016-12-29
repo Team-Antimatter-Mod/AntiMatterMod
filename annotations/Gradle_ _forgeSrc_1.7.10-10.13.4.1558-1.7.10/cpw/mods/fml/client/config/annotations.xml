@@ -5,20 +5,17 @@
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.BooleanEntry btnValue'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.BooleanEntry java.lang.Object[] getCurrentValues()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CycleValueEntry java.lang.String[] getCurrentValues()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.NumberSliderEntry NumberSliderEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement&lt;?&gt;) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.ConfigGuiType STRING'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.DummyConfigElement cpw.mods.fml.client.config.DummyConfigElement setCustomListEntryClass(java.lang.Class&lt;? extends cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry&gt;)'>
+    <item name='cpw.mods.fml.client.config.IConfigElement cpw.mods.fml.client.config.ConfigGuiType getType()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='cpw.mods.fml.client.config.GuiSelectStringEntries.EntryComparator int compare(java.lang.Object, java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -29,15 +26,6 @@
     <item name='cpw.mods.fml.client.config.ConfigGuiType CONFIG_CATEGORY'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry java.lang.String[] getCurrentValues()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry T[] getCurrentValues()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.ButtonEntry ButtonEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement&lt;?&gt;) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -45,15 +33,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries GuiEditArrayEntries(cpw.mods.fml.client.config.GuiEditArray, net.minecraft.client.Minecraft, cpw.mods.fml.client.config.IConfigElement, java.lang.Object[], java.lang.Object[]) 2'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.ListEntryBase java.lang.Object getCurrentValue()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.ListEntryBase cpw.mods.fml.client.config.IConfigElement getConfigElement()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.IntegerEntry IntegerEntry(cpw.mods.fml.client.config.GuiEditArray, cpw.mods.fml.client.config.GuiEditArrayEntries, cpw.mods.fml.client.config.IConfigElement, java.lang.Integer) 3'>
@@ -65,11 +44,11 @@
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.BaseEntry btnAddNewEntryAbove'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry java.lang.Object getCurrentValue()'>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry cpw.mods.fml.client.config.IConfigElement getConfigElement()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.StringEntry java.lang.Object[] getCurrentValues()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.DoubleEntry DoubleEntry(cpw.mods.fml.client.config.GuiEditArray, cpw.mods.fml.client.config.GuiEditArrayEntries, cpw.mods.fml.client.config.IConfigElement, java.lang.Double) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -80,19 +59,13 @@
     <item name='cpw.mods.fml.client.config.ConfigGuiType INTEGER'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.DummyConfigElement cpw.mods.fml.client.config.IConfigElement setConfigEntryClass(java.lang.Class&lt;? extends cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry&gt;)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.config.DummyConfigElement.DummyListElement cpw.mods.fml.client.config.DummyConfigElement.DummyListElement setCustomEditListEntryClass(java.lang.Class&lt;? extends cpw.mods.fml.client.config.GuiEditArrayEntries.IArrayEntry&gt;)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry net.minecraft.client.gui.GuiScreen buildChildScreen()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.BooleanEntry BooleanEntry(cpw.mods.fml.client.config.GuiEditArray, cpw.mods.fml.client.config.GuiEditArrayEntries, cpw.mods.fml.client.config.IConfigElement, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.StringEntry StringEntry(cpw.mods.fml.client.config.GuiEditArray, cpw.mods.fml.client.config.GuiEditArrayEntries, cpw.mods.fml.client.config.IConfigElement, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.DummyConfigElement cpw.mods.fml.client.config.IConfigElement&lt;T&gt; setRequiresWorldRestart(boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.SelectValueEntry SelectValueEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement&lt;java.lang.String&gt;, java.util.Map&lt;java.lang.Object,java.lang.String&gt;) 2'>
@@ -101,22 +74,22 @@
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.StringEntry StringEntry(cpw.mods.fml.client.config.GuiEditArray, cpw.mods.fml.client.config.GuiEditArrayEntries, cpw.mods.fml.client.config.IConfigElement, java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.BooleanEntry java.lang.Boolean[] getCurrentValues()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.client.config.GuiSelectStringEntries.EntryComparator int compare(java.lang.Object, java.lang.Object) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.ConfigGuiType DOUBLE'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CycleValueEntry java.lang.Object[] getCurrentValues()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.client.config.GuiUtils VALID'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.DummyConfigElement cpw.mods.fml.client.config.IConfigElement setArrayEntryClass(java.lang.Class&lt;? extends cpw.mods.fml.client.config.GuiEditArrayEntries.IArrayEntry&gt;)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.BaseEntry btnRemoveEntry'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.config.DummyConfigElement cpw.mods.fml.client.config.IConfigElement&lt;T&gt; setRequiresMcRestart(boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.IntegerEntry IntegerEntry(cpw.mods.fml.client.config.GuiEditArray, cpw.mods.fml.client.config.GuiEditArrayEntries, cpw.mods.fml.client.config.IConfigElement, java.lang.Integer) 0'>
@@ -128,23 +101,8 @@
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.ButtonEntry ButtonEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement&lt;?&gt;) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry java.lang.Object[] getCurrentValues()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry T getCurrentValue()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='cpw.mods.fml.client.config.ConfigGuiType BOOLEAN'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.ListEntryBase java.lang.Object[] getCurrentValues()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='cpw.mods.fml.client.config.GuiEditArray GuiEditArray(net.minecraft.client.gui.GuiScreen, cpw.mods.fml.client.config.IConfigElement, int, java.lang.Object[], boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -152,13 +110,16 @@
     <item name='cpw.mods.fml.client.config.GuiSelectStringEntries selectableValues'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.SelectValueEntry java.lang.String[] getCurrentValues()'>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.NumberSliderEntry java.lang.Object[] getCurrentValues()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.DoubleEntry DoubleEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.ArrayEntry ArrayEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.SelectValueEntry java.lang.Object[] getCurrentValues()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiSelectStringEntries GuiSelectStringEntries(cpw.mods.fml.client.config.GuiSelectString, net.minecraft.client.Minecraft, cpw.mods.fml.client.config.IConfigElement, java.util.Map&lt;java.lang.Object,java.lang.String&gt;) 0'>
@@ -176,11 +137,8 @@
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry btnSelectCategory'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.IConfigElement cpw.mods.fml.client.config.ConfigGuiType getType()'>
+    <item name='cpw.mods.fml.client.config.DummyConfigElement cpw.mods.fml.client.config.DummyConfigElement setCustomListEntryClass(java.lang.Class&lt;? extends cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry&gt;)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.DoubleEntry DoubleEntry(cpw.mods.fml.client.config.GuiEditArray, cpw.mods.fml.client.config.GuiEditArrayEntries, cpw.mods.fml.client.config.IConfigElement, java.lang.Double) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -188,10 +146,28 @@
     <item name='cpw.mods.fml.client.config.GuiSelectString GuiSelectString(net.minecraft.client.gui.GuiScreen, cpw.mods.fml.client.config.IConfigElement, int, java.util.Map&lt;java.lang.Object,java.lang.String&gt;, java.lang.Object, boolean) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry java.lang.String[] getCurrentValues()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.ListEntryBase cpw.mods.fml.client.config.IConfigElement getConfigElement()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.BooleanEntry java.lang.Object[] getCurrentValues()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.ListEntryBase java.lang.Object getCurrentValue()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
     <item name='cpw.mods.fml.client.config.GuiConfigEntries owningScreen'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiConfig java.lang.String getAbridgedConfigPath(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CycleValueEntry java.lang.String[] getCurrentValues()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.IntegerEntry IntegerEntry(cpw.mods.fml.client.config.GuiEditArray, cpw.mods.fml.client.config.GuiEditArrayEntries, cpw.mods.fml.client.config.IConfigElement, java.lang.Integer) 1'>
@@ -206,19 +182,28 @@
     <item name='cpw.mods.fml.client.config.GuiConfig void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry cpw.mods.fml.client.config.IConfigElement getConfigElement()'>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.StringEntry java.lang.Object[] getCurrentValues()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.GuiEditArray GuiEditArray(net.minecraft.client.gui.GuiScreen, cpw.mods.fml.client.config.IConfigElement, int, java.lang.Object[], boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry java.lang.Object getCurrentValue()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.DummyConfigElement cpw.mods.fml.client.config.IConfigElement setConfigEntryClass(java.lang.Class&lt;? extends cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry T[] getCurrentValues()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='cpw.mods.fml.client.config.GuiEditArray GuiEditArray(net.minecraft.client.gui.GuiScreen, cpw.mods.fml.client.config.IConfigElement, int, java.lang.Object[], boolean) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.config.DummyConfigElement cpw.mods.fml.client.config.IConfigElement&lt;T&gt; setRequiresWorldRestart(boolean)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.DoubleEntry DoubleEntry(cpw.mods.fml.client.config.GuiEditArray, cpw.mods.fml.client.config.GuiEditArrayEntries, cpw.mods.fml.client.config.IConfigElement, java.lang.Double) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.DummyConfigElement.DummyListElement cpw.mods.fml.client.config.DummyConfigElement.DummyListElement setCustomEditListEntryClass(java.lang.Class&lt;? extends cpw.mods.fml.client.config.GuiEditArrayEntries.IArrayEntry&gt;)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiConfig initEntries'>
@@ -227,7 +212,7 @@
     <item name='cpw.mods.fml.client.config.GuiUtils INVALID'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry java.lang.String getCurrentValue()'>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry net.minecraft.client.gui.GuiScreen buildChildScreen()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.ListEntryBase btnDefault'>
@@ -242,7 +227,22 @@
     <item name='cpw.mods.fml.client.config.GuiEditArray void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry java.lang.Object[] getCurrentValues()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.IConfigEntry T getCurrentValue()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
     <item name='cpw.mods.fml.client.config.GuiEditArrayEntries.BaseEntry BaseEntry(cpw.mods.fml.client.config.GuiEditArray, cpw.mods.fml.client.config.GuiEditArrayEntries, cpw.mods.fml.client.config.IConfigElement) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.DummyConfigElement cpw.mods.fml.client.config.IConfigElement&lt;T&gt; setRequiresMcRestart(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry java.lang.String getCurrentValue()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.NumberSliderEntry NumberSliderEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement&lt;?&gt;) 1'>
@@ -251,13 +251,13 @@
     <item name='cpw.mods.fml.client.config.GuiSelectString void actionPerformed(net.minecraft.client.gui.GuiButton) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.CycleValueEntry java.lang.Object[] getCurrentValues()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.client.config.GuiSelectString GuiSelectString(net.minecraft.client.gui.GuiScreen, cpw.mods.fml.client.config.IConfigElement, int, java.util.Map&lt;java.lang.Object,java.lang.String&gt;, java.lang.Object, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiSelectStringEntries GuiSelectStringEntries(cpw.mods.fml.client.config.GuiSelectString, net.minecraft.client.Minecraft, cpw.mods.fml.client.config.IConfigElement, java.util.Map&lt;java.lang.Object,java.lang.String&gt;) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.DummyConfigElement cpw.mods.fml.client.config.IConfigElement setArrayEntryClass(java.lang.Class&lt;? extends cpw.mods.fml.client.config.GuiEditArrayEntries.IArrayEntry&gt;)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.ButtonEntry ButtonEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement&lt;?&gt;, cpw.mods.fml.client.config.GuiButtonExt) 2'>
@@ -267,9 +267,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.IntegerEntry IntegerEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement) 2'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.BooleanEntry java.lang.Boolean[] getCurrentValues()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.StringEntry StringEntry(cpw.mods.fml.client.config.GuiConfig, cpw.mods.fml.client.config.GuiConfigEntries, cpw.mods.fml.client.config.IConfigElement&lt;?&gt;) 2'>
@@ -290,13 +287,16 @@
     <item name='cpw.mods.fml.client.config.GuiConfigEntries.ListEntryBase configElement'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.SelectValueEntry java.lang.Object[] getCurrentValues()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.client.config.GuiConfigEntries.NumberSliderEntry java.lang.Object[] getCurrentValues()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.client.config.ConfigGuiType COLOR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.ListEntryBase java.lang.Object[] getCurrentValues()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='cpw.mods.fml.client.config.GuiConfigEntries.SelectValueEntry java.lang.String[] getCurrentValues()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.client.config.GuiUtils RESET_CHAR'>

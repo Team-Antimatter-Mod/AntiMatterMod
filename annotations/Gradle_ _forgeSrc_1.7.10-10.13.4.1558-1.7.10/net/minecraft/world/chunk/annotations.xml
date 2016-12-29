@@ -14,10 +14,13 @@
     <item name='net.minecraft.world.chunk.Chunk void getEntitiesWithinAABBForEntity(net.minecraft.entity.Entity, net.minecraft.util.AxisAlignedBB, java.util.List, net.minecraft.command.IEntitySelector) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.chunk.EmptyChunk java.util.Random getRandomWithSeed(long)'>
+    <item name='net.minecraft.world.chunk.Chunk java.util.Random getRandomWithSeed(long)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.chunk.Chunk Chunk(net.minecraft.world.World, net.minecraft.block.Block[], byte[], int, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.EmptyChunk java.util.Random getRandomWithSeed(long)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.chunk.Chunk Chunk(net.minecraft.world.World, net.minecraft.block.Block[], byte[], int, int) 0'>
@@ -27,9 +30,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.chunk.Chunk Chunk(net.minecraft.world.World, net.minecraft.block.Block[], int, int) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.chunk.Chunk java.util.Random getRandomWithSeed(long)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.chunk.Chunk void getEntitiesOfTypeWithinAAAB(java.lang.Class, net.minecraft.util.AxisAlignedBB, java.util.List, net.minecraft.command.IEntitySelector) 1'>
@@ -44,7 +44,16 @@
     <item name='net.minecraft.world.chunk.Chunk void addEntity(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.chunk.IChunkProvider java.lang.String makeString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
     <item name='net.minecraft.world.chunk.Chunk void removeEntity(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.chunk.Chunk net.minecraft.world.ChunkCoordIntPair getChunkCoordIntPair()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.chunk.EmptyChunk void getEntitiesWithinAABBForEntity(net.minecraft.entity.Entity, net.minecraft.util.AxisAlignedBB, java.util.List, net.minecraft.command.IEntitySelector) 1'>
@@ -73,14 +82,5 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.world.chunk.IChunkProvider java.lang.String makeString()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='net.minecraft.world.chunk.Chunk net.minecraft.world.ChunkCoordIntPair getChunkCoordIntPair()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

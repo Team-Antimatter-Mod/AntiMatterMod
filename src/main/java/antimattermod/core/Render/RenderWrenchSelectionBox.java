@@ -1,7 +1,7 @@
 package antimattermod.core.Render;
 
-import antimattermod.core.Block.IWrenchAction;
-import antimattermod.core.Item.tool.ItemWrench;
+import antimattermod.core.Energy.Item.Wrench.IDirectionWrenchAction;
+import antimattermod.core.Energy.Item.Wrench.ItemWrench;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -9,7 +9,6 @@ import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MovingObjectPosition;
@@ -40,7 +39,7 @@ public class RenderWrenchSelectionBox {
 
             ItemStack itemStack = player.getCurrentEquippedItem();
             // ItemBlockを持っていて、ブロックにポインタが行っている時
-            if ((itemStack != null) && (itemStack.getItem() instanceof ItemWrench) && block instanceof IWrenchAction) {
+            if ((itemStack != null) && (itemStack.getItem() instanceof ItemWrench) && block instanceof IDirectionWrenchAction) {
 
                 int side = MOP.sideHit;
                 ForgeDirection direction = ForgeDirection.VALID_DIRECTIONS[side];

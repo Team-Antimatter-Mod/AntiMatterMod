@@ -29,9 +29,6 @@
     <item name='net.minecraftforge.event.world.ChunkDataEvent.Load Load(net.minecraft.world.chunk.Chunk, net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.event.world.ChunkEvent net.minecraft.world.chunk.Chunk getChunk()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraftforge.event.world.ChunkEvent.Unload Unload(net.minecraft.world.chunk.Chunk) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -39,6 +36,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.event.world.NoteBlockEvent.Note G'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.event.world.ChunkEvent net.minecraft.world.chunk.Chunk getChunk()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.event.world.NoteBlockEvent.Note A'>
@@ -71,6 +71,9 @@
     <item name='net.minecraftforge.event.world.BlockEvent.MultiPlaceEvent MultiPlaceEvent(java.util.List&lt;net.minecraftforge.common.util.BlockSnapshot&gt;, net.minecraft.block.Block, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraftforge.event.world.NoteBlockEvent net.minecraftforge.event.world.NoteBlockEvent.Octave getOctave()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraftforge.event.world.BlockEvent.PlaceEvent PlaceEvent(net.minecraftforge.common.util.BlockSnapshot, net.minecraft.block.Block, net.minecraft.entity.player.EntityPlayer) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -87,9 +90,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.event.world.BlockEvent.PlaceEvent PlaceEvent(net.minecraftforge.common.util.BlockSnapshot, net.minecraft.block.Block, net.minecraft.entity.player.EntityPlayer) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.event.world.NoteBlockEvent net.minecraftforge.event.world.NoteBlockEvent.Octave getOctave()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.event.world.NoteBlockEvent.Instrument BASSDRUM'>

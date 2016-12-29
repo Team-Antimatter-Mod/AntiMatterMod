@@ -1,8 +1,8 @@
 <root>
-    <item name='cpw.mods.fml.common.event.FMLModIdMappingEvent.RemapTarget ITEM'>
+    <item name='cpw.mods.fml.common.event.FMLPreInitializationEvent java.security.cert.Certificate[] getFMLSigningCertificates()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.event.FMLPreInitializationEvent java.security.cert.Certificate[] getFMLSigningCertificates()'>
+    <item name='cpw.mods.fml.common.event.FMLModIdMappingEvent.RemapTarget ITEM'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.event.FMLEvent void applyModContainer(cpw.mods.fml.common.ModContainer) 0'>
@@ -11,13 +11,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='cpw.mods.fml.common.event.FMLConstructionEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.common.event.FMLMissingMappingsEvent.MissingMapping void remap(net.minecraft.item.Item) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.event.FMLServerStoppingEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.event.FMLConstructionEvent FMLConstructionEvent(java.lang.Object...) 0'>
@@ -26,13 +20,16 @@
     <item name='cpw.mods.fml.common.event.FMLMissingMappingsEvent.MissingMapping type'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='cpw.mods.fml.common.event.FMLConstructionEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.common.event.FMLModIdMappingEvent.ModRemapping remapTarget'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.event.FMLPostInitializationEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
+    <item name='cpw.mods.fml.common.event.FMLServerAboutToStartEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.event.FMLServerAboutToStartEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
+    <item name='cpw.mods.fml.common.event.FMLPostInitializationEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.event.FMLInterModComms.IMCEvent void applyModContainer(cpw.mods.fml.common.ModContainer) 0'>
@@ -50,10 +47,10 @@
     <item name='cpw.mods.fml.common.event.FMLServerStartingEvent void registerServerCommand(net.minecraft.command.ICommand) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.event.FMLServerStartingEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
+    <item name='cpw.mods.fml.common.event.FMLPreInitializationEvent FMLPreInitializationEvent(java.lang.Object...) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.event.FMLPreInitializationEvent FMLPreInitializationEvent(java.lang.Object...) 0'>
+    <item name='cpw.mods.fml.common.event.FMLServerStartingEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.event.FMLMissingMappingsEvent.Action FAIL'>
@@ -63,12 +60,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.event.FMLModIdMappingEvent.RemapTarget BLOCK'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.event.FMLPreInitializationEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.event.FMLLoadCompleteEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.event.FMLPreInitializationEvent void applyModContainer(cpw.mods.fml.common.ModContainer) 0'>
@@ -83,16 +74,19 @@
     <item name='cpw.mods.fml.common.event.FMLServerAboutToStartEvent FMLServerAboutToStartEvent(java.lang.Object...) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.event.FMLMissingMappingsEvent.Action DEFAULT'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.common.event.FMLStateEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='cpw.mods.fml.common.event.FMLServerStartedEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
+    <item name='cpw.mods.fml.common.event.FMLInitializationEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.event.FMLMissingMappingsEvent.Action DEFAULT'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.event.FMLServerStoppedEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.event.FMLMissingMappingsEvent void applyModContainer(cpw.mods.fml.common.ModContainer) 0'>
@@ -104,13 +98,19 @@
     <item name='cpw.mods.fml.common.event.FMLModIdMappingEvent.ModRemapping ModRemapping(cpw.mods.fml.common.event.FMLModIdMappingEvent, int, int, java.lang.String) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.event.FMLServerStoppedEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
+    <item name='cpw.mods.fml.common.event.FMLLoadCompleteEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.event.FMLInitializationEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
+    <item name='cpw.mods.fml.common.event.FMLServerStoppingEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.event.FMLMissingMappingsEvent.Action BLOCKONLY'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.event.FMLPreInitializationEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.event.FMLServerStartedEvent cpw.mods.fml.common.LoaderState.ModState getModState()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.event.FMLServerStartingEvent FMLServerStartingEvent(java.lang.Object...) 0'>

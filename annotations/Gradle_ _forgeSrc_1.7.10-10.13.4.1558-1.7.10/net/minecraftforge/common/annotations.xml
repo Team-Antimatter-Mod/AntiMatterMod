@@ -1,4 +1,10 @@
 <root>
+    <item name='net.minecraftforge.common.IPlantable net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
     <item name='net.minecraftforge.common.ChestGenHooks STRONGHOLD_CORRIDOR'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -8,13 +14,13 @@
     <item name='net.minecraftforge.common.ForgeHooks boolean onPickBlock(net.minecraft.util.MovingObjectPosition, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraftforge.common.ForgeChunkManager java.util.List&lt;net.minecraftforge.common.config.ConfigCategory&gt; getModCategories()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraftforge.common.BiomeDictionary boolean areBiomesEquivalent(net.minecraft.world.biome.BiomeGenBase, net.minecraft.world.biome.BiomeGenBase) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.BiomeManager boolean isTypeListModded(net.minecraftforge.common.BiomeManager.BiomeType) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.AchievementPage java.util.Set&lt;net.minecraftforge.common.AchievementPage&gt; getAchievementPages()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.BiomeManager void addBiome(net.minecraftforge.common.BiomeManager.BiomeType, net.minecraftforge.common.BiomeManager.BiomeEntry) 0'>
@@ -41,16 +47,16 @@
     <item name='net.minecraftforge.common.BiomeManager.BiomeType WARM'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraftforge.common.DimensionManager net.minecraft.world.WorldProvider createProviderFor(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.ForgeModContainer java.lang.String getGuiClassName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraftforge.common.BiomeDictionary.Type FOREST'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.BiomeDictionary.Type net.minecraftforge.common.BiomeDictionary.Type getType(java.lang.String, net.minecraftforge.common.BiomeDictionary.Type...)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraftforge.common.ChestGenHooks PYRAMID_DESERT_CHEST'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.BiomeManager.BiomeType net.minecraftforge.common.BiomeManager.BiomeType getType(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.BiomeDictionary void makeBestGuess(net.minecraft.world.biome.BiomeGenBase) 0'>
@@ -86,6 +92,12 @@
     <item name='net.minecraftforge.common.ForgeVersion.Status FAILED'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraftforge.common.IPlantable net.minecraft.block.Block getPlant(net.minecraft.world.IBlockAccess, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
     <item name='net.minecraftforge.common.BiomeDictionary boolean isBiomeRegistered(net.minecraft.world.biome.BiomeGenBase) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -95,10 +107,13 @@
     <item name='net.minecraftforge.common.BiomeDictionary.Type MAGICAL'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraftforge.common.ChestGenHooks net.minecraft.item.ItemStack[] generateStacks(java.util.Random, net.minecraft.item.ItemStack, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraftforge.common.ISpecialArmor.ArmorProperties int compareTo(java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.ISpecialArmor.ArmorProperties net.minecraftforge.common.ISpecialArmor.ArmorProperties copy()'>
+    <item name='net.minecraftforge.common.ForgeModContainer java.lang.Class&lt;?&gt; getCustomResourcePackClass()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeChunkManager.Type NORMAL'>
@@ -122,16 +137,7 @@
     <item name='net.minecraftforge.common.ForgeHooks int getTotalArmorValue(net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.IPlantable net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraftforge.common.ForgeInternalHandler void onDimensionLoad(net.minecraftforge.event.world.WorldEvent.Load) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.ForgeModContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeHooks boolean onNoteChange(net.minecraft.tileentity.TileEntityNote, byte) 0'>
@@ -155,6 +161,9 @@
     <item name='net.minecraftforge.common.BiomeDictionary.Type COLD'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraftforge.common.BiomeDictionary.Type net.minecraftforge.common.BiomeDictionary.Type getType(java.lang.String, net.minecraftforge.common.BiomeDictionary.Type...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraftforge.common.ForgeHooks float blockStrength(net.minecraft.block.Block, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -164,13 +173,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraftforge.common.ForgeModContainer java.lang.String getGuiClassName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraftforge.common.BiomeManager com.google.common.collect.ImmutableList&lt;net.minecraftforge.common.BiomeManager.BiomeEntry&gt; getBiomes(net.minecraftforge.common.BiomeManager.BiomeType) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.DimensionManager net.minecraft.world.WorldProvider createProviderFor(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeVersion.Status OUTDATED'>
@@ -179,16 +182,7 @@
     <item name='net.minecraftforge.common.ChestGenHooks MINESHAFT_CORRIDOR'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.FishingHooks net.minecraftforge.common.FishingHooks.FishableCategory getFishableCategory(float, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.ForgeModContainer java.lang.Class&lt;?&gt; getCustomResourcePackClass()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraftforge.common.ForgeModContainer void preInit(cpw.mods.fml.common.event.FMLPreInitializationEvent) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.ForgeHooks net.minecraft.util.IChatComponent newChatWithLinks(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.WorldSpecificSaveHandler net.minecraft.world.chunk.storage.IChunkLoader getChunkLoader(net.minecraft.world.WorldProvider) 0'>
@@ -196,6 +190,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraftforge.common.BiomeManager.BiomeType net.minecraftforge.common.BiomeManager.BiomeType getType(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeModContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -209,11 +206,8 @@
     <item name='net.minecraftforge.common.ForgeHooks net.minecraft.util.ChatComponentTranslation onServerChatEvent(net.minecraft.network.NetHandlerPlayServer, java.lang.String, net.minecraft.util.ChatComponentTranslation) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.IPlantable net.minecraft.block.Block getPlant(net.minecraft.world.IBlockAccess, int, int, int)'>
+    <item name='net.minecraftforge.common.FishingHooks net.minecraftforge.common.FishingHooks.FishableCategory getFishableCategory(float, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='net.minecraftforge.common.BiomeManager.BiomeType ICY'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -242,6 +236,9 @@
     <item name='net.minecraftforge.common.BiomeDictionary.Type NETHER'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraftforge.common.ISpecialArmor.ArmorProperties net.minecraftforge.common.ISpecialArmor.ArmorProperties copy()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraftforge.common.WorldSpecificSaveHandler WorldSpecificSaveHandler(net.minecraft.world.WorldServer, net.minecraft.world.storage.ISaveHandler) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -251,9 +248,6 @@
     <item name='net.minecraftforge.common.FishingHooks.FishableCategory JUNK'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.ForgeHooks net.minecraftforge.event.world.BlockEvent.BreakEvent onBlockBreakEvent(net.minecraft.world.World, net.minecraft.world.WorldSettings.GameType, net.minecraft.entity.player.EntityPlayerMP, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraftforge.common.MinecraftForge EVENT_BUS'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -261,6 +255,15 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.EnumPlantType Cave'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.IShearable java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraftforge.common.FishingHooks net.minecraft.item.ItemStack getRandomFishable(java.util.Random, float, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeModContainer void modConstruction(cpw.mods.fml.common.event.FMLConstructionEvent) 0'>
@@ -279,6 +282,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.BiomeDictionary net.minecraft.world.biome.BiomeGenBase[] getBiomesForType(net.minecraftforge.common.BiomeDictionary.Type) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.ForgeModContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeHooks net.minecraftforge.event.world.BlockEvent.BreakEvent onBlockBreakEvent(net.minecraft.world.World, net.minecraft.world.WorldSettings.GameType, net.minecraft.entity.player.EntityPlayerMP, int, int, int) 0'>
@@ -323,13 +329,16 @@
     <item name='net.minecraftforge.common.ChestGenHooks net.minecraft.item.ItemStack getOneItem(java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraftforge.common.ForgeHooks net.minecraft.util.IChatComponent newChatWithLinks(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraftforge.common.BiomeDictionary.Type SNOWY'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeChunkManager void putDormantChunk(long, net.minecraft.world.chunk.Chunk) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.WorldSpecificSaveHandler java.io.File getMapFileFromName(java.lang.String)'>
+    <item name='net.minecraftforge.common.FishingHooks net.minecraft.item.ItemStack getRandomFishable(java.util.Random, float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.BiomeDictionary boolean isBiomeOfType(net.minecraft.world.biome.BiomeGenBase, net.minecraftforge.common.BiomeDictionary.Type) 0'>
@@ -344,11 +353,8 @@
     <item name='net.minecraftforge.common.FishingHooks net.minecraft.item.ItemStack getRandomFishable(java.util.Random, float, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.IShearable java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
+    <item name='net.minecraftforge.common.DimensionManager net.minecraft.nbt.NBTTagCompound saveDimensionDataMap()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='net.minecraftforge.common.ForgeHooks boolean canHarvestBlock(net.minecraft.block.Block, net.minecraft.entity.player.EntityPlayer, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -360,6 +366,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeInternalHandler void onEntityJoinWorld(net.minecraftforge.event.entity.EntityJoinWorldEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.ForgeHooks net.minecraftforge.event.world.BlockEvent.BreakEvent onBlockBreakEvent(net.minecraft.world.World, net.minecraft.world.WorldSettings.GameType, net.minecraft.entity.player.EntityPlayerMP, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.WorldSpecificSaveHandler void saveWorldInfo(net.minecraft.world.storage.WorldInfo) 0'>
@@ -375,9 +384,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.EnumPlantType Beach'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.FishingHooks net.minecraft.item.ItemStack getRandomFishable(java.util.Random, float, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.BiomeDictionary.Type PLAINS'>
@@ -396,9 +402,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeModContainer void readData(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo, java.util.Map&lt;java.lang.String,net.minecraft.nbt.NBTBase&gt;, net.minecraft.nbt.NBTTagCompound) 3'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.ForgeChunkManager java.util.List&lt;net.minecraftforge.common.config.ConfigCategory&gt; getModCategories()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.MinecraftForge TERRAIN_GEN_BUS'>
@@ -443,25 +446,19 @@
     <item name='net.minecraftforge.common.BiomeDictionary.Type RIVER'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraftforge.common.WorldSpecificSaveHandler java.io.File getMapFileFromName(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraftforge.common.ChestGenHooks STRONGHOLD_LIBRARY'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.ChestGenHooks net.minecraft.item.ItemStack[] generateStacks(java.util.Random, net.minecraft.item.ItemStack, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraftforge.common.ForgeHooks net.minecraft.entity.item.EntityItem onPlayerTossEvent(net.minecraft.entity.player.EntityPlayer, net.minecraft.item.ItemStack, boolean) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.FishingHooks net.minecraft.item.ItemStack getRandomFishable(java.util.Random, float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.BiomeDictionary.Type END'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeVersion.Status UP_TO_DATE'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraftforge.common.DimensionManager net.minecraft.nbt.NBTTagCompound saveDimensionDataMap()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.FishingHooks.FishableCategory TREASURE'>
@@ -471,6 +468,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeHooks float getEnchantPower(net.minecraft.world.World, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraftforge.common.AchievementPage java.util.Set&lt;net.minecraftforge.common.AchievementPage&gt; getAchievementPages()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeHooks net.minecraft.util.IChatComponent newChatWithLinks(java.lang.String) 0'>

@@ -2,7 +2,6 @@ package antimattermod.core.Energy.Block.Generator
 
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.AntiMatterModRegistry
-import antimattermod.core.Block.IWrenchAction
 import antimattermod.core.Energy.APVoltage
 import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator
 import cpw.mods.fml.relauncher.Side
@@ -23,7 +22,7 @@ import net.minecraftforge.common.util.ForgeDirection
 /**
  * @author C6H2Cl2
  */
-class BlockFurnaceGenerator : BlockContainer(Material.rock), IWrenchAction {
+class BlockFurnaceGenerator : BlockContainer(Material.rock) {
     //定数
     private val voltage = APVoltage.HV
     private val energyStorage = voltage.maxEnergy * 20 * 600
@@ -108,19 +107,4 @@ class BlockFurnaceGenerator : BlockContainer(Material.rock), IWrenchAction {
         return TileEntityFurnaceGenerator()
     }
 
-    override fun onWrenchClick(world: World, player: EntityPlayer, x: Int, y: Int, z: Int, meta: Int, side: Int, wside: Int) {
-        if (wside != 0 && wside != 1) {
-            if (meta < 6) {
-                world.setBlockMetadataWithNotify(x, y, z, wside, 2)
-            } else {
-                world.setBlockMetadataWithNotify(x, y, z, wside + 6, 2)
-            }
-        }
-    }
-
-    override fun onWrenchShiftClick(world: World, player: EntityPlayer, x: Int, y: Int, z: Int, meta: Int, side: Int, wside: Int) {
-        if (this.removedByPlayer(world, player, x, y, z, true)) {
-            this.harvestBlock(world, player, x, y, z, meta)
-        }
-    }
 }

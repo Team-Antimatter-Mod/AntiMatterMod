@@ -5,6 +5,7 @@ import antimattermod.core.Energy.Block.Generator.BlockFurnaceGenerator
 import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator
 import antimattermod.core.Energy.TileEntity.TileEnergyController
 import antimattermod.core.Energy.Item.StatesChecker
+import antimattermod.core.Energy.Item.Wrench.ItemWrench
 import antimattermod.core.Mob.EntityDeveloperBoss
 import antimattermod.core.Mob.ItemEgg.ItemDeveloperBossEgg
 import cpw.mods.fml.common.registry.EntityRegistry
@@ -19,6 +20,7 @@ object AMMRegistry {
     //Item  ============================================================================================================
     //ツール類
     val statesChecker: Item = StatesChecker()
+    val toolWrench: Item = ItemWrench("toolWrench", "toolwrench")
 
     //テスト用
     val developerBossEgg: Item = ItemDeveloperBossEgg()
@@ -34,6 +36,7 @@ object AMMRegistry {
         //ツール
         GameRegistry.registerItem(statesChecker, "statesCheckerAP")
         GameRegistry.registerItem(developerBossEgg, "developerBossEgg")
+        GameRegistry.registerItem(toolWrench, "toolWrench")
 
         //機械
         GameRegistry.registerBlock(furnaceGenerator, "furnaceGeneratorAP")

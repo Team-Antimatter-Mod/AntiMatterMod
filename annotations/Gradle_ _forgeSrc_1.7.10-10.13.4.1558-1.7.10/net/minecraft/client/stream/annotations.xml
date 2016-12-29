@@ -1,10 +1,4 @@
 <root>
-    <item name='net.minecraft.client.stream.IStream tv.twitch.broadcast.IngestServer[] func_152925_v()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.client.stream.BroadcastController.BroadcastState Authenticating'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -16,6 +10,12 @@
     </item>
     <item name='net.minecraft.client.stream.BroadcastController.BroadcastState Authenticated'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.stream.IStream net.minecraft.client.stream.IStream.AuthFailureReason func_152918_H()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.client.stream.BroadcastController.BroadcastListener void func_152894_a(tv.twitch.broadcast.StreamInfo) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -38,6 +38,9 @@
     <item name='net.minecraft.client.stream.TwitchStream void func_152904_a(tv.twitch.chat.ChatUserInfo[], tv.twitch.chat.ChatUserInfo[], tv.twitch.chat.ChatUserInfo[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.stream.NullStream tv.twitch.broadcast.IngestServer[] func_152925_v()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.stream.IngestServerTester.IngestTestState ConnectingToServer'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -56,16 +59,7 @@
     <item name='net.minecraft.client.stream.IStream.AuthFailureReason INVALID_TOKEN'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.stream.NullStream tv.twitch.broadcast.IngestServer[] func_152925_v()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.stream.NullStream net.minecraft.client.stream.IStream.AuthFailureReason func_152918_H()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.stream.BroadcastController.BroadcastState LoggingIn'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.stream.BroadcastController tv.twitch.broadcast.VideoParams func_152834_a(int, int, float, float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.stream.ChatController void chatChannelMessageCallback(tv.twitch.chat.ChatMessageList) 0'>
@@ -92,6 +86,12 @@
     <item name='net.minecraft.client.stream.ChatController.ChatState Disconnected'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.stream.IStream tv.twitch.broadcast.IngestServer[] func_152925_v()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
     <item name='net.minecraft.client.stream.IngestServerTester.IngestTestState DoneTestingServer'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -113,6 +113,9 @@
     <item name='net.minecraft.client.stream.IngestServerTester.IngestTestState TestingServer'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.stream.NullStream net.minecraft.client.stream.IStream.AuthFailureReason func_152918_H()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.stream.BroadcastController.BroadcastState FindingIngestServer'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -120,12 +123,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.stream.ChatController.ChatListener void func_152904_a(tv.twitch.chat.ChatUserInfo[], tv.twitch.chat.ChatUserInfo[], tv.twitch.chat.ChatUserInfo[]) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='net.minecraft.client.stream.IStream net.minecraft.client.stream.IStream.AuthFailureReason func_152918_H()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -141,6 +138,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.stream.ChatController.ChatState Connecting'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.stream.BroadcastController tv.twitch.broadcast.VideoParams func_152834_a(int, int, float, float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.stream.TwitchStream void func_152893_b(tv.twitch.ErrorCode) 0'>

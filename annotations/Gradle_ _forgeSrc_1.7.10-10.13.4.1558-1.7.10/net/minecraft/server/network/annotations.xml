@@ -14,6 +14,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.server.network.NetHandlerLoginServer com.mojang.authlib.GameProfile func_152506_a(com.mojang.authlib.GameProfile)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.server.network.NetHandlerLoginServer void onDisconnect(net.minecraft.util.IChatComponent) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -39,9 +42,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.server.network.NetHandlerStatusServer void processPing(net.minecraft.network.status.client.C01PacketPing) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.server.network.NetHandlerLoginServer com.mojang.authlib.GameProfile func_152506_a(com.mojang.authlib.GameProfile)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.server.network.NetHandlerLoginServer void processLoginStart(net.minecraft.network.login.client.C00PacketLoginStart) 0'>
