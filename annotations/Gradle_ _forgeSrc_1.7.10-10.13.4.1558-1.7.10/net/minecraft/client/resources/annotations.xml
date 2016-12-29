@@ -2,6 +2,12 @@
     <item name='net.minecraft.client.resources.FallbackResourceManager resourcePacks'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.resources.IResourcePack java.io.InputStream getInputStream(net.minecraft.util.ResourceLocation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
     <item name='net.minecraft.client.resources.IResourceManager java.util.List getAllResources(net.minecraft.util.ResourceLocation) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -17,8 +23,11 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.resources.FallbackResourceManager net.minecraft.client.resources.IResource getResource(net.minecraft.util.ResourceLocation)'>
+    <item name='net.minecraft.client.resources.IResourceManager java.util.List getAllResources(net.minecraft.util.ResourceLocation)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.client.resources.AbstractResourcePack java.lang.String getRelativeName(java.io.File, java.io.File) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -27,9 +36,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.SkinManager net.minecraft.util.ResourceLocation func_152789_a(com.mojang.authlib.minecraft.MinecraftProfileTexture, com.mojang.authlib.minecraft.MinecraftProfileTexture.Type, net.minecraft.client.resources.SkinManager.SkinAvailableCallback) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.resources.FolderResourcePack java.io.InputStream getInputStreamByName(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.ResourcePackRepository.Entry void bindTexturePackIcon(net.minecraft.client.renderer.texture.TextureManager) 0'>
@@ -53,19 +59,28 @@
     <item name='net.minecraft.client.resources.SkinManager field_152793_a'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.AbstractResourcePack java.io.InputStream getInputStreamByName(java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.client.resources.IResourcePack java.io.InputStream getInputStream(net.minecraft.util.ResourceLocation) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.client.resources.IResourceManager net.minecraft.client.resources.IResource getResource(net.minecraft.util.ResourceLocation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.resources.ResourcePackListEntryDefault java.lang.String func_148312_b()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.resources.LanguageManager void parseLanguageMetadata(java.util.List) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.resources.SkinManager net.minecraft.util.ResourceLocation func_152792_a(com.mojang.authlib.minecraft.MinecraftProfileTexture, com.mojang.authlib.minecraft.MinecraftProfileTexture.Type)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.resources.FallbackResourceManager java.util.List getAllResources(net.minecraft.util.ResourceLocation)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.FallbackResourceManager java.util.List getAllResources(net.minecraft.util.ResourceLocation) 0'>
@@ -74,12 +89,6 @@
     <item name='net.minecraft.client.resources.SimpleReloadableResourceManager net.minecraft.client.resources.IResource getResource(net.minecraft.util.ResourceLocation) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.IResourcePack java.lang.String getPackName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.client.resources.AbstractResourcePack java.lang.String getRelativeName(java.io.File, java.io.File) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -87,9 +96,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.SimpleReloadableResourceManager void registerReloadListener(net.minecraft.client.resources.IResourceManagerReloadListener) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.resources.DefaultResourcePack java.lang.String getPackName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.DefaultResourcePack java.io.InputStream getInputStream(net.minecraft.util.ResourceLocation) 0'>
@@ -101,13 +107,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.resources.ResourcePackListEntry java.lang.String func_148312_b()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
-    <item name='net.minecraft.client.resources.SkinManager net.minecraft.util.ResourceLocation func_152789_a(com.mojang.authlib.minecraft.MinecraftProfileTexture, com.mojang.authlib.minecraft.MinecraftProfileTexture.Type, net.minecraft.client.resources.SkinManager.SkinAvailableCallback)'>
+    <item name='net.minecraft.client.resources.DefaultResourcePack java.io.InputStream getInputStream(net.minecraft.util.ResourceLocation)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.AbstractResourcePack net.minecraft.client.resources.data.IMetadataSection getPackMetadata(net.minecraft.client.resources.data.IMetadataSerializer, java.lang.String) 1'>
@@ -119,12 +119,6 @@
     <item name='net.minecraft.client.resources.AbstractResourcePack java.io.InputStream getInputStream(net.minecraft.util.ResourceLocation) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.IResourceManager java.util.List getAllResources(net.minecraft.util.ResourceLocation)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.client.resources.SimpleReloadableResourceManager void reloadResourcePack(net.minecraft.client.resources.IResourcePack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -134,11 +128,8 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.resources.IResourcePack java.io.InputStream getInputStream(net.minecraft.util.ResourceLocation)'>
+    <item name='net.minecraft.client.resources.FolderResourcePack java.io.InputStream getInputStreamByName(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='net.minecraft.client.resources.Language int compareTo(java.lang.Object) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -148,6 +139,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.client.resources.FallbackResourceManager net.minecraft.client.resources.IResource getResource(net.minecraft.util.ResourceLocation)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.IReloadableResourceManager void reloadResources(java.util.List) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -188,16 +182,19 @@
     <item name='net.minecraft.client.resources.FallbackResourceManager net.minecraft.client.resources.IResource getResource(net.minecraft.util.ResourceLocation) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.FallbackResourceManager java.util.List getAllResources(net.minecraft.util.ResourceLocation)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.resources.DefaultResourcePack net.minecraft.client.resources.data.IMetadataSection getPackMetadata(net.minecraft.client.resources.data.IMetadataSerializer, java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.resources.IResourceManager net.minecraft.client.resources.IResource getResource(net.minecraft.util.ResourceLocation)'>
+    <item name='net.minecraft.client.resources.AbstractResourcePack java.io.InputStream getInputStreamByName(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.client.resources.IResourcePack java.lang.String getPackName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -212,16 +209,19 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.resources.SkinManager net.minecraft.util.ResourceLocation func_152792_a(com.mojang.authlib.minecraft.MinecraftProfileTexture, com.mojang.authlib.minecraft.MinecraftProfileTexture.Type)'>
+    <item name='net.minecraft.client.resources.ResourcePackListEntry java.lang.String func_148312_b()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.resources.DefaultResourcePack java.io.InputStream getInputStream(net.minecraft.util.ResourceLocation)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.client.resources.LanguageManager void setCurrentLanguage(net.minecraft.client.resources.Language) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.DefaultResourcePack java.io.InputStream func_152780_c(net.minecraft.util.ResourceLocation) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.resources.DefaultResourcePack java.lang.String getPackName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.resources.AbstractResourcePack boolean resourceExists(net.minecraft.util.ResourceLocation) 0'>
@@ -236,7 +236,7 @@
     <item name='net.minecraft.client.resources.SimpleReloadableResourceManager java.util.List getAllResources(net.minecraft.util.ResourceLocation) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.resources.ResourcePackListEntryDefault java.lang.String func_148312_b()'>
+    <item name='net.minecraft.client.resources.SkinManager net.minecraft.util.ResourceLocation func_152789_a(com.mojang.authlib.minecraft.MinecraftProfileTexture, com.mojang.authlib.minecraft.MinecraftProfileTexture.Type, net.minecraft.client.resources.SkinManager.SkinAvailableCallback)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

@@ -14,6 +14,12 @@
     <item name='net.minecraft.entity.item.EntityPainting.EnumArt DonkeyKong'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.entity.item.EntityMinecart net.minecraft.item.ItemStack getCartItem()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.item.EntityBoat net.minecraft.util.AxisAlignedBB getCollisionBox(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.entity.item.EntityBoat void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -92,6 +98,9 @@
     <item name='net.minecraft.entity.item.EntityFallingBlock void addEntityCrashInfo(net.minecraft.crash.CrashReportCategory) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.entity.item.EntityMinecart net.minecraft.entity.item.EntityMinecart createMinecart(net.minecraft.world.World, double, double, double, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.entity.item.EntityMinecartFurnace void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -155,9 +164,6 @@
     <item name='net.minecraft.entity.item.EntityPainting.EnumArt Pool'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.item.EntityItem net.minecraft.item.ItemStack getEntityItem()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.entity.item.EntityPainting.EnumArt Aztec'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -197,17 +203,11 @@
     <item name='net.minecraft.entity.item.EntityXPOrb void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.item.EntityBoat net.minecraft.util.AxisAlignedBB getCollisionBox(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.entity.item.EntityMinecart void applyEntityCollision(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.entity.item.EntityMinecart net.minecraft.item.ItemStack getCartItem()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.item.EntityMinecartContainer boolean interactFirst(net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -263,9 +263,6 @@
     <item name='net.minecraft.entity.item.EntityPainting.EnumArt Pigscene'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.item.EntityMinecart net.minecraft.entity.item.EntityMinecart createMinecart(net.minecraft.world.World, double, double, double, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.entity.item.EntityMinecartContainer void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -318,6 +315,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.entity.item.EntityMinecart void func_145821_a(int, int, int, double, double, net.minecraft.block.Block, int) 5'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.item.EntityItem net.minecraft.item.ItemStack getEntityItem()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.item.EntityMinecartFurnace void func_145821_a(int, int, int, double, double, net.minecraft.block.Block, int) 5'>

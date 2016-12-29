@@ -1,7 +1,4 @@
 <root>
-    <item name='cpw.mods.fml.common.discovery.ASMDataTable.ASMData cpw.mods.fml.common.discovery.ASMDataTable.ASMData copy(java.util.Map&lt;java.lang.String,java.lang.Object&gt;)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.common.discovery.ModDiscoverer void findClasspathMods(cpw.mods.fml.common.ModClassLoader) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -26,19 +23,10 @@
     <item name='cpw.mods.fml.common.discovery.ContainerType DIR'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.discovery.JarDiscoverer java.util.List&lt;cpw.mods.fml.common.ModContainer&gt; discover(cpw.mods.fml.common.discovery.ModCandidate, cpw.mods.fml.common.discovery.ASMDataTable) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.common.discovery.DirectoryDiscoverer java.util.List&lt;cpw.mods.fml.common.ModContainer&gt; discover(cpw.mods.fml.common.discovery.ModCandidate, cpw.mods.fml.common.discovery.ASMDataTable)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.discovery.DirectoryDiscoverer java.util.List&lt;cpw.mods.fml.common.ModContainer&gt; discover(cpw.mods.fml.common.discovery.ModCandidate, cpw.mods.fml.common.discovery.ASMDataTable) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.discovery.ModCandidate void addClassEntry(java.lang.String) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.discovery.ContainerType JAR'>
+    <item name='cpw.mods.fml.common.discovery.JarDiscoverer java.util.List&lt;cpw.mods.fml.common.ModContainer&gt; discover(cpw.mods.fml.common.discovery.ModCandidate, cpw.mods.fml.common.discovery.ASMDataTable) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.discovery.ITypeDiscoverer java.util.List&lt;cpw.mods.fml.common.ModContainer&gt; discover(cpw.mods.fml.common.discovery.ModCandidate, cpw.mods.fml.common.discovery.ASMDataTable)'>
@@ -46,5 +34,17 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='cpw.mods.fml.common.discovery.DirectoryDiscoverer java.util.List&lt;cpw.mods.fml.common.ModContainer&gt; discover(cpw.mods.fml.common.discovery.ModCandidate, cpw.mods.fml.common.discovery.ASMDataTable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.discovery.ModCandidate void addClassEntry(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.discovery.ASMDataTable.ASMData cpw.mods.fml.common.discovery.ASMDataTable.ASMData copy(java.util.Map&lt;java.lang.String,java.lang.Object&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.discovery.ContainerType JAR'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

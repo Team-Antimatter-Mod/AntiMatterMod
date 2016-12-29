@@ -2,13 +2,13 @@
     <item name='net.minecraft.world.gen.layer.GenLayerEdge.Mode HEAT_ICE'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.gen.layer.GenLayer net.minecraft.world.gen.layer.GenLayer[] initializeAllBiomeGenerators(long, net.minecraft.world.WorldType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.gen.layer.GenLayerBiome net.minecraftforge.common.BiomeManager.BiomeEntry getWeightedBiomeEntry(net.minecraftforge.common.BiomeManager.BiomeType) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.layer.GenLayer net.minecraft.world.gen.layer.GenLayer[] initializeAllBiomeGenerators(long, net.minecraft.world.WorldType) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.layer.GenLayer net.minecraft.world.gen.layer.GenLayer[] initializeAllBiomeGenerators(long, net.minecraft.world.WorldType)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.layer.GenLayerEdge.Mode COOL_WARM'>

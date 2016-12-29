@@ -1,4 +1,10 @@
 <root>
+    <item name='cpw.mods.fml.common.launcher.FMLTweaker java.lang.String getLaunchTarget()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.launcher.FMLDeobfTweaker java.lang.String[] getLaunchArguments()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='cpw.mods.fml.common.launcher.FMLServerTweaker void injectIntoClassLoader(net.minecraft.launchwrapper.LaunchClassLoader) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -8,16 +14,13 @@
     <item name='cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker java.lang.String getLaunchTarget()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.launcher.FMLTweaker java.lang.String getLaunchTarget()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker java.lang.String[] getLaunchArguments()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='cpw.mods.fml.common.launcher.FMLTweaker void injectIntoClassLoader(net.minecraft.launchwrapper.LaunchClassLoader) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.launcher.FMLDeobfTweaker java.lang.String[] getLaunchArguments()'>
+    <item name='cpw.mods.fml.common.launcher.FMLServerTweaker java.lang.String getLaunchTarget()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker java.lang.String[] getLaunchArguments()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.launcher.FMLTweaker void acceptOptions(java.util.List&lt;java.lang.String&gt;, java.io.File, java.io.File, java.lang.String) 0'>
@@ -27,9 +30,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.launcher.Yggdrasil void login(java.util.Map&lt;java.lang.String,java.lang.String&gt;) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='cpw.mods.fml.common.launcher.FMLServerTweaker java.lang.String getLaunchTarget()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.launcher.FMLDeobfTweaker void injectIntoClassLoader(net.minecraft.launchwrapper.LaunchClassLoader) 0'>

@@ -2,31 +2,37 @@
     <item name='net.minecraft.network.NetworkManager attrKeyReceivable'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.network.NettyEncryptionTranslator io.netty.buffer.ByteBuf func_150503_a(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.network.ServerStatusResponse.Serializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.ServerStatusResponse.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.ServerStatusResponse.Serializer net.minecraft.network.ServerStatusResponse deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.network.NetHandlerPlayServer NetHandlerPlayServer(net.minecraft.server.MinecraftServer, net.minecraft.network.NetworkManager, net.minecraft.entity.player.EntityPlayerMP) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.NetworkStatistics net.minecraft.network.NetworkStatistics.PacketStat func_152470_h()'>
+    <item name='net.minecraft.network.PacketBuffer java.lang.String readStringFromBuffer(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NetworkManager attrKeyConnectionState'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.network.NetHandlerPlayServer net.minecraft.network.NetworkManager func_147362_b()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NetworkManager void enableEncryption(javax.crypto.SecretKey) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.Packet void writeBlob(io.netty.buffer.ByteBuf, byte[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.Packet byte[] readBlob(io.netty.buffer.ByteBuf)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.ServerStatusResponse.Serializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.ServerStatusResponse.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NettyEncryptingEncoder void encode(io.netty.channel.ChannelHandlerContext, java.lang.Object, io.netty.buffer.ByteBuf) 1'>
@@ -38,9 +44,6 @@
     <item name='net.minecraft.network.NettyEncryptionTranslator void func_150504_a(io.netty.buffer.ByteBuf, io.netty.buffer.ByteBuf) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier.Serializer com.google.gson.JsonElement serialize(net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.network.EnumConnectionState net.minecraft.network.EnumConnectionState func_150752_a(net.minecraft.network.Packet) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -50,37 +53,19 @@
     <item name='net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.Packet java.lang.String serialize()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.network.NetworkManager net.minecraft.network.NetworkManager provideLocalClient(java.net.SocketAddress)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.network.ServerStatusResponse.Serializer com.google.gson.JsonElement serialize(net.minecraft.network.ServerStatusResponse, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.network.ServerStatusResponse.PlayerCountData.Serializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier.Serializer net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.ServerStatusResponse.PlayerCountData.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.network.NetHandlerPlayServer void processPlayerAbilities(net.minecraft.network.play.client.C13PacketPlayerAbilities) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.network.EnumConnectionState net.minecraft.network.EnumConnectionState func_150756_b(int, java.lang.Class)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.PacketBuffer void writeStringToBuffer(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NettyEncryptingDecoder void decode(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, java.util.List) 2'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.network.NetworkManager net.minecraft.network.NetworkManager provideLanClient(java.net.InetAddress, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NetworkManager attrKeySendable'>
@@ -101,9 +86,6 @@
     <item name='net.minecraft.network.NettyEncryptionTranslator io.netty.buffer.ByteBuf func_150503_a(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.ServerStatusResponse.PlayerCountData.Serializer com.google.gson.JsonElement serialize(net.minecraft.network.ServerStatusResponse.PlayerCountData, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.network.EnumConnectionState PLAY'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -113,22 +95,19 @@
     <item name='net.minecraft.network.NetHandlerPlayServer void processEntityAction(net.minecraft.network.play.client.C0BPacketEntityAction) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.network.NetworkStatistics net.minecraft.network.NetworkStatistics.PacketStat func_152477_e()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.network.NetworkManager eventLoops'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier.Serializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.network.EnumConnectionState net.minecraft.network.EnumConnectionState func_150751_a(int, java.lang.Class)'>
+    <item name='net.minecraft.network.Packet java.lang.String serialize()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NetHandlerPlayServer netManager'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NetHandlerPlayServer void processUseEntity(net.minecraft.network.play.client.C02PacketUseEntity) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.network.NetworkStatistics net.minecraft.network.NetworkStatistics.PacketStat func_152475_g()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.Packet void readPacketData(net.minecraft.network.PacketBuffer) 0'>
@@ -140,16 +119,19 @@
     <item name='net.minecraft.network.ServerStatusResponse.PlayerCountData.Serializer net.minecraft.network.ServerStatusResponse.PlayerCountData deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.network.ServerStatusResponse.Serializer com.google.gson.JsonElement serialize(net.minecraft.network.ServerStatusResponse, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.network.PingResponseHandler void channelRead(io.netty.channel.ChannelHandlerContext, java.lang.Object) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NetworkManager void channelActive(io.netty.channel.ChannelHandlerContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.NettyEncryptingDecoder void decode(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, java.util.List) 1'>
+    <item name='net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.NetworkStatistics net.minecraft.network.NetworkStatistics.PacketStat func_152467_f()'>
+    <item name='net.minecraft.network.NettyEncryptingDecoder void decode(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, java.util.List) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.Packet void processPacket(net.minecraft.network.INetHandler) 0'>
@@ -158,13 +140,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.network.ServerStatusResponse.PlayerCountData.Serializer net.minecraft.network.ServerStatusResponse.PlayerCountData deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.network.NetworkManager field_152462_h'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NettyEncryptingDecoder void decode(io.netty.channel.ChannelHandlerContext, java.lang.Object, java.util.List) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.PacketBuffer java.lang.String readStringFromBuffer(int)'>
+    <item name='net.minecraft.network.NetworkStatistics net.minecraft.network.NetworkStatistics.PacketStat func_152470_h()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier.Serializer com.google.gson.JsonElement serialize(net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
@@ -173,16 +158,16 @@
     <item name='net.minecraft.network.ServerStatusResponse.Serializer net.minecraft.network.ServerStatusResponse deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.NettyEncryptionTranslator io.netty.buffer.ByteBuf func_150503_a(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.network.ServerStatusResponse.Serializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.network.EnumConnectionState STATUS'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.ServerStatusResponse.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
+    <item name='net.minecraft.network.ServerStatusResponse.PlayerCountData.Serializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.ServerStatusResponse.PlayerCountData.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.NetworkManager net.minecraft.network.NetworkManager provideLanClient(java.net.InetAddress, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NetworkManager void setConnectionState(net.minecraft.network.EnumConnectionState) 0'>
@@ -194,19 +179,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.network.Packet byte[] readBlob(io.netty.buffer.ByteBuf)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.network.NetHandlerPlayServer void processClickWindow(net.minecraft.network.play.client.C0EPacketClickWindow) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.network.ServerStatusResponse.Serializer com.google.gson.JsonElement serialize(net.minecraft.network.ServerStatusResponse, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.EnumConnectionState LOGIN'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier.Serializer net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+    <item name='net.minecraft.network.EnumConnectionState net.minecraft.network.EnumConnectionState func_150756_b(int, java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.NetHandlerPlayServer net.minecraft.network.NetworkManager func_147362_b()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.ServerStatusResponse.PlayerCountData.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
@@ -221,6 +203,9 @@
     <item name='net.minecraft.network.NettyEncryptingDecoder void decode(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, java.util.List) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.network.ServerStatusResponse.Serializer net.minecraft.network.ServerStatusResponse deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.network.INetHandler void onConnectionStateTransition(net.minecraft.network.EnumConnectionState, net.minecraft.network.EnumConnectionState) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -233,6 +218,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.network.ServerStatusResponse.PlayerCountData.Serializer com.google.gson.JsonElement serialize(net.minecraft.network.ServerStatusResponse.PlayerCountData, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.network.NetHandlerPlayServer void processKeepAlive(net.minecraft.network.play.client.C00PacketKeepAlive) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -242,13 +230,13 @@
     <item name='net.minecraft.network.NettyEncryptingEncoder void encode(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, io.netty.buffer.ByteBuf) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.network.NetworkManager net.minecraft.network.NetworkManager provideLocalClient(java.net.SocketAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.network.NetHandlerPlayServer void processClientStatus(net.minecraft.network.play.client.C16PacketClientStatus) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NetHandlerPlayServer void processPlayerDigging(net.minecraft.network.play.client.C07PacketPlayerDigging) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.network.NetworkStatistics net.minecraft.network.NetworkStatistics.PacketStat func_152477_e()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NetHandlerPlayServer NetHandlerPlayServer(net.minecraft.server.MinecraftServer, net.minecraft.network.NetworkManager, net.minecraft.entity.player.EntityPlayerMP) 2'>
@@ -263,13 +251,16 @@
     <item name='net.minecraft.network.Packet void writeBlob(io.netty.buffer.ByteBuf, byte[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.network.EnumConnectionState net.minecraft.network.EnumConnectionState func_150751_a(int, java.lang.Class)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.network.NetHandlerPlayServer void processPlayerBlockPlacement(net.minecraft.network.play.client.C08PacketPlayerBlockPlacement) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier.Serializer com.google.gson.JsonElement serialize(java.lang.Object, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
+    <item name='net.minecraft.network.ServerStatusResponse.PlayerCountData.Serializer com.google.gson.JsonElement serialize(net.minecraft.network.ServerStatusResponse.PlayerCountData, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.ServerStatusResponse.PlayerCountData.Serializer com.google.gson.JsonElement serialize(net.minecraft.network.ServerStatusResponse.PlayerCountData, java.lang.reflect.Type, com.google.gson.JsonSerializationContext) 0'>
+    <item name='net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier.Serializer net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NettyEncryptingEncoder void encode(io.netty.channel.ChannelHandlerContext, io.netty.buffer.ByteBuf, io.netty.buffer.ByteBuf) 1'>
@@ -278,16 +269,22 @@
     <item name='net.minecraft.network.NetHandlerPlayServer void processClientSettings(net.minecraft.network.play.client.C15PacketClientSettings) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.network.ServerStatusResponse.PlayerCountData.Serializer net.minecraft.network.ServerStatusResponse.PlayerCountData deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.network.EnumConnectionState HANDSHAKING'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NetHandlerPlayServer void processAnimation(net.minecraft.network.play.client.C0APacketAnimation) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier.Serializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier.Serializer com.google.gson.JsonElement serialize(net.minecraft.network.ServerStatusResponse.MinecraftProtocolVersionIdentifier, java.lang.reflect.Type, com.google.gson.JsonSerializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.network.NettyEncryptingDecoder void decode(io.netty.channel.ChannelHandlerContext, java.lang.Object, java.util.List) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.NetworkStatistics net.minecraft.network.NetworkStatistics.PacketStat func_152467_f()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NetHandlerPlayServer void onConnectionStateTransition(net.minecraft.network.EnumConnectionState, net.minecraft.network.EnumConnectionState) 1'>
@@ -303,6 +300,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.NetHandlerPlayServer void processUpdateSign(net.minecraft.network.play.client.C12PacketUpdateSign) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.network.NetworkStatistics net.minecraft.network.NetworkStatistics.PacketStat func_152475_g()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

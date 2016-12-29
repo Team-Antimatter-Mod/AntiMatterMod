@@ -14,8 +14,11 @@
     <item name='net.minecraft.dispenser.BehaviorDefaultDispenseItem net.minecraft.item.ItemStack dispense(net.minecraft.dispenser.IBlockSource, net.minecraft.item.ItemStack)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.dispenser.BehaviorProjectileDispense net.minecraft.item.ItemStack dispenseStack(net.minecraft.dispenser.IBlockSource, net.minecraft.item.ItemStack)'>
+    <item name='net.minecraft.dispenser.BehaviorProjectileDispense net.minecraft.entity.IProjectile getProjectileEntity(net.minecraft.world.World, net.minecraft.dispenser.IPosition)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.dispenser.BehaviorDefaultDispenseItem net.minecraft.item.ItemStack dispenseStack(net.minecraft.dispenser.IBlockSource, net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -29,8 +32,11 @@
     <item name='net.minecraft.dispenser.BehaviorDefaultDispenseItem void doDispense(net.minecraft.world.World, net.minecraft.item.ItemStack, int, net.minecraft.util.EnumFacing, net.minecraft.dispenser.IPosition) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.dispenser.BehaviorDefaultDispenseItem net.minecraft.item.ItemStack dispenseStack(net.minecraft.dispenser.IBlockSource, net.minecraft.item.ItemStack)'>
+    <item name='net.minecraft.dispenser.IBehaviorDispenseItem net.minecraft.item.ItemStack dispense(net.minecraft.dispenser.IBlockSource, net.minecraft.item.ItemStack)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.dispenser.BehaviorDefaultDispenseItem net.minecraft.item.ItemStack dispense(net.minecraft.dispenser.IBlockSource, net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -44,17 +50,17 @@
     <item name='net.minecraft.dispenser.BehaviorDefaultDispenseItem net.minecraft.item.ItemStack dispense(net.minecraft.dispenser.IBlockSource, net.minecraft.item.ItemStack) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.dispenser.BehaviorProjectileDispense net.minecraft.entity.IProjectile getProjectileEntity(net.minecraft.world.World, net.minecraft.dispenser.IPosition)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.dispenser.IBehaviorDispenseItem net.minecraft.item.ItemStack dispense(net.minecraft.dispenser.IBlockSource, net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.dispenser.BehaviorDefaultDispenseItem net.minecraft.item.ItemStack dispenseStack(net.minecraft.dispenser.IBlockSource, net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.dispenser.BehaviorProjectileDispense net.minecraft.item.ItemStack dispenseStack(net.minecraft.dispenser.IBlockSource, net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.dispenser.BehaviorDefaultDispenseItem void doDispense(net.minecraft.world.World, net.minecraft.item.ItemStack, int, net.minecraft.util.EnumFacing, net.minecraft.dispenser.IPosition) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -76,11 +82,5 @@
     </item>
     <item name='net.minecraft.dispenser.BehaviorDefaultDispenseItem void playDispenseSound(net.minecraft.dispenser.IBlockSource) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.dispenser.IBehaviorDispenseItem net.minecraft.item.ItemStack dispense(net.minecraft.dispenser.IBlockSource, net.minecraft.item.ItemStack)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
 </root>

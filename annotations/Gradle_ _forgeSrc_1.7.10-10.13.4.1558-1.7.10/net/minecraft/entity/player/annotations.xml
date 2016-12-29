@@ -2,10 +2,13 @@
     <item name='net.minecraft.entity.player.EntityPlayer.EnumStatus NOT_POSSIBLE_NOW'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.InventoryPlayer java.lang.String getInventoryName()'>
+    <item name='net.minecraft.entity.player.EntityPlayer net.minecraft.util.Vec3 getPosition(float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayerMP void sendContainerAndContentsToPlayer(net.minecraft.inventory.Container, java.util.List) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getDeathSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer PERSISTED_NBT_TAG'>
@@ -17,13 +20,7 @@
     <item name='net.minecraft.entity.player.EntityPlayerMP EntityPlayerMP(net.minecraft.server.MinecraftServer, net.minecraft.world.WorldServer, com.mojang.authlib.GameProfile, net.minecraft.server.management.ItemInWorldManager) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getSplashSound()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.entity.player.EntityPlayer net.minecraft.util.ChunkCoordinates verifyRespawnCoordinates(net.minecraft.world.World, net.minecraft.util.ChunkCoordinates, boolean) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.entity.player.EntityPlayerMP net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer.EnumStatus OK'>
@@ -40,9 +37,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getHurtSound()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -89,9 +83,6 @@
     <item name='net.minecraft.entity.player.EntityPlayerMP void onEnchantmentCritical(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.EntityPlayerMP net.minecraft.stats.StatisticsFile func_147099_x()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.entity.player.EntityPlayer net.minecraft.util.IIcon getItemIcon(net.minecraft.item.ItemStack, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -113,6 +104,9 @@
     <item name='net.minecraft.entity.player.EntityPlayerMP theItemInWorldManager'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.entity.player.EntityPlayer void updateItemUse(net.minecraft.item.ItemStack, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -125,14 +119,14 @@
     <item name='net.minecraft.entity.player.EntityPlayerMP void func_146102_a(net.minecraft.tileentity.TileEntityDispenser) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.EntityPlayer com.mojang.authlib.GameProfile getGameProfile()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.entity.player.EntityPlayerMP boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getSplashSound()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer void func_146101_a(net.minecraft.tileentity.TileEntityFurnace) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -153,9 +147,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer.EnumStatus NOT_SAFE'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.entity.player.EntityPlayer net.minecraft.util.IChatComponent func_145748_c_()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer.EnumStatus TOO_FAR_AWAY'>
@@ -227,6 +218,12 @@
     <item name='net.minecraft.entity.player.EntityPlayer void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getSwimSound()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer com.mojang.authlib.GameProfile getGameProfile()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.entity.player.EntityPlayerMP void displayGUIChest(net.minecraft.inventory.IInventory) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -243,6 +240,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayerMP void onCriticalHit(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.entity.player.EntityPlayer net.minecraft.util.IChatComponent func_145748_c_()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer void setGameType(net.minecraft.world.WorldSettings.GameType) 0'>
@@ -278,16 +278,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getDeathSound()'>
+    <item name='net.minecraft.entity.player.InventoryPlayer java.lang.String getInventoryName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer java.util.UUID func_146094_a(com.mojang.authlib.GameProfile) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.EntityPlayer net.minecraft.util.Vec3 getPosition(float)'>
+    <item name='net.minecraft.entity.player.EntityPlayerMP EntityPlayerMP(net.minecraft.server.MinecraftServer, net.minecraft.world.WorldServer, com.mojang.authlib.GameProfile, net.minecraft.server.management.ItemInWorldManager) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.EntityPlayerMP EntityPlayerMP(net.minecraft.server.MinecraftServer, net.minecraft.world.WorldServer, com.mojang.authlib.GameProfile, net.minecraft.server.management.ItemInWorldManager) 0'>
+    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String func_146067_o(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer void func_146104_a(net.minecraft.tileentity.TileEntityBeacon) 0'>
@@ -303,9 +303,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayerMP void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getSwimSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayerMP void displayGUIMerchant(net.minecraft.entity.IMerchant, java.lang.String) 0'>
@@ -344,6 +341,9 @@
     <item name='net.minecraft.entity.player.EntityPlayerMP void displayGUIHorse(net.minecraft.entity.passive.EntityHorse, net.minecraft.inventory.IInventory) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.entity.player.EntityPlayerMP net.minecraft.stats.StatisticsFile func_147099_x()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.entity.player.EntityPlayerMP void sendSlotContents(net.minecraft.inventory.Container, int, net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -353,7 +353,7 @@
     <item name='net.minecraft.entity.player.EntityPlayer EntityPlayer(net.minecraft.world.World, com.mojang.authlib.GameProfile) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String func_146067_o(int)'>
+    <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getHurtSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayerMP void onItemPickup(net.minecraft.entity.Entity, int) 0'>

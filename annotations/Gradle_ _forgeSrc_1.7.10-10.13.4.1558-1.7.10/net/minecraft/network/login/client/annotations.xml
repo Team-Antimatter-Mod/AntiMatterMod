@@ -20,13 +20,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.network.login.client.C01PacketEncryptionResponse javax.crypto.SecretKey func_149300_a(java.security.PrivateKey)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.network.login.client.C01PacketEncryptionResponse C01PacketEncryptionResponse(javax.crypto.SecretKey, java.security.PublicKey, byte[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.login.client.C01PacketEncryptionResponse void processPacket(net.minecraft.network.INetHandler) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.network.login.client.C01PacketEncryptionResponse javax.crypto.SecretKey func_149300_a(java.security.PrivateKey)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.network.login.client.C01PacketEncryptionResponse void writePacketData(net.minecraft.network.PacketBuffer) 0'>
