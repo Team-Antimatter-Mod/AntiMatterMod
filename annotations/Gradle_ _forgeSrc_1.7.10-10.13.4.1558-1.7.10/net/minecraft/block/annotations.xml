@@ -1,4 +1,7 @@
 <root>
+    <item name='net.minecraft.block.Block net.minecraft.block.Block setResistance(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockReed int getPlantMetadata(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -15,9 +18,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.block.Block soundTypeGravel'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockVine java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockPistonMoving void onBlockAdded(net.minecraft.world.World, int, int, int) 0'>
@@ -41,14 +41,14 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockLeaves net.minecraft.item.ItemStack createStackedBlock(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockSign boolean getBlocksMovement(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockBeacon net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDragonEgg void onBlockAdded(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -77,9 +77,6 @@
     <item name='net.minecraft.block.BlockRail void func_150048_a(net.minecraft.world.World, int, int, int, int, int, net.minecraft.block.Block) 6'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockTallGrass java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockButton int isProvidingStrongPower(net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -100,9 +97,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockCactus net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockLiquid BlockLiquid(net.minecraft.block.material.Material) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -230,6 +224,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.Block net.minecraftforge.common.util.ForgeDirection[] getValidRotations(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockStairs void addCollisionBoxesToList(net.minecraft.world.World, int, int, int, net.minecraft.util.AxisAlignedBB, java.util.List, net.minecraft.entity.Entity) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -263,10 +260,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.Block setBlockUnbreakable()'>
+    <item name='net.minecraft.block.BlockTorch void randomDisplayTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockTorch void randomDisplayTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
+    <item name='net.minecraft.block.BlockCactus net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockAnvil void getSubBlocks(net.minecraft.item.Item, net.minecraft.creativetab.CreativeTabs, java.util.List) 2'>
@@ -296,6 +293,12 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.Block java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockSkull net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockAir net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -323,9 +326,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockNewLeaf java.lang.String[] func_150125_e()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockTallGrass boolean func_149851_a(net.minecraft.world.World, int, int, int, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -340,6 +340,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.block.BlockDoor net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockChest void onBlockAdded(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -360,9 +363,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.block.BlockCrops void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockHopper java.lang.String getItemIconName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDoublePlant void func_149853_b(net.minecraft.world.World, java.util.Random, int, int, int) 0'>
@@ -404,6 +404,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.Block net.minecraft.block.material.Material getMaterial()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockLiquid void randomDisplayTick(net.minecraft.world.World, int, int, int, java.util.Random) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -428,7 +431,7 @@
     <item name='net.minecraft.block.BlockLiquid boolean isBlockSolid(net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockDirt net.minecraft.item.ItemStack createStackedBlock(int)'>
+    <item name='net.minecraft.block.BlockLeaves java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockTripWire net.minecraft.item.Item getItem(net.minecraft.world.World, int, int, int) 0'>
@@ -464,6 +467,9 @@
     <item name='net.minecraft.block.BlockPane void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockTrapDoor net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockLever boolean onBlockActivated(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer, int, float, float, float) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -497,6 +503,9 @@
     <item name='net.minecraft.block.BlockNote boolean onBlockActivated(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer, int, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.Block net.minecraft.block.Block setLightLevel(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockTallGrass void harvestBlock(net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -507,6 +516,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockOldLeaf int colorMultiplier(net.minecraft.world.IBlockAccess, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockDeadBush java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockRailBase.Rail Rail(net.minecraft.block.BlockRailBase, net.minecraft.world.World, int, int, int) 1'>
@@ -525,9 +537,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.Block boolean removedByPlayer(net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer, int, int, int, boolean) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockTrapDoor net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockStoneSlab void getSubBlocks(net.minecraft.item.Item, net.minecraft.creativetab.CreativeTabs, java.util.List) 2'>
@@ -556,6 +565,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.block.Block net.minecraft.block.Block disableStats()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockTrapDoor void onBlockClicked(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -605,13 +617,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockDoublePlant java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockLiquid void func_149799_m(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDirt void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockPane net.minecraft.item.ItemStack createStackedBlock(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockCauldron void onEntityCollidedWithBlock(net.minecraft.world.World, int, int, int, net.minecraft.entity.Entity) 0'>
@@ -638,6 +650,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.Block net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockTorch void randomDisplayTick(net.minecraft.world.World, int, int, int, java.util.Random) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -661,6 +676,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.block.Block net.minecraft.block.Block setTickRandomly(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockBrewingStand void addCollisionBoxesToList(net.minecraft.world.World, int, int, int, net.minecraft.util.AxisAlignedBB, java.util.List, net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -716,12 +734,6 @@
     <item name='net.minecraft.block.BlockEndPortal BlockEndPortal(net.minecraft.block.material.Material) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockLeaves java.lang.String[] func_150125_e()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.block.BlockSkull void onBlockHarvested(net.minecraft.world.World, int, int, int, int, net.minecraft.entity.player.EntityPlayer) 5'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -744,9 +756,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.Block void dropBlockAsItem(net.minecraft.world.World, int, int, int, net.minecraft.item.ItemStack) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockEndPortal net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.Block net.minecraft.item.Item getItem(net.minecraft.world.World, int, int, int) 0'>
@@ -782,9 +791,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockWoodSlab net.minecraft.item.ItemStack createStackedBlock(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockGlowstone net.minecraft.item.Item getItemDropped(int, java.util.Random, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -795,6 +801,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockStairs net.minecraft.util.MovingObjectPosition collisionRayTrace(net.minecraft.world.World, int, int, int, net.minecraft.util.Vec3, net.minecraft.util.Vec3) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockSand net.minecraft.block.material.MapColor getMapColor(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockBrewingStand int getComparatorInputOverride(net.minecraft.world.World, int, int, int, int) 0'>
@@ -811,6 +820,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.block.Block net.minecraft.item.ItemStack createStackedBlock(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockSign net.minecraft.item.Item getItem(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -833,12 +845,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.material.MapColor getMapColor(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.block.BlockNewLeaf field_150132_N'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -852,6 +858,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockTrapDoor void setBlockBoundsBasedOnState(net.minecraft.world.IBlockAccess, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockCarpet net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDoor void onBlockClicked(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer) 0'>
@@ -929,9 +938,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockCactus net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockCommandBlock boolean onBlockActivated(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer, int, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -968,14 +974,14 @@
     <item name='net.minecraft.block.BlockTripWire void onEntityCollidedWithBlock(net.minecraft.world.World, int, int, int, net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockCommandBlock net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockSkull java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockEnderChest net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockOre net.minecraft.item.Item getItemDropped(int, java.util.Random, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1043,17 +1049,11 @@
     <item name='net.minecraft.block.BlockNewLog void getSubBlocks(net.minecraft.item.Item, net.minecraft.creativetab.CreativeTabs, java.util.List) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockJukebox net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockStairs void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockTallGrass java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockTallGrass boolean func_149852_a(net.minecraft.world.World, java.util.Random, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1064,10 +1064,10 @@
     <item name='net.minecraft.block.BlockStem int colorMultiplier(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockCocoa void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
+    <item name='net.minecraft.block.BlockNote net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockMobSpawner net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+    <item name='net.minecraft.block.BlockCocoa void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockPackedIce int quantityDropped(java.util.Random) 0'>
@@ -1100,17 +1100,17 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.Block.SoundType java.lang.String func_150496_b()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.block.Block net.minecraft.block.Block getBlockFromName(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDoor boolean canPlaceBlockAt(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.Block.SoundType java.lang.String getBreakSound()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.block.BlockWall boolean canConnectWallTo(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1153,6 +1153,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.block.BlockCactus net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockFire net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1215,9 +1218,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockEndPortalFrame int getComparatorInputOverride(net.minecraft.world.World, int, int, int, int) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockRedstoneOre net.minecraft.item.ItemStack createStackedBlock(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDoor void onBlockClicked(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer) 4'>
@@ -1313,9 +1313,6 @@
     <item name='net.minecraft.block.BlockRedstoneDiode int isProvidingStrongPower(net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockFurnace net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockDoor net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1323,6 +1320,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDeadBush java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockEnchantmentTable net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockRail void func_150048_a(net.minecraft.world.World, int, int, int, int, int, net.minecraft.block.Block) 0'>
@@ -1374,9 +1374,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.block.BlockFurnace boolean onBlockActivated(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer, int, float, float, float) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockHardenedClay net.minecraft.block.material.MapColor getMapColor(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockRedstoneRepeater net.minecraft.item.Item getItem(net.minecraft.world.World, int, int, int) 0'>
@@ -1484,6 +1481,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockRotatedPillar net.minecraft.item.ItemStack createStackedBlock(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockFlowerPot java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1547,6 +1547,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockChest net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockTNT int quantityDropped(java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -1598,13 +1601,19 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockDispenser net.minecraft.dispenser.IBehaviorDispenseItem func_149940_a(net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
     <item name='net.minecraft.block.BlockStairs void setBlockBoundsBasedOnState(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.Block net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+    <item name='net.minecraft.block.BlockEndPortal net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockCrops boolean canPlaceBlockOn(net.minecraft.block.Block) 0'>
@@ -1624,6 +1633,12 @@
     </item>
     <item name='net.minecraft.block.BlockPistonBase void onNeighborBlockChange(net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.Block net.minecraft.block.material.MapColor getMapColor(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.block.BlockRailPowered void func_150048_a(net.minecraft.world.World, int, int, int, int, int, net.minecraft.block.Block) 6'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1670,6 +1685,9 @@
     <item name='net.minecraft.block.BlockTorch boolean func_150108_b(net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockDispenser net.minecraft.dispenser.IPosition func_149939_a(net.minecraft.dispenser.IBlockSource)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockMobSpawner net.minecraft.item.Item getItem(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -1689,9 +1707,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockButton int isProvidingWeakPower(net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockCactus net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockOldLeaf field_150130_N'>
@@ -1733,9 +1748,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockStem java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockCommandBlock void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -1768,6 +1780,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.block.BlockQuartz net.minecraft.item.ItemStack createStackedBlock(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockPistonMoving boolean onBlockActivated(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer, int, float, float, float) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1808,10 +1823,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.Block setBlockName(java.lang.String)'>
+    <item name='net.minecraft.block.BlockCake boolean canPlaceBlockAt(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockCake boolean canPlaceBlockAt(net.minecraft.world.World, int, int, int) 0'>
+    <item name='net.minecraft.block.BlockSkull java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockBrewingStand void breakBlock(net.minecraft.world.World, int, int, int, net.minecraft.block.Block, int) 0'>
@@ -1967,6 +1982,9 @@
     <item name='net.minecraft.block.BlockBasePressurePlate void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockFurnace net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockDoor void setBlockBoundsBasedOnState(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1981,9 +1999,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockDispenser net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockPistonExtension void onBlockHarvested(net.minecraft.world.World, int, int, int, int, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -2012,6 +2027,9 @@
     <item name='net.minecraft.block.BlockBrewingStand void randomDisplayTick(net.minecraft.world.World, int, int, int, java.util.Random) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockBrewingStand net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockStaticLiquid void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -2036,14 +2054,17 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockNetherrack net.minecraft.block.material.MapColor getMapColor(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockRedstoneOre net.minecraft.item.ItemStack createStackedBlock(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockDoublePlant net.minecraft.item.Item getItemDropped(int, java.util.Random, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockFire net.minecraft.block.material.MapColor getMapColor(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockEndPortalFrame void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -2129,6 +2150,9 @@
     <item name='net.minecraft.block.BlockFurnace void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockPane net.minecraft.item.ItemStack createStackedBlock(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.Block boolean isReplaceable(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -2157,9 +2181,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.block.BlockRedstoneOre void onEntityWalking(net.minecraft.world.World, int, int, int, net.minecraft.entity.Entity) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockCactus net.minecraft.block.Block getPlant(net.minecraft.world.IBlockAccess, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockFurnace int getComparatorInputOverride(net.minecraft.world.World, int, int, int, int) 0'>
@@ -2219,6 +2240,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockStairs net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockReed boolean canBlockStay(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -2267,9 +2291,6 @@
     <item name='net.minecraft.block.BlockLever void setBlockBoundsBasedOnState(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockLadder net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockTripWire void setBlockBoundsBasedOnState(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -2306,6 +2327,12 @@
     <item name='net.minecraft.block.BlockGlowstone BlockGlowstone(net.minecraft.block.material.Material) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockHopper java.lang.String getItemIconName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.Block net.minecraft.block.Block setBlockUnbreakable()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockLeaves void dropBlockAsItemWithChance(net.minecraft.world.World, int, int, int, int, float, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -2336,6 +2363,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockBush net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.Block void velocityToAddToEntity(net.minecraft.world.World, int, int, int, net.minecraft.entity.Entity, net.minecraft.util.Vec3) 5'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -2363,16 +2393,13 @@
     <item name='net.minecraft.block.Block boolean removedByPlayer(net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockSilverfish org.apache.commons.lang3.tuple.ImmutablePair func_150197_b(int)'>
+    <item name='net.minecraft.block.BlockFlowerPot net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockSnowBlock void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockDoor net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockBush net.minecraft.block.Block getPlant(net.minecraft.world.IBlockAccess, int, int, int)'>
+    <item name='net.minecraft.block.BlockQuartz net.minecraft.block.material.MapColor getMapColor(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockTNT void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
@@ -2385,6 +2412,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockPistonExtension void addCollisionBoxesToList(net.minecraft.world.World, int, int, int, net.minecraft.util.AxisAlignedBB, java.util.List, net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockReed net.minecraft.block.Block getPlant(net.minecraft.world.IBlockAccess, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.Block void harvestBlock(net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer, int, int, int, int) 1'>
@@ -2420,6 +2450,9 @@
     <item name='net.minecraft.block.BlockDirt int getDamageValue(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockWall net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockCocoa void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 5'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -2446,9 +2479,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockDaylightDetector net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDragonEgg void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -2501,6 +2531,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockDropper net.minecraft.dispenser.IBehaviorDispenseItem func_149940_a(net.minecraft.item.ItemStack)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockHay void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -2512,6 +2545,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.block.BlockPistonMoving java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockSilverfish field_150198_a'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -2537,9 +2573,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockGlowstone net.minecraft.block.material.MapColor getMapColor(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockCocoa void onNeighborBlockChange(net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -2558,12 +2591,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.Block setBlockTextureName(java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockDoublePlant java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockFurnace void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -2577,9 +2604,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.block.BlockChest void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockColored net.minecraft.block.material.MapColor getMapColor(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockRedstoneComparator void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 4'>
@@ -2627,19 +2651,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockStoneSlab net.minecraft.item.ItemStack createStackedBlock(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockCauldron void addCollisionBoxesToList(net.minecraft.world.World, int, int, int, net.minecraft.util.AxisAlignedBB, java.util.List, net.minecraft.entity.Entity) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDoor boolean getBlocksMovement(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockRedstoneDiode boolean canBlockStay(net.minecraft.world.World, int, int, int) 0'>
+    <item name='net.minecraft.block.BlockPistonBase net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.Block setHardness(float)'>
+    <item name='net.minecraft.block.BlockRedstoneDiode boolean canBlockStay(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockNetherWart void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 4'>
@@ -2663,7 +2684,7 @@
     <item name='net.minecraft.block.BlockDoublePlant void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockLeaves java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
+    <item name='net.minecraft.block.BlockPistonMoving net.minecraft.tileentity.TileEntity getTileEntity(net.minecraft.block.Block, int, int, boolean, boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockStairs void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 0'>
@@ -2738,6 +2759,9 @@
     <item name='net.minecraft.block.BlockSandStone void getSubBlocks(net.minecraft.item.Item, net.minecraft.creativetab.CreativeTabs, java.util.List) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockHopper net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockRedstoneComparator boolean onBlockActivated(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer, int, float, float, float) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -2798,6 +2822,9 @@
     <item name='net.minecraft.block.BlockCommandBlock void onNeighborBlockChange(net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockTrapDoor net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockWood void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -2816,6 +2843,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockNetherWart java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockButton int onBlockPlaced(net.minecraft.world.World, int, int, int, int, float, float, float, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -2825,13 +2855,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockSnow net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockChest void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 5'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.Block setCreativeTab(net.minecraft.creativetab.CreativeTabs)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockColored void getSubBlocks(net.minecraft.item.Item, net.minecraft.creativetab.CreativeTabs, java.util.List) 2'>
@@ -2864,7 +2888,7 @@
     <item name='net.minecraft.block.BlockButton boolean onBlockActivated(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer, int, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockDoor net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+    <item name='net.minecraft.block.BlockObsidian net.minecraft.block.material.MapColor getMapColor(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockFlowerPot void breakBlock(net.minecraft.world.World, int, int, int, net.minecraft.block.Block, int) 0'>
@@ -2912,12 +2936,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.Block.SoundType java.lang.String getBreakSound()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.block.BlockBed void onBlockHarvested(net.minecraft.world.World, int, int, int, int, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -2945,13 +2963,16 @@
     <item name='net.minecraft.block.BlockFire void randomDisplayTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockBasePressurePlate net.minecraft.util.AxisAlignedBB func_150061_a(int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockCrops net.minecraft.item.Item getItemDropped(int, java.util.Random, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockQuartz net.minecraft.item.ItemStack createStackedBlock(int)'>
+    <item name='net.minecraft.block.Block net.minecraft.block.Block setBlockName(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDispenser void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 4'>
@@ -2987,6 +3008,9 @@
     <item name='net.minecraft.block.BlockQuartz void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockTallGrass java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockSnow boolean shouldSideBeRendered(net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -3011,11 +3035,11 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockDropper net.minecraft.dispenser.IBehaviorDispenseItem func_149940_a(net.minecraft.item.ItemStack)'>
+    <item name='net.minecraft.block.Block.SoundType java.lang.String func_150496_b()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockCarpet net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.block.BlockSapling field_149882_a'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -3080,9 +3104,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockNetherrack net.minecraft.block.material.MapColor getMapColor(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockDispenser void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 5'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -3125,6 +3146,9 @@
     <item name='net.minecraft.block.Block void addCollisionBoxesToList(net.minecraft.world.World, int, int, int, net.minecraft.util.AxisAlignedBB, java.util.List, net.minecraft.entity.Entity) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockRedstoneLight net.minecraft.item.ItemStack createStackedBlock(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockLeaves void harvestBlock(net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -3162,6 +3186,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockMushroom boolean func_149852_a(net.minecraft.world.World, java.util.Random, int, int, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockCake net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDispenser void onNeighborBlockChange(net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 0'>
@@ -3248,12 +3275,6 @@
     <item name='net.minecraft.block.BlockTNT void onNeighborBlockChange(net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockDispenser net.minecraft.dispenser.IBehaviorDispenseItem func_149940_a(net.minecraft.item.ItemStack)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.block.BlockMycelium net.minecraft.item.Item getItemDropped(int, java.util.Random, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -3280,9 +3301,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockDispenser net.minecraft.dispenser.IPosition func_149939_a(net.minecraft.dispenser.IBlockSource)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockFire void randomDisplayTick(net.minecraft.world.World, int, int, int, java.util.Random) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -3317,7 +3335,7 @@
     <item name='net.minecraft.block.BlockMelon void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockSand net.minecraft.block.material.MapColor getMapColor(int)'>
+    <item name='net.minecraft.block.BlockLadder net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockFenceGate void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
@@ -3395,9 +3413,6 @@
     <item name='net.minecraft.block.BlockPistonMoving void onNeighborBlockChange(net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockEnchantmentTable net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockQuartz field_150191_a'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -3431,9 +3446,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockPistonBase net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockStairs void onBlockAdded(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -3463,9 +3475,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.Block net.minecraft.item.ItemStack createStackedBlock(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDeadBush boolean canPlaceBlockOn(net.minecraft.block.Block) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -3512,13 +3521,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockLilyPad net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockFurnace void onBlockAdded(net.minecraft.world.World, int, int, int) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockLadder net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockVine int quantityDropped(java.util.Random) 0'>
@@ -3530,17 +3533,11 @@
     <item name='net.minecraft.block.BlockPistonExtension void onNeighborBlockChange(net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockDropper net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockFarmland void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockRedstoneComparator net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockEnchantmentTable void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -3581,6 +3578,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockJukebox net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.Block int isProvidingStrongPower(net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -3593,9 +3593,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.Block net.minecraftforge.common.util.ForgeDirection[] getValidRotations(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockRedstoneTorch int isProvidingStrongPower(net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -3607,9 +3604,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.Block setLightLevel(float)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockStoneSlab net.minecraft.item.Item getItemDropped(int, java.util.Random, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -3641,11 +3635,17 @@
     <item name='net.minecraft.block.BlockTNT void onBlockDestroyedByPlayer(net.minecraft.world.World, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.Block net.minecraft.block.Block setStepSound(net.minecraft.block.Block.SoundType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockDispenser void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.block.BlockOldLeaf java.lang.String[] func_150125_e()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockRedstoneTorch void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -3663,9 +3663,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockFlowerPot int getDamageValue(net.minecraft.world.World, int, int, int) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockTrapDoor net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockReed net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int) 0'>
@@ -3737,12 +3734,6 @@
     <item name='net.minecraft.block.BlockRedstoneLight void onBlockAdded(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.Block setLightOpacity(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockSkull net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockTorch boolean canPlaceBlockAt(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -3770,12 +3761,6 @@
     <item name='net.minecraft.block.BlockGlowstone int quantityDroppedWithBonus(int, java.util.Random) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockLeaves java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockCake net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.Block void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -3783,6 +3768,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.block.BlockHopper void onNeighborBlockChange(net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockDirt net.minecraft.item.ItemStack createStackedBlock(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDirt net.minecraft.util.IIcon getIcon(net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
@@ -3818,9 +3806,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.Block java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockFalling void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -3833,10 +3818,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockLadder net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int) 0'>
+    <item name='net.minecraft.block.BlockBeacon net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.Block setResistance(float)'>
+    <item name='net.minecraft.block.BlockLadder net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockFlower field_149859_a'>
@@ -3847,9 +3832,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockBush net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.Block void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 5'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -3884,6 +3866,9 @@
     <item name='net.minecraft.block.BlockDoublePlant int getDamageValue(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockEndPortal net.minecraft.block.material.MapColor getMapColor(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockRedstoneOre int quantityDroppedWithBonus(int, java.util.Random) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -3894,6 +3879,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.block.BlockReed boolean canPlaceBlockAt(net.minecraft.world.World, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockTallGrass java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockStaticLiquid BlockStaticLiquid(net.minecraft.block.material.Material) 0'>
@@ -3912,9 +3900,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.block.BlockCauldron void fillWithRain(net.minecraft.world.World, int, int, int) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockLeaves net.minecraft.item.ItemStack createStackedBlock(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockBed void onNeighborBlockChange(net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 0'>
@@ -3956,9 +3941,6 @@
     <item name='net.minecraft.block.BlockSilverfish void dropBlockAsItemWithChance(net.minecraft.world.World, int, int, int, int, float, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockChest net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockContainer boolean onBlockEventReceived(net.minecraft.world.World, int, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -3967,6 +3949,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.block.BlockReed net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockWoodSlab net.minecraft.item.Item getItemDropped(int, java.util.Random, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -3990,9 +3975,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockFence boolean onBlockActivated(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer, int, float, float, float) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockRotatedPillar net.minecraft.item.ItemStack createStackedBlock(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockGrass net.minecraft.item.Item getItemDropped(int, java.util.Random, int) 1'>
@@ -4019,6 +4001,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockSoulSand net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockLeaves void randomDisplayTick(net.minecraft.world.World, int, int, int, java.util.Random) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -4037,10 +4022,10 @@
     <item name='net.minecraft.block.BlockBasePressurePlate void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockTripWireHook void setBlockBoundsBasedOnState(net.minecraft.world.IBlockAccess, int, int, int) 0'>
+    <item name='net.minecraft.block.BlockSilverfish net.minecraft.item.ItemStack createStackedBlock(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockCommandBlock net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+    <item name='net.minecraft.block.BlockTripWireHook void setBlockBoundsBasedOnState(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.Block void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 0'>
@@ -4079,6 +4064,12 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockLadder net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.Block net.minecraft.block.Block setLightOpacity(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockDeadBush void harvestBlock(net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer, int, int, int, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -4107,6 +4098,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.block.BlockRailPowered boolean func_150057_a(net.minecraft.world.World, int, int, int, boolean, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockFarmland net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockRedstoneOre void randomDisplayTick(net.minecraft.world.World, int, int, int, java.util.Random) 4'>
@@ -4151,10 +4145,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.Block setStepSound(net.minecraft.block.Block.SoundType)'>
+    <item name='net.minecraft.block.BlockRailDetector int isProvidingWeakPower(net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockRailDetector int isProvidingWeakPower(net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
+    <item name='net.minecraft.block.BlockNewLeaf java.lang.String[] func_150125_e()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.Block boolean canPlaceBlockAt(net.minecraft.world.World, int, int, int) 0'>
@@ -4223,9 +4217,6 @@
     <item name='net.minecraft.block.BlockFire boolean canCatchFire(net.minecraft.world.IBlockAccess, int, int, int, net.minecraftforge.common.util.ForgeDirection) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockNetherWart java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockBrewingStand boolean onBlockActivated(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer, int, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -4236,9 +4227,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockPistonBase boolean onBlockEventReceived(net.minecraft.world.World, int, int, int, int, int) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockSilverfish net.minecraft.item.ItemStack createStackedBlock(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockTallGrass boolean canBlockStay(net.minecraft.world.World, int, int, int) 0'>
@@ -4256,7 +4244,7 @@
     <item name='net.minecraft.block.BlockRedstoneWire void onNeighborBlockChange(net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockReed net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess, int, int, int)'>
+    <item name='net.minecraft.block.BlockEnderChest net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockRedstoneDiode void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
@@ -4292,19 +4280,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockNote net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockSandStone void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockSlab int getDamageValue(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockCauldron void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
+    <item name='net.minecraft.block.BlockCake net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockFarmland net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+    <item name='net.minecraft.block.BlockCauldron void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockMushroom void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 4'>
@@ -4346,23 +4331,20 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.Block setTickRandomly(boolean)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockFlowerPot void harvestBlock(net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer, int, int, int, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockRedstoneComparator net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockCarpet net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockFlowerPot net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockRailBase net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -4382,14 +4364,14 @@
     <item name='net.minecraft.block.BlockBed void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockDropper net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockIce int quantityDropped(java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockStairs net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockAnvil void setBlockBoundsBasedOnState(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -4433,7 +4415,13 @@
     <item name='net.minecraft.block.BlockCocoa boolean canBlockStay(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockPistonMoving net.minecraft.tileentity.TileEntity getTileEntity(net.minecraft.block.Block, int, int, boolean, boolean)'>
+    <item name='net.minecraft.block.BlockLeaves java.lang.String[] func_150125_e()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.block.BlockSilverfish org.apache.commons.lang3.tuple.ImmutablePair func_150197_b(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockRedstoneLight void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
@@ -4496,16 +4484,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockReed net.minecraft.block.Block getPlant(net.minecraft.world.IBlockAccess, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockDispenser dispenseBehaviorRegistry'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockDoor void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
+    <item name='net.minecraft.block.BlockDoor net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockSoulSand net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+    <item name='net.minecraft.block.BlockDoor void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockIce void harvestBlock(net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer, int, int, int, int) 0'>
@@ -4529,6 +4514,9 @@
     <item name='net.minecraft.block.BlockJukebox void breakBlock(net.minecraft.world.World, int, int, int, net.minecraft.block.Block, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockGlowstone net.minecraft.block.material.MapColor getMapColor(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockSign void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -4541,9 +4529,6 @@
     <item name='net.minecraft.block.Block int getBedDirection(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockBasePressurePlate net.minecraft.util.AxisAlignedBB func_150061_a(int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockTNT void func_150114_a(net.minecraft.world.World, int, int, int, int, net.minecraft.entity.EntityLivingBase) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -4552,9 +4537,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockWall net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockBrewingStand boolean onBlockActivated(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer, int, float, float, float) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -4595,6 +4577,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.Block net.minecraft.block.Block setCreativeTab(net.minecraft.creativetab.CreativeTabs)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockCactus void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -4631,6 +4616,9 @@
     <item name='net.minecraft.block.BlockRedstoneDiode boolean isGettingInput(net.minecraft.world.World, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockVine java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockLilyPad boolean canBlockStay(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -4658,16 +4646,13 @@
     <item name='net.minecraft.block.BlockStem void setBlockBoundsBasedOnState(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockObsidian net.minecraft.block.material.MapColor getMapColor(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockAnvil void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDoublePlant int func_149885_e(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockOldLeaf java.lang.String[] func_150125_e()'>
+    <item name='net.minecraft.block.BlockBush net.minecraft.block.Block getPlant(net.minecraft.world.IBlockAccess, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockMushroom void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
@@ -4677,9 +4662,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.block.BlockBush BlockBush(net.minecraft.block.material.Material) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockHopper net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockSapling void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
@@ -4745,6 +4727,12 @@
     <item name='net.minecraft.block.BlockBasePressurePlate int isProvidingWeakPower(net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockSnow net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockColored net.minecraft.block.material.MapColor getMapColor(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockDropper net.minecraft.dispenser.IBehaviorDispenseItem func_149940_a(net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -4766,7 +4754,13 @@
     <item name='net.minecraft.block.BlockLeaves void updateTick(net.minecraft.world.World, int, int, int, java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockCactus net.minecraft.util.AxisAlignedBB getSelectedBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockPistonBase net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockWoodSlab net.minecraft.item.ItemStack createStackedBlock(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockGlass BlockGlass(net.minecraft.block.material.Material, boolean) 0'>
@@ -4783,6 +4777,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.block.Block net.minecraft.block.Block setBlockTextureName(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockFire void onBlockAdded(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -4847,9 +4844,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.BlockCake net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockBeacon void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -4874,6 +4868,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockLeaves java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockTripWire net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -4885,9 +4882,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockRedstoneLight net.minecraft.item.ItemStack createStackedBlock(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockSign void onNeighborBlockChange(net.minecraft.world.World, int, int, int, net.minecraft.block.Block) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -4934,26 +4928,17 @@
     <item name='net.minecraft.block.BlockQuartz void getSubBlocks(net.minecraft.item.Item, net.minecraft.creativetab.CreativeTabs, java.util.List) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockPistonMoving java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockCake int quantityDropped(java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.material.Material getMaterial()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockVine net.minecraft.item.Item getItemDropped(int, java.util.Random, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.block.BlockEndPortal net.minecraft.block.material.MapColor getMapColor(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockPumpkin void onBlockPlacedBy(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase, net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -4969,6 +4954,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.block.BlockMobSpawner net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockRedstoneOre void onBlockClicked(net.minecraft.world.World, int, int, int, net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -5015,6 +5003,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockStem java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockLeaves int quantityDropped(java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -5030,6 +5021,9 @@
     <item name='net.minecraft.block.BlockRedstoneOre void dropBlockAsItemWithChance(net.minecraft.world.World, int, int, int, int, float, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.Block net.minecraft.block.Block setHardness(float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockOldLog field_150168_M'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -5037,6 +5031,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDirectional BlockDirectional(net.minecraft.block.material.Material) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockStoneSlab net.minecraft.item.ItemStack createStackedBlock(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockFenceGate net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int) 0'>
@@ -5081,6 +5078,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.block.BlockLilyPad net.minecraft.util.AxisAlignedBB getCollisionBoundingBoxFromPool(net.minecraft.world.World, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockCake void setBlockBoundsBasedOnState(net.minecraft.world.IBlockAccess, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -5109,6 +5109,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDoublePlant void checkAndDropBlock(net.minecraft.world.World, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockHardenedClay net.minecraft.block.material.MapColor getMapColor(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockRedstoneDiode void onBlockDestroyedByPlayer(net.minecraft.world.World, int, int, int, int) 0'>
@@ -5183,9 +5186,6 @@
     <item name='net.minecraft.block.BlockTallGrass java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockQuartz net.minecraft.block.material.MapColor getMapColor(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockFalling void onBlockAdded(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -5199,9 +5199,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockPistonBase int determineOrientation(net.minecraft.world.World, int, int, int, net.minecraft.entity.EntityLivingBase) 4'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockSkull java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; getDrops(net.minecraft.world.World, int, int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockChest int isProvidingWeakPower(net.minecraft.world.IBlockAccess, int, int, int, int) 0'>
@@ -5248,6 +5245,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.block.BlockCactus net.minecraft.block.Block getPlant(net.minecraft.world.IBlockAccess, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockDispenser void breakBlock(net.minecraft.world.World, int, int, int, net.minecraft.block.Block, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -5339,10 +5339,16 @@
     <item name='net.minecraft.block.BlockSapling boolean func_149852_a(net.minecraft.world.World, java.util.Random, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockDaylightDetector net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockDispenser void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockStoneSlab void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.block.BlockFire net.minecraft.block.material.MapColor getMapColor(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockSilverfish void onBlockDestroyedByPlayer(net.minecraft.world.World, int, int, int, int) 0'>
@@ -5423,6 +5429,9 @@
     <item name='net.minecraft.block.Block Block(net.minecraft.block.material.Material) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.block.BlockDispenser net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.block.BlockSapling boolean func_149852_a(net.minecraft.world.World, java.util.Random, int, int, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -5468,12 +5477,6 @@
     <item name='net.minecraft.block.BlockCarpet boolean canPlaceBlockAt(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.Block net.minecraft.block.Block disableStats()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockBrewingStand net.minecraft.tileentity.TileEntity createNewTileEntity(net.minecraft.world.World, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.block.BlockTripWireHook void onPostBlockPlaced(net.minecraft.world.World, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -5496,9 +5499,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.block.BlockFenceGate boolean canPlaceBlockAt(net.minecraft.world.World, int, int, int) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.block.BlockDeadBush java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockFlowerPot boolean removedByPlayer(net.minecraft.world.World, net.minecraft.entity.player.EntityPlayer, int, int, int, boolean) 0'>

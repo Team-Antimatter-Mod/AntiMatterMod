@@ -17,9 +17,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.model.ModelRenderer net.minecraft.client.model.ModelRenderer setTextureOffset(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.model.ModelSheep1 void setLivingAnimations(net.minecraft.entity.EntityLivingBase, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -50,7 +47,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.model.ModelBox net.minecraft.client.model.ModelBox func_78244_a(java.lang.String)'>
+    <item name='net.minecraft.client.model.ModelRenderer net.minecraft.client.model.ModelRenderer addBox(float, float, float, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.model.ModelRenderer ModelRenderer(net.minecraft.client.model.ModelBase) 0'>
@@ -75,6 +72,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.client.model.ModelHorse void render(net.minecraft.entity.Entity, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.model.PositionTextureVertex net.minecraft.client.model.PositionTextureVertex setTexturePosition(float, float)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.model.ModelBat void render(net.minecraft.entity.Entity, float, float, float, float, float, float) 0'>
@@ -112,9 +112,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.client.model.ModelRenderer net.minecraft.client.model.ModelRenderer setTextureSize(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.model.ModelEnderman void setRotationAngles(float, float, float, float, float, float, net.minecraft.entity.Entity) 6'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -173,6 +170,9 @@
     <item name='net.minecraft.client.model.ModelIronGolem void setLivingAnimations(net.minecraft.entity.EntityLivingBase, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.model.ModelBox net.minecraft.client.model.ModelBox func_78244_a(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.model.ModelCreeper void setRotationAngles(float, float, float, float, float, float, net.minecraft.entity.Entity) 6'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -194,17 +194,11 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.model.ModelRenderer net.minecraft.client.model.ModelRenderer addBox(float, float, float, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.model.ModelEnderCrystal void render(net.minecraft.entity.Entity, float, float, float, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.client.model.ModelRenderer net.minecraft.client.model.ModelRenderer addBox(java.lang.String, float, float, float, int, int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.model.ModelSilverfish void setRotationAngles(float, float, float, float, float, float, net.minecraft.entity.Entity) 6'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -254,9 +248,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.model.PositionTextureVertex net.minecraft.client.model.PositionTextureVertex setTexturePosition(float, float)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.model.ModelBiped void render(net.minecraft.entity.Entity, float, float, float, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -282,6 +273,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.client.model.ModelDragon void render(net.minecraft.entity.Entity, float, float, float, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.model.ModelRenderer net.minecraft.client.model.ModelRenderer addBox(java.lang.String, float, float, float, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.model.ModelSheep1 void setRotationAngles(float, float, float, float, float, float, net.minecraft.entity.Entity) 6'>
@@ -322,6 +316,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.client.model.ModelRenderer net.minecraft.client.model.ModelRenderer setTextureOffset(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.model.ModelSkeleton void setLivingAnimations(net.minecraft.entity.EntityLivingBase, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -391,5 +388,8 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.client.model.ModelRenderer net.minecraft.client.model.ModelRenderer setTextureSize(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

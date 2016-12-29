@@ -1,0 +1,8 @@
+<root>
+    <item name='com.mojang.authlib.yggdrasil.response.ProfileSearchResultsResponse.Serializer java.lang.Object deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.authlib.yggdrasil.response.ProfileSearchResultsResponse.Serializer com.mojang.authlib.yggdrasil.response.ProfileSearchResultsResponse deserialize(com.google.gson.JsonElement, java.lang.reflect.Type, com.google.gson.JsonDeserializationContext)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

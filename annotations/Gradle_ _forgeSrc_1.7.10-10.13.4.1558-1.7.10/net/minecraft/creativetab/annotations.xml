@@ -2,16 +2,13 @@
     <item name='net.minecraft.creativetab.CreativeTabs tabDecorations'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.creativetab.CreativeTabs net.minecraft.creativetab.CreativeTabs setBackgroundImageName(java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.creativetab.CreativeTabs net.minecraft.creativetab.CreativeTabs func_111229_a(net.minecraft.enchantment.EnumEnchantmentType...)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.creativetab.CreativeTabs tabTransport'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.creativetab.CreativeTabs tabBlock'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.creativetab.CreativeTabs net.minecraft.creativetab.CreativeTabs func_111229_a(net.minecraft.enchantment.EnumEnchantmentType...)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.creativetab.CreativeTabs net.minecraft.creativetab.CreativeTabs setNoTitle()'>
@@ -20,13 +17,16 @@
     <item name='net.minecraft.creativetab.CreativeTabs tabFood'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.creativetab.CreativeTabs net.minecraft.creativetab.CreativeTabs setNoScrollbar()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.creativetab.CreativeTabs tabMaterials'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.creativetab.CreativeTabs tabRedstone'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.creativetab.CreativeTabs net.minecraft.creativetab.CreativeTabs setNoScrollbar()'>
+    <item name='net.minecraft.creativetab.CreativeTabs net.minecraft.creativetab.CreativeTabs setBackgroundImageName(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.creativetab.CreativeTabs tabBrewing'>

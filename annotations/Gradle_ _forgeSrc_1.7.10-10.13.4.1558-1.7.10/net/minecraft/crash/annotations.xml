@@ -2,19 +2,19 @@
     <item name='net.minecraft.crash.CrashReportCategory void func_147153_a(net.minecraft.crash.CrashReportCategory, int, int, int, net.minecraft.block.Block, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.crash.CrashReport net.minecraft.crash.CrashReportCategory makeCategoryDepth(java.lang.String, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.crash.CrashReport void getSectionsInStringBuilder(java.lang.StringBuilder) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.crash.CrashReportCategory void appendToStringBuilder(java.lang.StringBuilder) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.crash.CrashReport net.minecraft.crash.CrashReportCategory getCategory()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.crash.CrashReport net.minecraft.crash.CrashReportCategory makeCategoryDepth(java.lang.String, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.crash.CrashReport net.minecraft.crash.CrashReportCategory makeCategory(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.crash.CrashReport net.minecraft.crash.CrashReportCategory getCategory()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

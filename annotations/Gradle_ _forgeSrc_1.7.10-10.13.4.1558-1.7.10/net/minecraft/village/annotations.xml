@@ -5,9 +5,6 @@
     <item name='net.minecraft.village.MerchantRecipeList net.minecraft.village.MerchantRecipeList func_151390_b(net.minecraft.network.PacketBuffer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.village.MerchantRecipeList net.minecraft.nbt.NBTTagCompound getRecipiesAsTags()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.village.VillageCollection void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -20,7 +17,7 @@
     <item name='net.minecraft.village.Village void writeVillageDataToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.village.Village net.minecraft.util.ChunkCoordinates getCenter()'>
+    <item name='net.minecraft.village.MerchantRecipeList net.minecraft.nbt.NBTTagCompound getRecipiesAsTags()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.village.Village void addVillageDoorInfo(net.minecraft.village.VillageDoorInfo) 0'>
@@ -29,7 +26,7 @@
     <item name='net.minecraft.village.MerchantRecipeList void readRecipiesFromTags(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.village.Village java.util.List getVillageDoorInfoList()'>
+    <item name='net.minecraft.village.MerchantRecipe net.minecraft.nbt.NBTTagCompound writeToTags()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.village.MerchantRecipeList void func_151391_a(net.minecraft.network.PacketBuffer) 0'>
@@ -41,19 +38,22 @@
     <item name='net.minecraft.village.MerchantRecipeList net.minecraft.village.MerchantRecipeList func_151390_b(net.minecraft.network.PacketBuffer)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.village.Village net.minecraft.util.ChunkCoordinates getCenter()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.village.VillageCollection java.util.List getVillageList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.village.Village java.util.List getVillageDoorInfoList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.village.MerchantRecipeList MerchantRecipeList(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.village.MerchantRecipe void readFromTags(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.village.MerchantRecipe net.minecraft.nbt.NBTTagCompound writeToTags()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.village.VillageCollection void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.village.VillageCollection java.util.List getVillageList()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

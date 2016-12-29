@@ -50,16 +50,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.gen.structure.StructureComponent net.minecraft.nbt.NBTTagCompound func_143010_b()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.gen.structure.StructureMineshaftPieces.Cross Cross(int, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox, int) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Crossing void func_143012_a(net.minecraft.nbt.NBTTagCompound) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.structure.MapGenScatteredFeature net.minecraft.world.gen.structure.StructureStart getStructureStart(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Stairs boolean addComponentParts(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox) 1'>
@@ -107,7 +101,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.gen.structure.StructureVillagePieces java.util.List getStructureVillageWeightedPieceList(java.util.Random, int)'>
+    <item name='net.minecraft.world.gen.structure.MapGenScatteredFeature java.lang.String func_143025_a()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.MapGenScatteredFeature MapGenScatteredFeature(java.util.Map) 0'>
@@ -137,13 +131,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.gen.structure.MapGenStronghold java.util.List getCoordList()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.gen.structure.StructureComponent void func_143009_a(net.minecraft.world.World, net.minecraft.nbt.NBTTagCompound) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.structure.MapGenMineshaft java.lang.String func_143025_a()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.ComponentScatteredFeaturePieces.DesertPyramid boolean addComponentParts(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox) 2'>
@@ -151,9 +139,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.world.gen.structure.MapGenVillage java.lang.String func_143025_a()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureNetherBridgePieces.Crossing3 boolean addComponentParts(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -182,7 +167,7 @@
     <item name='net.minecraft.world.gen.structure.StructureVillagePieces.Village void placeBlockAtCurrentPosition(net.minecraft.world.World, net.minecraft.block.Block, int, int, int, int, net.minecraft.world.gen.structure.StructureBoundingBox) 6'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Stronghold net.minecraft.world.gen.structure.StructureStrongholdPieces.Stronghold.Door getRandomDoor(java.util.Random)'>
+    <item name='net.minecraft.world.gen.structure.MapGenNetherBridge net.minecraft.world.gen.structure.StructureStart getStructureStart(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureNetherBridgePieces.Start void func_143011_b(net.minecraft.nbt.NBTTagCompound) 0'>
@@ -251,12 +236,6 @@
     <item name='net.minecraft.world.gen.structure.StructureNetherBridgePieces.Corridor4 void buildComponent(net.minecraft.world.gen.structure.StructureComponent, java.util.List, java.util.Random) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.structure.MapGenStructure java.lang.String func_143025_a()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.world.gen.structure.StructureComponent boolean addComponentParts(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -271,6 +250,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.world.gen.structure.StructureBoundingBox net.minecraft.nbt.NBTTagIntArray func_151535_h()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureMineshaftPieces.Room boolean addComponentParts(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -288,9 +270,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureVillagePieces.Field2 void func_143012_a(net.minecraft.nbt.NBTTagCompound) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.structure.MapGenStronghold java.lang.String func_143025_a()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureComponent void func_151554_b(net.minecraft.world.World, net.minecraft.block.Block, int, int, int, int, net.minecraft.world.gen.structure.StructureBoundingBox) 6'>
@@ -339,9 +318,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Stronghold net.minecraft.world.gen.structure.StructureStrongholdPieces.Stronghold.Door getRandomDoor(java.util.Random) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.structure.StructureBoundingBox net.minecraft.world.gen.structure.StructureBoundingBox getComponentToAddBoundingBox(int, int, int, int, int, int, int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureVillagePieces.Path void buildComponent(net.minecraft.world.gen.structure.StructureComponent, java.util.List, java.util.Random) 0'>
@@ -410,6 +386,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.world.gen.structure.StructureVillagePieces java.util.List getStructureVillageWeightedPieceList(java.util.Random, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.gen.structure.StructureNetherBridgePieces.Straight void buildComponent(net.minecraft.world.gen.structure.StructureComponent, java.util.List, java.util.Random) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -427,6 +406,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.world.gen.structure.MapGenVillage java.lang.String func_143025_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureMineshaftPieces.Cross boolean addComponentParts(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -491,9 +473,6 @@
     <item name='net.minecraft.world.gen.structure.ComponentScatteredFeaturePieces.JunglePyramid JunglePyramid(java.util.Random, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.structure.StructureBoundingBox net.minecraft.nbt.NBTTagIntArray func_151535_h()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.gen.structure.StructureMineshaftPieces.Stairs void buildComponent(net.minecraft.world.gen.structure.StructureComponent, java.util.List, java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -554,6 +533,9 @@
     <item name='net.minecraft.world.gen.structure.ComponentScatteredFeaturePieces.JunglePyramid void func_143012_a(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.gen.structure.MapGenNetherBridge java.lang.String func_143025_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.gen.structure.StructureMineshaftPieces.Cross void buildComponent(net.minecraft.world.gen.structure.StructureComponent, java.util.List, java.util.Random) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -569,9 +551,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.gen.structure.MapGenMineshaft net.minecraft.world.gen.structure.StructureStart getStructureStart(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.gen.structure.StructureVillagePieces.House2 boolean addComponentParts(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -579,6 +558,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureVillagePieces.House4Garden House4Garden(net.minecraft.world.gen.structure.StructureVillagePieces.Start, int, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.structure.StructureBoundingBox net.minecraft.world.gen.structure.StructureBoundingBox getComponentToAddBoundingBox(int, int, int, int, int, int, int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureMineshaftPieces.Room void buildComponent(net.minecraft.world.gen.structure.StructureComponent, java.util.List, java.util.Random) 0'>
@@ -638,14 +620,14 @@
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Stronghold.Door IRON_DOOR'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.world.gen.structure.MapGenStronghold java.util.List getCoordList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.gen.structure.StructureStart void func_143017_b(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.world.gen.structure.StructureBoundingBox net.minecraft.world.gen.structure.StructureBoundingBox getNewBoundingBox()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureMineshaftStart StructureMineshaftStart(net.minecraft.world.World, java.util.Random, int, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -687,9 +669,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Crossing Crossing(int, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox, int) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.structure.MapGenStronghold net.minecraft.world.gen.structure.StructureStart getStructureStart(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureNetherBridgePieces.NetherStalkRoom void buildComponent(net.minecraft.world.gen.structure.StructureComponent, java.util.List, java.util.Random) 2'>
@@ -746,6 +725,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.world.gen.structure.StructureComponent net.minecraft.world.ChunkPosition func_151553_a()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.gen.structure.StructureNetherBridgePieces.Crossing2 boolean addComponentParts(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -785,12 +767,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.gen.structure.MapGenStructure net.minecraft.world.gen.structure.StructureStart getStructureStart(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.world.gen.structure.ComponentScatteredFeaturePieces.DesertPyramid void func_143012_a(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -798,6 +774,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Stronghold.Door GRATES'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.structure.MapGenVillage net.minecraft.world.gen.structure.StructureStart getStructureStart(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.MapGenStronghold MapGenStronghold(java.util.Map) 0'>
@@ -810,6 +789,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureVillagePieces.WoodHut void func_143012_a(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.structure.MapGenStronghold java.lang.String func_143025_a()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureVillagePieces.House4Garden net.minecraft.world.gen.structure.StructureVillagePieces.House4Garden func_74912_a(net.minecraft.world.gen.structure.StructureVillagePieces.Start, java.util.List, java.util.Random, int, int, int, int, int) 1'>
@@ -837,6 +819,12 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureMineshaftPieces.Stairs void func_143012_a(net.minecraft.nbt.NBTTagCompound) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.world.gen.structure.MapGenStructure java.lang.String func_143025_a()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -882,6 +870,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.world.gen.structure.MapGenStructureIO net.minecraft.world.gen.structure.StructureComponent func_143032_b(net.minecraft.nbt.NBTTagCompound, net.minecraft.world.World) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Stronghold net.minecraft.world.gen.structure.StructureStrongholdPieces.Stronghold.Door getRandomDoor(java.util.Random)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Stronghold void func_143012_a(net.minecraft.nbt.NBTTagCompound) 0'>
@@ -989,9 +980,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.gen.structure.MapGenNetherBridge java.lang.String func_143025_a()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.ChestCorridor void buildComponent(net.minecraft.world.gen.structure.StructureComponent, java.util.List, java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -1043,6 +1031,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.world.gen.structure.StructureStart net.minecraft.nbt.NBTTagCompound func_143021_a(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Corridor void func_143011_b(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1092,6 +1083,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Stairs2 Stairs2(int, java.util.Random, int, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.structure.MapGenMineshaft net.minecraft.world.gen.structure.StructureStart getStructureStart(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.LeftTurn boolean addComponentParts(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox) 2'>
@@ -1148,7 +1142,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.world.gen.structure.MapGenScatteredFeature net.minecraft.world.gen.structure.StructureStart getStructureStart(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.world.gen.structure.MapGenVillage MapGenVillage(java.util.Map) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.structure.MapGenStronghold net.minecraft.world.gen.structure.StructureStart getStructureStart(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureNetherBridgePieces.Throne void func_143012_a(net.minecraft.nbt.NBTTagCompound) 0'>
@@ -1175,9 +1175,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.gen.structure.MapGenScatteredFeature java.lang.String func_143025_a()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.gen.structure.StructureNetherBridgePieces.End void func_143011_b(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1193,10 +1190,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.gen.structure.StructureNetherBridgePieces.End End(int, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox, int) 1'>
+    <item name='net.minecraft.world.gen.structure.StructureComponent net.minecraft.nbt.NBTTagCompound func_143010_b()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.structure.MapGenVillage net.minecraft.world.gen.structure.StructureStart getStructureStart(int, int)'>
+    <item name='net.minecraft.world.gen.structure.StructureNetherBridgePieces.End End(int, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Corridor boolean addComponentParts(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox) 2'>
@@ -1232,9 +1229,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.gen.structure.StructureStart net.minecraft.nbt.NBTTagCompound func_143021_a(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.gen.structure.StructureNetherBridgePieces.Corridor2 void func_143011_b(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1259,6 +1253,12 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.world.gen.structure.MapGenStructure net.minecraft.world.gen.structure.StructureStart getStructureStart(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.ChestCorridor boolean addComponentParts(net.minecraft.world.World, java.util.Random, net.minecraft.world.gen.structure.StructureBoundingBox) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -1272,9 +1272,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.PortalRoom void func_143011_b(net.minecraft.nbt.NBTTagCompound) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.structure.StructureComponent net.minecraft.world.ChunkPosition func_151553_a()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.ComponentScatteredFeaturePieces.JunglePyramid junglePyramidsChestContents'>
@@ -1297,6 +1294,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.world.gen.structure.StructureBoundingBox net.minecraft.world.gen.structure.StructureBoundingBox getNewBoundingBox()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Stairs void func_143011_b(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1373,9 +1373,6 @@
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.Stronghold.Door OPENING'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.structure.MapGenNetherBridge net.minecraft.world.gen.structure.StructureStart getStructureStart(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.gen.structure.StructureVillagePieces.WoodHut void func_143011_b(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1398,6 +1395,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureStrongholdPieces.ChestCorridor strongholdChestContents'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.structure.MapGenMineshaft java.lang.String func_143025_a()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.structure.StructureVillagePieces.Start Start(net.minecraft.world.biome.WorldChunkManager, int, java.util.Random, int, int, java.util.List, int) 0'>

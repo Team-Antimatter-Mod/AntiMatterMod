@@ -8,19 +8,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.ICommandSender net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.command.CommandGameRule java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandGameRule java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraft.command.CommandBase java.util.List getListOfStringsMatchingLastWord(java.lang.String[], java.lang.String...) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandBase java.util.List getListOfStringsMatchingLastWord(java.lang.String[], java.lang.String...) 1'>
+    <item name='net.minecraft.command.CommandToggleDownfall java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandBase boolean doesStringStartWith(java.lang.String, java.lang.String) 1'>
@@ -29,22 +23,22 @@
     <item name='net.minecraft.command.CommandWeather void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandBase net.minecraft.util.IChatComponent joinNiceString(net.minecraft.util.IChatComponent[])'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.command.CommandGameMode boolean isUsernameIndex(java.lang.String[], int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandBase net.minecraft.entity.player.EntityPlayerMP getPlayer(net.minecraft.command.ICommandSender, java.lang.String)'>
+    <item name='net.minecraft.command.CommandEnchant java.lang.String[] getListOfPlayers()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandServerKick java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandDefaultGameMode void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandBase java.util.List getListOfStringsMatchingLastWord(java.lang.String[], java.lang.String...)'>
+    <item name='net.minecraft.command.CommandEnchant java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandPlaySound boolean isUsernameIndex(java.lang.String[], int) 0'>
@@ -53,28 +47,19 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandEffect java.lang.String getCommandName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.command.CommandClearInventory boolean isUsernameIndex(java.lang.String[], int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandPlaySound java.lang.String getCommandName()'>
+    <item name='net.minecraft.command.CommandSpreadPlayers java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandShowSeed java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraft.command.CommandHandler java.util.Map getCommands()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandClearInventory java.lang.String getCommandName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandHelp java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandWeather java.lang.String getCommandName()'>
+    <item name='net.minecraft.command.CommandEffect java.lang.String[] getAllUsernames()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandBase boolean doesStringStartWith(java.lang.String, java.lang.String) 0'>
@@ -83,11 +68,17 @@
     <item name='net.minecraft.command.CommandBase net.minecraft.block.Block getBlockByText(net.minecraft.command.ICommandSender, java.lang.String) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.command.CommandWeather java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.command.CommandGameMode void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.command.CommandTime java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandWeather void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -95,17 +86,8 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandSetSpawnpoint java.lang.String getCommandName()'>
+    <item name='net.minecraft.command.CommandGameMode java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandTime java.lang.String getCommandName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.ICommandSender java.lang.String getCommandSenderName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='net.minecraft.command.IEntitySelector field_152785_b'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -115,6 +97,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.command.CommandBase java.util.List getListOfStringsFromIterableMatchingLastWord(java.lang.String[], java.lang.Iterable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandPlaySound void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -137,34 +122,43 @@
     <item name='net.minecraft.command.CommandDebug java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandBase double func_110666_a(net.minecraft.command.ICommandSender, double, java.lang.String) 2'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.ICommandManager java.util.List getPossibleCommands(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraft.command.ICommand java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.command.CommandDebug java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandBase double func_110666_a(net.minecraft.command.ICommandSender, double, java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandGive java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandPlaySound java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandXP java.lang.String[] getAllUsernames()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.command.CommandBase net.minecraft.item.Item getItemByText(net.minecraft.command.ICommandSender, java.lang.String) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandEffect java.lang.String[] getAllUsernames()'>
+    <item name='net.minecraft.command.CommandHelp java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandServerKick java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandKill java.lang.String getCommandName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandServerKick java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.command.CommandTime java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandWeather java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraft.command.CommandBase net.minecraft.util.IChatComponent func_147178_a(net.minecraft.command.ICommandSender, java.lang.String[], int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandEffect java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandBase int compareTo(java.lang.Object) 0'>
@@ -179,22 +173,16 @@
     <item name='net.minecraft.command.CommandKill void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandEnchant java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.command.ICommandManager java.util.List getPossibleCommands(net.minecraft.command.ICommandSender, java.lang.String) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.ICommandSender net.minecraft.util.IChatComponent func_145748_c_()'>
+    <item name='net.minecraft.command.CommandXP java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
-    <item name='net.minecraft.command.CommandDifficulty java.lang.String getCommandName()'>
+    <item name='net.minecraft.command.CommandBase net.minecraft.entity.player.EntityPlayerMP getPlayer(net.minecraft.command.ICommandSender, java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.ServerCommandManager void func_152372_a(net.minecraft.command.ICommandSender, net.minecraft.command.ICommand, int, java.lang.String, java.lang.Object...) 4'>
@@ -212,6 +200,15 @@
     <item name='net.minecraft.command.CommandEffect void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.command.ICommand java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.CommandKill java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.command.IEntitySelector.ArmoredMob boolean isEntityApplicable(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -221,10 +218,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandDefaultGameMode java.lang.String getCommandName()'>
+    <item name='net.minecraft.command.CommandServerKick java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.PlayerSelector java.util.Map func_96560_a(java.util.Map)'>
+    <item name='net.minecraft.command.CommandSetPlayerTimeout java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandBase java.lang.String func_82360_a(net.minecraft.command.ICommandSender, java.lang.String[], int) 1'>
@@ -235,6 +232,18 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.command.CommandGameMode java.lang.String[] getListOfPlayerUsernames()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.ICommandSender net.minecraft.util.ChunkCoordinates getPlayerCoordinates()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.CommandBase net.minecraft.entity.player.EntityPlayerMP getCommandSenderAsPlayer(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandSetSpawnpoint void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -251,18 +260,6 @@
     <item name='net.minecraft.command.IEntitySelector selectAnything'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandSetPlayerTimeout java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandXP java.lang.String[] getAllUsernames()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandDebug java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandGive java.lang.String getCommandName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.command.CommandSetPlayerTimeout void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -272,17 +269,17 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandGameMode java.lang.String getCommandName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandSpreadPlayers java.lang.String getCommandName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.command.CommandBase boolean parseBoolean(net.minecraft.command.ICommandSender, java.lang.String) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandToggleDownfall java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraft.command.CommandDifficulty java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.ICommandSender java.lang.String getCommandSenderName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.command.CommandDifficulty void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -293,20 +290,11 @@
     <item name='net.minecraft.command.CommandHandler net.minecraft.command.ICommand registerCommand(net.minecraft.command.ICommand) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.ICommand java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.command.CommandEffect void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.command.CommandXP java.lang.String getCommandName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandDefaultGameMode void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -314,13 +302,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandBase net.minecraft.util.IChatComponent func_147178_a(net.minecraft.command.ICommandSender, java.lang.String[], int)'>
+    <item name='net.minecraft.command.CommandClearInventory java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandHandler net.minecraft.command.ICommand registerCommand(net.minecraft.command.ICommand)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandPlaySound java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraft.command.CommandShowSeed java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandToggleDownfall void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
@@ -329,26 +314,29 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandDebug java.lang.String getCommandName()'>
+    <item name='net.minecraft.command.CommandDebug java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandEffect java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandClearInventory java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraft.command.CommandSetSpawnpoint java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandWeather java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandDefaultGameMode java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandGive void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandShowSeed java.lang.String getCommandName()'>
+    <item name='net.minecraft.command.ICommandManager java.util.List getPossibleCommands(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandBase net.minecraft.entity.player.EntityPlayerMP getCommandSenderAsPlayer(net.minecraft.command.ICommandSender)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandEffect java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.command.CommandClearInventory java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -358,6 +346,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.command.CommandGive java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandShowSeed void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -377,6 +368,12 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.command.CommandTime java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandGive java.lang.String[] getPlayers()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.command.IEntitySelector boolean isEntityApplicable(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -395,9 +392,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandEnchant java.lang.String[] getListOfPlayers()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.command.CommandHandler java.util.List getPossibleCommands(net.minecraft.command.ICommandSender, java.lang.String) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -410,10 +404,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandBase net.minecraft.util.IChatComponent func_147176_a(net.minecraft.command.ICommandSender, java.lang.String[], int, boolean)'>
+    <item name='net.minecraft.command.CommandEnchant java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandGameRule java.lang.String getCommandName()'>
+    <item name='net.minecraft.command.CommandGameMode net.minecraft.world.WorldSettings.GameType getGameModeFromCommand(net.minecraft.command.ICommandSender, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandGameRule java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandGive void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
@@ -422,10 +419,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandHandler java.util.List getPossibleCommands(net.minecraft.command.ICommandSender)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandKill java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraft.command.CommandBase java.util.List getListOfStringsMatchingLastWord(java.lang.String[], java.lang.String...)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandGameRule void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
@@ -439,6 +433,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.command.PlayerSelector java.util.Map func_96560_a(java.util.Map)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandDebug void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -458,7 +455,13 @@
     <item name='net.minecraft.command.CommandBase net.minecraft.util.IChatComponent func_147176_a(net.minecraft.command.ICommandSender, java.lang.String[], int, boolean) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.command.CommandClearInventory java.lang.String[] func_147209_d()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.command.CommandGameMode java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandHandler net.minecraft.command.ICommand registerCommand(net.minecraft.command.ICommand)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.IEntitySelector selectInventories'>
@@ -470,46 +473,64 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.command.ICommandManager java.util.Map getCommands()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='net.minecraft.command.CommandToggleDownfall java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandSpreadPlayers java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.command.CommandBase double func_110665_a(net.minecraft.command.ICommandSender, double, java.lang.String, int, int) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.ICommandSender net.minecraft.util.IChatComponent func_145748_c_()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.command.CommandServerKick void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandDifficulty java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandSetSpawnpoint java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraft.command.CommandBase net.minecraft.util.IChatComponent joinNiceString(net.minecraft.util.IChatComponent[])'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandXP void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.command.CommandClearInventory java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.command.CommandEnchant java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandGameMode java.lang.String getCommandName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandSetPlayerTimeout java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandBase int compareTo(net.minecraft.command.ICommand) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandGameMode java.lang.String[] getListOfPlayerUsernames()'>
+    <item name='net.minecraft.command.CommandGameMode void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandGameMode void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
+    <item name='net.minecraft.command.CommandXP java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandDifficulty java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandSetPlayerTimeout java.lang.String getCommandName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandBase net.minecraft.item.Item getItemByText(net.minecraft.command.ICommandSender, java.lang.String)'>
+    <item name='net.minecraft.command.CommandKill java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandWeather java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandHandler java.util.Map getCommands()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandGameRule void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
@@ -521,9 +542,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandDefaultGameMode java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.command.ServerCommandManager void func_152372_a(net.minecraft.command.ICommandSender, net.minecraft.command.ICommand, int, java.lang.String, java.lang.Object...) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -533,19 +551,19 @@
     <item name='net.minecraft.command.CommandHelp void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandClearInventory java.lang.String[] func_147209_d()'>
+    <item name='net.minecraft.command.CommandPlaySound java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandBase java.util.List getListOfStringsFromIterableMatchingLastWord(java.lang.String[], java.lang.Iterable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.command.CommandHelp java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandSpreadPlayers void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandPlaySound void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandHelp java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandTime void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
@@ -557,16 +575,13 @@
     <item name='net.minecraft.command.CommandClearInventory void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandEnchant java.lang.String getCommandName()'>
+    <item name='net.minecraft.command.CommandGameRule java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandBase net.minecraft.util.IChatComponent joinNiceString(net.minecraft.util.IChatComponent[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandDifficulty net.minecraft.world.EnumDifficulty func_147201_h(net.minecraft.command.ICommandSender, java.lang.String) 1'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandTime java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandServerKick void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
@@ -581,11 +596,17 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.command.CommandEffect java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.command.IAdminCommand void func_152372_a(net.minecraft.command.ICommandSender, net.minecraft.command.ICommand, int, java.lang.String, java.lang.Object...) 4'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.command.CommandDefaultGameMode java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandBase java.util.List getListOfStringsMatchingLastWord(java.lang.String[], java.lang.String...) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -596,13 +617,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandToggleDownfall java.lang.String getCommandName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandXP java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandGive java.lang.String[] getPlayers()'>
+    <item name='net.minecraft.command.CommandDifficulty java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandGameMode net.minecraft.world.WorldSettings.GameType getGameModeFromCommand(net.minecraft.command.ICommandSender, java.lang.String) 1'>
@@ -611,10 +626,10 @@
     <item name='net.minecraft.command.CommandShowSeed void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandHelp void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
+    <item name='net.minecraft.command.CommandSetSpawnpoint java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandBase java.util.List getListOfStringsFromIterableMatchingLastWord(java.lang.String[], java.lang.Iterable)'>
+    <item name='net.minecraft.command.CommandHelp void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.CommandBase java.util.List getListOfStringsFromIterableMatchingLastWord(java.lang.String[], java.lang.Iterable) 1'>
@@ -623,20 +638,11 @@
     <item name='net.minecraft.command.CommandBase java.lang.String joinNiceStringFromCollection(java.util.Collection) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandServerKick java.lang.String getCommandName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.command.CommandSetSpawnpoint java.util.List addTabCompletionOptions(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandGive java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraft.command.CommandBase net.minecraft.util.IChatComponent func_147176_a(net.minecraft.command.ICommandSender, java.lang.String[], int, boolean)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.ICommandManager java.util.Map getCommands()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='net.minecraft.command.ICommandSender void addChatMessage(net.minecraft.util.IChatComponent) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -647,11 +653,8 @@
     <item name='net.minecraft.command.CommandTime void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.ICommand java.lang.String getCommandName()'>
+    <item name='net.minecraft.command.CommandBase net.minecraft.item.Item getItemByText(net.minecraft.command.ICommandSender, java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
     </item>
     <item name='net.minecraft.command.CommandBase net.minecraft.entity.player.EntityPlayerMP getCommandSenderAsPlayer(net.minecraft.command.ICommandSender) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -662,13 +665,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.CommandGameMode java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraft.command.CommandHandler java.util.List getPossibleCommands(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.CommandGameMode net.minecraft.world.WorldSettings.GameType getGameModeFromCommand(net.minecraft.command.ICommandSender, java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.command.CommandSpreadPlayers java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraft.command.CommandShowSeed java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

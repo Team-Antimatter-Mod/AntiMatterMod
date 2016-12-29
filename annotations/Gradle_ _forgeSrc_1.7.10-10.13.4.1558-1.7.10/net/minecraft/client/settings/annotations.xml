@@ -53,9 +53,6 @@
     <item name='net.minecraft.client.settings.GameSettings.Options GRAPHICS'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.settings.KeyBinding java.util.Set getKeybinds()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.settings.GameSettings.Options CHAT_SCALE'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -153,6 +150,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.settings.GameSettings.Options VIEW_BOBBING'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.settings.KeyBinding java.util.Set getKeybinds()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

@@ -17,20 +17,23 @@
     <item name='net.minecraft.inventory.ContainerBrewingStand ContainerBrewingStand(net.minecraft.entity.player.InventoryPlayer, net.minecraft.tileentity.TileEntityBrewingStand) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.inventory.InventoryCraftResult java.lang.String getInventoryName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.inventory.IInventory boolean isItemValidForSlot(int, net.minecraft.item.ItemStack) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.inventory.Container net.minecraft.inventory.Slot addSlotToContainer(net.minecraft.inventory.Slot)'>
+    <item name='net.minecraft.inventory.InventoryEnderChest net.minecraft.nbt.NBTTagList saveInventoryToNBT()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.inventory.ContainerWorkbench boolean func_94530_a(net.minecraft.item.ItemStack, net.minecraft.inventory.Slot) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.inventory.IInventory java.lang.String getInventoryName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.inventory.ContainerEnchantment void addCraftingToCrafters(net.minecraft.inventory.ICrafting) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -47,12 +50,6 @@
     <item name='net.minecraft.inventory.ContainerBeacon ContainerBeacon(net.minecraft.entity.player.InventoryPlayer, net.minecraft.tileentity.TileEntityBeacon) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.inventory.ISidedInventory int[] getAccessibleSlotsFromSide(int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.inventory.ContainerHorseInventory ContainerHorseInventory(net.minecraft.inventory.IInventory, net.minecraft.inventory.IInventory, net.minecraft.entity.passive.EntityHorse) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -65,6 +62,9 @@
     <item name='net.minecraft.inventory.Container void retrySlotClick(int, int, boolean, net.minecraft.entity.player.EntityPlayer) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.inventory.InventoryCrafting java.lang.String getInventoryName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.inventory.SlotMerchantResult void onPickupFromSlot(net.minecraft.entity.player.EntityPlayer, net.minecraft.item.ItemStack) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -73,9 +73,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.inventory.InventoryEnderChest net.minecraft.nbt.NBTTagList saveInventoryToNBT()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.inventory.InventoryEnderChest void loadInventoryFromNBT(net.minecraft.nbt.NBTTagList) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -146,6 +143,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.inventory.InventoryMerchant java.lang.String getInventoryName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.inventory.SlotMerchantResult void onPickupFromSlot(net.minecraft.entity.player.EntityPlayer, net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -197,9 +197,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.inventory.InventoryCrafting java.lang.String getInventoryName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.inventory.Container boolean canDragIntoSlot(net.minecraft.inventory.Slot) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -207,6 +204,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.inventory.ContainerPlayer ContainerPlayer(net.minecraft.entity.player.InventoryPlayer, boolean, net.minecraft.entity.player.EntityPlayer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.inventory.Container java.util.List getInventory()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.inventory.InventoryMerchant boolean isItemValidForSlot(int, net.minecraft.item.ItemStack) 1'>
@@ -221,23 +221,20 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.inventory.IInventory java.lang.String getInventoryName()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
-            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
-        </annotation>
-    </item>
     <item name='net.minecraft.inventory.ContainerBeacon void addCraftingToCrafters(net.minecraft.inventory.ICrafting) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.inventory.ContainerPlayer void onContainerClosed(net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.inventory.InventoryMerchant java.lang.String getInventoryName()'>
+    <item name='net.minecraft.inventory.Container net.minecraft.inventory.Slot addSlotToContainer(net.minecraft.inventory.Slot)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.inventory.Container java.util.List getInventory()'>
+    <item name='net.minecraft.inventory.ISidedInventory int[] getAccessibleSlotsFromSide(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
     </item>
     <item name='net.minecraft.inventory.SlotFurnace void onCrafting(net.minecraft.item.ItemStack, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -247,6 +244,9 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.inventory.InventoryCraftResult java.lang.String getInventoryName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.inventory.ContainerFurnace void addCraftingToCrafters(net.minecraft.inventory.ICrafting) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>

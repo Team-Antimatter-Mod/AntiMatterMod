@@ -5,19 +5,10 @@
     <item name='net.minecraft.client.renderer.entity.RenderSkeleton void preRenderCallback(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderWitch net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityWitch)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderBlaze void doRender(net.minecraft.entity.EntityLiving, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderWither net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.boss.EntityWither) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderWither net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.boss.EntityWither)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSilverfish net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySilverfish)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderEnderman net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
@@ -25,12 +16,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderGiantZombie net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderFireball net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderVillager void preRenderCallback(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -40,6 +25,12 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderSlime net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySlime)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderWolf net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityWolf)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderLiving void doRender(net.minecraft.entity.EntityLiving, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -53,7 +44,7 @@
     <item name='net.minecraft.client.renderer.entity.RenderPlayer net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderEnderman net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderBiped net.minecraft.util.ResourceLocation func_110857_a(net.minecraft.item.ItemArmor, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderCreeper int shouldRenderPass(net.minecraft.entity.EntityLivingBase, int, float) 0'>
@@ -63,9 +54,6 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderDragon void doRender(net.minecraft.entity.EntityLiving, double, double, double, float, float) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderTNTPrimed net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityTNTPrimed)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RendererLivingEntity void renderModel(net.minecraft.entity.EntityLivingBase, float, float, float, float, float, float) 0'>
@@ -80,10 +68,10 @@
     <item name='net.minecraft.client.renderer.entity.RenderBiped int shouldRenderPass(net.minecraft.entity.EntityLivingBase, int, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderItem void renderItemIntoGUI(net.minecraft.client.gui.FontRenderer, net.minecraft.client.renderer.texture.TextureManager, net.minecraft.item.ItemStack, int, int) 1'>
+    <item name='net.minecraft.client.renderer.entity.RenderCreeper net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderHorse net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityHorse)'>
+    <item name='net.minecraft.client.renderer.entity.RenderItem void renderItemIntoGUI(net.minecraft.client.gui.FontRenderer, net.minecraft.client.renderer.texture.TextureManager, net.minecraft.item.ItemStack, int, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RendererLivingEntity void renderArrowsStuckInEntity(net.minecraft.entity.EntityLivingBase, float) 0'>
@@ -102,6 +90,9 @@
         </annotation>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderEnderman void doRender(net.minecraft.entity.EntityLivingBase, double, double, double, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderGhast net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderManager boolean renderEntitySimple(net.minecraft.entity.Entity, float) 0'>
@@ -143,9 +134,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderDragon net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.boss.EntityDragon)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderHorse net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityHorse) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -155,10 +143,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSnowball net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderSkeleton net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySkeleton)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderMinecart void func_147910_a(net.minecraft.entity.item.EntityMinecart, float, net.minecraft.block.Block, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderXPOrb net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderBoat net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityBoat)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderWither net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
@@ -173,6 +167,9 @@
     <item name='net.minecraft.client.renderer.entity.RenderIronGolem void renderEquippedItems(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderBiped net.minecraft.util.ResourceLocation func_110858_a(net.minecraft.item.ItemArmor, int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderWolf float handleRotationFloat(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -183,6 +180,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderOcelot void doRender(net.minecraft.entity.passive.EntityOcelot, double, double, double, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderXPOrb net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityXPOrb)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderItem void renderIcon(int, int, net.minecraft.util.IIcon, int, int) 2'>
@@ -209,6 +209,12 @@
     <item name='net.minecraft.client.renderer.entity.RenderPlayer void func_96449_a(net.minecraft.entity.EntityLivingBase, double, double, double, java.lang.String, float, double) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderSquid net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntitySquid)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderCow net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityCow)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderItem void renderEffect(net.minecraft.client.renderer.texture.TextureManager, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -227,13 +233,7 @@
     <item name='net.minecraft.client.renderer.entity.RenderSquid void doRender(net.minecraft.entity.passive.EntitySquid, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderWither net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderMagmaCube net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderFish net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.projectile.EntityFishHook)'>
+    <item name='net.minecraft.client.renderer.entity.RenderSquid net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderManager void cacheActiveRenderInfo(net.minecraft.world.World, net.minecraft.client.renderer.texture.TextureManager, net.minecraft.client.gui.FontRenderer, net.minecraft.entity.EntityLivingBase, net.minecraft.entity.Entity, net.minecraft.client.settings.GameSettings, float) 5'>
@@ -245,10 +245,10 @@
     <item name='net.minecraft.client.renderer.entity.RenderSquid void doRender(net.minecraft.entity.EntityLivingBase, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderCreeper net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityCreeper)'>
+    <item name='net.minecraft.client.renderer.entity.RenderMinecart void doRender(net.minecraft.entity.item.EntityMinecart, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderMinecart void doRender(net.minecraft.entity.item.EntityMinecart, double, double, double, float, float) 0'>
+    <item name='net.minecraft.client.renderer.entity.RenderSnowball net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderWitch void doRender(net.minecraft.entity.EntityLivingBase, double, double, double, float, float) 0'>
@@ -260,13 +260,19 @@
     <item name='net.minecraft.client.renderer.entity.RenderItem net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderChicken net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderBat net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderHorse void renderModel(net.minecraft.entity.passive.EntityHorse, float, float, float, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderMinecartMobSpawner void func_147910_a(net.minecraft.entity.item.EntityMinecart, float, net.minecraft.block.Block, int) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderWitch net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderWolf net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderMooshroom void doRender(net.minecraft.entity.passive.EntityMooshroom, double, double, double, float, float) 0'>
@@ -302,16 +308,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderSkeleton net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderSheep net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntitySheep)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderVillager net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityVillager) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderBat net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderBoat net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSnowMan net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderBlaze net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityBlaze)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderBlaze void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
@@ -321,6 +327,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderVillager void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderFish net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderFallingBlock void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
@@ -347,6 +356,9 @@
     <item name='net.minecraft.client.renderer.entity.RenderFallingBlock void doRender(net.minecraft.entity.item.EntityFallingBlock, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderSnowMan net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySnowman)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderTntMinecart void func_147910_a(net.minecraft.entity.item.EntityMinecartTNT, float, net.minecraft.block.Block, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -359,6 +371,9 @@
     <item name='net.minecraft.client.renderer.entity.Render void renderOffsetAABB(net.minecraft.util.AxisAlignedBB, double, double, double) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderFallingBlock net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderSnowball void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -366,9 +381,6 @@
         </annotation>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderWolf net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityWolf) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderWolf net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityWolf)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderVillager void preRenderCallback(net.minecraft.entity.passive.EntityVillager, float) 0'>
@@ -395,6 +407,9 @@
     <item name='net.minecraft.client.renderer.entity.RenderIronGolem void doRender(net.minecraft.entity.EntityLivingBase, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderIronGolem net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityIronGolem)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderSheep int shouldRenderPass(net.minecraft.entity.EntityLivingBase, int, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -407,7 +422,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderLeashKnot net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.EntityLeashKnot)'>
+    <item name='net.minecraft.client.renderer.entity.RenderLeashKnot net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderBat net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityBat)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderIronGolem void doRender(net.minecraft.entity.monster.EntityIronGolem, double, double, double, float, float) 0'>
@@ -419,25 +437,13 @@
     <item name='net.minecraft.client.renderer.entity.RenderLiving void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderBlaze net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityBlaze)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderWitch net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderPig net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderArrow net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.projectile.EntityArrow)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSheep net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntitySheep)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderMooshroom void renderEquippedItems(net.minecraft.entity.passive.EntityMooshroom, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderChicken void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderPig net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityPig)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderWither void preRenderCallback(net.minecraft.entity.boss.EntityWither, float) 0'>
@@ -449,13 +455,16 @@
     <item name='net.minecraft.client.renderer.entity.RenderWither int shouldRenderPass(net.minecraft.entity.EntityLivingBase, int, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderCaveSpider net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityCaveSpider)'>
+    <item name='net.minecraft.client.renderer.entity.RenderChicken net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderBat void rotateCorpse(net.minecraft.entity.EntityLivingBase, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderSquid void rotateCorpse(net.minecraft.entity.passive.EntitySquid, float, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderCaveSpider net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySpider)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderZombie net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
@@ -467,16 +476,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderSheep net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderWolf int shouldRenderPass(net.minecraft.entity.EntityLivingBase, int, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSilverfish net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSpider net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySpider)'>
+    <item name='net.minecraft.client.renderer.entity.RenderFish net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.projectile.EntityFishHook)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderIronGolem void doRender(net.minecraft.entity.EntityLiving, double, double, double, float, float) 0'>
@@ -488,16 +497,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderZombie net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderDragon void renderModel(net.minecraft.entity.EntityLivingBase, float, float, float, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderLightningBolt void doRender(net.minecraft.entity.effect.EntityLightningBolt, double, double, double, float, float) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderOcelot net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderArrow net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
@@ -505,9 +508,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderCow net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderEnderman void renderEquippedItems(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -521,22 +521,19 @@
     <item name='net.minecraft.client.renderer.entity.RenderBiped void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSkeleton net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.EntityLiving)'>
+    <item name='net.minecraft.client.renderer.entity.RenderTntMinecart void func_147910_a(net.minecraft.entity.item.EntityMinecart, float, net.minecraft.block.Block, int) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderTntMinecart void func_147910_a(net.minecraft.entity.item.EntityMinecart, float, net.minecraft.block.Block, int) 2'>
+    <item name='net.minecraft.client.renderer.entity.RenderSilverfish net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySilverfish)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderMagmaCube net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityMagmaCube)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderBlaze void doRender(net.minecraft.entity.EntityLivingBase, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderBiped net.minecraft.util.ResourceLocation func_110858_a(net.minecraft.item.ItemArmor, int, java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderBiped void func_82408_c(net.minecraft.entity.EntityLiving, int, float) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSpider net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RendererLivingEntity void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
@@ -545,10 +542,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderBiped net.minecraft.util.ResourceLocation func_110857_a(net.minecraft.item.ItemArmor, int)'>
+    <item name='net.minecraft.client.renderer.entity.RenderBat void doRender(net.minecraft.entity.passive.EntityBat, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderBat void doRender(net.minecraft.entity.passive.EntityBat, double, double, double, float, float) 0'>
+    <item name='net.minecraft.client.renderer.entity.RenderChicken net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityChicken)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderCow net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
@@ -563,10 +560,16 @@
     <item name='net.minecraft.client.renderer.entity.RenderIronGolem void rotateCorpse(net.minecraft.entity.EntityLivingBase, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderGiantZombie net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityGiantZombie)'>
+    <item name='net.minecraft.client.renderer.entity.RenderTNTPrimed net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderCaveSpider net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderOcelot net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderFireball net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.projectile.EntityFireball)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderSkeleton net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.EntityLiving) 0'>
@@ -581,9 +584,6 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderOcelot net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityOcelot)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderBiped void doRender(net.minecraft.entity.EntityLivingBase, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -596,7 +596,10 @@
     <item name='net.minecraft.client.renderer.entity.RenderOcelot net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityOcelot) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderArrow net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderZombie net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.EntityLiving)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderGiantZombie net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderOcelot void preRenderCallback(net.minecraft.entity.passive.EntityOcelot, float) 0'>
@@ -605,10 +608,22 @@
     <item name='net.minecraft.client.renderer.entity.RenderZombie void renderEquippedItems(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderBlaze net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderVillager void doRender(net.minecraft.entity.EntityLivingBase, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderCreeper net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityCreeper)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderEnderman void doRender(net.minecraft.entity.monster.EntityEnderman, double, double, double, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderLeashKnot net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.EntityLeashKnot)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderZombie net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityZombie)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderPig int shouldRenderPass(net.minecraft.entity.EntityLivingBase, int, float) 0'>
@@ -629,13 +644,25 @@
     <item name='net.minecraft.client.renderer.entity.RenderSlime void preRenderCallback(net.minecraft.entity.monster.EntitySlime, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderEnderman net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityEnderman)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderHorse net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderWither void doRender(net.minecraft.entity.EntityLiving, double, double, double, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderSlime net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderChicken void doRender(net.minecraft.entity.passive.EntityChicken, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderWolf net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderPig net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderArrow net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.projectile.EntityArrow)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderZombie int shouldRenderPass(net.minecraft.entity.EntityLiving, int, float) 0'>
@@ -649,9 +676,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderCow net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityCow)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderCreeper int getColorMultiplier(net.minecraft.entity.monster.EntityCreeper, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -689,6 +713,9 @@
     <item name='net.minecraft.client.renderer.entity.RenderMooshroom void renderEquippedItems(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderBoat net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderSkeleton net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -707,22 +734,10 @@
     <item name='net.minecraft.client.renderer.entity.RenderManager boolean renderEntityStatic(net.minecraft.entity.Entity, float, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderXPOrb net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityXPOrb)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderDragon net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSkeleton net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderWitch void doRender(net.minecraft.entity.monster.EntityWitch, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderEnderman void doRender(net.minecraft.entity.EntityLiving, double, double, double, float, float) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderBiped net.minecraft.util.ResourceLocation getArmorResource(net.minecraft.entity.Entity, net.minecraft.item.ItemStack, int, java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderBlaze net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
@@ -731,28 +746,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderMooshroom net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderBiped net.minecraft.util.ResourceLocation func_110857_a(net.minecraft.item.ItemArmor, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderBlaze net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderBiped void renderEquippedItems(net.minecraft.entity.EntityLivingBase, float) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderFireball net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.projectile.EntityFireball)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderZombie void doRender(net.minecraft.entity.EntityLivingBase, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderWolf net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderChicken net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityChicken)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderDragon net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
@@ -764,16 +767,16 @@
     <item name='net.minecraft.client.renderer.entity.RenderManager boolean func_147939_a(net.minecraft.entity.Entity, double, double, double, float, float, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderMinecart net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityMinecart)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderZombie void doRender(net.minecraft.entity.monster.EntityZombie, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderPainting net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityPainting)'>
+    <item name='net.minecraft.client.renderer.entity.RenderTNTPrimed net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityTNTPrimed)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderWitch void doRender(net.minecraft.entity.EntityLiving, double, double, double, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderGhast net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityGhast)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderSquid void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
@@ -791,17 +794,14 @@
     <item name='net.minecraft.client.renderer.entity.RenderWitch void renderEquippedItems(net.minecraft.entity.monster.EntityWitch, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderMinecart net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderIronGolem net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityIronGolem)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderLightningBolt net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderIronGolem net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderItem void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -809,19 +809,19 @@
     <item name='net.minecraft.client.renderer.entity.RenderWitch void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderMooshroom net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityMooshroom)'>
+    <item name='net.minecraft.client.renderer.entity.RenderPainting net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderMagmaCube net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityMagmaCube)'>
+    <item name='net.minecraft.client.renderer.entity.RenderSkeleton net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.EntityLiving)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderOcelot net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderCow net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderTntMinecart void func_147910_a(net.minecraft.entity.item.EntityMinecartTNT, float, net.minecraft.block.Block, int) 2'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderFallingBlock net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderGhast net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderMinecart net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
@@ -863,19 +863,22 @@
     <item name='net.minecraft.client.renderer.entity.RenderXPOrb void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderPainting net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderSkeleton net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySkeleton) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderGhast net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityGhast)'>
+    <item name='net.minecraft.client.renderer.entity.RenderSnowMan net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderDragon net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.boss.EntityDragon)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderGhast net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityGhast) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderZombie int shouldRenderPass(net.minecraft.entity.monster.EntityZombie, int, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderFallingBlock net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityFallingBlock)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RendererLivingEntity void func_82408_c(net.minecraft.entity.EntityLivingBase, int, float) 0'>
@@ -890,7 +893,7 @@
     <item name='net.minecraft.client.renderer.entity.RenderDragon void renderModel(net.minecraft.entity.boss.EntityDragon, float, float, float, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderPig net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityPig)'>
+    <item name='net.minecraft.client.renderer.entity.RenderMagmaCube net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderBiped net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.EntityLiving) 0'>
@@ -899,16 +902,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSkeleton net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySkeleton)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderBat void doRender(net.minecraft.entity.EntityLiving, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderOcelot void doRender(net.minecraft.entity.EntityLiving, double, double, double, float, float) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderXPOrb net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderHorse void renderModel(net.minecraft.entity.EntityLivingBase, float, float, float, float, float, float) 0'>
@@ -932,6 +929,9 @@
     <item name='net.minecraft.client.renderer.entity.RenderPlayer int shouldRenderPass(net.minecraft.entity.EntityLivingBase, int, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderFireball net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderBat void preRenderCallback(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
@@ -944,10 +944,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderHorse net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityHorse)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderZombie void rotateCorpse(net.minecraft.entity.EntityLivingBase, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderChicken float handleRotationFloat(net.minecraft.entity.passive.EntityChicken, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderDragon net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderEntity void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
@@ -958,9 +964,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderIronGolem net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderArrow void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -987,6 +990,9 @@
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderXPOrb void doRender(net.minecraft.entity.item.EntityXPOrb, double, double, double, float, float) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderArrow net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderCaveSpider net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
@@ -1022,9 +1028,6 @@
     <item name='net.minecraft.client.renderer.entity.RendererLivingEntity float renderSwingProgress(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSquid net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntitySquid)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RenderArrow void doRender(net.minecraft.entity.projectile.EntityArrow, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1037,7 +1040,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSquid net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderZombie net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RendererLivingEntity void renderLivingAt(net.minecraft.entity.EntityLivingBase, double, double, double) 0'>
@@ -1045,9 +1048,6 @@
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSlime net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySlime)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderSilverfish void doRender(net.minecraft.entity.EntityLiving, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
@@ -1064,13 +1064,10 @@
     <item name='net.minecraft.client.renderer.entity.RenderZombie void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderCaveSpider net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderMooshroom net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityMooshroom)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RendererLivingEntity float handleRotationFloat(net.minecraft.entity.EntityLivingBase, float) 0'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderBoat net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityBoat)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.Render void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
@@ -1082,7 +1079,13 @@
     <item name='net.minecraft.client.renderer.entity.RenderIronGolem void rotateCorpse(net.minecraft.entity.monster.EntityIronGolem, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderMinecart net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityMinecart)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderMinecartMobSpawner void func_147910_a(net.minecraft.entity.ai.EntityMinecartMobSpawner, float, net.minecraft.block.Block, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderSpider net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySpider)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RendererLivingEntity int getColorMultiplier(net.minecraft.entity.EntityLivingBase, float, float) 0'>
@@ -1103,6 +1106,9 @@
     <item name='net.minecraft.client.renderer.entity.RenderChicken float handleRotationFloat(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderWither net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.boss.EntityWither)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderHorse net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1115,16 +1121,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderWitch net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityWitch)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.client.renderer.entity.RenderWither net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderWither void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderHorse net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderZombie net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.EntityLiving)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSlime net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderOcelot net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityOcelot)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderCreeper void preRenderCallback(net.minecraft.entity.EntityLivingBase, float) 0'>
@@ -1148,6 +1154,9 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
+    <item name='net.minecraft.client.renderer.entity.RenderGiantZombie net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityGiantZombie)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
     <item name='net.minecraft.client.renderer.entity.RenderMooshroom void doRender(net.minecraft.entity.EntityLivingBase, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
@@ -1157,7 +1166,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderFallingBlock net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityFallingBlock)'>
+    <item name='net.minecraft.client.renderer.entity.RenderSpider net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderCreeper int shouldRenderPass(net.minecraft.entity.monster.EntityCreeper, int, float) 0'>
@@ -1190,19 +1199,16 @@
     <item name='net.minecraft.client.renderer.entity.RenderMinecart field_94145_f'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderTNTPrimed net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderItem void renderItemIntoGUI(net.minecraft.client.gui.FontRenderer, net.minecraft.client.renderer.texture.TextureManager, net.minecraft.item.ItemStack, int, int, boolean) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderItem void renderItemIntoGUI(net.minecraft.client.gui.FontRenderer, net.minecraft.client.renderer.texture.TextureManager, net.minecraft.item.ItemStack, int, int, boolean) 2'>
+    <item name='net.minecraft.client.renderer.entity.RenderMooshroom net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderBiped void func_82420_a(net.minecraft.entity.EntityLiving, net.minecraft.item.ItemStack) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderEnderman net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityEnderman)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderLeashKnot net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderMinecart net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RendererLivingEntity void preRenderCallback(net.minecraft.entity.EntityLivingBase, float) 0'>
@@ -1220,7 +1226,7 @@
     <item name='net.minecraft.client.renderer.entity.RenderMooshroom void doRender(net.minecraft.entity.Entity, double, double, double, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSnowMan net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySnowman)'>
+    <item name='net.minecraft.client.renderer.entity.RenderPainting net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.item.EntityPainting)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderIronGolem void renderEquippedItems(net.minecraft.entity.monster.EntityIronGolem, float) 0'>
@@ -1238,19 +1244,16 @@
     <item name='net.minecraft.client.renderer.entity.RenderPlayer int shouldRenderPass(net.minecraft.client.entity.AbstractClientPlayer, int, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderCaveSpider net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntitySpider)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.client.renderer.entity.RendererLivingEntity void renderEquippedItems(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderPlayer void func_82408_c(net.minecraft.client.entity.AbstractClientPlayer, int, float) 0'>
+    <item name='net.minecraft.client.renderer.entity.RenderEnderman net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderZombie net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityZombie)'>
+    <item name='net.minecraft.client.renderer.entity.RenderPlayer void func_82408_c(net.minecraft.client.entity.AbstractClientPlayer, int, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderMooshroom void doRender(net.minecraft.entity.EntityLiving, double, double, double, float, float) 0'>
@@ -1262,10 +1265,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderFish net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderPlayer void rotateCorpse(net.minecraft.client.entity.AbstractClientPlayer, float, float, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderPlayer void rotateCorpse(net.minecraft.client.entity.AbstractClientPlayer, float, float, float) 0'>
+    <item name='net.minecraft.client.renderer.entity.RenderCaveSpider net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityCaveSpider)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderHorse void preRenderCallback(net.minecraft.entity.passive.EntityHorse, float) 0'>
@@ -1307,16 +1310,13 @@
     <item name='net.minecraft.client.renderer.entity.RenderZombie net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.monster.EntityZombie) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderCreeper net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.client.renderer.entity.RenderBat net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.passive.EntityBat)'>
+    <item name='net.minecraft.client.renderer.entity.RenderSilverfish net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderMagmaCube void preRenderCallback(net.minecraft.entity.monster.EntityMagmaCube, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.renderer.entity.RenderSheep net.minecraft.util.ResourceLocation getEntityTexture(net.minecraft.entity.Entity)'>
+    <item name='net.minecraft.client.renderer.entity.RenderBiped net.minecraft.util.ResourceLocation getArmorResource(net.minecraft.entity.Entity, net.minecraft.item.ItemStack, int, java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.renderer.entity.RenderHorse void preRenderCallback(net.minecraft.entity.EntityLivingBase, float) 0'>

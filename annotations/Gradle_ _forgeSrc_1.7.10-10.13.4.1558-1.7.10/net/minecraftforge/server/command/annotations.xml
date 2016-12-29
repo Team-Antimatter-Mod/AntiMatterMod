@@ -1,8 +1,8 @@
 <root>
-    <item name='net.minecraftforge.server.command.ForgeCommand java.lang.String getCommandName()'>
+    <item name='net.minecraftforge.server.command.ForgeCommand java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.server.command.ForgeCommand java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
+    <item name='net.minecraftforge.server.command.ForgeCommand java.lang.String getCommandName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.server.command.ForgeCommand void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>

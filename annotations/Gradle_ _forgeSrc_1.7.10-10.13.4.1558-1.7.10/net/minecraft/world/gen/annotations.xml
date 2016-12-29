@@ -1,44 +1,59 @@
 <root>
-    <item name='net.minecraft.world.gen.ChunkProviderGenerate java.lang.String makeString()'>
+    <item name='net.minecraft.world.gen.ChunkProviderEnd net.minecraft.world.chunk.Chunk loadChunk(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.MapGenRavine boolean isOceanBlock(net.minecraft.block.Block[], int, int, int, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.NoiseGeneratorPerlin double[] func_151599_a(double[], double, double, int, int, double, double, double)'>
+    <item name='net.minecraft.world.gen.FlatGeneratorInfo java.util.Map getWorldFeatures()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.MapGenRavine void digBlock(net.minecraft.block.Block[], int, int, int, int, int, int, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.ChunkProviderEnd java.lang.String makeString()'>
+    <item name='net.minecraft.world.gen.ChunkProviderHell java.lang.String makeString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.ChunkProviderEnd net.minecraft.world.chunk.Chunk provideChunk(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.ChunkProviderGenerate net.minecraft.world.chunk.Chunk loadChunk(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.MapGenCaves void digBlock(net.minecraft.block.Block[], int, int, int, int, int, int, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.ChunkProviderFlat net.minecraft.world.chunk.Chunk loadChunk(int, int)'>
+    <item name='net.minecraft.world.gen.FlatGeneratorInfo net.minecraft.world.gen.FlatGeneratorInfo createFlatGeneratorFromString(java.lang.String)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.ChunkProviderFlat net.minecraft.world.chunk.Chunk provideChunk(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.FlatGeneratorInfo java.util.List getFlatLayers()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.NoiseGeneratorOctaves double[] generateNoiseOctaves(double[], int, int, int, int, double, double, double)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.ChunkProviderFlat java.lang.String makeString()'>
+    <item name='net.minecraft.world.gen.NoiseGeneratorOctaves double[] generateNoiseOctaves(double[], int, int, int, int, int, int, double, double, double)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.FlatGeneratorInfo net.minecraft.world.gen.FlatGeneratorInfo getDefaultFlatGenerator()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.MapGenCaves boolean isOceanBlock(net.minecraft.block.Block[], int, int, int, int, int, int) 0'>
+    <item name='net.minecraft.world.gen.ChunkProviderGenerate net.minecraft.world.chunk.Chunk provideChunk(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.ChunkProviderHell net.minecraft.world.chunk.Chunk loadChunk(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.NoiseGeneratorPerlin double[] func_151600_a(double[], double, double, int, int, double, double, double, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.FlatGeneratorInfo java.util.List getFlatLayers()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.MapGenCaves boolean isOceanBlock(net.minecraft.block.Block[], int, int, int, int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.ChunkProviderEnd java.lang.String makeString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.ChunkProviderFlat java.lang.String makeString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.ChunkProviderHell net.minecraft.world.chunk.Chunk provideChunk(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.ChunkProviderGenerate ChunkProviderGenerate(net.minecraft.world.World, long, boolean) 0'>
@@ -47,37 +62,25 @@
     <item name='net.minecraft.world.gen.NoiseGeneratorSimplex NoiseGeneratorSimplex(java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.ChunkProviderGenerate net.minecraft.world.chunk.Chunk provideChunk(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.FlatGeneratorInfo java.util.Map getWorldFeatures()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
     <item name='net.minecraft.world.gen.NoiseGeneratorImproved NoiseGeneratorImproved(java.util.Random) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.ChunkProviderGenerate net.minecraft.world.chunk.Chunk loadChunk(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.FlatGeneratorInfo net.minecraft.world.gen.FlatGeneratorInfo createFlatGeneratorFromString(java.lang.String)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.ChunkProviderHell net.minecraft.world.chunk.Chunk provideChunk(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.ChunkProviderEnd net.minecraft.world.chunk.Chunk provideChunk(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.ChunkProviderEnd net.minecraft.world.chunk.Chunk loadChunk(int, int)'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.MapGenBase void func_151539_a(net.minecraft.world.chunk.IChunkProvider, net.minecraft.world.World, int, int, net.minecraft.block.Block[]) 1'>
+    <item name='net.minecraft.world.gen.NoiseGeneratorPerlin double[] func_151599_a(double[], double, double, int, int, double, double, double)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.ChunkProviderServer net.minecraft.world.chunk.Chunk originalLoadChunk(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.NoiseGeneratorPerlin double[] func_151600_a(double[], double, double, int, int, double, double, double, double)'>
+    <item name='net.minecraft.world.gen.ChunkProviderGenerate java.lang.String makeString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.MapGenBase void func_151539_a(net.minecraft.world.chunk.IChunkProvider, net.minecraft.world.World, int, int, net.minecraft.block.Block[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.ChunkProviderFlat net.minecraft.world.chunk.Chunk loadChunk(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='net.minecraft.world.gen.NoiseGeneratorOctaves double[] generateNoiseOctaves(double[], int, int, int, int, double, double, double)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.gen.ChunkProviderHell void func_147418_b(int, int, net.minecraft.block.Block[]) 2'>
@@ -86,10 +89,7 @@
     <item name='net.minecraft.world.gen.ChunkProviderEnd void func_147421_b(int, int, net.minecraft.block.Block[], net.minecraft.world.biome.BiomeGenBase[]) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.gen.ChunkProviderHell java.lang.String makeString()'>
-        <annotation name='org.jetbrains.annotations.NotNull'/>
-    </item>
-    <item name='net.minecraft.world.gen.NoiseGeneratorOctaves double[] generateNoiseOctaves(double[], int, int, int, int, int, int, double, double, double)'>
+    <item name='net.minecraft.world.gen.ChunkProviderFlat net.minecraft.world.chunk.Chunk provideChunk(int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
 </root>

@@ -1,0 +1,26 @@
+<root>
+    <item name='com.mojang.util.UUIDTypeAdapter void write(com.google.gson.stream.JsonWriter, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.util.UUIDTypeAdapter void write(com.google.gson.stream.JsonWriter, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.util.UUIDTypeAdapter java.lang.Object read(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.util.UUIDTypeAdapter java.util.UUID fromString(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.util.UUIDTypeAdapter java.util.UUID read(com.google.gson.stream.JsonReader) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.util.UUIDTypeAdapter void write(com.google.gson.stream.JsonWriter, java.util.UUID) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.util.UUIDTypeAdapter void write(com.google.gson.stream.JsonWriter, java.util.UUID) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.mojang.util.UUIDTypeAdapter java.lang.String fromUUID(java.util.UUID) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>
