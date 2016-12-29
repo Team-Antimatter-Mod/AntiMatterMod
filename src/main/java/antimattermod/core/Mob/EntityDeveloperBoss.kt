@@ -9,6 +9,9 @@ import net.minecraft.world.World
  * Created by kojin15.
  */
 class EntityDeveloperBoss(world: World) : EntityMob(world), IBossDisplayData {
+    
+    
+    
     init {
 
     }

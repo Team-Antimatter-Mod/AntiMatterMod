@@ -1,7 +1,8 @@
 package antimattermod.core.Mob.render
 
 import antimattermod.core.Mob.EntityDeveloperBoss
-import antimattermod.core.fileIO.AMMFiles
+import antimattermod.core.Mob.model.ModelDeveloperBoss
+import antimattermod.core.fileIO.DeveloperBossTexture
 import net.minecraft.client.Minecraft
 import net.minecraft.client.entity.AbstractClientPlayer
 import net.minecraft.client.model.ModelBase
@@ -20,19 +21,18 @@ import java.io.File
 /**
  * Created by kojin15.
  */
-class RenderDeveloperBoss(model: ModelBase) : RenderLiving(model, 0.5f) {
+class RenderDeveloperBoss() : RenderLiving(ModelDeveloperBoss(), 0.5f) {
     
     var skin: ResourceLocation? = null
     
     //仮コード。後に書き換える
-    override fun getEntityTexture(p_110775_1_: Entity): ResourceLocation? {
+    override fun getEntityTexture(entity: Entity): ResourceLocation? {
         if (skin == null) {
             skin = ResourceLocation("AntiMatterMod:s/texture/raitichan.png")
-            //AbstractClientPlayer.getDownloadImageSkin(skin, "Raitichan")
             val texturemanager = Minecraft.getMinecraft().textureManager
             var obj = texturemanager.getTexture(skin)
             if (obj == null) {
-                obj = ThreadDownloadImageData(File(AMMFiles.DEVELOPER_BOSS_TEXTURE_DIRECTORY + "C6H2Cl2.png"), null, AbstractClientPlayer.locationStevePng,
+                obj = ThreadDownloadImageData(File(DeveloperBossTexture.Raitichan.texturePath), null, AbstractClientPlayer.locationStevePng,
                         //==================================================================================================================
                         object : IImageBuffer {
                             
