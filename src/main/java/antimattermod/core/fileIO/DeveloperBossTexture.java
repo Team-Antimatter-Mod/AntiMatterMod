@@ -1,6 +1,9 @@
 package antimattermod.core.fileIO;
 
 
+import net.minecraft.client.entity.AbstractClientPlayer;
+import net.minecraft.util.ResourceLocation;
+
 /**
  * 開発者のスキン管理Enum<br>
  * Enumインスタンス名はプレイヤーID<br>
@@ -53,5 +56,7 @@ public enum DeveloperBossTexture {
                     AMMFiles.DEVELOPER_BOSS_TEXTURE_DIRECTORY + string + ".png");
             developer.setTexturePath(filePath);
         }
+    
+        //AbstractClientPlayer.getDownloadImageSkin(new ResourceLocation("skins/texture/raitichan.png"), "Raitichan");
     }
 }
