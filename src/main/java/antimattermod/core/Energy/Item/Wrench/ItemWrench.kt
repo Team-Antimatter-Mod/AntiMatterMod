@@ -5,6 +5,7 @@ import antimattermod.core.AntiMatterModRegistry
 import antimattermod.core.Energy.APType
 import antimattermod.core.Energy.Item.Wrench.IDirectionWrenchAction
 import antimattermod.core.Item.tool.AMMItemBase
+import antimattermod.core.Util.AddInformationfunction
 import antimattermod.core.Util.ClickPos
 import net.minecraft.block.Block
 import net.minecraft.entity.Entity
@@ -41,13 +42,14 @@ class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
         val block = world!!.getBlock(x, y, z)
         val meta = world.getBlockMetadata(x, y, z)
         val clickPos = ClickPos(side, posX, posY, posZ)
-        val wrenchMode = WrenchMode.getWrenchModeFromOrdinal(itemStack!!.tagCompound.getInteger("WrenchMode"))
-        when (wrenchMode) {
+        val wrenchMode = WrenchMode.values()
+
+        when (wrenchMode[itemStack!!.tagCompound.getInteger("WrenchMode")]) {
             WrenchMode.Block -> {
                 if (block is IDirectionWrenchAction) {
                     if (!isSneaking) {
                         this.settingDirection(world, block, x, y, z, meta, clickPos, block.isVerticalChange())
-                    } else block.onBlockRemoval(player, world, x, y, z, side, clickPos)
+                    } else block.onBlockRemoval(block, player, world, x, y, z, side, meta, clickPos)
                     return true
                 }
             }
@@ -90,5 +92,8 @@ class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
 
     }
 
+    override fun addInformation(p_77624_1_: ItemStack, p_77624_2_: EntityPlayer, p_77624_3_: MutableList<Any?>, p_77624_4_: Boolean) {
+        antimattermod.core.Util.AddInformationfunction.WrenchInformation(p_77624_1_, p_77624_2_, p_77624_3_, p_77624_4_)
+    }
 }
 

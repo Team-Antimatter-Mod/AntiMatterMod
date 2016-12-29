@@ -14,15 +14,4 @@ enum class WrenchMode {
 
     ぬるぽ;
 
-    companion object {
-        fun getWrenchModeFromOrdinal(ordinal : Int):WrenchMode{
-            return when(ordinal){
-                0 -> Block
-                1 -> Transceiver
-
-                else -> ぬるぽ
-            }
-        }
-    }
-
 }

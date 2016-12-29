@@ -25,11 +25,10 @@ class WrenchKeyEvent {
 
             if (itemStack != null && itemStack.item is ItemWrench) {
 
-                if (ClientAntiMatterModCoreProxy.WrenchSetting.isKeyPressed) {
+                if (ClientAntiMatterModCoreProxy.wrenchSetting.isKeyPressed) {
                     if (itemStack.hasTagCompound()) {
                         val mode: Int = itemStack.tagCompound.getInteger("WrenchMode")
                         val maxMode = (WrenchMode.ぬるぽ.ordinal) - 1
-                        //System.out.println(mode)
 
                         when (mode) {
                             maxMode -> itemStack.tagCompound.setInteger("WrenchMode", 0)
