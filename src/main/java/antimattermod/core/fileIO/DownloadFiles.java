@@ -114,5 +114,9 @@ public class DownloadFiles {
      * MinecraftのプレイヤースキンのロケーションURL
      */
     public static final String SKIN_URL_LOCATION = "http://skins.minecraft.net/MinecraftSkins/";
-    
+
+    /**
+     * MOJANG APIを使用し、UUIDから情報を取得するURL
+     */
+    public static final String MOJANG_API_UUID_URL_LOCATION = "https://sessionserver.mojang.com/session/minecraft/profile/";
 }
