@@ -24,7 +24,7 @@ public final class AMMFiles {
     public static final String DEVELOPER_BOSS_TEXTURE_DIRECTORY = CONFIG_DIRECTORY + "developerBossTexture/";
 
     /**
-     * MOJANG APIで取得したJSONファイルのダウンロード場所
+     * MOJANG APIで取得したプレイヤーのJSONファイルのダウンロード場所
      */
     public static final String MOJANG_API_UUID_JSON_DIRECTORY = CONFIG_DIRECTORY + "developerBossUUID/";
 

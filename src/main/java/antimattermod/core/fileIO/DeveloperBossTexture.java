@@ -53,7 +53,7 @@ public enum DeveloperBossTexture {
             String string = developer.toString();
 
             /**
-             * とりあえずMOJANG APIから、GakuのUUIDを落とすようにしてみました。安全確保のためコメントアウトしてまするが。
+             * とりあえずMOJANG APIから、GakuのUUIDを落とすようにしてみました。安全確保のためコメントアウトしてまする。
              * String filePath = DownloadFiles.download(DownloadFiles.MOJANG_API_UUID_URL_LOCATION + "25165cda7bff4963bfcaa152bc8f11ef" + ".json", AMMFiles.MOJANG_API_UUID_JSON_DIRECTORY + "25165cda7bff4963bfcaa152bc8f11ef" + ".json");
              */
 
