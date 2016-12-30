@@ -43,7 +43,7 @@ public class AMMTool extends ItemTool implements AMMItemBase {
 	 */
 	@Override
 	public Item setTextureName(String name) {
-		return super.setTextureName(AntiMatterModCore.MOD_ID+":tool/"+name);
+		return super.setTextureName(AntiMatterModCore.MOD_ID+":item/tool/"+name);
 	}
 	
 	
