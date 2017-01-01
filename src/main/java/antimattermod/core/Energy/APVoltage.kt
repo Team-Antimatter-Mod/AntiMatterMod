@@ -25,10 +25,10 @@ enum class APVoltage private constructor(val maxEnergy: Int) {
         }
     }
 
-    public fun writeToNBT(tagCompound: NBTTagCompound):Unit{
-        val tag : NBTTagCompound = NBTTagCompound()
-        tag.setInteger("energy",maxEnergy)
-        tagCompound.setTag("voltage",tag)
+    public fun writeToNBT(tagCompound: NBTTagCompound): Unit {
+        val tag: NBTTagCompound = NBTTagCompound()
+        tag.setInteger("energy", maxEnergy)
+        tagCompound.setTag("voltage", tag)
     }
 
     public fun readFromNBT(tagCompound: NBTTagCompound): APVoltage {

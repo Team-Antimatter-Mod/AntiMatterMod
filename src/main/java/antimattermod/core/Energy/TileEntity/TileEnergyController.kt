@@ -11,12 +11,10 @@ import net.minecraft.world.World
 /**
  * @author C6H2Cl2
  */
-class TileEnergyController :TileEntity(),IEnergyWrenchAction{
-    override fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, x: Int, y: Int, z: Int, side: Int, isSneaking: Boolean) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+class TileEnergyController : TileEntity(), IEnergyWrenchAction {
 
     var network = EnergyNetwork()
+
     init {
 
     }

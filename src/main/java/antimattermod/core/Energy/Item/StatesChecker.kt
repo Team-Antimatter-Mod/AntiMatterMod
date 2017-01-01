@@ -13,10 +13,10 @@ import net.minecraft.world.World
 /**
  * @author C6H2Cl2
  */
-class StatesChecker : Item(){
+class StatesChecker : Item() {
     init {
         unlocalizedName = "StatesChecker"
-        setTextureName(AntiMatterModCore.MOD_ID+":tool/stateschecker")
+        setTextureName(AntiMatterModCore.MOD_ID + ":tool/stateschecker")
         creativeTab = AntiMatterModRegistry.tabMachines
         setMaxStackSize(1)
     }

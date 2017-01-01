@@ -10,7 +10,7 @@ import net.minecraft.world.World
 /**
  * @author C6H2Cl2
  */
-class EnergyControllerBlock :BlockContainer(Material.rock){
+class EnergyControllerBlock : BlockContainer(Material.rock) {
     init {
         setBlockName("amm.energyController")
         textureName = "${AntiMatterModCore.MOD_ID}:energyController"

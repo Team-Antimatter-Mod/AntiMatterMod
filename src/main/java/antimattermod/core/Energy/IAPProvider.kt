@@ -9,10 +9,10 @@ import net.minecraftforge.common.util.ForgeDirection
  * Interface for AP Generators
  * Implemented class must extend net.minecraft.tileentity.TileEntity.
  */
-interface IAPProvider{
-    fun getMaxProvideVoltage():APVoltage
-    fun getConnectableSide():ForgeDirection
-    fun getUseableEnergy():Int
-    fun useEnergy(value:Int,voltage:APVoltage)
-    fun explode(value: Int,voltage: APVoltage,world: World,blockPos: BlockPos)
+interface IAPProvider {
+    fun getMaxProvideVoltage(): APVoltage
+    fun getConnectableSide(): ForgeDirection
+    fun getUseableEnergy(): Int
+    fun useEnergy(value: Int, voltage: APVoltage)
+    fun explode(value: Int, voltage: APVoltage, world: World, blockPos: BlockPos)
 }

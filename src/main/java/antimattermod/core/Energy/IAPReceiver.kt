@@ -8,8 +8,8 @@ import net.minecraftforge.common.util.ForgeDirection
  * Implemented class must extend net.minecraft.tileentity.TileEntity.
  */
 interface IAPReceiver {
-    fun getMaxRecieveVoltage():APVoltage
+    fun getMaxRecieveVoltage(): APVoltage
     fun getConnectableSide(): ForgeDirection
-    fun getAddableEnergy():Int
-    fun addEnergy(value:Int,voltage:APVoltage)
+    fun getAddableEnergy(): Int
+    fun addEnergy(value: Int, voltage: APVoltage)
 }

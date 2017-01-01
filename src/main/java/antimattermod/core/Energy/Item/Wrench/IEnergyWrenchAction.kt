@@ -11,6 +11,7 @@ interface IEnergyWrenchAction {
 
     /**
      * ブロック側の送受信設定
+     * なんてなかった、いいね？ by C6H2Cl2
      */
-    fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, x: Int, y: Int, z: Int, side: Int, isSneaking: Boolean)
+    //fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, x: Int, y: Int, z: Int, side: Int, isSneaking: Boolean)
 }

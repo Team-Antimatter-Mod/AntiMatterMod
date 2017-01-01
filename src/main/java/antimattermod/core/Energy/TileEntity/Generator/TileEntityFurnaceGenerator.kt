@@ -13,16 +13,16 @@ import net.minecraft.tileentity.TileEntity
 /**
  * @author C6H2Cl2
  */
-class TileEntityFurnaceGenerator : TileEntity(){
+class TileEntityFurnaceGenerator : TileEntity() {
 
     //定数
-    private val voltage : APVoltage = APVoltage.HV
-    private val energyStorage : Int = voltage.maxEnergy * 20 * 600
-    private val maxFuel : Float = 2048f
+    private val voltage: APVoltage = APVoltage.HV
+    private val energyStorage: Int = voltage.maxEnergy * 20 * 600
+    private val maxFuel: Float = 2048f
     //変数
-    private var storedEnergy : Int = 0
-    private var fuel : Float = 0f
-    private var currentGenerate : Int = 0
+    private var storedEnergy: Int = 0
+    private var fuel: Float = 0f
+    private var currentGenerate: Int = 0
 
 
     init {
@@ -32,8 +32,8 @@ class TileEntityFurnaceGenerator : TileEntity(){
     //NBTに書き込み
     override fun writeToNBT(tagCompound: NBTTagCompound?) {
         super.writeToNBT(tagCompound)
-        tagCompound!!.setInteger("storedEnergy",storedEnergy)
-        tagCompound.setFloat("fuel",fuel)
+        tagCompound!!.setInteger("storedEnergy", storedEnergy)
+        tagCompound.setFloat("fuel", fuel)
     }
 
     //NBTから読み出し
@@ -46,31 +46,31 @@ class TileEntityFurnaceGenerator : TileEntity(){
     //tickごとの処理
     override fun updateEntity() {
         super.updateEntity()
-        if(fuel > 1f){
+        if (fuel > 1f) {
             currentGenerate = voltage.maxEnergy
             storedEnergy += voltage.maxEnergy
             fuel -= 1f
-        }else if (fuel > 0f){
+        } else if (fuel > 0f) {
             currentGenerate = (voltage.maxEnergy * fuel).toInt()
             storedEnergy += currentGenerate
             fuel = 0f
-            val meta : Int = this.worldObj.getBlockMetadata(this.xCoord,this.yCoord,this.zCoord)
-            worldObj.setBlockMetadataWithNotify(this.xCoord,this.yCoord,this.zCoord,if(meta > 5) meta - 6 else meta,2)
-        }else{
+            val meta: Int = this.worldObj.getBlockMetadata(this.xCoord, this.yCoord, this.zCoord)
+            worldObj.setBlockMetadataWithNotify(this.xCoord, this.yCoord, this.zCoord, if (meta > 5) meta - 6 else meta, 2)
+        } else {
             currentGenerate = 0
 
         }
     }
 
     //燃料追加
-    fun addFuel(amount: Float) :Float{
-        val value :Float= amount / 1600
+    fun addFuel(amount: Float): Float {
+        val value: Float = amount / 1600
         fuel += value
-        if (fuel > maxFuel){
+        if (fuel > maxFuel) {
             val over = fuel - maxFuel
             fuel = maxFuel
             return over
-        }else{
+        } else {
             return 0f
         }
     }
@@ -83,7 +83,7 @@ class TileEntityFurnaceGenerator : TileEntity(){
     override fun getDescriptionPacket(): Packet {
         val tagCompound = NBTTagCompound()
         writeToNBT(tagCompound)
-        return S35PacketUpdateTileEntity(xCoord,yCoord,zCoord,1,tagCompound)
+        return S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 1, tagCompound)
     }
 
     /*override fun getStoredEnergy(): Int {

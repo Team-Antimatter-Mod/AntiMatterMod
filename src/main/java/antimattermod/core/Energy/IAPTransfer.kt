@@ -9,7 +9,7 @@ import net.minecraftforge.common.util.ForgeDirection
  * Implemented class must extend net.minecraft.tileentity.TileEntity.
  */
 interface IAPTransfer {
-    fun isProvider():Boolean
-    fun getTarget():ForgeDirection
-    fun getController():BlockPos
+    fun isProvider(): Boolean
+    fun getTarget(): ForgeDirection
+    fun getController(): BlockPos
 }

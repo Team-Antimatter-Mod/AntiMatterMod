@@ -57,7 +57,7 @@ class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
             WrenchMode.Transceiver -> {
                 if (block is IEnergyWrenchAction) {
                     this.settingTransceiver(itemStack, player, world, x, y, z, side, isSneaking)
-                    block.settingTransceiver(itemStack, player, world, x, y, z, side, isSneaking)
+                    //block.settingTransceiver(itemStack, player, world, x, y, z, side, isSneaking)
                 }
                 return true
             }
@@ -94,7 +94,7 @@ class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
      */
     fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, x: Int, y: Int, z: Int, side: Int, isSneaking: Boolean) {
         //ぬるぽ対策
-        if (!itemStack.hasTagCompound()){
+        if (!itemStack.hasTagCompound()) {
             itemStack.tagCompound = NBTTagCompound()
         }
         //ItemStackのタグの参照
@@ -102,30 +102,30 @@ class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
         val pos = BlockPos(x, y, z)
         val tile = pos.getTileEntityFromPos(world)
         //対象のBlockPosから、種類を判別し、NBTTag用の名前を設定する
-        val tagName : String = when(tile){
+        val tagName: String = when (tile) {
             is IAPController -> "Controller"
-            is IAPTransfer -> if(tile.isProvider()){
+            is IAPTransfer -> if (tile.isProvider()) {
                 if (tag.hasKey("Receiver")) tag.removeTag("Receiver")
                 "Provider"
-            }else{
+            } else {
                 if (tag.hasKey("Provider")) tag.removeTag("Provider")
                 "Receiver"
             }
             else -> return
         }
         //NBTに座標情報の書き込み
-        pos.writeToNBT(tag,tagName)
+        pos.writeToNBT(tag, tagName)
         //Controllerと、Provider or Receiverの両方が揃っている場合、Controllerに接続情報を書き込む
-        if (tag.hasKey("Controller")){
+        if (tag.hasKey("Controller")) {
             //Providerの時
-            if (tag.hasKey("Provider")){
+            if (tag.hasKey("Provider")) {
                 //ControllerのTileEntity取得
-                val posController = BlockPos(0,0,0)
-                posController.readFromNBT(tag,"Controller")
+                val posController = BlockPos(0, 0, 0)
+                posController.readFromNBT(tag, "Controller")
                 val tileController = posController.getTileEntityFromPos(world)
                 //書き込み用のBlockPos取得
-                val posProvider = BlockPos(0,0,0)
-                posProvider.readFromNBT(tag,"Provider")
+                val posProvider = BlockPos(0, 0, 0)
+                posProvider.readFromNBT(tag, "Provider")
                 /**
                  * @throws TypeCastException
                  * そもそもIAPControllerでない座標をControllerとして登録するな
@@ -133,13 +133,13 @@ class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
                 (tileController as IAPController).setProvider(posProvider)
                 tag.removeTag("Provider")
                 tag.removeTag("Controller")
-            }else if (tag.hasKey("Receiver")){
+            } else if (tag.hasKey("Receiver")) {
                 //Receiverの時 Providerと同様
-                val posController = BlockPos(0,0,0)
-                posController.readFromNBT(tag,"Receiver")
+                val posController = BlockPos(0, 0, 0)
+                posController.readFromNBT(tag, "Receiver")
                 val tileController = posController.getTileEntityFromPos(world)
-                val posProvider = BlockPos(0,0,0)
-                posProvider.readFromNBT(tag,"Receiver")
+                val posProvider = BlockPos(0, 0, 0)
+                posProvider.readFromNBT(tag, "Receiver")
                 /**
                  * @throws TypeCastException
                  */

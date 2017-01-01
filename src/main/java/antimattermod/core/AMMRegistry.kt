@@ -31,7 +31,7 @@ object AMMRegistry {
     //エネルギー制御
     val energyController = EnergyControllerBlock()
 
-    fun handlePreinit(){
+    fun handlePreinit() {
         //Itemの登録 ===================================================================================================
         //ツール
         GameRegistry.registerItem(statesChecker, "statesCheckerAP")
@@ -43,7 +43,7 @@ object AMMRegistry {
         GameRegistry.registerBlock(energyController, "energyControllerAP")
     }
 
-    fun handleInit(){
+    fun handleInit() {
         //TileEntityの登録 =============================================================================================
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator::class.java, "tileFurnaceGeneratorAP")
         GameRegistry.registerTileEntity(TileEnergyController::class.java, "tileEnergyControllerAP")

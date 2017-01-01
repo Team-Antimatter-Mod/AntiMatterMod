@@ -13,7 +13,7 @@ import net.minecraft.tileentity.TileEntity
 /**
  * @author C6H2Cl2
  */
-class TileAlloySmelter(private var tier:Int) : TileEntity(), IInventory {
+class TileAlloySmelter(private var tier: Int) : TileEntity(), IInventory {
 
     private var slotSize = 0
     /*Slotの数について
@@ -23,11 +23,12 @@ class TileAlloySmelter(private var tier:Int) : TileEntity(), IInventory {
      */
     private var materialSlotItem: Array<ItemStack?> = emptyArray()
     private var resultSlotItem: Array<ItemStack?> = arrayOfNulls(2)
-    private var voltage : APVoltage = APVoltage.ZeroVoltage
+    private var voltage: APVoltage = APVoltage.ZeroVoltage
     private var storedEnergy = 0
     private var maxEnergy = 0
+
     init {
-        when(tier){
+        when (tier) {
             1 -> {
                 slotSize = 2
                 voltage = APVoltage.MV
@@ -47,8 +48,8 @@ class TileAlloySmelter(private var tier:Int) : TileEntity(), IInventory {
         materialSlotItem = arrayOfNulls(slotSize)
     }
 
-    public fun getTier():Int = tier
-    public fun getSlotSize():Int = slotSize
+    public fun getTier(): Int = tier
+    public fun getSlotSize(): Int = slotSize
 
     //tickごとの処理
     override fun updateEntity() {
@@ -59,9 +60,9 @@ class TileAlloySmelter(private var tier:Int) : TileEntity(), IInventory {
     override fun writeToNBT(tagCompound: NBTTagCompound) {
         super.writeToNBT(tagCompound)
         val tag = NBTTagCompound()
-        tag.setInteger("tier",tier)
-        tag.setInteger("slotSize",slotSize)
-        tagCompound.setTag("data",tag)
+        tag.setInteger("tier", tier)
+        tag.setInteger("slotSize", slotSize)
+        tagCompound.setTag("data", tag)
     }
 
     //NBTからデータ読み込み
@@ -81,18 +82,18 @@ class TileAlloySmelter(private var tier:Int) : TileEntity(), IInventory {
     override fun getDescriptionPacket(): Packet {
         val tagCompound = NBTTagCompound()
         writeToNBT(tagCompound)
-        return S35PacketUpdateTileEntity(xCoord,yCoord,zCoord,1,tagCompound)
+        return S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 1, tagCompound)
     }
 
     //slotNumberのSlotに、ItemStack突っ込むだけ
     override fun setInventorySlotContents(slotNumber: Int, itemStack: ItemStack?) {
-        if (itemStack != null && itemStack.stackSize > inventoryStackLimit){
+        if (itemStack != null && itemStack.stackSize > inventoryStackLimit) {
             itemStack.stackSize = inventoryStackLimit
         }
         if (slotNumber < slotSize) {
             materialSlotItem[slotNumber] = itemStack
-        }else{
-            resultSlotItem[slotNumber-slotSize] = itemStack
+        } else {
+            resultSlotItem[slotNumber - slotSize] = itemStack
         }
     }
 
@@ -101,7 +102,7 @@ class TileAlloySmelter(private var tier:Int) : TileEntity(), IInventory {
     }
 
     override fun getInventoryName(): String {
-        return "alloySmelterTier"+tier
+        return "alloySmelterTier" + tier
     }
 
     override fun isItemValidForSlot(p_94041_1_: Int, p_94041_2_: ItemStack?): Boolean {
@@ -118,18 +119,18 @@ class TileAlloySmelter(private var tier:Int) : TileEntity(), IInventory {
 
     //第一引数のスロットのItemStackのStack数を最大で第二引数個減らし、減らした分のItemStackを返す
     override fun decrStackSize(slotNumber: Int, stackSize: Int): ItemStack? {
-        if (materialSlotItem[slotNumber] != null){
-            if(materialSlotItem[slotNumber]!!.stackSize <= stackSize){
+        if (materialSlotItem[slotNumber] != null) {
+            if (materialSlotItem[slotNumber]!!.stackSize <= stackSize) {
                 val itemStack = materialSlotItem[slotNumber]
                 materialSlotItem[slotNumber] = null
                 markDirty()
                 return itemStack
-            }else{
+            } else {
                 val itemStack = materialSlotItem[slotNumber]!!.splitStack(stackSize)
                 markDirty()
                 return itemStack
             }
-        }else{
+        } else {
             return null
         }
     }
@@ -156,8 +157,8 @@ class TileAlloySmelter(private var tier:Int) : TileEntity(), IInventory {
     override fun getStackInSlot(slotNumber: Int): ItemStack? {
         return if (slotNumber < slotSize) {
             materialSlotItem[slotNumber]
-        }else{
-            resultSlotItem[slotNumber-slotSize]
+        } else {
+            resultSlotItem[slotNumber - slotSize]
         }
     }
 
