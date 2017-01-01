@@ -97,16 +97,13 @@ class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
      * @see c6h2cl2.YukariLib.Util.BlockPos
      * @throws TypeCastException
      */
-    fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, blockPos: BlockPos, side: Int, isSneaking: Boolean) {
-
-    fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, x: Int, y: Int, z: Int, side: Int, isSneaking: Boolean) {
+    fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, pos: BlockPos, side: Int, isSneaking: Boolean) {
         //ぬるぽ対策
         if (!itemStack.hasTagCompound()) {
             itemStack.tagCompound = NBTTagCompound()
         }
         //ItemStackのタグの参照
         val tag = itemStack.tagCompound
-        val pos = BlockPos(x, y, z)
         val tile = pos.getTileEntityFromPos(world)
         //対象のBlockPosから、種類を判別し、NBTTag用の名前を設定する
         val tagName: String = when (tile) {

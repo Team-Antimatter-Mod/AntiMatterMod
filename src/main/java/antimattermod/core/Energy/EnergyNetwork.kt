@@ -1,16 +1,20 @@
 package antimattermod.core.Energy
 
 import c6h2cl2.YukariLib.Util.BlockPos
-import net.minecraft.nbt.NBTTagCompound
-import net.minecraft.nbt.NBTTagList
-import net.minecraft.tileentity.TileEntity
-import java.util.*
+import kotlin.collections.HashMap
 
 /**
  * @author C6H2Cl2
  */
 class EnergyNetwork {
+    private val networkComponentsProvider = HashMap<BlockPos,BlockPos>()
+    private val networkComponentsReceiver = HashMap<BlockPos,BlockPos>()
 
+    /**
+     * @author C6H2Cl2
+     * Old code
+     */
+    /*
     private val networkComponentsProvider = LinkedList<BlockPos>()
     private val networkComponentsReceiver = LinkedList<BlockPos>()
     private val networkComponentsTransfer = LinkedList<BlockPos>()
@@ -121,4 +125,5 @@ class EnergyNetwork {
         }
     */
     fun getProviders(): LinkedList<BlockPos> = networkComponentsProvider
+    */
 }
