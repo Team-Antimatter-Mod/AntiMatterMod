@@ -7,7 +7,7 @@ import net.minecraftforge.common.util.ForgeDirection
  * Interface for Machines using AP.
  * Implemented class must extend net.minecraft.tileentity.TileEntity.
  */
-interface IAPReciever {
+interface IAPReceiver {
     fun getMaxRecieveVoltage():APVoltage
     fun getConnectableSide(): ForgeDirection
     fun getAddableEnergy():Int

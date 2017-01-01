@@ -19,9 +19,7 @@ class EnergyNode {
         this.target = targetPos
     }
 
-    constructor(){
-
-    }
+    constructor()
 
     fun writeToNBT(tagCompound : NBTTagCompound){
         writeToNBT(tagCompound,"EnergyNode")
