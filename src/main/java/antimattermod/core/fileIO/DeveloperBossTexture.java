@@ -1,6 +1,5 @@
 package antimattermod.core.fileIO;
 
-
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.util.ResourceLocation;
 
@@ -20,7 +19,7 @@ public enum DeveloperBossTexture {
     C6H2Cl2,
     kojin15,
     sora_suke,
-    
+    Gaku_Minecraft,
     ;
     
     /**
@@ -52,6 +51,12 @@ public enum DeveloperBossTexture {
     public static void downloadTexture() {
         for (DeveloperBossTexture developer : DeveloperBossTexture.values()) {
             String string = developer.toString();
+
+            /**
+             * とりあえずMOJANG APIから、GakuのUUIDを落とすようにしてみました。安全確保のためコメントアウトしてまする。
+             * String filePath = DownloadFiles.download(DownloadFiles.MOJANG_API_UUID_URL_LOCATION + "25165cda7bff4963bfcaa152bc8f11ef" + ".json", AMMFiles.MOJANG_API_UUID_JSON_DIRECTORY + "25165cda7bff4963bfcaa152bc8f11ef" + ".json");
+             */
+
             String filePath = DownloadFiles.download(DownloadFiles.SKIN_URL_LOCATION + string + ".png",
                     AMMFiles.DEVELOPER_BOSS_TEXTURE_DIRECTORY + string + ".png");
             developer.setTexturePath(filePath);

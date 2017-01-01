@@ -6,6 +6,7 @@ import antimattermod.core.Energy.APVoltage
 import antimattermod.core.Energy.Item.Wrench.IDirectionWrenchAction
 import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator
 import antimattermod.core.Util.ClickPos
+import c6h2cl2.YukariLib.Util.BlockPos
 import cpw.mods.fml.relauncher.Side
 import cpw.mods.fml.relauncher.SideOnly
 import net.minecraft.block.Block
@@ -114,7 +115,7 @@ class BlockFurnaceGenerator : BlockContainer(Material.rock), IDirectionWrenchAct
         return false
     }
 
-    override fun onBlockRemoval(block: Block, player: EntityPlayer, world: World, x: Int, y: Int, z: Int, side: Int, meta: Int, clickPos: ClickPos) {
+    override fun onBlockRemoval(block: Block, player: EntityPlayer, world: World, blockPos: BlockPos, clickPos: ClickPos, side: Int, meta: Int) {
 
     }
 }
