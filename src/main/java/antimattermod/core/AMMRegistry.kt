@@ -8,6 +8,7 @@ import antimattermod.core.Energy.Item.StatesChecker
 import antimattermod.core.Energy.Item.Wrench.ItemWrench
 import antimattermod.core.Mob.EntityDeveloperBoss
 import antimattermod.core.Mob.ItemEgg.ItemDeveloperBossEgg
+import antimattermod.core.Util.AddInformationfunction
 import cpw.mods.fml.common.registry.EntityRegistry
 import cpw.mods.fml.common.registry.GameRegistry
 import net.minecraft.block.Block
@@ -20,7 +21,7 @@ object AMMRegistry {
     //Item  ============================================================================================================
     //ツール類
     val statesChecker: Item = StatesChecker()
-    val toolWrench: Item = ItemWrench("toolWrench", "toolwrench")
+    val toolWrench: Item = ItemWrench("toolWrench", "toolwrench", AddInformationfunction { item, player, list, isdebug -> antimattermod.core.Util.AddInformationfunction.WrenchInformation(item, player, list, isdebug) })
 
     //テスト用
     val developerBossEgg: Item = ItemDeveloperBossEgg()

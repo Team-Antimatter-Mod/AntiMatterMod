@@ -236,3 +236,7 @@ tile.ingot_01_0.information_1=1200年前に半分に割れて落ちた
 tile.ingot_01_0.information_2=ティアマト彗星の中にあった金属。
 tile.ingot_01_0.information.name=君の名は。
 tile.ingot_01_1>6.information=開発者名の素材：
+
+item.wrench.mode=モード
+wrench.mode.name.Block=ブロック
+wrench.mode.name.Transceiver=送受信

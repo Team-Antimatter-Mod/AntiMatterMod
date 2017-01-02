@@ -20,8 +20,7 @@ import net.minecraftforge.common.util.ForgeDirection
 /**
  * Created by kojin15.
  */
-class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
-
+class ItemWrench(name: String, texture: String, private val addfunc: AddInformationfunction) : Item(), AMMItemBase {
 
     init {
         creativeTab = AntiMatterModRegistry.tabTools
@@ -98,8 +97,8 @@ class ItemWrench(name: String, texture: String) : Item(), AMMItemBase {
 
     }
 
-    override fun addInformation(p_77624_1_: ItemStack, p_77624_2_: EntityPlayer, p_77624_3_: MutableList<Any?>, p_77624_4_: Boolean) {
-        antimattermod.core.Util.AddInformationfunction.WrenchInformation(p_77624_1_, p_77624_2_, p_77624_3_, p_77624_4_)
+    override fun addInformation(item: ItemStack?, player: EntityPlayer?, list: List<*>?, p_77624_4_: Boolean) {
+        addfunc.addInformation(item, player, list, p_77624_4_)
     }
 }
 

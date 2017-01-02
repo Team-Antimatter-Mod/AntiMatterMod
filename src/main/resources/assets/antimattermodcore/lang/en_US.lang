@@ -234,3 +234,7 @@ tile.ingot_01_0.information_1=There was metal in the Tiamat comet
 tile.ingot_01_0.information_2=fell cracked in half in 1200 years ago.
 tile.ingot_01_0.information.name=Your name.
 tile.ingot_01_1>6.information.=DeveloperNameMaterial:
+
+item.wrench.mode=Mode
+wrench.mode.name.Block=Block
+wrench.mode.name.Transceiver=Transceiver
