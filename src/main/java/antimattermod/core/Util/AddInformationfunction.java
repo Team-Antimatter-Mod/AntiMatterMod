@@ -64,10 +64,12 @@ public interface AddInformationfunction {
         }
     }
 
+    @SuppressWarnings("unchecked")
     static void WrenchInformation(ItemStack item, @SuppressWarnings("unused") EntityPlayer player, List list, @SuppressWarnings("unused") boolean isdebug) {
         if (item.getItem() instanceof ItemWrench) {
             if (item.hasTagCompound()) {
-                list.add((WrenchMode.values()[item.getTagCompound().getInteger("WrenchMode")]).toString() + ":Mode");
+                list.add(StatCollector.translateToLocal("item.wrench.mode") + ":" + StatCollector.translateToLocal("wrench.mode.name." + (WrenchMode.values()[item.getTagCompound().getInteger("WrenchMode")]).toString()));
+                //list.add("Mode:" + (WrenchMode.values()[item.getTagCompound().getInteger("WrenchMode")]).toString());
             }
         }
     }
