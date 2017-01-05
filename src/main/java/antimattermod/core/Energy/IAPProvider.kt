@@ -15,4 +15,6 @@ interface IAPProvider {
     fun getUseableEnergy(): Int
     fun useEnergy(value: Int, voltage: APVoltage)
     fun explode(value: Int, voltage: APVoltage, world: World, blockPos: BlockPos)
+    fun getPos(): BlockPos
+    fun getTransfer(): BlockPos?
 }

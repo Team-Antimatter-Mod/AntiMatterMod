@@ -12,4 +12,5 @@ interface IAPTransfer {
     fun isProvider(): Boolean
     fun getTarget(): ForgeDirection
     fun getController(): BlockPos
+    fun getPos(): BlockPos
 }

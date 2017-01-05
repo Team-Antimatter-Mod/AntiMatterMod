@@ -2,19 +2,16 @@ package antimattermod.core.Energy.TileEntity
 
 import antimattermod.core.Energy.EnergyNetwork
 import antimattermod.core.Energy.IAPController
+import antimattermod.core.Energy.IAPProvider
+import antimattermod.core.Energy.IAPReceiver
 import antimattermod.core.Energy.Item.Wrench.IEnergyWrenchAction
-import c6h2cl2.YukariLib.Util.BlockPos
-import net.minecraft.entity.player.EntityPlayer
-import net.minecraft.item.ItemStack
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.tileentity.TileEntity
-import net.minecraft.world.World
 
 /**
  * @author C6H2Cl2
  */
 class TileEnergyController : TileEntity(), IEnergyWrenchAction, IAPController {
-
     var network = EnergyNetwork()
 
     init {
@@ -23,31 +20,35 @@ class TileEnergyController : TileEntity(), IEnergyWrenchAction, IAPController {
 
     override fun readFromNBT(nbtTagCompound: NBTTagCompound) {
         super.readFromNBT(nbtTagCompound)
-        //network.readFromNBT(nbtTagCompound)
+        network.readFromNBT(nbtTagCompound)
     }
 
     override fun writeToNBT(nbtTagCompound: NBTTagCompound) {
         super.writeToNBT(nbtTagCompound)
-        //network.writeToNBT(nbtTagCompound)
+        network.writeToNBT(nbtTagCompound)
     }
 
-    override fun removeProvider(pos: BlockPos) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun setProvider(provider: IAPProvider) {
+        network += provider
     }
 
-    override fun removeReceiver(pos: BlockPos) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun setReceiver(receiver: IAPReceiver) {
+        network += receiver
     }
 
-    override fun isContains(pos: BlockPos) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun removeProvider(provider: IAPProvider) {
+        network -= provider
     }
 
-    override fun setReceiver(pos: BlockPos) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun removeReceiver(receiver: IAPReceiver) {
+        network -= receiver
     }
 
-    override fun setProvider(pos: BlockPos) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override operator fun contains(provider: IAPProvider): Boolean {
+        return provider in network
+    }
+
+    override operator fun contains(receiver: IAPReceiver): Boolean {
+        return receiver in network
     }
 }

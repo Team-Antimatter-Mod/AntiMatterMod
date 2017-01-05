@@ -1,129 +1,172 @@
 package antimattermod.core.Energy
 
 import c6h2cl2.YukariLib.Util.BlockPos
-import kotlin.collections.HashMap
+import net.minecraft.nbt.NBTTagCompound
+import net.minecraft.nbt.NBTTagList
+import java.util.*
 
 /**
  * @author C6H2Cl2
+ * @property networkComponentsProvider : Map<Provider,Transfer>
+ * @property networkComponentsReceiver : Map<Receiver,Transfer>
+ * @property networkComponentsTransfer : Set<Transfer>
  */
 class EnergyNetwork {
-    private val networkComponentsProvider = HashMap<BlockPos,BlockPos>()
-    private val networkComponentsReceiver = HashMap<BlockPos,BlockPos>()
+    private val networkComponentsProvider = HashMap<BlockPos, BlockPos>().toMutableMap()
+    private val networkComponentsReceiver = HashMap<BlockPos, BlockPos>().toMutableMap()
+    private val networkComponentsTransfer = HashSet<BlockPos>().toMutableSet()
 
     /**
-     * @author C6H2Cl2
-     * Old code
+     * get connected Providers/Receivers with Transfer.
+     *
+     * @param transfer BlockPos of TileEntity implements IAPTransfer
      */
-    /*
-    private val networkComponentsProvider = LinkedList<BlockPos>()
-    private val networkComponentsReceiver = LinkedList<BlockPos>()
-    private val networkComponentsTransfer = LinkedList<BlockPos>()
+    fun getConnected(transfer: BlockPos): Array<BlockPos>? {
+        val providers = getConnectedProviders(transfer)
+        val receivers = getConnectedReceivers(transfer)
+        if (providers == null || receivers == null) {
+            return null
+        } else {
+            return providers.plus(receivers)
+        }
+    }
 
-    fun writeToNBT(tagCompound: NBTTagCompound) {
-        val nbtTagCompound = NBTTagCompound()
-        var tagList = NBTTagList()
-        var tag = NBTTagCompound()
-        for (pos: BlockPos in networkComponentsProvider) {
-            pos.writeToNBT(tag)
+    fun getConnectedProviders(transfer: BlockPos): Array<BlockPos>? {
+        if (!networkComponentsTransfer.contains(transfer)) return null
+        val providers = LinkedList<BlockPos>()
+        networkComponentsProvider
+                .filterKeys { it == transfer }
+                .entries.forEach { providers.add(it.key) }
+        return providers.toTypedArray()
+    }
+
+    fun getConnectedReceivers(transfer: BlockPos): Array<BlockPos>? {
+        if (!networkComponentsTransfer.contains(transfer)) return null
+        val receivers = LinkedList<BlockPos>()
+        networkComponentsReceiver
+                .filterKeys { it == transfer }
+                .entries.forEach { receivers.add(it.key) }
+        return receivers.toTypedArray()
+    }
+
+    fun addProvider(provider: IAPProvider) {
+        networkComponentsProvider[provider.getPos()] = provider.getTransfer() as BlockPos
+        networkComponentsTransfer.add(provider.getTransfer() as BlockPos)
+    }
+
+    fun addReceiver(receiver: IAPReceiver) {
+        networkComponentsReceiver[receiver.getPos()] = receiver.getTransfer() as BlockPos
+        networkComponentsTransfer.add(receiver.getTransfer() as BlockPos)
+    }
+
+    fun readFromNBT(tagCompound: NBTTagCompound, name: String = "network"): EnergyNetwork {
+        val tag = tagCompound.getTag(name) as NBTTagCompound
+        nbtToMap(networkComponentsProvider, "provider", tag)
+        nbtToMap(networkComponentsReceiver, "receiver", tag)
+        val tagList = tagCompound.getTagList("transfer", tagCompound.getInteger("transfer.size"))
+        for (i in 0 until tagList.tagCount()) {
+            val value = BlockPos(0, 0, 0)
+            value.readFromNBT(tagList.getCompoundTagAt(i))
+            networkComponentsTransfer.add(value)
+        }
+        return this
+    }
+
+    fun writeToNBT(tagCompound: NBTTagCompound, name: String = "network"): NBTTagCompound {
+        val tag = NBTTagCompound()
+        mapToNBT(networkComponentsProvider, "provider", tag)
+        mapToNBT(networkComponentsReceiver, "receiver", tag)
+        val tagList = NBTTagList()
+        networkComponentsTransfer.forEach {
+            val nbtTagCompound = NBTTagCompound()
+            it.writeToNBT(nbtTagCompound)
+            tagList.appendTag(nbtTagCompound)
+        }
+        tag.setTag("transfer", tagList)
+        tag.setInteger("transfer.size", tagList.tagCount())
+        tagCompound.setTag(name, tag)
+        return tagCompound
+    }
+
+    private fun mapToNBT(map: Map<BlockPos, BlockPos>, name: String = "map", tagCompound: NBTTagCompound = NBTTagCompound()): NBTTagCompound {
+        val tagList = NBTTagList()
+        map.toList().forEach {
+            val tag = NBTTagCompound()
+            it.first.writeToNBT(tag, "key")
+            it.second.writeToNBT(tag, "value")
             tagList.appendTag(tag)
-            tag = NBTTagCompound()
         }
-        nbtTagCompound.setTag("Provider", tagList)
-        nbtTagCompound.setInteger("ProviderList", tagList.tagCount())
-        tagList = NBTTagList()
-        for (pos: BlockPos in networkComponentsReceiver) {
-            pos.writeToNBT(tag)
-            tagList.appendTag(tag)
-            tag = NBTTagCompound()
-        }
-        nbtTagCompound.setTag("Receiver", tagList)
-        nbtTagCompound.setInteger("ReceiverList", tagList.tagCount())
-        tagList = NBTTagList()
-        for (pos: BlockPos in networkComponentsTransfer) {
-            pos.writeToNBT(tag)
-            tagList.appendTag(tag)
-            tag = NBTTagCompound()
-        }
-        nbtTagCompound.setTag("Transfer", tagList)
-        nbtTagCompound.setInteger("TransferList", tagList.tagCount())
-        tagCompound.setTag("energyNetworkAP", nbtTagCompound)
+        tagCompound.setTag(name, tagList)
+        tagCompound.setInteger("$name.size", tagList.tagCount())
+        return tagCompound
     }
 
-    fun readFromNBT(tagCompound: NBTTagCompound) {
-        val nbtTagCompound = tagCompound.getCompoundTag("energyNetworkAP")
-        var tagList = nbtTagCompound.getTagList("Provider", nbtTagCompound.getInteger("ProviderList"))
-        if (tagList.tagCount() > 0) {
-            for (i in 0..tagList.tagCount() - 1) {
-                val blockPos = BlockPos(0, 0, 0)
-                blockPos.readFromNBT(tagList.getCompoundTagAt(i))
-                networkComponentsProvider.add(blockPos)
+    private fun nbtToMap(map: MutableMap<BlockPos, BlockPos>, name: String = "map", tagCompound: NBTTagCompound = NBTTagCompound()): MutableMap<BlockPos, BlockPos> {
+        val tagList = tagCompound.getTagList(name, tagCompound.getInteger("$name.size"))
+        for (i in 0 until tagList.tagCount()) {
+            val tag = tagList.getCompoundTagAt(i)
+            val key = BlockPos(0, 0, 0)
+            val value = BlockPos(0, 0, 0)
+            key.readFromNBT(tag, "key")
+            value.readFromNBT(tag, "value")
+            map[key] = value
+        }
+        return map
+    }
+
+    operator fun plusAssign(value: EnergyNetwork) {
+        this.networkComponentsProvider += value.networkComponentsProvider
+        this.networkComponentsReceiver += value.networkComponentsReceiver
+        this.networkComponentsTransfer += value.networkComponentsTransfer
+    }
+
+    operator fun plusAssign(value: IAPProvider) {
+        val transfer = value.getTransfer()
+        if (transfer != null) {
+            this.networkComponentsProvider[value.getPos()] = transfer
+            this.networkComponentsTransfer += transfer
+        }
+    }
+
+    operator fun plusAssign(value: IAPReceiver) {
+        val transfer = value.getTransfer()
+        if (transfer != null) {
+            this.networkComponentsReceiver[value.getPos()] = transfer
+            this.networkComponentsTransfer += transfer
+        }
+    }
+
+    operator fun minusAssign(value: IAPProvider){
+        if(value.getTransfer() != null){
+            networkComponentsProvider.remove(value.getPos())
+            if(!(networkComponentsProvider.containsValue(value.getTransfer()!!) || networkComponentsReceiver.containsValue(value.getTransfer()!!))){
+                networkComponentsTransfer.remove(value.getTransfer()!!)
             }
         }
-        tagList = nbtTagCompound.getTagList("Receiver", nbtTagCompound.getInteger("ReceiverList"))
-        if (tagList.tagCount() > 0) {
-            for (i in 0..tagList.tagCount() - 1) {
-                val blockPos = BlockPos(0, 0, 0)
-                blockPos.readFromNBT(tagList.getCompoundTagAt(i))
-                networkComponentsReceiver.add(blockPos)
-            }
-        }
-        tagList = nbtTagCompound.getTagList("Transfer", nbtTagCompound.getInteger("TransferList"))
-        if (tagList.tagCount() > 0) {
-            for (i in 0..tagList.tagCount()) {
-                val blockPos = BlockPos(0, 0, 0)
-                blockPos.readFromNBT(tagList.getCompoundTagAt(i))
-                networkComponentsTransfer.add(blockPos)
+    }
+
+    operator fun minusAssign(value: IAPReceiver){
+        if(value.getTransfer() != null){
+            networkComponentsReceiver.remove(value.getPos())
+            if(!(networkComponentsProvider.containsValue(value.getTransfer()!!) || networkComponentsReceiver.containsValue(value.getTransfer()!!))){
+                networkComponentsTransfer.remove(value.getTransfer()!!)
             }
         }
     }
 
-    fun registerTileEntity(blockPos: BlockPos, apType: APType) {
-        when (apType) {
-            APType.Receiver -> networkComponentsReceiver.add(blockPos)
-            APType.Transfer -> networkComponentsTransfer.add(blockPos)
-            APType.Provider -> networkComponentsProvider.add(blockPos)
-            else -> throw IllegalArgumentException()
-        }
+    operator fun plus(value: EnergyNetwork): EnergyNetwork {
+        val network = EnergyNetwork()
+        network.networkComponentsProvider += this.networkComponentsProvider
+        network.networkComponentsProvider += value.networkComponentsProvider
+        network.networkComponentsReceiver += this.networkComponentsReceiver
+        network.networkComponentsReceiver += value.networkComponentsReceiver
+        network.networkComponentsTransfer += this.networkComponentsTransfer
+        network.networkComponentsTransfer += this.networkComponentsTransfer
+        return network
     }
 
-    fun registerTileEntity(tileEntity: TileEntity, apType: APType) {
-        registerTileEntity(BlockPos(tileEntity.xCoord, tileEntity.yCoord, tileEntity.zCoord), apType)
-    }
-
-    /*
-        fun registerTileEntity(tileEntity: TileEntity){
-            when(tileEntity){
-                is IAPProvider -> registerTileEntity(tileEntity,APType.Provider)
-                is IAPReceiver -> registerTileEntity(tileEntity,APType.Receiver)
-                is IAPTransfer -> registerTileEntity(tileEntity,APType.Transfer)
-            }
-        }
-    */
-    fun isContains(blockPos: BlockPos): Boolean {
-        return isContains(blockPos, APType.Provider) || isContains(blockPos, APType.Receiver) || isContains(blockPos, APType.Transfer)
-    }
-
-    fun isContains(blockPos: BlockPos, apType: APType): Boolean {
-        val targetList = when (apType) {
-            APType.Provider -> networkComponentsProvider
-            APType.Receiver -> networkComponentsReceiver
-            APType.Transfer -> networkComponentsTransfer
-            APType.ぬるぽ -> null
-        } ?: return false
-        return targetList.contains(blockPos)
-    }
-
-    /*
-        fun isContains(tileEntity: TileEntity):Boolean{
-            val blockPos = BlockPos(tileEntity.xCoord,tileEntity.yCoord,tileEntity.zCoord)
-            return when(tileEntity){
-                is IAPTransfer -> isContains(blockPos,APType.Transfer)
-                is IAPProvider -> isContains(blockPos,APType.Provider)
-                is IAPReceiver -> isContains(blockPos,APType.Receiver)
-                else -> false
-            }
-        }
-    */
-    fun getProviders(): LinkedList<BlockPos> = networkComponentsProvider
-    */
+    operator fun contains(pos: BlockPos): Boolean = (pos in networkComponentsProvider) || (pos in networkComponentsReceiver) || (pos in networkComponentsTransfer)
+    operator fun contains(provider: IAPProvider): Boolean = provider.getPos() in networkComponentsProvider
+    operator fun contains(receiver: IAPReceiver): Boolean = receiver.getPos() in networkComponentsReceiver
+    operator fun contains(transfer: IAPTransfer): Boolean = transfer.getPos() in networkComponentsTransfer
 }

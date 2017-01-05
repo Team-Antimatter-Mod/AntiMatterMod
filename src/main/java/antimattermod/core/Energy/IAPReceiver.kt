@@ -1,5 +1,6 @@
 package antimattermod.core.Energy
 
+import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraftforge.common.util.ForgeDirection
 
 /**
@@ -12,4 +13,6 @@ interface IAPReceiver {
     fun getConnectableSide(): ForgeDirection
     fun getAddableEnergy(): Int
     fun addEnergy(value: Int, voltage: APVoltage)
+    fun getPos(): BlockPos
+    fun getTransfer(): BlockPos?
 }
