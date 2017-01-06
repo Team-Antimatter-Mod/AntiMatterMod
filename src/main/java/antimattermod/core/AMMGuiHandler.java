@@ -2,8 +2,8 @@ package antimattermod.core;
 
 import antimattermod.core.Energy.GUI.AlloySmelterContainer;
 import antimattermod.core.Energy.GUI.AlloySmelterGuiContainer;
-import antimattermod.core.Energy.MultiBlock.MultiControllerContainer;
-import antimattermod.core.Energy.MultiBlock.MultiControllerGui;
+import antimattermod.core.Energy.GUI.MultiControllerContainer;
+import antimattermod.core.Energy.GUI.MultiControllerGui;
 import antimattermod.core.Energy.MultiBlock.MultiControllerTile;
 import antimattermod.core.Energy.TileEntity.Machine.TileAlloySmelter;
 import cpw.mods.fml.common.network.IGuiHandler;

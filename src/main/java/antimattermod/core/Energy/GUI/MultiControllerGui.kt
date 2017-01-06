@@ -1,6 +1,8 @@
-package antimattermod.core.Energy.MultiBlock
+package antimattermod.core.Energy.GUI
 
 import antimattermod.core.AntiMatterModCore
+import antimattermod.core.Energy.GUI.AMMButton
+import antimattermod.core.Energy.MultiBlock.MultiControllerTile
 import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.GuiButton
 import net.minecraft.client.gui.GuiScreen
@@ -62,11 +64,5 @@ class MultiControllerGui(private val tile: MultiControllerTile, private val worl
 
     override fun doesGuiPauseGame(): Boolean {
         return false
-    }
-}
-class AMMButton(id: Int, xPosition: Int, yPosition: Int, width: Int, height: Int) : GuiButton(id, xPosition, yPosition,  width, height, null) {
-
-    override fun drawButton(p_146112_1_: Minecraft?, p_146112_2_: Int, p_146112_3_: Int) {
-
     }
 }
