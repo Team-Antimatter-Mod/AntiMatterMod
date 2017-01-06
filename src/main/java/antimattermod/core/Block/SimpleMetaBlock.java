@@ -43,15 +43,15 @@ public class SimpleMetaBlock extends AMMBlock{
 	
 	@Override
 	@SideOnly(Side.CLIENT)
-	public void registerBlockIcons(IIconRegister p_149651_1_) {
+	public void registerBlockIcons(IIconRegister register) {
 		for (int i = 0; i < icons.length; i++){
-			icons[i] = p_149651_1_.registerIcon(this.getTextureName()+"_"+i);
+			icons[i] = register.registerIcon(this.getTextureName()+"_"+i);
 		}
 	}
 	
 	@Override
 	@SideOnly(Side.CLIENT)
-	public IIcon getIcon(int p_149691_1_, int p_149691_2_) {
-		return icons[p_149691_2_];
+	public IIcon getIcon(int side, int meta) {
+		return icons[meta];
 	}
 }

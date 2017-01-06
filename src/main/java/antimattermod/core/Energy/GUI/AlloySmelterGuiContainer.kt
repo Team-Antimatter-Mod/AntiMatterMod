@@ -24,15 +24,15 @@ class AlloySmelterGuiContainer(private val x: Int, private val y: Int, private v
         super.initGui()
     }
 
-    override fun drawGuiContainerForegroundLayer(x: Int, p_146979_2_: Int) {
-        super.drawGuiContainerForegroundLayer(x, p_146979_2_)
+    override fun drawGuiContainerForegroundLayer(x: Int, mouseZ: Int) {
+        super.drawGuiContainerForegroundLayer(x, mouseZ)
         when (tileAlloySmelter.getSlotSize()) {
             2, 4 -> fontRendererObj.drawString("Alloy Smelter", xSize / 2 - 26, 8, 4210752, false)
             9 -> fontRendererObj.drawString("Alloy Smelter", xSize / 2 - 6, 8, 4210752, false)
         }
     }
 
-    override fun drawGuiContainerBackgroundLayer(p_146976_1_: Float, p_146976_2_: Int, p_146976_3_: Int) {
+    override fun drawGuiContainerBackgroundLayer(partialTick: Float, mouseX: Int, mouseZ: Int) {
         val texture = when (tileAlloySmelter.getSlotSize()) {
             2 -> Texture_2Slot
             4 -> Texture_4Slot
