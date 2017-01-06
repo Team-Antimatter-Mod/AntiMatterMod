@@ -1,6 +1,8 @@
 package antimattermod.core.Energy
 
+import antimattermod.core.IAPAccessible
 import c6h2cl2.YukariLib.Util.BlockPos
+import net.minecraft.nbt.NBTTagCompound
 import net.minecraftforge.common.util.ForgeDirection
 
 /**
@@ -8,11 +10,17 @@ import net.minecraftforge.common.util.ForgeDirection
  * Interface for Machines using AP.
  * Implemented class must extend net.minecraft.tileentity.TileEntity.
  */
-interface IAPReceiver {
+interface IAPReceiver :IAPAccessible{
     fun getMaxRecieveVoltage(): APVoltage
     fun getConnectableSide(): ForgeDirection
     fun getAddableEnergy(): Int
     fun addEnergy(value: Int, voltage: APVoltage)
-    fun getPos(): BlockPos
     fun getTransfer(): BlockPos?
+    override fun writeToNBT(tagCompound: NBTTagCompound) {
+        writeToNBT(tagCompound, "receiver")
+    }
+
+    override fun readFromNBT(tagCompound: NBTTagCompound) {
+        readFromNBT(tagCompound, "receiver")
+    }
 }

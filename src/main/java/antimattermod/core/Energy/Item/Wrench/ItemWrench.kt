@@ -93,8 +93,8 @@ class ItemWrench(name: String, texture: String, private val addfunc: AddInformat
     /**
      * レンチ側の送受信設定
      * @author C6H2Cl2
-     * @see c6h2cl2.YukariLib.Util.BlockPos
      * @throws TypeCastException
+     * @throws IllegalArgumentException
      */
     fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, pos: BlockPos, side: Int, isSneaking: Boolean) {
         //ぬるぽ対策
@@ -104,52 +104,43 @@ class ItemWrench(name: String, texture: String, private val addfunc: AddInformat
         //ItemStackのタグの参照
         val tag = itemStack.tagCompound
         val tile = pos.getTileEntityFromPos(world)
-        //対象のBlockPosから、種類を判別し、NBTTag用の名前を設定する
-        val tagName: String = when (tile) {
-            is IAPController -> "Controller"
-            is IAPTransfer -> if (tile.isProvider()) {
-                if (tag.hasKey("Receiver")) tag.removeTag("Receiver")
-                "Provider"
-            } else {
-                if (tag.hasKey("Provider")) tag.removeTag("Provider")
-                "Receiver"
+        /**
+         * @throws IllegalArgumentException
+         * IAPControllerまたはIAPTransferを継承していないクラスは禁止
+         * ItemStackのNBTに書き込み処理
+         */
+        when (tile) {
+            is IAPTransfer -> {
+                if (tile.isProvider()){
+                    tile.getTarget().getPos().writeToNBT(tag,"provider")
+                }else{
+                    tile.getTarget().getPos().writeToNBT(tag,"receiver")
+                }
+                tile.getPos().writeToNBT(tag,"transfer")
             }
-            else -> return
+            is IAPController -> tile.getPos().writeToNBT(tag,"controller")
+            else -> throw IllegalArgumentException("TileEntity in pos must implement IAPTransfer or IAPController")
         }
-        //NBTに座標情報の書き込み
-        pos.writeToNBT(tag, tagName)
         //Controllerと、Provider or Receiverの両方が揃っている場合、Controllerに接続情報を書き込む
-        if (tag.hasKey("Controller")) {
+        if (tag.hasKey("controller")) {
+            if (!tag.hasKey("provider") && !tag.hasKey("receiver")) return
+            //ControllerのTileEntity取得
+            val posController = BlockPos(tag,"controller")
+            val tileController = posController.getTileEntityFromPos(world) as? IAPController ?: throw IllegalArgumentException()
+            val posTransfer = BlockPos(tag,"transfer")
             //Providerの時
-            if (tag.hasKey("Provider")) {
-                //ControllerのTileEntity取得
-                val posController = BlockPos(0, 0, 0)
-                posController.readFromNBT(tag, "Controller")
-                val tileController = posController.getTileEntityFromPos(world)
+            if (tag.hasKey("provider")) {
                 //書き込み用のBlockPos取得
-                val posProvider = BlockPos(0, 0, 0)
-                posProvider.readFromNBT(tag, "Provider")
-                /**
-                 * @throws TypeCastException
-                 * そもそもIAPControllerでない座標をControllerとして登録するな
-                 */
-                (tileController as IAPController).setProvider(posProvider)
-                tag.removeTag("Provider")
-                tag.removeTag("Controller")
+                val posProvider = BlockPos(tag, "provider")
+                tileController.setProvider(posProvider,posTransfer)
+                tag.removeTag("provider")
             } else if (tag.hasKey("Receiver")) {
                 //Receiverの時 Providerと同様
-                val posController = BlockPos(0, 0, 0)
-                posController.readFromNBT(tag, "Receiver")
-                val tileController = posController.getTileEntityFromPos(world)
-                val posProvider = BlockPos(0, 0, 0)
-                posProvider.readFromNBT(tag, "Receiver")
-                /**
-                 * @throws TypeCastException
-                 */
-                (tileController as IAPController).setProvider(posProvider)
-                tag.removeTag("Receiver")
-                tag.removeTag("Controller")
+                val posReceiver = BlockPos(tag, "receiver")
+                tileController.setReceiver(posReceiver,posTransfer)
+                tag.removeTag("receiver")
             }
+            tag.removeTag("controller")
         }
     }
 

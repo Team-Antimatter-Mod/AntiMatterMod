@@ -1,7 +1,7 @@
 package antimattermod.core.Energy
 
+import antimattermod.core.IAPAccessible
 import c6h2cl2.YukariLib.Util.BlockPos
-import net.minecraftforge.common.util.ForgeDirection
 
 /**
  * @author C6H2Cl2
@@ -10,7 +10,7 @@ import net.minecraftforge.common.util.ForgeDirection
  */
 interface IAPTransfer {
     fun isProvider(): Boolean
-    fun getTarget(): ForgeDirection
+    fun getTarget(): IAPAccessible
     fun getController(): BlockPos
     fun getPos(): BlockPos
 }

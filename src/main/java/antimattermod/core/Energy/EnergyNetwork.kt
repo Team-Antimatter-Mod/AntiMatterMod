@@ -114,6 +114,34 @@ class EnergyNetwork {
         return map
     }
 
+    fun addProvider(provider: BlockPos, transfer: BlockPos){
+        networkComponentsProvider[provider] = transfer
+        networkComponentsTransfer.add(transfer)
+    }
+
+    fun addReceiver(receiver: BlockPos, transfer: BlockPos){
+        networkComponentsReceiver[receiver] = transfer
+        networkComponentsTransfer.add(transfer)
+    }
+
+    fun removeProvider(provider: BlockPos, transfer: BlockPos){
+        if(!networkComponentsProvider.remove(provider,transfer)){
+            throw IllegalArgumentException()
+        }
+        if(!networkComponentsProvider.containsValue(transfer) && !networkComponentsReceiver.containsValue(transfer)){
+            networkComponentsTransfer.remove(transfer)
+        }
+    }
+
+    fun removeReceiver(receiver: BlockPos,transfer: BlockPos){
+        if(!networkComponentsReceiver.remove(receiver,transfer)){
+            throw IllegalArgumentException()
+        }
+        if(!networkComponentsProvider.containsValue(transfer) && !networkComponentsReceiver.containsValue(transfer)){
+            networkComponentsTransfer.remove(transfer)
+        }
+    }
+
     operator fun plusAssign(value: EnergyNetwork) {
         this.networkComponentsProvider += value.networkComponentsProvider
         this.networkComponentsReceiver += value.networkComponentsReceiver
