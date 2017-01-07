@@ -3,6 +3,8 @@ package antimattermod.core.Energy.MultiBlock
 import antimattermod.core.AMMGuiHandler
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.AntiMatterModRegistry
+import antimattermod.core.Energy.IAPProvider
+import antimattermod.core.Energy.IAPReceiver
 import antimattermod.core.Energy.Item.Wrench.IDirectionWrenchAction
 import antimattermod.core.Util.ClickPos
 import c6h2cl2.YukariLib.Util.BlockPos
@@ -41,11 +43,15 @@ class MultiControllerBlock : BlockContainer(Material.rock), IDirectionWrenchActi
 
     override fun updateTick(world: World?, x: Int, y: Int, z: Int, random: Random?) {
         if (world != null) {
+            val blockPos = BlockPos(x, y, z)
             val meta = world.getBlockMetadata(x, y, z)
             val tile = world.getTileEntity(x, y, z)
             if (tile is MultiControllerTile) {
                 tile.blockMeta = meta
+                tile.thisTilePos = blockPos
+
             }
+
         }
     }
 

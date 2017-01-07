@@ -178,6 +178,8 @@ tile.machinehull_1.name=T2 マシン筐体
 
 tile.furnaceGeneratorAP.name=基本型火力発電機
 
+tile.MultiController.name=制御装置
+
 #--------------------------------------------圧縮ブロック
 tile.tiamiteblock_0.name=ティアマイトブロック
 

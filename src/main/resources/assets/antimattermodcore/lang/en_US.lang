@@ -176,6 +176,8 @@ tile.machinehull_1.name=T2 Machine Hull
 
 tile.furnaceGeneratorAP.name=basic furnaceGenerator
 
+tile.MultiController.name=MultiController
+
 #--------------------------------------------compressedblock
 tile.tiamiteblock_0.name=Block of Tiamite
 
