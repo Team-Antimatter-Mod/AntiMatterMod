@@ -6,8 +6,8 @@ import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator
 import antimattermod.core.Energy.TileEntity.TileEnergyController
 import antimattermod.core.Energy.Item.StatesChecker
 import antimattermod.core.Energy.Item.Wrench.ItemWrench
-import antimattermod.core.Energy.MultiBlock.MultiControllerBlock
-import antimattermod.core.Energy.MultiBlock.MultiControllerTile
+import antimattermod.core.Energy.MultiBlock.BlockMultiController
+import antimattermod.core.Energy.MultiBlock.TileMultiController
 import antimattermod.core.Mob.EntityDeveloperBoss
 import antimattermod.core.Mob.ItemEgg.ItemDeveloperBossEgg
 import antimattermod.core.Util.AddInformationfunction
@@ -37,7 +37,7 @@ object AMMRegistry {
     //エネルギー制御
     val energyController = EnergyControllerBlock()
 
-    val multiController = MultiControllerBlock()
+    val multiController = BlockMultiController()
 
     fun handlePreinit() {
         //Itemの登録 ===================================================================================================
@@ -56,7 +56,7 @@ object AMMRegistry {
         //TileEntityの登録 =============================================================================================
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator::class.java, "tileFurnaceGeneratorAP")
         GameRegistry.registerTileEntity(TileEnergyController::class.java, "tileEnergyControllerAP")
-        GameRegistry.registerTileEntity(MultiControllerTile::class.java, "multiControllerTile")
+        GameRegistry.registerTileEntity(TileMultiController::class.java, "tileMultiController")
 
         //Entityの登録 =============================================================================================
         EntityRegistry.registerModEntity(EntityDeveloperBoss::class.java, "DeveloperBoss", 1, AntiMatterModCore.MOD_ID, 250, 1, false)

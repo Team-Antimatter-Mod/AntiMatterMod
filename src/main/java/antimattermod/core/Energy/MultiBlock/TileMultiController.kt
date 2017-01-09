@@ -7,7 +7,7 @@ import net.minecraft.tileentity.TileEntity
 /**
  * Created by kojin15.
  */
-class MultiControllerTile : TileEntity() {
+class TileMultiController : TileEntity() {
 
     var blockMeta: Int = 0
     var page: Int = 0
@@ -16,7 +16,7 @@ class MultiControllerTile : TileEntity() {
     var isShowAssist: Boolean = false
     var isDetails: Boolean = false
 
-    var coreBlockName: String = MultiControllerBlock().unlocalizedName
+    var coreBlockName: String = BlockMultiController().unlocalizedName
 
     var thisTilePos: BlockPos? = null
     var machineType: MachineType = MachineType.Controller

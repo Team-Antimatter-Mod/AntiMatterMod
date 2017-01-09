@@ -28,7 +28,7 @@ import java.util.*
 /**
  * Created by kojin15.
  */
-class MultiControllerBlock : BlockContainer(Material.rock), IDirectionWrenchAction {
+class BlockMultiController : BlockContainer(Material.rock), IDirectionWrenchAction {
     init {
         setBlockName("MultiController")
         textureName = "${AntiMatterModCore.MOD_ID}:casing/machinecasing_base"
@@ -46,7 +46,7 @@ class MultiControllerBlock : BlockContainer(Material.rock), IDirectionWrenchActi
             val blockPos = BlockPos(x, y, z)
             val meta = world.getBlockMetadata(x, y, z)
             val tile = world.getTileEntity(x, y, z)
-            if (tile is MultiControllerTile) {
+            if (tile is TileMultiController) {
                 tile.blockMeta = meta
                 tile.thisTilePos = blockPos
 
@@ -81,6 +81,11 @@ class MultiControllerBlock : BlockContainer(Material.rock), IDirectionWrenchActi
     override fun getIcon(world: IBlockAccess, x: Int, y: Int, z: Int, side: Int): IIcon {
         return if (side == world.getBlockMetadata(x, y, z)) this.FrontIcon as IIcon else this.AnotherIcon as IIcon
     }
+
+    override fun isOpaqueCube(): Boolean {
+        return false
+    }
+
     override fun isVerticalChange(): Boolean {
         return false
     }
@@ -90,6 +95,6 @@ class MultiControllerBlock : BlockContainer(Material.rock), IDirectionWrenchActi
     }
 
     override fun createNewTileEntity(p_149915_1_: World?, p_149915_2_: Int): TileEntity {
-        return MultiControllerTile()
+        return TileMultiController()
     }
 }

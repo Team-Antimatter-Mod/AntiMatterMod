@@ -2,7 +2,7 @@ package antimattermod.core.Energy.GUI
 
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.Energy.GUI.AMMButton
-import antimattermod.core.Energy.MultiBlock.MultiControllerTile
+import antimattermod.core.Energy.MultiBlock.TileMultiController
 import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.GuiButton
 import net.minecraft.client.gui.GuiScreen
@@ -15,7 +15,7 @@ import net.minecraft.world.World
 /**
  * Created by kojin15.
  */
-class MultiControllerGui(private val tile: MultiControllerTile, private val world: World, private val player: EntityPlayer, private val x: Int, private val y: Int, private val z: Int) : GuiContainer(MultiControllerContainer()) {
+class MultiControllerGui(private val tileMultiController: TileMultiController, private val world: World, private val player: EntityPlayer, private val x: Int, private val y: Int, private val z: Int) : GuiContainer(MultiControllerContainer()) {
 
     private val mainGui = ResourceLocation(AntiMatterModCore.MOD_ID.toLowerCase(), "textures/gui/guimulticontroller.png")
     private var controlButton: GuiButton? = null
@@ -36,7 +36,7 @@ class MultiControllerGui(private val tile: MultiControllerTile, private val worl
     }
 
     override fun updateScreen() {
-        when (tile.page) {
+        when (tileMultiController.page) {
             0 -> {
                 buttonList.clear()
                 buttonList.add(controlButton)
@@ -53,9 +53,9 @@ class MultiControllerGui(private val tile: MultiControllerTile, private val worl
 
     override fun drawGuiContainerForegroundLayer(mouseX: Int, mouseZ: Int) {
         super.drawGuiContainerForegroundLayer(mouseX, mouseZ)
-        when (tile.page) {
+        when (tileMultiController.page) {
             0 -> {
-                this.fontRendererObj.drawString(StatCollector.translateToLocal(tile.coreBlockName + ".name"),-3, 11, 0xFFFFFF )
+                this.fontRendererObj.drawString(StatCollector.translateToLocal(tileMultiController.coreBlockName + ".name"),-3, 11, 0xFFFFFF )
             }
             1 -> {
 
@@ -65,12 +65,12 @@ class MultiControllerGui(private val tile: MultiControllerTile, private val worl
     }
 
     override fun drawGuiContainerBackgroundLayer(partialTick: Float, mouseX: Int, mouseZ: Int) {
-        when (tile.page) {
+        when (tileMultiController.page) {
             0 -> {
                 this.mc.renderEngine.bindTexture(mainGui)
                 this.drawTexturedModalRect(guiLeft - 14, guiTop, 0, 0, 204, 129)
                 this.drawTexturedModalRect(guiLeft +167, guiTop + 7, 204, 0, 16, 16)
-                when (tile.isShowAssist) {
+                when (tileMultiController.isShowAssist) {
                     false -> this.drawTexturedModalRect(guiLeft +167, guiTop + 25, 204, 16, 16, 16)
                     true -> this.drawTexturedModalRect(guiLeft +167, guiTop + 25, 220, 16, 16, 16)
                 }
@@ -88,14 +88,14 @@ class MultiControllerGui(private val tile: MultiControllerTile, private val worl
     override fun actionPerformed(button: GuiButton?) {
         super.actionPerformed(button)
         when (button) {
-            controlButton -> tile.page = 1
+            controlButton -> tileMultiController.page = 1
             showButton -> {
-                when (tile.isShowAssist) {
-                    false -> tile.isShowAssist = true
-                    true -> tile.isShowAssist = false
+                when (tileMultiController.isShowAssist) {
+                    false -> tileMultiController.isShowAssist = true
+                    true -> tileMultiController.isShowAssist = false
                 }
             }
-            backButton -> tile.page = 0
+            backButton -> tileMultiController.page = 0
         }
     }
 
