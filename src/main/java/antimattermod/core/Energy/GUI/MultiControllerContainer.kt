@@ -7,6 +7,9 @@ import net.minecraft.inventory.Container
  * Created by kojin15.
  */
 class MultiControllerContainer : Container() {
+    init {
+
+    }
 
     override fun canInteractWith(p_75145_1_: EntityPlayer?): Boolean {
         return true
