@@ -20,3 +20,4 @@ src/api/
 src/main/kotlin/
 src/test/
 run_log.txt
+buildlog.txt

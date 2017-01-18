@@ -1,6 +1,7 @@
 package antimattermod.core.Energy.TileEntity
 
 import antimattermod.core.Energy.EnergyNetwork
+import antimattermod.core.Energy.EnergyNode
 import antimattermod.core.Energy.IAPController
 import antimattermod.core.Energy.IAPProvider
 import antimattermod.core.Energy.IAPReceiver
@@ -13,10 +14,20 @@ import net.minecraft.tileentity.TileEntity
  * @author C6H2Cl2
  */
 class TileEnergyController : TileEntity(), IEnergyWrenchAction, IAPController {
-    var network = EnergyNetwork()
+    var network = EnergyNetwork(this)
+    var requests = ArrayList<EnergyNode>().toMutableList()
 
     init {
 
+    }
+
+    override fun updateEntity() {
+        super.updateEntity()
+
+    }
+
+    override fun sendRequest(node: EnergyNode) {
+        requests.add(node)
     }
 
     override fun writeToNBT(tagCompound: NBTTagCompound) {

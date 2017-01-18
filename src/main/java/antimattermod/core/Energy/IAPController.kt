@@ -26,6 +26,7 @@ interface IAPController {
     }
 
     fun getPos(): BlockPos
+    fun sendRequest(node: EnergyNode)
 
     operator fun contains(provider: IAPProvider): Boolean
     operator fun contains(receiver: IAPReceiver): Boolean
