@@ -118,9 +118,9 @@ public class ClayCrucibleHeater extends BlockContainer {
 	
 	//ブロックが設置されたとき
 	@Override
-	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase p_149689_5_, ItemStack p_149689_6_) {
+	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entityLivingBase, ItemStack itemStack) {
 		
-		int playerDir = MathHelper.floor_double((double) (p_149689_5_.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
+		int playerDir = MathHelper.floor_double((double) (entityLivingBase.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
 		ForgeDirection[] blockDir = {ForgeDirection.NORTH, ForgeDirection.EAST, ForgeDirection.SOUTH, ForgeDirection.WEST};
 		world.setBlockMetadataWithNotify(x, y, z, blockDir[playerDir].ordinal(), 2);
 	}

@@ -11,12 +11,14 @@ import antimattermod.core.Energy.MultiBlock.TileMultiController
 import antimattermod.core.Mob.EntityDeveloperBoss
 import antimattermod.core.Mob.ItemEgg.ItemDeveloperBossEgg
 import antimattermod.core.Util.AddInformationfunction
+import antimattermod.core.World.Chunk.AMMChunkManager
+import antimattermod.core.World.Chunk.BlockChunkLoader
 import cpw.mods.fml.common.registry.EntityRegistry
 import cpw.mods.fml.common.registry.GameRegistry
 import net.minecraft.block.Block
 import net.minecraft.item.Item
 import cpw.mods.fml.common.network.NetworkRegistry
-
+import net.minecraftforge.common.ForgeChunkManager
 
 
 /**
@@ -38,6 +40,7 @@ object AMMRegistry {
     val energyController = EnergyControllerBlock()
 
     val multiController = BlockMultiController()
+    val chunkLoader = BlockChunkLoader()
 
     fun handlePreinit() {
         //Itemの登録 ===================================================================================================
@@ -50,6 +53,10 @@ object AMMRegistry {
         GameRegistry.registerBlock(furnaceGenerator, "furnaceGeneratorAP")
         GameRegistry.registerBlock(energyController, "energyControllerAP")
         GameRegistry.registerBlock(multiController, "multiController")
+        GameRegistry.registerBlock(chunkLoader, "AMMChunkLoader")
+
+        //ChunkManagerの登録 ===========================================================================================
+        ForgeChunkManager.setForcedChunkLoadingCallback(AntiMatterModCore.INSTANCE, AMMChunkManager())
     }
 
     fun handleInit() {

@@ -96,9 +96,9 @@ class BlockFurnaceGenerator : BlockContainer(Material.rock), IDirectionWrenchAct
         return if (side == world.getBlockMetadata(x, y, z)) this.Front_OFF as IIcon else if (side == world.getBlockMetadata(x, y, z) - 6) this.Front_ON as IIcon else this.AnotherIcon as IIcon
     }
 
-    override fun onBlockPlacedBy(world: World?, x: Int, y: Int, z: Int, p_149689_5_: EntityLivingBase?, p_149689_6_: ItemStack?) {
+    override fun onBlockPlacedBy(world: World?, x: Int, y: Int, z: Int, entityLivingBase: EntityLivingBase?, itemStack: ItemStack?) {
 
-        val playerDir = MathHelper.floor_double((p_149689_5_!!.rotationYaw * 4.0f / 360.0f).toDouble() + 0.5) and 3
+        val playerDir = MathHelper.floor_double((entityLivingBase!!.rotationYaw * 4.0f / 360.0f).toDouble() + 0.5) and 3
         val blockDir = arrayOf(ForgeDirection.NORTH, ForgeDirection.EAST, ForgeDirection.SOUTH, ForgeDirection.WEST)
         world!!.setBlockMetadataWithNotify(x, y, z, blockDir[playerDir].ordinal, 2)
     }
