@@ -119,40 +119,34 @@ class EnergyNetwork(private val controller: IAPController) {
 
     fun getProviders() = providers.keys.toReadOnlyList()
 
-    fun getProvidersMap() = providers.toMap() as BlockPosMap
-
     fun getReceivers() = receivers.keys.toReadOnlyList()
-
-    fun getReceiversMap() = receivers.toMap() as BlockPosMap
 
     fun getTransfers() = transfers.toReadOnlyList()
 
-    fun getTransfersSet() = transfers.toSet() as BlockPosSet
-
-    fun addProvider(provider: BlockPos, transfer: BlockPos){
+    fun addProvider(provider: BlockPos, transfer: BlockPos) {
         providers[provider] = transfer
         transfers.add(transfer)
     }
 
-    fun addReceiver(receiver: BlockPos, transfer: BlockPos){
+    fun addReceiver(receiver: BlockPos, transfer: BlockPos) {
         receivers[receiver] = transfer
         transfers.add(transfer)
     }
 
-    fun removeProvider(provider: BlockPos, transfer: BlockPos){
-        if(!providers.remove(provider,transfer)){
+    fun removeProvider(provider: BlockPos, transfer: BlockPos) {
+        if (!providers.remove(provider, transfer)) {
             throw IllegalArgumentException()
         }
-        if(!providers.containsValue(transfer) && !receivers.containsValue(transfer)){
+        if (!providers.containsValue(transfer) && !receivers.containsValue(transfer)) {
             transfers.remove(transfer)
         }
     }
 
-    fun removeReceiver(receiver: BlockPos,transfer: BlockPos){
-        if(!receivers.remove(receiver,transfer)){
+    fun removeReceiver(receiver: BlockPos, transfer: BlockPos) {
+        if (!receivers.remove(receiver, transfer)) {
             throw IllegalArgumentException()
         }
-        if(!providers.containsValue(transfer) && !receivers.containsValue(transfer)){
+        if (!providers.containsValue(transfer) && !receivers.containsValue(transfer)) {
             transfers.remove(transfer)
         }
     }
@@ -179,19 +173,19 @@ class EnergyNetwork(private val controller: IAPController) {
         }
     }
 
-    operator fun minusAssign(value: IAPProvider){
-        if(value.getTransfer() != null){
+    operator fun minusAssign(value: IAPProvider) {
+        if (value.getTransfer() != null) {
             providers.remove(value.getPos())
-            if(!(providers.containsValue(value.getTransfer()!!) || receivers.containsValue(value.getTransfer()!!))){
+            if (!(providers.containsValue(value.getTransfer()!!) || receivers.containsValue(value.getTransfer()!!))) {
                 transfers.remove(value.getTransfer()!!)
             }
         }
     }
 
-    operator fun minusAssign(value: IAPReceiver){
-        if(value.getTransfer() != null){
+    operator fun minusAssign(value: IAPReceiver) {
+        if (value.getTransfer() != null) {
             receivers.remove(value.getPos())
-            if(!(providers.containsValue(value.getTransfer()!!) || receivers.containsValue(value.getTransfer()!!))){
+            if (!(providers.containsValue(value.getTransfer()!!) || receivers.containsValue(value.getTransfer()!!))) {
                 transfers.remove(value.getTransfer()!!)
             }
         }

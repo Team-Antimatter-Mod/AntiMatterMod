@@ -1,5 +1,6 @@
 package antimattermod.core.Energy
 
+import antimattermod.core.MachineTier
 import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.nbt.NBTTagCompound
 
@@ -7,6 +8,8 @@ import net.minecraft.nbt.NBTTagCompound
  * @author C6H2Cl2
  */
 interface IAPController {
+    val voltage: APVoltage
+    val tier: MachineTier
     fun setProvider(provider: IAPProvider)
     fun setProvider(provider: BlockPos, transfer: BlockPos)
     fun setReceiver(receiver: IAPReceiver)

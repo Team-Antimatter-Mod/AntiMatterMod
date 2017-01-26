@@ -3,6 +3,7 @@ package antimattermod.core.Energy.Block
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.AntiMatterModRegistry
 import antimattermod.core.Energy.TileEntity.TileEnergyController
+import antimattermod.core.MachineTier.Tier1
 import net.minecraft.block.BlockContainer
 import net.minecraft.block.material.Material
 import net.minecraft.world.World
@@ -18,5 +19,5 @@ class EnergyControllerBlock : BlockContainer(Material.rock) {
         setBlockUnbreakable()
     }
 
-    override fun createNewTileEntity(p_149915_1_: World?, p_149915_2_: Int) = TileEnergyController()
+    override fun createNewTileEntity(p_149915_1_: World?, p_149915_2_: Int) = TileEnergyController(Tier1)
 }

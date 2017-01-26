@@ -6,6 +6,7 @@ import antimattermod.core.Energy.IAPController
 import antimattermod.core.Energy.IAPProvider
 import antimattermod.core.Energy.IAPReceiver
 import antimattermod.core.Energy.Item.Wrench.IEnergyWrenchAction
+import antimattermod.core.MachineTier
 import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.tileentity.TileEntity
@@ -13,7 +14,8 @@ import net.minecraft.tileentity.TileEntity
 /**
  * @author C6H2Cl2
  */
-class TileEnergyController : TileEntity(), IEnergyWrenchAction, IAPController {
+class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEnergyWrenchAction, IAPController {
+    override val voltage = tier.voltage
     var network = EnergyNetwork(this)
     var requests = ArrayList<EnergyNode>().toMutableList()
 
@@ -23,7 +25,15 @@ class TileEnergyController : TileEntity(), IEnergyWrenchAction, IAPController {
 
     override fun updateEntity() {
         super.updateEntity()
+        val pos = BlockPos(xCoord,yCoord,zCoord)
+        val list = ArrayList<BlockPos>()
+        requests.forEach {
+            it.applyDecayRtoC(pos)
+            val providers = network.getProviders()
+            for (provider in providers){
 
+            }
+        }
     }
 
     override fun sendRequest(node: EnergyNode) {
