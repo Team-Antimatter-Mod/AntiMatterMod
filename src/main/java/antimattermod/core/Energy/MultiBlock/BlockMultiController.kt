@@ -1,6 +1,7 @@
 package antimattermod.core.Energy.MultiBlock
 
 import antimattermod.core.AMMGuiHandler
+import antimattermod.core.AMMRegistry
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.AntiMatterModRegistry
 import antimattermod.core.Energy.IAPProvider
@@ -33,7 +34,6 @@ class BlockMultiController : BlockContainer(Material.rock), IDirectionWrenchActi
         setBlockName("MultiController")
         textureName = "${AntiMatterModCore.MOD_ID}:casing/machinecasing_base"
         setCreativeTab(AntiMatterModRegistry.tabMachines)
-        setTickRandomly(true)
     }
 
     @SideOnly(Side.CLIENT)
@@ -41,21 +41,7 @@ class BlockMultiController : BlockContainer(Material.rock), IDirectionWrenchActi
     @SideOnly(Side.CLIENT)
     var AnotherIcon: IIcon? = null
 
-    override fun updateTick(world: World?, x: Int, y: Int, z: Int, random: Random?) {
-        if (world != null) {
-            val blockPos = BlockPos(x, y, z)
-            val meta = world.getBlockMetadata(x, y, z)
-            val tile = world.getTileEntity(x, y, z)
-            if (tile is TileMultiController) {
-                tile.blockMeta = meta
-                tile.thisTilePos = blockPos
-
-            }
-
-        }
-    }
-
-    override fun onBlockActivated(world: World?, x: Int, y: Int, z: Int, player: EntityPlayer?, side: Int, p_149727_7_: Float, p_149727_8_: Float, p_149727_9_: Float): Boolean {
+    override fun onBlockActivated(world: World?, x: Int, y: Int, z: Int, player: EntityPlayer?, side: Int, hitX: Float, hitY: Float, hitZ: Float): Boolean {
         player!!.openGui(AntiMatterModCore.INSTANCE, AMMGuiHandler.GuiID_MultiController, world, x, y, z)
         return true
     }
