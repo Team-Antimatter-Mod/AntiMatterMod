@@ -22,8 +22,8 @@ import org.lwjgl.opengl.GL12
  */
 class MultiControllerTileRender : TileEntitySpecialRenderer() {
 
-    override fun renderTileEntityAt(tileEntity: TileEntity?, x: Double, y: Double, z: Double, ff: Float) {
-        renderAssist(tileEntity as TileMultiController, x, y, z, ff)
+    override fun renderTileEntityAt(tile: TileEntity?, x: Double, y: Double, z: Double, ff: Float) {
+        renderAssist(tile as TileMultiController, x, y, z, ff)
     }
 
     private fun renderAssist(tileMultiController: TileMultiController, x: Double, y: Double, z: Double, ff: Float) {

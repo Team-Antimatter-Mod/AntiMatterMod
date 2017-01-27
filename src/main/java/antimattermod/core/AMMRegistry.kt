@@ -8,6 +8,8 @@ import antimattermod.core.Energy.Item.StatesChecker
 import antimattermod.core.Energy.Item.Wrench.ItemWrench
 import antimattermod.core.Energy.MultiBlock.BlockMultiController
 import antimattermod.core.Energy.MultiBlock.TileMultiController
+import antimattermod.core.Fluid.tank.BlockBasicTank
+import antimattermod.core.Fluid.tank.TileBasicTank
 import antimattermod.core.Mob.EntityDeveloperBoss
 import antimattermod.core.Mob.ItemEgg.ItemDeveloperBossEgg
 import antimattermod.core.Util.AddInformationfunction
@@ -41,6 +43,7 @@ object AMMRegistry {
 
     val multiController = BlockMultiController()
     val chunkLoader = BlockChunkLoader()
+    val basicTank = BlockBasicTank()
 
     fun handlePreinit() {
         //Itemの登録 ===================================================================================================
@@ -54,6 +57,7 @@ object AMMRegistry {
         GameRegistry.registerBlock(energyController, "energyControllerAP")
         GameRegistry.registerBlock(multiController, "multiController")
         GameRegistry.registerBlock(chunkLoader, "AMMChunkLoader")
+        GameRegistry.registerBlock(basicTank, "AMMBasicTank")
 
         //ChunkManagerの登録 ===========================================================================================
         ForgeChunkManager.setForcedChunkLoadingCallback(AntiMatterModCore.INSTANCE, AMMChunkManager())
@@ -64,6 +68,7 @@ object AMMRegistry {
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator::class.java, "tileFurnaceGeneratorAP")
         GameRegistry.registerTileEntity(TileEnergyController::class.java, "tileEnergyControllerAP")
         GameRegistry.registerTileEntity(TileMultiController::class.java, "tileMultiController")
+        GameRegistry.registerTileEntity(TileBasicTank::class.java, "tileBasicTank")
 
         //Entityの登録 =============================================================================================
         EntityRegistry.registerModEntity(EntityDeveloperBoss::class.java, "DeveloperBoss", 1, AntiMatterModCore.MOD_ID, 250, 1, false)

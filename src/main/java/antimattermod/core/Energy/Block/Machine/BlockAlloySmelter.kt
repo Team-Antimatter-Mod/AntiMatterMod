@@ -23,7 +23,7 @@ class BlockAlloySmelter(private val tier: Int) : BlockContainer(Material.rock) {
         setHarvestLevel("pickaxe", tier + 2)
     }
 
-    override fun onBlockActivated(world: World?, x: Int, y: Int, z: Int, player: EntityPlayer?, side: Int, p_149727_7_: Float, p_149727_8_: Float, p_149727_9_: Float): Boolean {
+    override fun onBlockActivated(world: World?, x: Int, y: Int, z: Int, player: EntityPlayer?, side: Int, hitX: Float, hitY: Float, hitZ: Float): Boolean {
         player!!.openGui(AntiMatterModCore.INSTANCE, AMMGuiHandler.GuiID_AlloySmelter, world, x, y, z)
         return true
     }
