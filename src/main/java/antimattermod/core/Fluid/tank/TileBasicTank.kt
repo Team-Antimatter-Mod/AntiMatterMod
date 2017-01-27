@@ -64,6 +64,8 @@ class TileBasicTank : TileEntity(), IFluidHandler {
         } else return null
     }
 
+    override fun isInvalid() = false
+
 
     //IFluidHandler---------------------------------------------------------------------------------------------------------
     override fun canDrain(from: ForgeDirection?, fluid: Fluid?): Boolean {

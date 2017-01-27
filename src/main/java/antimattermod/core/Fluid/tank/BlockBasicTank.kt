@@ -2,6 +2,7 @@ package antimattermod.core.Fluid.tank
 
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.AntiMatterModRegistry
+import antimattermod.core.Energy.Item.Wrench.ItemWrench
 import c6h2cl2.YukariLib.Util.BlockPos
 import com.sun.org.apache.xpath.internal.operations.Bool
 import cpw.mods.fml.relauncher.Side
@@ -9,8 +10,11 @@ import cpw.mods.fml.relauncher.SideOnly
 import net.minecraft.block.BlockContainer
 import net.minecraft.block.material.Material
 import net.minecraft.client.renderer.texture.IIconRegister
+import net.minecraft.entity.item.EntityItem
 import net.minecraft.entity.player.EntityPlayer
+import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
+import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.tileentity.TileEntity
 import net.minecraft.util.IIcon
 import net.minecraft.world.World
@@ -34,54 +38,66 @@ class BlockBasicTank : BlockContainer(Material.iron) {
     @SideOnly(Side.CLIENT)
     var sideIcon: IIcon? = null
 
-    override fun onBlockActivated(world: World?, x: Int, y: Int, z: Int, player: EntityPlayer?, side: Int, hitX: Float, hitY: Float, hitZ: Float): Boolean {
-        val currentItem: ItemStack? = player!!.inventory.getCurrentItem()
-        val tile: TileBasicTank? = world!!.getTileEntity(x, y, z) as TileBasicTank
+    override fun onBlockActivated(world: World, x: Int, y: Int, z: Int, player: EntityPlayer, side: Int, hitX: Float, hitY: Float, hitZ: Float): Boolean {
+        //nullならreturn
+        val currentItem: ItemStack? = player.inventory.getCurrentItem()
+        currentItem ?: return true
+        //requireNotNull()を使うことで、強制的にNotNullに
+        val tile: TileBasicTank = requireNotNull(world.getTileEntity(x, y, z) as TileBasicTank?)
         val blockPos: BlockPos = BlockPos(x, y, z)
+        //事前にnullチェックをしておくと、if分のネストが減るので可読性が上がる。
+        //nullの時に何かする気が無いのなら、if(something != null){}ではなく、if(something == null) returnもしくは、something?:returnを使う方がよい。
+        //多重ネストは醜くなるので、できるだけ減らすこと。
+        val tankFluid = tile.productTank.fluid
+        val currentFluid = FluidContainerRegistry.getFluidForFilledItem(currentItem)
+        if (isNotNull(currentFluid)) {
+            val put: Int = tile.fill(ForgeDirection.UNKNOWN, currentFluid, false)
+            if (put == currentFluid.amount) {
+                tile.fill(ForgeDirection.UNKNOWN, currentFluid, true)
+                val usedContainer: ItemStack = FluidContainerRegistry.drainFluidContainer(currentItem)
 
-        if (tile != null) {
-            val tankFluid = tile.productTank.fluid
-
-            if (currentItem != null) {
-                val currentFluid = FluidContainerRegistry.getFluidForFilledItem(currentItem)
-
-                if (isNotNull(currentFluid)) {
-                    val put: Int = tile.fill(ForgeDirection.UNKNOWN, currentFluid, false)
-
-                    if (put == currentFluid.amount) {
-                        tile.fill(ForgeDirection.UNKNOWN, currentFluid, true)
-                        val usedContainer: ItemStack = FluidContainerRegistry.drainFluidContainer(currentItem)
-
-                        if (!player.inventory.addItemStackToInventory(usedContainer.copy())) {
-                            player.entityDropItem(usedContainer.copy(), 1f)
-                        }
-                        if (!player.capabilities.isCreativeMode && currentItem.stackSize-- <= 0) {
-                            player.inventory.setInventorySlotContents(player.inventory.currentItem, null)
-                        }
-                        markDirty(world, player, tile, blockPos)
-
-                        return true
-                    }
-                } else {
-                    if (isNotNull(tankFluid)) {
-                        if (tankFluid.amount < 1000) return true
-                        val get: ItemStack? = FluidContainerRegistry.fillFluidContainer(FluidStack(tankFluid.getFluid(), 1000), currentItem)
-
-                        if (get != null) {
-                            tile.drain(ForgeDirection.UNKNOWN, 1000, true)
-
-                            if (!player.inventory.addItemStackToInventory(get.copy())) {
-                                player.entityDropItem(get.copy(), 1f)
-                            }
-                            if (!player.capabilities.isCreativeMode && currentItem.stackSize-- <= 0) {
-                                player.inventory.setInventorySlotContents(player.inventory.currentItem, null)
-                            }
-                            markDirty(world, player, tile, blockPos)
-                            return true
-                        }
-                    } else return true
+                if (!player.inventory.addItemStackToInventory(usedContainer.copy())) {
+                    player.entityDropItem(usedContainer.copy(), 1f)
                 }
+                if (!player.capabilities.isCreativeMode && currentItem.stackSize-- <= 0) {
+                    player.inventory.setInventorySlotContents(player.inventory.currentItem, null)
+                }
+                markDirty(world, player, tile, blockPos)
+
+                return true
             }
+            //ItemWrenchを持っている時にこの処理を行う。アイテムとしてドロップ。
+        } else if (currentItem.item is ItemWrench/* && player.isSneaking*/) {
+            val tankStack = ItemStack(this)
+            if (tankStack.hasTagCompound()) {
+                tile.writeToNBT(tankStack.tagCompound)
+            } else {
+                val tagCompound = NBTTagCompound()
+                tile.writeToNBT(tagCompound)
+                tankStack.tagCompound = tagCompound
+            }
+            if(!player.inventory.addItemStackToInventory(tankStack)){
+                world.spawnEntityInWorld(EntityItem(world, x.toDouble(), y.toDouble(), z.toDouble(), tankStack))
+            }
+            world.setBlockToAir(x, y, z)
+        } else {
+            if (isNotNull(tankFluid)) {
+                if (tankFluid.amount < 1000) return true
+                val get: ItemStack? = FluidContainerRegistry.fillFluidContainer(FluidStack(tankFluid.getFluid(), 1000), currentItem)
+
+                if (get != null) {
+                    tile.drain(ForgeDirection.UNKNOWN, 1000, true)
+
+                    if (!player.inventory.addItemStackToInventory(get.copy())) {
+                        player.entityDropItem(get.copy(), 1f)
+                    }
+                    if (!player.capabilities.isCreativeMode && currentItem.stackSize-- <= 0) {
+                        player.inventory.setInventorySlotContents(player.inventory.currentItem, null)
+                    }
+                    markDirty(world, player, tile, blockPos)
+                    return true
+                }
+            } else return true
         }
         return true
     }
@@ -103,7 +119,7 @@ class BlockBasicTank : BlockContainer(Material.iron) {
     }
 
     override fun getIcon(side: Int, meta: Int): IIcon? {
-        when(side) {
+        when (side) {
             0, 1 -> return topIcon
             else -> return sideIcon
         }

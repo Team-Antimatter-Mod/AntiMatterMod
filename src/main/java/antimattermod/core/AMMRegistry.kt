@@ -9,6 +9,7 @@ import antimattermod.core.Energy.Item.Wrench.ItemWrench
 import antimattermod.core.Energy.MultiBlock.BlockMultiController
 import antimattermod.core.Energy.MultiBlock.TileMultiController
 import antimattermod.core.Fluid.tank.BlockBasicTank
+import antimattermod.core.Fluid.tank.ItemBlockBasicTank
 import antimattermod.core.Fluid.tank.TileBasicTank
 import antimattermod.core.Mob.EntityDeveloperBoss
 import antimattermod.core.Mob.ItemEgg.ItemDeveloperBossEgg
@@ -57,7 +58,7 @@ object AMMRegistry {
         GameRegistry.registerBlock(energyController, "energyControllerAP")
         GameRegistry.registerBlock(multiController, "multiController")
         GameRegistry.registerBlock(chunkLoader, "AMMChunkLoader")
-        GameRegistry.registerBlock(basicTank, "AMMBasicTank")
+        GameRegistry.registerBlock(basicTank, ItemBlockBasicTank::class.java, "AMMBasicTank")
 
         //ChunkManagerの登録 ===========================================================================================
         ForgeChunkManager.setForcedChunkLoadingCallback(AntiMatterModCore.INSTANCE, AMMChunkManager())

@@ -17,7 +17,6 @@ interface IAPProvider :IAPAccessible{
     fun getUseableEnergy(): Int
     fun useEnergy(value: Int, voltage: APVoltage)
     fun explode(value: Int, voltage: APVoltage, world: World, blockPos: BlockPos)
-    fun getTransfer(): BlockPos?
     override fun writeToNBT(tagCompound: NBTTagCompound) {
         writeToNBT(tagCompound, "receiver")
     }

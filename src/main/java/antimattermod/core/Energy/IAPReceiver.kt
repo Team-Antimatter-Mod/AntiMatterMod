@@ -15,7 +15,6 @@ interface IAPReceiver : IAPAccessible {
     fun getConnectableSide(): ForgeDirection
     fun getAddableEnergy(): Int
     fun addEnergy(value: Int, voltage: APVoltage)
-    fun getTransfer(): BlockPos?
     override fun writeToNBT(tagCompound: NBTTagCompound) {
         writeToNBT(tagCompound, "receiver")
     }

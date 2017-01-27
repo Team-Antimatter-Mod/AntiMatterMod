@@ -72,7 +72,7 @@ class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEner
     }
 
     override fun setProvider(provider: BlockPos, transfer: BlockPos) {
-        network.addProvider(provider, transfer)
+        //network.addProvider(provider, transfer)
     }
 
     override fun setReceiver(receiver: IAPReceiver) {
@@ -80,7 +80,7 @@ class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEner
     }
 
     override fun setReceiver(receiver: BlockPos, transfer: BlockPos) {
-        network.addReceiver(receiver, transfer)
+        //network.addReceiver(receiver, transfer)
     }
 
     override fun removeProvider(provider: IAPProvider) {
@@ -88,7 +88,7 @@ class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEner
     }
 
     override fun removeProvider(provider: BlockPos, transfer: BlockPos) {
-        network.removeProvider(provider, transfer)
+        //network.removeProvider(provider, transfer)
     }
 
     override fun removeReceiver(receiver: IAPReceiver) {
@@ -96,7 +96,7 @@ class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEner
     }
 
     override fun removeReceiver(receiver: BlockPos, transfer: BlockPos) {
-        network.removeReceiver(receiver, transfer)
+        //network.removeReceiver(receiver, transfer)
     }
 
     override operator fun contains(provider: IAPProvider): Boolean {
