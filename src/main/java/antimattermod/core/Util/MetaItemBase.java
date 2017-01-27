@@ -99,8 +99,8 @@ import net.minecraft.util.IIcon;
 	 * @see net.minecraft.item.Item#addInformation(net.minecraft.item.ItemStack, net.minecraft.entity.player.EntityPlayer, java.util.List, boolean)
 	 */
 	@Override
-	public void addInformation(ItemStack item, EntityPlayer player, List list, boolean p_77624_4_){
-		addfunc.addInformation(item,player,list,p_77624_4_);
+	public void addInformation(ItemStack item, EntityPlayer player, List list, boolean isdebug){
+		addfunc.addInformation(item,player,list, isdebug);
 	}
 	
 }

@@ -24,7 +24,7 @@ class AMMFluidTank : FluidTank {
         return if (getFluid() != null) getFluid().getFluid() else null
     }
 
-    fun getFluidNameJa(): String {
+    fun getFluidLocalizedName(): String {
         return if (this.fluid != null && this.fluid.getFluid() != null) this.fluid.getFluid().getLocalizedName(this.fluid) else "Empty"
     }
 
