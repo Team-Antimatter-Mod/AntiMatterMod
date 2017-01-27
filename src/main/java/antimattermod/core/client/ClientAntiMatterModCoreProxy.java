@@ -8,6 +8,8 @@ import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattermod.core.Block.TileEntity.TileEntitySatStove;
 import antimattermod.core.Energy.Item.Wrench.WrenchKeyEvent;
 import antimattermod.core.Energy.MultiBlock.TileMultiController;
+import antimattermod.core.Fluid.tank.RenderTileTank;
+import antimattermod.core.Fluid.tank.TileBasicTank;
 import antimattermod.core.Mob.EntityDeveloperBoss;
 import antimattermod.core.Mob.render.RenderDeveloperBoss;
 import antimattermod.core.Render.*;
@@ -56,6 +58,7 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(AntiMatterModRegistry.clayCrucible), new ItemRenderClayCrucibles(clayCrucibleSpecialRender,new TileEntityClayCrucible()));
 
 		ClientRegistry.bindTileEntitySpecialRenderer(TileMultiController.class, new MultiControllerTileRender());
+		ClientRegistry.bindTileEntitySpecialRenderer(TileBasicTank.class, new RenderTileTank());
 
 		//土かまどレンダー
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySatStove.class,new SatStoveSpecialRender());
