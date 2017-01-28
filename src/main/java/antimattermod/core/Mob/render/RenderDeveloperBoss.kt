@@ -27,13 +27,14 @@ class RenderDeveloperBoss() : RenderLiving(ModelDeveloperBoss(), 0.5f) {
 
     //仮コード。後に書き換える
     override fun getEntityTexture(entity: Entity): ResourceLocation? {
-        if (skin == null) {
+        val texpath = DeveloperBossTexture.Raitichan.texturePath
+        if (skin == null && texpath != null) {
             skin = ResourceLocation("AntiMatterMod:s/texture/raitichan.png")
             val texturemanager = Minecraft.getMinecraft().textureManager
             var obj = texturemanager.getTexture(skin)
             if (obj == null) {
-                obj = ThreadDownloadImageData(DeveloperBossTexture.Raitichan.texturePath, null, AbstractClientPlayer.locationStevePng,
-                        //==================================================================================================================
+                obj = ThreadDownloadImageData(texpath, null, AbstractClientPlayer.locationStevePng, null
+                        /*/==================================================================================================================
                         object : IImageBuffer {
 
                             private var imageData: IntArray? = null
@@ -167,13 +168,13 @@ class RenderDeveloperBoss() : RenderLiving(ModelDeveloperBoss(), 0.5f) {
                             override fun func_152634_a() {
                             }
                         }
-                        //==================================================================================================================
+                        *///==================================================================================================================
                 )
 
                 texturemanager.loadTexture(skin, obj)
             }
         }
-        return skin
+        return skin ?: AbstractClientPlayer.locationStevePng
     }
 
     fun doRender(entity: EntityDeveloperBoss, d0: Double, d1: Double, d2: Double, f0: Float, f1: Float) {
