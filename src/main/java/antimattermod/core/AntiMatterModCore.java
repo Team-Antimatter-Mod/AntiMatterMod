@@ -41,7 +41,7 @@ public class AntiMatterModCore {
     @SuppressWarnings("unused")
     public void preinit(FMLPreInitializationEvent event) {
         loadMeta(modMetadata);
-        DeveloperBossTexture.downloadTexture();//開発者のスキンのダウンロード
+        //DeveloperBossTexture.downloadTexture();//開発者のスキンのダウンロード
         AntiMatterModRegistry.registerPreInit(event);
         AMMRegistry.INSTANCE.handlePreinit();
         OreDictionaryRegister.OreDictionaryRegisterPreInit(event);

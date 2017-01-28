@@ -1,5 +1,6 @@
 package antimattermod.core.command;
 
+import antimattermod.core.Log;
 import net.minecraft.block.Block;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
@@ -11,17 +12,17 @@ import net.minecraft.world.World;
  * Created by Raiti on 2016/10/09.
  */
 public class Createsphere extends CommandBase {
-	
+
 	@Override
 	public String getCommandName() {
 		return "sphere";
 	}
-	
+
 	@Override
 	public String getCommandUsage(ICommandSender p_71518_1_) {
 		return null;
 	}
-	
+
 	@Override
 	public void processCommand(ICommandSender iCommandSender, String[] parm) {
 		World world = iCommandSender.getEntityWorld();
@@ -30,9 +31,9 @@ public class Createsphere extends CommandBase {
 			int y = pointGet(parm[1],iCommandSender,1);
 			int z = pointGet(parm[2],iCommandSender,2);
 			int r = Integer.parseInt(parm[3]);
-			
-			System.out.println(x+"."+y+","+z+","+r);
-			
+
+			Log.log.info(x+"."+y+","+z+","+r);
+
 			for (int w = 0; w <= r; w++){
 				int h = (int)Math.round(Math.sqrt(r*r - w*w));
 				for (int hf = 0; hf <= h; hf++){
@@ -40,11 +41,11 @@ public class Createsphere extends CommandBase {
 					world.setBlock(x+w,y,z-hf,Blocks.stone);
 					world.setBlock(x-w,y,z+hf,Blocks.stone);
 					world.setBlock(x-w,y,z-hf,Blocks.stone);
-					
-					
+
+
 				}
 			}
-			
+
 			/*for(float l = 0; l < 90 ; l+=0.1){
 				int xx = Math.round(MathHelper.cos((float) Math.toRadians(l))*posX);
 				int yy = Math.round(MathHelper.sin((float) Math.toRadians(l))*posX);
@@ -62,16 +63,16 @@ public class Createsphere extends CommandBase {
 				
 			}
 			*/
-			
+
 		}
-		
+
 	}
-	
-	
+
+
 	private int pointGet(String text,ICommandSender sender,int pos){
-		
+
 		int point = 0;
-		
+
 		switch (pos){
 			case 0:
 				point = (int)sender.getEntityWorld().getPlayerEntityByName(sender.getCommandSenderName()).posX;
@@ -83,7 +84,7 @@ public class Createsphere extends CommandBase {
 				point = (int)sender.getEntityWorld().getPlayerEntityByName(sender.getCommandSenderName()).posZ;
 				break;
 		}
-		
+
 		if (text.equals("~")){
 			return point;
 		}else if(text.indexOf("~")!=-1){
@@ -91,7 +92,7 @@ public class Createsphere extends CommandBase {
 		}else {
 			return Integer.parseInt(text);
 		}
-		
-		
+
+
 	}
 }

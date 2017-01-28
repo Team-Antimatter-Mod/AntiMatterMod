@@ -1,23 +1,37 @@
-*.class
+## .gitignore ##
+# ignore all
+*
+*/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-.gitignore
-.idea/
-eclipse/
-.gradle/
-classes/
-build/
-!build/libs/
-src/api/
-src/main/kotlin/
-src/test/
-run_log.txt
-buildlog.txt
+# allow any
+!/src
+!/src/
+!/gradle
+!/gradle/
+!/lib
+!/lib/
+!/libs
+!/libs/
+!/annotations
+!/annotations/
+!/version
+!/version/
+!/info
+!/info/
+!/build.gradle
+!/settings.gradle
+!/gradle.properties
+!/install.bat
+!/Release.bat
+!/gradlew
+!/gradlew.bat
+!/build.bat
+!/LICENSE
+!/LICENSE.md
+!/README
+!/README.md
+!/CONTRIBUTING
+!/CONTRIBUTING.md
+!/.gitignore
+!/.gitmodules
+!/.gitattributes
