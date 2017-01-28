@@ -9,7 +9,15 @@ import net.minecraft.tileentity.TileEntity
  */
 class TileMultiController : TileEntity() {
 
-    var blockMeta: Int = worldObj.getBlockMetadata(xCoord, yCoord, zCoord)
+    // worldObj may not be initialized when construct
+    var _blockMeta: Int? = null
+    val blockMeta: Int
+        get() {
+            if (_blockMeta==null)
+                _blockMeta = worldObj?.getBlockMetadata(xCoord, yCoord, zCoord)
+            return _blockMeta ?: throw AssertionError("worldObj must be initialized before using")
+        }
+
     var page: Int = 0
     var multiPlaceIndex: Int = -1
 
