@@ -3,6 +3,7 @@ package antimattermod.core.Energy.GUI
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.Util.Gui.ClearButton
 import antimattermod.core.Energy.MultiBlock.TileMultiController
+import antimattermod.core.Log
 import antimattermod.core.Util.Gui.GuiHelper
 import antimattermod.core.Util.Gui.TextureButton
 import net.minecraft.client.Minecraft
@@ -62,7 +63,7 @@ class MultiControllerGui(private val tileMultiController: TileMultiController, p
         super.mouseClicked(p_73864_1_, p_73864_2_, p_73864_3_)
         val i = Mouse.getEventX() * this.width / this.mc.displayWidth
         val j = this.height - Mouse.getEventY() * this.height / this.mc.displayHeight - 1
-        System.out.println("${i} :: ${j}")
+        Log.dev.info("${i} :: ${j}")
 
     }
 
@@ -70,7 +71,7 @@ class MultiControllerGui(private val tileMultiController: TileMultiController, p
         super.drawGuiContainerForegroundLayer(mouseX, mouseZ)
         when (tileMultiController.page) {
             0 -> {
-                this.fontRendererObj.drawString(StatCollector.translateToLocal(tileMultiController.coreBlockName + ".name"),-3, 11, 0xFFFFFF )
+                this.fontRendererObj.drawString(StatCollector.translateToLocal(tileMultiController.coreBlockName + ".name"), -3, 11, 0xFFFFFF)
 
             }
             1 -> {

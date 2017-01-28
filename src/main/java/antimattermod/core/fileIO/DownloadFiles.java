@@ -2,6 +2,7 @@ package antimattermod.core.fileIO;
 
 
 import antimattermod.core.AntiMatterModCore;
+import antimattermod.core.Log;
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import org.apache.commons.io.IOUtils;
@@ -147,15 +148,15 @@ public class DownloadFiles {
             }
             //接続処理
             URI u = new URI(url);
-            System.out.println("DownloadURL:" + u.toString());
-            System.out.println("Connection...");
+            Log.dev.info("DownloadURL:" + u.toString());
+            Log.dev.info("Connection...");
             final HttpUriRequest req = new HttpGet(u);
             final HttpResponse response = client.execute(req);
             final HttpEntity entity = response.getEntity();
             input = entity.getContent();
             output = new BufferedOutputStream(new FileOutputStream(path));
             IOUtils.copyLarge(input, output);
-            System.out.println("Finish!!");
+            Log.dev.info("Finish!!");
             return path;
         } catch (Exception e) {
             e.printStackTrace();
