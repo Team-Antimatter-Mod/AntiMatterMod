@@ -24,29 +24,21 @@ class EnergyNode {
 
     constructor()
 
-    fun writeToNBT(tagCompound: NBTTagCompound) {
-        writeToNBT(tagCompound, "EnergyNode")
-    }
-
-    fun readFromNBT(tagCompound: NBTTagCompound) {
-        readFromNBT(tagCompound, "EnergyNode")
-    }
-
-    fun writeToNBT(tagCompound: NBTTagCompound, tagName: String) {
+    fun writeToNBT(tagCompound: NBTTagCompound, tagName: String = ENERGY_NODE) {
         val tag = NBTTagCompound()
         voltage.writeToNBT(tag)
-        tag.setInteger("energyValue", energyValue)
-        source.writeToNBT(tag, "sourcePos")
-        target.writeToNBT(tag, "targetPos")
+        tag.setInteger(ENERGY_VALUE, energyValue)
+        source.writeToNBT(tag, SOURCE_POS)
+        target.writeToNBT(tag, TARGET_POS)
         tagCompound.setTag(tagName, tag)
     }
 
-    fun readFromNBT(tagCompound: NBTTagCompound, tagName: String) {
+    fun readFromNBT(tagCompound: NBTTagCompound, tagName: String = ENERGY_NODE) {
         val tag = tagCompound.getCompoundTag(tagName)
         voltage.readFromNBT(tag)
-        energyValue = tag.getInteger("energyValue")
-        source.readFromNBT(tag)
-        target.readFromNBT(tag)
+        energyValue = tag.getInteger(ENERGY_VALUE)
+        source.readFromNBT(tag, SOURCE_POS)
+        target.readFromNBT(tag, TARGET_POS)
     }
 
     fun applyDecayRtoC(pos: BlockPos) {

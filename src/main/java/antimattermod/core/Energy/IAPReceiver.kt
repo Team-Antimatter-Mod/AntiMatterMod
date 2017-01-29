@@ -16,10 +16,10 @@ interface IAPReceiver : IAPAccessible {
     fun getAddableEnergy(): Int
     fun addEnergy(value: Int, voltage: APVoltage)
     override fun writeToNBT(tagCompound: NBTTagCompound) {
-        writeToNBT(tagCompound, "receiver")
+        writeToNBT(tagCompound, RECEIVER)
     }
 
     override fun readFromNBT(tagCompound: NBTTagCompound) {
-        readFromNBT(tagCompound, "receiver")
+        readFromNBT(tagCompound, RECEIVER)
     }
 }

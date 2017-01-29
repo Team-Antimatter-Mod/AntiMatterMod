@@ -27,13 +27,13 @@ enum class APVoltage constructor(val maxEnergy: Int) {
 
     fun writeToNBT(tagCompound: NBTTagCompound): Unit {
         val tag: NBTTagCompound = NBTTagCompound()
-        tag.setInteger("energy", maxEnergy)
-        tagCompound.setTag("voltage", tag)
+        tag.setInteger(ENERGY, maxEnergy)
+        tagCompound.setTag(VOLTAGE, tag)
     }
 
     fun readFromNBT(tagCompound: NBTTagCompound): APVoltage {
-        val tag = tagCompound.getCompoundTag("voltage")
-        return getVoltageFromEnergy(tag.getInteger("energy"))
+        val tag = tagCompound.getCompoundTag(VOLTAGE)
+        return getVoltageFromEnergy(tag.getInteger(ENERGY))
     }
 
     override fun toString(): String {

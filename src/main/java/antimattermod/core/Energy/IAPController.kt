@@ -18,14 +18,14 @@ interface IAPController {
     fun removeProvider(provider: BlockPos, transfer: BlockPos)
     fun removeReceiver(receiver: IAPReceiver)
     fun removeReceiver(receiver: BlockPos, transfer: BlockPos)
-    fun writeToNBT(tagCompound: NBTTagCompound, name: String = "controller"): NBTTagCompound
+    fun writeToNBT(tagCompound: NBTTagCompound, name: String = CONTROLLER): NBTTagCompound
     fun readFromNBT(tagCompound: NBTTagCompound, name: String): IAPController
     fun writeToNBT(tagCompound: NBTTagCompound) {
-        writeToNBT(tagCompound, name = "controller")
+        writeToNBT(tagCompound, name = CONTROLLER)
     }
 
     fun readFromNBT(tagCompound: NBTTagCompound) {
-        readFromNBT(tagCompound, "controller")
+        readFromNBT(tagCompound, CONTROLLER)
     }
 
     fun getPos(): BlockPos

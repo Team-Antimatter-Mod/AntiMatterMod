@@ -93,10 +93,10 @@ class ItemWrench(name: String, texture: String, private val addfunc: AddInformat
     /**
      * レンチ側の送受信設定
      * @author C6H2Cl2
-     * @throws TypeCastException
-     * @throws IllegalArgumentException
      */
     fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, pos: BlockPos, side: Int, isSneaking: Boolean) {
+        TODO("Transferを消したことに伴う仕様変更")
+        /*
         //ぬるぽ対策
         if (!itemStack.hasTagCompound()) {
             itemStack.tagCompound = NBTTagCompound()
@@ -142,6 +142,7 @@ class ItemWrench(name: String, texture: String, private val addfunc: AddInformat
             }
             tag.removeTag("controller")
         }
+        */
     }
 
     override fun addInformation(item: ItemStack?, player: EntityPlayer?, list: List<*>?, p_77624_4_: Boolean) {

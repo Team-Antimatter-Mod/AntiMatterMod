@@ -3,6 +3,7 @@ package antimattermod.core.Energy
 import c6h2cl2.YukariLib.Util.BlockPos
 import c6h2cl2.YukariLib.Util.BlockPosSet
 import net.minecraft.nbt.NBTTagCompound
+import net.minecraft.nbt.NBTTagList
 import org.jetbrains.kotlin.utils.toReadOnlyList
 
 /**
@@ -22,15 +23,35 @@ class EnergyNetwork(private val controller: IAPController) {
         receivers.add(receiver.getPos())
     }
 
-    fun readFromNBT(tagCompound: NBTTagCompound, name: String = "network"): EnergyNetwork {
+    fun readFromNBT(tagCompound: NBTTagCompound, name: String = NETWORK): EnergyNetwork {
         val tag = tagCompound.getTag(name) as NBTTagCompound
-        TODO("Setに合わせた実装のし直し")
+        val num_p = tag.getInteger(NUM_P)
+        val num_r = tag.getInteger(NUM_R)
+        val list_p = tag.getTagList(PROVIDERS, num_p)
+        val list_r = tag.getTagList(RECEIVERS, num_r)
+        (0..num_p).mapTo(providers) { BlockPos(list_p.getCompoundTagAt(it)) }
+        (0..num_r).mapTo(receivers) { BlockPos(list_r.getCompoundTagAt(it)) }
         return this
     }
 
-    fun writeToNBT(tagCompound: NBTTagCompound, name: String = "network"): NBTTagCompound {
+    fun writeToNBT(tagCompound: NBTTagCompound, name: String = NETWORK): NBTTagCompound {
         val tag = NBTTagCompound()
-        TODO("Setに合わせた実装のし直し")
+        val list_p = NBTTagList()
+        val list_r = NBTTagList()
+        providers.forEach {
+            val nbt = NBTTagCompound()
+            it.writeToNBT(nbt)
+            list_p.appendTag(nbt)
+        }
+        receivers.forEach {
+            val nbt = NBTTagCompound()
+            it.writeToNBT(nbt)
+            list_r.appendTag(nbt)
+        }
+        tag.setTag(PROVIDERS, list_p)
+        tag.setTag(RECEIVERS, list_r)
+        tag.setInteger(NUM_P, list_p.tagCount())
+        tag.setInteger(NUM_R, list_r.tagCount())
         tagCompound.setTag(name, tag)
         return tagCompound
     }
