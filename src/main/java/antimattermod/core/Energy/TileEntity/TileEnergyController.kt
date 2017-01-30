@@ -6,6 +6,7 @@ import antimattermod.core.Energy.IAPController
 import antimattermod.core.Energy.IAPProvider
 import antimattermod.core.Energy.IAPReceiver
 import antimattermod.core.Energy.Item.Wrench.IEnergyWrenchAction
+import antimattermod.core.IAPAccessible
 import antimattermod.core.MachineTier
 import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.nbt.NBTTagCompound
@@ -14,10 +15,13 @@ import net.minecraft.tileentity.TileEntity
 /**
  * @author C6H2Cl2
  */
-class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEnergyWrenchAction, IAPController {
+class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEnergyWrenchAction, IAPController, IAPAccessible {
     override val voltage = tier.voltage
-    var network = EnergyNetwork(this)
-    var requests = ArrayList<EnergyNode>().toMutableList()
+    private var network = EnergyNetwork(this)
+    private var requests = ArrayList<EnergyNode>().toMutableList()
+    var energy = 0
+    private set
+    val maxEnergyStorage = voltage.maxEnergy * 100
 
     init {
 
@@ -26,14 +30,7 @@ class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEner
     override fun updateEntity() {
         super.updateEntity()
         val pos = BlockPos(xCoord,yCoord,zCoord)
-        val list = ArrayList<BlockPos>()
-        requests.forEach {
-            it.applyDecayRtoC(pos)
-            val providers = network.getProviders()
-            for (provider in providers){
 
-            }
-        }
     }
 
     override fun sendRequest(node: EnergyNode) {
@@ -57,11 +54,15 @@ class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEner
         network.readFromNBT(tagCompound)
     }
 
-    override fun readFromNBT(tagCompound: NBTTagCompound, name: String): IAPController {
+    override fun readFromNBT(tagCompound: NBTTagCompound, name: String): TileEnergyController {
         val tag = tagCompound.getTag(name)
         readFromNBT(tag as NBTTagCompound)
         return this
     }
+
+    override fun getEnergyStorage() = maxEnergyStorage
+
+    override fun getEnergyValue() = energy
 
     override fun getPos(): BlockPos {
         return BlockPos(xCoord, yCoord, zCoord)
@@ -71,32 +72,32 @@ class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEner
         network += provider
     }
 
-    override fun setProvider(provider: BlockPos, transfer: BlockPos) {
-        //network.addProvider(provider, transfer)
+    override fun setProvider(provider: BlockPos) {
+        network.addProvider(provider)
     }
 
     override fun setReceiver(receiver: IAPReceiver) {
         network += receiver
     }
 
-    override fun setReceiver(receiver: BlockPos, transfer: BlockPos) {
-        //network.addReceiver(receiver, transfer)
+    override fun setReceiver(receiver: BlockPos) {
+        network.addReceiver(receiver)
     }
 
     override fun removeProvider(provider: IAPProvider) {
         network -= provider
     }
 
-    override fun removeProvider(provider: BlockPos, transfer: BlockPos) {
-        //network.removeProvider(provider, transfer)
+    override fun removeProvider(provider: BlockPos) {
+        network.removeReceiver(provider)
     }
 
     override fun removeReceiver(receiver: IAPReceiver) {
         network -= receiver
     }
 
-    override fun removeReceiver(receiver: BlockPos, transfer: BlockPos) {
-        //network.removeReceiver(receiver, transfer)
+    override fun removeReceiver(receiver: BlockPos) {
+        network.removeReceiver(receiver)
     }
 
     override operator fun contains(provider: IAPProvider): Boolean {
@@ -105,5 +106,9 @@ class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEner
 
     override operator fun contains(receiver: IAPReceiver): Boolean {
         return receiver in network
+    }
+
+    override operator fun contains(pos: BlockPos): Boolean {
+        return pos in network
     }
 }

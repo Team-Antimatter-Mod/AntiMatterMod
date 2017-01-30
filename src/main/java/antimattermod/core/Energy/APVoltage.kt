@@ -6,7 +6,7 @@ import net.minecraft.nbt.NBTTagCompound
  * @author C6H2Cl2
  */
 
-enum class APVoltage constructor(val maxEnergy: Int) {
+enum class APVoltage constructor(val maxEnergy: Int) :Comparable<APVoltage>{
     ZeroVoltage(0), ULV(8), LV(32), MV(128), HV(512), EV(2048), IV(8192), LuV(32768), ZPMV(131072), UV(524288), MaxV(Int.MAX_VALUE);
 
     fun getVoltageFromEnergy(maxEnergy: Int): APVoltage {

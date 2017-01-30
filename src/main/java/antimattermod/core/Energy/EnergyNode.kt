@@ -13,6 +13,7 @@ class EnergyNode {
     private var energyValue: Int = 0
     private var source: BlockPos = BlockPos(0, 0, 0)
     private var target: BlockPos = BlockPos(0, 0, 0)
+    private var controller: BlockPos = BlockPos(0, 0, 0)
     private var machineTier = MachineTier.NoTier
 
     constructor(voltage: APVoltage, value: Int, sourcePos: BlockPos, targetPos: BlockPos) {
@@ -30,6 +31,7 @@ class EnergyNode {
         tag.setInteger(ENERGY_VALUE, energyValue)
         source.writeToNBT(tag, SOURCE_POS)
         target.writeToNBT(tag, TARGET_POS)
+        controller.writeToNBT(tag, CONTROLLER)
         tagCompound.setTag(tagName, tag)
     }
 
@@ -39,39 +41,16 @@ class EnergyNode {
         energyValue = tag.getInteger(ENERGY_VALUE)
         source.readFromNBT(tag, SOURCE_POS)
         target.readFromNBT(tag, TARGET_POS)
+        controller.readFromNBT(tag, CONTROLLER)
     }
 
-    fun applyDecayRtoC(pos: BlockPos) {
-        if (energyValue < voltage.maxEnergy) {
-            energyValue = (energyValue / Math.pow(machineTier.efficiency, pos.getDistance(target))).toInt()
-            if (energyValue > voltage.maxEnergy) {
-                energyValue = voltage.maxEnergy
-            }
-        }
+    fun appleDecay(from: BlockPos, to:BlockPos){
+
     }
 
-    fun appleDecayCtoP(pos: BlockPos) {
-        if (energyValue < voltage.maxEnergy) {
-            energyValue = (energyValue / Math.pow(machineTier.efficiency, pos.getDistance(source))).toInt()
-            if (energyValue > voltage.maxEnergy) {
-                energyValue = voltage.maxEnergy
-            }
-        }
-    }
-
-    fun appleDecayPtoR(pos: BlockPos, world: World) {
-        energyValue = (energyValue * Math.pow(machineTier.efficiency, pos.getDistance(source))).toInt()
-        val controller = pos.getTileEntityFromPos(world) as IAPController
-        if (controller.voltage.maxEnergy > energyValue) {
-            world.createExplosion(null, pos.getX().toDouble(), pos.getY().toDouble(), pos.getZ().toDouble(),
-                    Math.pow(energyValue - controller.voltage.maxEnergy.toDouble(), 2.0).toFloat(), true)
-        }
-        energyValue = (energyValue * Math.pow(machineTier.efficiency, pos.getDistance(target))).toInt()
-        val receiver = target.getTileEntityFromPos(world) as IAPReceiver
-        if (receiver.voltage.maxEnergy > energyValue) {
-            world.createExplosion(null, pos.getX().toDouble(), pos.getY().toDouble(), pos.getZ().toDouble(),
-                    Math.pow(energyValue - receiver.voltage.maxEnergy.toDouble(), 2.0).toFloat(), true)
-        }
+    fun explode(pos: BlockPos, world: World, voltage: APVoltage) {
+        world.createExplosion(null, pos.getX().toDouble(), pos.getY().toDouble(), pos.getZ().toDouble(),
+                Math.pow(energyValue - voltage.maxEnergy.toDouble(), 2.0).toFloat(), false)
     }
 
     fun getVoltage(): APVoltage = voltage
@@ -81,6 +60,12 @@ class EnergyNode {
     fun setTarget(pos: BlockPos) {
         if (target == BlockPos(0, 0, 0)) {
             target = pos
+        }
+    }
+
+    fun setController(pos: BlockPos) {
+        if (controller == BlockPos(0, 0, 0)) {
+            controller = pos
         }
     }
 }

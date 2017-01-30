@@ -16,6 +16,7 @@ interface IAPProvider :IAPAccessible{
     fun getConnectableSide(): ForgeDirection
     fun getUseableEnergy(): Int
     fun useEnergy(value: Int, voltage: APVoltage)
+    fun handleRequest(controller: BlockPos)
     fun explode(value: Int, voltage: APVoltage, world: World, blockPos: BlockPos)
     override fun writeToNBT(tagCompound: NBTTagCompound) {
         writeToNBT(tagCompound, PROVIDER)

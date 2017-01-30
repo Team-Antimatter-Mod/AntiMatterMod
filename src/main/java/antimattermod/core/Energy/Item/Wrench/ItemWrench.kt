@@ -70,7 +70,7 @@ class ItemWrench(name: String, texture: String, private val addfunc: AddInformat
         return false
     }
 
-    fun settingDirection(world: World, block: Block, x: Int, y: Int, z: Int, meta: Int, clickPos: ClickPos, isVertical: Boolean) {
+    private fun settingDirection(world: World, block: Block, x: Int, y: Int, z: Int, meta: Int, clickPos: ClickPos, isVertical: Boolean) {
         val cside = clickPos.getClickedDirection()
         if (isVertical) {
             if (meta < 6) {
@@ -94,55 +94,50 @@ class ItemWrench(name: String, texture: String, private val addfunc: AddInformat
      * レンチ側の送受信設定
      * @author C6H2Cl2
      */
-    fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, pos: BlockPos, side: Int, isSneaking: Boolean) {
-        TODO("Transferを消したことに伴う仕様変更")
-        /*
-        //ぬるぽ対策
+    private fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, pos: BlockPos, side: Int, isSneaking: Boolean) {
+        //ItemStackがNBTタグを持っているかどうか
         if (!itemStack.hasTagCompound()) {
             itemStack.tagCompound = NBTTagCompound()
         }
-        //ItemStackのタグの参照
         val tag = itemStack.tagCompound
         val tile = pos.getTileEntityFromPos(world)
-        /**
-         * @throws IllegalArgumentException
-         * IAPControllerまたはIAPTransferを継承していないクラスは禁止
-         * ItemStackのNBTに書き込み処理
-         */
+        //Tileの種類によってNBTのタグ名を変える
         when (tile) {
-            is IAPTransfer -> {
-                if (tile.isProvider()){
-                    tile.getTarget().getPos().writeToNBT(tag,"provider")
-                }else{
-                    tile.getTarget().getPos().writeToNBT(tag,"receiver")
+            is IAPProvider -> {
+                if (tag.hasKey(RECEIVER)){
+                    tag.removeTag(RECEIVER)
                 }
-                tile.getPos().writeToNBT(tag,"transfer")
+                removeAndSetTag(tag, pos, PROVIDER)
             }
-            is IAPController -> tile.getPos().writeToNBT(tag,"controller")
-            else -> throw IllegalArgumentException("TileEntity in pos must implement IAPTransfer or IAPController")
-        }
-        //Controllerと、Provider or Receiverの両方が揃っている場合、Controllerに接続情報を書き込む
-        if (tag.hasKey("controller")) {
-            if (!tag.hasKey("provider") && !tag.hasKey("receiver")) return
-            //ControllerのTileEntity取得
-            val posController = BlockPos(tag,"controller")
-            val tileController = posController.getTileEntityFromPos(world) as? IAPController ?: throw IllegalArgumentException()
-            val posTransfer = BlockPos(tag,"transfer")
-            //Providerの時
-            if (tag.hasKey("provider")) {
-                //書き込み用のBlockPos取得
-                val posProvider = BlockPos(tag, "provider")
-                tileController.setProvider(posProvider,posTransfer)
-                tag.removeTag("provider")
-            } else if (tag.hasKey("Receiver")) {
-                //Receiverの時 Providerと同様
-                val posReceiver = BlockPos(tag, "receiver")
-                tileController.setReceiver(posReceiver,posTransfer)
-                tag.removeTag("receiver")
+            is IAPReceiver -> {
+                if(tag.hasKey(PROVIDER)){
+                    tag.removeTag(PROVIDER)
+                }
+                removeAndSetTag(tag, pos, RECEIVER)
             }
-            tag.removeTag("controller")
+            is IAPController -> removeAndSetTag(tag, pos, CONTROLLER)
+            else -> throw IllegalArgumentException("arg\"pos\" must implements IAPProvider , IAPReceiver, or IAPController")
         }
-        */
+        //Controllerと、Provider/Receiverのどちらかの両方が揃っているときだけ先に進む
+        if (!tag.hasKey(CONTROLLER) || !(tag.hasKey(PROVIDER) || tag.hasKey(RECEIVER))){
+            return
+        }
+        val tileController = BlockPos(tag, CONTROLLER).getTileEntityFromPos(world) as IAPController
+        if (tag.hasKey(PROVIDER)){
+            tileController.setProvider(BlockPos(tag, PROVIDER))
+            tag.removeTag(PROVIDER)
+        }else{
+            tileController.setProvider(BlockPos(tag, RECEIVER))
+            tag.removeTag(RECEIVER)
+        }
+        tag.removeTag(CONTROLLER)
+    }
+
+    private fun removeAndSetTag(tagCompound: NBTTagCompound, pos: BlockPos, name: String) {
+        if (tagCompound.hasKey(name)) {
+            tagCompound.removeTag(name)
+        }
+        pos.writeToNBT(tagCompound, name)
     }
 
     override fun addInformation(item: ItemStack?, player: EntityPlayer?, list: List<*>?, p_77624_4_: Boolean) {

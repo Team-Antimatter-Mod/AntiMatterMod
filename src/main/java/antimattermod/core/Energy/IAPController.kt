@@ -11,13 +11,13 @@ interface IAPController {
     val voltage: APVoltage
     val tier: MachineTier
     fun setProvider(provider: IAPProvider)
-    fun setProvider(provider: BlockPos, transfer: BlockPos)
+    fun setProvider(provider: BlockPos)
     fun setReceiver(receiver: IAPReceiver)
-    fun setReceiver(receiver: BlockPos, transfer: BlockPos)
+    fun setReceiver(receiver: BlockPos)
     fun removeProvider(provider: IAPProvider)
-    fun removeProvider(provider: BlockPos, transfer: BlockPos)
+    fun removeProvider(provider: BlockPos)
     fun removeReceiver(receiver: IAPReceiver)
-    fun removeReceiver(receiver: BlockPos, transfer: BlockPos)
+    fun removeReceiver(receiver: BlockPos)
     fun writeToNBT(tagCompound: NBTTagCompound, name: String = CONTROLLER): NBTTagCompound
     fun readFromNBT(tagCompound: NBTTagCompound, name: String): IAPController
     fun writeToNBT(tagCompound: NBTTagCompound) {
@@ -33,4 +33,5 @@ interface IAPController {
 
     operator fun contains(provider: IAPProvider): Boolean
     operator fun contains(receiver: IAPReceiver): Boolean
+    operator fun contains(pos: BlockPos): Boolean
 }
