@@ -76,6 +76,8 @@ class EnergyNetwork(private val controller: IAPController) {
         receivers.remove(receiver)
     }
 
+    fun getCountConnected() = providers.size + receivers.size
+
     operator fun plusAssign(value: EnergyNetwork) {
         this.providers += value.providers
         this.receivers += value.receivers

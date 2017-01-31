@@ -11,9 +11,8 @@ import net.minecraft.world.World
 class EnergyNode {
     private var voltage: APVoltage = APVoltage.ZeroVoltage
     private var energyValue: Int = 0
-    private var source: BlockPos = BlockPos(0, 0, 0)
-    private var target: BlockPos = BlockPos(0, 0, 0)
-    private var controller: BlockPos = BlockPos(0, 0, 0)
+    private var source: BlockPos = BlockPos.Empty
+    private var target: BlockPos = BlockPos.Empty
     private var machineTier = MachineTier.NoTier
 
     constructor(voltage: APVoltage, value: Int, sourcePos: BlockPos, targetPos: BlockPos) {
@@ -31,7 +30,6 @@ class EnergyNode {
         tag.setInteger(ENERGY_VALUE, energyValue)
         source.writeToNBT(tag, SOURCE_POS)
         target.writeToNBT(tag, TARGET_POS)
-        controller.writeToNBT(tag, CONTROLLER)
         tagCompound.setTag(tagName, tag)
     }
 
@@ -41,11 +39,21 @@ class EnergyNode {
         energyValue = tag.getInteger(ENERGY_VALUE)
         source.readFromNBT(tag, SOURCE_POS)
         target.readFromNBT(tag, TARGET_POS)
-        controller.readFromNBT(tag, CONTROLLER)
     }
 
-    fun appleDecay(from: BlockPos, to:BlockPos){
+    fun appleDecay(from: BlockPos, to: BlockPos): EnergyNode {
+        energyValue = (Math.pow(machineTier.efficiency, from.getDistance(to)) * energyValue).toInt()
+        return this
+    }
 
+    fun unappleDecay(from: BlockPos, to: BlockPos): EnergyNode {
+        if (energyValue < voltage.maxEnergy) {
+            energyValue = (energyValue / Math.pow(machineTier.efficiency, from.getDistance(to))).toInt()
+            if (energyValue > voltage.maxEnergy) {
+                energyValue = voltage.maxEnergy
+            }
+        }
+        return this
     }
 
     fun explode(pos: BlockPos, world: World, voltage: APVoltage) {
@@ -58,14 +66,13 @@ class EnergyNode {
     fun getSource(): BlockPos = source
     fun getTargetPos(): BlockPos = target
     fun setTarget(pos: BlockPos) {
-        if (target == BlockPos(0, 0, 0)) {
+        if (target == BlockPos.Empty) {
             target = pos
         }
     }
-
-    fun setController(pos: BlockPos) {
-        if (controller == BlockPos(0, 0, 0)) {
-            controller = pos
+    fun setSource(pos: BlockPos){
+        if(source == BlockPos.Empty){
+            source = pos
         }
     }
 }

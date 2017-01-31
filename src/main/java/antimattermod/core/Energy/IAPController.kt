@@ -10,10 +10,11 @@ import net.minecraft.nbt.NBTTagCompound
 interface IAPController {
     val voltage: APVoltage
     val tier: MachineTier
-    fun setProvider(provider: IAPProvider)
-    fun setProvider(provider: BlockPos)
-    fun setReceiver(receiver: IAPReceiver)
-    fun setReceiver(receiver: BlockPos)
+    val maxConnection: Int
+    fun setProvider(provider: IAPProvider): Boolean
+    fun setProvider(provider: BlockPos): Boolean
+    fun setReceiver(receiver: IAPReceiver): Boolean
+    fun setReceiver(receiver: BlockPos): Boolean
     fun removeProvider(provider: IAPProvider)
     fun removeProvider(provider: BlockPos)
     fun removeReceiver(receiver: IAPReceiver)

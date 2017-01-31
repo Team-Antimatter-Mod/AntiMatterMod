@@ -12,9 +12,7 @@ import net.minecraftforge.common.util.ForgeDirection
  * Implemented class must extend net.minecraft.tileentity.TileEntity.
  */
 interface IAPReceiver : IAPAccessible {
-    fun getConnectableSide(): ForgeDirection
-    fun getAddableEnergy(): Int
-    fun addEnergy(value: Int, voltage: APVoltage)
+    fun addEnergy(energy: EnergyNode)
     override fun writeToNBT(tagCompound: NBTTagCompound) {
         writeToNBT(tagCompound, RECEIVER)
     }

@@ -12,12 +12,7 @@ import net.minecraftforge.common.util.ForgeDirection
  * Implemented class must extend net.minecraft.tileentity.TileEntity.
  */
 interface IAPProvider :IAPAccessible{
-    fun getMaxProvideVoltage(): APVoltage
-    fun getConnectableSide(): ForgeDirection
-    fun getUseableEnergy(): Int
-    fun useEnergy(value: Int, voltage: APVoltage)
-    fun handleRequest(controller: BlockPos)
-    fun explode(value: Int, voltage: APVoltage, world: World, blockPos: BlockPos)
+    fun handleRequest(target: BlockPos, value: Int): EnergyNode
     override fun writeToNBT(tagCompound: NBTTagCompound) {
         writeToNBT(tagCompound, PROVIDER)
     }
