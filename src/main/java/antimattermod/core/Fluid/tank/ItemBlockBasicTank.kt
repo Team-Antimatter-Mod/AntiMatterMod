@@ -1,6 +1,7 @@
 package antimattermod.core.Fluid.tank
 
 import antimattermod.core.AMMRegistry
+import antimattermod.core.Fluid.AMMFluidTank
 import net.minecraft.block.Block
 import net.minecraft.entity.player.EntityPlayer
 import net.minecraft.init.Blocks
@@ -23,5 +24,17 @@ class ItemBlockBasicTank : ItemBlock {
             return true
         }
         return flag
+    }
+
+    @Suppress("unchecked")
+    override fun addInformation(itemStack: ItemStack?, player: EntityPlayer?, list: MutableList<Any?>?, isdebug: Boolean) {
+        itemStack?:return
+        if (itemStack.hasTagCompound() && itemStack.tagCompound.hasKey("productTank")) {
+            val productTank: AMMFluidTank = AMMFluidTank(16000)
+            productTank.readFromNBT(itemStack.tagCompound.getCompoundTag("productTank"))
+
+            list!!.add(productTank.getFluidLocalizedName())
+            list.add("${productTank.fluidAmount}mb")
+        }
     }
 }

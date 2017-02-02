@@ -15,7 +15,6 @@ import net.minecraftforge.fluids.IFluidHandler
 import net.minecraft.network.NetworkManager
 import net.minecraft.util.IIcon
 
-
 /**
  * @author kojin15.
  */
@@ -65,7 +64,6 @@ class TileBasicTank : TileEntity(), IFluidHandler {
     }
 
     override fun isInvalid() = false
-
 
     //IFluidHandler---------------------------------------------------------------------------------------------------------
     override fun canDrain(from: ForgeDirection?, fluid: Fluid?): Boolean {
