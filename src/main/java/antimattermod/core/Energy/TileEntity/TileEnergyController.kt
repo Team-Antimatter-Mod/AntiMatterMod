@@ -7,8 +7,12 @@ import antimattermod.core.Energy.IAPController
 import antimattermod.core.Energy.IAPProvider
 import antimattermod.core.Energy.IAPReceiver
 import antimattermod.core.Energy.Item.Wrench.IEnergyWrenchAction
-import antimattermod.core.IAPAccessible
-import antimattermod.core.MachineTier
+import antimattermod.core.Energy.IAPAccessible
+import antimattermod.core.Energy.MAX_CONNECT
+import antimattermod.core.Energy.MachineTier
+import antimattermod.core.Energy.MachineTier.NoTier
+import antimattermod.core.Energy.TIER
+import antimattermod.core.Energy.VOLTAGE
 import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.tileentity.TileEntity
@@ -17,18 +21,30 @@ import net.minecraft.world.World
 /**
  * @author C6H2Cl2
  */
-class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEnergyWrenchAction, IAPController, IAPAccessible {
-
-    override val voltage = tier.voltage
-    override val maxConnection = 10
-    private var network = EnergyNetwork(this)
+class TileEnergyController : TileEntity, IEnergyWrenchAction, IAPController, IAPAccessible {
+    override val tier: MachineTier
+        get() = _tier
+    override val voltage: APVoltage
+        get() = _voltage
+    override val maxConnection: Int
+        get() = maxConnect
+    private var _tier: MachineTier
+    private var _voltage: APVoltage
+    private var maxConnect: Int
+    private val network = EnergyNetwork(this)
     private var requests = ArrayList<EnergyNode>().toMutableList()
     var energy = 0
         private set
-    val maxEnergyStorage = voltage.maxEnergy * 100
+    var maxEnergyStorage = 0
+        private set
+        get() = _voltage.maxEnergy * 20 * maxConnect
 
-    init {
+    constructor() : this(NoTier)
 
+    constructor(machineTier: MachineTier) : super() {
+        _tier = machineTier
+        _voltage = tier.voltage
+        maxConnect = tier.maxConnect
     }
 
     override fun updateEntity() {
@@ -67,6 +83,9 @@ class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEner
     override fun writeToNBT(tagCompound: NBTTagCompound) {
         super<TileEntity>.writeToNBT(tagCompound)
         network.writeToNBT(tagCompound)
+        _tier.writeToNBT(tagCompound)
+        _voltage.writeToNBT(tagCompound)
+        tagCompound.setInteger(MAX_CONNECT, maxConnect)
     }
 
     override fun writeToNBT(tagCompound: NBTTagCompound, name: String): NBTTagCompound {
@@ -79,6 +98,9 @@ class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEner
     override fun readFromNBT(tagCompound: NBTTagCompound) {
         super<TileEntity>.readFromNBT(tagCompound)
         network.readFromNBT(tagCompound)
+        _tier = _tier.readFromNBT(tagCompound)
+        _voltage = _voltage.readFromNBT(tagCompound)
+        maxConnect = tagCompound.getInteger(MAX_CONNECT)
     }
 
     override fun readFromNBT(tagCompound: NBTTagCompound, name: String): TileEnergyController {
@@ -87,7 +109,7 @@ class TileEnergyController(override val tier: MachineTier) : TileEntity(), IEner
         return this
     }
 
-    override fun getEnergyStorage() = maxEnergyStorage
+    override fun getEnergyStorageValue() = maxEnergyStorage
 
     override fun getEnergyValue() = energy
 

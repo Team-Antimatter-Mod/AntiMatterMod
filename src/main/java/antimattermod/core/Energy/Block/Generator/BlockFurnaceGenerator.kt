@@ -2,11 +2,12 @@ package antimattermod.core.Energy.Block.Generator
 
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.AntiMatterModRegistry
-import antimattermod.core.Energy.APVoltage
 import antimattermod.core.Energy.Item.Wrench.IDirectionWrenchAction
+import antimattermod.core.Energy.MachineTier
 import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator
 import antimattermod.core.Util.ClickPos
 import c6h2cl2.YukariLib.Util.BlockPos
+import cpw.mods.fml.common.registry.GameRegistry
 import cpw.mods.fml.relauncher.Side
 import cpw.mods.fml.relauncher.SideOnly
 import net.minecraft.block.Block
@@ -17,6 +18,7 @@ import net.minecraft.entity.EntityLivingBase
 import net.minecraft.entity.player.EntityPlayer
 import net.minecraft.item.ItemStack
 import net.minecraft.tileentity.TileEntity
+import net.minecraft.tileentity.TileEntityFurnace
 import net.minecraft.util.IIcon
 import net.minecraft.util.MathHelper
 import net.minecraft.world.IBlockAccess
@@ -26,10 +28,7 @@ import net.minecraftforge.common.util.ForgeDirection
 /**
  * @author C6H2Cl2
  */
-class BlockFurnaceGenerator : BlockContainer(Material.rock), IDirectionWrenchAction {
-    //定数
-    private val voltage = APVoltage.HV
-    private val energyStorage = voltage.maxEnergy * 20 * 600
+class BlockFurnaceGenerator(val tier: MachineTier) : BlockContainer(Material.rock), IDirectionWrenchAction {
 
     //ブロックテクスチャ―
     @SideOnly(Side.CLIENT)
@@ -47,37 +46,25 @@ class BlockFurnaceGenerator : BlockContainer(Material.rock), IDirectionWrenchAct
         setHarvestLevel("pickaxe", 3)
         setCreativeTab(AntiMatterModRegistry.tabMachines)
     }
-    /*
-    @Override
-    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_) {
-        if(player.getHeldItem() == null){
-            return false;
-        }
-        ItemStack heldItem = player.getHeldItem();
-        int fuelVal = GameRegistry.getFuelValue(heldItem);
-        if(fuelVal == 0){
-            fuelVal = TileEntityFurnace.getItemBurnTime(heldItem);
-        }
-        if(fuelVal < 1600){
-            return false;
-        }
-        TileEntityFurnaceGenerator tileEntity = (TileEntityFurnaceGenerator)world.getTileEntity(x,y,z);
-        if(tileEntity.isFuelMax()){
-            return false;
-        }
-        int meta = world.getBlockMetadata(x,y,z);
-        world.setBlockMetadataWithNotify(x,y,z,meta < 6 ? meta+6 : meta,2);
-        int stackSize = heldItem.stackSize;
-        for (int i=0;i<stackSize;++i){
-            float remainder = tileEntity.addFuel(fuelVal);
-            heldItem.stackSize --;
-            if(remainder > 0){
-                break;
-            }
-        }
 
-        return true;
-    }*/
+    override fun onBlockActivated(world: World, x: Int, y: Int, z: Int, player: EntityPlayer, p_149727_6_: Int, p_149727_7_: Float, p_149727_8_: Float, p_149727_9_: Float): Boolean {
+        player.heldItem ?: return false
+        val heldItem = player.heldItem
+        var fuelVal = GameRegistry.getFuelValue(heldItem)
+        if (fuelVal == 0) {
+            fuelVal = TileEntityFurnace.getItemBurnTime(heldItem)
+        }
+        if (fuelVal < 1600) return false
+        val tile = world.getTileEntity(x, y, z) as TileEntityFurnaceGenerator
+        if (tile.isFuelMax()) return false
+        val meta = world.getBlockMetadata(x, y, z)
+        world.setBlockMetadataWithNotify(x, y, z, if (meta < 6) meta + 6 else meta, 2)
+        while (!tile.isFuelMax() && heldItem.stackSize > 0) {
+            tile.addFuel(fuelVal.toFloat())
+            heldItem.stackSize--
+        }
+        return true
+    }
 
     @SideOnly(Side.CLIENT)
     override fun registerBlockIcons(register: IIconRegister) {
@@ -108,7 +95,7 @@ class BlockFurnaceGenerator : BlockContainer(Material.rock), IDirectionWrenchAct
     }
 
     override fun createNewTileEntity(p_149915_1_: World, p_149915_2_: Int): TileEntity {
-        return TileEntityFurnaceGenerator()
+        return TileEntityFurnaceGenerator(tier)
     }
 
     override fun isVerticalChange(): Boolean {

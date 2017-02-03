@@ -14,9 +14,3 @@ required YukariLib latest
 
 # TODO
 EnergySystem by C6H2Cl2
-
-# Comments by Developpers
-C6h2Cl2 @PdB_Yukari:
-ゆﾞづﾞきﾞゆﾞかﾞりﾞぃﾞぃﾞぃﾞぃﾞぃﾞぃﾞぃﾞぃﾞぃﾞぃﾞぃﾞぃﾞ
-Kotlin is good
-

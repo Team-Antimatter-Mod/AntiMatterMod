@@ -40,7 +40,7 @@ object AMMRegistry {
     //発電機
     val furnaceGenerator: Block = BlockFurnaceGenerator()
     //エネルギー制御
-    val energyController = EnergyControllerBlock()
+    val energyController = Array<Block>(15, ::EnergyControllerBlock)
 
     val multiController = BlockMultiController()
     val chunkLoader = BlockChunkLoader()
@@ -55,7 +55,10 @@ object AMMRegistry {
 
         //機械
         GameRegistry.registerBlock(furnaceGenerator, "furnaceGeneratorAP")
-        GameRegistry.registerBlock(energyController, "energyControllerAP")
+        //GameRegistry.registerBlock(energyController, "energyControllerAP")
+        energyController.forEach {
+            GameRegistry.registerBlock(it, it.unlocalizedName)
+        }
         GameRegistry.registerBlock(multiController, "multiController")
         GameRegistry.registerBlock(chunkLoader, "AMMChunkLoader")
         GameRegistry.registerBlock(basicTank, ItemBlockBasicTank::class.java, "AMMBasicTank")
