@@ -32,6 +32,7 @@ abstract class APGeneratorBase(private var genVoltage: APVoltage, private var ge
     protected abstract fun generate()
     protected abstract fun canGenerate(): Boolean
     abstract fun getFuelValue(): Float
+    abstract fun getFuelMax(): Float
     abstract fun getFuelType(): String
     abstract fun isFuelMax(): Boolean
 
@@ -92,4 +93,5 @@ abstract class APGeneratorBase(private var genVoltage: APVoltage, private var ge
 
     override fun getPos() = BlockPos(xCoord, yCoord, zCoord)
 
+    override fun canUpdate() = true
 }

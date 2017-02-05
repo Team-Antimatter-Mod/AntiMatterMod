@@ -1,3 +1,5 @@
+@file:Suppress("INTERFACE_STATIC_METHOD_CALL_FROM_JAVA6_TARGET")
+
 package antimattermod.core
 
 import antimattermod.core.Energy.Block.EnergyControllerBlock
@@ -6,6 +8,7 @@ import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator
 import antimattermod.core.Energy.TileEntity.TileEnergyController
 import antimattermod.core.Energy.Item.StatesChecker
 import antimattermod.core.Energy.Item.Wrench.ItemWrench
+import antimattermod.core.Energy.MachineTier.Tier1
 import antimattermod.core.Energy.MultiBlock.BlockMultiController
 import antimattermod.core.Energy.MultiBlock.TileMultiController
 import antimattermod.core.Fluid.tank.BlockBasicTank
@@ -14,6 +17,7 @@ import antimattermod.core.Fluid.tank.TileBasicTank
 import antimattermod.core.Mob.EntityDeveloperBoss
 import antimattermod.core.Mob.ItemEgg.ItemDeveloperBossEgg
 import antimattermod.core.Util.AddInformationfunction
+import antimattermod.core.Util.AddInformationfunction.WrenchInformation
 import antimattermod.core.World.Chunk.AMMChunkManager
 import antimattermod.core.World.Chunk.BlockChunkLoader
 import cpw.mods.fml.common.registry.EntityRegistry
@@ -31,14 +35,14 @@ object AMMRegistry {
     //Item  ============================================================================================================
     //ツール類
     val statesChecker: Item = StatesChecker()
-    val toolWrench: Item = ItemWrench("toolWrench", "toolwrench", AddInformationfunction { item, player, list, isdebug -> antimattermod.core.Util.AddInformationfunction.WrenchInformation(item, player, list, isdebug) })
+    val toolWrench: Item = ItemWrench("toolWrench", "toolwrench", AddInformationfunction { item, player, list, isdebug -> WrenchInformation(item, player, list, isdebug) })
 
     //テスト用
     val developerBossEgg: Item = ItemDeveloperBossEgg()
 
     //Block  ===========================================================================================================
     //発電機
-    val furnaceGenerator: Block = BlockFurnaceGenerator()
+    val furnaceGenerator: Block = BlockFurnaceGenerator(Tier1)
     //エネルギー制御
     val energyController = Array<Block>(15, ::EnergyControllerBlock)
 

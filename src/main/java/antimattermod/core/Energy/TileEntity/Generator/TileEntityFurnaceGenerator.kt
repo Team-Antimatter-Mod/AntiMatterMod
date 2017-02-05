@@ -49,9 +49,9 @@ class TileEntityFurnaceGenerator : APGeneratorBase {
     }
 
     //tickごとの処理
-    /*override fun updateEntity() {
+    override fun updateEntity() {
         super.updateEntity()
-    }*/
+    }
 
     //燃料追加
     fun addFuel(amount: Float): Float {
@@ -100,6 +100,8 @@ class TileEntityFurnaceGenerator : APGeneratorBase {
     override fun canGenerate() = fuel > 0f && energy != energyStorage
 
     override fun getFuelValue() = fuel
+
+    override fun getFuelMax() = maxFuel
 
     override fun getFuelType() = BURNING
 

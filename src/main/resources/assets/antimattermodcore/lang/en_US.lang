@@ -240,3 +240,15 @@ tile.ingot_01_1>6.information.=DeveloperNameMaterial:
 item.wrench.mode=Mode
 wrench.mode.name.Block=Block
 wrench.mode.name.Transceiver=Transceiver
+
+#--------------------------------------------Text
+amm.text.ap_info.title=AMM Energy Info
+amm.text.voltage=Voltage
+amm.text.tier=Tier
+amm.text.energy_val=Energy
+amm.text.ap_control.title=AMM Controller Info
+amm.text.max_connect=Max Connect
+amm.text.ap_gen.title=AMM Generator Info
+amm.text.genVal=Generation
+amm.text.fuelVal=Fuel
+amm.text.fuelType=Fuel Type

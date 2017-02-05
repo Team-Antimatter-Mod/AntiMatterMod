@@ -54,7 +54,7 @@ class TileEnergyController : TileEntity, IEnergyWrenchAction, IAPController, IAP
         //IAPProviderから、エネルギー受取り
         network.getProviders().forEach {
             if (energyAfford <= 0) return@forEach
-            val provider = it.getTileEntityFromPos(worldObj) as IAPProvider
+            val provider = it.getTileEntityFromPos(worldObj) as? IAPProvider ?: return@forEach
             energyAfford -= provider.handleRequest(pos, energyAfford).appleDecay(pos, it).getEnergyValue()
         }
         energy = maxEnergyStorage - energyAfford

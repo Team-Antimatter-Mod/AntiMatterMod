@@ -1,6 +1,5 @@
 package antimattermod.core.Energy
 
-import antimattermod.core.Energy.MachineTier
 import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.nbt.NBTTagCompound
 

@@ -1,10 +1,6 @@
 package antimattermod.core.Energy
 
-import antimattermod.core.Energy.IAPAccessible
-import antimattermod.core.Energy.MachineTier
-import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.nbt.NBTTagCompound
-import net.minecraftforge.common.util.ForgeDirection
 
 /**
  * @author C6H2Cl2

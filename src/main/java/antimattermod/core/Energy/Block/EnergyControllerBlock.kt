@@ -20,5 +20,5 @@ class EnergyControllerBlock(val tier: Int) : BlockContainer(Material.rock) {
         setBlockUnbreakable()
     }
 
-    override fun createNewTileEntity(p_149915_1_: World?, p_149915_2_: Int) = TileEnergyController(MachineTier.getFromTier(tier))
+    override fun createNewTileEntity(p_149915_1_: World?, p_149915_2_: Int) = TileEnergyController(MachineTier.getFromTier(tier+1))
 }

@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.1.0-beta-22'
+    ext.kotlin_version = '1.1.0-beta-38'
     repositories {
         mavenCentral()
         maven {
@@ -29,6 +29,13 @@ tasks.withType(Jar) {
     compileJava.options.encoding = 'UTF-8'
     compileJava.options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
 }
+
+compileKotlin{
+    kotlinOptions{
+        jvmTarget = '1.8'
+    }
+}
+
 sourceCompatibility = targetCompatibility = "1.8"
 
 version = "1.0.0"
