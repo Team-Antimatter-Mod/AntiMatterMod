@@ -3,6 +3,7 @@ package antimattermod.core.Energy.Block.Generator
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.AntiMatterModRegistry
 import antimattermod.core.Energy.Item.Wrench.IDirectionWrenchAction
+import antimattermod.core.Energy.Item.Wrench.IEnergyWrenchAction
 import antimattermod.core.Energy.MachineTier
 import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator
 import antimattermod.core.Util.ClickPos
@@ -28,7 +29,7 @@ import net.minecraftforge.common.util.ForgeDirection
 /**
  * @author C6H2Cl2
  */
-class BlockFurnaceGenerator(val tier: MachineTier) : BlockContainer(Material.rock), IDirectionWrenchAction {
+class BlockFurnaceGenerator(val tier: MachineTier) : BlockContainer(Material.rock), IDirectionWrenchAction, IEnergyWrenchAction {
 
     //ブロックテクスチャ―
     @SideOnly(Side.CLIENT)

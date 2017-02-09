@@ -2,6 +2,7 @@ package antimattermod.core.Energy.Block
 
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.AntiMatterModRegistry
+import antimattermod.core.Energy.Item.Wrench.IEnergyWrenchAction
 import antimattermod.core.Energy.TileEntity.TileEnergyController
 import antimattermod.core.Energy.MachineTier
 import antimattermod.core.Energy.MachineTier.Tier1
@@ -12,7 +13,7 @@ import net.minecraft.world.World
 /**
  * @author C6H2Cl2
  */
-class EnergyControllerBlock(val tier: Int) : BlockContainer(Material.rock) {
+class EnergyControllerBlock(val tier: Int) : BlockContainer(Material.rock), IEnergyWrenchAction {
     init {
         setBlockName("amm.energyController_tier$tier")
         textureName = "${AntiMatterModCore.MOD_ID}:energyController_$tier"

@@ -3,19 +3,23 @@ package antimattermod.core.Energy.Item.Wrench
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.AntiMatterModRegistry
 import antimattermod.core.Energy.*
-import antimattermod.core.Energy.Item.Wrench.IDirectionWrenchAction
 import antimattermod.core.Item.tool.AMMItemBase
 import antimattermod.core.Util.AddInformationfunction
 import antimattermod.core.Util.ClickPos
 import c6h2cl2.YukariLib.Util.BlockPos
+import cpw.mods.fml.relauncher.Side.CLIENT
+import cpw.mods.fml.relauncher.SideOnly
 import net.minecraft.block.Block
+import net.minecraft.client.Minecraft
 import net.minecraft.entity.Entity
 import net.minecraft.entity.player.EntityPlayer
+import net.minecraft.entity.player.EntityPlayerMP
 import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
 import net.minecraft.nbt.NBTTagCompound
+import net.minecraft.network.play.client.C09PacketHeldItemChange
+import net.minecraft.util.ChatComponentText
 import net.minecraft.world.World
-import net.minecraftforge.common.util.ForgeDirection
 
 /**
  * @author kojin15, C6H2Cl2
@@ -32,24 +36,17 @@ class ItemWrench(name: String, texture: String, private val addfunc: AddInformat
         return true
     }
 
-    override fun onUpdate(itemStack: ItemStack?, world: World?, entity: Entity?, i: Int, flag: Boolean) {
-        if (!(itemStack!!.hasTagCompound())) {
-            val nbt = NBTTagCompound()
-            itemStack.tagCompound = nbt
-            itemStack.tagCompound.setInteger("WrenchMode", WrenchMode.Block.ordinal)
-        }
-
-    }
-
-    override fun onItemUse(itemStack: ItemStack?, player: EntityPlayer?, world: World?, x: Int, y: Int, z: Int, side: Int, posX: Float, posY: Float, posZ: Float): Boolean {
-        val isSneaking: Boolean = player!!.isSneaking
-        val block = world!!.getBlock(x, y, z)
+    override fun onItemUse(itemStack: ItemStack, player: EntityPlayer, world: World, x: Int, y: Int, z: Int, side: Int, posX: Float, posY: Float, posZ: Float): Boolean {
+        val isSneaking: Boolean = player.isSneaking
+        val block = world.getBlock(x, y, z)
         val meta = world.getBlockMetadata(x, y, z)
         val blockPos = BlockPos(x, y, z)
         val clickPos = ClickPos(side, posX, posY, posZ)
         val wrenchMode = WrenchMode.values()
-
-        when (wrenchMode[itemStack!!.tagCompound.getInteger("WrenchMode")]) {
+        if (!itemStack.hasTagCompound()){
+            initTag(itemStack)
+        }
+        when (wrenchMode[itemStack.tagCompound.getInteger(WRENCH_MODE)]) {
             WrenchMode.Block -> {
                 if (block is IDirectionWrenchAction) {
                     if (!isSneaking) {
@@ -95,10 +92,6 @@ class ItemWrench(name: String, texture: String, private val addfunc: AddInformat
      * @author C6H2Cl2
      */
     private fun settingTransceiver(itemStack: ItemStack, player: EntityPlayer, world: World, pos: BlockPos, side: Int, isSneaking: Boolean) {
-        //ItemStackがNBTタグを持っているかどうか
-        if (!itemStack.hasTagCompound()) {
-            itemStack.tagCompound = NBTTagCompound()
-        }
         val tag = itemStack.tagCompound
         val tile = pos.getTileEntityFromPos(world)
         //Tileの種類によってNBTのタグ名を変える
@@ -131,6 +124,18 @@ class ItemWrench(name: String, texture: String, private val addfunc: AddInformat
             tag.removeTag(RECEIVER)
         }
         tag.removeTag(CONTROLLER)
+        if(world.isRemote){
+
+        }else{
+            player.addChatComponentMessage(ChatComponentText("Succeed to connect"))
+            (player as EntityPlayerMP).playerNetServerHandler.sendPacket(tileController.getDescriptionPacket())
+        }
+    }
+
+    override fun onUpdate(itemStack: ItemStack, world: World, player: Entity?, p_77663_4_: Int, p_77663_5_: Boolean) {
+        player ?: return
+        if(!world.isRemote || player !is EntityPlayer) return
+        Minecraft.getMinecraft().netHandler.addToSendQueue(C09PacketHeldItemChange(player.inventory.currentItem))
     }
 
     private fun removeAndSetTag(tagCompound: NBTTagCompound, pos: BlockPos, name: String) {
@@ -138,6 +143,11 @@ class ItemWrench(name: String, texture: String, private val addfunc: AddInformat
             tagCompound.removeTag(name)
         }
         pos.writeToNBT(tagCompound, name)
+    }
+    
+    fun initTag(itemStack: ItemStack){
+        itemStack.tagCompound = NBTTagCompound()
+        itemStack.tagCompound.setInteger(WRENCH_MODE, WrenchMode.Block.ordinal)
     }
 
     override fun addInformation(item: ItemStack?, player: EntityPlayer?, list: List<*>?, p_77624_4_: Boolean) {

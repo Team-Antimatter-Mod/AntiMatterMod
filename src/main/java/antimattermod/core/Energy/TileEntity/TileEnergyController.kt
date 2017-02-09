@@ -1,6 +1,7 @@
 package antimattermod.core.Energy.TileEntity
 
 import antimattermod.core.Energy.APVoltage
+import antimattermod.core.Energy.ENERGY_VALUE
 import antimattermod.core.Energy.EnergyNetwork
 import antimattermod.core.Energy.EnergyNode
 import antimattermod.core.Energy.IAPController
@@ -15,13 +16,16 @@ import antimattermod.core.Energy.TIER
 import antimattermod.core.Energy.VOLTAGE
 import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.nbt.NBTTagCompound
+import net.minecraft.network.NetworkManager
+import net.minecraft.network.Packet
+import net.minecraft.network.play.server.S35PacketUpdateTileEntity
 import net.minecraft.tileentity.TileEntity
 import net.minecraft.world.World
 
 /**
  * @author C6H2Cl2
  */
-class TileEnergyController : TileEntity, IEnergyWrenchAction, IAPController, IAPAccessible {
+class TileEnergyController : TileEntity, IAPController, IAPAccessible {
     override val tier: MachineTier
         get() = _tier
     override val voltage: APVoltage
@@ -55,17 +59,17 @@ class TileEnergyController : TileEntity, IEnergyWrenchAction, IAPController, IAP
         network.getProviders().forEach {
             if (energyAfford <= 0) return@forEach
             val provider = it.getTileEntityFromPos(worldObj) as? IAPProvider ?: return@forEach
-            energyAfford -= provider.handleRequest(pos, energyAfford).appleDecay(pos, it).getEnergyValue()
+            energyAfford -= provider.handleRequest(pos, energyAfford).applyDecay(pos, it).getEnergyValue()
         }
         energy = maxEnergyStorage - energyAfford
         //リクエストの処理
         val handledRequests = ArrayList<EnergyNode>().toMutableList()
         requests.forEach {
             if (energy <= 0) return@forEach
-            it.unappleDecay(pos, it.getTargetPos())
+            it.unapplyDecay(pos, it.getTargetPos())
             val target = it.getTargetPos().getTileEntityFromPos(worldObj) as IAPReceiver
             if (it.getEnergyValue() > energy) {
-                target.addEnergy(EnergyNode(voltage, energy, pos, it.getTargetPos()))
+                target.addEnergy(EnergyNode(tier, energy, pos, it.getTargetPos()))
                 energy = 0
             } else {
                 target.addEnergy(it)
@@ -86,6 +90,7 @@ class TileEnergyController : TileEntity, IEnergyWrenchAction, IAPController, IAP
         _tier.writeToNBT(tagCompound)
         _voltage.writeToNBT(tagCompound)
         tagCompound.setInteger(MAX_CONNECT, maxConnect)
+        tagCompound.setInteger(ENERGY_VALUE, energy)
     }
 
     override fun writeToNBT(tagCompound: NBTTagCompound, name: String): NBTTagCompound {
@@ -101,6 +106,7 @@ class TileEnergyController : TileEntity, IEnergyWrenchAction, IAPController, IAP
         _tier = _tier.readFromNBT(tagCompound)
         _voltage = _voltage.readFromNBT(tagCompound)
         maxConnect = tagCompound.getInteger(MAX_CONNECT)
+        energy = tagCompound.getInteger(ENERGY_VALUE)
     }
 
     override fun readFromNBT(tagCompound: NBTTagCompound, name: String): TileEnergyController {
@@ -166,6 +172,8 @@ class TileEnergyController : TileEntity, IEnergyWrenchAction, IAPController, IAP
         network.removeReceiver(receiver)
     }
 
+    override fun getNumConnected() = network.getCountConnected()
+
     override operator fun contains(provider: IAPProvider): Boolean {
         return provider in network
     }
@@ -181,6 +189,18 @@ class TileEnergyController : TileEntity, IEnergyWrenchAction, IAPController, IAP
     override fun explode(value: Int, voltage: APVoltage, world: World, blockPos: BlockPos) {
         world.createExplosion(null, xCoord.toDouble(), yCoord.toDouble(), zCoord.toDouble(),
                 Math.pow((value - voltage.maxEnergy) * 1.5, 3.0).toFloat(), true)
+    }
+
+    //同期用のパケット読み込み
+    override fun onDataPacket(net: NetworkManager?, pkt: S35PacketUpdateTileEntity?) {
+        readFromNBT(pkt!!.func_148857_g())
+    }
+
+    //同期用のパケット返す
+    override fun getDescriptionPacket(): Packet {
+        val tagCompound = NBTTagCompound()
+        writeToNBT(tagCompound)
+        return S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 1, tagCompound)
     }
 
 }

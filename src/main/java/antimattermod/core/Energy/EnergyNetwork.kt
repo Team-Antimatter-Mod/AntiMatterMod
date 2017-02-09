@@ -2,6 +2,8 @@ package antimattermod.core.Energy
 
 import c6h2cl2.YukariLib.Util.BlockPos
 import c6h2cl2.YukariLib.Util.BlockPosSet
+import net.minecraft.nbt.NBTBase
+import net.minecraft.nbt.NBTTagByte
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.nbt.NBTTagList
 import org.jetbrains.kotlin.utils.toReadOnlyList
@@ -25,12 +27,17 @@ class EnergyNetwork(private val controller: IAPController) {
 
     fun readFromNBT(tagCompound: NBTTagCompound, name: String = NETWORK): EnergyNetwork {
         val tag = tagCompound.getTag(name) as NBTTagCompound
-        val num_p = tag.getInteger(NUM_P)
-        val num_r = tag.getInteger(NUM_R)
-        val list_p = tag.getTagList(PROVIDERS, num_p)
-        val list_r = tag.getTagList(RECEIVERS, num_r)
-        (0..num_p).mapTo(providers) { BlockPos(list_p.getCompoundTagAt(it)) }
-        (0..num_r).mapTo(receivers) { BlockPos(list_r.getCompoundTagAt(it)) }
+        if (!tag.hasKey(PROVIDERS) || !tag.hasKey(RECEIVERS)) return this
+        val list_p = tag.getTagList(PROVIDERS, NBT_COMPOUND)
+        val list_r = tag.getTagList(RECEIVERS, NBT_COMPOUND)
+        val num_p = list_p.tagCount()
+        val num_r = list_r.tagCount()
+        if (num_p != 0) {
+            (0..num_p - 1).mapTo(providers) { BlockPos(list_p.getCompoundTagAt(it)) }
+        }
+        if (num_r != 0) {
+            (0..num_r - 1).mapTo(receivers) { BlockPos(list_r.getCompoundTagAt(it)) }
+        }
         return this
     }
 
@@ -50,8 +57,6 @@ class EnergyNetwork(private val controller: IAPController) {
         }
         tag.setTag(PROVIDERS, list_p)
         tag.setTag(RECEIVERS, list_r)
-        tag.setInteger(NUM_P, list_p.tagCount())
-        tag.setInteger(NUM_R, list_r.tagCount())
         tagCompound.setTag(name, tag)
         return tagCompound
     }

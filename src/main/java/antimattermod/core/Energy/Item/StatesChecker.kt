@@ -49,7 +49,8 @@ class StatesChecker : Item() {
                 player.addChatComponentMessage(ChatComponentText("${StatCollector.translateToLocal("amm.text.voltage").trim()}: ${tile.voltage}"))
                 player.addChatComponentMessage(ChatComponentText("${StatCollector.translateToLocal("amm.text.tier").trim()}: ${tile.tier.ordinal}"))
             }
-            player.addChatComponentMessage(ChatComponentText("${StatCollector.translateToLocal("amm.text.max_connect").trim()}: ${tile.maxConnection}"))
+            player.addChatComponentMessage(ChatComponentText(
+                    "${StatCollector.translateToLocal("amm.text.connect_value").trim()}: ${tile.getNumConnected()} / ${tile.maxConnection}"))
         }
         if(tile is APGeneratorBase){
             player.addChatComponentMessage(bar)

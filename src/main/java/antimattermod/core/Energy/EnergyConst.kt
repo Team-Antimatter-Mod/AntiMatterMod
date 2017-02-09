@@ -12,8 +12,6 @@ const val PROVIDERS = "providers"
 const val CONTROLLER = "controller"
 const val GENERATOR = "generator"
 const val NETWORK = "network"
-const val NUM_P = "num_p"
-const val NUM_R = "num_r"
 const val ENERGY_NODE = "EnergyNode"
 const val TARGET_POS = "targetPos"
 const val SOURCE_POS = "sourcePos"
@@ -24,5 +22,8 @@ const val TIER = "tier"
 const val MAX_CONNECT = "max_connect"
 const val FUEL = "fuel"
 const val MAX_FUEL = "max_fuel"
+const val WRENCH_MODE = "WrenchMode"
+//NBT Type
+const val NBT_COMPOUND = 10
 //FUEL TYPE
 const val BURNING = "burning"

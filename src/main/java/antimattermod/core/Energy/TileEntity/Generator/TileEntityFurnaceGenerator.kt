@@ -106,15 +106,4 @@ class TileEntityFurnaceGenerator : APGeneratorBase {
     override fun getFuelType() = BURNING
 
     override fun isFuelMax() = fuel == maxFuel
-
-    //データの同期
-    override fun onDataPacket(net: NetworkManager?, pkt: S35PacketUpdateTileEntity?) {
-        readFromNBT(pkt!!.func_148857_g())
-    }
-
-    override fun getDescriptionPacket(): Packet {
-        val tagCompound = NBTTagCompound()
-        writeToNBT(tagCompound)
-        return S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 1, tagCompound)
-    }
 }

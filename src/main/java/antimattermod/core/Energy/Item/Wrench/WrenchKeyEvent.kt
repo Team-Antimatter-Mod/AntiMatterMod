@@ -3,13 +3,11 @@ package antimattermod.core.Energy.Item.Wrench
 import antimattermod.core.client.ClientAntiMatterModCoreProxy
 import cpw.mods.fml.common.eventhandler.SubscribeEvent
 import cpw.mods.fml.common.gameevent.InputEvent
-import cpw.mods.fml.common.gameevent.TickEvent
 import net.minecraft.client.Minecraft
 import net.minecraft.entity.player.EntityPlayer
 import net.minecraft.item.ItemStack
-import net.minecraft.nbt.NBTTagCompound
-import net.minecraft.world.World
-import org.lwjgl.input.Mouse
+import net.minecraft.network.play.client.C09PacketHeldItemChange
+import net.minecraft.util.ChatComponentText
 
 /**
  * Created by kojin15.
@@ -17,25 +15,21 @@ import org.lwjgl.input.Mouse
 class WrenchKeyEvent {
     @SubscribeEvent
     fun KeyHandlingEvent(event: InputEvent.KeyInputEvent) {
-        val player: EntityPlayer? = Minecraft.getMinecraft().thePlayer
-        val world: World? = Minecraft.getMinecraft().theWorld
-
-        if (player != null && world != null) {
-            val itemStack: ItemStack? = player.currentEquippedItem
-
-            if (itemStack != null && itemStack.item is ItemWrench) {
-
-                if (ClientAntiMatterModCoreProxy.wrenchSetting.isKeyPressed) {
-                    if (itemStack.hasTagCompound()) {
-                        val mode: Int = itemStack.tagCompound.getInteger("WrenchMode")
-                        val maxMode = (WrenchMode.ぬるぽ.ordinal) - 1
-
-                        when (mode) {
-                            maxMode -> itemStack.tagCompound.setInteger("WrenchMode", 0)
-                            else -> itemStack.tagCompound.setInteger("WrenchMode", mode + 1)
-                        }
-                    }
+        val player: EntityPlayer = Minecraft.getMinecraft().thePlayer ?: return
+        val itemStack: ItemStack = player.currentEquippedItem ?: return
+        if (itemStack.item is ItemWrench) {
+            if (ClientAntiMatterModCoreProxy.wrenchSetting.isKeyPressed) {
+                if(!itemStack.hasTagCompound()) (itemStack.item as ItemWrench).initTag(itemStack)
+                var mode: Int = itemStack.tagCompound.getInteger("WrenchMode")
+                val maxMode = (WrenchMode.ぬるぽ.ordinal) - 1
+                mode = when (mode) {
+                    maxMode -> 0
+                    else -> mode + 1
                 }
+                itemStack.tagCompound.setInteger("WrenchMode", mode)
+                player.inventory.mainInventory[player.inventory.currentItem] = itemStack
+                player.addChatComponentMessage(ChatComponentText("Wrench Mode Changed:${WrenchMode.values()[mode]}"))
+                Minecraft.getMinecraft().netHandler.addToSendQueue(C09PacketHeldItemChange(player.inventory.currentItem))
             }
         }
     }

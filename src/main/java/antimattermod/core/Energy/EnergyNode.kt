@@ -1,6 +1,5 @@
 package antimattermod.core.Energy
 
-import antimattermod.core.Energy.MachineTier
 import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.world.World
@@ -15,8 +14,9 @@ class EnergyNode {
     private var target: BlockPos = BlockPos.Empty
     private var machineTier = MachineTier.NoTier
 
-    constructor(voltage: APVoltage, value: Int, sourcePos: BlockPos, targetPos: BlockPos) {
-        this.voltage = voltage
+    constructor(tier: MachineTier, value: Int, sourcePos: BlockPos, targetPos: BlockPos) {
+        this.machineTier = tier
+        this.voltage = tier.voltage
         this.energyValue = value
         this.source = sourcePos
         this.target = targetPos
@@ -41,12 +41,12 @@ class EnergyNode {
         target.readFromNBT(tag, TARGET_POS)
     }
 
-    fun appleDecay(from: BlockPos, to: BlockPos): EnergyNode {
+    fun applyDecay(from: BlockPos, to: BlockPos): EnergyNode {
         energyValue = (Math.pow(machineTier.efficiency, from.getDistance(to)) * energyValue).toInt()
         return this
     }
 
-    fun unappleDecay(from: BlockPos, to: BlockPos): EnergyNode {
+    fun unapplyDecay(from: BlockPos, to: BlockPos): EnergyNode {
         if (energyValue < voltage.maxEnergy) {
             energyValue = (energyValue / Math.pow(machineTier.efficiency, from.getDistance(to))).toInt()
             if (energyValue > voltage.maxEnergy) {
