@@ -3,6 +3,9 @@ package antimattermod.core.Energy.TileEntity.Generator
 import antimattermod.core.Energy.*
 import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.nbt.NBTTagCompound
+import net.minecraft.network.NetworkManager
+import net.minecraft.network.Packet
+import net.minecraft.network.play.server.S35PacketUpdateTileEntity
 import net.minecraft.tileentity.TileEntity
 import net.minecraft.world.World
 
@@ -51,7 +54,7 @@ abstract class APGeneratorBase(private var genVoltage: APVoltage, private var ge
                         energy
                     }
                 }
-        return EnergyNode(voltage, provide, getPos(), target)
+        return EnergyNode(tier, provide, getPos(), target)
     }
 
     override fun writeToNBT(tagCompound: NBTTagCompound) {
@@ -59,7 +62,7 @@ abstract class APGeneratorBase(private var genVoltage: APVoltage, private var ge
     }
 
     override fun writeToNBT(tagCompound: NBTTagCompound, name: String): NBTTagCompound {
-        super<TileEntity>.readFromNBT(tagCompound)
+        super<TileEntity>.writeToNBT(tagCompound)
         val tag = NBTTagCompound()
         genVoltage.writeToNBT(tag)
         genTier.writeToNBT(tag)
@@ -78,7 +81,7 @@ abstract class APGeneratorBase(private var genVoltage: APVoltage, private var ge
         genVoltage = genVoltage.readFromNBT(tag)
         genTier = genTier.readFromNBT(tag)
         energy = tag.getInteger(ENERGY_VALUE)
-        genVoltage.maxEnergy * 2000
+        energyStorage = genVoltage.maxEnergy * 2000
         return this
     }
 
@@ -94,4 +97,16 @@ abstract class APGeneratorBase(private var genVoltage: APVoltage, private var ge
     override fun getPos() = BlockPos(xCoord, yCoord, zCoord)
 
     override fun canUpdate() = true
+
+    //同期用のパケット読み込み
+    override fun onDataPacket(net: NetworkManager, pkt: S35PacketUpdateTileEntity) {
+        readFromNBT(pkt.func_148857_g())
+    }
+
+    //同期用のパケット返す
+    override fun getDescriptionPacket(): Packet {
+        val tagCompound = NBTTagCompound()
+        writeToNBT(tagCompound)
+        return S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 1, tagCompound)
+    }
 }
