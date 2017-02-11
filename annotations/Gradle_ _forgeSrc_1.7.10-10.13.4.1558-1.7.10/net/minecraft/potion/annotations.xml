@@ -2,7 +2,7 @@
     <item name='net.minecraft.potion.Potion net.minecraft.potion.Potion func_111184_a(net.minecraft.entity.ai.attributes.IAttribute, java.lang.String, double, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.potion.PotionEffect net.minecraft.nbt.NBTTagCompound writeCustomPotionEffectToNBT(net.minecraft.nbt.NBTTagCompound)'>
+    <item name='net.minecraft.potion.PotionEffect net.minecraft.nbtTagCompound.NBTTagCompound writeCustomPotionEffectToNBT(net.minecraft.nbtTagCompound.NBTTagCompound)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.potion.Potion moveSlowdown'>
@@ -56,7 +56,7 @@
     <item name='net.minecraft.potion.PotionHelper spiderEyeEffect'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.potion.PotionEffect net.minecraft.potion.PotionEffect readCustomPotionEffectFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.potion.PotionEffect net.minecraft.potion.PotionEffect readCustomPotionEffectFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.potion.PotionHelper redstoneEffect'>
@@ -131,7 +131,7 @@
     <item name='net.minecraft.potion.Potion field_76434_w'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.potion.PotionEffect net.minecraft.nbt.NBTTagCompound writeCustomPotionEffectToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.potion.PotionEffect net.minecraft.nbtTagCompound.NBTTagCompound writeCustomPotionEffectToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.potion.Potion nightVision'>

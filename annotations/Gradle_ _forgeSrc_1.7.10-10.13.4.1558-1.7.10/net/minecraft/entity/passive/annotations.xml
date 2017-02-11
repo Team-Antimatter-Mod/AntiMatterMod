@@ -1,5 +1,5 @@
 <root>
-    <item name='net.minecraft.entity.passive.EntityBat void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityBat void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityVillager villagersSellingList'>
@@ -23,10 +23,10 @@
     <item name='net.minecraft.entity.passive.EntityVillager boolean interact(net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityWolf void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityWolf void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityChicken void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityChicken void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityMooshroom net.minecraft.entity.EntityAgeable createChild(net.minecraft.entity.EntityAgeable)'>
@@ -62,13 +62,13 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.passive.EntityVillager void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityVillager void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityMooshroom java.util.ArrayList&lt;net.minecraft.item.ItemStack&gt; onSheared(net.minecraft.item.ItemStack, net.minecraft.world.IBlockAccess, int, int, int, int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityPig void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityPig void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntitySheep net.minecraft.entity.EntityAgeable createChild(net.minecraft.entity.EntityAgeable)'>
@@ -77,7 +77,7 @@
     <item name='net.minecraft.entity.passive.EntityHorse java.lang.String getDeathSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntitySheep void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntitySheep void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityCow void func_145780_a(int, int, int, net.minecraft.block.Block) 3'>
@@ -170,13 +170,13 @@
     <item name='net.minecraft.entity.passive.EntityMooshroom net.minecraft.entity.passive.EntityCow createChild(net.minecraft.entity.EntityAgeable)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityOcelot void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityOcelot void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityPig java.lang.String getDeathSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityBat void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityBat void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityVillager net.minecraft.entity.EntityAgeable createChild(net.minecraft.entity.EntityAgeable)'>
@@ -191,10 +191,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.passive.EntityTameable void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityTameable void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityPig void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityPig void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityWolf boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
@@ -206,7 +206,7 @@
     <item name='net.minecraft.entity.passive.EntityBat java.lang.String getHurtSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityHorse void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityHorse void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityMooshroom net.minecraft.entity.EntityAgeable createChild(net.minecraft.entity.EntityAgeable) 0'>
@@ -224,7 +224,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.passive.EntityAnimal void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityAnimal void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityPig net.minecraft.entity.ai.EntityAIControlledByPlayer getAIControlledByPlayer()'>
@@ -344,16 +344,16 @@
     <item name='net.minecraft.entity.passive.EntityChicken net.minecraft.entity.EntityAgeable createChild(net.minecraft.entity.EntityAgeable)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntitySheep void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntitySheep void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityHorse boolean setTamedBy(net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityWolf void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityWolf void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityVillager void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityVillager void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityHorse net.minecraft.entity.EntityAgeable createChild(net.minecraft.entity.EntityAgeable)'>
@@ -389,7 +389,7 @@
     <item name='net.minecraft.entity.passive.EntityVillager void useRecipe(net.minecraft.village.MerchantRecipe) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityHorse void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityHorse void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityOcelot net.minecraft.entity.passive.EntityOcelot createChild(net.minecraft.entity.EntityAgeable)'>
@@ -398,13 +398,13 @@
     <item name='net.minecraft.entity.passive.EntityPig java.lang.String getLivingSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityTameable void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityTameable void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityChicken void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityChicken void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityOcelot void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityOcelot void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityAnimal boolean isBreedingItem(net.minecraft.item.ItemStack) 0'>
@@ -431,7 +431,7 @@
     <item name='net.minecraft.entity.passive.EntityVillager void func_146089_b(net.minecraft.village.MerchantRecipeList, net.minecraft.item.Item, java.util.Random, float) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.passive.EntityAnimal void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.passive.EntityAnimal void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.passive.EntityPig net.minecraft.entity.EntityAgeable createChild(net.minecraft.entity.EntityAgeable)'>

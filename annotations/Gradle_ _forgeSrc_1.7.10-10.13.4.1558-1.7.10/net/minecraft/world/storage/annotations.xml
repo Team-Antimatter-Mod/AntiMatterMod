@@ -5,16 +5,16 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.storage.SaveHandler net.minecraft.nbt.NBTTagCompound getPlayerNBT(net.minecraft.entity.player.EntityPlayerMP) 0'>
+    <item name='net.minecraft.world.storage.SaveHandler net.minecraft.nbtTagCompound.NBTTagCompound getPlayerNBT(net.minecraft.entity.player.EntityPlayerMP) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.storage.DerivedWorldInfo net.minecraft.nbt.NBTTagCompound cloneNBTCompound(net.minecraft.nbt.NBTTagCompound)'>
+    <item name='net.minecraft.world.storage.DerivedWorldInfo net.minecraft.nbtTagCompound.NBTTagCompound cloneNBTCompound(net.minecraft.nbtTagCompound.NBTTagCompound)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.storage.MapData net.minecraft.world.storage.MapData.MapInfo func_82568_a(net.minecraft.entity.player.EntityPlayer)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.storage.SaveHandler void saveWorldInfoWithPlayer(net.minecraft.world.storage.WorldInfo, net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.world.storage.SaveHandler void saveWorldInfoWithPlayer(net.minecraft.world.storage.WorldInfo, net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.storage.SaveHandler void writePlayerData(net.minecraft.entity.player.EntityPlayer) 0'>
@@ -41,7 +41,7 @@
     <item name='net.minecraft.world.storage.SaveFormatComparator int compareTo(net.minecraft.world.storage.SaveFormatComparator) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.storage.SaveHandler net.minecraft.nbt.NBTTagCompound readPlayerData(net.minecraft.entity.player.EntityPlayer) 0'>
+    <item name='net.minecraft.world.storage.SaveHandler net.minecraft.nbtTagCompound.NBTTagCompound readPlayerData(net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.storage.SaveHandler void saveWorldInfo(net.minecraft.world.storage.WorldInfo) 0'>
@@ -62,7 +62,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.storage.WorldInfo WorldInfo(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.world.storage.WorldInfo WorldInfo(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.storage.ISaveHandler void saveWorldInfo(net.minecraft.world.storage.WorldInfo) 0'>
@@ -89,7 +89,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.storage.WorldInfo net.minecraft.nbt.NBTTagCompound cloneNBTCompound(net.minecraft.nbt.NBTTagCompound)'>
+    <item name='net.minecraft.world.storage.WorldInfo net.minecraft.nbtTagCompound.NBTTagCompound cloneNBTCompound(net.minecraft.nbtTagCompound.NBTTagCompound)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.storage.SaveHandler net.minecraft.world.storage.IPlayerFileData getSaveHandler()'>
@@ -122,7 +122,7 @@
     <item name='net.minecraft.world.storage.SaveFormatOld java.util.List getSaveList()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.storage.SaveHandlerMP void saveWorldInfoWithPlayer(net.minecraft.world.storage.WorldInfo, net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.world.storage.SaveHandlerMP void saveWorldInfoWithPlayer(net.minecraft.world.storage.WorldInfo, net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -140,7 +140,7 @@
     <item name='net.minecraft.world.storage.MapData void updateVisiblePlayers(net.minecraft.entity.player.EntityPlayer, net.minecraft.item.ItemStack) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.storage.MapData void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.world.storage.MapData void readFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.storage.SaveFormatOld java.lang.String func_154333_a()'>
@@ -155,7 +155,7 @@
     <item name='net.minecraft.world.storage.SaveHandler java.lang.String[] getAvailablePlayerDat()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.storage.WorldInfo net.minecraft.nbt.NBTTagCompound getNBTTagCompound()'>
+    <item name='net.minecraft.world.storage.WorldInfo net.minecraft.nbtTagCompound.NBTTagCompound getNBTTagCompound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.storage.WorldInfo WorldInfo(net.minecraft.world.WorldSettings, java.lang.String) 0'>
@@ -173,10 +173,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.storage.DerivedWorldInfo net.minecraft.nbt.NBTTagCompound getNBTTagCompound()'>
+    <item name='net.minecraft.world.storage.DerivedWorldInfo net.minecraft.nbtTagCompound.NBTTagCompound getNBTTagCompound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.storage.MapData void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.world.storage.MapData void writeToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.storage.IPlayerFileData java.lang.String[] getAvailablePlayerDat()'>
@@ -185,7 +185,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.world.storage.ISaveHandler void saveWorldInfoWithPlayer(net.minecraft.world.storage.WorldInfo, net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.world.storage.ISaveHandler void saveWorldInfoWithPlayer(net.minecraft.world.storage.WorldInfo, net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -194,7 +194,7 @@
     <item name='net.minecraft.world.storage.SaveFormatOld savesDirectory'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.storage.IPlayerFileData net.minecraft.nbt.NBTTagCompound readPlayerData(net.minecraft.entity.player.EntityPlayer) 0'>
+    <item name='net.minecraft.world.storage.IPlayerFileData net.minecraft.nbtTagCompound.NBTTagCompound readPlayerData(net.minecraft.entity.player.EntityPlayer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>

@@ -122,7 +122,7 @@
     <item name='net.minecraft.world.WorldProviderHell java.lang.String getDimensionName()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.GameRules net.minecraft.nbt.NBTTagCompound writeGameRulesToNBT()'>
+    <item name='net.minecraft.world.GameRules net.minecraft.nbtTagCompound.NBTTagCompound writeGameRulesToNBT()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World java.util.List getEntitiesWithinAABB(java.lang.Class, net.minecraft.util.AxisAlignedBB)'>
@@ -179,7 +179,7 @@
     <item name='net.minecraft.world.NextTickListEntry int compareTo(net.minecraft.world.NextTickListEntry) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldSavedData void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.world.WorldSavedData void readFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -356,7 +356,7 @@
     <item name='net.minecraft.world.World void setItemData(java.lang.String, net.minecraft.world.WorldSavedData) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.GameRules void readGameRulesFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.world.GameRules void readGameRulesFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.world.World perWorldStorage'>
@@ -392,7 +392,7 @@
     <item name='net.minecraft.world.ChunkCoordIntPair net.minecraft.world.ChunkPosition func_151349_a(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.world.WorldSavedData void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.world.WorldSavedData void writeToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>

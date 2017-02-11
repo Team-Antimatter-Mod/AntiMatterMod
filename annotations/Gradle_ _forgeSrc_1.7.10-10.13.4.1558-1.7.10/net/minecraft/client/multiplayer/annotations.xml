@@ -5,7 +5,7 @@
     <item name='net.minecraft.client.multiplayer.GuiConnecting GuiConnecting(net.minecraft.client.gui.GuiScreen, net.minecraft.client.Minecraft, java.lang.String, int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.multiplayer.ServerData net.minecraft.client.multiplayer.ServerData getServerDataFromNBTCompound(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.client.multiplayer.ServerData net.minecraft.client.multiplayer.ServerData getServerDataFromNBTCompound(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.multiplayer.WorldClient WorldClient(net.minecraft.client.network.NetHandlerPlayClient, net.minecraft.world.WorldSettings, int, net.minecraft.world.EnumDifficulty, net.minecraft.profiler.Profiler) 0'>
@@ -14,7 +14,7 @@
     <item name='net.minecraft.client.multiplayer.WorldClient void removeEntity(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.multiplayer.ServerData net.minecraft.client.multiplayer.ServerData getServerDataFromNBTCompound(net.minecraft.nbt.NBTTagCompound)'>
+    <item name='net.minecraft.client.multiplayer.ServerData net.minecraft.client.multiplayer.ServerData getServerDataFromNBTCompound(net.minecraft.nbtTagCompound.NBTTagCompound)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.multiplayer.PlayerControllerMP void attackEntity(net.minecraft.entity.player.EntityPlayer, net.minecraft.entity.Entity) 1'>
@@ -56,7 +56,7 @@
     <item name='net.minecraft.client.multiplayer.PlayerControllerMP boolean sendUseItem(net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, net.minecraft.item.ItemStack) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.client.multiplayer.ServerData net.minecraft.nbt.NBTTagCompound getNBTCompound()'>
+    <item name='net.minecraft.client.multiplayer.ServerData net.minecraft.nbtTagCompound.NBTTagCompound getNBTCompound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.client.multiplayer.ServerData.ServerResourceMode net.minecraft.util.IChatComponent func_152589_a()'>

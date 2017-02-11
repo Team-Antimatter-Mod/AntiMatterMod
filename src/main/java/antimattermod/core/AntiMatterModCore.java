@@ -72,8 +72,7 @@ public class AntiMatterModCore {
         event.registerServerCommand(new Createsphere());
         
     }
-    
-    
+
     private void loadMeta(ModMetadata metadata) {
         metadata.modId = MOD_ID;
         metadata.name = MOD_NAME;

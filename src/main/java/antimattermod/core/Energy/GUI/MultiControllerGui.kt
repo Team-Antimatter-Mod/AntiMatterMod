@@ -80,7 +80,7 @@ class MultiControllerGui(private val tileMultiController: TileMultiController, p
 
     }
 
-    override fun drawGuiContainerBackgroundLayer(partialTick: Float, mouseX: Int, mouseZ: Int) {
+    override fun drawGuiContainerBackgroundLayer(partialTick: Float, x: Int, y: Int) {
         when (tileMultiController.page) {
             0 -> {
                 this.mc.renderEngine.bindTexture(mainGui)

@@ -6,6 +6,9 @@ package antimattermod.core.client;
 import antimattermod.core.AntiMatterModRegistry;
 import antimattermod.core.Block.TileEntity.TileEntityClayCrucible;
 import antimattermod.core.Block.TileEntity.TileEntitySatStove;
+import antimattermod.core.Render.RenderMarker;
+import antimattermod.core.Energy.Filler.TileMarker;
+import antimattermod.core.Energy.Filler.renderMarker;
 import antimattermod.core.Energy.Item.Wrench.WrenchKeyEvent;
 import antimattermod.core.Energy.MultiBlock.TileMultiController;
 import antimattermod.core.Fluid.tank.RenderTileTank;
@@ -60,6 +63,8 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 		ClientRegistry.bindTileEntitySpecialRenderer(TileMultiController.class, new MultiControllerTileRender());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileBasicTank.class, new RenderTileTank());
 
+		RenderingRegistry.registerBlockHandler(new renderMarker());
+
 		//土かまどレンダー
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySatStove.class,new SatStoveSpecialRender());
 
@@ -72,6 +77,8 @@ public class ClientAntiMatterModCoreProxy extends AntiMatterModCoreProxy {
 		RenderingRegistry.registerEntityRenderingHandler(EntityDeveloperBoss.class, new RenderDeveloperBoss());
 
 		//MinecraftForgeClient.registerItemRenderer(AntiMatterModRegistry.hammer_01, new ToolDamageRender());
+
+		ClientRegistry.bindTileEntitySpecialRenderer(TileMarker.class, new RenderMarker());
 
 	}
 	

@@ -11,7 +11,7 @@ class MultiControllerContainer : Container() {
 
     }
 
-    override fun canInteractWith(p_75145_1_: EntityPlayer?): Boolean {
+    override fun canInteractWith(player: EntityPlayer?): Boolean {
         return true
     }
 }

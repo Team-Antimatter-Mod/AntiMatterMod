@@ -4,6 +4,9 @@ package antimattermod.core
 
 import antimattermod.core.Energy.Block.EnergyControllerBlock
 import antimattermod.core.Energy.Block.Generator.BlockFurnaceGenerator
+import antimattermod.core.Energy.Filler.BlockFiller
+import antimattermod.core.Energy.Filler.BlockMarker
+import antimattermod.core.Energy.Filler.ModePattern.*
 import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator
 import antimattermod.core.Energy.TileEntity.TileEnergyController
 import antimattermod.core.Energy.Item.StatesChecker
@@ -11,6 +14,7 @@ import antimattermod.core.Energy.Item.Wrench.ItemWrench
 import antimattermod.core.Energy.MachineTier.Tier1
 import antimattermod.core.Energy.MultiBlock.BlockMultiController
 import antimattermod.core.Energy.MultiBlock.TileMultiController
+import antimattermod.core.Energy.Filler.TileFiller
 import antimattermod.core.Fluid.tank.BlockBasicTank
 import antimattermod.core.Fluid.tank.ItemBlockBasicTank
 import antimattermod.core.Fluid.tank.TileBasicTank
@@ -20,12 +24,16 @@ import antimattermod.core.Util.AddInformationfunction
 import antimattermod.core.Util.AddInformationfunction.WrenchInformation
 import antimattermod.core.World.Chunk.AMMChunkManager
 import antimattermod.core.World.Chunk.BlockChunkLoader
+import antimattermod.core.Energy.Filler.ModePattern.FillerModePattern.Companion.FillerRegistry
+import antimattermod.core.Energy.Filler.TileMarker
 import cpw.mods.fml.common.registry.EntityRegistry
 import cpw.mods.fml.common.registry.GameRegistry
 import net.minecraft.block.Block
 import net.minecraft.item.Item
 import cpw.mods.fml.common.network.NetworkRegistry
+import net.minecraft.item.ItemStack
 import net.minecraftforge.common.ForgeChunkManager
+import java.util.*
 
 
 /**
@@ -36,6 +44,7 @@ object AMMRegistry {
     //ツール類
     val statesChecker: Item = StatesChecker()
     val toolWrench: Item = ItemWrench("toolWrench", "toolwrench", AddInformationfunction { item, player, list, isdebug -> WrenchInformation(item, player, list, isdebug) })
+    val fillerPattern: Item = ItemModePattern()
 
     //テスト用
     val developerBossEgg: Item = ItemDeveloperBossEgg()
@@ -46,9 +55,13 @@ object AMMRegistry {
     //エネルギー制御
     val energyController = Array<Block>(15, ::EnergyControllerBlock)
 
+    val marker = BlockMarker()
+    val filler = BlockFiller()
     val multiController = BlockMultiController()
     val chunkLoader = BlockChunkLoader()
     val basicTank = BlockBasicTank()
+
+    val fillerModeList: ArrayList<FillerModePattern> = arrayListOf<FillerModePattern>()
 
     fun handlePreinit() {
         //Itemの登録 ===================================================================================================
@@ -56,6 +69,7 @@ object AMMRegistry {
         GameRegistry.registerItem(statesChecker, "statesCheckerAP")
         GameRegistry.registerItem(developerBossEgg, "developerBossEgg")
         GameRegistry.registerItem(toolWrench, "toolWrench")
+        GameRegistry.registerItem(fillerPattern, "AMMFillerPattern")
 
         //機械
         GameRegistry.registerBlock(furnaceGenerator, "furnaceGeneratorAP")
@@ -63,6 +77,8 @@ object AMMRegistry {
         energyController.forEach {
             GameRegistry.registerBlock(it, it.unlocalizedName)
         }
+        GameRegistry.registerBlock(marker, "AMMMarker")
+        GameRegistry.registerBlock(filler, "AMMFiller")
         GameRegistry.registerBlock(multiController, "multiController")
         GameRegistry.registerBlock(chunkLoader, "AMMChunkLoader")
         GameRegistry.registerBlock(basicTank, ItemBlockBasicTank::class.java, "AMMBasicTank")
@@ -76,12 +92,18 @@ object AMMRegistry {
         GameRegistry.registerTileEntity(TileEntityFurnaceGenerator::class.java, "tileFurnaceGeneratorAP")
         GameRegistry.registerTileEntity(TileEnergyController::class.java, "tileEnergyControllerAP")
         GameRegistry.registerTileEntity(TileMultiController::class.java, "tileMultiController")
+        GameRegistry.registerTileEntity(TileMarker::class.java, "tileAMMMarker")
+        GameRegistry.registerTileEntity(TileFiller::class.java, "tileAMMFiller")
         GameRegistry.registerTileEntity(TileBasicTank::class.java, "tileBasicTank")
 
         //Entityの登録 =============================================================================================
         EntityRegistry.registerModEntity(EntityDeveloperBoss::class.java, "DeveloperBoss", 1, AntiMatterModCore.MOD_ID, 250, 1, false)
 
         NetworkRegistry.INSTANCE.registerGuiHandler(AntiMatterModCore.INSTANCE, AMMGuiHandler())
+
+        FillerRegistry.registerMode(PatternPlace())
+        FillerRegistry.registerMode(PatternDestruction())
+        FillerRegistry.registerMode(PatternErase())
 
     }
 }

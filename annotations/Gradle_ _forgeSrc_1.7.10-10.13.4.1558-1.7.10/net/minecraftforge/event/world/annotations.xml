@@ -26,7 +26,7 @@
     <item name='net.minecraftforge.event.world.NoteBlockEvent.Instrument SNARE'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.event.world.ChunkDataEvent.Load Load(net.minecraft.world.chunk.Chunk, net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraftforge.event.world.ChunkDataEvent.Load Load(net.minecraft.world.chunk.Chunk, net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.event.world.ChunkEvent.Unload Unload(net.minecraft.world.chunk.Chunk) 0'>
@@ -53,7 +53,7 @@
     <item name='net.minecraftforge.event.world.NoteBlockEvent.Octave MID'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.event.world.ChunkDataEvent.Save Save(net.minecraft.world.chunk.Chunk, net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraftforge.event.world.ChunkDataEvent.Save Save(net.minecraft.world.chunk.Chunk, net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.event.world.ChunkEvent.Load Load(net.minecraft.world.chunk.Chunk) 0'>
@@ -80,7 +80,7 @@
     <item name='net.minecraftforge.event.world.NoteBlockEvent.Octave HIGH'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.event.world.ChunkDataEvent ChunkDataEvent(net.minecraft.world.chunk.Chunk, net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraftforge.event.world.ChunkDataEvent ChunkDataEvent(net.minecraft.world.chunk.Chunk, net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.event.world.NoteBlockEvent.Note A_SHARP'>

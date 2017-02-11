@@ -56,7 +56,7 @@ class TextureButton(id: Int, xPosition: Int, yPosition: Int, width: Int, height:
 
     val zTLevel: Float = zLevel
 
-    override fun drawButton(p_146112_1_: Minecraft?, p_146112_2_: Int, p_146112_3_: Int) {
+    override fun drawButton(minecraft: Minecraft?, x: Int, y: Int) {
 
     }
 
@@ -67,7 +67,7 @@ class TextureButton(id: Int, xPosition: Int, yPosition: Int, width: Int, height:
  */
 class ClearButton(id: Int, xPosition: Int, yPosition: Int, width: Int, height: Int) : GuiButton(id, xPosition, yPosition, width, height, null) {
 
-    override fun drawButton(p_146112_1_: Minecraft?, p_146112_2_: Int, p_146112_3_: Int) {
+    override fun drawButton(minecraft: Minecraft?, x: Int, y: Int) {
 
     }
 }

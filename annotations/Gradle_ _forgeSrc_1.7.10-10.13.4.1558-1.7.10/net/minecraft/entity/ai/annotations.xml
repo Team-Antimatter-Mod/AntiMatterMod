@@ -8,13 +8,13 @@
     <item name='net.minecraft.entity.ai.EntityAIFleeSun EntityAIFleeSun(net.minecraft.entity.EntityCreature, double) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.ai.EntityMinecartMobSpawner void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.ai.EntityMinecartMobSpawner void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.ai.RandomPositionGenerator net.minecraft.util.Vec3 findRandomTargetBlockTowards(net.minecraft.entity.EntityCreature, int, int, net.minecraft.util.Vec3) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.ai.EntityMinecartMobSpawner void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.ai.EntityMinecartMobSpawner void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.ai.EntityMoveHelper EntityMoveHelper(net.minecraft.entity.EntityLiving) 0'>

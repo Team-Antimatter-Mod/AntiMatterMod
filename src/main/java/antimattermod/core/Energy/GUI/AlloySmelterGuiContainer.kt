@@ -32,7 +32,7 @@ class AlloySmelterGuiContainer(private val x: Int, private val y: Int, private v
         }
     }
 
-    override fun drawGuiContainerBackgroundLayer(partialTick: Float, mouseX: Int, mouseZ: Int) {
+    override fun drawGuiContainerBackgroundLayer(partialTick: Float, x: Int, y: Int) {
         val texture = when (tileAlloySmelter.getSlotSize()) {
             2 -> Texture_2Slot
             4 -> Texture_4Slot

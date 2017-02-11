@@ -12,7 +12,7 @@ import net.minecraft.inventory.Slot
 class AlloySmelterContainer(private val x: Int, private val y: Int, private val z: Int, private val tile: TileAlloySmelter, private val playerInventory: InventoryPlayer) : Container() {
     init {
         val i = -19
-        for (j in 0..2) {
+        for (j in 0..1) {
             for (k in 0..8) {
                 this.addSlotToContainer(net.minecraft.inventory.Slot(playerInventory, k + j * 9 + 9, 8 + k * 18, 103 + j * 18 + i))
             }
@@ -45,7 +45,7 @@ class AlloySmelterContainer(private val x: Int, private val y: Int, private val 
         this.addSlotToContainer(net.minecraft.inventory.Slot(tile, tile.getSlotSize() + 1, 152, 23))
     }
 
-    override fun canInteractWith(p_75145_1_: EntityPlayer?): Boolean {
+    override fun canInteractWith(player: EntityPlayer?): Boolean {
         return true
     }
 }

@@ -23,7 +23,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.inventory.InventoryEnderChest net.minecraft.nbt.NBTTagList saveInventoryToNBT()'>
+    <item name='net.minecraft.inventory.InventoryEnderChest net.minecraft.nbtTagCompound.NBTTagList saveInventoryToNBT()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.inventory.ContainerWorkbench boolean func_94530_a(net.minecraft.item.ItemStack, net.minecraft.inventory.Slot) 1'>
@@ -74,7 +74,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.inventory.InventoryEnderChest void loadInventoryFromNBT(net.minecraft.nbt.NBTTagList) 0'>
+    <item name='net.minecraft.inventory.InventoryEnderChest void loadInventoryFromNBT(net.minecraft.nbtTagCompound.NBTTagList) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.inventory.ContainerEnchantment void onContainerClosed(net.minecraft.entity.player.EntityPlayer) 0'>
