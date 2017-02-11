@@ -5,6 +5,19 @@ import antimattermod.core.Energy.EnergyGroup.*
 import net.minecraft.nbt.NBTTagCompound
 
 /**
+ * # 日本語
+ * このmodで追加される機械の段階を管理するEnumです。
+ * @property voltage 段階における電圧[APVoltage]です。原則、各機械の電圧はその機械の段階によって決定されます。
+ * @property group 段階が所属するランク[EnergyGroup]です。各ランクによって特性があります。
+ * @property efficiency エネルギーの伝送効率です。1ブロックごとのエネルギー伝送量の割合を0~1で指定してください。
+ * @property maxConnect その段階に所属するコントローラー[IAPController]の最大接続可能数です。原則、コントローラーの最大接続可能数はその機械の段階によって決定されます。
+ *
+ * # English
+ * @property voltage voltage[APVoltage] of machines of the tier.
+ * @property group rank[EnergyGroup] in the tier.
+ * @property efficiency The rate of energy transmission efficiency. min:0, max:1
+ * @property maxConnect The number of max connection of controller[IAPController] in ther iter.
+ * # 共通 Common
  * @author C6H2Cl2
  */
 enum class MachineTier(val voltage: APVoltage, val group: EnergyGroup, val efficiency: Double, val maxConnect: Int) {
@@ -15,16 +28,47 @@ enum class MachineTier(val voltage: APVoltage, val group: EnergyGroup, val effic
     Tier10(LuV, SuperHigh, 0.9972, 200), Tier11(ZPMV, SuperHigh, 1.0, 225), Tier12(ZPMV, SuperHigh, 1.0, 250),
     Tier13(UV, UltraHigh, 1.0, 300), Tier14(UV, UltraHigh, 1.0, 500), Tier15(MaxV, Ultimate, 1.0, Int.MAX_VALUE);
 
+    /**
+     * # 日本語
+     * EnumをNBTに書き込みます。主にTileEntityのwriteToNBTから呼び出すことを想定しています。
+     * @param tagCompound 情報を書き込むための[NBTTagCompound]です。
+     * @return 引数[tagCompound]に情報を書き込んだ[NBTTagCompound]を返します。
+     *
+     * # English
+     * write the information of this to NBT. Please call this from [net.minecraft.tileentity.TileEntity.writeToNBT]
+     * @param tagCompound [NBTTagCompound] to write information.
+     * @return [NBTTagCompound] with information written.
+     */
     fun writeToNBT(tagCompound: NBTTagCompound): NBTTagCompound {
         tagCompound.setInteger(TIER, ordinal)
         return tagCompound
     }
 
+    /**
+     * # 日本語
+     * EnumをNBTから読み取ります。主にTileEntityのreadFromNBTから呼び出すことを想定しています。
+     * @param tagCompound 情報が書き込まれた[NBTTagCompound]です。[writeToNBT]で書き込んだNBTを使ってください。
+     * @return [tagCompound]から読み取ったEnumを返します。
+     *
+     * # English
+     * @param tagCompound [NBTTagCompound] with information written by [writeToNBT]
+     * @return Enum read from [tagCompound]
+     */
     fun readFromNBT(tagCompound: NBTTagCompound): MachineTier {
         return getFromTier(tagCompound.getInteger(TIER))
     }
 
     companion object {
+        /**
+         * # 日本語
+         * Tierの値から、Enumを返します。
+         * @param tier 機械のTierです。
+         * @return 引数[tier]に対応するEnumです。
+         *
+         * # English
+         * @param tier the tier of machine
+         * @return Enum of [tier]
+         */
         fun getFromTier(tier: Int): MachineTier {
             return when (tier) {
                 1 -> Tier1

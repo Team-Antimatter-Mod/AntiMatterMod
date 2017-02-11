@@ -132,12 +132,6 @@ class ItemWrench(name: String, texture: String, private val addfunc: AddInformat
         }
     }
 
-    override fun onUpdate(itemStack: ItemStack, world: World, player: Entity?, p_77663_4_: Int, p_77663_5_: Boolean) {
-        player ?: return
-        if(!world.isRemote || player !is EntityPlayer) return
-        Minecraft.getMinecraft().netHandler.addToSendQueue(C09PacketHeldItemChange(player.inventory.currentItem))
-    }
-
     private fun removeAndSetTag(tagCompound: NBTTagCompound, pos: BlockPos, name: String) {
         if (tagCompound.hasKey(name)) {
             tagCompound.removeTag(name)
