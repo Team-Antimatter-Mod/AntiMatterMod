@@ -119,7 +119,7 @@
     <item name='net.minecraft.server.management.ServerConfigurationManager field_152615_c'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.nbtTagCompound.NBTTagCompound readPlayerDataFromFile(net.minecraft.entity.player.EntityPlayerMP) 0'>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.nbt.NBTTagCompound readPlayerDataFromFile(net.minecraft.entity.player.EntityPlayerMP) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.server.management.PlayerProfileCache void func_152649_a(com.mojang.authlib.GameProfile) 0'>
@@ -236,7 +236,7 @@
     <item name='net.minecraft.server.management.BanList boolean func_152708_a(java.net.SocketAddress) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.nbtTagCompound.NBTTagCompound getPlayerNBT(net.minecraft.entity.player.EntityPlayerMP) 0'>
+    <item name='net.minecraft.server.management.ServerConfigurationManager net.minecraft.nbt.NBTTagCompound getPlayerNBT(net.minecraft.entity.player.EntityPlayerMP) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.server.management.UserListOps java.lang.String func_152699_b(com.mojang.authlib.GameProfile) 0'>

@@ -35,7 +35,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.player.EntityPlayer void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.player.EntityPlayer void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayerMP void func_146098_a(net.minecraft.tileentity.TileEntityBrewingStand) 0'>
@@ -86,7 +86,7 @@
     <item name='net.minecraft.entity.player.EntityPlayerMP void onNewPotionEffect(net.minecraft.potion.PotionEffect) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.PlayerCapabilities void readCapabilitiesFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.player.PlayerCapabilities void readCapabilitiesFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer void func_146102_a(net.minecraft.tileentity.TileEntityDispenser) 0'>
@@ -140,7 +140,7 @@
     <item name='net.minecraft.entity.player.EntityPlayerMP void clonePlayer(net.minecraft.entity.player.EntityPlayer, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.InventoryPlayer void readFromNBT(net.minecraft.nbtTagCompound.NBTTagList) 0'>
+    <item name='net.minecraft.entity.player.InventoryPlayer void readFromNBT(net.minecraft.nbt.NBTTagList) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer.EnumStatus NOT_SAFE'>
@@ -173,13 +173,13 @@
     <item name='net.minecraft.entity.player.EntityPlayer boolean canHarvestBlock(net.minecraft.block.Block) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.EntityPlayerMP void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer java.lang.String getHurtSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.PlayerCapabilities void writeCapabilitiesToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.player.PlayerCapabilities void writeCapabilitiesToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayer EntityPlayer(net.minecraft.world.World, com.mojang.authlib.GameProfile) 0'>
@@ -218,7 +218,7 @@
     <item name='net.minecraft.entity.player.EntityPlayer.EnumStatus OTHER_PROBLEM'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.EntityPlayer void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.player.EntityPlayer void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayerMP void displayGUIChest(net.minecraft.inventory.IInventory) 0'>
@@ -293,7 +293,7 @@
     <item name='net.minecraft.entity.player.EntityPlayer void clonePlayer(net.minecraft.entity.player.EntityPlayer, boolean) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.player.EntityPlayerMP void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.player.EntityPlayerMP void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.player.EntityPlayerMP void displayGUIMerchant(net.minecraft.entity.IMerchant, java.lang.String) 0'>

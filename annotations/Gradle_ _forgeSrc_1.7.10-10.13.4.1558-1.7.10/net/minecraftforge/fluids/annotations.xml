@@ -20,10 +20,10 @@
     <item name='net.minecraftforge.fluids.BlockFluidClassic net.minecraftforge.fluids.BlockFluidClassic setFluidStack(net.minecraftforge.fluids.FluidStack)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.fluids.TileFluidHandler void writeToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraftforge.fluids.TileFluidHandler void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.fluids.FluidStack net.minecraft.nbtTagCompound.NBTTagCompound writeToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraftforge.fluids.FluidStack net.minecraft.nbt.NBTTagCompound writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.fluids.BlockFluidBase BlockFluidBase(net.minecraftforge.fluids.Fluid, net.minecraft.block.material.Material) 1'>
@@ -110,7 +110,7 @@
     <item name='net.minecraftforge.fluids.Fluid net.minecraftforge.fluids.Fluid setIcons(net.minecraft.util.IIcon)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.fluids.FluidTank net.minecraftforge.fluids.FluidTank readFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraftforge.fluids.FluidTank net.minecraftforge.fluids.FluidTank readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.fluids.FluidContainerRegistry boolean registerFluidContainer(net.minecraftforge.fluids.FluidStack, net.minecraft.item.ItemStack, net.minecraft.item.ItemStack) 0'>
@@ -164,7 +164,7 @@
     <item name='net.minecraftforge.fluids.FluidContainerRegistry EMPTY_BUCKET'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.fluids.FluidRegistry void loadFluidDefaults(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraftforge.fluids.FluidRegistry void loadFluidDefaults(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.fluids.IFluidHandler net.minecraftforge.fluids.FluidTankInfo[] getTankInfo(net.minecraftforge.common.util.ForgeDirection)'>
@@ -212,7 +212,7 @@
     <item name='net.minecraftforge.fluids.Fluid Fluid(java.lang.String) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.fluids.FluidTank net.minecraftforge.fluids.FluidTank readFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound)'>
+    <item name='net.minecraftforge.fluids.FluidTank net.minecraftforge.fluids.FluidTank readFromNBT(net.minecraft.nbt.NBTTagCompound)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.fluids.IFluidTank net.minecraftforge.fluids.FluidTankInfo getInfo()'>
@@ -248,13 +248,13 @@
     <item name='net.minecraftforge.fluids.BlockFluidBase net.minecraftforge.fluids.BlockFluidBase setRenderPass(int)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.fluids.TileFluidHandler void readFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraftforge.fluids.TileFluidHandler void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.fluids.FluidContainerRegistry.FluidContainerRegisterEvent FluidContainerRegisterEvent(net.minecraftforge.fluids.FluidContainerRegistry.FluidContainerData) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.fluids.FluidStack net.minecraft.nbtTagCompound.NBTTagCompound writeToNBT(net.minecraft.nbtTagCompound.NBTTagCompound)'>
+    <item name='net.minecraftforge.fluids.FluidStack net.minecraft.nbt.NBTTagCompound writeToNBT(net.minecraft.nbt.NBTTagCompound)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.fluids.Fluid net.minecraftforge.fluids.Fluid setIcons(net.minecraft.util.IIcon, net.minecraft.util.IIcon)'>
@@ -281,7 +281,7 @@
     <item name='net.minecraftforge.fluids.BlockFluidBase void onBlockAdded(net.minecraft.world.World, int, int, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.fluids.FluidRegistry void writeDefaultFluidList(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraftforge.fluids.FluidRegistry void writeDefaultFluidList(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.fluids.BlockFluidBase int getDensity(net.minecraft.world.IBlockAccess, int, int, int) 0'>
@@ -296,7 +296,7 @@
     <item name='net.minecraftforge.fluids.FluidStack FluidStack(net.minecraftforge.fluids.Fluid, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.fluids.FluidTank net.minecraft.nbtTagCompound.NBTTagCompound writeToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraftforge.fluids.FluidTank net.minecraft.nbt.NBTTagCompound writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.fluids.FluidStack fluid'>
@@ -362,7 +362,7 @@
     <item name='net.minecraftforge.fluids.FluidTankInfo FluidTankInfo(net.minecraftforge.fluids.IFluidTank) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.fluids.FluidStack FluidStack(net.minecraftforge.fluids.Fluid, int, net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraftforge.fluids.FluidStack FluidStack(net.minecraftforge.fluids.Fluid, int, net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.fluids.BlockFluidBase int getTemperature(net.minecraft.world.IBlockAccess, int, int, int) 0'>
@@ -389,7 +389,7 @@
     <item name='net.minecraftforge.fluids.Fluid net.minecraftforge.fluids.Fluid setStillIcon(net.minecraft.util.IIcon)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.fluids.FluidTank net.minecraft.nbtTagCompound.NBTTagCompound writeToNBT(net.minecraft.nbtTagCompound.NBTTagCompound)'>
+    <item name='net.minecraftforge.fluids.FluidTank net.minecraft.nbt.NBTTagCompound writeToNBT(net.minecraft.nbt.NBTTagCompound)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.fluids.BlockFluidBase void velocityToAddToEntity(net.minecraft.world.World, int, int, int, net.minecraft.entity.Entity, net.minecraft.util.Vec3) 5'>

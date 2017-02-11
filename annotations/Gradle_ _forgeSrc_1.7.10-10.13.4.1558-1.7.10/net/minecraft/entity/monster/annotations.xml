@@ -17,7 +17,7 @@
     <item name='net.minecraft.entity.monster.EntityCreeper void onDeath(net.minecraft.util.DamageSource) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntityCreeper void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntityCreeper void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntityPigZombie java.lang.String getDeathSound()'>
@@ -50,7 +50,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.monster.EntityIronGolem void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntityIronGolem void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntitySkeleton boolean attackEntityAsMob(net.minecraft.entity.Entity) 0'>
@@ -62,7 +62,7 @@
     <item name='net.minecraft.entity.monster.EntityGolem java.lang.String getHurtSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntitySlime void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntitySlime void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntitySpider void func_145780_a(int, int, int, net.minecraft.block.Block) 3'>
@@ -77,10 +77,10 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.monster.EntityEnderman void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntityEnderman void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntitySlime void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntitySlime void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntityIronGolem void collideWithEntity(net.minecraft.entity.Entity) 0'>
@@ -128,7 +128,7 @@
     <item name='net.minecraft.entity.monster.EntityIronGolem java.lang.String getDeathSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntityIronGolem void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntityIronGolem void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntitySkeleton net.minecraft.entity.EnumCreatureAttribute getCreatureAttribute()'>
@@ -137,7 +137,7 @@
     <item name='net.minecraft.entity.monster.EntitySkeleton java.lang.String getLivingSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntityGhast void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntityGhast void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntitySpider java.lang.String getDeathSound()'>
@@ -164,7 +164,7 @@
     <item name='net.minecraft.entity.monster.EntityMob java.lang.String getSwimSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntityEnderman void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntityEnderman void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntityWitch java.lang.String getLivingSound()'>
@@ -185,7 +185,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.entity.monster.EntityPigZombie void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntityPigZombie void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntitySpider net.minecraft.entity.IEntityLivingData onSpawnWithEgg(net.minecraft.entity.IEntityLivingData)'>
@@ -215,7 +215,7 @@
     <item name='net.minecraft.entity.monster.EntitySnowman void attackEntityWithRangedAttack(net.minecraft.entity.EntityLivingBase, float) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntitySkeleton void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntitySkeleton void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntityEnderman boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
@@ -227,16 +227,16 @@
     <item name='net.minecraft.entity.monster.EntitySpider boolean isPotionApplicable(net.minecraft.potion.PotionEffect) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntityCreeper void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntityCreeper void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntityZombie void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntityZombie void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntityMob java.lang.String getSplashSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntityZombie void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntityZombie void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntityZombie net.minecraft.entity.EnumCreatureAttribute getCreatureAttribute()'>
@@ -260,7 +260,7 @@
     <item name='net.minecraft.entity.monster.EntityEnderman boolean teleportToEntity(net.minecraft.entity.Entity) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntityGhast void readEntityFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntityGhast void readEntityFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntitySilverfish boolean attackEntityFrom(net.minecraft.util.DamageSource, float) 0'>
@@ -290,7 +290,7 @@
     <item name='net.minecraft.entity.monster.EntityMob java.lang.String getHurtSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntitySkeleton void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntitySkeleton void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntityZombie net.minecraft.entity.IEntityLivingData onSpawnWithEgg(net.minecraft.entity.IEntityLivingData)'>
@@ -302,7 +302,7 @@
     <item name='net.minecraft.entity.monster.EntitySkeleton java.lang.String getDeathSound()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.entity.monster.EntityPigZombie void writeEntityToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.entity.monster.EntityPigZombie void writeEntityToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.entity.monster.EntityCreeper boolean attackEntityAsMob(net.minecraft.entity.Entity) 0'>

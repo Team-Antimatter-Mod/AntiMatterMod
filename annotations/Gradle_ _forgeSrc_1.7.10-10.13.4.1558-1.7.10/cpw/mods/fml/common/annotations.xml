@@ -56,7 +56,7 @@
     <item name='cpw.mods.fml.common.ObfuscationReflectionHelper T getPrivateValue(java.lang.Class&lt;? super E&gt;, E, int) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.FMLContainer void readData(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo, java.util.Map&lt;java.lang.String,net.minecraft.nbtTagCompound.NBTBase&gt;, net.minecraft.nbtTagCompound.NBTTagCompound) 3'>
+    <item name='cpw.mods.fml.common.FMLContainer void readData(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo, java.util.Map&lt;java.lang.String,net.minecraft.nbt.NBTBase&gt;, net.minecraft.nbt.NBTTagCompound) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.MissingModsException void printStackTrace(cpw.mods.fml.common.EnhancedRuntimeException.WrappedPrintStream) 0'>
@@ -161,7 +161,7 @@
     <item name='cpw.mods.fml.common.ILanguageAdapter.ScalaAdapter void setInternalProxies(cpw.mods.fml.common.ModContainer, cpw.mods.fml.relauncher.Side, java.lang.ClassLoader) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.WorldAccessContainer net.minecraft.nbtTagCompound.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo) 1'>
+    <item name='cpw.mods.fml.common.WorldAccessContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -275,7 +275,7 @@
     <item name='cpw.mods.fml.common.LoaderState NOINIT'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.WorldAccessContainer net.minecraft.nbtTagCompound.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo)'>
+    <item name='cpw.mods.fml.common.WorldAccessContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -314,7 +314,7 @@
     <item name='cpw.mods.fml.common.ModClassLoader cpw.mods.fml.common.asm.transformers.ModAPITransformer addModAPITransformer(cpw.mods.fml.common.discovery.ASMDataTable)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.FMLContainer net.minecraft.nbtTagCompound.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo)'>
+    <item name='cpw.mods.fml.common.FMLContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.LoaderState.ModState UNLOADED'>
@@ -389,7 +389,7 @@
     <item name='cpw.mods.fml.common.Loader cpw.mods.fml.common.LoaderState.ModState getModState(cpw.mods.fml.common.ModContainer) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.WorldAccessContainer void readData(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo, java.util.Map&lt;java.lang.String,net.minecraft.nbtTagCompound.NBTBase&gt;, net.minecraft.nbtTagCompound.NBTTagCompound) 3'>
+    <item name='cpw.mods.fml.common.WorldAccessContainer void readData(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo, java.util.Map&lt;java.lang.String,net.minecraft.nbt.NBTBase&gt;, net.minecraft.nbt.NBTTagCompound) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -401,7 +401,7 @@
     <item name='cpw.mods.fml.common.FMLContainer java.lang.Class&lt;?&gt; getCustomResourcePackClass()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='cpw.mods.fml.common.FMLContainer net.minecraft.nbtTagCompound.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo) 1'>
+    <item name='cpw.mods.fml.common.FMLContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='cpw.mods.fml.common.ObfuscationReflectionHelper T getPrivateValue(java.lang.Class&lt;? super E&gt;, E, java.lang.String...) 0'>

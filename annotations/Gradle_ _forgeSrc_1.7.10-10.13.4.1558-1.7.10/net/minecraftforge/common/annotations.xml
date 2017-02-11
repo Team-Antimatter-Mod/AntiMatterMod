@@ -170,7 +170,7 @@
     <item name='net.minecraftforge.common.ForgeHooks float blockStrength(net.minecraft.block.Block, net.minecraft.entity.player.EntityPlayer, net.minecraft.world.World, int, int, int) 2'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.WorldSpecificSaveHandler void saveWorldInfoWithPlayer(net.minecraft.world.storage.WorldInfo, net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraftforge.common.WorldSpecificSaveHandler void saveWorldInfoWithPlayer(net.minecraft.world.storage.WorldInfo, net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -179,7 +179,7 @@
     <item name='net.minecraftforge.common.BiomeManager com.google.common.collect.ImmutableList&lt;net.minecraftforge.common.BiomeManager.BiomeEntry&gt; getBiomes(net.minecraftforge.common.BiomeManager.BiomeType) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.ForgeModContainer net.minecraft.nbtTagCompound.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo)'>
+    <item name='net.minecraftforge.common.ForgeModContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeVersion.Status OUTDATED'>
@@ -206,7 +206,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraftforge.common.ForgeModContainer net.minecraft.nbtTagCompound.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo) 1'>
+    <item name='net.minecraftforge.common.ForgeModContainer net.minecraft.nbt.NBTTagCompound getDataForWriting(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
         <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
@@ -401,7 +401,7 @@
     <item name='net.minecraftforge.common.FishingHooks.FishableCategory FISH'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.ForgeModContainer void readData(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo, java.util.Map&lt;java.lang.String,net.minecraft.nbtTagCompound.NBTBase&gt;, net.minecraft.nbtTagCompound.NBTTagCompound) 3'>
+    <item name='net.minecraftforge.common.ForgeModContainer void readData(net.minecraft.world.storage.SaveHandler, net.minecraft.world.storage.WorldInfo, java.util.Map&lt;java.lang.String,net.minecraft.nbt.NBTBase&gt;, net.minecraft.nbt.NBTTagCompound) 3'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.MinecraftForge TERRAIN_GEN_BUS'>
@@ -482,7 +482,7 @@
     <item name='net.minecraftforge.common.ChestGenHooks PYRAMID_JUNGLE_DISPENSER'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraftforge.common.DimensionManager net.minecraft.nbtTagCompound.NBTTagCompound saveDimensionDataMap()'>
+    <item name='net.minecraftforge.common.DimensionManager net.minecraft.nbt.NBTTagCompound saveDimensionDataMap()'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraftforge.common.ForgeModContainer boolean registerBus(com.google.common.eventbus.EventBus, cpw.mods.fml.common.LoadController) 0'>

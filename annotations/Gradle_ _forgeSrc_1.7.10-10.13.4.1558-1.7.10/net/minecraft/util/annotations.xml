@@ -527,7 +527,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.util.FoodStats void readNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.util.FoodStats void readNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.Vec3 net.minecraft.util.Vec3 getIntermediateWithZValue(net.minecraft.util.Vec3, double) 0'>
@@ -647,7 +647,7 @@
     <item name='net.minecraft.util.WeightedRandom net.minecraft.util.WeightedRandom.Item getRandomItem(java.util.Random, net.minecraft.util.WeightedRandom.Item[], int) 1'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.util.FoodStats void writeNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.util.FoodStats void writeNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.util.WeightedRandom net.minecraft.util.WeightedRandom.Item getItem(net.minecraft.util.WeightedRandom.Item[], int) 0'>

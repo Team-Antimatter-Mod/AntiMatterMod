@@ -1862,7 +1862,7 @@
     <item name='net.minecraft.block.Block soundTypeWood'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockJukebox.TileEntityJukebox void readFromNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.block.BlockJukebox.TileEntityJukebox void readFromNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockSapling boolean func_149851_a(net.minecraft.world.World, int, int, int, boolean) 0'>
@@ -3080,7 +3080,7 @@
     <item name='net.minecraft.block.BlockBreakable void registerBlockIcons(net.minecraft.client.renderer.texture.IIconRegister) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.block.BlockJukebox.TileEntityJukebox void writeToNBT(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.block.BlockJukebox.TileEntityJukebox void writeToNBT(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.block.BlockCocoa void func_149853_b(net.minecraft.world.World, java.util.Random, int, int, int) 0'>

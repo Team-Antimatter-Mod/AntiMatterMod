@@ -107,7 +107,7 @@
     <item name='net.minecraft.command.server.CommandStop java.lang.String getCommandUsage(net.minecraft.command.ICommandSender)'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
-    <item name='net.minecraft.command.server.CommandBlockLogic void func_145759_b(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.command.server.CommandBlockLogic void func_145759_b(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.server.CommandSaveAll void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 0'>
@@ -281,7 +281,7 @@
             <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
         </annotation>
     </item>
-    <item name='net.minecraft.command.server.CommandBlockLogic void func_145758_a(net.minecraft.nbtTagCompound.NBTTagCompound) 0'>
+    <item name='net.minecraft.command.server.CommandBlockLogic void func_145758_a(net.minecraft.nbt.NBTTagCompound) 0'>
         <annotation name='org.jetbrains.annotations.NotNull'/>
     </item>
     <item name='net.minecraft.command.server.CommandSetDefaultSpawnpoint void processCommand(net.minecraft.command.ICommandSender, java.lang.String[]) 1'>
