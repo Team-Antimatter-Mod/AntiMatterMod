@@ -14,8 +14,8 @@ import org.jetbrains.kotlin.utils.toReadOnlyList
  * @property receivers : BlockPosSet(Mutable) all BlockPos of IAPReceiver in network.
  */
 class EnergyNetwork(private val controller: IAPController) {
-    private val providers = BlockPosSet().toMutableSet()
-    private val receivers = BlockPosSet().toMutableSet()
+    private val providers = BlockPosSet(BlockPos(0, 0, 0)).toMutableSet()
+    private val receivers = BlockPosSet(BlockPos(0, 0, 0)).toMutableSet()
 
     fun addProvider(provider: IAPProvider) {
         providers.add(provider.getPos())
