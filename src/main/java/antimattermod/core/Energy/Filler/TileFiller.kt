@@ -64,6 +64,7 @@ class TileFiller : TileEntity(), IInventory {
 
     }
 
+    //ToDo:保存が上手くいってないっぽい
     override fun readFromNBT(tagCompound: NBTTagCompound) {
         super.readFromNBT(tagCompound)
         val range = BlockPos(tagCompound, "Range")
