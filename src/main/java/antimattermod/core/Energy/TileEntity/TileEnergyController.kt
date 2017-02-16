@@ -21,7 +21,6 @@ import net.minecraft.network.Packet
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity
 import net.minecraft.tileentity.TileEntity
 import net.minecraft.world.World
-import java.util.ArrayList
 
 /**
  * @author C6H2Cl2
