@@ -11,23 +11,25 @@ item.crystal_01_5.name=Lieumite
 item.crystal_02_0.name=Arstetolite
 
 #--------------------------------------------Ingot
+
+item.authorIngot_0.name=Raitium Ingot
+item.authorIngot_1.name=Drantium Ingot
+item.authorIngot_2.name=Palazirite Ingot
+item.authorIngot_3.name=Takumium Ingot
+item.authorIngot_4.name=Soralite Ingot
+item.authorIngot_5.name=Emirinium Ingot
+
 item.ingot_01_0.name=Tiamite
-item.ingot_01_1.name=Raitium Ingot
-item.ingot_01_2.name=Drantium Ingot
-item.ingot_01_3.name=Palazirite Ingot
-item.ingot_01_4.name=Takumium Ingot
-item.ingot_01_5.name=Soralite Ingot
-item.ingot_01_6.name=Emirinium Ingot
-item.ingot_01_7.name=Imidium Ingot
-item.ingot_01_8.name=Mitranidelite Ingot
-item.ingot_01_9.name=Stallvimolite Ingot
-item.ingot_01_10.name=Asuratomium Ingot
-item.ingot_01_11.name=Midonalite Ingot
-item.ingot_01_12.name=Miranium Ingot
-item.ingot_01_13.name=Teyurarium Ingot
-item.ingot_01_14.name=Diglite Ingot
-item.ingot_01_15.name=Astnides Ingot
-item.ingot_01_16.name=Pazilite Ingot
+item.ingot_01_1.name=Imidium Ingot
+item.ingot_01_2.name=Mitranidelite Ingot
+item.ingot_01_3.name=Stallvimolite Ingot
+item.ingot_01_4.name=Asuratomium Ingot
+item.ingot_01_5.name=Midonalite Ingot
+item.ingot_01_6.name=Miranium Ingot
+item.ingot_01_7.name=Teyurarium Ingot
+item.ingot_01_8.name=Diglite Ingot
+item.ingot_01_9.name=Astnides Ingot
+item.ingot_01_10.name=Pazilite Ingot
 
 item.magnetizedingot_01_0.name=Magnetized Raitium Ingot
 
@@ -35,22 +37,23 @@ item.alloyingot_01_0.name=Purple Alloy Ingot
 item.alloyingot_01_1.name=Dracoraitium Ingot
 
 #-------------------------------------------nugget
-item.nugget_01_0.name=Raitium Nugget
-item.nugget_01_1.name=Drantium Nugget
-item.nugget_01_2.name=Palazirite Nugget
-item.nugget_01_3.name=Takumium Nugget
-item.nugget_01_4.name=Soralite Nugget
-item.nugget_01_5.name=Emirinium Nugget
-item.nugget_01_6.name=Imidium Nugget
-item.nugget_01_7.name=Mitranidelite Nugget
-item.nugget_01_8.name=Stallvimolite Nugget
-item.nugget_01_9.name=Asuratomium Nugget
-item.nugget_01_10.name=Midonalite Nugget
-item.nugget_01_11.name=Miranium Nugget
-item.nugget_01_12.name=Teyurarium Nugget
-item.nugget_01_13.name=Diglite Nugget
-item.nugget_01_14.name=Astnides Nugget
-item.nugget_01_15.name=Pazilite Nugget
+item.authorNugget_0.name=Raitium Nugget
+item.authorNugget_1.name=Drantium Nugget
+item.authorNugget_2.name=Palazirite Nugget
+item.authorNugget_3.name=Takumium Nugget
+item.authorNugget_4.name=Soralite Nugget
+item.authorNugget_5.name=Emirinium Nugget
+
+item.nugget_01_0.name=Imidium Nugget
+item.nugget_01_1.name=Mitranidelite Nugget
+item.nugget_01_2.name=Stallvimolite Nugget
+item.nugget_01_3.name=Asuratomium Nugget
+item.nugget_01_4.name=Midonalite Nugget
+item.nugget_01_5.name=Miranium Nugget
+item.nugget_01_6.name=Teyurarium Nugget
+item.nugget_01_7.name=Diglite Nugget
+item.nugget_01_8.name=Astnides Nugget
+item.nugget_01_9.name=Pazilite Nugget
 
 #--------------------------------------------powder
 item.powder_01_0.name=Antelite Powder
@@ -235,7 +238,7 @@ itemGroup.amtools=AntiMatterModCore Tools
 tile.ingot_01_0.information_1=There was metal in the Tiamat comet
 tile.ingot_01_0.information_2=fell cracked in half in 1200 years ago.
 tile.ingot_01_0.information.name=Your name.
-tile.ingot_01_1>6.information.=DeveloperNameMaterial:
+tile.authorIngot>6.information.=DeveloperNameMaterial:
 
 item.wrench.mode=Mode
 wrench.mode.name.Block=Block

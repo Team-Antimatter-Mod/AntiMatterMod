@@ -18,6 +18,7 @@ item.ingot_01_3.name=パラジライト インゴット
 item.ingot_01_4.name=タクミウム インゴット
 item.ingot_01_5.name=ソラライト インゴット
 item.ingot_01_6.name=エミリリウム インゴット
+
 item.ingot_01_7.name=イミジウム インゴット
 item.ingot_01_8.name=ミトラナイドライト インゴット
 item.ingot_01_9.name=ストルビモライト インゴット
@@ -237,7 +238,7 @@ itemGroup.amtools=反物質modコアのツール
 tile.ingot_01_0.information_1=1200年前に半分に割れて落ちた
 tile.ingot_01_0.information_2=ティアマト彗星の中にあった金属。
 tile.ingot_01_0.information.name=君の名は。
-tile.ingot_01_1>6.information=開発者名の素材：
+tile.authorIngot>6.information=開発者名の素材：
 
 item.wrench.mode=モード
 wrench.mode.name.Block=ブロック

@@ -43,23 +43,28 @@ public interface AddInformationfunction {
                 list.add(StatCollector.translateToLocal("tile.ingot_01_0.information_2"));
                 list.add(ChatFormatting.RED + StatCollector.translateToLocal("tile.ingot_01_0.information.name"));
                 break;
+        }
+    }
+    @SuppressWarnings("unchecked")
+    static void authorIngotInfo(ItemStack item, @SuppressWarnings("unused") EntityPlayer player, List list, @SuppressWarnings("unused") boolean isdebug) {
+        switch (item.getItemDamage()) {
+            case 0:
+                list.add(StatCollector.translateToLocal("tile.authorIngot>6.information") + AntiMatterModCore.modMetadata.authorList.get(1));
+                break;
             case 1:
-                list.add(StatCollector.translateToLocal("tile.ingot_01_1>6.information") + AntiMatterModCore.modMetadata.authorList.get(1));
+                list.add(StatCollector.translateToLocal("tile.authorIngot>6.information") + AntiMatterModCore.modMetadata.authorList.get(2));
                 break;
             case 2:
-                list.add(StatCollector.translateToLocal("tile.ingot_01_1>6.information") + AntiMatterModCore.modMetadata.authorList.get(2));
+                list.add(StatCollector.translateToLocal("tile.authorIngot>6.information") + AntiMatterModCore.modMetadata.authorList.get(0));
                 break;
             case 3:
-                list.add(StatCollector.translateToLocal("tile.ingot_01_1>6.information") + AntiMatterModCore.modMetadata.authorList.get(0));
+                list.add(StatCollector.translateToLocal("tile.authorIngot>6.information") + AntiMatterModCore.modMetadata.authorList.get(3));
                 break;
             case 4:
-                list.add(StatCollector.translateToLocal("tile.ingot_01_1>6.information") + AntiMatterModCore.modMetadata.authorList.get(3));
+                list.add(StatCollector.translateToLocal("tile.authorIngot>6.information") + AntiMatterModCore.modMetadata.authorList.get(4));
                 break;
             case 5:
-                list.add(StatCollector.translateToLocal("tile.ingot_01_1>6.information") + AntiMatterModCore.modMetadata.authorList.get(4));
-                break;
-            case 6:
-                list.add(StatCollector.translateToLocal("tile.ingot_01_1>6.information") + "Emilin");
+                list.add(StatCollector.translateToLocal("tile.authorIngot>6.information") + "Emilin");
                 break;
         }
     }

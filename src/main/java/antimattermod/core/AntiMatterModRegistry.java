@@ -39,6 +39,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.util.WeightedRandomChestContent;
@@ -77,7 +78,7 @@ public class AntiMatterModRegistry {
 	public final static CreativeTabs tabImaterial = new CreativeTabs("amIntermediateMaterial") {
 		@Override
 		public Item getTabIconItem() {
-			return motor_01;
+			return Items.iron_ingot;
 		}
 	};
 	//機械・発電機
@@ -107,13 +108,25 @@ public class AntiMatterModRegistry {
 	
 	//Item  ============================================================================================================
 	//素材
-	public static final Item ingot_01 = ItemUtil.CreateItem("ingot_01", "ingot/ingot_01", 17, AntiMatterModRegistry.tabMaterials, AddInformationfunction::IngotInformation);
 	public static final Item crystal_01 = ItemUtil.CreateItem("crystal_01", "crystal/crystal_01", 6, AntiMatterModRegistry.tabMaterials);
 	public static final Item crystal_02 = ItemUtil.CreateItem("crystal_02", "crystal/crystal_02", 1, AntiMatterModRegistry.tabMaterials);
 	public static final Item powder_01 = ItemUtil.CreateItem("powder_01", "powder/powder_01", 1, AntiMatterModRegistry.tabMaterials);
-	public static final Item nugget_01 = ItemUtil.CreateItem("nugget_01", "nugget/nugget_01", 16, AntiMatterModRegistry.tabMaterials);
-	//合金
+
+
+
+
+	public static final Item ingot_01 = ItemUtil.CreateItem("ingot_01", "ingot/ingot_01", 11, AntiMatterModRegistry.tabMaterials, AddInformationfunction::IngotInformation);
+	public static final Item nugget_01 = ItemUtil.CreateItem("nugget_01", "nugget/nugget_01", 10, AntiMatterModRegistry.tabMaterials);
+
+	public static final Item authorIngot = ItemUtil.CreateItem("authorIngot", "author/ingot", 6, tabMaterials, AddInformationfunction::authorIngotInfo);
+	public static final Item authorNugget = ItemUtil.CreateItem("authorNugget", "author/nugget", 6, AntiMatterModRegistry.tabMaterials);
+
+
 	public static final Item alloyingot_01 = ItemUtil.CreateItem("alloyingot_01", "ingot/alloyingot_01", 17, AntiMatterModRegistry.tabMaterials);
+	/*
+
+	//合金
+
 	//中間素材
 	public static final Item wire_01 = ItemUtil.CreateItem("wire_01", "wire/wire_01", 1, AntiMatterModRegistry.tabImaterial);
 	public static final Item plate_01 = ItemUtil.CreateItem("plate_01", "plate/plate_01", 8, AntiMatterModRegistry.tabImaterial);
@@ -132,6 +145,7 @@ public class AntiMatterModRegistry {
 	public static final Item magnetizedingot_01 = ItemUtil.CreateItem("magnetizedingot_01", "motormagnet/magnetizedingot_01", 1, AntiMatterModRegistry.tabImaterial);
 	public static final Item screw_01 = ItemUtil.CreateItem("screw_01", "screw/screw_01", 1, AntiMatterModRegistry.tabImaterial);
 
+	*/
 	//ツール中間素材
 	public static final Item iron_tool_material = ItemUtil.CreateItem("iron_tool_material", "iron_tool_material", 5, AntiMatterModRegistry.tabImaterial);
 
@@ -154,9 +168,6 @@ public class AntiMatterModRegistry {
 	//マイニングハンマー
 	public static final Item miningHammer_01 = new MiningHammer("IronMiningHammer", "iron_mininghammer", AMMToolMaterial.IRON, 1);//鉄素材のハンマー3×3を追加
 	public static final Item miningHammer_02 = new MiningHammer("DiamondMiningHammer", "diamond_mininghammer", AMMToolMaterial.DIAMOND, 1);//ダイヤ素材のハンマー3×3
-	public static final Item miningHammer_03 = new MiningHammer("RaitiumMiningHammer", "raitium_mininghammer", AMMToolMaterial.Raitium, 1);//ライチウム素材のハンマー3×3
-	public static final Item miningHammer_04 = new MiningHammer("DrantiumMiningHammer", "drantium_mininghammer", AMMToolMaterial.Drantium, 1);
-	public static final Item miningHammer_05 = new MiningHammer("PalaziriteMiningHammer", "palazirite_mininghammer", AMMToolMaterial.Palazirite, 1);
 	//==================================================================================================================
 
 	//Block  ===========================================================================================================
@@ -167,7 +178,7 @@ public class AntiMatterModRegistry {
 	public static final Block bedrockCrystalOreBlock_2 = new BedrockOreBlock("bedrockCrystalOreBlock_02", crystalOreBlock_2);
 	public static final Block powderOreBlock_1 = new DifferentOreBlock(Material.rock, "powderOreBlock_01", "powderore/powderoreblock_01", AntiMatterModRegistry.tabOreBlock, 1, new float[]{5.0F}, new byte[]{3}, powder_01, new int[]{0}, new int[]{3, 3});
 	public static final Block bedrockPowderOreBlock_1 = new BedrockOreBlock("bedrockPowderOreBlock_01", powderOreBlock_1);
-	public static final Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 16, new float[]{5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F}, new byte[]{3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3});
+	public static final Block oreBlock_1 = new OreBlock(Material.rock, "oreBlock_01", "ore/oreblock_01", AntiMatterModRegistry.tabOreBlock, 11, new float[]{5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F, 5.0F}, new byte[]{3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3});
 	public static final Block bedrockOreBlock_1 = new BedrockOreBlock("bedrockOreBlock_01", oreBlock_1);
 
 	//かまど
@@ -202,30 +213,14 @@ public class AntiMatterModRegistry {
 	static void registerPreInit(@SuppressWarnings("UnusedParameters") FMLPreInitializationEvent event) {
 		//Itemの登録 ===================================================================================================
 		//素材
+		GameRegistry.registerItem(ingot_01, "ingot_01");
+		GameRegistry.registerItem(nugget_01, "nugget_01");
+		GameRegistry.registerItem(authorIngot, "authorIngot");
+		GameRegistry.registerItem(authorNugget, "authorNugget");
 		GameRegistry.registerItem(crystal_01, "crystal_01");
 		GameRegistry.registerItem(crystal_02, "crystal_02");
-		GameRegistry.registerItem(ingot_01, "ingot_01");
 		GameRegistry.registerItem(powder_01, "powder_01");
-		GameRegistry.registerItem(nugget_01, "nugget_01");
 
-		GameRegistry.registerItem(alloyingot_01, "alloyingot_01");
-		//中間素材
-		GameRegistry.registerItem(wire_01, "wire_01");
-		GameRegistry.registerItem(plate_01, "plate_01");
-		GameRegistry.registerItem(crystalplate_02, "crystalplate_02");
-		GameRegistry.registerItem(industrialplate_01, "industrialplate_01");
-		GameRegistry.registerItem(conductivematerial_01, "conductivematerial_01");
-		GameRegistry.registerItem(stick_01, "stick_01");
-		GameRegistry.registerItem(industrialstick_01, "industrialstick_01");
-		GameRegistry.registerItem(gear_01, "gear_01");
-		GameRegistry.registerItem(turbine_01, "turbine_01");
-		GameRegistry.registerItem(turbineblade_01, "turbineblade_01");
-		GameRegistry.registerItem(shaft_01, "shaft_01");
-		GameRegistry.registerItem(motor_01, "motor_01");
-		GameRegistry.registerItem(motorparts_01, "motorparts_01");
-		GameRegistry.registerItem(motormagnet_01, "motormagnet_01");
-		GameRegistry.registerItem(magnetizedingot_01, "magnetizedingot_01");
-		GameRegistry.registerItem(screw_01, "screw_01");
 		//ツール中間素材
 		GameRegistry.registerItem(iron_tool_material, "iron_tool_material");
 		//粘土るつぼのパターンアイテム
@@ -244,9 +239,6 @@ public class AntiMatterModRegistry {
 		//マイニングハンマー
 		GameRegistry.registerItem(miningHammer_01, "miningHammer_01");
 		GameRegistry.registerItem(miningHammer_02, "miningHammer_02");
-		GameRegistry.registerItem(miningHammer_03, "miningHammer_03");
-		GameRegistry.registerItem(miningHammer_04, "miningHammer_04");
-		GameRegistry.registerItem(miningHammer_05, "miningHammer_05");
 
 		//Blockの登録 ==================================================================================================
 		//鉱石
@@ -314,8 +306,8 @@ public class AntiMatterModRegistry {
 		}
 
 		//村のチェストの中身============================================================================================
-		ChestGenHooks.addItem(ChestGenHooks.VILLAGE_BLACKSMITH, new WeightedRandomChestContent(ingot_01,1,1,5,5));
-		ChestGenHooks.addItem(ChestGenHooks.VILLAGE_BLACKSMITH, new WeightedRandomChestContent(ingot_01,2,1,5,5));
+		//ChestGenHooks.addItem(ChestGenHooks.VILLAGE_BLACKSMITH, new WeightedRandomChestContent(ingot_01,1,1,5,5));
+		//ChestGenHooks.addItem(ChestGenHooks.VILLAGE_BLACKSMITH, new WeightedRandomChestContent(ingot_01,2,1,5,5));
 		ChestGenHooks village =ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH);
 		village.setMax(village.getMax()+10);
 		village.setMin(village.getMin()+10);

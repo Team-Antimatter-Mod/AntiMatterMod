@@ -24,8 +24,8 @@ public enum OreDictionaryRegister {
      */
     stickWood,
     ingotIron,
-	stickIron(new ItemStack(AntiMatterModRegistry.industrialstick_01,1,0)),
-	plateIron(new ItemStack(AntiMatterModRegistry.industrialplate_01,1,0)),
+	stickIron(),
+	plateIron(),
 	craftingToolHardHammer(new ItemStack(AntiMatterModRegistry.hammer_01,1,OreDictionary.WILDCARD_VALUE)),
 	craftingToolWrench(new ItemStack(AntiMatterModRegistry.wrench_01,1,OreDictionary.WILDCARD_VALUE)),
 	craftingToolWireCutter(new ItemStack(AntiMatterModRegistry.wirecutter_01,1,OreDictionary.WILDCARD_VALUE)),

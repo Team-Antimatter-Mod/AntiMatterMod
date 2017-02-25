@@ -20,9 +20,9 @@ import java.lang.reflect.Field;
 public enum AMMToolMaterial {
 	@CraftingToolProperty(maxUse = 10, level = 0)IRON(ToolMaterial.IRON),
 	DIAMOND(ToolMaterial.EMERALD),
-	Raitium(3, 250, 8.0F, 3.0F, 14, new ItemStack(AntiMatterModRegistry.ingot_01, 1, 1)),
-	Drantium(3, 250, 6.0F, 2.0F, 22, new ItemStack(AntiMatterModRegistry.ingot_01, 1, 2)),
-	Palazirite(3, 400, 6.0F, 2.0F, 14, new ItemStack(AntiMatterModRegistry.ingot_01, 1, 3)),
+	//Raitium(3, 250, 8.0F, 3.0F, 14, new ItemStack(AntiMatterModRegistry.ingot_01, 1, 1)),
+	//Drantium(3, 250, 6.0F, 2.0F, 22, new ItemStack(AntiMatterModRegistry.ingot_01, 1, 2)),
+	//Palazirite(3, 400, 6.0F, 2.0F, 14, new ItemStack(AntiMatterModRegistry.ingot_01, 1, 3)),
 	
 	;
 	//==================================================================================================================

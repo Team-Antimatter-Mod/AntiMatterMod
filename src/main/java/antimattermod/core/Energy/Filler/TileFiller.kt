@@ -1,6 +1,7 @@
 package antimattermod.core.Energy.Filler
 
 import antimattermod.core.AMMRegistry
+import antimattermod.core.Util.NBTHelper
 import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.entity.player.EntityPlayer
 import net.minecraft.inventory.IInventory
@@ -61,57 +62,30 @@ class TileFiller : TileEntity(), IInventory {
         val pattern = AMMRegistry.fillerModeList[modeIndex]
         patternStack = pattern.getItemStack()
 
-        //if (isStart) AMMRegistry.fillerModeList[modeIndex].tick(worldObj, BlockPos())
+    }
+
+    //ToDo:保存が上手くいってないっぽい
+    override fun readFromNBT(tagCompound: NBTTagCompound) {
+        super.readFromNBT(tagCompound)
+        val range = BlockPos(tagCompound, "Range")
+        xRange = range.getX()
+        yRange = range.getY()
+        zRange = range.getZ()
+
+        for (i in 0..23) {
+            itemStacks[i] = NBTHelper.getItemStack(tagCompound, "item" + i)
+        }
 
     }
 
     override fun writeToNBT(tagCompound: NBTTagCompound) {
-        tagCompound.setInteger("xRange", xRange)
-        tagCompound.setInteger("yRange", yRange)
-        tagCompound.setInteger("zRange", zRange)
-        tagCompound.setInteger("modeIndex", modeIndex)
-        tagCompound.setInteger("tickCount", tickCount)
+        super.writeToNBT(tagCompound)
+        val range = BlockPos(xRange, yRange, zRange)
+        range.writeToNBT(tagCompound, "Range")
 
-        val nbttaglist = NBTTagList()
-        for (i in itemStacks.indices) {
-            if (itemStacks[i] == null)
-                continue
-            val nbt1 = NBTTagCompound()
-            nbt1.setByte("Slot", i.toByte())
-            itemStacks[i]?.writeToNBT(nbt1)
-            nbttaglist.appendTag(nbt1)
+        for (i in 0..23) {
+            NBTHelper.setItemStack(tagCompound, "item" + i, itemStacks[i])
         }
-        tagCompound.setTag("Items", nbttaglist)
-
-        val patternTagList = NBTTagList()
-        val nbt2 = NBTTagCompound()
-        patternStack?.writeToNBT(nbt2)
-        patternTagList.appendTag(nbt2)
-        tagCompound.setTag("Pattern", patternTagList)
-
-    }
-
-    override fun readFromNBT(tagCompound: NBTTagCompound) {
-        xRange = tagCompound.getInteger("xRange")
-        yRange = tagCompound.getInteger("yRange")
-        zRange = tagCompound.getInteger("zRange")
-        modeIndex = tagCompound.getInteger("modeIndex")
-        tickCount = tagCompound.getInteger("tickCount")
-
-        val nbttaglist = tagCompound.getTagList("Items", 10)
-        itemStacks = arrayOfNulls<ItemStack>(invSize)
-        for (i in 0..nbttaglist.tagCount() - 2) {
-            val nbt1 = nbttaglist.getCompoundTagAt(i)
-            val b0 = nbt1.getByte("Slot")
-            if (0 <= b0 && b0 < itemStacks.size) {
-                itemStacks[b0.toInt()] = ItemStack.loadItemStackFromNBT(nbt1)
-            }
-        }
-
-        val patternTagList = tagCompound.getTagList("Pattern", 10)
-        patternStack = null
-        val nbt2 = patternTagList.getCompoundTagAt(patternTagList.tagCount())
-        patternStack = ItemStack.loadItemStackFromNBT(nbt2)
 
     }
 
@@ -125,6 +99,7 @@ class TileFiller : TileEntity(), IInventory {
         readFromNBT(pkt!!.func_148857_g())
     }
 
+    override fun isInvalid() = false
 
 //IInventory------------------------------------------------------------------------------------------------------------
     override fun getSizeInventory(): Int {
