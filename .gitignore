@@ -21,3 +21,6 @@ src/test/
 run_log.txt
 buildlog.txt
 target/
+*.iml
+*.ipr
+*.iws

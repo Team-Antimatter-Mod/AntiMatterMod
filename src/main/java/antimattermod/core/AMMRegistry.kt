@@ -1,4 +1,5 @@
-@file:Suppress("INTERFACE_STATIC_METHOD_CALL_FROM_JAVA6_TARGET")
+@file:JvmName("AMMRegistry")
+//@file:Suppress("INTERFACE_STATIC_METHOD_CALL_FROM_JAVA6_TARGET")
 
 package antimattermod.core
 
@@ -42,8 +43,11 @@ import java.util.*
 object AMMRegistry {
     //Item  ============================================================================================================
     //ツール類
+    @JvmStatic
     val statesChecker: Item = StatesChecker()
+    @JvmStatic
     val toolWrench: Item = ItemWrench("toolWrench", "toolwrench", AddInformationfunction { item, player, list, isdebug -> WrenchInformation(item, player, list, isdebug) })
+    @JvmStatic
     val fillerPattern: Item = ItemModePattern()
 
     //テスト用
@@ -61,7 +65,7 @@ object AMMRegistry {
     val chunkLoader = BlockChunkLoader()
     val basicTank = BlockBasicTank()
 
-    val fillerModeList: ArrayList<FillerModePattern> = arrayListOf<FillerModePattern>()
+    val fillerModeList: ArrayList<FillerModePattern> = arrayListOf()
 
     fun handlePreinit() {
         //Itemの登録 ===================================================================================================

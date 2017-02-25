@@ -54,6 +54,7 @@ abstract class APGeneratorBase(private var genVoltage: APVoltage, private var ge
                         energy
                     }
                 }
+        energy -= provide
         return EnergyNode(tier, provide, getPos(), target)
     }
 

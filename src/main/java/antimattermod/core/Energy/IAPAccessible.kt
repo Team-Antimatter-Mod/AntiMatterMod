@@ -6,6 +6,11 @@ import net.minecraft.world.World
 
 /**
  * @author C6H2Cl2
+ * # 日本語
+ * このModのエネルギーシステムにアクセスできるTileEntityのためのInterfaceです。
+ * Controllerを除く全ての機械はこれを実装しなければならず、Controllerもこれを実装することが推奨されます。
+ * @property voltage 機械の電圧[APVoltage]です
+ * @property tier 機械の段階[MachineTier]です
  */
 interface IAPAccessible {
     val voltage: APVoltage
