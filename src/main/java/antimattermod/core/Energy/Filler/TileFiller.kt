@@ -1,6 +1,7 @@
 package antimattermod.core.Energy.Filler
 
 import antimattermod.core.AMMRegistry
+import antimattermod.core.Energy.NBT_COMPOUND
 import antimattermod.core.Util.NBTHelper
 import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.entity.player.EntityPlayer
@@ -21,71 +22,100 @@ class TileFiller : TileEntity(), IInventory {
 
     val invSize: Int = 24
     var itemStacks = arrayOfNulls<ItemStack>(invSize)
+        private set
     var patternStack: ItemStack? = null
+        private set
+
+    val rangeLimitHorizon = 128
+    val rangeLimitVertical = 255
 
     var xRange: Int = 1
+        set(value) {
+            if (value > rangeLimitHorizon)
+                field = rangeLimitHorizon
+            else
+                field = value
+        }
     var yRange: Int = 1
+        set(value) {
+            if (value > rangeLimitVertical)
+                field = rangeLimitVertical
+            else
+                field = value
+        }
     var zRange: Int = 1
+        set(value) {
+            if (value > rangeLimitHorizon)
+                field = rangeLimitHorizon
+            else
+                field = value
+        }
 
     var modeIndex: Int = 0
+        private set
 
     var isStart: Boolean = false
+        private set
 
-    var progressCount1: Int = 0
-    var progressCount2: Int = 0
-    var progressCount3: Int = 0
+    private var progressCount1: Int = 0
+    private var progressCount2: Int = 0
+    private var progressCount3: Int = 0
 
     //0～1199のループ
-    var tickCount: Int = 0
+    private var tickCount: Int = 0
+        private set(value) {
+            field = value % 1200
+        }
 
     fun modeUp() {
         if (modeIndex != AMMRegistry.fillerModeList.size - 1) modeIndex++
-        isStart == false
+        isStart = false
     }
 
     fun modeDown() {
         if (modeIndex != 0) modeIndex--
-        isStart == false
+        isStart = false
     }
 
     fun startStop() {
-        when (isStart) {
-            true -> isStart = false
-            false -> isStart = true
-        }
+        isStart = !isStart
     }
 
     override fun updateEntity() {
         super.updateEntity()
-        if (tickCount == 1199) tickCount = 0 else tickCount++
+        tickCount++
 
-        val pattern = AMMRegistry.fillerModeList[modeIndex]
-        patternStack = pattern.getItemStack()
+        patternStack = AMMRegistry.fillerModeList[modeIndex].getItemStack()
 
     }
 
     //ToDo:保存が上手くいってないっぽい
     override fun readFromNBT(tagCompound: NBTTagCompound) {
         super.readFromNBT(tagCompound)
-        val range = BlockPos(tagCompound, "Range")
+        val tag = tagCompound.getCompoundTag(FILLER)
+        val range = BlockPos(tag, RANGE)
         xRange = range.getX()
         yRange = range.getY()
         zRange = range.getZ()
-
+        val tagList = tagCompound.getTagList(INVRNTORY_ITEM, NBT_COMPOUND)
         for (i in 0..23) {
-            itemStacks[i] = NBTHelper.getItemStack(tagCompound, "item" + i)
+            itemStacks[i] = ItemStack.loadItemStackFromNBT(tagList.getCompoundTagAt(i))
         }
-
     }
 
     override fun writeToNBT(tagCompound: NBTTagCompound) {
         super.writeToNBT(tagCompound)
+        val tag = NBTTagCompound()
         val range = BlockPos(xRange, yRange, zRange)
-        range.writeToNBT(tagCompound, "Range")
-
-        for (i in 0..23) {
-            NBTHelper.setItemStack(tagCompound, "item" + i, itemStacks[i])
+        range.writeToNBT(tag, RANGE)
+        val tagList = NBTTagList()
+        itemStacks.forEach {
+            val nbtTagCompound = NBTTagCompound()
+            it?.writeToNBT(nbtTagCompound)
+            tagList.appendTag(nbtTagCompound)
         }
+        tagCompound.setTag(FILLER, tag)
+        tagCompound.setTag(INVRNTORY_ITEM, tagList)
 
     }
 
@@ -101,7 +131,7 @@ class TileFiller : TileEntity(), IInventory {
 
     override fun isInvalid() = false
 
-//IInventory------------------------------------------------------------------------------------------------------------
+    //IInventory------------------------------------------------------------------------------------------------------------
     override fun getSizeInventory(): Int {
         return invSize + 1
     }

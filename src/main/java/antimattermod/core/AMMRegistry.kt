@@ -8,17 +8,11 @@ import antimattermod.core.Energy.Block.Generator.BlockFurnaceGenerator
 import antimattermod.core.Energy.Filler.BlockFiller
 import antimattermod.core.Energy.Filler.BlockMarker
 import antimattermod.core.Energy.Filler.ModePattern.*
-import antimattermod.core.Energy.TileEntity.Generator.TileFurnaceGenerator
-import antimattermod.core.Energy.TileEntity.TileEnergyController
 import antimattermod.core.Energy.Item.StatesChecker
 import antimattermod.core.Energy.Item.Wrench.ItemWrench
 import antimattermod.core.Energy.MachineTier.Tier1
 import antimattermod.core.Energy.MultiBlock.BlockMultiController
-import antimattermod.core.Energy.MultiBlock.TileMultiController
-import antimattermod.core.Energy.Filler.TileFiller
 import antimattermod.core.Fluid.tank.BlockBasicTank
-import antimattermod.core.Fluid.tank.ItemBlockBasicTank
-import antimattermod.core.Fluid.tank.TileBasicTank
 import antimattermod.core.Mob.EntityDeveloperBoss
 import antimattermod.core.Mob.ItemEgg.ItemDeveloperBossEgg
 import antimattermod.core.Util.AddInformationfunction
@@ -26,14 +20,11 @@ import antimattermod.core.Util.AddInformationfunction.WrenchInformation
 import antimattermod.core.World.Chunk.AMMChunkManager
 import antimattermod.core.World.Chunk.BlockChunkLoader
 import antimattermod.core.Energy.Filler.ModePattern.FillerModePattern.Companion.FillerRegistry
-import antimattermod.core.Energy.Filler.TileMarker
 import c6h2cl2.YukariLib.Util.RegisterHandler
 import cpw.mods.fml.common.registry.EntityRegistry
-import cpw.mods.fml.common.registry.GameRegistry
 import net.minecraft.block.Block
 import net.minecraft.item.Item
 import cpw.mods.fml.common.network.NetworkRegistry
-import net.minecraft.item.ItemStack
 import net.minecraftforge.common.ForgeChunkManager
 import java.util.*
 

@@ -4,9 +4,6 @@ import antimattermod.core.Energy.*
 import antimattermod.core.Energy.EnergyGroup.*
 import antimattermod.core.Energy.MachineTier.*
 import net.minecraft.nbt.NBTTagCompound
-import net.minecraft.network.NetworkManager
-import net.minecraft.network.Packet
-import net.minecraft.network.play.server.S35PacketUpdateTileEntity
 
 /**
  * @author C6H2Cl2

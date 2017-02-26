@@ -5,10 +5,8 @@ import antimattermod.core.AntiMatterModCore
 import antimattermod.core.AntiMatterModRegistry
 import antimattermod.core.Energy.TileEntity.Machine.TileAlloySmelter
 import c6h2cl2.YukariLib.Block.BlockWithTileEntity
-import net.minecraft.block.BlockContainer
 import net.minecraft.block.material.Material
 import net.minecraft.entity.player.EntityPlayer
-import net.minecraft.tileentity.TileEntity
 import net.minecraft.world.World
 
 /**
