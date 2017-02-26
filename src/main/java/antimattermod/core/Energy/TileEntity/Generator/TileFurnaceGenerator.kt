@@ -11,7 +11,7 @@ import net.minecraft.network.play.server.S35PacketUpdateTileEntity
 /**
  * @author C6H2Cl2
  */
-class TileEntityFurnaceGenerator : APGeneratorBase {
+class TileFurnaceGenerator : APGeneratorBase {
     //定数
     //private val voltage: APVoltage = APVoltage.HV
     //private val energyStorage: Int = voltage.maxEnergy * 20 * 600

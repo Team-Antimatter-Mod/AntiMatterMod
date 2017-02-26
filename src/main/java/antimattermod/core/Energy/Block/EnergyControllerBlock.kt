@@ -6,6 +6,7 @@ import antimattermod.core.Energy.Item.Wrench.IEnergyWrenchAction
 import antimattermod.core.Energy.TileEntity.TileEnergyController
 import antimattermod.core.Energy.MachineTier
 import antimattermod.core.Energy.MachineTier.Tier1
+import c6h2cl2.YukariLib.Block.BlockWithTileEntity
 import net.minecraft.block.BlockContainer
 import net.minecraft.block.material.Material
 import net.minecraft.world.World
@@ -13,13 +14,13 @@ import net.minecraft.world.World
 /**
  * @author C6H2Cl2
  */
-class EnergyControllerBlock(val tier: Int) : BlockContainer(Material.rock), IEnergyWrenchAction {
+class EnergyControllerBlock(val tier: Int) : BlockWithTileEntity<TileEnergyController>(
+        Material.rock, TileEnergyController::class, { world, meta -> TileEnergyController(MachineTier.getFromTier(tier)) }, "amm.EnergyController.$tier"
+), IEnergyWrenchAction {
     init {
         setBlockName("amm.energyController_tier$tier")
         textureName = "${AntiMatterModCore.MOD_ID}:energyController_$tier"
         setCreativeTab(AntiMatterModRegistry.tabMachines)
         setBlockUnbreakable()
     }
-
-    override fun createNewTileEntity(p_149915_1_: World?, p_149915_2_: Int) = TileEnergyController(MachineTier.getFromTier(tier+1))
 }

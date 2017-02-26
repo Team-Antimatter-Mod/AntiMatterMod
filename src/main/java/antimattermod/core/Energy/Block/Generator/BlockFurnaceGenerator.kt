@@ -5,8 +5,9 @@ import antimattermod.core.AntiMatterModRegistry
 import antimattermod.core.Energy.Item.Wrench.IDirectionWrenchAction
 import antimattermod.core.Energy.Item.Wrench.IEnergyWrenchAction
 import antimattermod.core.Energy.MachineTier
-import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator
+import antimattermod.core.Energy.TileEntity.Generator.TileFurnaceGenerator
 import antimattermod.core.Util.ClickPos
+import c6h2cl2.YukariLib.Block.BlockWithTileEntity
 import c6h2cl2.YukariLib.Util.BlockPos
 import cpw.mods.fml.common.registry.GameRegistry
 import cpw.mods.fml.relauncher.Side
@@ -29,7 +30,9 @@ import net.minecraftforge.common.util.ForgeDirection
 /**
  * @author C6H2Cl2
  */
-class BlockFurnaceGenerator(val tier: MachineTier) : BlockContainer(Material.rock), IDirectionWrenchAction, IEnergyWrenchAction {
+class BlockFurnaceGenerator(val tier: MachineTier) : BlockWithTileEntity<TileFurnaceGenerator>(
+        Material.rock, TileFurnaceGenerator::class, {world, meta -> TileFurnaceGenerator(tier)}
+), IDirectionWrenchAction, IEnergyWrenchAction {
 
     //ブロックテクスチャ―
     @SideOnly(Side.CLIENT)
@@ -56,7 +59,7 @@ class BlockFurnaceGenerator(val tier: MachineTier) : BlockContainer(Material.roc
             fuelVal = TileEntityFurnace.getItemBurnTime(heldItem)
         }
         if (fuelVal < 1600) return false
-        val tile = world.getTileEntity(x, y, z) as TileEntityFurnaceGenerator
+        val tile = world.getTileEntity(x, y, z) as TileFurnaceGenerator
         if (tile.isFuelMax()) return false
         val meta = world.getBlockMetadata(x, y, z)
         world.setBlockMetadataWithNotify(x, y, z, if (meta < 6) meta + 6 else meta, 2)
@@ -96,7 +99,7 @@ class BlockFurnaceGenerator(val tier: MachineTier) : BlockContainer(Material.roc
     }
 
     override fun createNewTileEntity(p_149915_1_: World, p_149915_2_: Int): TileEntity {
-        return TileEntityFurnaceGenerator(tier)
+        return TileFurnaceGenerator(tier)
     }
 
     override fun isVerticalChange(): Boolean {

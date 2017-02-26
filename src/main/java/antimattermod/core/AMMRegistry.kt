@@ -1,5 +1,5 @@
 @file:JvmName("AMMRegistry")
-//@file:Suppress("INTERFACE_STATIC_METHOD_CALL_FROM_JAVA6_TARGET")
+@file:Suppress("INTERFACE_STATIC_METHOD_CALL_FROM_JAVA6_TARGET")
 
 package antimattermod.core
 
@@ -8,7 +8,7 @@ import antimattermod.core.Energy.Block.Generator.BlockFurnaceGenerator
 import antimattermod.core.Energy.Filler.BlockFiller
 import antimattermod.core.Energy.Filler.BlockMarker
 import antimattermod.core.Energy.Filler.ModePattern.*
-import antimattermod.core.Energy.TileEntity.Generator.TileEntityFurnaceGenerator
+import antimattermod.core.Energy.TileEntity.Generator.TileFurnaceGenerator
 import antimattermod.core.Energy.TileEntity.TileEnergyController
 import antimattermod.core.Energy.Item.StatesChecker
 import antimattermod.core.Energy.Item.Wrench.ItemWrench
@@ -27,6 +27,7 @@ import antimattermod.core.World.Chunk.AMMChunkManager
 import antimattermod.core.World.Chunk.BlockChunkLoader
 import antimattermod.core.Energy.Filler.ModePattern.FillerModePattern.Companion.FillerRegistry
 import antimattermod.core.Energy.Filler.TileMarker
+import c6h2cl2.YukariLib.Util.RegisterHandler
 import cpw.mods.fml.common.registry.EntityRegistry
 import cpw.mods.fml.common.registry.GameRegistry
 import net.minecraft.block.Block
@@ -43,11 +44,8 @@ import java.util.*
 object AMMRegistry {
     //Item  ============================================================================================================
     //ツール類
-    @JvmStatic
     val statesChecker: Item = StatesChecker()
-    @JvmStatic
     val toolWrench: Item = ItemWrench("toolWrench", "toolwrench", AddInformationfunction { item, player, list, isdebug -> WrenchInformation(item, player, list, isdebug) })
-    @JvmStatic
     val fillerPattern: Item = ItemModePattern()
 
     //テスト用
@@ -67,39 +65,14 @@ object AMMRegistry {
 
     val fillerModeList: ArrayList<FillerModePattern> = arrayListOf()
 
-    fun handlePreinit() {
-        //Itemの登録 ===================================================================================================
-        //ツール
-        GameRegistry.registerItem(statesChecker, "statesCheckerAP")
-        GameRegistry.registerItem(developerBossEgg, "developerBossEgg")
-        GameRegistry.registerItem(toolWrench, "toolWrench")
-        GameRegistry.registerItem(fillerPattern, "AMMFillerPattern")
-
-        //機械
-        GameRegistry.registerBlock(furnaceGenerator, "furnaceGeneratorAP")
-        //GameRegistry.registerBlock(energyController, "energyControllerAP")
-        energyController.forEach {
-            GameRegistry.registerBlock(it, it.unlocalizedName)
-        }
-        GameRegistry.registerBlock(marker, "AMMMarker")
-        GameRegistry.registerBlock(filler, "AMMFiller")
-        GameRegistry.registerBlock(multiController, "multiController")
-        GameRegistry.registerBlock(chunkLoader, "AMMChunkLoader")
-        GameRegistry.registerBlock(basicTank, ItemBlockBasicTank::class.java, "AMMBasicTank")
+    fun handlePreInit() {
+        RegisterHandler().build(this).handle()
 
         //ChunkManagerの登録 ===========================================================================================
         ForgeChunkManager.setForcedChunkLoadingCallback(AntiMatterModCore.INSTANCE, AMMChunkManager())
     }
 
     fun handleInit() {
-        //TileEntityの登録 =============================================================================================
-        GameRegistry.registerTileEntity(TileEntityFurnaceGenerator::class.java, "tileFurnaceGeneratorAP")
-        GameRegistry.registerTileEntity(TileEnergyController::class.java, "tileEnergyControllerAP")
-        GameRegistry.registerTileEntity(TileMultiController::class.java, "tileMultiController")
-        GameRegistry.registerTileEntity(TileMarker::class.java, "tileAMMMarker")
-        GameRegistry.registerTileEntity(TileFiller::class.java, "tileAMMFiller")
-        GameRegistry.registerTileEntity(TileBasicTank::class.java, "tileBasicTank")
-
         //Entityの登録 =============================================================================================
         EntityRegistry.registerModEntity(EntityDeveloperBoss::class.java, "DeveloperBoss", 1, AntiMatterModCore.MOD_ID, 250, 1, false)
 

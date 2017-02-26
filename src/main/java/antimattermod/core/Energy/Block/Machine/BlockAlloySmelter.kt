@@ -4,6 +4,7 @@ import antimattermod.core.AMMGuiHandler
 import antimattermod.core.AntiMatterModCore
 import antimattermod.core.AntiMatterModRegistry
 import antimattermod.core.Energy.TileEntity.Machine.TileAlloySmelter
+import c6h2cl2.YukariLib.Block.BlockWithTileEntity
 import net.minecraft.block.BlockContainer
 import net.minecraft.block.material.Material
 import net.minecraft.entity.player.EntityPlayer
@@ -13,7 +14,9 @@ import net.minecraft.world.World
 /**
  * @author C6H2Cl2
  */
-class BlockAlloySmelter(private val tier: Int) : BlockContainer(Material.rock) {
+class BlockAlloySmelter(private val tier: Int) : BlockWithTileEntity<TileAlloySmelter>(
+        Material.rock, TileAlloySmelter::class, { world, meta -> TileAlloySmelter(tier)}, "amm.AlloySmelter.$tier"
+) {
     init {
         setCreativeTab(AntiMatterModRegistry.tabMachines)
         setBlockName("alloySmelter_tier" + tier)
@@ -26,9 +29,5 @@ class BlockAlloySmelter(private val tier: Int) : BlockContainer(Material.rock) {
     override fun onBlockActivated(world: World?, x: Int, y: Int, z: Int, player: EntityPlayer?, side: Int, hitX: Float, hitY: Float, hitZ: Float): Boolean {
         player!!.openGui(AntiMatterModCore.INSTANCE, AMMGuiHandler.GuiID_AlloySmelter, world, x, y, z)
         return true
-    }
-
-    override fun createNewTileEntity(p_149915_1_: World, p_149915_2_: Int): TileEntity {
-        return TileAlloySmelter(tier)
     }
 }

@@ -43,7 +43,7 @@ public class AntiMatterModCore {
         loadMeta(modMetadata);
         DeveloperBossTexture.downloadTexture();//開発者のスキンのダウンロード
         AntiMatterModRegistry.registerPreInit(event);
-        AMMRegistry.INSTANCE.handlePreinit();
+        AMMRegistry.INSTANCE.handlePreInit();
         OreDictionaryRegister.OreDictionaryRegisterPreInit(event);
         proxy.registerClientInfo();
     }
