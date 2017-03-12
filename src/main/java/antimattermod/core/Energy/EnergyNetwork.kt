@@ -2,11 +2,8 @@ package antimattermod.core.Energy
 
 import c6h2cl2.YukariLib.Util.BlockPos
 import c6h2cl2.YukariLib.Util.BlockPosSet
-import net.minecraft.nbt.NBTBase
-import net.minecraft.nbt.NBTTagByte
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.nbt.NBTTagList
-import org.jetbrains.kotlin.utils.toReadOnlyList
 
 /**
  * @author C6H2Cl2
@@ -61,9 +58,9 @@ class EnergyNetwork(private val controller: IAPController) {
         return tagCompound
     }
 
-    fun getProviders() = providers.toReadOnlyList()
+    fun getProviders() = providers.toSet()
 
-    fun getReceivers() = receivers.toReadOnlyList()
+    fun getReceivers() = receivers.toSet()
 
     fun addProvider(provider: BlockPos) {
         providers.add(provider)

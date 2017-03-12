@@ -7,13 +7,10 @@ import antimattermod.core.Energy.EnergyNode
 import antimattermod.core.Energy.IAPController
 import antimattermod.core.Energy.IAPProvider
 import antimattermod.core.Energy.IAPReceiver
-import antimattermod.core.Energy.Item.Wrench.IEnergyWrenchAction
 import antimattermod.core.Energy.IAPAccessible
 import antimattermod.core.Energy.MAX_CONNECT
 import antimattermod.core.Energy.MachineTier
-import antimattermod.core.Energy.MachineTier.NoTier
-import antimattermod.core.Energy.TIER
-import antimattermod.core.Energy.VOLTAGE
+import antimattermod.core.Energy.MachineTier.*
 import c6h2cl2.YukariLib.Util.BlockPos
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.network.NetworkManager
@@ -59,7 +56,7 @@ class TileEnergyController : TileEntity, IAPController, IAPAccessible {
         network.getProviders().forEach {
             if (energyAfford <= 0) return@forEach
             val provider = it.getTileEntityFromPos(worldObj) as? IAPProvider ?: return@forEach
-            energyAfford -= provider.handleRequest(pos, energyAfford).applyDecay(pos, it).getEnergyValue()
+            energyAfford -= provider.handleRequest(pos, energyAfford).applyDecay(pos, it, provider.voltage, worldObj).getEnergyValue()
         }
         energy = maxEnergyStorage - energyAfford
         //リクエストの処理
@@ -69,7 +66,7 @@ class TileEnergyController : TileEntity, IAPController, IAPAccessible {
             it.unapplyDecay(pos, it.getTargetPos())
             val target = it.getTargetPos().getTileEntityFromPos(worldObj) as IAPReceiver
             if (it.getEnergyValue() > energy) {
-                target.addEnergy(EnergyNode(tier, energy, pos, it.getTargetPos()))
+                target.addEnergy(EnergyNode(tier, energy, pos, it.getTargetPos()).applyDecay(pos, it.getTargetPos(), target.voltage, worldObj))
                 energy = 0
             } else {
                 target.addEnergy(it)

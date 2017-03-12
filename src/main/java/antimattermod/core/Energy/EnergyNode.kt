@@ -41,9 +41,9 @@ class EnergyNode {
         target.readFromNBT(tag, TARGET_POS)
     }
 
-    fun applyDecay(from: BlockPos, to: BlockPos): EnergyNode {
+    fun applyDecay(from: BlockPos, to: BlockPos, receiverVoltage: APVoltage, world: World): EnergyNode {
         energyValue = (Math.pow(machineTier.efficiency, from.getDistance(to)) * energyValue).toInt()
-        return this
+        return checkVoltage(receiverVoltage, to, world)
     }
 
     fun unapplyDecay(from: BlockPos, to: BlockPos): EnergyNode {
@@ -61,6 +61,14 @@ class EnergyNode {
                 Math.pow(energyValue - voltage.maxEnergy.toDouble(), 2.0).toFloat(), false)
     }
 
+    fun checkVoltage(receiverVoltage: APVoltage, receiverPos: BlockPos, world: World): EnergyNode {
+        if (receiverVoltage.maxEnergy < voltage.maxEnergy) {
+            explode(receiverPos, world, receiverVoltage)
+            return EnergyNode()
+        }
+        return this
+    }
+
     fun getVoltage(): APVoltage = voltage
     fun getEnergyValue(): Int = energyValue
     fun getSource(): BlockPos = source
@@ -70,8 +78,9 @@ class EnergyNode {
             target = pos
         }
     }
-    fun setSource(pos: BlockPos){
-        if(source == BlockPos.Empty){
+
+    fun setSource(pos: BlockPos) {
+        if (source == BlockPos.Empty) {
             source = pos
         }
     }

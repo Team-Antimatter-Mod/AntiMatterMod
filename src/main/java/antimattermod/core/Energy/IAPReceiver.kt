@@ -13,7 +13,7 @@ interface IAPReceiver : IAPAccessible {
      * Controllerから受け取ったときに呼ばれます。
      * エネルギーは[EnergyNode]形式で送信されます。
      */
-    fun addEnergy(energy: EnergyNode)
+    fun addEnergy(energyNode: EnergyNode)
 
     override fun writeToNBT(tagCompound: NBTTagCompound) {
         writeToNBT(tagCompound, RECEIVER)
